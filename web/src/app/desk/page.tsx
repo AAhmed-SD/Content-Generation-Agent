@@ -1,0 +1,120 @@
+import { after } from "next/server";
+import Link from "next/link";
+import { redirect } from "next/navigation";
+import { stampPiece } from "@/app/actions";
+import { DeskFrame } from "@/components/desk-frame";
+import { PendingButton } from "@/components/pending-button";
+import { RenderWatch } from "@/components/render-watch";
+import { canStamp, isReady, needsScript, niches, readDesk, type NicheId, type Piece } from "@/lib/desk";
+import { prepareWeek } from "@/lib/prepare";
+import { personName, type PersonId } from "@/lib/people";
+import { readSession } from "@/lib/session";
+
+export default async function DeskPage() {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const pieces = readDesk();
+  after(() => {
+    void prepareWeek();
+  });
+
+  const yes = pieces.filter((piece) => canStamp(piece, person.id) && piece.script.source === "claude");
+  const post = pieces.filter((piece) => isReady(piece) && !piece.liveUrl);
+  const making = pieces.filter(
+    (piece) => needsScript(piece) || piece.render.status === "rendering" || (piece.script.source === "claude" && piece.render.status === "idle"),
+  );
+  const waiting = pieces.filter((piece) => !isReady(piece) && !canStamp(piece, person.id) && piece.script.source === "claude");
+  const visible = yes.length + waiting.length + post.length;
+
+  return (
+    <DeskFrame person={person} current="week">
+      <RenderWatch active={making.length > 0} />
+      <p className="file-no">This week</p>
+      <h2 className="page-title">Say yes, then post.</h2>
+      <p className="split">Your name is on the cards you can stamp. Medicine and time still need both of you.</p>
+      {visible === 0 ? <p className="split">Nothing is waiting on you. Layouts and numbers are in the sidebar.</p> : null}
+      {niches.map((niche) => (
+        <Audience
+          key={niche.id}
+          nicheId={niche.id}
+          who={niche.who}
+          about={niche.about}
+          yes={yes.filter((piece) => piece.niche === niche.id)}
+          waiting={waiting.filter((piece) => piece.niche === niche.id)}
+          post={post.filter((piece) => piece.niche === niche.id)}
+          personId={person.id}
+        />
+      ))}
+      {making.length > 0 ? <p className="split">Still writing {making.length}. Leave those closed.</p> : null}
+    </DeskFrame>
+  );
+}
+
+function Audience({
+  nicheId,
+  who,
+  about,
+  yes,
+  waiting,
+  post,
+  personId,
+}: {
+  nicheId: NicheId;
+  who: string;
+  about: string;
+  yes: Piece[];
+  waiting: Piece[];
+  post: Piece[];
+  personId: PersonId;
+}) {
+  if (yes.length + waiting.length + post.length === 0) return null;
+  return (
+    <article className="audience">
+      <h3>{who}</h3>
+      <p>{about}</p>
+      <ul className="yes-list">
+        {yes.map((piece) => (
+          <CardRow key={piece.id} piece={piece} action="yes" />
+        ))}
+        {waiting.map((piece) => (
+          <CardRow key={piece.id} piece={piece} action="wait" personId={personId} />
+        ))}
+        {post.map((piece) => (
+          <CardRow key={piece.id} piece={piece} action="post" />
+        ))}
+      </ul>
+    </article>
+  );
+}
+
+function CardRow({
+  piece,
+  action,
+  personId,
+}: {
+  piece: Piece;
+  action: "yes" | "wait" | "post";
+  personId?: PersonId;
+}) {
+  const other = piece.lead === "hadiqa" ? "laiba" : "hadiqa";
+  const waitingOn = piece.stamps.length === 0 ? piece.lead : personId && piece.stamps.includes(personId) ? other : piece.lead;
+  return (
+    <li>
+      <Link href={`/desk/${piece.niche}/${piece.id}`}>
+        <strong>{piece.script.onScreen || piece.line}</strong>
+      </Link>
+      {action === "yes" ? (
+        <form action={stampPiece}>
+          <input type="hidden" name="id" value={piece.id} />
+          <PendingButton idle="Yes" pending="Saving" />
+        </form>
+      ) : action === "wait" ? (
+        <span className="quiet-state">With {personName(waitingOn).split(" ")[0]}</span>
+      ) : (
+        <Link className="pack-link" href={`/desk/${piece.niche}/${piece.id}`}>
+          Post
+        </Link>
+      )}
+    </li>
+  );
+}

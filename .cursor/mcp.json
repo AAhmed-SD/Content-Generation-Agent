@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "offload": {
+      "command": "node",
+      "args": ["scripts/offload-mcp.mjs"]
+    }
+  }
+}

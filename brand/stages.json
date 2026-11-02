@@ -1,0 +1,26 @@
+{
+  "research": [
+    "reddit",
+    "web",
+    "youtube",
+    "virlo-suggest-keywords"
+  ],
+  "write": [
+    "claude",
+    "ollama-gemma3"
+  ],
+  "voice": [
+    "kokoro"
+  ],
+  "transcript": [
+    "faster-whisper-tiny"
+  ],
+  "picture": [
+    "remotion-offload-card"
+  ],
+  "blocked": [
+    "virlo-create-agent",
+    "virlo-mcp-all-tools",
+    "ltx"
+  ]
+}

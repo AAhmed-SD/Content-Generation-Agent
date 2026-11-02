@@ -1,0 +1,11 @@
+node_modules
+.next
+.env*
+web/data/*.json
+web/data/renders
+remotion/node_modules
+remotion/out
+tools/.venv
+tools/models
+web/public/board/*
+!web/public/board/.gitkeep
