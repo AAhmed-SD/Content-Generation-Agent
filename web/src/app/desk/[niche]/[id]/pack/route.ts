@@ -12,10 +12,17 @@ export async function GET(
   if (!piece) return new Response("Missing piece.", { status: 404 });
   if (!isReady(piece)) return new Response("This pack is still closed.", { status: 409 });
 
+  const ext = piece.format === "still" ? "png" : "mp4";
+  const file =
+    piece.render.status === "ready"
+      ? `${piece.id}.${ext}`
+      : piece.render.status === "failed"
+        ? `not made. ${piece.render.error || "The picture failed."}`.slice(0, 300)
+        : "still being made";
   const body = [
     `post id: ${piece.id}`,
     `slot: ${piece.slot}`,
-    `file: render/${piece.id}.mp4 — Remotion has not rendered this yet`,
+    `file: ${file}`,
     piece.researchNote ? `research: ${piece.researchNote}` : "research: none",
     "",
     "tiktok",

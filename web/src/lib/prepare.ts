@@ -32,6 +32,23 @@ function releaseLock() {
   rmSync(lockDir, { recursive: true, force: true });
 }
 
+function takeQueueLock(lock: string) {
+  try {
+    mkdirSync(lock);
+    return true;
+  } catch {
+    try {
+      const age = Date.now() - statSync(lock).mtimeMs;
+      if (age < 2 * 60 * 1000) return false;
+      rmSync(lock, { recursive: true, force: true });
+      mkdirSync(lock);
+      return true;
+    } catch {
+      return false;
+    }
+  }
+}
+
 function researchCooling() {
   try {
     const at = Date.parse(statSync(holdFile).mtime.toISOString());
@@ -64,6 +81,33 @@ function speak(piece: Piece) {
       resolve();
     });
   });
+}
+
+export async function writeScripts() {
+  const pieces = readDesk();
+  const briefs = readBriefs();
+  for (const piece of pieces) {
+    if (!needsScript(piece)) continue;
+    const brief = briefs?.briefs.find((item) => item.niche === piece.niche);
+    try {
+      const reply = await askClaude(claudePrompt(piece, brief?.text ?? ""));
+      const script = parseScript(reply);
+      if (!script) throw new Error("shape");
+      piece.script = { ...script, source: "claude" };
+      piece.line = script.onScreen;
+      piece.note = script.narration;
+      piece.approved = false;
+      piece.draftedFrom = "claude";
+      piece.researchNote = "";
+      piece.render = { status: "idle", file: "", error: "", at: "" };
+      fillCaptions(piece);
+    } catch {
+      piece.draftedFrom = "held";
+      piece.researchNote = new Date().toISOString();
+    }
+    writeDesk(pieces);
+  }
+  revalidatePath("/desk/scripts");
 }
 
 export async function prepareWeek() {
@@ -107,12 +151,34 @@ export async function prepareWeek() {
         await speak(piece);
       }
     }
-    if (!pieces.some((piece) => piece.render.status === "rendering")) {
-      const next = pieces.find((piece) => piece.script.source === "claude" && piece.render.status === "idle");
-      if (next) {
-        next.render = { status: "rendering", file: "", error: "", at: new Date().toISOString() };
-        writeDesk(pieces);
-        queueRender(next);
+    const queueLock = path.join(process.cwd(), "data", "render.queue.lock");
+    if (takeQueueLock(queueLock)) {
+      try {
+        const current = readDesk();
+        let moved = false;
+        for (const piece of current) {
+          if (piece.render.status !== "rendering") continue;
+          const at = Date.parse(piece.render.at);
+          if (Number.isFinite(at) && Date.now() - at < 20 * 60 * 1000) continue;
+          piece.render = {
+            status: "failed",
+            file: piece.render.file,
+            error: "The render stopped before it finished.",
+            at: new Date().toISOString(),
+          };
+          moved = true;
+        }
+        if (moved) writeDesk(current);
+        if (!current.some((piece) => piece.render.status === "rendering")) {
+          const next = current.find((piece) => piece.approved && piece.script.source === "claude" && piece.render.status === "idle");
+          if (next) {
+            next.render = { status: "rendering", file: "", error: "", at: new Date().toISOString() };
+            writeDesk(current);
+            queueRender(next);
+          }
+        }
+      } finally {
+        rmSync(queueLock, { recursive: true, force: true });
       }
     }
     revalidatePath("/desk");

@@ -6,14 +6,16 @@ import { spawnSync } from "node:child_process";
 import { revalidatePath } from "next/cache";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import { brandDoc, brandFileEditable, writeBrandFile } from "@/lib/brand";
 import { askClaude, parseScript, publicClaudeError } from "@/lib/claude";
 import { kokoroPaths } from "@/lib/local";
-import { canStamp, fillCaptions, findPiece, isReady, readDesk, writeDesk, type Checkpoint } from "@/lib/desk";
+import { canStamp, clearScript, fillCaptions, findPiece, isReady, readDesk, writeDesk, type Checkpoint } from "@/lib/desk";
 import { applyRows, parseMetricsCsv, saveLesson, storeCsv, storeTyped } from "@/lib/loop";
 import { isPersonId } from "@/lib/people";
 import { WEEK, applyDrafts, compileBriefs, gatherResearch, readBriefs, readResearch } from "@/lib/pipeline";
 import { drawOffloadPin, isPinLayout } from "@/lib/pin-picture";
 import { isNicheId, writePin } from "@/lib/pin-draft";
+import { writeScripts } from "@/lib/prepare";
 import { claudePrompt, queueRender } from "@/lib/studio";
 import { COOKIE, passwordMatches, readSession, sessionCookieValue } from "@/lib/session";
 
@@ -116,9 +118,51 @@ export async function saveMetric(formData: FormData) {
 export async function runResearch() {
   const person = await readSession();
   if (!person) redirect("/");
-  await gatherResearch();
-  revalidatePath("/desk/make");
-  redirect("/desk/make");
+  const research = await gatherResearch();
+  compileBriefs(research);
+  revalidatePath("/desk/research");
+  redirect("/desk/research");
+}
+
+export async function writeTheScripts() {
+  const person = await readSession();
+  if (!person) redirect("/");
+  await writeScripts();
+  redirect("/desk/scripts");
+}
+
+export async function approveScript(formData: FormData) {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const pieces = readDesk();
+  const piece = findPiece(pieces, String(formData.get("id") ?? ""));
+  if (!piece || piece.script.source !== "claude") redirect("/desk/scripts");
+  piece.approved = true;
+  const busy = pieces.some((item) => item.render.status === "rendering");
+  if (!busy) {
+    piece.render = { status: "rendering", file: "", error: "", at: new Date().toISOString() };
+    writeDesk(pieces);
+    queueRender(piece);
+  } else {
+    piece.render = { ...piece.render, status: "idle", error: "" };
+    writeDesk(pieces);
+  }
+  revalidatePath("/desk");
+  redirect("/desk/scripts");
+}
+
+export async function rejectScript(formData: FormData) {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const pieces = readDesk();
+  const piece = findPiece(pieces, String(formData.get("id") ?? ""));
+  if (!piece) redirect("/desk/scripts");
+  const reason = String(formData.get("reason") ?? "").trim().slice(0, 180);
+  if (reason) piece.rejections = [...piece.rejections, reason].slice(-12);
+  clearScript(piece);
+  writeDesk(pieces);
+  revalidatePath("/desk/scripts");
+  redirect("/desk/scripts");
 }
 
 export async function writeBriefs() {
@@ -288,6 +332,28 @@ export async function importLayout(formData: FormData) {
   }
   revalidatePath("/desk/layouts");
   redirect(made ? `/desk/layouts?made=${id}` : "/desk/layouts?import=draw");
+}
+
+export async function saveBrandPage(formData: FormData) {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const slug = String(formData.get("slug") ?? "");
+  const doc = brandDoc(slug);
+  if (!doc || !brandFileEditable(slug)) redirect("/desk/brand");
+  const upload = formData.get("file");
+  let text = String(formData.get("markdown") ?? "");
+  if (upload instanceof File && upload.size > 0) {
+    const name = upload.name.toLowerCase();
+    if (!name.endsWith(".md")) redirect(`/desk/brand/${slug}?saved=type`);
+    if (upload.size > 200_000) redirect(`/desk/brand/${slug}?saved=big`);
+    text = await upload.text();
+  }
+  if (!text.trim()) redirect(`/desk/brand/${slug}?saved=empty`);
+  if (text.length > 200_000) redirect(`/desk/brand/${slug}?saved=big`);
+  writeBrandFile(doc.file, text);
+  revalidatePath(`/desk/brand/${slug}`);
+  revalidatePath("/desk/brand");
+  redirect(`/desk/brand/${slug}?saved=1`);
 }
 
 export async function saveLoopLesson(formData: FormData) {

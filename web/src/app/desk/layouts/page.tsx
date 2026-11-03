@@ -53,15 +53,15 @@ export default async function LayoutsPage({ searchParams }: { searchParams: Prom
     <DeskFrame person={person} current="layouts">
       <p className="file-no">Layouts</p>
       <h2 className="page-title">The board, in one place.</h2>
-      <p className="split">Every download sits here together. This is the look. Edit opens that picture on its own page.</p>
+      <p className="split">Every download sits here together. This is the look. Edit opens that picture in a new tab.</p>
       {added.length > 0 ? (
         <ul className="vision-wall">
           {added.map((pin) => (
             <li key={pin.file} className="vision-card">
-              <a href={`/desk/editor/${encodeURIComponent(pin.file)}`}>
+              <a href={`/desk/edit/${encodeURIComponent(pin.file)}`} target="_blank" rel="noopener">
                 <img src={pin.src} alt="" />
               </a>
-              <a className="edit-link" href={`/desk/editor/${encodeURIComponent(pin.file)}`}>
+              <a className="edit-link" href={`/desk/edit/${encodeURIComponent(pin.file)}`} target="_blank" rel="noopener">
                 {existsSync(editPath(pin.file).replace(/\.jpg$/, ".scene.json")) ? "Edited" : "Edit"}
               </a>
             </li>

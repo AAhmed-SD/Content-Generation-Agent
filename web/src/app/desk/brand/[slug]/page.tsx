@@ -1,23 +1,58 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
+import { saveBrandPage } from "@/app/actions";
 import { DeskFrame } from "@/components/desk-frame";
 import { Markdown } from "@/components/markdown";
-import { brandDoc, readBrandFile } from "@/lib/brand";
+import { PendingButton } from "@/components/pending-button";
+import { brandDoc, brandFileEditable, readBrandFile } from "@/lib/brand";
 import { readSession } from "@/lib/session";
 
-export default async function BrandDocPage({ params }: { params: Promise<{ slug: string }> }) {
+const savedNote: Record<string, string> = {
+  "1": "Saved. The next script reads this file.",
+  empty: "Write something, or upload a markdown file.",
+  type: "Upload a file that ends in .md.",
+  big: "That file is too big.",
+};
+
+export default async function BrandDocPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<{ saved?: string }>;
+}) {
   const person = await readSession();
   if (!person) redirect("/");
   const { slug } = await params;
+  const query = await searchParams;
   const doc = brandDoc(slug);
   if (!doc) notFound();
+  const text = readBrandFile(doc.file);
+  const editable = brandFileEditable(slug);
+  const note = savedNote[query.saved ?? ""] ?? "";
 
   return (
-    <DeskFrame person={person} current="brand">
+    <DeskFrame person={person} current="brand" doc={slug}>
       <p className="file-no">
         <Link href="/desk/brand">Brand</Link> · {doc.group}
       </p>
-      <Markdown text={readBrandFile(doc.file)} />
+      <Markdown text={text} />
+      {editable ? (
+        <form action={saveBrandPage} className="stack-form brand-edit">
+          <input type="hidden" name="slug" value={slug} />
+          <label>
+            Markdown
+            <textarea className="md-edit" name="markdown" rows={18} defaultValue={text} spellCheck={false} />
+          </label>
+          <label>
+            Upload a markdown file
+            <input type="file" name="file" accept=".md,text/markdown,text/plain" />
+          </label>
+          <p className="split">An uploaded file is what gets saved.</p>
+          {note ? <p className={query.saved === "1" ? "split" : "error"}>{note}</p> : null}
+          <PendingButton idle="Save" pending="Saving" />
+        </form>
+      ) : null}
     </DeskFrame>
   );
 }

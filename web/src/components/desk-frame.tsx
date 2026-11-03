@@ -1,63 +1,118 @@
-import type { ReactNode } from "react";
+"use client";
+
+import { useState, type ReactNode } from "react";
 import Link from "next/link";
 import { signOut } from "@/app/actions";
 import type { Person } from "@/lib/people";
 
-export type DeskStep = "week" | "layouts" | "editor" | "loop" | "brand";
+export type DeskStep = "research" | "scripts" | "yes" | "posts" | "numbers" | "layouts" | "editor" | "brand" | "week" | "loop";
 
-const groups = [
+const steps = [
+  { href: "/desk/research", step: "research", label: "Research" },
+  { href: "/desk/scripts", step: "scripts", label: "Scripts" },
+  { href: "/desk", step: "yes", label: "Yes" },
+  { href: "/desk/posts", step: "posts", label: "Posts" },
+  { href: "/desk/loop", step: "numbers", label: "Numbers" },
+] as const;
+
+const files = [
   {
-    label: "The week",
+    label: "Brand",
     links: [
-      { href: "/desk", step: "week", label: "This week" },
-      { href: "/desk/layouts", step: "layouts", label: "Layouts" },
-      { href: "/desk/editor", step: "editor", label: "Editor", sub: true },
+      { href: "/desk/brand/brand", slug: "brand", label: "Brand" },
+      { href: "/desk/brand/product-facts", slug: "product-facts", label: "Product facts" },
+      { href: "/desk/layouts", slug: "layouts", label: "Layouts" },
     ],
   },
   {
-    label: "After posting",
-    links: [{ href: "/desk/loop", step: "loop", label: "Numbers" }],
+    label: "Accounts",
+    links: [
+      { href: "/desk/brand/clinical", slug: "clinical", label: "offload.clinical" },
+      { href: "/desk/brand/analytical", slug: "analytical", label: "offload.analytical" },
+      { href: "/desk/brand/mentalhealth", slug: "mentalhealth", label: "offload.mentalhealth" },
+      { href: "/desk/brand/gcsealevel", slug: "gcsealevel", label: "offload.gcsealevel" },
+    ],
   },
   {
-    label: "Reference",
-    links: [{ href: "/desk/brand", step: "brand", label: "Brand" }],
+    label: "Content",
+    links: [
+      { href: "/desk/brand/hook", slug: "hook", label: "Hook" },
+      { href: "/desk/brand/payoff", slug: "payoff", label: "Payoff" },
+      { href: "/desk/brand/still", slug: "still", label: "Still" },
+      { href: "/desk/brand/carousel", slug: "carousel", label: "Carousel" },
+    ],
   },
 ] as const;
 
 export function DeskFrame({
   person,
   current,
+  doc,
   children,
 }: {
   person: Person;
   current?: DeskStep;
+  doc?: string;
   children: ReactNode;
 }) {
+  const [open, setOpen] = useState(true);
   return (
-    <div className="sheet desk-shell">
+    <div className={open ? "sheet desk-shell" : "sheet desk-shell is-shut"}>
       <aside className="side">
         <p className="wordmark">
-          offload <span>desk</span>
+          {open ? (
+            <>
+              offload <span>desk</span>
+            </>
+          ) : (
+            "o"
+          )}
         </p>
-        <nav aria-label="Desk">
-          {groups.map((group) => (
-            <div key={group.label} className="side-group">
-              <p className="side-label">{group.label}</p>
-              {group.links.map((link) => (
-                <Link key={link.href} href={link.href} className={"sub" in link && link.sub ? "sub" : undefined} aria-current={current === link.step ? "page" : undefined}>
-                  {link.label}
-                </Link>
+        <button type="button" className="text-button side-fold" onClick={() => setOpen((value) => !value)} aria-expanded={open}>
+          {open ? "Hide" : "Show"}
+        </button>
+        {open ? (
+          <nav aria-label="The week">
+            <ol className="side-sequence">
+              {steps.map((link, index) => (
+                <li key={link.href}>
+                  <Link href={link.href} aria-current={current === link.step ? "page" : undefined}>
+                    <span>{index + 1}</span>
+                    {link.label}
+                  </Link>
+                </li>
               ))}
-            </div>
-          ))}
-        </nav>
+            </ol>
+          </nav>
+        ) : null}
+        {open ? (
+          <div className="side-person">
+            <p>
+              <strong>{person.name.split(" ")[0]}</strong>
+            </p>
+            <nav className="side-files" aria-label="Brand files">
+              {files.map((group) => (
+                <div key={group.label}>
+                  <p className="side-label">{group.label}</p>
+                  {group.links.map((link) => (
+                    <Link
+                      key={link.slug}
+                      href={link.href}
+                      className="sub"
+                      aria-current={doc === link.slug || (link.slug === "layouts" && current === "layouts") ? "page" : undefined}
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              ))}
+            </nav>
+          </div>
+        ) : null}
         <div className="who">
-          <p>
-            <strong>{person.name.split(" ")[0]}</strong>
-          </p>
           <form action={signOut}>
             <button type="submit" className="text-button">
-              Sign out
+              {open ? "Sign out" : "Out"}
             </button>
           </form>
         </div>

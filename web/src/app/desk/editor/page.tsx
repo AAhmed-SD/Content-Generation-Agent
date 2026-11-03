@@ -26,7 +26,7 @@ export default async function EditorPage({ searchParams }: { searchParams: Promi
   const asked = (Array.isArray(query.open) ? query.open : (query.open ?? "").split(",")).map((name) => name.trim()).filter(Boolean);
   const pins = boardPins();
   const open = asked.flatMap((name) => pins.filter((pin) => pin.file === name));
-  if (open.length === 1) redirect(`/desk/editor/${encodeURIComponent(open[0].file)}`);
+  if (open.length === 1) redirect(`/desk/edit/${encodeURIComponent(open[0].file)}`);
 
   return (
     <DeskFrame person={person} current="editor">
@@ -36,7 +36,7 @@ export default async function EditorPage({ searchParams }: { searchParams: Promi
       <ul className="layout-grid">
         {pins.map((pin) => (
           <li key={pin.file}>
-            <a href={`/desk/editor/${encodeURIComponent(pin.file)}`}>
+            <a href={`/desk/edit/${encodeURIComponent(pin.file)}`} target="_blank" rel="noopener">
               <img src={`/board/${encodeURIComponent(pin.file)}`} alt="" />
               <strong>{pin.name}</strong>
             </a>

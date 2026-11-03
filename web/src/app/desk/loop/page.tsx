@@ -17,7 +17,7 @@ export default async function LoopPage({ searchParams }: { searchParams: Promise
   const csvError = csvMessage(query.csv);
 
   return (
-    <DeskFrame person={person} current="loop">
+    <DeskFrame person={person} current="numbers">
       <p className="file-no">After posting · {WEEK}</p>
       <h2 className="page-title">What the posts did.</h2>
       <p className="split">

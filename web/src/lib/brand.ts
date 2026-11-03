@@ -1,4 +1,4 @@
-import { readdirSync, readFileSync } from "node:fs";
+import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 const root = path.join(process.cwd(), "..", "brand");
@@ -15,6 +15,10 @@ export const brandDocs = [
   { slug: "analytical", file: "niches/analytical.md", title: "offload.analytical", group: "Niches" },
   { slug: "mentalhealth", file: "niches/mentalhealth.md", title: "offload.mentalhealth", group: "Niches" },
   { slug: "gcsealevel", file: "niches/gcsealevel.md", title: "offload.gcsealevel", group: "Niches" },
+  { slug: "hook", file: "posts/hook.md", title: "Hook", group: "Content" },
+  { slug: "payoff", file: "posts/payoff.md", title: "Payoff", group: "Content" },
+  { slug: "still", file: "posts/still.md", title: "Still", group: "Content" },
+  { slug: "carousel", file: "posts/carousel.md", title: "Carousel", group: "Content" },
 ] as const;
 
 export type BrandSlug = (typeof brandDocs)[number]["slug"];
@@ -40,6 +44,29 @@ export function brandDoc(slug: string) {
 
 export function readBrandFile(file: string) {
   return readFileSync(path.join(root, file), "utf8");
+}
+
+const editableFiles = new Set([
+  "brand.md",
+  "product-facts.md",
+  "posts/hook.md",
+  "posts/payoff.md",
+  "posts/still.md",
+  "posts/carousel.md",
+]);
+
+export function brandFileEditable(slug: string) {
+  const doc = brandDocs.find((item) => item.slug === slug);
+  return Boolean(doc && editableFiles.has(doc.file));
+}
+
+export function writeBrandFile(file: string, text: string) {
+  if (!editableFiles.has(file)) throw new Error("This file is not editable.");
+  const full = path.resolve(root, file);
+  const folder = path.resolve(root);
+  if (full !== path.join(folder, file)) throw new Error("This file is not editable.");
+  const clean = text.replace(/^\uFEFF/, "").replace(/\0/g, "").replace(/\r\n/g, "\n");
+  writeFileSync(full, clean.endsWith("\n") ? clean : `${clean}\n`, "utf8");
 }
 
 export function section(markdown: string, heading: string) {

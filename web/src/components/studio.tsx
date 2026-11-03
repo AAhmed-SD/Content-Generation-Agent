@@ -7,10 +7,12 @@ import {
   addText,
   align,
   booleanOp,
+  copySelection,
   createScene,
   findLayer,
   groupLayers,
   hitTest,
+  pasteLayers,
   placeImage,
   removeLayers,
   reorder,
@@ -242,15 +244,40 @@ export function Studio({ file, title, person }: { file: string; title: string; p
 
   useEffect(() => {
     const onPaste = (event: ClipboardEvent) => {
+      const typing = document.activeElement instanceof HTMLInputElement || document.activeElement instanceof HTMLTextAreaElement;
+      if (typing) return;
       const image = [...(event.clipboardData?.items ?? [])].find((item) => item.type.startsWith("image/"));
       const blob = image?.getAsFile();
-      if (!blob) return;
+      if (blob) {
+        event.preventDefault();
+        void placeBlob(blob);
+        return;
+      }
+      const pasted = readLayerClipboard(event.clipboardData?.getData("text/plain") ?? "");
+      const layers = pasted.length ? pasted : layerClipboard;
+      if (!layers.length || !scene) return;
       event.preventDefault();
-      void placeBlob(blob);
+      setScene(pasteLayers(scene, layers));
     };
     const onKey = (event: KeyboardEvent) => {
       const typing = document.activeElement instanceof HTMLInputElement || document.activeElement instanceof HTMLTextAreaElement;
       if (typing || !scene) return;
+      const command = event.metaKey || event.ctrlKey;
+      if (command && event.key.toLowerCase() === "c") {
+        const layers = copySelection(scene);
+        if (!layers.length) return;
+        event.preventDefault();
+        layerClipboard = layers;
+        void navigator.clipboard.writeText(JSON.stringify({ kind: "offload-layers", layers })).catch(() => undefined);
+        return;
+      }
+      if (command && event.key.toLowerCase() === "d") {
+        const layers = copySelection(scene);
+        if (!layers.length) return;
+        event.preventDefault();
+        setScene(pasteLayers(scene, layers));
+        return;
+      }
       if ((event.key === "Backspace" || event.key === "Delete") && scene.selection.length) {
         setScene(removeLayers(scene, scene.selection));
       }
@@ -388,7 +415,7 @@ export function Studio({ file, title, person }: { file: string; title: string; p
   }
 
   const exportPng = async () => {
-    await document.fonts.ready;
+    await ensureExportFonts(scene);
     const output = scene.artboard.w * 2 > 4096 || scene.artboard.h * 2 > 4096 ? 1 : 2;
     const canvas = document.createElement("canvas");
     canvas.width = Math.round(scene.artboard.w * output);
@@ -413,6 +440,15 @@ export function Studio({ file, title, person }: { file: string; title: string; p
   return (
     <section className="studio">
       <header className="studio-top">
+        <span className="art-font-serif" hidden>
+          Instrument Serif
+        </span>
+        <span className="art-font-sans" hidden>
+          Instrument Sans
+        </span>
+        <span className="art-font-script" hidden>
+          Caveat
+        </span>
         <a href="/desk/layouts">Layouts</a>
         <strong>{title}</strong>
         <span>{Math.round(scale * 100)}%</span>
@@ -432,6 +468,9 @@ export function Studio({ file, title, person }: { file: string; title: string; p
       </header>
       <div className="studio-context">
         <span>{selected ? selected.name : scene.selection.length > 1 ? `${scene.selection.length} selected` : "No selection"}</span>
+        <button type="button" disabled={!scene.selection.length} onClick={() => setScene(pasteLayers(scene, copySelection(scene)))}>
+          Duplicate
+        </button>
         <button type="button" disabled={scene.selection.length < 2} onClick={() => setScene(groupLayers(scene))}>
           Group
         </button>
@@ -715,7 +754,7 @@ async function drawLayer(ctx: CanvasRenderingContext2D, layer: Layer, ox: number
     } else ctx.fillRect(0, 0, layer.w, layer.h);
   } else if (layer.type === "text") {
     ctx.fillStyle = layer.fill;
-    ctx.font = `${layer.size}px ${canvasFont(layer.font)}`;
+    ctx.font = canvasFace(layer.font, layer.size);
     ctx.textBaseline = "top";
     ctx.fillText(layer.text, 0, 0);
   } else if (layer.type === "image" && layer.src) {
@@ -845,13 +884,50 @@ function dataUrl(blob: Blob) {
   });
 }
 
-function canvasFont(font: Layer["font"]) {
+let layerClipboard: Layer[] = [];
+
+function readLayerClipboard(text: string) {
+  try {
+    const parsed = JSON.parse(text) as { kind?: string; layers?: Layer[] };
+    if (parsed.kind !== "offload-layers" || !Array.isArray(parsed.layers)) return [];
+    return parsed.layers.filter((layer) => layer && typeof layer === "object" && typeof layer.type === "string");
+  } catch {
+    return [];
+  }
+}
+
+function canvasFamily(font: Layer["font"]) {
+  const probe = document.querySelector(`.art-font-${font}`);
+  const measured = probe ? getComputedStyle(probe).fontFamily : "";
   const token = font === "sans" ? "--font-sans" : font === "script" ? "--font-script" : "--font-serif";
-  const family = getComputedStyle(document.documentElement).getPropertyValue(token).trim();
-  if (family) return family;
-  if (font === "sans") return "Instrument Sans, sans-serif";
-  if (font === "script") return "Caveat, cursive";
-  return "Instrument Serif, serif";
+  const variable = getComputedStyle(document.documentElement).getPropertyValue(token);
+  const first = (measured || variable).split(",")[0]?.trim().replaceAll('"', "") ?? "";
+  if (first && !first.startsWith("var(")) return `'${first}'`;
+  if (font === "sans") return "'Instrument Sans'";
+  if (font === "script") return "'Caveat'";
+  return "'Instrument Serif'";
+}
+
+function canvasFace(font: Layer["font"], size: number) {
+  const weight = font === "script" ? 500 : 400;
+  return `${weight} ${Math.max(1, size)}px ${canvasFamily(font)}`;
+}
+
+async function ensureExportFonts(scene: Scene) {
+  const faces = new Set<string>([
+    canvasFace("serif", 64),
+    canvasFace("sans", 64),
+    canvasFace("script", 64),
+  ]);
+  const walk = (layers: Layer[]) => {
+    for (const layer of layers) {
+      if (layer.type === "text" && !layer.src) faces.add(canvasFace(layer.font, layer.size));
+      walk(layer.children);
+    }
+  };
+  walk(scene.layers);
+  await Promise.all([...faces].map((face) => document.fonts.load(face).catch(() => [])));
+  await document.fonts.ready;
 }
 
 function loadImage(src: string) {

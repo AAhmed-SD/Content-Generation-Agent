@@ -3,6 +3,9 @@ node_modules
 .env*
 web/data/*.json
 web/data/renders
+web/data/prepare.lock
+web/data/render.queue.lock
+web/data/research-hold.txt
 remotion/node_modules
 remotion/out
 tools/.venv

@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
-import { saveUrl, stampPiece } from "@/app/actions";
+import { renderPiece, saveUrl, stampPiece } from "@/app/actions";
 import { PendingButton } from "@/components/pending-button";
 import { DeskFrame } from "@/components/desk-frame";
 import { RenderWatch } from "@/components/render-watch";
 import { canStamp, findPiece, isReady, needsScript, nicheById, readDesk } from "@/lib/desk";
+import { layoutFor } from "@/lib/pin-layouts";
 import { personName, type PersonId } from "@/lib/people";
 import { readSession } from "@/lib/session";
 
@@ -27,7 +28,7 @@ export default async function PiecePage({
   const waitingOn = piece.stamps.includes(person.id) ? other : piece.lead;
 
   return (
-    <DeskFrame person={person} current="week">
+    <DeskFrame person={person} current="yes">
       <RenderWatch active={needsScript(piece) || piece.render.status === "rendering"} />
       <article className="piece">
         <p className="file-no">
@@ -35,6 +36,7 @@ export default async function PiecePage({
         </p>
         <p className="status-line">
           <span>{niche.who}</span>
+          {piece.format === "still" ? <span>{layoutFor(piece.niche).name}</span> : null}
         </p>
         <p className="split">{niche.about}</p>
 
@@ -53,6 +55,14 @@ export default async function PiecePage({
         </div>
 
         {needsScript(piece) ? <p className="split">The desk is still writing this.</p> : null}
+        {piece.render.status === "rendering" ? <p className="split">The picture is being made.</p> : null}
+        {piece.render.status === "failed" ? (
+          <form action={renderPiece} className="stack-form">
+            <p className="error">{piece.render.error || "The picture did not finish."}</p>
+            <input type="hidden" name="id" value={piece.id} />
+            <PendingButton idle="Make it again" pending="Starting" />
+          </form>
+        ) : null}
 
         <section className="stamps" aria-label="Approval">
           <p className={piece.stamps.includes(piece.lead) ? "stamp on" : "stamp"}>{personName(piece.lead)}</p>

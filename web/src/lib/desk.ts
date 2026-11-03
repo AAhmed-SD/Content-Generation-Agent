@@ -53,6 +53,8 @@ export type Piece = {
   draftedFrom: string;
   metrics: Record<Checkpoint, MetricRow>;
   script: CardScript;
+  approved: boolean;
+  rejections: string[];
   render: RenderInfo;
 };
 
@@ -128,6 +130,8 @@ function piece(
       beats: [line, note, ""],
       source: "template",
     },
+    approved: false,
+    rejections: [],
     render: { status: "idle", file: "", error: "", at: "" },
   };
 }
@@ -164,6 +168,8 @@ export function normalizePiece(input: Piece): Piece {
       "72h": metricRow(input.metrics?.["72h"]),
       "7d": metricRow(input.metrics?.["7d"]),
     },
+    approved: Boolean(input.approved) && fromClaude,
+    rejections: Array.isArray(input.rejections) ? input.rejections.map(String).map((reason) => reason.trim()).filter(Boolean).slice(0, 12) : [],
     script: fromClaude
       ? {
           onScreen: input.script.onScreen || input.line,
@@ -211,6 +217,24 @@ const oldLines = new Set([
 
 function openingFor(id: string) {
   return seed().find((piece) => piece.id === id);
+}
+
+export function clearScript(piece: Piece) {
+  const opening = openingFor(piece.id);
+  if (!opening) return;
+  piece.line = opening.line;
+  piece.note = opening.note;
+  piece.script = {
+    onScreen: opening.line,
+    narration: opening.note,
+    beats: [opening.line, opening.note, ""],
+    source: "template",
+  };
+  piece.approved = false;
+  piece.draftedFrom = "";
+  piece.researchNote = "";
+  piece.render = { status: "idle", file: "", error: "", at: "" };
+  fillCaptions(piece);
 }
 
 export function needsScript(piece: Piece) {
@@ -274,6 +298,7 @@ export function findPiece(pieces: Piece[], id: string) {
 }
 
 export function canStamp(piece: Piece, person: PersonId) {
+  if (!piece.approved || piece.script.source !== "claude") return false;
   if (piece.stamps.includes(person)) return false;
   if (piece.stamps.length === 0) return piece.lead === person;
   return piece.needsSecond;

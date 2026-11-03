@@ -14,9 +14,9 @@ Claude writes the script afterwards, from the brand files and that brief. The re
 
 ## How a spec becomes a picture
 
-The piece carries `line`, `note`, `script.onScreen`, `script.narration`, and `script.beats`. Render writes `web/data/renders/{id}.props.json` with the OffloadCard slots and starts `remotion/render-job.mjs`. The composition id is `OffloadCard`. A still is one frame. A video is 180 frames. A carousel is 270. The file lands in `web/data/renders`.
+The piece carries `line`, `note`, `script.onScreen`, `script.narration`, and `script.beats`. Those words come from the brand files and the week’s brief. Render writes `web/data/renders/{id}.props.json` and starts `remotion/render-job.mjs`. A still is `OffloadPin`, one frame, in that account’s layout: clinical is the folder, analytical is the calculator, mental health is the circled day, GCSE and A-level is the file. A video is `OffloadCard`, 180 frames. A carousel is `OffloadCard`, 270 frames. The file lands in `web/data/renders`.
 
-There is no render queue beyond that one process. Status sits on `piece.render`: idle, rendering, ready, or failed.
+One card renders at a time. When that process finishes, it starts the next card that already has a Claude script and is still idle. A render that stays on rendering for twenty minutes is marked failed, and the queue moves on. Status sits on `piece.render`: idle, rendering, ready, or failed.
 
 ## Approval and the pack
 

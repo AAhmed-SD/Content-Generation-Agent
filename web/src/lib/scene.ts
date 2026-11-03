@@ -129,6 +129,19 @@ export function reorder(scene: Scene, id: string, direction: "forward" | "back")
   return next;
 }
 
+export function copySelection(scene: Scene) {
+  return scene.layers.filter((layer) => scene.selection.includes(layer.id)).map((layer) => structuredClone(layer));
+}
+
+export function pasteLayers(scene: Scene, layers: Layer[]) {
+  if (!layers.length) return scene;
+  const next = clone(scene);
+  const copies = layers.map((layer) => retarget(layer, 24, 24));
+  next.layers.push(...copies);
+  next.selection = copies.map((layer) => layer.id);
+  return next;
+}
+
 export function removeLayers(scene: Scene, ids: string[]) {
   const next = clone(scene);
   next.layers = next.layers.filter((layer) => !ids.includes(layer.id) || layer.locked);
@@ -325,6 +338,16 @@ function subtractRect(back: Layer, front: Layer) {
 
 function clone(scene: Scene): Scene {
   return structuredClone(scene);
+}
+
+function retarget(layer: Layer, dx: number, dy: number): Layer {
+  const next = structuredClone(layer);
+  next.id = nid();
+  next.x += dx;
+  next.y += dy;
+  next.locked = false;
+  next.children = next.children.map((child) => retarget(child, 0, 0));
+  return next;
 }
 
 function nid() {
