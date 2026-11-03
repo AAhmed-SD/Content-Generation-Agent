@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { DeskFrame } from "@/components/desk-frame";
+import { PieceMedia } from "@/components/piece-media";
 import { isReady, niches, readDesk } from "@/lib/desk";
 import { WEEK } from "@/lib/pipeline";
 import { readSession } from "@/lib/session";
@@ -28,7 +29,8 @@ export default async function PostsPage() {
               {cards.length ? (
                 <ul className="yes-list">
                   {cards.map((piece) => (
-                    <li key={piece.id}>
+                    <li key={piece.id} className={piece.render.status === "ready" ? "with-media" : undefined}>
+                      <PieceMedia piece={piece} />
                       <Link href={`/desk/${piece.niche}/${piece.id}`}>
                         <strong>{piece.script.onScreen || piece.line}</strong>
                       </Link>
@@ -39,7 +41,7 @@ export default async function PostsPage() {
                   ))}
                 </ul>
               ) : (
-                <p className="split">Nothing in this account has both the script and the yes.</p>
+                <p className="split">Nothing in this account has both the script and the approval.</p>
               )}
             </details>
           );

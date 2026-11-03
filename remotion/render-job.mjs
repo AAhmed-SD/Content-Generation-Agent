@@ -19,7 +19,7 @@ function update(status, error) {
 }
 
 const props = JSON.parse(readFileSync(propsPath, "utf8"));
-const composition = props.composition === "OffloadPin" ? "OffloadPin" : "OffloadCard";
+const composition = props.composition === "OffloadPin" ? "OffloadPin" : props.composition === "FastIssues" ? "FastIssues" : "OffloadCard";
 const still = composition === "OffloadPin" || props.format === "still";
 const args = still
   ? ["remotion", "still", "src/index.ts", composition, outputPath, "--frame=0", `--props=${propsPath}`]

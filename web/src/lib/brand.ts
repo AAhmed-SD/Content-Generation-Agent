@@ -19,6 +19,8 @@ export const brandDocs = [
   { slug: "payoff", file: "posts/payoff.md", title: "Payoff", group: "Content" },
   { slug: "still", file: "posts/still.md", title: "Still", group: "Content" },
   { slug: "carousel", file: "posts/carousel.md", title: "Carousel", group: "Content" },
+  { slug: "motion", file: "motion.md", title: "Motion", group: "Picture" },
+  { slug: "sound", file: "sound.md", title: "Sound", group: "Picture" },
 ] as const;
 
 export type BrandSlug = (typeof brandDocs)[number]["slug"];
@@ -53,6 +55,8 @@ const editableFiles = new Set([
   "posts/payoff.md",
   "posts/still.md",
   "posts/carousel.md",
+  "motion.md",
+  "sound.md",
 ]);
 
 export function brandFileEditable(slug: string) {

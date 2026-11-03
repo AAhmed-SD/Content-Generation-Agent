@@ -1,21 +1,18 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { runEditorTool, type EditorCall } from "@/lib/editor-tools";
+import { downloadNote } from "@/lib/references";
 import { personName, type PersonId } from "@/lib/people";
 import {
   addShape,
   addText,
-  align,
-  booleanOp,
   copySelection,
   createScene,
   findLayer,
-  groupLayers,
   hitTest,
   pasteLayers,
   placeImage,
-  removeLayers,
-  reorder,
   setStyle,
   type Layer,
   type Scene,
@@ -272,14 +269,15 @@ export function Studio({ file, title, person }: { file: string; title: string; p
         return;
       }
       if (command && event.key.toLowerCase() === "d") {
-        const layers = copySelection(scene);
-        if (!layers.length) return;
+        if (!scene.selection.length) return;
         event.preventDefault();
-        setScene(pasteLayers(scene, layers));
+        const result = runEditorTool(scene, { tool: "duplicate" }, "person");
+        if (result.scene) setScene(result.scene);
         return;
       }
       if ((event.key === "Backspace" || event.key === "Delete") && scene.selection.length) {
-        setScene(removeLayers(scene, scene.selection));
+        const result = runEditorTool(scene, { tool: "delete" }, "person");
+        if (result.scene) setScene(result.scene);
       }
     };
     window.addEventListener("paste", onPaste);
@@ -295,7 +293,15 @@ export function Studio({ file, title, person }: { file: string; title: string; p
   const fill = selected && selected.type !== "image" && selected.type !== "group" ? selected.fill : nextFill;
   useEffect(() => setHexDraft(fill), [fill]);
 
-  if (!scene) return <p className="split">{status}</p>;
+  const look = downloadNote(file);
+  if (!scene) {
+    return (
+      <p className="split">
+        {status}
+        {" This download is the look. Keep the object. Change the sentence."}
+      </p>
+    );
+  }
 
   const local = (event: { clientX: number; clientY: number }) => {
     const rect = boardRef.current?.getBoundingClientRect();
@@ -437,6 +443,11 @@ export function Studio({ file, title, person }: { file: string; title: string; p
     download(project, `${title}.offload.json`);
   }
 
+  const apply = (call: EditorCall) => {
+    const result = runEditorTool(scene, call, "person");
+    if (result.scene) setScene(result.scene);
+  };
+
   return (
     <section className="studio">
       <header className="studio-top">
@@ -451,6 +462,10 @@ export function Studio({ file, title, person }: { file: string; title: string; p
         </span>
         <a href="/desk/layouts">Layouts</a>
         <strong>{title}</strong>
+        <span>
+          This download is the look. Keep the object. Change the sentence.
+          {look ? ` ${look.rule}` : ""}
+        </span>
         <span>{Math.round(scale * 100)}%</span>
         <span className="studio-status">
           {status}
@@ -468,23 +483,23 @@ export function Studio({ file, title, person }: { file: string; title: string; p
       </header>
       <div className="studio-context">
         <span>{selected ? selected.name : scene.selection.length > 1 ? `${scene.selection.length} selected` : "No selection"}</span>
-        <button type="button" disabled={!scene.selection.length} onClick={() => setScene(pasteLayers(scene, copySelection(scene)))}>
+        <button type="button" disabled={!scene.selection.length} onClick={() => apply({ tool: "duplicate" })}>
           Duplicate
         </button>
-        <button type="button" disabled={scene.selection.length < 2} onClick={() => setScene(groupLayers(scene))}>
+        <button type="button" disabled={scene.selection.length < 2} onClick={() => apply({ tool: "group" })}>
           Group
         </button>
-        <button type="button" disabled={shapes.length !== 2} onClick={() => setScene(booleanOp(scene, "add"))}>
+        <button type="button" disabled={shapes.length !== 2} onClick={() => apply({ tool: "boolean", op: "add" })}>
           Add
         </button>
-        <button type="button" disabled={shapes.length !== 2} onClick={() => setScene(booleanOp(scene, "subtract"))}>
+        <button type="button" disabled={shapes.length !== 2} onClick={() => apply({ tool: "boolean", op: "subtract" })}>
           Subtract
         </button>
-        <button type="button" disabled={shapes.length !== 2} onClick={() => setScene(booleanOp(scene, "intersect"))}>
+        <button type="button" disabled={shapes.length !== 2} onClick={() => apply({ tool: "boolean", op: "intersect" })}>
           Intersect
         </button>
         {(["left", "center", "right", "top", "middle", "bottom"] as const).map((edge) => (
-          <button key={edge} type="button" disabled={!scene.selection.length} onClick={() => setScene(align(scene, edge))}>
+          <button key={edge} type="button" disabled={!scene.selection.length} onClick={() => apply({ tool: "align", edge })}>
             {edge}
           </button>
         ))}
@@ -556,7 +571,7 @@ export function Studio({ file, title, person }: { file: string; title: string; p
             step={0.01}
             disabled={!selected}
             value={selected?.opacity ?? 1}
-            onChange={(event) => selected && setScene(setStyle(scene, selected.id, { opacity: Number(event.target.value) }))}
+            onChange={(event) => selected && apply({ tool: "setOpacity", id: selected.id, opacity: Number(event.target.value) })}
           />
         </label>
         <div className="swatches">
@@ -574,17 +589,17 @@ export function Studio({ file, title, person }: { file: string; title: string; p
         <ul className="layer-list">
           {[...scene.layers].reverse().map((layer) => (
             <li key={layer.id}>
-              <button type="button" className={scene.selection.includes(layer.id) ? "is-chosen" : ""} onClick={() => setScene({ ...scene, selection: [layer.id] })}>
+              <button type="button" className={scene.selection.includes(layer.id) ? "is-chosen" : ""} onClick={() => apply({ tool: "select", id: layer.id })}>
                 {layer.hidden ? "Hidden " : ""}
                 {layer.name}
               </button>
-              <button type="button" onClick={() => setScene(setStyle(scene, layer.id, { hidden: !layer.hidden }))} aria-label={layer.hidden ? "Show layer" : "Hide layer"}>
+              <button type="button" onClick={() => apply({ tool: "hide", id: layer.id, hidden: !layer.hidden })} aria-label={layer.hidden ? "Show layer" : "Hide layer"}>
                 Eye
               </button>
-              <button type="button" onClick={() => setScene(reorder(scene, layer.id, "forward"))} aria-label="Bring forward">
+              <button type="button" onClick={() => apply({ tool: "reorder", id: layer.id, direction: "forward" })} aria-label="Bring forward">
                 Up
               </button>
-              <button type="button" onClick={() => setScene(reorder(scene, layer.id, "back"))} aria-label="Send back">
+              <button type="button" onClick={() => apply({ tool: "reorder", id: layer.id, direction: "back" })} aria-label="Send back">
                 Down
               </button>
             </li>

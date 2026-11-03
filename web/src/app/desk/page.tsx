@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { stampPiece } from "@/app/actions";
 import { DeskFrame } from "@/components/desk-frame";
 import { PendingButton } from "@/components/pending-button";
+import { PieceMedia } from "@/components/piece-media";
 import { RenderWatch } from "@/components/render-watch";
 import { canStamp, isReady, needsScript, niches, readDesk, type NicheId, type Piece } from "@/lib/desk";
 import { personName, type PersonId } from "@/lib/people";
@@ -25,8 +26,8 @@ export default async function DeskPage() {
   return (
     <DeskFrame person={person} current="yes">
       <RenderWatch active={making.length > 0} />
-      <p className="file-no">This week</p>
-      <h2 className="page-title">Say yes, then post.</h2>
+      <p className="file-no">3 · Approval</p>
+      <h2 className="page-title">Approve it, then post.</h2>
       <p className="split">Your name is on the cards you can stamp. Medicine and time still need both of you.</p>
       {visible === 0 ? <p className="split">Nothing is waiting on you. Layouts and numbers are in the sidebar.</p> : null}
       {niches.map((niche) => (
@@ -101,14 +102,15 @@ function CardRow({
   const other = piece.lead === "hadiqa" ? "laiba" : "hadiqa";
   const waitingOn = piece.stamps.length === 0 ? piece.lead : personId && piece.stamps.includes(personId) ? other : piece.lead;
   return (
-    <li>
+    <li className={piece.render.status === "ready" ? "with-media" : undefined}>
+      <PieceMedia piece={piece} />
       <Link href={`/desk/${piece.niche}/${piece.id}`}>
         <strong>{piece.script.onScreen || piece.line}</strong>
       </Link>
       {action === "yes" ? (
         <form action={stampPiece}>
           <input type="hidden" name="id" value={piece.id} />
-          <PendingButton idle="Yes" pending="Saving" />
+          <PendingButton idle="Approve" pending="Saving" />
         </form>
       ) : action === "wait" ? (
         <span className="quiet-state">With {personName(waitingOn).split(" ")[0]}</span>

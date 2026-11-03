@@ -7,7 +7,7 @@ import { readSession } from "@/lib/session";
 export default async function BrandPage() {
   const person = await readSession();
   if (!person) redirect("/");
-  const groups = ["System", "Niches", "Content", "Generated", "This week"] as const;
+  const groups = ["System", "Niches", "Content", "Picture", "Generated", "This week"] as const;
   const docs = [...brandDocs, ...listBriefs()];
 
   return (

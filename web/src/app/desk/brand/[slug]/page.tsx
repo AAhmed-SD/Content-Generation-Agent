@@ -29,7 +29,10 @@ export default async function BrandDocPage({
   if (!doc) notFound();
   const text = readBrandFile(doc.file);
   const editable = brandFileEditable(slug);
-  const note = savedNote[query.saved ?? ""] ?? "";
+  const note =
+    query.saved === "1" && (slug === "motion" || slug === "sound")
+      ? "Saved."
+      : (savedNote[query.saved ?? ""] ?? "");
 
   return (
     <DeskFrame person={person} current="brand" doc={slug}>

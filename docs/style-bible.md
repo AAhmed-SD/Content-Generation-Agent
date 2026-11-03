@@ -1,6 +1,8 @@
 # Style bible
 
-Cream paper, black ink, one object, one sentence. The word offload is the only blue, and it is script. Red is a stamp. Kraft is the folder, when a folder is the object. A black ground is only for a post that withholds something. Motion is paper leaving a drawer: a short rise, then still. Nothing spins and nothing flashes.
+The downloads in `web/public/board` are the end goal. A post matches one of those pictures. It does not match a rectangle redrawn from the tokens.
+
+Cream paper, black ink, one object, one sentence. The word offload is blue, and it appears once. On the type poster and the calculator it is script and it overlaps the sentence. On the calendar it is small and set at the bottom. A stamp is a rubber stamp on the object. The file layout is a red folder. Kraft is the photographed envelope, with grain, a clasp, and graph paper behind it. A black ground is only for a post that withholds something.
 
 ## Tokens
 
@@ -21,14 +23,23 @@ Type on the desk is Instrument Sans, Instrument Serif, and Caveat for the script
 
 ## Motion
 
-`OffloadCard` eases the sentence up with a spring (`damping` 18, `mass` 0.8) over the first moments of a video or a carousel beat. The note fades from frame 18 to frame 36. A still does not fade. The note is opaque on the only frame.
+Move the object that is already in the layout. A card can come forward out of the drawer. A note can land on the envelope. The camera can settle. The sentence can arrive. Do not build the folder, the calculator, the file, or the drawer out of flat blocks, and do not spin or flash.
 
-## What the references were for
+`OffloadCard` still eases a sentence up with a spring. That film is a study. It is not a layout, and it is not what gets posted.
 
-The Pinterest board was a paper system: a drawer, a folder, an index card, a calendar, a key, a calculator. One object in frame. The sentence changes. The object does not. The board also held pictures that are not Offload: a K-pop tray, a cat newspaper, a dog-office poster, a fashion flat, a 3D desk, a message thread, a Lego scene, a product collage. Those stay out of the generator.
+## The look
 
-The TikTok reference is the same paper leaving a drawer, read in one breath, then the fact. It is not a character performance. There is no face to time to the audio.
+Every file in `web/public/board` is a layout. The sentence on it can change. The object in the download stays. These six already have a written note of what has to survive:
 
-## Objects by niche
+| File | Layout | What has to survive |
+| --- | --- | --- |
+| `pin-folder.jpg` | Confidential folder, clinical | Kraft envelope, graph paper behind, CONFIDENTIAL, one sentence, a torn handwritten note, a rubber stamp |
+| `pin-calculator.jpg` | The calculator, analytical | Huge black type, blue script offload, a real calculator, the note inside the LCD |
+| `pin-calendar.jpg` | Circled day, time | Blue handwriting, one day circled in blue, offload small and blue at the bottom |
+| `pin-file.jpg` | The file, GCSE and A-level | Red file, white sentence, a clipped cream card, three labeled rows |
+| `pin-drawer.jpg` | The drawer, any account | The drawer, one index card pulled forward, the headline above, the sentence on the card |
+| `pin-type.jpg` | Big type, any account | Enormous black type, blue script cutting through it, one small line at the bottom |
 
-Clinical is the folder. Analytical is the calculator. Mental health is the circled day, or the card in the drawer. GCSE and A-level is the file. The key, the index card, and the black ground are for any account. The black ground is the one that withholds the fact. `OffloadPin` draws these nine layouts at Pinterest size, 1000 by 1500. The words change. The layout does not. There is still no pose and no face.
+A download without a row in that table is still the end goal. The drawn studies under the wall are not.
+
+There is no face and no pose. `remotion/assets/` is empty.

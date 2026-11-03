@@ -1,6 +1,10 @@
 import { CalculateMetadataFunction, Composition } from "remotion";
 import { OffloadPin, pinDefaults } from "./OffloadPin";
 import { PaperCard, type PaperProps } from "./PaperCard";
+import { DownloadSample, EditorialSample, FigureSample } from "./Samples";
+import { ClaudeEditorial } from "./ClaudeEditorial";
+import { GoalCut } from "./GoalCut";
+import { FastIssues, fastIssuesDefaults, fastIssuesDuration } from "./FastIssues";
 
 export const paperDefaults: PaperProps = {
   line: "The list is still open.",
@@ -30,6 +34,23 @@ export const RemotionRoot: React.FC = () => {
       defaultProps={paperDefaults}
       calculateMetadata={calculateMetadata}
     />
+    <Composition id="GoalCut" component={GoalCut} durationInFrames={680} fps={30} width={1920} height={1080} />
+    <Composition
+      id="FastIssues"
+      component={FastIssues}
+      durationInFrames={fastIssuesDuration}
+      fps={30}
+      width={1080}
+      height={1920}
+      defaultProps={fastIssuesDefaults}
+      calculateMetadata={({ props }) => ({
+        durationInFrames: props.durationFrames || Math.max(props.beats.length * props.hold + 54, 90),
+      })}
+    />
+    <Composition id="ClaudeEditorial" component={ClaudeEditorial} durationInFrames={360} fps={30} width={1080} height={1920} />
+    <Composition id="EditorialSample" component={EditorialSample} durationInFrames={270} fps={30} width={1080} height={1920} />
+    <Composition id="DownloadSample" component={DownloadSample} durationInFrames={330} fps={30} width={1080} height={1920} />
+    <Composition id="FigureSample" component={FigureSample} durationInFrames={180} fps={30} width={1080} height={1920} />
     <Composition
       id="OffloadPin"
       component={OffloadPin}

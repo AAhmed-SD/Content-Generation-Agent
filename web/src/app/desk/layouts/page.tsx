@@ -8,6 +8,7 @@ import { PendingButton } from "@/components/pending-button";
 import { niches } from "@/lib/desk";
 import { listPins, pinCaptions, readPin } from "@/lib/pin-draft";
 import { pinLayouts } from "@/lib/pin-picture";
+import { downloadNote } from "@/lib/references";
 import { editPath } from "@/lib/picture-text";
 import { readSession } from "@/lib/session";
 
@@ -52,23 +53,37 @@ export default async function LayoutsPage({ searchParams }: { searchParams: Prom
   return (
     <DeskFrame person={person} current="layouts">
       <p className="file-no">Layouts</p>
-      <h2 className="page-title">The board, in one place.</h2>
-      <p className="split">Every download sits here together. This is the look. Edit opens that picture in a new tab.</p>
+      <h2 className="page-title">The downloads are the look.</h2>
+      <p className="split">Every picture on this wall is the end goal. Edit opens it in a new tab. The drawings underneath are studies, and they are not the picture.</p>
       {added.length > 0 ? (
         <ul className="vision-wall">
-          {added.map((pin) => (
-            <li key={pin.file} className="vision-card">
-              <a href={`/desk/edit/${encodeURIComponent(pin.file)}`} target="_blank" rel="noopener">
-                <img src={pin.src} alt="" />
-              </a>
-              <a className="edit-link" href={`/desk/edit/${encodeURIComponent(pin.file)}`} target="_blank" rel="noopener">
-                {existsSync(editPath(pin.file).replace(/\.jpg$/, ".scene.json")) ? "Edited" : "Edit"}
-              </a>
-            </li>
-          ))}
+          {added.map((pin) => {
+            const note = downloadNote(pin.file);
+            return (
+              <li key={pin.file}>
+                <div className="vision-card">
+                  <a href={`/desk/edit/${encodeURIComponent(pin.file)}`} target="_blank" rel="noopener">
+                    <img src={pin.src} alt="" />
+                  </a>
+                  <a className="edit-link" href={`/desk/edit/${encodeURIComponent(pin.file)}`} target="_blank" rel="noopener">
+                    {existsSync(editPath(pin.file).replace(/\.jpg$/, ".scene.json")) ? "Edited" : "Edit"}
+                  </a>
+                </div>
+                {note ? (
+                  <>
+                    <strong className="look-name">{note.name}</strong>
+                    <em className="look-account">{note.account}</em>
+                    <span className="look-rule">{note.rule}</span>
+                  </>
+                ) : (
+                  <strong className="look-name">{pin.name}</strong>
+                )}
+              </li>
+            );
+          })}
         </ul>
       ) : (
-        <p className="split">No new pins in web/public/board yet. Save a picture there and it opens in the editor.</p>
+        <p className="split">No downloads in web/public/board yet. Save a picture there and it is the look.</p>
       )}
       <form action={importLayout} className="stack-form">
         <label>
@@ -104,7 +119,7 @@ export default async function LayoutsPage({ searchParams }: { searchParams: Prom
           </select>
         </label>
         {problem ? <p className="error">{problem}</p> : null}
-        <PendingButton idle="Make the Offload version" pending="Making" />
+        <PendingButton idle="Draw a study" pending="Drawing" />
       </form>
       {draft ? <PinEditor key={draft.id} draft={draft} captions={pinCaptions(draft)} /> : null}
       {saved.length > 0 ? (
@@ -119,6 +134,8 @@ export default async function LayoutsPage({ searchParams }: { searchParams: Prom
           </ul>
         </section>
       ) : null}
+      <h3>Drawn studies</h3>
+      <p className="split">These drawings are not the picture. The photograph or the poster above is the layout.</p>
       <ul className="layout-grid">
         {layouts.map((layout) => (
           <li key={layout.src}>

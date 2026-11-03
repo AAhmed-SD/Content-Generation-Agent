@@ -10,7 +10,7 @@ export type DeskStep = "research" | "scripts" | "yes" | "posts" | "numbers" | "l
 const steps = [
   { href: "/desk/research", step: "research", label: "Research" },
   { href: "/desk/scripts", step: "scripts", label: "Scripts" },
-  { href: "/desk", step: "yes", label: "Yes" },
+  { href: "/desk", step: "yes", label: "Approval" },
   { href: "/desk/posts", step: "posts", label: "Posts" },
   { href: "/desk/loop", step: "numbers", label: "Numbers" },
 ] as const;
@@ -22,6 +22,12 @@ const files = [
       { href: "/desk/brand/brand", slug: "brand", label: "Brand" },
       { href: "/desk/brand/product-facts", slug: "product-facts", label: "Product facts" },
       { href: "/desk/layouts", slug: "layouts", label: "Layouts" },
+      { href: "/desk/brand/motion", slug: "motion", label: "Motion" },
+      { href: "/desk/brand/sound", slug: "sound", label: "Sound" },
+      { href: "/desk/brand/hook", slug: "hook", label: "Hook" },
+      { href: "/desk/brand/payoff", slug: "payoff", label: "Payoff" },
+      { href: "/desk/brand/still", slug: "still", label: "Still" },
+      { href: "/desk/brand/carousel", slug: "carousel", label: "Carousel" },
     ],
   },
   {
@@ -33,19 +39,9 @@ const files = [
       { href: "/desk/brand/gcsealevel", slug: "gcsealevel", label: "offload.gcsealevel" },
     ],
   },
-  {
-    label: "Content",
-    links: [
-      { href: "/desk/brand/hook", slug: "hook", label: "Hook" },
-      { href: "/desk/brand/payoff", slug: "payoff", label: "Payoff" },
-      { href: "/desk/brand/still", slug: "still", label: "Still" },
-      { href: "/desk/brand/carousel", slug: "carousel", label: "Carousel" },
-    ],
-  },
 ] as const;
 
 export function DeskFrame({
-  person,
   current,
   doc,
   children,
@@ -87,9 +83,6 @@ export function DeskFrame({
         ) : null}
         {open ? (
           <div className="side-person">
-            <p>
-              <strong>{person.name.split(" ")[0]}</strong>
-            </p>
             <nav className="side-files" aria-label="Brand files">
               {files.map((group) => (
                 <div key={group.label}>

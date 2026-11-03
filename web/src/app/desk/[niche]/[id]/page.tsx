@@ -74,7 +74,7 @@ export default async function PiecePage({
           {canStamp(piece, person.id) && piece.script.source === "claude" ? (
             <form action={stampPiece}>
               <input type="hidden" name="id" value={piece.id} />
-              <PendingButton idle="Yes" pending="Saving" />
+              <PendingButton idle="Approve" pending="Saving" />
             </form>
           ) : null}
           {!ready && !canStamp(piece, person.id) && !needsScript(piece) ? (

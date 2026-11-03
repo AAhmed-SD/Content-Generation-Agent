@@ -2,6 +2,7 @@ import { spawnSync } from "node:child_process";
 import { existsSync, mkdirSync, readdirSync, readFileSync, unlinkSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { noteRevision, publish, readers, subscribe, type LiveEvent } from "@/lib/live-desk";
+import { runEditorTools, type EditorCall } from "@/lib/editor-tools";
 import { cleanScene, type Scene } from "@/lib/scene";
 import type { PersonId } from "@/lib/people";
 import { boardPath, editPath, readPictureText, workingPath } from "@/lib/picture-text";
@@ -154,6 +155,20 @@ export async function POST(request: Request) {
     if (!scene) return Response.json({ scene: null }, { status: 422 });
     const saved = remember(name, scene, person.id, floor);
     return Response.json({ scene, revision: saved?.revision ?? 0, by: person.id, savedAt: saved?.savedAt ?? "" });
+  }
+  if (url.searchParams.get("tools") === "1") {
+    const stored = readStored(name);
+    if (!stored.scene) return Response.json({ error: "No picture is open." }, { status: 404 });
+    const body = (await request.json().catch(() => null)) as { calls?: EditorCall[] } | null;
+    const calls = Array.isArray(body?.calls) ? body.calls.slice(0, 40) : [];
+    if (!calls.length) return Response.json({ error: "No tool calls." }, { status: 400 });
+    const result = runEditorTools(stored.scene, calls, "claude");
+    if (result.error) return Response.json({ error: result.error }, { status: 400 });
+    const scene = cleanScene(result.scene);
+    if (!scene) return Response.json({ error: "The picture could not be saved." }, { status: 400 });
+    const saved = remember(name, scene, person.id);
+    if (!saved) return Response.json({ error: "Missing picture." }, { status: 404 });
+    return Response.json({ revision: saved.revision, by: saved.by, savedAt: saved.savedAt, scene });
   }
   if (url.searchParams.get("scene") === "1") {
     const scene = cleanScene(await request.json().catch(() => null));

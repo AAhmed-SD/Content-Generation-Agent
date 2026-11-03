@@ -4,7 +4,7 @@ Two people, four niches, one paper card. Claude writes a script from the brand f
 
 ## Map
 
-- `brand/` is what the model may say. `templates.md`, `assets.md`, and `brand/briefs/` are generated. Do not edit those by hand.
+- `brand/` is what the model may say. `templates.md`, `assets.md`, and `brand/briefs/` are generated. Do not edit those by hand. `brand/motion.md` is the picture. `brand/sound.md` is the cue list. The script writer does not read either one.
 - `web/` is the desk. Pieces live in `web/data/desk.json`. Week research lives in `web/data/research.json` and `web/data/briefs.json`.
 - `remotion/` is the picture. The schema is `remotion/src/template-schema.mjs`. Colours are `remotion/src/tokens.ts` and the variables in `web/src/app/globals.css`.
 - `remotion/assets/` is the only pose and prop folder. It is empty. There is no character to place.

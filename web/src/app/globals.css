@@ -4,6 +4,7 @@
   --paper: #f3efe4;
   --ink: #171717;
   --blue: #2746d6;
+  --wash: #e4e9f8;
   --stamp: #b4332c;
   --kraft: #c4a574;
   --line: rgba(23, 23, 23, 0.16);
@@ -758,6 +759,18 @@ textarea {
   padding: 14px;
 }
 
+.yes-list li.with-media {
+  grid-template-columns: 120px 1fr auto;
+}
+
+.piece-thumb {
+  display: block;
+  width: 120px;
+  height: auto;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+}
+
 .yes-list a:not(.pack-link) {
   display: grid;
   gap: 4px;
@@ -930,6 +943,26 @@ textarea {
   width: 100%;
   height: auto;
   border: 1px solid var(--line);
+}
+
+.look-name,
+.look-account,
+.look-rule {
+  display: block;
+  margin-top: 8px;
+}
+
+.look-name {
+  font-family: var(--serif, "Instrument Serif", Georgia, serif);
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.look-account,
+.look-rule {
+  color: var(--quiet);
+  font-size: 14px;
+  line-height: 1.4;
 }
 
 .vision-card .edit-link {

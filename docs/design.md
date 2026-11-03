@@ -37,11 +37,9 @@ Allowed product words are only the list in `brand/product-facts.md`: FSRS, the 4
 
 ## The wall
 
-Layouts is the brand vision as a wall. Downloads dropped into `web/public/board` appear there. Under them are the nine Offload layouts: circled day, confidential folder, the drawer, the calculator, the file, big type, the key, the index card, and withheld. Withheld is the only black ground. The words on a layout can change. The object stays.
+Layouts is the brand vision as a wall. Every download in `web/public/board` is the end goal. The words on a download can change. The object in that file stays. Other brands’ words and logos come off in the studio, and the download remains the picture.
 
-Those downloads are references until they are edited. Other brands’ words and logos come off in the studio. The picture that gets posted is the Offload version.
-
-Objects that are not Offload stay out of the generator: a K-pop tray, a cat newspaper, a dog-office poster, a fashion flat, a 3D desk, a message thread, a Lego scene, a product collage.
+Under the wall are drawn studies: circled day, confidential folder, the drawer, the calculator, the file, big type, the key, the index card, and withheld. Those drawings are not the picture.
 
 ## The studio
 
@@ -92,18 +90,20 @@ Import places a full-resolution image on the artboard, or restores an `.offload.
 
 ## Look
 
-Tokens live in `docs/style-bible.md`. The desk uses the CSS variables. Remotion uses `tokens`. Change both together.
+The end goal is every download on the board. Layouts shows that wall first. A flat redraw is a study, and it is not the picture.
+
+Tokens live in `docs/style-bible.md`. The desk uses the CSS variables. Remotion uses `tokens`. Change both together. The tokens colour the desk and a study. They do not replace the photographed object.
 
 | Name | Value | Use |
 | --- | --- | --- |
 | Paper | `#f3efe4` | The page and the artboard |
 | Card | `#f7f3e8` | The card surface |
 | Ink | `#171717` | Type and rules |
-| Blue | `#2746d6` | Only the word offload, in script |
-| Stamp | `#b4332c` | The stamp |
-| Kraft | `#c4a574` | A folder, when the object is a folder |
+| Blue | `#2746d6` | The word offload |
+| Stamp | `#b4332c` | A rubber stamp on the object |
+| Kraft | `#c4a574` | A study of the envelope, when the photograph is not in the frame |
 
-Type is Instrument Sans, Instrument Serif, and Caveat. Motion on the video card is paper leaving a drawer: a short rise, then still. Nothing spins and nothing flashes.
+Type is Instrument Sans, Instrument Serif, and Caveat. On the type poster and the calculator, offload is the script and it cuts through the sentence. On the calendar it is small and blue at the bottom. Motion moves the object already in the layout: a card comes forward, a note lands, the camera settles. Nothing is built out of blocks, and nothing spins or flashes.
 
 There is no body and no face. `docs/character.md` is the record of that. `remotion/assets/` is empty, so there is no pose to name.
 
