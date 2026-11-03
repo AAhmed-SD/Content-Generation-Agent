@@ -31,4 +31,4 @@ The TikTok reference is the same paper leaving a drawer, read in one breath, the
 
 ## Objects by niche
 
-Clinical is the folder. Analytical is the calculator. Mental health is the circled day, or the card in the drawer. GCSE and A-level is the file. `OffloadPin` draws these six layouts at Pinterest size, 1000 by 1500. The words change. The layout does not. There is still no pose and no face.
+Clinical is the folder. Analytical is the calculator. Mental health is the circled day, or the card in the drawer. GCSE and A-level is the file. The key, the index card, and the black ground are for any account. The black ground is the one that withholds the fact. `OffloadPin` draws these nine layouts at Pinterest size, 1000 by 1500. The words change. The layout does not. There is still no pose and no face.

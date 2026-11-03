@@ -26,7 +26,7 @@ export const offloadPinSchema = z
     note: z.string().describe("The short fact. On the calendar it sits inside the circle."),
     niche: account.describe("Account name, small, at the edge."),
     layout: z
-      .enum(["calendar", "folder", "drawer", "calculator", "file", "type"])
+      .enum(["calendar", "folder", "drawer", "calculator", "file", "type", "key", "card", "withheld"])
       .describe("Which pin layout. The list is closed."),
     stamp: z.string().describe("The red stamp. Short. Use FILED when no other word is set."),
   })
@@ -56,6 +56,9 @@ export const templates = [
       ["calculator", "A sentence, then a calculator. The screen shows the note. Analytical students."],
       ["file", "A stacked file with three rows. GCSE and A-level."],
       ["type", "The sentence large, and the word offload in script across it."],
+      ["key", "One key and a kraft tag. The sentence is on the tag. Any account."],
+      ["card", "One index card. The sentence on the first line. Any account."],
+      ["withheld", "A black ground. The sentence, then stop. The fact stays off this one."],
     ],
   },
 ];

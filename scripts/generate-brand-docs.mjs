@@ -56,8 +56,12 @@ function writeAssets() {
     "",
   ];
   if (files.length === 0) {
+    const pin = templates.find((template) => template.id === "OffloadPin");
+    const layoutField = pin?.schema.shape.layout;
+    const names = layoutField?.options ?? layoutField?.def?.entries ?? [];
+    const drawn = names.length ? names.join(", ") : "the paper layouts";
     lines.push(
-      "The folder is empty. OffloadPin draws the folder, the calculator, the calendar, the drawer, and the file. There is no pose file and no photo to copy.",
+      `The folder is empty. OffloadPin draws ${drawn}. There is no pose file and no photo to copy.`,
       "",
     );
   } else {

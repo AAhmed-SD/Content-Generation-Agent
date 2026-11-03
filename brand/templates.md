@@ -28,7 +28,7 @@ A Pinterest pin. Same paper system as the references, with Offload’s sentence 
 - `line`. The sentence. One line.
 - `note`. The short fact. On the calendar it sits inside the circle.
 - `niche`. Account name, small, at the edge. One of: offload.clinical, offload.analytical, offload.mentalhealth, offload.gcsealevel.
-- `layout`. Which pin layout. The list is closed. One of: calendar, folder, drawer, calculator, file, type.
+- `layout`. Which pin layout. The list is closed. One of: calendar, folder, drawer, calculator, file, type, key, card, withheld.
 - `stamp`. The red stamp. Short. Use FILED when no other word is set.
 
 ### When to pick it
@@ -38,3 +38,6 @@ A Pinterest pin. Same paper system as the references, with Offload’s sentence 
 - calculator: A sentence, then a calculator. The screen shows the note. Analytical students.
 - file: A stacked file with three rows. GCSE and A-level.
 - type: The sentence large, and the word offload in script across it.
+- key: One key and a kraft tag. The sentence is on the tag. Any account.
+- card: One index card. The sentence on the first line. Any account.
+- withheld: A black ground. The sentence, then stop. The fact stays off this one.

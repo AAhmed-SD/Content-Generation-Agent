@@ -8,7 +8,7 @@ const sans = loadSans("normal", { weights: ["400", "600", "700"], subsets: ["lat
 const serif = loadSerif("normal", { weights: ["400"], subsets: ["latin"] }).fontFamily;
 const script = loadScript("normal", { weights: ["700"], subsets: ["latin"] }).fontFamily;
 
-export type PinLayout = "calendar" | "folder" | "drawer" | "calculator" | "file" | "type";
+export type PinLayout = "calendar" | "folder" | "drawer" | "calculator" | "file" | "type" | "key" | "card" | "withheld";
 
 export type PinProps = {
   line: string;
@@ -332,6 +332,110 @@ function FilePin({ line, note, niche }: PinProps) {
   );
 }
 
+function KeyPin({ line, note }: PinProps) {
+  return (
+    <AbsoluteFill style={{ backgroundColor: tokens.paper, color: tokens.ink }}>
+      <div style={{ position: "absolute", top: 72, width: "100%", textAlign: "center", fontFamily: sans, fontSize: 16, letterSpacing: 3 }}>
+        THE KEY
+      </div>
+      <svg width="220" height="520" viewBox="0 0 200 480" style={{ position: "absolute", top: 140, left: 390 }}>
+        <circle cx="100" cy="78" r="58" fill="none" stroke={tokens.ink} strokeWidth="16" />
+        <circle cx="100" cy="78" r="20" fill="none" stroke={tokens.ink} strokeWidth="12" />
+        <rect x="88" y="136" width="24" height="300" fill={tokens.ink} />
+        <rect x="112" y="330" width="52" height="16" fill={tokens.ink} />
+        <rect x="112" y="372" width="36" height="16" fill={tokens.ink} />
+      </svg>
+      <div
+        style={{
+          position: "absolute",
+          left: 150,
+          right: 150,
+          top: 720,
+          backgroundColor: tokens.kraft,
+          padding: "36px 40px 32px",
+          transform: "rotate(-2deg)",
+        }}
+      >
+        <div style={{ width: 28, height: 28, borderRadius: 14, border: `3px solid ${tokens.ink}`, marginBottom: 22 }} />
+        <div style={{ fontFamily: serif, fontSize: 52, lineHeight: 1.02 }}>{line}</div>
+        <div style={{ marginTop: 16, fontFamily: sans, fontSize: 22 }}>{note}</div>
+      </div>
+      <div style={{ position: "absolute", bottom: 80, width: "100%", textAlign: "center" }}>
+        <Word />
+      </div>
+    </AbsoluteFill>
+  );
+}
+
+function CardPin({ line, note }: PinProps) {
+  return (
+    <AbsoluteFill style={{ backgroundColor: tokens.paper, color: tokens.ink }}>
+      <div
+        style={{
+          position: "absolute",
+          top: 140,
+          left: 90,
+          width: 820,
+          height: 1080,
+          backgroundColor: tokens.card,
+          border: `1px solid ${tokens.ink}`,
+          transform: "rotate(-1.5deg)",
+          overflow: "hidden",
+        }}
+      >
+        <div style={{ height: 18, backgroundColor: tokens.stamp }} />
+        <div style={{ position: "absolute", left: 36, top: 54, width: 28, height: 28, borderRadius: 14, border: `2px solid ${tokens.ink}` }} />
+        {Array.from({ length: 12 }, (_, index) => (
+          <div
+            key={index}
+            style={{
+              position: "absolute",
+              left: 48,
+              right: 48,
+              top: 140 + index * 72,
+              height: 1,
+              backgroundColor: tokens.line,
+            }}
+          />
+        ))}
+        <div style={{ position: "absolute", left: 88, right: 64, top: 168, fontFamily: serif, fontSize: 58, lineHeight: 1.15 }}>
+          {line}
+        </div>
+        <div style={{ position: "absolute", left: 88, right: 64, bottom: 72, fontFamily: sans, fontSize: 24 }}>{note}</div>
+      </div>
+      <div style={{ position: "absolute", bottom: 48, width: "100%", textAlign: "center" }}>
+        <Word />
+      </div>
+    </AbsoluteFill>
+  );
+}
+
+function WithheldPin({ line }: PinProps) {
+  return (
+    <AbsoluteFill style={{ backgroundColor: tokens.ink, color: tokens.paper }}>
+      <div
+        style={{
+          position: "absolute",
+          left: 72,
+          right: 72,
+          top: 280,
+          fontFamily: sans,
+          fontWeight: 700,
+          fontSize: 92,
+          letterSpacing: -3,
+          lineHeight: 0.9,
+        }}
+      >
+        {line}
+      </div>
+      <div style={{ position: "absolute", left: 80, bottom: 220 }}>
+        <Word />
+      </div>
+      <div style={{ position: "absolute", left: 72, right: 72, bottom: 120, height: 1, backgroundColor: tokens.paper, opacity: 0.35 }} />
+    </AbsoluteFill>
+  );
+}
+
 function TypePin({ line, note }: PinProps) {
   return (
     <AbsoluteFill style={{ backgroundColor: tokens.paper, color: tokens.ink }}>
@@ -357,6 +461,9 @@ const layouts = {
   calculator: Calculator,
   file: FilePin,
   type: TypePin,
+  key: KeyPin,
+  card: CardPin,
+  withheld: WithheldPin,
 };
 
 export const OffloadPin: React.FC<PinProps> = (props) => {

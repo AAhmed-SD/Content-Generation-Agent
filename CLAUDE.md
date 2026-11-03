@@ -9,6 +9,7 @@ Two people, four niches, one paper card. Claude writes a script from the brand f
 - `remotion/` is the picture. The schema is `remotion/src/template-schema.mjs`. Colours are `remotion/src/tokens.ts` and the variables in `web/src/app/globals.css`.
 - `remotion/assets/` is the only pose and prop folder. It is empty. There is no character to place.
 - `scripts/generate-brand-docs.mjs` rewrites the generated files.
+- `docs/design.md` is the design of the desk and the picture. `docs/architecture.md` is how a week becomes a file.
 - `web/.env.local` holds secrets. It is gitignored.
 
 ## Commands

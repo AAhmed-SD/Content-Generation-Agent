@@ -26,6 +26,20 @@ Hadiqa leads clinical and analytical. Laiba leads mental health and GCSE and A-l
 
 Numbers arrive as a CSV, or typed on the card, into `web/data/loop.json` and the piece’s checkpoints: 1 hour, 24 hours, 72 hours, 7 days. The next brief can name a winner only from those stored numbers. An empty checkpoint is not a zero.
 
+## The picture
+
+Layouts open in `web/src/components/studio.tsx`. The document is one scene: an artboard and a layer list, bottom to top. The type is `Scene` in `web/src/lib/scene.ts`. A save writes the whole scene to `web/data/renders/edits/{stem}.scene.json`, wrapped with a revision, the person, and the time. Pasted pictures sit beside it in `{stem}-assets/`.
+
+A download with one layer is taken apart on this Mac. `web/scripts/vision-ocr.swift` reads the lines. `web/scripts/lift-picture.py` cuts the letters and one subject. Scenes that already have more than one layer are left as they are until someone chooses Take it apart again.
+
+Autosave posts that whole scene. `web/src/lib/live-desk.ts` keeps the latest scene in this Next process and streams it to anyone who has the same picture open. The last whole save is the one that stays. Selection stays on each screen. The stream is this process only. A second computer that is not signed into this desk does not receive it.
+
+Import accepts a full image or an `.offload.json` project. Export writes a PNG at twice the artboard size, capped so a side stays within 4096 pixels, and the project file beside it.
+
+## Speech
+
+When the Kokoro model is present under `tools/`, the desk can write a wav next to the render. The narration on the card stays text. The mp4 does not mix that wav in by itself.
+
 ## What is not built
 
-No Postgres tables. No pose library. No spoken audio. The narration is text on the card. YouTube Analytics and a Meta app are not connected.
+No Postgres. No hosted desk. No pose library. YouTube Analytics and a Meta app are not connected. Nothing posts, spends, or sends on its own. The trial sentence in `brand/platforms.md` is still unset.

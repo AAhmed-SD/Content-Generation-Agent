@@ -12,6 +12,8 @@ import { canStamp, fillCaptions, findPiece, isReady, readDesk, writeDesk, type C
 import { applyRows, parseMetricsCsv, saveLesson, storeCsv, storeTyped } from "@/lib/loop";
 import { isPersonId } from "@/lib/people";
 import { WEEK, applyDrafts, compileBriefs, gatherResearch, readBriefs, readResearch } from "@/lib/pipeline";
+import { drawOffloadPin, isPinLayout } from "@/lib/pin-picture";
+import { isNicheId, writePin } from "@/lib/pin-draft";
 import { claudePrompt, queueRender } from "@/lib/studio";
 import { COOKIE, passwordMatches, readSession, sessionCookieValue } from "@/lib/session";
 
@@ -249,6 +251,43 @@ export async function importCsv(formData: FormData) {
   storeCsv(parsed.rows);
   revalidatePath("/desk");
   redirect("/desk/loop");
+}
+
+function pinText(value: FormDataEntryValue | null, max: number) {
+  return String(value ?? "")
+    .replace(/[%@\\]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, max);
+}
+
+export async function importLayout(formData: FormData) {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const layout = String(formData.get("layout") ?? "");
+  const niche = String(formData.get("niche") ?? "");
+  if (!isPinLayout(layout)) redirect("/desk/layouts?import=layout");
+  if (!isNicheId(niche)) redirect("/desk/layouts?import=account");
+  const line = pinText(formData.get("line"), 90);
+  const note = pinText(formData.get("note"), 60);
+  if (!line) redirect("/desk/layouts?import=text");
+  const file = formData.get("reference");
+  if (!(file instanceof File) || file.size === 0) redirect("/desk/layouts?import=empty");
+  if (file.size > 6_000_000) redirect("/desk/layouts?import=big");
+  if (!["image/jpeg", "image/png", "image/webp"].includes(file.type)) redirect("/desk/layouts?import=type");
+  const id = `pin-${Date.now()}`;
+  const ext = file.type === "image/png" ? "png" : file.type === "image/webp" ? "webp" : "jpg";
+  const board = path.join(process.cwd(), "public", "board");
+  mkdirSync(board, { recursive: true });
+  writeFileSync(path.join(board, `${id}.${ext}`), Buffer.from(await file.arrayBuffer()));
+  const outDir = path.join(process.cwd(), "data", "renders", "pins");
+  mkdirSync(outDir, { recursive: true });
+  const made = drawOffloadPin({ layout, line, note, out: path.join(outDir, `${id}.jpg`) });
+  if (made) {
+    writePin({ id, layout, line, note, niche, reference: `${id}.${ext}`, savedAt: new Date().toISOString() });
+  }
+  revalidatePath("/desk/layouts");
+  redirect(made ? `/desk/layouts?made=${id}` : "/desk/layouts?import=draw");
 }
 
 export async function saveLoopLesson(formData: FormData) {

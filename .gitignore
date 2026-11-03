@@ -9,3 +9,7 @@ tools/.venv
 tools/models
 web/public/board/*
 !web/public/board/.gitkeep
+web/public/mediapipe/
+web/public/models/
+__pycache__/
+*.pyc

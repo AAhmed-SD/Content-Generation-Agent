@@ -3,7 +3,7 @@ import Link from "next/link";
 import { signOut } from "@/app/actions";
 import type { Person } from "@/lib/people";
 
-export type DeskStep = "week" | "layouts" | "loop" | "brand";
+export type DeskStep = "week" | "layouts" | "editor" | "loop" | "brand";
 
 const groups = [
   {
@@ -11,6 +11,7 @@ const groups = [
     links: [
       { href: "/desk", step: "week", label: "This week" },
       { href: "/desk/layouts", step: "layouts", label: "Layouts" },
+      { href: "/desk/editor", step: "editor", label: "Editor", sub: true },
     ],
   },
   {
@@ -43,7 +44,7 @@ export function DeskFrame({
             <div key={group.label} className="side-group">
               <p className="side-label">{group.label}</p>
               {group.links.map((link) => (
-                <Link key={link.href} href={link.href} aria-current={current === link.step ? "page" : undefined}>
+                <Link key={link.href} href={link.href} className={"sub" in link && link.sub ? "sub" : undefined} aria-current={current === link.step ? "page" : undefined}>
                   {link.label}
                 </Link>
               ))}
