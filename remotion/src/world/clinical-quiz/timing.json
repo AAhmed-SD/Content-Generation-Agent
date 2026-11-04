@@ -1,0 +1,446 @@
+{
+ "duration": 37.301,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Med students. Two cards from the Test phase. Answer before they flip.",
+   "start": 0.15,
+   "end": 4.518,
+   "words": [
+    {
+     "text": "Med",
+     "start": 0.15,
+     "end": 0.43
+    },
+    {
+     "text": "students.",
+     "start": 0.43,
+     "end": 0.99
+    },
+    {
+     "text": "Two",
+     "start": 1.2,
+     "end": 1.419
+    },
+    {
+     "text": "cards",
+     "start": 1.419,
+     "end": 1.727
+    },
+    {
+     "text": "from",
+     "start": 1.727,
+     "end": 1.99
+    },
+    {
+     "text": "the",
+     "start": 1.99,
+     "end": 2.209
+    },
+    {
+     "text": "Test",
+     "start": 2.209,
+     "end": 2.473
+    },
+    {
+     "text": "phase.",
+     "start": 2.473,
+     "end": 2.78
+    },
+    {
+     "text": "Answer",
+     "start": 3.17,
+     "end": 3.555
+    },
+    {
+     "text": "before",
+     "start": 3.555,
+     "end": 3.94
+    },
+    {
+     "text": "they",
+     "start": 3.94,
+     "end": 4.229
+    },
+    {
+     "text": "flip.",
+     "start": 4.229,
+     "end": 4.518
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Intact uterus, oestrogen-only HRT, no progestogen. What's the risk?",
+   "start": 4.798,
+   "end": 9.939,
+   "words": [
+    {
+     "text": "Intact",
+     "start": 4.798,
+     "end": 4.953
+    },
+    {
+     "text": "uterus,",
+     "start": 4.953,
+     "end": 5.108
+    },
+    {
+     "text": "oestrogen-only",
+     "start": 5.208,
+     "end": 5.651
+    },
+    {
+     "text": "HRT,",
+     "start": 5.651,
+     "end": 5.798
+    },
+    {
+     "text": "no",
+     "start": 6.018,
+     "end": 6.653
+    },
+    {
+     "text": "progestogen.",
+     "start": 6.653,
+     "end": 8.718
+    },
+    {
+     "text": "What's",
+     "start": 9.088,
+     "end": 9.419
+    },
+    {
+     "text": "the",
+     "start": 9.419,
+     "end": 9.655
+    },
+    {
+     "text": "risk?",
+     "start": 9.655,
+     "end": 9.939
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Endometrial hyperplasia. If you said breast cancer, that's the trap.",
+   "start": 11.539,
+   "end": 15.954,
+   "words": [
+    {
+     "text": "Endometrial",
+     "start": 11.539,
+     "end": 12.389
+    },
+    {
+     "text": "hyperplasia.",
+     "start": 12.389,
+     "end": 13.239
+    },
+    {
+     "text": "If",
+     "start": 13.599,
+     "end": 13.769
+    },
+    {
+     "text": "you",
+     "start": 13.769,
+     "end": 13.982
+    },
+    {
+     "text": "said",
+     "start": 13.982,
+     "end": 14.238
+    },
+    {
+     "text": "breast",
+     "start": 14.238,
+     "end": 14.579
+    },
+    {
+     "text": "cancer,",
+     "start": 14.579,
+     "end": 14.919
+    },
+    {
+     "text": "that's",
+     "start": 15.079,
+     "end": 15.42
+    },
+    {
+     "text": "the",
+     "start": 15.42,
+     "end": 15.663
+    },
+    {
+     "text": "trap.",
+     "start": 15.663,
+     "end": 15.954
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Next. Sperm leave the epididymis. Where do they go next?",
+   "start": 16.454,
+   "end": 19.861,
+   "words": [
+    {
+     "text": "Next.",
+     "start": 16.454,
+     "end": 17.044
+    },
+    {
+     "text": "Sperm",
+     "start": 17.114,
+     "end": 17.413
+    },
+    {
+     "text": "leave",
+     "start": 17.413,
+     "end": 17.711
+    },
+    {
+     "text": "the",
+     "start": 17.711,
+     "end": 17.924
+    },
+    {
+     "text": "epididymis.",
+     "start": 17.924,
+     "end": 18.434
+    },
+    {
+     "text": "Where",
+     "start": 18.715,
+     "end": 19.012
+    },
+    {
+     "text": "do",
+     "start": 19.012,
+     "end": 19.182
+    },
+    {
+     "text": "they",
+     "start": 19.182,
+     "end": 19.437
+    },
+    {
+     "text": "go",
+     "start": 19.437,
+     "end": 19.607
+    },
+    {
+     "text": "next?",
+     "start": 19.607,
+     "end": 19.861
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "The vas deferens. Not the ejaculatory duct. That comes after.",
+   "start": 21.461,
+   "end": 25.653,
+   "words": [
+    {
+     "text": "The",
+     "start": 21.461,
+     "end": 21.736
+    },
+    {
+     "text": "vas",
+     "start": 21.736,
+     "end": 22.011
+    },
+    {
+     "text": "deferens.",
+     "start": 22.011,
+     "end": 22.561
+    },
+    {
+     "text": "Not",
+     "start": 22.771,
+     "end": 23.044
+    },
+    {
+     "text": "the",
+     "start": 23.044,
+     "end": 23.316
+    },
+    {
+     "text": "ejaculatory",
+     "start": 23.316,
+     "end": 24.025
+    },
+    {
+     "text": "duct.",
+     "start": 24.025,
+     "end": 24.351
+    },
+    {
+     "text": "That",
+     "start": 24.611,
+     "end": 24.924
+    },
+    {
+     "text": "comes",
+     "start": 24.924,
+     "end": 25.288
+    },
+    {
+     "text": "after.",
+     "start": 25.288,
+     "end": 25.653
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload built both cards from uploaded lecture notes. Get one wrong, and it comes back sooner.",
+   "start": 25.933,
+   "end": 31.689,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 25.933,
+     "end": 26.378
+    },
+    {
+     "text": "built",
+     "start": 26.378,
+     "end": 26.725
+    },
+    {
+     "text": "both",
+     "start": 26.725,
+     "end": 27.022
+    },
+    {
+     "text": "cards",
+     "start": 27.022,
+     "end": 27.368
+    },
+    {
+     "text": "from",
+     "start": 27.368,
+     "end": 27.665
+    },
+    {
+     "text": "uploaded",
+     "start": 27.665,
+     "end": 28.16
+    },
+    {
+     "text": "lecture",
+     "start": 28.16,
+     "end": 28.606
+    },
+    {
+     "text": "notes.",
+     "start": 28.606,
+     "end": 28.953
+    },
+    {
+     "text": "Get",
+     "start": 29.403,
+     "end": 29.623
+    },
+    {
+     "text": "one",
+     "start": 29.623,
+     "end": 29.844
+    },
+    {
+     "text": "wrong,",
+     "start": 29.844,
+     "end": 30.153
+    },
+    {
+     "text": "and",
+     "start": 30.373,
+     "end": 30.592
+    },
+    {
+     "text": "it",
+     "start": 30.592,
+     "end": 30.768
+    },
+    {
+     "text": "comes",
+     "start": 30.768,
+     "end": 31.075
+    },
+    {
+     "text": "back",
+     "start": 31.075,
+     "end": 31.338
+    },
+    {
+     "text": "sooner.",
+     "start": 31.338,
+     "end": 31.689
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 32.189,
+   "end": 36.021,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 32.189,
+     "end": 33.839
+    },
+    {
+     "text": "A",
+     "start": 34.059,
+     "end": 34.159
+    },
+    {
+     "text": "study",
+     "start": 34.159,
+     "end": 34.392
+    },
+    {
+     "text": "system",
+     "start": 34.392,
+     "end": 34.658
+    },
+    {
+     "text": "that",
+     "start": 34.658,
+     "end": 34.857
+    },
+    {
+     "text": "adapts",
+     "start": 34.857,
+     "end": 35.123
+    },
+    {
+     "text": "when",
+     "start": 35.123,
+     "end": 35.323
+    },
+    {
+     "text": "real",
+     "start": 35.323,
+     "end": 35.522
+    },
+    {
+     "text": "life",
+     "start": 35.522,
+     "end": 35.722
+    },
+    {
+     "text": "happens.",
+     "start": 35.722,
+     "end": 36.021
+    }
+   ]
+  }
+ ]
+}

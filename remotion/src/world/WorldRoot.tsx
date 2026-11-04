@@ -9,6 +9,7 @@ import { ANALYTICAL_DURATION_S, AnalyticalMix } from "./analytical-mix/Analytica
 import { GCSE_DURATION_S, GcseMocks } from "./gcse-mocks/GcseMocks";
 import { ADHD_DURATION_S, AdhdPlan } from "./adhd-plan/AdhdPlan";
 import { CLINICAL_SHIFTS_DURATION_S, ClinicalShifts } from "./clinical-shifts/ClinicalShifts";
+import { CLINICAL_QUIZ_DURATION_S, ClinicalQuiz } from "./clinical-quiz/ClinicalQuiz";
 import { LogoIntro } from "./kit/logo";
 import { SOFT_DURATION_S, SoftLaunch } from "./soft-launch/SoftLaunch";
 
@@ -26,6 +27,7 @@ export const WorldRoot: React.FC = () => (
     <Composition id="Dark-gcse-mocks" component={GcseMocks} durationInFrames={Math.ceil(GCSE_DURATION_S * 30)} fps={30} width={1080} height={1920} />
     <Composition id="Dark-adhd-plan" component={AdhdPlan} durationInFrames={Math.ceil(ADHD_DURATION_S * 30)} fps={30} width={1080} height={1920} />
     <Composition id="Dark-clinical-shifts" component={ClinicalShifts} durationInFrames={Math.ceil(CLINICAL_SHIFTS_DURATION_S * 30)} fps={30} width={1080} height={1920} />
+    <Composition id="Dark-clinical-quiz" component={ClinicalQuiz} durationInFrames={Math.ceil(CLINICAL_QUIZ_DURATION_S * 30)} fps={30} width={1080} height={1920} />
     <Composition id="Soft-launch" component={SoftLaunch} durationInFrames={Math.ceil(SOFT_DURATION_S * 30)} fps={30} width={1080} height={1920} />
     <Composition id="Logo-intro" component={LogoIntro} durationInFrames={105} fps={30} width={1080} height={1920} />
     <Composition id="Glass-placement" component={Placement} durationInFrames={Math.ceil(PLACEMENT_DURATION_S * 30)} fps={30} width={1080} height={1920} />

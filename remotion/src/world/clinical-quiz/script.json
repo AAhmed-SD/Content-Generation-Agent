@@ -1,0 +1,18 @@
+{
+ "id": "clinical-quiz",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  { "id": "L1", "say": "Med students. Two cards from the Test phase. Answer before they flip." },
+  { "id": "L2", "say": "Intact uterus, oestrogen-only HRT, no progestogen. What's the risk?", "after": 1.6 },
+  { "id": "L3", "say": "Endometrial hyperplasia. If you said breast cancer, that's the trap.", "after": 0.5 },
+  { "id": "L4", "say": "Next. Sperm leave the epididymis. Where do they go next?", "after": 1.6 },
+  { "id": "L5", "say": "The vas deferens. Not the ejaculatory duct. That comes after." },
+  { "id": "L6", "say": "Offload built both cards from uploaded lecture notes. Get one wrong, and it comes back sooner.", "after": 0.5 },
+  { "id": "L7", "say": "Offload. A study system that adapts when real life happens." }
+ ]
+}
