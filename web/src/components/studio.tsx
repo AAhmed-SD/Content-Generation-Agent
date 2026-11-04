@@ -51,6 +51,11 @@ export function Studio({ file, title, person }: { file: string; title: string; p
   const revisionRef = useRef(0);
   const quiet = useRef(false);
   const sceneRef = useRef<Scene | null>(null);
+  const past = useRef<Scene[]>([]);
+  const future = useRef<Scene[]>([]);
+  const gesture = useRef<Scene | null>(null);
+  const skipHist = useRef(false);
+  const held = useRef<Scene | null>(null);
   const dirty = useRef(false);
   const ready = useRef(false);
   scaleRef.current = scale;
@@ -114,6 +119,21 @@ export function Studio({ file, title, person }: { file: string; title: string; p
   }, [scene?.artboard.w, scene?.artboard.h]);
 
   useEffect(() => {
+    if (!scene) return;
+    if (skipHist.current || drag.current || resize.current) {
+      skipHist.current = false;
+      if (!drag.current && !resize.current) held.current = scene;
+      return;
+    }
+    if (held.current && held.current !== scene) {
+      past.current.push(held.current);
+      if (past.current.length > 80) past.current.shift();
+      future.current = [];
+    }
+    held.current = scene;
+  }, [scene]);
+
+  useEffect(() => {
     if (!scene || !ready.current) return;
     if (quiet.current) {
       quiet.current = false;
@@ -144,15 +164,19 @@ export function Studio({ file, title, person }: { file: string; title: string; p
     source.onmessage = (event) => {
       const body = JSON.parse(event.data) as
         | { kind: "present"; present: PersonId[] }
+        | { kind: "vectra"; revision: number }
         | { kind: "scene"; revision: number; by: PersonId; scene: Scene };
       if (body.kind === "present") {
         setPresent(body.present);
         return;
       }
-      if (body.revision <= revisionRef.current) return;
+      if (body.kind !== "scene" || body.revision <= revisionRef.current) return;
       if (drag.current || draftRef.current || resize.current) return;
       revisionRef.current = body.revision;
+      if (sceneRef.current) past.current.push(sceneRef.current);
+      future.current = [];
       quiet.current = true;
+      skipHist.current = true;
       dirty.current = false;
       setScene((current) => {
         const selection = current ? current.selection.filter((id) => findLayer(body.scene.layers, id)) : [];
@@ -214,6 +238,8 @@ export function Studio({ file, title, person }: { file: string; title: string; p
       });
     };
     const up = () => {
+      const start = gesture.current;
+      gesture.current = null;
       const drawing = draftRef.current;
       const drawingTool = toolRef.current;
       if (drawing && (drawingTool === "rect" || drawingTool === "ellipse")) {
@@ -225,6 +251,12 @@ export function Studio({ file, title, person }: { file: string; title: string; p
       drag.current = null;
       resize.current = null;
       const current = sceneRef.current;
+      if (start && current && start !== current) {
+        past.current.push(start);
+        if (past.current.length > 80) past.current.shift();
+        future.current = [];
+        held.current = current;
+      }
       if (dirty.current && current) {
         dirty.current = false;
         if (saveTimer.current) clearTimeout(saveTimer.current);
@@ -260,6 +292,19 @@ export function Studio({ file, title, person }: { file: string; title: string; p
       const typing = document.activeElement instanceof HTMLInputElement || document.activeElement instanceof HTMLTextAreaElement;
       if (typing || !scene) return;
       const command = event.metaKey || event.ctrlKey;
+      if (command && event.key.toLowerCase() === "z") {
+        event.preventDefault();
+        const current = sceneRef.current;
+        if (!current) return;
+        const stack = event.shiftKey ? future : past;
+        const other = event.shiftKey ? past : future;
+        const step = stack.current.pop();
+        if (!step) return;
+        other.current.push(current);
+        skipHist.current = true;
+        setScene(step);
+        return;
+      }
       if (command && event.key.toLowerCase() === "c") {
         const layers = copySelection(scene);
         if (!layers.length) return;
@@ -334,7 +379,10 @@ export function Studio({ file, title, person }: { file: string; title: string; p
       return;
     }
     setScene({ ...scene, selection: [hit.id] });
-    if (!hit.locked) drag.current = { id: hit.id, dx: point.x - hit.x, dy: point.y - hit.y };
+    if (!hit.locked) {
+      gesture.current = scene;
+      drag.current = { id: hit.id, dx: point.x - hit.x, dy: point.y - hit.y };
+    }
     event.currentTarget.setPointerCapture(event.pointerId);
   }
 
@@ -510,6 +558,12 @@ export function Studio({ file, title, person }: { file: string; title: string; p
             {item.label}
           </button>
         ))}
+        <button type="button" onClick={() => window.dispatchEvent(new KeyboardEvent("keydown", { key: "z", metaKey: true }))}>
+          Undo
+        </button>
+        <button type="button" onClick={() => window.dispatchEvent(new KeyboardEvent("keydown", { key: "z", metaKey: true, shiftKey: true }))}>
+          Redo
+        </button>
         <span className="studio-chip" style={{ background: fill }} aria-label="Fill" />
       </div>
       <div className="studio-canvas" ref={paneRef}>
@@ -533,6 +587,7 @@ export function Studio({ file, title, person }: { file: string; title: string; p
                   className={`handle handle-${corner}`}
                   onPointerDown={(event) => {
                     event.stopPropagation();
+                    gesture.current = scene;
                     resize.current = { id: selected.id, corner, x: selected.x, y: selected.y, w: selected.w, h: selected.h, px: event.clientX, py: event.clientY };
                     boardRef.current?.setPointerCapture(event.pointerId);
                   }}

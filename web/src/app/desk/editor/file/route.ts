@@ -1,7 +1,7 @@
 import { spawnSync } from "node:child_process";
 import { existsSync, mkdirSync, readdirSync, readFileSync, unlinkSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { noteRevision, publish, readers, subscribe, type LiveEvent } from "@/lib/live-desk";
+import { noteRevision, publish, publishVectra, readers, subscribe, type LiveEvent } from "@/lib/live-desk";
 import { runEditorTools, type EditorCall } from "@/lib/editor-tools";
 import { cleanScene, type Scene } from "@/lib/scene";
 import type { PersonId } from "@/lib/people";
@@ -24,6 +24,71 @@ function docPath(name: string) {
 function scenePath(name: string) {
   const image = editPath(name);
   return image ? image.replace(/\.jpg$/, ".scene.json") : "";
+}
+
+function vectraPath(name: string) {
+  const image = editPath(name);
+  return image ? image.replace(/\.jpg$/, ".vectra.json") : "";
+}
+
+type VectraStep = { at: string; by: PersonId; label: string; data: unknown };
+type VectraFile = { revision: number; by: PersonId | ""; savedAt: string; label: string; data: unknown; steps: VectraStep[] };
+
+function readVectra(name: string): VectraFile | null {
+  const file = vectraPath(name);
+  if (!file || !existsSync(file)) return null;
+  try {
+    const parsed = JSON.parse(readFileSync(file, "utf8")) as VectraFile;
+    if (!parsed?.data || typeof parsed.data !== "object") return null;
+    return { ...parsed, steps: Array.isArray(parsed.steps) ? parsed.steps : [] };
+  } catch {
+    return null;
+  }
+}
+
+function stepList(stored: VectraFile) {
+  return stored.steps.map((step, index) => ({ index, at: step.at, by: step.by, label: step.label }));
+}
+
+function rememberVectra(name: string, by: PersonId, data: unknown, label: string) {
+  const file = vectraPath(name);
+  if (!file || !data || typeof data !== "object" || !("doc" in (data as object))) return null;
+  const previous = readVectra(name);
+  if (previous && JSON.stringify(previous.data) === JSON.stringify(data)) return previous;
+  const steps = previous
+    ? [{ at: previous.savedAt, by: previous.by || by, label: previous.label || "Change", data: previous.data }, ...previous.steps].slice(0, 12)
+    : [];
+  const stored: VectraFile = {
+    revision: (previous?.revision ?? 0) + 1,
+    by,
+    savedAt: new Date().toISOString(),
+    label: label.slice(0, 80) || "Change",
+    data,
+    steps,
+  };
+  mkdirSync(path.dirname(file), { recursive: true });
+  writeFileSync(file, JSON.stringify(stored));
+  publishVectra(name, by, stored.label, stored.revision);
+  return stored;
+}
+
+function vectraResponse(name: string, step: string | null) {
+  const stored = readVectra(name);
+  if (!stored) return { data: null, revision: 0, by: "", savedAt: "", label: "", steps: [], present: readers(name) };
+  if (step !== null && step !== "") {
+    const found = stored.steps[Number(step)];
+    if (!found) return { data: null, missing: true };
+    return { data: found.data, label: found.label, by: found.by, at: found.at };
+  }
+  return {
+    data: stored.data,
+    revision: stored.revision,
+    by: stored.by,
+    savedAt: stored.savedAt,
+    label: stored.label,
+    steps: stepList(stored),
+    present: readers(name),
+  };
 }
 
 function assetDir(name: string) {
@@ -120,6 +185,7 @@ export async function GET(request: Request) {
     const stored = readStored(name);
     return Response.json({ scene: stored.scene, revision: stored.revision, by: stored.by, savedAt: stored.savedAt, present: readers(name) });
   }
+  if (url.searchParams.get("vectra") === "1") return Response.json(vectraResponse(name, url.searchParams.get("step")));
   const asset = url.searchParams.get("asset") ?? "";
   if (asset) {
     const file = assetFile(name, asset);
@@ -170,6 +236,19 @@ export async function POST(request: Request) {
     if (!saved) return Response.json({ error: "Missing picture." }, { status: 404 });
     return Response.json({ revision: saved.revision, by: saved.by, savedAt: saved.savedAt, scene });
   }
+  if (url.searchParams.get("vectra") === "1") {
+    const text = await request.text();
+    if (text.length > 18_000_000) return new Response("That picture is too large to share.", { status: 413 });
+    let body: { data?: unknown; label?: string } | null = null;
+    try {
+      body = JSON.parse(text) as { data?: unknown; label?: string };
+    } catch {
+      return new Response("The document could not be read.", { status: 400 });
+    }
+    const saved = rememberVectra(name, person.id, body?.data, typeof body?.label === "string" ? body.label : "Change");
+    if (!saved) return new Response("The document could not be read.", { status: 400 });
+    return Response.json({ revision: saved.revision, by: saved.by, savedAt: saved.savedAt, label: saved.label, steps: stepList(saved) });
+  }
   if (url.searchParams.get("scene") === "1") {
     const scene = cleanScene(await request.json().catch(() => null));
     if (!scene || !scenePath(name)) return new Response("The document could not be read.", { status: 400 });
@@ -185,7 +264,7 @@ export async function POST(request: Request) {
     if (!ext) return new Response("Use a PNG, JPEG, or WebP.", { status: 400 });
     const bytes = Buffer.from(await request.arrayBuffer());
     if (bytes.length < 32 || bytes.length > 24_000_000) return new Response("That picture is the wrong size.", { status: 400 });
-    const id = `a${Date.now()}`;
+    const id = `a${Date.now()}${Math.floor(Math.random() * 1000)}`;
     mkdirSync(dir, { recursive: true });
     writeFileSync(path.join(dir, `${id}.${ext}`), bytes);
     return Response.json({ id, src: `asset:${id}` });

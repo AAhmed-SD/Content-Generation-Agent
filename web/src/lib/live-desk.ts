@@ -3,6 +3,7 @@ import type { Scene } from "@/lib/scene";
 
 export type LiveEvent =
   | { kind: "scene"; revision: number; by: PersonId; savedAt: string; scene: Scene }
+  | { kind: "vectra"; revision: number; by: PersonId; savedAt: string; label: string }
   | { kind: "present"; present: PersonId[] };
 
 type Room = {
@@ -63,4 +64,11 @@ export function subscribe(file: string, person: PersonId, listener: (event: Live
 
 export function readers(file: string) {
   return present(room(file));
+}
+
+export function publishVectra(file: string, by: PersonId, label: string, revision: number) {
+  const current = room(file);
+  const event: LiveEvent = { kind: "vectra", revision, by, savedAt: new Date().toISOString(), label };
+  send(current, event);
+  return event;
 }
