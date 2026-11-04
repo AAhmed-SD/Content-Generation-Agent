@@ -1,0 +1,467 @@
+{
+ "duration": 28.192,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Past papers are useless if you binge them like Netflix.",
+   "start": 0.15,
+   "end": 3.347,
+   "words": [
+    {
+     "text": "Past",
+     "start": 0.15,
+     "end": 0.445
+    },
+    {
+     "text": "papers",
+     "start": 0.445,
+     "end": 0.839
+    },
+    {
+     "text": "are",
+     "start": 0.839,
+     "end": 1.085
+    },
+    {
+     "text": "useless",
+     "start": 1.085,
+     "end": 1.527
+    },
+    {
+     "text": "if",
+     "start": 1.527,
+     "end": 1.724
+    },
+    {
+     "text": "you",
+     "start": 1.724,
+     "end": 1.97
+    },
+    {
+     "text": "binge",
+     "start": 1.97,
+     "end": 2.314
+    },
+    {
+     "text": "them",
+     "start": 2.314,
+     "end": 2.609
+    },
+    {
+     "text": "like",
+     "start": 2.609,
+     "end": 2.905
+    },
+    {
+     "text": "Netflix.",
+     "start": 2.905,
+     "end": 3.347
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Do a paper. Mark it. Feel awful. Next one.",
+   "start": 3.447,
+   "end": 6.961,
+   "words": [
+    {
+     "text": "Do",
+     "start": 3.447,
+     "end": 3.69
+    },
+    {
+     "text": "a",
+     "start": 3.69,
+     "end": 3.872
+    },
+    {
+     "text": "paper.",
+     "start": 3.872,
+     "end": 4.296
+    },
+    {
+     "text": "Mark",
+     "start": 4.356,
+     "end": 4.781
+    },
+    {
+     "text": "it.",
+     "start": 4.781,
+     "end": 5.064
+    },
+    {
+     "text": "Feel",
+     "start": 5.124,
+     "end": 5.573
+    },
+    {
+     "text": "awful.",
+     "start": 5.573,
+     "end": 6.096
+    },
+    {
+     "text": "Next",
+     "start": 6.156,
+     "end": 6.595
+    },
+    {
+     "text": "one.",
+     "start": 6.595,
+     "end": 6.961
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "You're just rewatching your own mistakes.",
+   "start": 7.061,
+   "end": 9.296,
+   "words": [
+    {
+     "text": "You're",
+     "start": 7.061,
+     "end": 7.401
+    },
+    {
+     "text": "just",
+     "start": 7.401,
+     "end": 7.693
+    },
+    {
+     "text": "rewatching",
+     "start": 7.693,
+     "end": 8.276
+    },
+    {
+     "text": "your",
+     "start": 8.276,
+     "end": 8.567
+    },
+    {
+     "text": "own",
+     "start": 8.567,
+     "end": 8.81
+    },
+    {
+     "text": "mistakes.",
+     "start": 8.81,
+     "end": 9.296
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "The marks you lost? That's the whole point.",
+   "start": 9.396,
+   "end": 11.73,
+   "words": [
+    {
+     "text": "The",
+     "start": 9.396,
+     "end": 9.644
+    },
+    {
+     "text": "marks",
+     "start": 9.644,
+     "end": 9.991
+    },
+    {
+     "text": "you",
+     "start": 9.991,
+     "end": 10.239
+    },
+    {
+     "text": "lost?",
+     "start": 10.239,
+     "end": 10.536
+    },
+    {
+     "text": "That's",
+     "start": 10.596,
+     "end": 10.901
+    },
+    {
+     "text": "the",
+     "start": 10.901,
+     "end": 11.119
+    },
+    {
+     "text": "whole",
+     "start": 11.119,
+     "end": 11.425
+    },
+    {
+     "text": "point.",
+     "start": 11.425,
+     "end": 11.73
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Turn each one into a flashcard.",
+   "start": 11.83,
+   "end": 13.858,
+   "words": [
+    {
+     "text": "Turn",
+     "start": 11.83,
+     "end": 12.159
+    },
+    {
+     "text": "each",
+     "start": 12.159,
+     "end": 12.488
+    },
+    {
+     "text": "one",
+     "start": 12.488,
+     "end": 12.762
+    },
+    {
+     "text": "into",
+     "start": 12.762,
+     "end": 13.091
+    },
+    {
+     "text": "a",
+     "start": 13.091,
+     "end": 13.255
+    },
+    {
+     "text": "flashcard.",
+     "start": 13.255,
+     "end": 13.858
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Redo it in three days. Then in a week.",
+   "start": 13.958,
+   "end": 16.696,
+   "words": [
+    {
+     "text": "Redo",
+     "start": 13.958,
+     "end": 14.316
+    },
+    {
+     "text": "it",
+     "start": 14.316,
+     "end": 14.554
+    },
+    {
+     "text": "in",
+     "start": 14.554,
+     "end": 14.792
+    },
+    {
+     "text": "three",
+     "start": 14.792,
+     "end": 15.21
+    },
+    {
+     "text": "days.",
+     "start": 15.21,
+     "end": 15.567
+    },
+    {
+     "text": "Then",
+     "start": 15.627,
+     "end": 15.965
+    },
+    {
+     "text": "in",
+     "start": 15.965,
+     "end": 16.19
+    },
+    {
+     "text": "a",
+     "start": 16.19,
+     "end": 16.358
+    },
+    {
+     "text": "week.",
+     "start": 16.358,
+     "end": 16.696
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "That's spacing. It's how memory actually sticks.",
+   "start": 16.796,
+   "end": 19.721,
+   "words": [
+    {
+     "text": "That's",
+     "start": 16.796,
+     "end": 17.213
+    },
+    {
+     "text": "spacing.",
+     "start": 17.213,
+     "end": 17.749
+    },
+    {
+     "text": "It's",
+     "start": 17.809,
+     "end": 18.074
+    },
+    {
+     "text": "how",
+     "start": 18.074,
+     "end": 18.34
+    },
+    {
+     "text": "memory",
+     "start": 18.34,
+     "end": 18.765
+    },
+    {
+     "text": "actually",
+     "start": 18.765,
+     "end": 19.296
+    },
+    {
+     "text": "sticks.",
+     "start": 19.296,
+     "end": 19.721
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "Offload drops every lost mark into your remediation deck, and brings it back on time.",
+   "start": 19.821,
+   "end": 24.59,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 19.821,
+     "end": 20.254
+    },
+    {
+     "text": "drops",
+     "start": 20.254,
+     "end": 20.592
+    },
+    {
+     "text": "every",
+     "start": 20.592,
+     "end": 20.929
+    },
+    {
+     "text": "lost",
+     "start": 20.929,
+     "end": 21.218
+    },
+    {
+     "text": "mark",
+     "start": 21.218,
+     "end": 21.507
+    },
+    {
+     "text": "into",
+     "start": 21.507,
+     "end": 21.796
+    },
+    {
+     "text": "your",
+     "start": 21.796,
+     "end": 22.085
+    },
+    {
+     "text": "remediation",
+     "start": 22.085,
+     "end": 22.711
+    },
+    {
+     "text": "deck,",
+     "start": 22.711,
+     "end": 23.0
+    },
+    {
+     "text": "and",
+     "start": 23.0,
+     "end": 23.241
+    },
+    {
+     "text": "brings",
+     "start": 23.241,
+     "end": 23.627
+    },
+    {
+     "text": "it",
+     "start": 23.627,
+     "end": 23.819
+    },
+    {
+     "text": "back",
+     "start": 23.819,
+     "end": 24.108
+    },
+    {
+     "text": "on",
+     "start": 24.108,
+     "end": 24.301
+    },
+    {
+     "text": "time.",
+     "start": 24.301,
+     "end": 24.59
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "Comment papers and I'll send you the method.",
+   "start": 24.69,
+   "end": 27.092,
+   "words": [
+    {
+     "text": "Comment",
+     "start": 24.69,
+     "end": 25.114
+    },
+    {
+     "text": "papers",
+     "start": 25.114,
+     "end": 25.491
+    },
+    {
+     "text": "and",
+     "start": 25.491,
+     "end": 25.726
+    },
+    {
+     "text": "I'll",
+     "start": 25.726,
+     "end": 25.962
+    },
+    {
+     "text": "send",
+     "start": 25.962,
+     "end": 26.244
+    },
+    {
+     "text": "you",
+     "start": 26.244,
+     "end": 26.48
+    },
+    {
+     "text": "the",
+     "start": 26.48,
+     "end": 26.715
+    },
+    {
+     "text": "method.",
+     "start": 26.715,
+     "end": 27.092
+    }
+   ]
+  }
+ ]
+}

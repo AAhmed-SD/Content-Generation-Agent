@@ -1,0 +1,36 @@
+{
+ "id": "gcse-mocks",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Year elevens, your revision timetable doesn't fail because you're lazy. It fails because paper can't move."
+  },
+  {
+   "id": "L2",
+   "say": "One evening goes wrong, the whole week's out of date, and on Sunday you start again."
+  },
+  {
+   "id": "L3",
+   "say": "And cramming it all back in on Sunday doesn't work either. Spreading revision out beats cramming. It's called spacing, and the research on it goes back over a century."
+  },
+  {
+   "id": "L4",
+   "say": "Offload works differently. Download your spec from your exam board, upload it with your exam dates, and it builds the plan from that."
+  },
+  {
+   "id": "L5",
+   "say": "Miss an evening, and it moves the work into your free time, and tells you what moved.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

@@ -1,0 +1,488 @@
+{
+ "duration": 33.291,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "You can follow every worked example in the lecture, and still freeze on the problem sheet.",
+   "start": 0.15,
+   "end": 5.157,
+   "words": [
+    {
+     "text": "You",
+     "start": 0.15,
+     "end": 0.364
+    },
+    {
+     "text": "can",
+     "start": 0.364,
+     "end": 0.578
+    },
+    {
+     "text": "follow",
+     "start": 0.578,
+     "end": 0.921
+    },
+    {
+     "text": "every",
+     "start": 0.921,
+     "end": 1.221
+    },
+    {
+     "text": "worked",
+     "start": 1.221,
+     "end": 1.563
+    },
+    {
+     "text": "example",
+     "start": 1.563,
+     "end": 1.949
+    },
+    {
+     "text": "in",
+     "start": 1.949,
+     "end": 2.12
+    },
+    {
+     "text": "the",
+     "start": 2.12,
+     "end": 2.335
+    },
+    {
+     "text": "lecture,",
+     "start": 2.334,
+     "end": 2.72
+    },
+    {
+     "text": "and",
+     "start": 3.08,
+     "end": 3.311
+    },
+    {
+     "text": "still",
+     "start": 3.311,
+     "end": 3.634
+    },
+    {
+     "text": "freeze",
+     "start": 3.634,
+     "end": 4.003
+    },
+    {
+     "text": "on",
+     "start": 4.003,
+     "end": 4.187
+    },
+    {
+     "text": "the",
+     "start": 4.187,
+     "end": 4.418
+    },
+    {
+     "text": "problem",
+     "start": 4.418,
+     "end": 4.834
+    },
+    {
+     "text": "sheet.",
+     "start": 4.834,
+     "end": 5.157
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "That's because recognising a method isn't the same as being able to use it.",
+   "start": 5.437,
+   "end": 9.987,
+   "words": [
+    {
+     "text": "That's",
+     "start": 5.437,
+     "end": 5.803
+    },
+    {
+     "text": "because",
+     "start": 5.803,
+     "end": 6.273
+    },
+    {
+     "text": "recognising",
+     "start": 6.273,
+     "end": 6.953
+    },
+    {
+     "text": "a",
+     "start": 6.953,
+     "end": 7.11
+    },
+    {
+     "text": "method",
+     "start": 7.11,
+     "end": 7.528
+    },
+    {
+     "text": "isn't",
+     "start": 7.528,
+     "end": 7.842
+    },
+    {
+     "text": "the",
+     "start": 7.842,
+     "end": 8.104
+    },
+    {
+     "text": "same",
+     "start": 8.104,
+     "end": 8.418
+    },
+    {
+     "text": "as",
+     "start": 8.418,
+     "end": 8.627
+    },
+    {
+     "text": "being",
+     "start": 8.627,
+     "end": 8.993
+    },
+    {
+     "text": "able",
+     "start": 8.993,
+     "end": 9.307
+    },
+    {
+     "text": "to",
+     "start": 9.307,
+     "end": 9.516
+    },
+    {
+     "text": "use",
+     "start": 9.516,
+     "end": 9.777
+    },
+    {
+     "text": "it.",
+     "start": 9.777,
+     "end": 9.987
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "There's research on this. Rereading feels better on the day, but a week later, the students who tested themselves remembered more. It's called the testing effect.",
+   "start": 10.267,
+   "end": 19.533,
+   "words": [
+    {
+     "text": "There's",
+     "start": 10.267,
+     "end": 10.629
+    },
+    {
+     "text": "research",
+     "start": 10.629,
+     "end": 11.083
+    },
+    {
+     "text": "on",
+     "start": 11.083,
+     "end": 11.264
+    },
+    {
+     "text": "this.",
+     "start": 11.264,
+     "end": 11.537
+    },
+    {
+     "text": "Rereading",
+     "start": 11.947,
+     "end": 12.436
+    },
+    {
+     "text": "feels",
+     "start": 12.436,
+     "end": 12.748
+    },
+    {
+     "text": "better",
+     "start": 12.748,
+     "end": 13.104
+    },
+    {
+     "text": "on",
+     "start": 13.104,
+     "end": 13.282
+    },
+    {
+     "text": "the",
+     "start": 13.282,
+     "end": 13.504
+    },
+    {
+     "text": "day,",
+     "start": 13.504,
+     "end": 13.727
+    },
+    {
+     "text": "but",
+     "start": 13.947,
+     "end": 14.139
+    },
+    {
+     "text": "a",
+     "start": 14.139,
+     "end": 14.255
+    },
+    {
+     "text": "week",
+     "start": 14.255,
+     "end": 14.487
+    },
+    {
+     "text": "later,",
+     "start": 14.487,
+     "end": 14.757
+    },
+    {
+     "text": "the",
+     "start": 15.037,
+     "end": 15.25
+    },
+    {
+     "text": "students",
+     "start": 15.25,
+     "end": 15.678
+    },
+    {
+     "text": "who",
+     "start": 15.678,
+     "end": 15.892
+    },
+    {
+     "text": "tested",
+     "start": 15.892,
+     "end": 16.234
+    },
+    {
+     "text": "themselves",
+     "start": 16.234,
+     "end": 16.747
+    },
+    {
+     "text": "remembered",
+     "start": 16.747,
+     "end": 17.26
+    },
+    {
+     "text": "more.",
+     "start": 17.26,
+     "end": 17.517
+    },
+    {
+     "text": "It's",
+     "start": 17.927,
+     "end": 18.156
+    },
+    {
+     "text": "called",
+     "start": 18.156,
+     "end": 18.523
+    },
+    {
+     "text": "the",
+     "start": 18.523,
+     "end": 18.753
+    },
+    {
+     "text": "testing",
+     "start": 18.753,
+     "end": 19.166
+    },
+    {
+     "text": "effect.",
+     "start": 19.166,
+     "end": 19.533
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "So that's what Offload makes you do.",
+   "start": 19.813,
+   "end": 21.844,
+   "words": [
+    {
+     "text": "So",
+     "start": 19.813,
+     "end": 20.006
+    },
+    {
+     "text": "that's",
+     "start": 20.006,
+     "end": 20.345
+    },
+    {
+     "text": "what",
+     "start": 20.345,
+     "end": 20.635
+    },
+    {
+     "text": "Offload",
+     "start": 20.635,
+     "end": 21.07
+    },
+    {
+     "text": "makes",
+     "start": 21.07,
+     "end": 21.409
+    },
+    {
+     "text": "you",
+     "start": 21.409,
+     "end": 21.651
+    },
+    {
+     "text": "do.",
+     "start": 21.651,
+     "end": 21.844
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Feynman prompts to explain the method, then exam-style questions on your own module notes.",
+   "start": 22.124,
+   "end": 27.678,
+   "words": [
+    {
+     "text": "Feynman",
+     "start": 22.124,
+     "end": 22.523
+    },
+    {
+     "text": "prompts",
+     "start": 22.523,
+     "end": 22.922
+    },
+    {
+     "text": "to",
+     "start": 22.922,
+     "end": 23.099
+    },
+    {
+     "text": "explain",
+     "start": 23.099,
+     "end": 23.498
+    },
+    {
+     "text": "the",
+     "start": 23.498,
+     "end": 23.72
+    },
+    {
+     "text": "method,",
+     "start": 23.72,
+     "end": 24.074
+    },
+    {
+     "text": "then",
+     "start": 24.504,
+     "end": 24.833
+    },
+    {
+     "text": "exam-style",
+     "start": 24.833,
+     "end": 25.435
+    },
+    {
+     "text": "questions",
+     "start": 25.435,
+     "end": 26.037
+    },
+    {
+     "text": "on",
+     "start": 26.037,
+     "end": 26.255
+    },
+    {
+     "text": "your",
+     "start": 26.255,
+     "end": 26.584
+    },
+    {
+     "text": "own",
+     "start": 26.584,
+     "end": 26.857
+    },
+    {
+     "text": "module",
+     "start": 26.857,
+     "end": 27.295
+    },
+    {
+     "text": "notes.",
+     "start": 27.295,
+     "end": 27.678
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 28.178,
+   "end": 32.011,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 28.178,
+     "end": 29.828
+    },
+    {
+     "text": "A",
+     "start": 30.048,
+     "end": 30.148
+    },
+    {
+     "text": "study",
+     "start": 30.148,
+     "end": 30.381
+    },
+    {
+     "text": "system",
+     "start": 30.381,
+     "end": 30.647
+    },
+    {
+     "text": "that",
+     "start": 30.647,
+     "end": 30.847
+    },
+    {
+     "text": "adapts",
+     "start": 30.847,
+     "end": 31.113
+    },
+    {
+     "text": "when",
+     "start": 31.113,
+     "end": 31.312
+    },
+    {
+     "text": "real",
+     "start": 31.312,
+     "end": 31.512
+    },
+    {
+     "text": "life",
+     "start": 31.512,
+     "end": 31.711
+    },
+    {
+     "text": "happens.",
+     "start": 31.711,
+     "end": 32.011
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "id": "gcse-mocks",
+ "voice": "af_heart*0.7+af_bella*0.3",
+ "lang": "en-us",
+ "speed": 1.0,
+ "gap": 0.2,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Your revision timetable is going to fail. Here's why."
+  },
+  {
+   "id": "L2",
+   "say": "Mocks are coming, and every subject wants tonight."
+  },
+  {
+   "id": "L3",
+   "say": "So you make a perfect, colour coded timetable."
+  },
+  {
+   "id": "L4",
+   "say": "Then one evening goes wrong, and the whole thing falls apart."
+  },
+  {
+   "id": "L5",
+   "say": "A plan that can't bend just breaks."
+  },
+  {
+   "id": "L6",
+   "say": "Offload reschedules your revision when a day goes wrong.",
+   "after": 1.8
+  },
+  {
+   "id": "L7",
+   "say": "Comment mocks and I'll send you the plan."
+  }
+ ]
+}

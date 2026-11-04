@@ -1,0 +1,508 @@
+{
+ "duration": 33.245,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "If you're a med student, your Anki deck is probably a library with no librarian.",
+   "start": 0.15,
+   "end": 5.307,
+   "words": [
+    {
+     "text": "If",
+     "start": 0.15,
+     "end": 0.319
+    },
+    {
+     "text": "you're",
+     "start": 0.319,
+     "end": 0.614
+    },
+    {
+     "text": "a",
+     "start": 0.614,
+     "end": 0.74
+    },
+    {
+     "text": "med",
+     "start": 0.74,
+     "end": 0.951
+    },
+    {
+     "text": "student,",
+     "start": 0.951,
+     "end": 1.33
+    },
+    {
+     "text": "your",
+     "start": 1.63,
+     "end": 1.969
+    },
+    {
+     "text": "Anki",
+     "start": 1.969,
+     "end": 2.309
+    },
+    {
+     "text": "deck",
+     "start": 2.309,
+     "end": 2.648
+    },
+    {
+     "text": "is",
+     "start": 2.648,
+     "end": 2.875
+    },
+    {
+     "text": "probably",
+     "start": 2.875,
+     "end": 3.44
+    },
+    {
+     "text": "a",
+     "start": 3.44,
+     "end": 3.61
+    },
+    {
+     "text": "library",
+     "start": 3.61,
+     "end": 4.119
+    },
+    {
+     "text": "with",
+     "start": 4.119,
+     "end": 4.459
+    },
+    {
+     "text": "no",
+     "start": 4.459,
+     "end": 4.685
+    },
+    {
+     "text": "librarian.",
+     "start": 4.685,
+     "end": 5.307
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Thousands of cards, and no idea which ones actually matter for your exam.",
+   "start": 5.587,
+   "end": 10.256,
+   "words": [
+    {
+     "text": "Thousands",
+     "start": 5.587,
+     "end": 6.162
+    },
+    {
+     "text": "of",
+     "start": 6.162,
+     "end": 6.371
+    },
+    {
+     "text": "cards,",
+     "start": 6.371,
+     "end": 6.737
+    },
+    {
+     "text": "and",
+     "start": 7.057,
+     "end": 7.311
+    },
+    {
+     "text": "no",
+     "start": 7.311,
+     "end": 7.514
+    },
+    {
+     "text": "idea",
+     "start": 7.514,
+     "end": 7.819
+    },
+    {
+     "text": "which",
+     "start": 7.819,
+     "end": 8.174
+    },
+    {
+     "text": "ones",
+     "start": 8.174,
+     "end": 8.479
+    },
+    {
+     "text": "actually",
+     "start": 8.479,
+     "end": 8.987
+    },
+    {
+     "text": "matter",
+     "start": 8.987,
+     "end": 9.393
+    },
+    {
+     "text": "for",
+     "start": 9.393,
+     "end": 9.647
+    },
+    {
+     "text": "your",
+     "start": 9.647,
+     "end": 9.951
+    },
+    {
+     "text": "exam.",
+     "start": 9.951,
+     "end": 10.256
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Offload builds your cards from your own notes and syllabus, not someone else's deck.",
+   "start": 10.536,
+   "end": 15.293,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 10.536,
+     "end": 10.939
+    },
+    {
+     "text": "builds",
+     "start": 10.939,
+     "end": 11.297
+    },
+    {
+     "text": "your",
+     "start": 11.297,
+     "end": 11.566
+    },
+    {
+     "text": "cards",
+     "start": 11.566,
+     "end": 11.879
+    },
+    {
+     "text": "from",
+     "start": 11.879,
+     "end": 12.148
+    },
+    {
+     "text": "your",
+     "start": 12.148,
+     "end": 12.417
+    },
+    {
+     "text": "own",
+     "start": 12.417,
+     "end": 12.641
+    },
+    {
+     "text": "notes",
+     "start": 12.641,
+     "end": 12.954
+    },
+    {
+     "text": "and",
+     "start": 12.954,
+     "end": 13.178
+    },
+    {
+     "text": "syllabus,",
+     "start": 13.178,
+     "end": 13.626
+    },
+    {
+     "text": "not",
+     "start": 13.966,
+     "end": 14.212
+    },
+    {
+     "text": "someone",
+     "start": 14.212,
+     "end": 14.654
+    },
+    {
+     "text": "else's",
+     "start": 14.654,
+     "end": 14.998
+    },
+    {
+     "text": "deck.",
+     "start": 14.998,
+     "end": 15.293
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "It brings each one back right before you'd forget it. That's called spacing, and it's one of the most reliable findings in memory research.",
+   "start": 15.573,
+   "end": 23.537,
+   "words": [
+    {
+     "text": "It",
+     "start": 15.573,
+     "end": 15.732
+    },
+    {
+     "text": "brings",
+     "start": 15.732,
+     "end": 16.049
+    },
+    {
+     "text": "each",
+     "start": 16.049,
+     "end": 16.287
+    },
+    {
+     "text": "one",
+     "start": 16.287,
+     "end": 16.486
+    },
+    {
+     "text": "back",
+     "start": 16.486,
+     "end": 16.724
+    },
+    {
+     "text": "right",
+     "start": 16.724,
+     "end": 17.002
+    },
+    {
+     "text": "before",
+     "start": 17.002,
+     "end": 17.319
+    },
+    {
+     "text": "you'd",
+     "start": 17.319,
+     "end": 17.557
+    },
+    {
+     "text": "forget",
+     "start": 17.557,
+     "end": 17.874
+    },
+    {
+     "text": "it.",
+     "start": 17.874,
+     "end": 18.033
+    },
+    {
+     "text": "That's",
+     "start": 18.573,
+     "end": 18.914
+    },
+    {
+     "text": "called",
+     "start": 18.914,
+     "end": 19.304
+    },
+    {
+     "text": "spacing,",
+     "start": 19.304,
+     "end": 19.743
+    },
+    {
+     "text": "and",
+     "start": 20.093,
+     "end": 20.332
+    },
+    {
+     "text": "it's",
+     "start": 20.332,
+     "end": 20.571
+    },
+    {
+     "text": "one",
+     "start": 20.571,
+     "end": 20.811
+    },
+    {
+     "text": "of",
+     "start": 20.811,
+     "end": 21.002
+    },
+    {
+     "text": "the",
+     "start": 21.002,
+     "end": 21.241
+    },
+    {
+     "text": "most",
+     "start": 21.241,
+     "end": 21.528
+    },
+    {
+     "text": "reliable",
+     "start": 21.528,
+     "end": 22.006
+    },
+    {
+     "text": "findings",
+     "start": 22.006,
+     "end": 22.484
+    },
+    {
+     "text": "in",
+     "start": 22.484,
+     "end": 22.676
+    },
+    {
+     "text": "memory",
+     "start": 22.676,
+     "end": 23.058
+    },
+    {
+     "text": "research.",
+     "start": 23.058,
+     "end": 23.537
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "And when you get one wrong, it books time in your calendar to re-learn it.",
+   "start": 23.817,
+   "end": 27.633,
+   "words": [
+    {
+     "text": "And",
+     "start": 23.817,
+     "end": 23.995
+    },
+    {
+     "text": "when",
+     "start": 23.995,
+     "end": 24.21
+    },
+    {
+     "text": "you",
+     "start": 24.21,
+     "end": 24.389
+    },
+    {
+     "text": "get",
+     "start": 24.389,
+     "end": 24.568
+    },
+    {
+     "text": "one",
+     "start": 24.568,
+     "end": 24.746
+    },
+    {
+     "text": "wrong,",
+     "start": 24.746,
+     "end": 24.997
+    },
+    {
+     "text": "it",
+     "start": 25.277,
+     "end": 25.451
+    },
+    {
+     "text": "books",
+     "start": 25.451,
+     "end": 25.757
+    },
+    {
+     "text": "time",
+     "start": 25.757,
+     "end": 26.018
+    },
+    {
+     "text": "in",
+     "start": 26.018,
+     "end": 26.193
+    },
+    {
+     "text": "your",
+     "start": 26.193,
+     "end": 26.455
+    },
+    {
+     "text": "calendar",
+     "start": 26.455,
+     "end": 26.891
+    },
+    {
+     "text": "to",
+     "start": 26.891,
+     "end": 27.066
+    },
+    {
+     "text": "re-learn",
+     "start": 27.066,
+     "end": 27.458
+    },
+    {
+     "text": "it.",
+     "start": 27.458,
+     "end": 27.633
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 28.133,
+   "end": 31.965,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 28.133,
+     "end": 29.783
+    },
+    {
+     "text": "A",
+     "start": 30.003,
+     "end": 30.103
+    },
+    {
+     "text": "study",
+     "start": 30.103,
+     "end": 30.336
+    },
+    {
+     "text": "system",
+     "start": 30.336,
+     "end": 30.602
+    },
+    {
+     "text": "that",
+     "start": 30.602,
+     "end": 30.801
+    },
+    {
+     "text": "adapts",
+     "start": 30.801,
+     "end": 31.067
+    },
+    {
+     "text": "when",
+     "start": 31.067,
+     "end": 31.267
+    },
+    {
+     "text": "real",
+     "start": 31.267,
+     "end": 31.466
+    },
+    {
+     "text": "life",
+     "start": 31.466,
+     "end": 31.666
+    },
+    {
+     "text": "happens.",
+     "start": 31.666,
+     "end": 31.965
+    }
+   ]
+  }
+ ]
+}

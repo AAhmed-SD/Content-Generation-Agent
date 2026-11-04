@@ -40,6 +40,46 @@ Import accepts a full image or an `.offload.json` project. Export writes a PNG a
 
 When the Kokoro model is present under `tools/`, the desk can write a wav next to the render. The narration on the card stays text. The mp4 does not mix that wav in by itself.
 
+## Launch volume (planned, not built)
+
+Decided on 2026-11-04. Nothing in this section runs yet.
+
+Each niche posts two videos a day to TikTok, Instagram, Facebook, and YouTube Shorts, and two carousels a day to TikTok, Instagram, and Facebook. Three LinkedIn accounts post twice a day each: the founder, the outreach officer, and the Offload brand.
+
+A video is written once and cross-posted. It is not written four times. That is eight video scripts a day across the four niches. The time saved goes into hooks, not into more files.
+
+- **One master, two openers.** Each video script carries a body and two hook openers, A and B. The body is the same in both renders. Only the first seconds change.
+- **The split.** On odd days A goes to TikTok and Shorts, and B goes to Instagram and Facebook. On even days the pairs swap.
+- **The master is clean.** No platform watermark is ever burned in. Each platform gets an export from the master, not a download from another platform.
+- **The packaging differs.** Caption, title, cover frame, safe area, and posting time are set per platform. `brand/platforms.md` holds those rules.
+- **Sound is not automated.** Business accounts may only use commercially licensed music. A trending sound is added by hand or not at all.
+
+The loop stores numbers per platform and per opener, not per piece. A hook style wins only from comparisons on the same platform over time. One day's A against B across two platforms is a sample, not a verdict.
+
+To run without a person, the desk still needs: a publishing connection to each platform, analytics pulled from each platform, renders that run in parallel, LinkedIn voice files for the three accounts, and a decision on whether stamps move from each piece to a template or a batch.
+
+## Hosting (planned, not built)
+
+Decided on 2026-11-04: everything runs on one server. No part of the week depends on this Mac being on.
+
+The server is one Linux machine with a persistent disk, about 8 vCPU and 16 GB, behind HTTPS. One container image holds Node, headless Chrome for Remotion, ffmpeg, and Python with the Kokoro and faster-whisper models. Two processes run from it: the Next desk, and a worker that renders, voices, and runs the Monday job on a timer.
+
+What moves, and what replaces it:
+
+| Today | On the server |
+| --- | --- |
+| `web/data/*.json` on this Mac | The same files on the server disk at first, backed up nightly. Later, Postgres. |
+| Renders in `web/data/renders` | The server disk, served at a signed URL. Instagram and Facebook publishing need a public video URL. |
+| One render at a time | The worker runs two or three at once. |
+| `vision-ocr.swift` (macOS Vision) | Tesseract or Claude vision. This is the only part that cannot run on Linux. |
+| Kokoro voice, faster-whisper timing | No change. Both run on CPU on Linux. The 585 MB model folder is copied in once. |
+| Ollama drafts | Claude Haiku, or the locked line. A local model is not worth the RAM. |
+| `web/.env.local` | The host's secrets: `ANTHROPIC_API_KEY`, `AUTH_SECRET`, and the research keys. |
+
+Sign-in stays the same: two people, scrypt passwords, a sealed cookie.
+
+Order: 1. Container and server with files on disk, live behind HTTPS. 2. Replace OCR and Ollama. 3. Worker with parallel renders and the Monday timer. 4. Platform publishing and analytics. 5. Postgres, when the volume of files makes it worth it.
+
 ## What is not built
 
 No Postgres. No hosted desk. No pose library. YouTube Analytics and a Meta app are not connected. Nothing posts, spends, or sends on its own. The trial sentence in `brand/platforms.md` is still unset.

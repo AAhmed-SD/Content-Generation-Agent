@@ -1,0 +1,40 @@
+{
+ "id": "clinical-list",
+ "voice": "af_heart*0.7+af_bella*0.3",
+ "lang": "en-us",
+ "speed": 1.0,
+ "gap": 0.2,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Med students. Your reading list isn't the problem."
+  },
+  {
+   "id": "L2",
+   "say": "Ward round runs over. Teaching gets moved."
+  },
+  {
+   "id": "L3",
+   "say": "You get home, and the list is longer than this morning."
+  },
+  {
+   "id": "L4",
+   "say": "So you skip it. Again."
+  },
+  {
+   "id": "L5",
+   "say": "The problem is a plan that never moves when your day does."
+  },
+  {
+   "id": "L6",
+   "say": "Offload reschedules your week when a shift wins.",
+   "after": 1.8
+  },
+  {
+   "id": "L7",
+   "say": "Comment list and I'll send you the plan."
+  }
+ ]
+}

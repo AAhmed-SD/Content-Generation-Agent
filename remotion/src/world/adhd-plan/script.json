@@ -1,0 +1,45 @@
+{
+ "id": "adhd-plan",
+ "voice": "af_heart*0.7+af_bella*0.3",
+ "lang": "en-us",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Hey, students with A D H D. Does this sound like you?"
+  },
+  {
+   "id": "L2",
+   "say": "Called lazy at every parents' evening. Capable, but lazy. Detentions, isolation."
+  },
+  {
+   "id": "L3",
+   "say": "That was my brother. One of the smartest people I know, obsessed with planes and mechanics."
+  },
+  {
+   "id": "L4",
+   "say": "He was diagnosed at eighteen, after he failed his A-levels."
+  },
+  {
+   "id": "L5",
+   "say": "The problem was never ability. It was planning, starting, and keeping track."
+  },
+  {
+   "id": "L6",
+   "say": "So I built Offload. It holds the plan for you, and when you miss a day, it moves the work into your free time, and tells you what moved.",
+   "after": 0.5
+  },
+  {
+   "id": "L7",
+   "say": "So you never start from zero.",
+   "after": 0.5
+  },
+  {
+   "id": "L8",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

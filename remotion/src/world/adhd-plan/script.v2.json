@@ -1,0 +1,44 @@
+{
+ "id": "adhd-plan",
+ "voice": "af_heart*0.7+af_bella*0.3",
+ "lang": "en-us",
+ "speed": 1.0,
+ "gap": 0.2,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "My brother wasn't lazy. Nobody ever gave him a plan."
+  },
+  {
+   "id": "L2",
+   "say": "Every parents' evening. Capable, but lazy. Detentions. Isolation rooms."
+  },
+  {
+   "id": "L3",
+   "say": "He knew hundreds of car models before most kids could read."
+  },
+  {
+   "id": "L4",
+   "say": "Effort was never the problem. Starting was. Tracking was. Time was."
+  },
+  {
+   "id": "L5",
+   "say": "He was diagnosed with A D H D at eighteen. After his A-levels."
+  },
+  {
+   "id": "L6",
+   "say": "So we built the plan he never had."
+  },
+  {
+   "id": "L7",
+   "say": "Offload holds the plan, and moves it when your day falls apart.",
+   "after": 1.8
+  },
+  {
+   "id": "L8",
+   "say": "Comment plan if this was you too."
+  }
+ ]
+}

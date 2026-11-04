@@ -1,0 +1,36 @@
+{
+ "id": "clinical-list",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "If you're a med student, your Anki deck is probably a library with no librarian."
+  },
+  {
+   "id": "L2",
+   "say": "Thousands of cards, and no idea which ones actually matter for your exam."
+  },
+  {
+   "id": "L3",
+   "say": "Offload builds your cards from your own notes and syllabus, not someone else's deck."
+  },
+  {
+   "id": "L4",
+   "say": "It brings each one back right before you'd forget it. That's called spacing, and it's one of the most reliable findings in memory research."
+  },
+  {
+   "id": "L5",
+   "say": "And when you get one wrong, it books time in your calendar to re-learn it.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

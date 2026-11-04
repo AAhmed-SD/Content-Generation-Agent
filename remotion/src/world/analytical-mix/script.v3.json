@@ -1,0 +1,44 @@
+{
+ "id": "analytical-mix",
+ "voice": "af_heart*0.7+af_bella*0.3",
+ "lang": "en-us",
+ "speed": 1.0,
+ "gap": 0.2,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "You're not bad at maths. You're practising it wrong."
+  },
+  {
+   "id": "L2",
+   "say": "You understood the method on Tuesday. By the exam, it's gone."
+  },
+  {
+   "id": "L3",
+   "say": "Because you did the same type, back to back."
+  },
+  {
+   "id": "L4",
+   "say": "It feels like learning. It's just repeating."
+  },
+  {
+   "id": "L5",
+   "say": "Then the exam mixes everything, and you can't tell which method to use."
+  },
+  {
+   "id": "L6",
+   "say": "So mix your sets. Old questions next to new ones."
+  },
+  {
+   "id": "L7",
+   "say": "And when you miss a day, Offload reschedules the week.",
+   "after": 1.8
+  },
+  {
+   "id": "L8",
+   "say": "Comment mix and I'll send you the method."
+  }
+ ]
+}

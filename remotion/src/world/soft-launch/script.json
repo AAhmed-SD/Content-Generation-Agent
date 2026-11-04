@@ -1,0 +1,48 @@
+{
+ "id": "soft-launch",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "For years, revision plans have broken the moment real life happens."
+  },
+  {
+   "id": "L2",
+   "say": "Today, that changes."
+  },
+  {
+   "id": "L3",
+   "say": "Introducing Offload.",
+   "after": 0.6
+  },
+  {
+   "id": "L4",
+   "say": "Upload your notes and your exam dates."
+  },
+  {
+   "id": "L5",
+   "say": "Everything's built from your own notes. Flashcards, blurting, and exam-style questions."
+  },
+  {
+   "id": "L6",
+   "say": "First you learn it, then it tests you, then it keeps it in your head."
+  },
+  {
+   "id": "L7",
+   "say": "Connect your Google Calendar, and it plans around your lectures and shifts."
+  },
+  {
+   "id": "L8",
+   "say": "Miss a day, and it moves the work, and tells you what moved."
+  },
+  {
+   "id": "L9",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

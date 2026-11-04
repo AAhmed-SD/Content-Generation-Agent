@@ -1,0 +1,17 @@
+{
+  "id": "past-papers",
+  "voice": "bm_george",
+  "speed": 1.24,
+  "gap": 0.1,
+  "lines": [
+    { "id": "L1", "say": "Past papers are useless if you binge them like Netflix.", "tts": "Past papers are useless if you binge them like Netflix." },
+    { "id": "L2", "say": "Do a paper. Mark it. Feel awful. Next one.", "phrases": ["Do a paper.", "Mark it.", "Feel awful.", "Next one."] },
+    { "id": "L3", "say": "You're just rewatching your own mistakes." },
+    { "id": "L4", "say": "The marks you lost? That's the whole point.", "phrases": ["The marks you lost?", "That's the whole point."] },
+    { "id": "L5", "say": "Turn each one into a flashcard." },
+    { "id": "L6", "say": "Redo it in three days. Then in a week.", "phrases": ["Redo it in three days.", "Then in a week."] },
+    { "id": "L7", "say": "That's spacing. It's how memory actually sticks.", "phrases": ["That's spacing.", "It's how memory actually sticks."] },
+    { "id": "L8", "say": "Offload drops every lost mark into your remediation deck, and brings it back on time." },
+    { "id": "L9", "say": "Comment papers and I'll send you the method." }
+  ]
+}

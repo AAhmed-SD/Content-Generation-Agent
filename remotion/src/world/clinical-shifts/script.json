@@ -1,0 +1,17 @@
+{
+ "id": "clinical-shifts",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  { "id": "L1", "say": "Twelve-hour shift, then two hours of revision? That plan was never going to work." },
+  { "id": "L2", "say": "You get home, you skip it, and by Friday the whole week is behind.", "after": 0.6 },
+  { "id": "L3", "say": "Offload plans around your shifts, lectures and placements, once they're in your Google Calendar." },
+  { "id": "L4", "say": "It puts every session in the free time that's actually left." },
+  { "id": "L5", "say": "Miss one, and it moves the work into your free time, and tells you what moved.", "after": 0.5 },
+  { "id": "L6", "say": "Offload. A study system that adapts when real life happens." }
+ ]
+}

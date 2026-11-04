@@ -1,0 +1,599 @@
+{
+ "duration": 38.923,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Hey, students with A D H D. Does this sound like you?",
+   "start": 0.15,
+   "end": 3.314,
+   "words": [
+    {
+     "text": "Hey,",
+     "start": 0.15,
+     "end": 0.401
+    },
+    {
+     "text": "students",
+     "start": 0.401,
+     "end": 0.903
+    },
+    {
+     "text": "with",
+     "start": 0.903,
+     "end": 1.205
+    },
+    {
+     "text": "A",
+     "start": 1.205,
+     "end": 1.355
+    },
+    {
+     "text": "D",
+     "start": 1.355,
+     "end": 1.506
+    },
+    {
+     "text": "H",
+     "start": 1.506,
+     "end": 1.657
+    },
+    {
+     "text": "D.",
+     "start": 1.657,
+     "end": 1.807
+    },
+    {
+     "text": "Does",
+     "start": 1.807,
+     "end": 2.109
+    },
+    {
+     "text": "this",
+     "start": 2.109,
+     "end": 2.41
+    },
+    {
+     "text": "sound",
+     "start": 2.41,
+     "end": 2.761
+    },
+    {
+     "text": "like",
+     "start": 2.761,
+     "end": 3.063
+    },
+    {
+     "text": "you?",
+     "start": 3.063,
+     "end": 3.314
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Called lazy at every parents' evening. Capable, but lazy. Detentions, isolation.",
+   "start": 3.594,
+   "end": 9.311,
+   "words": [
+    {
+     "text": "Called",
+     "start": 3.6,
+     "end": 3.9200000000000004
+    },
+    {
+     "text": "lazy",
+     "start": 3.95,
+     "end": 4.22
+    },
+    {
+     "text": "at",
+     "start": 4.25,
+     "end": 4.42
+    },
+    {
+     "text": "every",
+     "start": 4.45,
+     "end": 4.72
+    },
+    {
+     "text": "parents'",
+     "start": 4.75,
+     "end": 5.12
+    },
+    {
+     "text": "evening.",
+     "start": 5.15,
+     "end": 6.029999999999999
+    },
+    {
+     "text": "Capable,",
+     "start": 6.06,
+     "end": 6.609999999999999
+    },
+    {
+     "text": "but",
+     "start": 6.64,
+     "end": 6.819999999999999
+    },
+    {
+     "text": "lazy.",
+     "start": 6.85,
+     "end": 7.63
+    },
+    {
+     "text": "Detentions,",
+     "start": 7.66,
+     "end": 8.39
+    },
+    {
+     "text": "isolation.",
+     "start": 8.42,
+     "end": 9.311
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "That was my brother. One of the smartest people I know, obsessed with planes and mechanics.",
+   "start": 9.591,
+   "end": 14.906,
+   "words": [
+    {
+     "text": "That",
+     "start": 9.591,
+     "end": 9.816
+    },
+    {
+     "text": "was",
+     "start": 9.816,
+     "end": 10.004
+    },
+    {
+     "text": "my",
+     "start": 10.004,
+     "end": 10.154
+    },
+    {
+     "text": "brother.",
+     "start": 10.154,
+     "end": 10.491
+    },
+    {
+     "text": "One",
+     "start": 10.981,
+     "end": 11.187
+    },
+    {
+     "text": "of",
+     "start": 11.187,
+     "end": 11.352
+    },
+    {
+     "text": "the",
+     "start": 11.352,
+     "end": 11.558
+    },
+    {
+     "text": "smartest",
+     "start": 11.558,
+     "end": 11.971
+    },
+    {
+     "text": "people",
+     "start": 11.971,
+     "end": 12.3
+    },
+    {
+     "text": "I",
+     "start": 12.3,
+     "end": 12.424
+    },
+    {
+     "text": "know,",
+     "start": 12.424,
+     "end": 12.671
+    },
+    {
+     "text": "obsessed",
+     "start": 12.961,
+     "end": 13.447
+    },
+    {
+     "text": "with",
+     "start": 13.447,
+     "end": 13.739
+    },
+    {
+     "text": "planes",
+     "start": 13.739,
+     "end": 14.128
+    },
+    {
+     "text": "and",
+     "start": 14.128,
+     "end": 14.371
+    },
+    {
+     "text": "mechanics.",
+     "start": 14.371,
+     "end": 14.906
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "He was diagnosed at eighteen, after he failed his A-levels.",
+   "start": 15.186,
+   "end": 18.84,
+   "words": [
+    {
+     "text": "He",
+     "start": 15.186,
+     "end": 15.389
+    },
+    {
+     "text": "was",
+     "start": 15.389,
+     "end": 15.644
+    },
+    {
+     "text": "diagnosed",
+     "start": 15.644,
+     "end": 16.203
+    },
+    {
+     "text": "at",
+     "start": 16.203,
+     "end": 16.407
+    },
+    {
+     "text": "eighteen,",
+     "start": 16.407,
+     "end": 16.916
+    },
+    {
+     "text": "after",
+     "start": 17.266,
+     "end": 17.6
+    },
+    {
+     "text": "he",
+     "start": 17.6,
+     "end": 17.79
+    },
+    {
+     "text": "failed",
+     "start": 17.79,
+     "end": 18.172
+    },
+    {
+     "text": "his",
+     "start": 18.172,
+     "end": 18.41
+    },
+    {
+     "text": "A-levels.",
+     "start": 18.41,
+     "end": 18.84
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "The problem was never ability. It was planning, starting, and keeping track.",
+   "start": 19.12,
+   "end": 23.44,
+   "words": [
+    {
+     "text": "The",
+     "start": 19.14,
+     "end": 19.27
+    },
+    {
+     "text": "problem",
+     "start": 19.3,
+     "end": 19.47
+    },
+    {
+     "text": "was",
+     "start": 19.5,
+     "end": 19.72
+    },
+    {
+     "text": "never",
+     "start": 19.75,
+     "end": 20.02
+    },
+    {
+     "text": "ability.",
+     "start": 20.05,
+     "end": 21.11
+    },
+    {
+     "text": "It",
+     "start": 21.14,
+     "end": 21.27
+    },
+    {
+     "text": "was",
+     "start": 21.3,
+     "end": 21.43
+    },
+    {
+     "text": "planning,",
+     "start": 21.46,
+     "end": 22.029999999999998
+    },
+    {
+     "text": "starting,",
+     "start": 22.06,
+     "end": 22.59
+    },
+    {
+     "text": "and",
+     "start": 22.62,
+     "end": 22.77
+    },
+    {
+     "text": "keeping",
+     "start": 22.8,
+     "end": 23.009999999999998
+    },
+    {
+     "text": "track.",
+     "start": 23.04,
+     "end": 23.44
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "So I built Offload. It holds the plan for you, and when you miss a day, it moves the work into your free time, and tells you what moved.",
+   "start": 23.72,
+   "end": 31.505,
+   "words": [
+    {
+     "text": "So",
+     "start": 23.72,
+     "end": 23.926
+    },
+    {
+     "text": "I",
+     "start": 23.926,
+     "end": 24.08
+    },
+    {
+     "text": "built",
+     "start": 24.08,
+     "end": 24.439
+    },
+    {
+     "text": "Offload.",
+     "start": 24.439,
+     "end": 24.9
+    },
+    {
+     "text": "It",
+     "start": 25.45,
+     "end": 25.608
+    },
+    {
+     "text": "holds",
+     "start": 25.608,
+     "end": 25.884
+    },
+    {
+     "text": "the",
+     "start": 25.884,
+     "end": 26.08
+    },
+    {
+     "text": "plan",
+     "start": 26.08,
+     "end": 26.317
+    },
+    {
+     "text": "for",
+     "start": 26.317,
+     "end": 26.514
+    },
+    {
+     "text": "you,",
+     "start": 26.514,
+     "end": 26.71
+    },
+    {
+     "text": "and",
+     "start": 27.0,
+     "end": 27.17
+    },
+    {
+     "text": "when",
+     "start": 27.17,
+     "end": 27.374
+    },
+    {
+     "text": "you",
+     "start": 27.374,
+     "end": 27.544
+    },
+    {
+     "text": "miss",
+     "start": 27.544,
+     "end": 27.748
+    },
+    {
+     "text": "a",
+     "start": 27.748,
+     "end": 27.85
+    },
+    {
+     "text": "day,",
+     "start": 27.85,
+     "end": 28.02
+    },
+    {
+     "text": "it",
+     "start": 28.16,
+     "end": 28.321
+    },
+    {
+     "text": "moves",
+     "start": 28.321,
+     "end": 28.603
+    },
+    {
+     "text": "the",
+     "start": 28.603,
+     "end": 28.804
+    },
+    {
+     "text": "work",
+     "start": 28.804,
+     "end": 29.045
+    },
+    {
+     "text": "into",
+     "start": 29.045,
+     "end": 29.287
+    },
+    {
+     "text": "your",
+     "start": 29.287,
+     "end": 29.528
+    },
+    {
+     "text": "free",
+     "start": 29.528,
+     "end": 29.769
+    },
+    {
+     "text": "time,",
+     "start": 29.769,
+     "end": 30.01
+    },
+    {
+     "text": "and",
+     "start": 30.22,
+     "end": 30.434
+    },
+    {
+     "text": "tells",
+     "start": 30.434,
+     "end": 30.734
+    },
+    {
+     "text": "you",
+     "start": 30.734,
+     "end": 30.948
+    },
+    {
+     "text": "what",
+     "start": 30.948,
+     "end": 31.205
+    },
+    {
+     "text": "moved.",
+     "start": 31.205,
+     "end": 31.505
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "So you never start from zero.",
+   "start": 32.005,
+   "end": 33.557,
+   "words": [
+    {
+     "text": "So",
+     "start": 32.005,
+     "end": 32.182
+    },
+    {
+     "text": "you",
+     "start": 32.182,
+     "end": 32.404
+    },
+    {
+     "text": "never",
+     "start": 32.404,
+     "end": 32.714
+    },
+    {
+     "text": "start",
+     "start": 32.714,
+     "end": 33.025
+    },
+    {
+     "text": "from",
+     "start": 33.025,
+     "end": 33.291
+    },
+    {
+     "text": "zero.",
+     "start": 33.291,
+     "end": 33.557
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 34.057,
+   "end": 37.644,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 34.057,
+     "end": 34.557
+    },
+    {
+     "text": "A",
+     "start": 34.927,
+     "end": 35.065
+    },
+    {
+     "text": "study",
+     "start": 35.065,
+     "end": 35.388
+    },
+    {
+     "text": "system",
+     "start": 35.388,
+     "end": 35.756
+    },
+    {
+     "text": "that",
+     "start": 35.756,
+     "end": 36.032
+    },
+    {
+     "text": "adapts",
+     "start": 36.032,
+     "end": 36.4
+    },
+    {
+     "text": "when",
+     "start": 36.4,
+     "end": 36.677
+    },
+    {
+     "text": "real",
+     "start": 36.677,
+     "end": 36.953
+    },
+    {
+     "text": "life",
+     "start": 36.953,
+     "end": 37.229
+    },
+    {
+     "text": "happens.",
+     "start": 37.229,
+     "end": 37.644
+    }
+   ]
+  }
+ ]
+}

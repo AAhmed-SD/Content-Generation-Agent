@@ -1,0 +1,60 @@
+{
+  "id": "past-papers",
+  "voice": "bm_george",
+  "speed": 1.06,
+  "lines": [
+    {
+      "id": "L1",
+      "say": "Past papers are useless if you use them like Netflix.",
+      "tts": "Past papers are useless, if you use them like Netflix."
+    },
+    {
+      "id": "L2",
+      "say": "Paper. Mark it. Feel bad. Next paper.",
+      "phrases": [
+        "Paper.",
+        "Mark it.",
+        "Feel bad.",
+        "Next paper."
+      ]
+    },
+    {
+      "id": "L3",
+      "say": "You're binge-watching your own mistakes."
+    },
+    {
+      "id": "L4",
+      "say": "The marks you lost are the only part that matters."
+    },
+    {
+      "id": "L5",
+      "say": "Turn every lost mark into a question."
+    },
+    {
+      "id": "L6",
+      "say": "Redo it in three days. Then again in a week.",
+      "phrases": [
+        "Redo it in three days.",
+        "Then again in a week."
+      ]
+    },
+    {
+      "id": "L7",
+      "say": "That's spacing. One of the best-evidenced ways to revise.",
+      "tts": "That's spacing. One of the best evidenced ways to revise.",
+      "phrases": [
+        "That's spacing.",
+        "One of the best evidenced ways to revise."
+      ]
+    },
+    {
+      "id": "L8",
+      "say": "Offload puts every lost mark into your remediation deck, and brings it back on time.",
+      "tts": "Offload puts every lost mark into your remediation deck, and brings it back, on time."
+    },
+    {
+      "id": "L9",
+      "say": "Comment papers for the method."
+    }
+  ]
+}

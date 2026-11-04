@@ -1,0 +1,36 @@
+{
+ "id": "analytical-mix",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "You can follow every worked example in the lecture, and still freeze on the problem sheet."
+  },
+  {
+   "id": "L2",
+   "say": "That's because recognising a method isn't the same as being able to use it."
+  },
+  {
+   "id": "L3",
+   "say": "There's research on this. Rereading feels better on the day, but a week later, the students who tested themselves remembered more. It's called the testing effect."
+  },
+  {
+   "id": "L4",
+   "say": "So that's what Offload makes you do."
+  },
+  {
+   "id": "L5",
+   "say": "Feynman prompts to explain the method, then exam-style questions on your own module notes.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

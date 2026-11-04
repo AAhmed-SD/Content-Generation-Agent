@@ -1,0 +1,459 @@
+{
+ "duration": 27.744,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "My brother got called lazy at every parents' evening.",
+   "start": 0.15,
+   "end": 2.914,
+   "words": [
+    {
+     "text": "My",
+     "start": 0.15,
+     "end": 0.331
+    },
+    {
+     "text": "brother",
+     "start": 0.331,
+     "end": 0.739
+    },
+    {
+     "text": "got",
+     "start": 0.739,
+     "end": 0.966
+    },
+    {
+     "text": "called",
+     "start": 0.966,
+     "end": 1.328
+    },
+    {
+     "text": "lazy",
+     "start": 1.328,
+     "end": 1.6
+    },
+    {
+     "text": "at",
+     "start": 1.6,
+     "end": 1.781
+    },
+    {
+     "text": "every",
+     "start": 1.781,
+     "end": 2.099
+    },
+    {
+     "text": "parents'",
+     "start": 2.099,
+     "end": 2.507
+    },
+    {
+     "text": "evening.",
+     "start": 2.507,
+     "end": 2.914
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Capable, but lazy. Detentions. Isolation rooms.",
+   "start": 3.114,
+   "end": 6.578,
+   "words": [
+    {
+     "text": "Capable,",
+     "start": 3.114,
+     "end": 3.738
+    },
+    {
+     "text": "but",
+     "start": 3.738,
+     "end": 4.084
+    },
+    {
+     "text": "lazy.",
+     "start": 4.084,
+     "end": 4.5
+    },
+    {
+     "text": "Detentions.",
+     "start": 4.5,
+     "end": 5.331
+    },
+    {
+     "text": "Isolation",
+     "start": 5.331,
+     "end": 6.093
+    },
+    {
+     "text": "rooms.",
+     "start": 6.093,
+     "end": 6.578
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "He knew hundreds of car models before most kids could read.",
+   "start": 6.778,
+   "end": 9.965,
+   "words": [
+    {
+     "text": "He",
+     "start": 6.778,
+     "end": 6.96
+    },
+    {
+     "text": "knew",
+     "start": 6.96,
+     "end": 7.234
+    },
+    {
+     "text": "hundreds",
+     "start": 7.234,
+     "end": 7.689
+    },
+    {
+     "text": "of",
+     "start": 7.689,
+     "end": 7.871
+    },
+    {
+     "text": "car",
+     "start": 7.871,
+     "end": 8.099
+    },
+    {
+     "text": "models",
+     "start": 8.099,
+     "end": 8.463
+    },
+    {
+     "text": "before",
+     "start": 8.463,
+     "end": 8.827
+    },
+    {
+     "text": "most",
+     "start": 8.827,
+     "end": 9.1
+    },
+    {
+     "text": "kids",
+     "start": 9.1,
+     "end": 9.373
+    },
+    {
+     "text": "could",
+     "start": 9.373,
+     "end": 9.692
+    },
+    {
+     "text": "read.",
+     "start": 9.692,
+     "end": 9.965
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Effort was never the problem. Starting was. Tracking was. Time was.",
+   "start": 10.165,
+   "end": 14.183,
+   "words": [
+    {
+     "text": "Effort",
+     "start": 10.165,
+     "end": 10.452
+    },
+    {
+     "text": "was",
+     "start": 10.452,
+     "end": 10.632
+    },
+    {
+     "text": "never",
+     "start": 10.632,
+     "end": 10.883
+    },
+    {
+     "text": "the",
+     "start": 10.883,
+     "end": 11.062
+    },
+    {
+     "text": "problem.",
+     "start": 11.062,
+     "end": 11.385
+    },
+    {
+     "text": "Starting",
+     "start": 11.685,
+     "end": 12.179
+    },
+    {
+     "text": "was.",
+     "start": 12.179,
+     "end": 12.425
+    },
+    {
+     "text": "Tracking",
+     "start": 12.685,
+     "end": 13.172
+    },
+    {
+     "text": "was.",
+     "start": 13.172,
+     "end": 13.415
+    },
+    {
+     "text": "Time",
+     "start": 13.475,
+     "end": 13.861
+    },
+    {
+     "text": "was.",
+     "start": 13.861,
+     "end": 14.183
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "He was diagnosed with A D H D at eighteen. After his A-levels.",
+   "start": 14.383,
+   "end": 18.431,
+   "words": [
+    {
+     "text": "He",
+     "start": 14.383,
+     "end": 14.57
+    },
+    {
+     "text": "was",
+     "start": 14.57,
+     "end": 14.803
+    },
+    {
+     "text": "diagnosed",
+     "start": 14.803,
+     "end": 15.317
+    },
+    {
+     "text": "with",
+     "start": 15.317,
+     "end": 15.598
+    },
+    {
+     "text": "A",
+     "start": 15.598,
+     "end": 15.738
+    },
+    {
+     "text": "D",
+     "start": 15.738,
+     "end": 15.878
+    },
+    {
+     "text": "H",
+     "start": 15.878,
+     "end": 16.018
+    },
+    {
+     "text": "D",
+     "start": 16.018,
+     "end": 16.158
+    },
+    {
+     "text": "at",
+     "start": 16.158,
+     "end": 16.345
+    },
+    {
+     "text": "eighteen.",
+     "start": 16.345,
+     "end": 16.813
+    },
+    {
+     "text": "After",
+     "start": 17.283,
+     "end": 17.665
+    },
+    {
+     "text": "his",
+     "start": 17.665,
+     "end": 17.939
+    },
+    {
+     "text": "A-levels.",
+     "start": 17.939,
+     "end": 18.431
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Nobody ever gave him a plan.",
+   "start": 18.631,
+   "end": 20.303,
+   "words": [
+    {
+     "text": "Nobody",
+     "start": 18.631,
+     "end": 19.025
+    },
+    {
+     "text": "ever",
+     "start": 19.025,
+     "end": 19.32
+    },
+    {
+     "text": "gave",
+     "start": 19.32,
+     "end": 19.615
+    },
+    {
+     "text": "him",
+     "start": 19.615,
+     "end": 19.86
+    },
+    {
+     "text": "a",
+     "start": 19.86,
+     "end": 20.008
+    },
+    {
+     "text": "plan.",
+     "start": 20.008,
+     "end": 20.303
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "So we built one. Offload holds the plan, so your brain can do the rest.",
+   "start": 20.503,
+   "end": 24.632,
+   "words": [
+    {
+     "text": "So",
+     "start": 20.503,
+     "end": 20.665
+    },
+    {
+     "text": "we",
+     "start": 20.665,
+     "end": 20.827
+    },
+    {
+     "text": "built",
+     "start": 20.827,
+     "end": 21.111
+    },
+    {
+     "text": "one.",
+     "start": 21.111,
+     "end": 21.313
+    },
+    {
+     "text": "Offload",
+     "start": 21.783,
+     "end": 22.203
+    },
+    {
+     "text": "holds",
+     "start": 22.203,
+     "end": 22.53
+    },
+    {
+     "text": "the",
+     "start": 22.53,
+     "end": 22.763
+    },
+    {
+     "text": "plan,",
+     "start": 22.763,
+     "end": 23.043
+    },
+    {
+     "text": "so",
+     "start": 23.153,
+     "end": 23.313
+    },
+    {
+     "text": "your",
+     "start": 23.313,
+     "end": 23.553
+    },
+    {
+     "text": "brain",
+     "start": 23.553,
+     "end": 23.833
+    },
+    {
+     "text": "can",
+     "start": 23.833,
+     "end": 24.032
+    },
+    {
+     "text": "do",
+     "start": 24.032,
+     "end": 24.192
+    },
+    {
+     "text": "the",
+     "start": 24.192,
+     "end": 24.392
+    },
+    {
+     "text": "rest.",
+     "start": 24.392,
+     "end": 24.632
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "Comment plan if this was you too.",
+   "start": 24.832,
+   "end": 26.544,
+   "words": [
+    {
+     "text": "Comment",
+     "start": 24.832,
+     "end": 25.217
+    },
+    {
+     "text": "plan",
+     "start": 25.217,
+     "end": 25.474
+    },
+    {
+     "text": "if",
+     "start": 25.474,
+     "end": 25.645
+    },
+    {
+     "text": "this",
+     "start": 25.645,
+     "end": 25.902
+    },
+    {
+     "text": "was",
+     "start": 25.902,
+     "end": 26.116
+    },
+    {
+     "text": "you",
+     "start": 26.116,
+     "end": 26.33
+    },
+    {
+     "text": "too.",
+     "start": 26.33,
+     "end": 26.544
+    }
+   ]
+  }
+ ]
+}

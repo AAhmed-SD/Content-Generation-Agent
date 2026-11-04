@@ -1,0 +1,444 @@
+{
+ "duration": 24.696,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Home at eight. You haven't opened the reading list once.",
+   "start": 0.15,
+   "end": 2.91,
+   "words": [
+    {
+     "text": "Home",
+     "start": 0.15,
+     "end": 0.429
+    },
+    {
+     "text": "at",
+     "start": 0.429,
+     "end": 0.615
+    },
+    {
+     "text": "eight.",
+     "start": 0.615,
+     "end": 0.94
+    },
+    {
+     "text": "You",
+     "start": 1.22,
+     "end": 1.4
+    },
+    {
+     "text": "haven't",
+     "start": 1.4,
+     "end": 1.687
+    },
+    {
+     "text": "opened",
+     "start": 1.687,
+     "end": 1.975
+    },
+    {
+     "text": "the",
+     "start": 1.975,
+     "end": 2.155
+    },
+    {
+     "text": "reading",
+     "start": 2.155,
+     "end": 2.478
+    },
+    {
+     "text": "list",
+     "start": 2.478,
+     "end": 2.694
+    },
+    {
+     "text": "once.",
+     "start": 2.694,
+     "end": 2.91
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Rewind. Six forty. Alarm.",
+   "start": 3.09,
+   "end": 4.845,
+   "words": [
+    {
+     "text": "Rewind.",
+     "start": 3.09,
+     "end": 3.86
+    },
+    {
+     "text": "Six",
+     "start": 3.92,
+     "end": 4.053
+    },
+    {
+     "text": "forty.",
+     "start": 4.053,
+     "end": 4.24
+    },
+    {
+     "text": "Alarm.",
+     "start": 4.33,
+     "end": 4.845
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Placement's an hour away, so you read on the train.",
+   "start": 5.024,
+   "end": 7.55,
+   "words": [
+    {
+     "text": "Placement's",
+     "start": 5.024,
+     "end": 5.509
+    },
+    {
+     "text": "an",
+     "start": 5.509,
+     "end": 5.67
+    },
+    {
+     "text": "hour",
+     "start": 5.67,
+     "end": 5.912
+    },
+    {
+     "text": "away,",
+     "start": 5.912,
+     "end": 6.155
+    },
+    {
+     "text": "so",
+     "start": 6.364,
+     "end": 6.517
+    },
+    {
+     "text": "you",
+     "start": 6.517,
+     "end": 6.709
+    },
+    {
+     "text": "read",
+     "start": 6.709,
+     "end": 6.938
+    },
+    {
+     "text": "on",
+     "start": 6.938,
+     "end": 7.091
+    },
+    {
+     "text": "the",
+     "start": 7.091,
+     "end": 7.282
+    },
+    {
+     "text": "train.",
+     "start": 7.282,
+     "end": 7.55
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Ward round runs over. Teaching gets moved. Lunch is a cereal bar.",
+   "start": 7.73,
+   "end": 11.949,
+   "words": [
+    {
+     "text": "Ward",
+     "start": 7.73,
+     "end": 8.011
+    },
+    {
+     "text": "round",
+     "start": 8.011,
+     "end": 8.338
+    },
+    {
+     "text": "runs",
+     "start": 8.338,
+     "end": 8.619
+    },
+    {
+     "text": "over.",
+     "start": 8.619,
+     "end": 8.9
+    },
+    {
+     "text": "Teaching",
+     "start": 9.2,
+     "end": 9.652
+    },
+    {
+     "text": "gets",
+     "start": 9.652,
+     "end": 9.923
+    },
+    {
+     "text": "moved.",
+     "start": 9.923,
+     "end": 10.24
+    },
+    {
+     "text": "Lunch",
+     "start": 10.53,
+     "end": 10.898
+    },
+    {
+     "text": "is",
+     "start": 10.898,
+     "end": 11.108
+    },
+    {
+     "text": "a",
+     "start": 11.108,
+     "end": 11.266
+    },
+    {
+     "text": "cereal",
+     "start": 11.266,
+     "end": 11.687
+    },
+    {
+     "text": "bar.",
+     "start": 11.687,
+     "end": 11.949
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Every gap you planned to revise in? Gone.",
+   "start": 12.129,
+   "end": 14.517,
+   "words": [
+    {
+     "text": "Every",
+     "start": 12.129,
+     "end": 12.398
+    },
+    {
+     "text": "gap",
+     "start": 12.398,
+     "end": 12.589
+    },
+    {
+     "text": "you",
+     "start": 12.589,
+     "end": 12.781
+    },
+    {
+     "text": "planned",
+     "start": 12.781,
+     "end": 13.126
+    },
+    {
+     "text": "to",
+     "start": 13.126,
+     "end": 13.279
+    },
+    {
+     "text": "revise",
+     "start": 13.279,
+     "end": 13.586
+    },
+    {
+     "text": "in?",
+     "start": 13.586,
+     "end": 13.739
+    },
+    {
+     "text": "Gone.",
+     "start": 14.089,
+     "end": 14.517
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "The list isn't too long. It just doesn't move when your day does.",
+   "start": 14.697,
+   "end": 17.938,
+   "words": [
+    {
+     "text": "The",
+     "start": 14.697,
+     "end": 14.919
+    },
+    {
+     "text": "list",
+     "start": 14.919,
+     "end": 15.184
+    },
+    {
+     "text": "isn't",
+     "start": 15.184,
+     "end": 15.45
+    },
+    {
+     "text": "too",
+     "start": 15.45,
+     "end": 15.671
+    },
+    {
+     "text": "long.",
+     "start": 15.671,
+     "end": 15.937
+    },
+    {
+     "text": "It",
+     "start": 16.277,
+     "end": 16.418
+    },
+    {
+     "text": "just",
+     "start": 16.418,
+     "end": 16.63
+    },
+    {
+     "text": "doesn't",
+     "start": 16.63,
+     "end": 16.913
+    },
+    {
+     "text": "move",
+     "start": 16.913,
+     "end": 17.125
+    },
+    {
+     "text": "when",
+     "start": 17.125,
+     "end": 17.337
+    },
+    {
+     "text": "your",
+     "start": 17.337,
+     "end": 17.549
+    },
+    {
+     "text": "day",
+     "start": 17.549,
+     "end": 17.726
+    },
+    {
+     "text": "does.",
+     "start": 17.726,
+     "end": 17.938
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Offload reschedules your week when the shift wins.",
+   "start": 18.118,
+   "end": 20.573,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 18.118,
+     "end": 18.499
+    },
+    {
+     "text": "reschedules",
+     "start": 18.499,
+     "end": 19.049
+    },
+    {
+     "text": "your",
+     "start": 19.049,
+     "end": 19.303
+    },
+    {
+     "text": "week",
+     "start": 19.303,
+     "end": 19.557
+    },
+    {
+     "text": "when",
+     "start": 19.557,
+     "end": 19.811
+    },
+    {
+     "text": "the",
+     "start": 19.811,
+     "end": 20.023
+    },
+    {
+     "text": "shift",
+     "start": 20.023,
+     "end": 20.319
+    },
+    {
+     "text": "wins.",
+     "start": 20.319,
+     "end": 20.573
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "Comment placement and I'll send you the plan I'd use.",
+   "start": 20.753,
+   "end": 23.516,
+   "words": [
+    {
+     "text": "Comment",
+     "start": 20.753,
+     "end": 21.161
+    },
+    {
+     "text": "placement",
+     "start": 21.161,
+     "end": 21.659
+    },
+    {
+     "text": "and",
+     "start": 21.659,
+     "end": 21.885
+    },
+    {
+     "text": "I'll",
+     "start": 21.885,
+     "end": 22.112
+    },
+    {
+     "text": "send",
+     "start": 22.112,
+     "end": 22.383
+    },
+    {
+     "text": "you",
+     "start": 22.383,
+     "end": 22.61
+    },
+    {
+     "text": "the",
+     "start": 22.61,
+     "end": 22.836
+    },
+    {
+     "text": "plan",
+     "start": 22.836,
+     "end": 23.108
+    },
+    {
+     "text": "I'd",
+     "start": 23.108,
+     "end": 23.289
+    },
+    {
+     "text": "use.",
+     "start": 23.289,
+     "end": 23.516
+    }
+   ]
+  }
+ ]
+}

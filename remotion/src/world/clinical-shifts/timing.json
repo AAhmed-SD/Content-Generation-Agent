@@ -1,0 +1,448 @@
+{
+ "duration": 29.418,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Twelve-hour shift, then two hours of revision? That plan was never going to work.",
+   "start": 0.15,
+   "end": 5.043,
+   "words": [
+    {
+     "text": "Twelve-hour",
+     "start": 0.15,
+     "end": 0.775
+    },
+    {
+     "text": "shift,",
+     "start": 0.775,
+     "end": 1.14
+    },
+    {
+     "text": "then",
+     "start": 1.36,
+     "end": 1.628
+    },
+    {
+     "text": "two",
+     "start": 1.628,
+     "end": 1.852
+    },
+    {
+     "text": "hours",
+     "start": 1.852,
+     "end": 2.164
+    },
+    {
+     "text": "of",
+     "start": 2.164,
+     "end": 2.343
+    },
+    {
+     "text": "revision?",
+     "start": 2.343,
+     "end": 2.79
+    },
+    {
+     "text": "That",
+     "start": 3.17,
+     "end": 3.444
+    },
+    {
+     "text": "plan",
+     "start": 3.444,
+     "end": 3.718
+    },
+    {
+     "text": "was",
+     "start": 3.718,
+     "end": 3.947
+    },
+    {
+     "text": "never",
+     "start": 3.947,
+     "end": 4.267
+    },
+    {
+     "text": "going",
+     "start": 4.267,
+     "end": 4.586
+    },
+    {
+     "text": "to",
+     "start": 4.586,
+     "end": 4.769
+    },
+    {
+     "text": "work.",
+     "start": 4.769,
+     "end": 5.043
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "You get home, you skip it, and by Friday the whole week is behind.",
+   "start": 5.323,
+   "end": 9.397,
+   "words": [
+    {
+     "text": "You",
+     "start": 5.323,
+     "end": 5.764
+    },
+    {
+     "text": "get",
+     "start": 5.764,
+     "end": 6.205
+    },
+    {
+     "text": "home,",
+     "start": 6.205,
+     "end": 6.733
+    },
+    {
+     "text": "you",
+     "start": 7.053,
+     "end": 7.513
+    },
+    {
+     "text": "skip",
+     "start": 7.513,
+     "end": 8.065
+    },
+    {
+     "text": "it,",
+     "start": 8.065,
+     "end": 8.433
+    },
+    {
+     "text": "and",
+     "start": 8.563,
+     "end": 8.652
+    },
+    {
+     "text": "by",
+     "start": 8.652,
+     "end": 8.723
+    },
+    {
+     "text": "Friday",
+     "start": 8.723,
+     "end": 8.865
+    },
+    {
+     "text": "the",
+     "start": 8.865,
+     "end": 8.954
+    },
+    {
+     "text": "whole",
+     "start": 8.954,
+     "end": 9.078
+    },
+    {
+     "text": "week",
+     "start": 9.078,
+     "end": 9.184
+    },
+    {
+     "text": "is",
+     "start": 9.184,
+     "end": 9.255
+    },
+    {
+     "text": "behind.",
+     "start": 9.255,
+     "end": 9.397
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Offload plans around your shifts, lectures and placements, once they're in your Google Calendar.",
+   "start": 9.997,
+   "end": 15.634,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 9.997,
+     "end": 10.454
+    },
+    {
+     "text": "plans",
+     "start": 10.454,
+     "end": 10.81
+    },
+    {
+     "text": "around",
+     "start": 10.81,
+     "end": 11.216
+    },
+    {
+     "text": "your",
+     "start": 11.216,
+     "end": 11.521
+    },
+    {
+     "text": "shifts,",
+     "start": 11.521,
+     "end": 11.927
+    },
+    {
+     "text": "lectures",
+     "start": 12.207,
+     "end": 12.681
+    },
+    {
+     "text": "and",
+     "start": 12.681,
+     "end": 12.918
+    },
+    {
+     "text": "placements,",
+     "start": 12.918,
+     "end": 13.487
+    },
+    {
+     "text": "once",
+     "start": 13.807,
+     "end": 14.068
+    },
+    {
+     "text": "they're",
+     "start": 14.068,
+     "end": 14.416
+    },
+    {
+     "text": "in",
+     "start": 14.416,
+     "end": 14.59
+    },
+    {
+     "text": "your",
+     "start": 14.59,
+     "end": 14.851
+    },
+    {
+     "text": "Google",
+     "start": 14.851,
+     "end": 15.199
+    },
+    {
+     "text": "Calendar.",
+     "start": 15.199,
+     "end": 15.634
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "It puts every session in the free time that's actually left.",
+   "start": 15.914,
+   "end": 19.29,
+   "words": [
+    {
+     "text": "It",
+     "start": 15.914,
+     "end": 16.107
+    },
+    {
+     "text": "puts",
+     "start": 16.107,
+     "end": 16.396
+    },
+    {
+     "text": "every",
+     "start": 16.396,
+     "end": 16.734
+    },
+    {
+     "text": "session",
+     "start": 16.734,
+     "end": 17.168
+    },
+    {
+     "text": "in",
+     "start": 17.168,
+     "end": 17.361
+    },
+    {
+     "text": "the",
+     "start": 17.361,
+     "end": 17.602
+    },
+    {
+     "text": "free",
+     "start": 17.602,
+     "end": 17.891
+    },
+    {
+     "text": "time",
+     "start": 17.891,
+     "end": 18.181
+    },
+    {
+     "text": "that's",
+     "start": 18.181,
+     "end": 18.518
+    },
+    {
+     "text": "actually",
+     "start": 18.518,
+     "end": 19.0
+    },
+    {
+     "text": "left.",
+     "start": 19.0,
+     "end": 19.29
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Miss one, and it moves the work into your free time, and tells you what moved.",
+   "start": 19.57,
+   "end": 23.806,
+   "words": [
+    {
+     "text": "Miss",
+     "start": 19.57,
+     "end": 20.955
+    },
+    {
+     "text": "one,",
+     "start": 20.955,
+     "end": 22.11
+    },
+    {
+     "text": "and",
+     "start": 22.43,
+     "end": 22.498
+    },
+    {
+     "text": "it",
+     "start": 22.498,
+     "end": 22.553
+    },
+    {
+     "text": "moves",
+     "start": 22.553,
+     "end": 22.649
+    },
+    {
+     "text": "the",
+     "start": 22.649,
+     "end": 22.718
+    },
+    {
+     "text": "work",
+     "start": 22.718,
+     "end": 22.8
+    },
+    {
+     "text": "into",
+     "start": 22.8,
+     "end": 22.883
+    },
+    {
+     "text": "your",
+     "start": 22.883,
+     "end": 22.965
+    },
+    {
+     "text": "free",
+     "start": 22.965,
+     "end": 23.047
+    },
+    {
+     "text": "time,",
+     "start": 23.047,
+     "end": 23.13
+    },
+    {
+     "text": "and",
+     "start": 23.2,
+     "end": 23.301
+    },
+    {
+     "text": "tells",
+     "start": 23.301,
+     "end": 23.442
+    },
+    {
+     "text": "you",
+     "start": 23.442,
+     "end": 23.543
+    },
+    {
+     "text": "what",
+     "start": 23.543,
+     "end": 23.664
+    },
+    {
+     "text": "moved.",
+     "start": 23.664,
+     "end": 23.806
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 24.306,
+   "end": 28.138,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 24.306,
+     "end": 25.956
+    },
+    {
+     "text": "A",
+     "start": 26.176,
+     "end": 26.276
+    },
+    {
+     "text": "study",
+     "start": 26.276,
+     "end": 26.508
+    },
+    {
+     "text": "system",
+     "start": 26.508,
+     "end": 26.774
+    },
+    {
+     "text": "that",
+     "start": 26.774,
+     "end": 26.974
+    },
+    {
+     "text": "adapts",
+     "start": 26.974,
+     "end": 27.24
+    },
+    {
+     "text": "when",
+     "start": 27.24,
+     "end": 27.44
+    },
+    {
+     "text": "real",
+     "start": 27.44,
+     "end": 27.639
+    },
+    {
+     "text": "life",
+     "start": 27.639,
+     "end": 27.839
+    },
+    {
+     "text": "happens.",
+     "start": 27.839,
+     "end": 28.138
+    }
+   ]
+  }
+ ]
+}
