@@ -1,276 +1,362 @@
 {
- "duration": 17.339,
+ "duration": 27.335,
  "lines": [
   {
    "id": "L1",
-   "say": "Your battery on a busy week.",
+   "say": "Your battery, on a busy week.",
    "start": 0.15,
-   "end": 1.763,
+   "end": 2.39,
    "words": [
     {
      "text": "Your",
      "start": 0.15,
-     "end": 0.435
+     "end": 0.486
     },
     {
-     "text": "battery",
-     "start": 0.435,
-     "end": 0.862
+     "text": "battery,",
+     "start": 0.486,
+     "end": 0.99
     },
     {
      "text": "on",
-     "start": 0.862,
-     "end": 1.051
+     "start": 1.21,
+     "end": 1.458
     },
     {
      "text": "a",
-     "start": 1.051,
-     "end": 1.194
+     "start": 1.458,
+     "end": 1.645
     },
     {
      "text": "busy",
-     "start": 1.194,
-     "end": 1.478
+     "start": 1.645,
+     "end": 2.017
     },
     {
      "text": "week.",
-     "start": 1.478,
-     "end": 1.763
+     "start": 2.017,
+     "end": 2.39
     }
    ]
   },
   {
    "id": "L2",
    "say": "Monday. Full. Big plans.",
-   "start": 2.023,
-   "end": 3.708,
+   "start": 2.79,
+   "end": 5.041,
    "words": [
     {
      "text": "Monday.",
-     "start": 2.023,
-     "end": 2.483
+     "start": 2.79,
+     "end": 3.86
     },
     {
      "text": "Full.",
-     "start": 2.633,
-     "end": 3.043
+     "start": 4.09,
+     "end": 4.28
     },
     {
      "text": "Big",
-     "start": 3.143,
-     "end": 3.379
+     "start": 4.33,
+     "end": 4.626
     },
     {
      "text": "plans.",
-     "start": 3.379,
-     "end": 3.708
+     "start": 4.626,
+     "end": 5.041
     }
    ]
   },
   {
    "id": "L3",
-   "say": "Tuesday. Every new thing costs a bit.",
-   "start": 3.968,
-   "end": 6.107,
+   "say": "Tuesday. Every new start costs a bit.",
+   "start": 5.541,
+   "end": 8.191,
    "words": [
     {
      "text": "Tuesday.",
-     "start": 3.968,
-     "end": 4.498
+     "start": 5.541,
+     "end": 6.201
     },
     {
      "text": "Every",
-     "start": 4.728,
-     "end": 5.012
+     "start": 6.351,
+     "end": 6.73
     },
     {
      "text": "new",
-     "start": 5.012,
-     "end": 5.215
+     "start": 6.73,
+     "end": 7.001
     },
     {
-     "text": "thing",
-     "start": 5.215,
-     "end": 5.499
+     "text": "start",
+     "start": 7.001,
+     "end": 7.379
     },
     {
      "text": "costs",
-     "start": 5.499,
-     "end": 5.783
+     "start": 7.379,
+     "end": 7.758
     },
     {
      "text": "a",
-     "start": 5.783,
-     "end": 5.904
+     "start": 7.758,
+     "end": 7.921
     },
     {
      "text": "bit.",
-     "start": 5.904,
-     "end": 6.107
+     "start": 7.921,
+     "end": 8.191
     }
    ]
   },
   {
    "id": "L4",
    "say": "Wednesday. Too many starts.",
-   "start": 6.367,
-   "end": 7.937,
+   "start": 8.691,
+   "end": 10.589,
    "words": [
     {
      "text": "Wednesday.",
-     "start": 6.367,
-     "end": 6.927
+     "start": 8.691,
+     "end": 9.361
     },
     {
      "text": "Too",
-     "start": 7.077,
-     "end": 7.303
+     "start": 9.481,
+     "end": 9.773
     },
     {
      "text": "many",
-     "start": 7.303,
-     "end": 7.575
+     "start": 9.773,
+     "end": 10.123
     },
     {
      "text": "starts.",
-     "start": 7.575,
-     "end": 7.937
+     "start": 10.123,
+     "end": 10.589
     }
    ]
   },
   {
    "id": "L5",
    "say": "Thursday. Running on nothing.",
-   "start": 8.197,
-   "end": 9.831,
+   "start": 11.089,
+   "end": 13.214,
    "words": [
     {
      "text": "Thursday.",
-     "start": 8.197,
-     "end": 8.747
+     "start": 11.089,
+     "end": 11.739
     },
     {
      "text": "Running",
-     "start": 8.947,
-     "end": 9.309
+     "start": 11.909,
+     "end": 12.443
     },
     {
      "text": "on",
-     "start": 9.309,
-     "end": 9.47
+     "start": 12.443,
+     "end": 12.68
     },
     {
      "text": "nothing.",
-     "start": 9.47,
-     "end": 9.831
+     "start": 12.68,
+     "end": 13.214
     }
    ]
   },
   {
    "id": "L6",
-   "say": "I built the app so starting costs less. It tells you the next thing, so you're not choosing all day.",
-   "start": 10.231,
-   "end": 15.639,
+   "say": "Offload plans your week for you, so you're not choosing all day.",
+   "start": 13.914,
+   "end": 17.767,
    "words": [
     {
-     "text": "I",
-     "start": 10.231,
-     "end": 10.366
+     "text": "Offload",
+     "start": 13.914,
+     "end": 14.333
     },
     {
-     "text": "built",
-     "start": 10.366,
-     "end": 10.68
+     "text": "plans",
+     "start": 14.333,
+     "end": 14.659
     },
     {
-     "text": "the",
-     "start": 10.68,
-     "end": 10.904
+     "text": "your",
+     "start": 14.659,
+     "end": 14.938
     },
     {
-     "text": "app",
-     "start": 10.904,
-     "end": 11.129
+     "text": "week",
+     "start": 14.938,
+     "end": 15.218
     },
     {
-     "text": "so",
-     "start": 11.129,
-     "end": 11.308
+     "text": "for",
+     "start": 15.218,
+     "end": 15.451
     },
     {
-     "text": "starting",
-     "start": 11.308,
-     "end": 11.757
-    },
-    {
-     "text": "costs",
-     "start": 11.757,
-     "end": 12.072
-    },
-    {
-     "text": "less.",
-     "start": 12.072,
-     "end": 12.341
-    },
-    {
-     "text": "It",
-     "start": 12.831,
-     "end": 12.964
-    },
-    {
-     "text": "tells",
-     "start": 12.964,
-     "end": 13.197
-    },
-    {
-     "text": "you",
-     "start": 13.197,
-     "end": 13.363
-    },
-    {
-     "text": "the",
-     "start": 13.363,
-     "end": 13.529
-    },
-    {
-     "text": "next",
-     "start": 13.529,
-     "end": 13.728
-    },
-    {
-     "text": "thing,",
-     "start": 13.728,
-     "end": 13.961
+     "text": "you,",
+     "start": 15.451,
+     "end": 15.684
     },
     {
      "text": "so",
-     "start": 14.171,
-     "end": 14.334
+     "start": 16.014,
+     "end": 16.208
     },
     {
      "text": "you're",
-     "start": 14.334,
-     "end": 14.62
+     "start": 16.208,
+     "end": 16.549
     },
     {
      "text": "not",
-     "start": 14.62,
-     "end": 14.824
+     "start": 16.549,
+     "end": 16.793
     },
     {
      "text": "choosing",
-     "start": 14.824,
-     "end": 15.231
+     "start": 16.793,
+     "end": 17.28
     },
     {
      "text": "all",
-     "start": 15.231,
-     "end": 15.435
+     "start": 17.28,
+     "end": 17.523
     },
     {
      "text": "day.",
-     "start": 15.435,
-     "end": 15.639
+     "start": 17.523,
+     "end": 17.767
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Miss a block, and it moves. It tests you, so it sticks.",
+   "start": 18.167,
+   "end": 21.731,
+   "words": [
+    {
+     "text": "Miss",
+     "start": 18.167,
+     "end": 18.395
+    },
+    {
+     "text": "a",
+     "start": 18.395,
+     "end": 18.51
+    },
+    {
+     "text": "block,",
+     "start": 18.51,
+     "end": 18.777
+    },
+    {
+     "text": "and",
+     "start": 19.037,
+     "end": 19.277
+    },
+    {
+     "text": "it",
+     "start": 19.277,
+     "end": 19.47
+    },
+    {
+     "text": "moves.",
+     "start": 19.47,
+     "end": 19.807
+    },
+    {
+     "text": "It",
+     "start": 20.137,
+     "end": 20.449
+    },
+    {
+     "text": "tests",
+     "start": 20.449,
+     "end": 20.996
+    },
+    {
+     "text": "you,",
+     "start": 20.996,
+     "end": 21.387
+    },
+    {
+     "text": "so",
+     "start": 21.457,
+     "end": 21.525
+    },
+    {
+     "text": "it",
+     "start": 21.525,
+     "end": 21.594
+    },
+    {
+     "text": "sticks.",
+     "start": 21.594,
+     "end": 21.731
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "You just click the link in your calendar and start.",
+   "start": 22.131,
+   "end": 25.435,
+   "words": [
+    {
+     "text": "You",
+     "start": 22.131,
+     "end": 22.402
+    },
+    {
+     "text": "just",
+     "start": 22.402,
+     "end": 22.727
+    },
+    {
+     "text": "click",
+     "start": 22.727,
+     "end": 23.106
+    },
+    {
+     "text": "the",
+     "start": 23.106,
+     "end": 23.377
+    },
+    {
+     "text": "link",
+     "start": 23.377,
+     "end": 23.702
+    },
+    {
+     "text": "in",
+     "start": 23.702,
+     "end": 23.918
+    },
+    {
+     "text": "your",
+     "start": 23.918,
+     "end": 24.243
+    },
+    {
+     "text": "calendar",
+     "start": 24.243,
+     "end": 24.785
+    },
+    {
+     "text": "and",
+     "start": 24.785,
+     "end": 25.056
+    },
+    {
+     "text": "start.",
+     "start": 25.056,
+     "end": 25.435
     }
    ]
   }

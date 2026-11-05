@@ -1,0 +1,48 @@
+{
+ "id": "gcse-jail-planner",
+ "format": "jail",
+ "caseNo": "CASE 002",
+ "siren": "L1",
+ "suspect": {
+  "name": "The Pretty Planner",
+  "icon": "planner",
+  "at": "L2:suspect"
+ },
+ "side": "L3:side",
+ "charges": [
+  {
+   "text": "A whole Sunday, choosing colours.",
+   "at": "L4"
+  },
+  {
+   "text": "Fell apart the first evening you missed.",
+   "at": "L5"
+  },
+  {
+   "text": "Never checked what you remembered.",
+   "at": "L6"
+  }
+ ],
+ "sentence": {
+  "text": "One week of\nlooking nice.",
+  "at": "L7"
+ },
+ "release": {
+  "title": "Offload, meanwhile:",
+  "at": "L8",
+  "points": [
+   {
+    "text": "Plans from your exam dates",
+    "at": "L8"
+   },
+   {
+    "text": "Moves when you miss an evening",
+    "at": "L9"
+   },
+   {
+    "text": "Tests you as you go",
+    "at": "L10"
+   }
+  ]
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "id": "bank/gcse-jail-planner",
+ "voice": "bm_george",
+ "lang": "en-gb",
+ "speed": 0.94,
+ "gap": 0.42,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "The study police have made an arrest.",
+   "after": 0.5
+  },
+  {
+   "id": "L2",
+   "say": "Suspect: the pretty planner app. Face the camera.",
+   "after": 0.6
+  },
+  {
+   "id": "L3",
+   "say": "And to the side.",
+   "after": 0.8
+  },
+  {
+   "id": "L4",
+   "say": "Count one: your whole Sunday, spent choosing colours.",
+   "after": 0.6
+  },
+  {
+   "id": "L5",
+   "say": "Count two: it fell apart the first evening you missed.",
+   "after": 0.6
+  },
+  {
+   "id": "L6",
+   "say": "Count three: it never once checked what you remembered.",
+   "after": 0.7
+  },
+  {
+   "id": "L7",
+   "say": "Sentence: one week of looking nice.",
+   "after": 0.9
+  },
+  {
+   "id": "L8",
+   "say": "Offload builds your plan from your exam dates, and moves it when you miss an evening.",
+   "after": 0.4
+  },
+  {
+   "id": "L9",
+   "say": "It tests you as you go, so you know what's stuck.",
+   "after": 0.4
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1.0
+  }
+ ]
+}

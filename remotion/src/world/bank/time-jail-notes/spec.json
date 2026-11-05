@@ -1,0 +1,48 @@
+{
+ "id": "time-jail-notes",
+ "format": "jail",
+ "caseNo": "CASE 004",
+ "siren": "L1",
+ "suspect": {
+  "name": "The Notes App",
+  "icon": "notes",
+  "at": "L2:suspect"
+ },
+ "side": "L3:side",
+ "charges": [
+  {
+   "text": "Holds every lecture. Never says open one.",
+   "at": "L4"
+  },
+  {
+   "text": "Two hundred notes, all “Untitled”.",
+   "at": "L5"
+  },
+  {
+   "text": "Organising, disguised as studying.",
+   "at": "L6"
+  }
+ ],
+ "sentence": {
+  "text": "One more folder.",
+  "at": "L7"
+ },
+ "release": {
+  "title": "Offload, meanwhile:",
+  "at": "L8",
+  "points": [
+   {
+    "text": "Turns your notes into a plan",
+    "at": "L8"
+   },
+   {
+    "text": "Moves it when you miss a day",
+    "at": "L9"
+   },
+   {
+    "text": "Tests you, so it sticks",
+    "at": "L10"
+   }
+  ]
+ }
+}

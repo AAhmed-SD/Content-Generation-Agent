@@ -1,0 +1,234 @@
+{
+  "note": "Ideas for Offload's picture and content. status: new, accepted, building, made. Reject deletes. Add from the desk's Ideas page.",
+  "ideas": [
+    {
+      "id": "i1",
+      "title": "Launch countdown: the calendar fills",
+      "kind": "Launch",
+      "niche": "all",
+      "pitch": "Eleven films to 16 November, one block dropping into the launch-week calendar per day. The last film is the full week and the app.",
+      "status": "new",
+      "by": "Claude",
+      "at": "2026-11-05",
+      "frames": [
+        "Day 11: an empty launch-week calendar, one block drops in.",
+        "Each day another block falls and locks, like Tetris.",
+        "Day 3: a block cracks and re-drops somewhere free.",
+        "Day 1: the week is full and fits.",
+        "Offload end card: launch day."
+      ]
+    },
+    {
+      "id": "i2",
+      "title": "Courtroom series",
+      "kind": "Series",
+      "niche": "analytical",
+      "pitch": "One revision habit on trial each week with the evidence board. Comments vote the verdict before the stamp; the next film reads the verdict.",
+      "status": "accepted",
+      "by": "Claude",
+      "at": "2026-11-05",
+      "frames": [
+        "Siren. The study police make an arrest.",
+        "Mugshot of this week's habit, front, then side.",
+        "Three charges on the sheet.",
+        "Comments vote: guilty or not guilty?",
+        "Next episode opens with the verdict read out."
+      ]
+    },
+    {
+      "id": "i3",
+      "title": "Placement week Tetris, live",
+      "kind": "Film format",
+      "niche": "clinical",
+      "pitch": "Students send their rota shape (no names, no hospitals); we drop it into the blockfall calendar and show where study fits.",
+      "status": "new",
+      "by": "Claude",
+      "at": "2026-11-05",
+      "frames": [
+        "A student's rota shape appears: shifts only, no names.",
+        "Shifts fall into the glass week first.",
+        "Lectures drop in next.",
+        "Study blocks fill whatever is free.",
+        "\"Everything fits.\" Offload end card."
+      ]
+    },
+    {
+      "id": "i4",
+      "title": "Expectation vs reality, by subject",
+      "kind": "Series",
+      "niche": "gcsealevel",
+      "pitch": "One subject per film: biology, maths, English lit. Same split template, a new joke each time. Easy to batch a week.",
+      "status": "new",
+      "by": "Claude",
+      "at": "2026-11-05",
+      "frames": [
+        "Subject title: Biology.",
+        "Expectation: two hours of cells.",
+        "Reality: forty minutes choosing a pen colour.",
+        "Two more pairs, faster.",
+        "\"A plan that moves when reality happens.\""
+      ]
+    },
+    {
+      "id": "i5",
+      "title": "Your term, wrapped",
+      "kind": "Film format",
+      "niche": "mentalhealth",
+      "pitch": "End of term, the wrapped cards with the user's own (opt-in) app numbers: blocks moved, sessions done. Only once weekly reports can export them.",
+      "status": "accepted",
+      "by": "Claude",
+      "at": "2026-11-05",
+      "frames": [
+        "\"Your term, wrapped.\"",
+        "Card: blocks moved, not missed.",
+        "Card: sessions done.",
+        "Card: the topic you came back to most.",
+        "\"See you next term.\" End card."
+      ]
+    },
+    {
+      "id": "i6",
+      "title": "Notification from future you",
+      "kind": "Film format",
+      "niche": "mentalhealth",
+      "pitch": "A glass notification on the lock screen dated next Thursday: 'You started. It took nine minutes.' Gentle, never about a condition.",
+      "status": "new",
+      "by": "Claude",
+      "at": "2026-11-05",
+      "frames": [
+        "Lock screen, 4:12pm, a normal Thursday.",
+        "A glass notification: from next Thursday.",
+        "\"You started. It took nine minutes.\"",
+        "Screen fades to the next block in the calendar.",
+        "End card."
+      ]
+    },
+    {
+      "id": "i7",
+      "title": "Duet-bait quiz",
+      "kind": "Engagement",
+      "niche": "clinical",
+      "pitch": "A Test-phase card, a three-second countdown, cut before the answer. The answer is the first comment pinned. Uses the user's own uploaded cards only.",
+      "status": "accepted",
+      "by": "Claude",
+      "at": "2026-11-05",
+      "frames": [
+        "A real Test-phase card from the student's own notes.",
+        "Three-second countdown.",
+        "Cut before the answer.",
+        "Pinned comment: the answer, and part two tomorrow."
+      ]
+    },
+    {
+      "id": "i9",
+      "title": "Founder confession Fridays",
+      "kind": "Series",
+      "niche": "mentalhealth",
+      "pitch": "Hadiqa on camera, one true thirty-second story about building Offload or her own revision. The only film a real face can make.",
+      "status": "new",
+      "by": "Claude",
+      "at": "2026-11-05",
+      "frames": [
+        "Hadiqa to camera, handheld, one take.",
+        "One true story about building Offload.",
+        "One quiet last line.",
+        "Text: \"Fridays, from the founder.\""
+      ]
+    },
+    {
+      "id": "i10",
+      "title": "Satisfying fit loops",
+      "kind": "Film format",
+      "niche": "all",
+      "pitch": "A ten-second silent loop: a messy week becomes a tidy one. No voice, a trending sound, made for rewatches.",
+      "status": "new",
+      "by": "Claude",
+      "at": "2026-11-05",
+      "frames": [
+        "A messy week, ten seconds, no voice.",
+        "Blocks slide, snap and settle.",
+        "The tidy week, held for two seconds.",
+        "Loops back to the mess. Trending sound."
+      ]
+    },
+    {
+      "id": "i11",
+      "title": "Word rotate hooks",
+      "kind": "Film format",
+      "niche": "gcsealevel",
+      "pitch": "'Revise ___' with the word rotating through subjects, from Magic UI's word rotate. A five-second opener to A/B against the spoken one.",
+      "status": "new",
+      "by": "Claude",
+      "at": "2026-11-05",
+      "frames": [
+        "\"Revise ___\"",
+        "The word rotates: biology, maths, English, chemistry.",
+        "It lands on \"everything\".",
+        "\"Start with one block.\" A/B against the spoken opener."
+      ]
+    },
+    {
+      "id": "i12",
+      "title": "LinkedIn: the build log",
+      "kind": "LinkedIn",
+      "niche": "all",
+      "pitch": "Founder account posts one desk screenshot a week: what the engine made, what flopped, what we changed. Honest numbers from the Numbers page only.",
+      "status": "new",
+      "by": "Claude",
+      "at": "2026-11-05",
+      "frames": [
+        "A desk screenshot from this week.",
+        "What the engine made.",
+        "What flopped, honestly.",
+        "What we changed. A question to end."
+      ]
+    },
+    {
+      "id": "i13",
+      "title": "Stitch-the-habit",
+      "kind": "Engagement",
+      "niche": "analytical",
+      "pitch": "End a call-out with 'Tag the one who does this.' and a blank exhibit card: viewers stitch with their own Exhibit D.",
+      "status": "new",
+      "by": "Claude",
+      "at": "2026-11-05",
+      "frames": [
+        "Call-out hook, then the evidence board.",
+        "Exhibits A to C pinned.",
+        "A blank Exhibit D card.",
+        "\"Stitch this with your own Exhibit D.\""
+      ]
+    },
+    {
+      "id": "i14",
+      "title": "Real app screens in an iPhone frame",
+      "kind": "Product",
+      "niche": "all",
+      "pitch": "Once the screens are final, one clean recording per LIVE feature, framed in glass. Replaces drawn app screens in the product line.",
+      "status": "new",
+      "by": "Claude",
+      "at": "2026-11-05",
+      "frames": [
+        "A phone frame on paper.",
+        "The app's real Today screen, recorded.",
+        "One LIVE feature, in use.",
+        "End card."
+      ]
+    },
+    {
+      "id": "i8",
+      "title": "The app as a person, never",
+      "kind": "Rule",
+      "niche": "all",
+      "pitch": "Keep the app as an object (a notification, a calendar, a card), never a talking mascot. It keeps the brand calm and the films honest.",
+      "status": "made",
+      "by": "Claude",
+      "at": "2026-11-05",
+      "frames": [
+        "Rule card: the app is an object, never a mascot.",
+        "Examples: a notification, a calendar, a card.",
+        "Never: a talking character."
+      ]
+    }
+  ]
+}

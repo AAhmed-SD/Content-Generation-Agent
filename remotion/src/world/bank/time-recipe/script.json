@@ -1,38 +1,51 @@
 {
  "id": "bank/time-recipe",
- "voice": "af_heart*0.7+af_bella*0.3",
+ "voice": "bm_george",
  "lang": "en-gb",
- "speed": 1.02,
- "gap": 0.26,
+ "speed": 0.94,
+ "gap": 0.42,
  "takes": "line",
  "master": true,
  "lines": [
   {
    "id": "L1",
-   "say": "Recipe for one study block. Serves one tired student."
+   "say": "A recipe for one study block. Serves one tired student.",
+   "after": 0.4
   },
   {
    "id": "L2",
-   "say": "You'll need one thing to start."
+   "say": "You'll need one thing to start.",
+   "after": 0.5
   },
   {
    "id": "L3",
-   "say": "A phone, in another room."
+   "say": "A phone, in another room.",
+   "after": 0.5
   },
   {
    "id": "L4",
    "say": "And a plan you didn't have to make.",
-   "after": 0.3
+   "after": 0.6
   },
   {
    "id": "L5",
-   "say": "Method. Open the app. Do the next block. Stop.",
-   "after": 0.4
+   "say": "Method. Open Offload. Do the next block. Stop.",
+   "after": 0.6
   },
   {
    "id": "L6",
-   "say": "That's it. That's the whole recipe.",
-   "after": 0.7
+   "say": "Offload made the plan. It moves it when you miss a day, and tests you.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "You just click the link in your calendar.",
+   "after": 0.6
+  },
+  {
+   "id": "L8",
+   "say": "That's the whole recipe.",
+   "after": 0.9
   }
  ]
 }

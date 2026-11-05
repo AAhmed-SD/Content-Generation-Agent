@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import type { Outlier, Run } from "@/lib/signals";
 
-const NICHES: Record<string, string> = { clinical: "Clinical", analytical: "Analytical", gcsealevel: "GCSE and A-level", mentalhealth: "Time" };
+const NICHES: Record<string, string> = { clinical: "Clinical", analytical: "Analytical", gcsealevel: "GCSE and A-level", mentalhealth: "Time", motion: "Motion" };
 
 /** Polls the stream every 20 seconds and puts new outliers at the top. */
 export function LiveSignals({ initial, initialRun }: { initial: Outlier[]; initialRun: Run | null }) {

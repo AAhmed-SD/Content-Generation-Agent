@@ -103,6 +103,20 @@ Twelve everyday-object templates, in `remotion/src/world/formats/kit3.tsx`, all 
 | `missing` | A missing poster taped to a wall | `bank/gcse-missing` |
 | `kanban` | A to-do, doing, done board where cards move | `bank/analytical-kanban` |
 
+Four bigger set pieces, in `remotion/src/world/formats/kit4.tsx`:
+
+| `format` | Shape | Example |
+| --- | --- | --- |
+| `blockfall` | A glass week calendar. Blocks fall in like Tetris and lock; a missed block cracks red and re-drops into a free slot; "Everything fits." | `bank/clinical-blockfall` |
+| `evidence` | A kraft evidence board. Exhibits pinned and strung together, then a GUILTY stamp and a sentence. For the accusation hook. | `bank/analytical-evidence` |
+| `split` | Expectation over reality, pair by pair. For the joke hook. | `bank/gcse-split` |
+| `jail` | The study police book an app type: mugshots front and side, three charges, the bars slam down, then Offload's three beats. A series: one suspect per episode. Suspects are archetypes, never a real, named app: naming a rival needs every claim verified under the UK ad code. | `bank/analytical-jail-flashcards`, `bank/gcse-jail-planner`, `bank/clinical-jail-todo`, `bank/time-jail-notes` |
+| `wrapped` | Full-bleed colour cards with a circular wipe and a progress bar: a week, wrapped. | `bank/time-wrapped` |
+
+Glass, in `remotion/src/world/kit/glass.tsx`: `glass()`, `Wallpaper`, `AppIcon`, `GlassNotification` and `GlassMail`. Any notification, mail or system sheet uses these, so it looks like a real phone. Glass only reads over colour, so put it on a `Wallpaper` or a picture. `lockscreen`, `inbox` and `chat` already do.
+
+Pick the hook style from `brand/hook-styles.md` before the format: a call-out, accusation, joke, confession, hot take, quiz, satisfying, POV, story or myth. No account uses the same style twice in a row.
+
 Examples: `bank/analytical-tier-list`, `bank/gcse-chat`, `bank/time-search`, `bank/clinical-receipt`, `bank/clinical-whiteboard`, `bank/gcse-myth-fact`, `bank/analytical-three-things`, `bank/time-pov`. Voice and render them like any bank film. A photo-story format was tried and dropped: the photo plates work as stills and carousel covers, not as a slideshow.
 
 Rules for a week of films, per account:

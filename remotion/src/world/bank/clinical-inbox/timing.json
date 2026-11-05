@@ -1,284 +1,375 @@
 {
- "duration": 22.542,
+ "duration": 31.841,
  "lines": [
   {
    "id": "L1",
-   "say": "Your uni inbox on a Sunday night.",
+   "say": "Your uni inbox. Sunday night.",
    "start": 0.15,
-   "end": 2.766,
+   "end": 2.679,
    "words": [
     {
      "text": "Your",
      "start": 0.15,
-     "end": 0.542
+     "end": 0.587
     },
     {
      "text": "uni",
-     "start": 0.542,
-     "end": 0.87
+     "start": 0.587,
+     "end": 0.951
     },
     {
-     "text": "inbox",
-     "start": 0.87,
-     "end": 1.327
-    },
-    {
-     "text": "on",
-     "start": 1.327,
-     "end": 1.589
-    },
-    {
-     "text": "a",
-     "start": 1.589,
-     "end": 1.785
+     "text": "inbox.",
+     "start": 0.951,
+     "end": 1.46
     },
     {
      "text": "Sunday",
-     "start": 1.785,
-     "end": 2.309
+     "start": 1.7,
+     "end": 2.222
     },
     {
      "text": "night.",
-     "start": 2.309,
-     "end": 2.766
+     "start": 2.222,
+     "end": 2.679
     }
    ]
   },
   {
    "id": "L2",
    "say": "Rota updated.",
-   "start": 3.026,
-   "end": 4.646,
+   "start": 3.079,
+   "end": 4.747,
    "words": [
     {
      "text": "Rota",
-     "start": 3.026,
-     "end": 3.674
+     "start": 3.079,
+     "end": 3.746
     },
     {
      "text": "updated.",
-     "start": 3.674,
-     "end": 4.646
+     "start": 3.746,
+     "end": 4.747
     }
    ]
   },
   {
    "id": "L3",
-   "say": "Reminder: coursework due Friday.",
-   "start": 4.906,
-   "end": 7.493,
+   "say": "Coursework due Friday.",
+   "start": 5.047,
+   "end": 7.094,
    "words": [
     {
-     "text": "Reminder:",
-     "start": 4.906,
-     "end": 6.026
-    },
-    {
-     "text": "coursework",
-     "start": 6.116,
-     "end": 6.777
+     "text": "Coursework",
+     "start": 5.047,
+     "end": 6.03
     },
     {
      "text": "due",
-     "start": 6.777,
-     "end": 7.053
+     "start": 6.03,
+     "end": 6.439
     },
     {
      "text": "Friday.",
-     "start": 7.053,
-     "end": 7.493
+     "start": 6.439,
+     "end": 7.094
     }
    ]
   },
   {
    "id": "L4",
-   "say": "Teaching moved to nine a.m.",
-   "start": 7.753,
-   "end": 10.388,
+   "say": "Teaching moved to nine.",
+   "start": 7.394,
+   "end": 9.437,
    "words": [
     {
      "text": "Teaching",
-     "start": 7.753,
-     "end": 8.603
+     "start": 7.394,
+     "end": 8.151
     },
     {
      "text": "moved",
-     "start": 8.603,
-     "end": 9.198
+     "start": 8.151,
+     "end": 8.681
     },
     {
      "text": "to",
-     "start": 9.198,
-     "end": 9.538
+     "start": 8.681,
+     "end": 8.983
     },
     {
-     "text": "nine",
-     "start": 9.538,
-     "end": 10.048
-    },
-    {
-     "text": "a.m.",
-     "start": 10.048,
-     "end": 10.388
+     "text": "nine.",
+     "start": 8.983,
+     "end": 9.437
     }
    ]
   },
   {
    "id": "L5",
-   "say": "Placement sign-off outstanding.",
-   "start": 10.648,
-   "end": 13.186,
+   "say": "Placement sign-off, outstanding.",
+   "start": 9.737,
+   "end": 12.22,
    "words": [
     {
      "text": "Placement",
-     "start": 10.648,
-     "end": 11.494
+     "start": 9.737,
+     "end": 10.359
     },
     {
-     "text": "sign-off",
-     "start": 11.494,
-     "end": 12.186
+     "text": "sign-off,",
+     "start": 10.359,
+     "end": 10.867
     },
     {
      "text": "outstanding.",
-     "start": 12.186,
-     "end": 13.186
+     "start": 11.207,
+     "end": 12.22
     }
    ]
   },
   {
    "id": "L6",
    "say": "You can't answer all of it tonight. So clear it.",
-   "start": 13.486,
-   "end": 16.604,
+   "start": 12.82,
+   "end": 16.028,
    "words": [
     {
      "text": "You",
-     "start": 13.486,
-     "end": 13.666
+     "start": 12.82,
+     "end": 13.042
     },
     {
      "text": "can't",
-     "start": 13.666,
-     "end": 13.883
+     "start": 13.042,
+     "end": 13.308
     },
     {
      "text": "answer",
-     "start": 13.883,
-     "end": 14.172
+     "start": 13.308,
+     "end": 13.663
     },
     {
      "text": "all",
-     "start": 14.172,
-     "end": 14.352
+     "start": 13.663,
+     "end": 13.885
     },
     {
      "text": "of",
-     "start": 14.352,
-     "end": 14.497
+     "start": 13.885,
+     "end": 14.063
     },
     {
      "text": "it",
-     "start": 14.497,
-     "end": 14.641
+     "start": 14.063,
+     "end": 14.24
     },
     {
      "text": "tonight.",
-     "start": 14.641,
-     "end": 14.966
+     "start": 14.24,
+     "end": 14.64
     },
     {
      "text": "So",
-     "start": 15.136,
-     "end": 15.527
+     "start": 14.95,
+     "end": 15.237
     },
     {
      "text": "clear",
-     "start": 15.527,
-     "end": 16.212
+     "start": 15.237,
+     "end": 15.741
     },
     {
      "text": "it.",
-     "start": 16.212,
-     "end": 16.604
+     "start": 15.741,
+     "end": 16.028
     }
    ]
   },
   {
    "id": "L7",
-   "say": "The one worth opening is the plan that's already moved around all of that.",
-   "start": 16.904,
-   "end": 20.842,
+   "say": "The one worth opening? Today's plan, already moved around all of that.",
+   "start": 16.628,
+   "end": 21.332,
    "words": [
     {
      "text": "The",
-     "start": 16.904,
-     "end": 17.13
+     "start": 16.628,
+     "end": 16.868
     },
     {
      "text": "one",
-     "start": 17.13,
-     "end": 17.357
+     "start": 16.868,
+     "end": 17.109
     },
     {
      "text": "worth",
-     "start": 17.357,
-     "end": 17.673
+     "start": 17.109,
+     "end": 17.445
     },
     {
-     "text": "opening",
-     "start": 17.673,
-     "end": 18.081
+     "text": "opening?",
+     "start": 17.445,
+     "end": 17.878
     },
     {
-     "text": "is",
-     "start": 18.081,
-     "end": 18.262
+     "text": "Today's",
+     "start": 18.238,
+     "end": 18.769
     },
     {
-     "text": "the",
-     "start": 18.262,
-     "end": 18.488
-    },
-    {
-     "text": "plan",
-     "start": 18.488,
-     "end": 18.76
-    },
-    {
-     "text": "that's",
-     "start": 18.76,
-     "end": 19.077
+     "text": "plan,",
+     "start": 18.769,
+     "end": 19.168
     },
     {
      "text": "already",
-     "start": 19.077,
-     "end": 19.484
+     "start": 19.418,
+     "end": 19.86
     },
     {
      "text": "moved",
-     "start": 19.484,
-     "end": 19.801
+     "start": 19.86,
+     "end": 20.203
     },
     {
      "text": "around",
-     "start": 19.801,
-     "end": 20.163
+     "start": 20.203,
+     "end": 20.596
     },
     {
      "text": "all",
-     "start": 20.163,
-     "end": 20.389
+     "start": 20.596,
+     "end": 20.841
     },
     {
      "text": "of",
-     "start": 20.389,
-     "end": 20.57
+     "start": 20.841,
+     "end": 21.037
     },
     {
      "text": "that.",
-     "start": 20.57,
-     "end": 20.842
+     "start": 21.037,
+     "end": 21.332
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "Offload plans your revision around your rota, and tests you on your notes.",
+   "start": 21.832,
+   "end": 26.858,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 21.832,
+     "end": 22.323
+    },
+    {
+     "text": "plans",
+     "start": 22.323,
+     "end": 22.705
+    },
+    {
+     "text": "your",
+     "start": 22.705,
+     "end": 23.033
+    },
+    {
+     "text": "revision",
+     "start": 23.033,
+     "end": 23.579
+    },
+    {
+     "text": "around",
+     "start": 23.579,
+     "end": 24.016
+    },
+    {
+     "text": "your",
+     "start": 24.016,
+     "end": 24.344
+    },
+    {
+     "text": "rota,",
+     "start": 24.344,
+     "end": 24.672
+    },
+    {
+     "text": "and",
+     "start": 25.072,
+     "end": 25.334
+    },
+    {
+     "text": "tests",
+     "start": 25.334,
+     "end": 25.702
+    },
+    {
+     "text": "you",
+     "start": 25.702,
+     "end": 25.965
+    },
+    {
+     "text": "on",
+     "start": 25.965,
+     "end": 26.175
+    },
+    {
+     "text": "your",
+     "start": 26.175,
+     "end": 26.49
+    },
+    {
+     "text": "notes.",
+     "start": 26.49,
+     "end": 26.858
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "You just click the link in your calendar.",
+   "start": 27.258,
+   "end": 29.941,
+   "words": [
+    {
+     "text": "You",
+     "start": 27.258,
+     "end": 27.532
+    },
+    {
+     "text": "just",
+     "start": 27.532,
+     "end": 27.86
+    },
+    {
+     "text": "click",
+     "start": 27.86,
+     "end": 28.243
+    },
+    {
+     "text": "the",
+     "start": 28.243,
+     "end": 28.517
+    },
+    {
+     "text": "link",
+     "start": 28.517,
+     "end": 28.846
+    },
+    {
+     "text": "in",
+     "start": 28.846,
+     "end": 29.065
+    },
+    {
+     "text": "your",
+     "start": 29.065,
+     "end": 29.393
+    },
+    {
+     "text": "calendar.",
+     "start": 29.393,
+     "end": 29.941
     }
    ]
   }

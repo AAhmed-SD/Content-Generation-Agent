@@ -1,0 +1,56 @@
+{
+ "id": "bank/clinical-blockfall",
+ "voice": "bm_george",
+ "lang": "en-gb",
+ "speed": 0.94,
+ "gap": 0.42,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Watch a placement week fit together.",
+   "after": 0.4
+  },
+  {
+   "id": "L2",
+   "say": "Shifts go in first.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "Then lectures.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "Then study drops into whatever's actually free.",
+   "after": 0.6
+  },
+  {
+   "id": "L5",
+   "say": "Miss Tuesday's session?",
+   "after": 0.4
+  },
+  {
+   "id": "L6",
+   "say": "It drops somewhere else. Nothing breaks.",
+   "after": 0.7
+  },
+  {
+   "id": "L7",
+   "say": "That's Offload. It plans around your shifts, with your Google Calendar connected.",
+   "after": 0.4
+  },
+  {
+   "id": "L8",
+   "say": "Then it tests you, and brings topics back before you forget.",
+   "after": 0.4
+  },
+  {
+   "id": "L9",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 0.9
+  }
+ ]
+}

@@ -1,0 +1,535 @@
+{
+ "duration": 38.908,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "The study police have made an arrest.",
+   "start": 0.15,
+   "end": 2.814,
+   "words": [
+    {
+     "text": "The",
+     "start": 0.15,
+     "end": 0.453
+    },
+    {
+     "text": "study",
+     "start": 0.453,
+     "end": 0.877
+    },
+    {
+     "text": "police",
+     "start": 0.877,
+     "end": 1.361
+    },
+    {
+     "text": "have",
+     "start": 1.361,
+     "end": 1.724
+    },
+    {
+     "text": "made",
+     "start": 1.724,
+     "end": 2.087
+    },
+    {
+     "text": "an",
+     "start": 2.087,
+     "end": 2.33
+    },
+    {
+     "text": "arrest.",
+     "start": 2.33,
+     "end": 2.814
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Suspect: the pretty planner app. Face the camera.",
+   "start": 3.314,
+   "end": 6.693,
+   "words": [
+    {
+     "text": "Suspect:",
+     "start": 3.314,
+     "end": 3.974
+    },
+    {
+     "text": "the",
+     "start": 4.074,
+     "end": 4.268
+    },
+    {
+     "text": "pretty",
+     "start": 4.268,
+     "end": 4.58
+    },
+    {
+     "text": "planner",
+     "start": 4.58,
+     "end": 4.93
+    },
+    {
+     "text": "app.",
+     "start": 4.93,
+     "end": 5.124
+    },
+    {
+     "text": "Face",
+     "start": 5.584,
+     "end": 5.934
+    },
+    {
+     "text": "the",
+     "start": 5.934,
+     "end": 6.226
+    },
+    {
+     "text": "camera.",
+     "start": 6.226,
+     "end": 6.693
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "And to the side.",
+   "start": 7.293,
+   "end": 8.535,
+   "words": [
+    {
+     "text": "And",
+     "start": 7.293,
+     "end": 7.603
+    },
+    {
+     "text": "to",
+     "start": 7.603,
+     "end": 7.852
+    },
+    {
+     "text": "the",
+     "start": 7.852,
+     "end": 8.162
+    },
+    {
+     "text": "side.",
+     "start": 8.162,
+     "end": 8.535
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Count one: your whole Sunday, spent choosing colours.",
+   "start": 9.335,
+   "end": 12.714,
+   "words": [
+    {
+     "text": "Count",
+     "start": 9.335,
+     "end": 9.708
+    },
+    {
+     "text": "one:",
+     "start": 9.708,
+     "end": 9.975
+    },
+    {
+     "text": "your",
+     "start": 10.115,
+     "end": 10.398
+    },
+    {
+     "text": "whole",
+     "start": 10.398,
+     "end": 10.728
+    },
+    {
+     "text": "Sunday,",
+     "start": 10.728,
+     "end": 11.105
+    },
+    {
+     "text": "spent",
+     "start": 11.375,
+     "end": 11.735
+    },
+    {
+     "text": "choosing",
+     "start": 11.735,
+     "end": 12.251
+    },
+    {
+     "text": "colours.",
+     "start": 12.251,
+     "end": 12.714
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Count two: it fell apart the first evening you missed.",
+   "start": 13.314,
+   "end": 16.466,
+   "words": [
+    {
+     "text": "Count",
+     "start": 13.314,
+     "end": 13.728
+    },
+    {
+     "text": "two:",
+     "start": 13.728,
+     "end": 14.024
+    },
+    {
+     "text": "it",
+     "start": 14.224,
+     "end": 14.4
+    },
+    {
+     "text": "fell",
+     "start": 14.4,
+     "end": 14.664
+    },
+    {
+     "text": "apart",
+     "start": 14.664,
+     "end": 14.971
+    },
+    {
+     "text": "the",
+     "start": 14.971,
+     "end": 15.191
+    },
+    {
+     "text": "first",
+     "start": 15.191,
+     "end": 15.499
+    },
+    {
+     "text": "evening",
+     "start": 15.499,
+     "end": 15.894
+    },
+    {
+     "text": "you",
+     "start": 15.894,
+     "end": 16.114
+    },
+    {
+     "text": "missed.",
+     "start": 16.114,
+     "end": 16.466
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Count three: it never once checked what you remembered.",
+   "start": 17.066,
+   "end": 20.424,
+   "words": [
+    {
+     "text": "Count",
+     "start": 17.066,
+     "end": 17.461
+    },
+    {
+     "text": "three:",
+     "start": 17.461,
+     "end": 17.856
+    },
+    {
+     "text": "it",
+     "start": 18.126,
+     "end": 18.313
+    },
+    {
+     "text": "never",
+     "start": 18.313,
+     "end": 18.642
+    },
+    {
+     "text": "once",
+     "start": 18.642,
+     "end": 18.923
+    },
+    {
+     "text": "checked",
+     "start": 18.923,
+     "end": 19.345
+    },
+    {
+     "text": "what",
+     "start": 19.345,
+     "end": 19.626
+    },
+    {
+     "text": "you",
+     "start": 19.626,
+     "end": 19.861
+    },
+    {
+     "text": "remembered.",
+     "start": 19.861,
+     "end": 20.424
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Sentence: one week of looking nice.",
+   "start": 21.124,
+   "end": 23.546,
+   "words": [
+    {
+     "text": "Sentence:",
+     "start": 21.124,
+     "end": 21.744
+    },
+    {
+     "text": "one",
+     "start": 21.984,
+     "end": 22.244
+    },
+    {
+     "text": "week",
+     "start": 22.244,
+     "end": 22.556
+    },
+    {
+     "text": "of",
+     "start": 22.556,
+     "end": 22.765
+    },
+    {
+     "text": "looking",
+     "start": 22.765,
+     "end": 23.233
+    },
+    {
+     "text": "nice.",
+     "start": 23.233,
+     "end": 23.546
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "Offload builds your plan from your exam dates, and moves it when you miss an evening.",
+   "start": 24.446,
+   "end": 29.893,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 24.446,
+     "end": 24.912
+    },
+    {
+     "text": "builds",
+     "start": 24.912,
+     "end": 25.327
+    },
+    {
+     "text": "your",
+     "start": 25.327,
+     "end": 25.638
+    },
+    {
+     "text": "plan",
+     "start": 25.638,
+     "end": 25.949
+    },
+    {
+     "text": "from",
+     "start": 25.949,
+     "end": 26.261
+    },
+    {
+     "text": "your",
+     "start": 26.261,
+     "end": 26.572
+    },
+    {
+     "text": "exam",
+     "start": 26.572,
+     "end": 26.883
+    },
+    {
+     "text": "dates,",
+     "start": 26.883,
+     "end": 27.246
+    },
+    {
+     "text": "and",
+     "start": 27.606,
+     "end": 27.854
+    },
+    {
+     "text": "moves",
+     "start": 27.854,
+     "end": 28.202
+    },
+    {
+     "text": "it",
+     "start": 28.202,
+     "end": 28.401
+    },
+    {
+     "text": "when",
+     "start": 28.401,
+     "end": 28.7
+    },
+    {
+     "text": "you",
+     "start": 28.7,
+     "end": 28.948
+    },
+    {
+     "text": "miss",
+     "start": 28.948,
+     "end": 29.247
+    },
+    {
+     "text": "an",
+     "start": 29.247,
+     "end": 29.446
+    },
+    {
+     "text": "evening.",
+     "start": 29.446,
+     "end": 29.893
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "It tests you as you go, so you know what's stuck.",
+   "start": 30.293,
+   "end": 33.278,
+   "words": [
+    {
+     "text": "It",
+     "start": 30.293,
+     "end": 30.492
+    },
+    {
+     "text": "tests",
+     "start": 30.492,
+     "end": 30.839
+    },
+    {
+     "text": "you",
+     "start": 30.839,
+     "end": 31.088
+    },
+    {
+     "text": "as",
+     "start": 31.088,
+     "end": 31.286
+    },
+    {
+     "text": "you",
+     "start": 31.286,
+     "end": 31.535
+    },
+    {
+     "text": "go,",
+     "start": 31.535,
+     "end": 31.733
+    },
+    {
+     "text": "so",
+     "start": 31.993,
+     "end": 32.17
+    },
+    {
+     "text": "you",
+     "start": 32.17,
+     "end": 32.392
+    },
+    {
+     "text": "know",
+     "start": 32.392,
+     "end": 32.658
+    },
+    {
+     "text": "what's",
+     "start": 32.658,
+     "end": 32.968
+    },
+    {
+     "text": "stuck.",
+     "start": 32.968,
+     "end": 33.278
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 33.678,
+   "end": 36.908,
+   "words": [
+    {
+     "text": "You",
+     "start": 33.678,
+     "end": 33.931
+    },
+    {
+     "text": "just",
+     "start": 33.931,
+     "end": 34.233
+    },
+    {
+     "text": "click",
+     "start": 34.233,
+     "end": 34.587
+    },
+    {
+     "text": "the",
+     "start": 34.587,
+     "end": 34.839
+    },
+    {
+     "text": "link",
+     "start": 34.839,
+     "end": 35.142
+    },
+    {
+     "text": "in",
+     "start": 35.142,
+     "end": 35.344
+    },
+    {
+     "text": "your",
+     "start": 35.344,
+     "end": 35.647
+    },
+    {
+     "text": "calendar",
+     "start": 35.647,
+     "end": 36.151
+    },
+    {
+     "text": "and",
+     "start": 36.151,
+     "end": 36.404
+    },
+    {
+     "text": "show",
+     "start": 36.404,
+     "end": 36.707
+    },
+    {
+     "text": "up.",
+     "start": 36.707,
+     "end": 36.908
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "id": "bank/time-wrapped",
+ "voice": "bm_george",
+ "lang": "en-gb",
+ "speed": 0.94,
+ "gap": 0.42,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Your week, wrapped.",
+   "after": 0.4
+  },
+  {
+   "id": "L2",
+   "say": "Top activity: starting things.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "Most opened app: the one you said you'd delete.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "Finished: one thing. The rest are tabs.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "Your vibe: busy, but nothing moved.",
+   "after": 0.6
+  },
+  {
+   "id": "L6",
+   "say": "Offload plans one block at a time, so something actually moves.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "Miss one, and it reschedules. It tests you, so it sticks.",
+   "after": 0.4
+  },
+  {
+   "id": "L8",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 0.9
+  }
+ ]
+}

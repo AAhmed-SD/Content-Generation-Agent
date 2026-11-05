@@ -1,0 +1,154 @@
+{
+  "note": "Things pulled from outside that fit Offload, kept so nobody has to find them again. The Inspiration page's Keep button adds to this list. fit says where it would go. status: idea, building, made.",
+  "items": [
+    {
+      "source": "Abduzeedo",
+      "name": "Pentagram Unveils LenLen Branding",
+      "url": "https://abduzeedo.com/pentagram-unveils-lenlen-branding/",
+      "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_89.jpg",
+      "fit": "Kept from Inspiration. Say where it fits.",
+      "status": "idea"
+    },
+    {
+      "source": "TikTok",
+      "name": "@motionarray: Video collage tuts, anyone? 🏈",
+      "url": "https://www.tiktok.com/@motionarray/video/7468691570489920775",
+      "fit": "Kept from Inspiration. Say where it fits.",
+      "status": "idea"
+    },
+    {
+      "source": "Abduzeedo",
+      "name": "Web Design: Grids Season 03 by Obys Agency",
+      "url": "https://abduzeedo.com/web-design-grids-season-03-obys-agency/",
+      "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_grids-des-season-03-grids.jpg",
+      "fit": "Kept from Inspiration. Say where it fits.",
+      "status": "idea"
+    },
+    {
+      "source": "Abduzeedo",
+      "name": "Alianza Rebrand Is a Masterclass in Brand Identity by Mucho",
+      "url": "https://abduzeedo.com/alianza-rebrand-masterclass-brand-identity-mucho/",
+      "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_95.jpg",
+      "fit": "Kept from Inspiration. Say where it fits.",
+      "status": "idea"
+    },
+    {
+      "source": "Abduzeedo",
+      "name": "Bristol Dockyards: Inside HOW+HOW's New Branding",
+      "url": "https://abduzeedo.com/bristol-dockyards-inside-howhows-new-branding/",
+      "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_91.jpg",
+      "fit": "Kept from Inspiration. Say where it fits.",
+      "status": "idea"
+    },
+    {
+      "source": "Abduzeedo",
+      "name": "Ismael Branco Crafts Relentlessly Brand Identity",
+      "url": "https://abduzeedo.com/ismael-branco-crafts-relentlessly-brand-identity/",
+      "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_relentlessly-case-study-www-ismaelbranco-com.jpg",
+      "fit": "Kept from Inspiration. Say where it fits.",
+      "status": "idea"
+    },
+    {
+      "source": "Abduzeedo",
+      "name": "Branding: Sundance Film Festival identity by Porto Rocha",
+      "url": "https://abduzeedo.com/branding-sundance-film-festival-identity-porto-rocha/",
+      "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_90.jpg",
+      "fit": "Kept from Inspiration. Say where it fits.",
+      "status": "idea"
+    },
+    {
+      "source": "Abduzeedo",
+      "name": "Typography: Shuffle Variable by Local Type Co.",
+      "url": "https://abduzeedo.com/typography-shuffle-variable-local-type-co/",
+      "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_shuffle.jpg",
+      "fit": "Kept from Inspiration. Say where it fits.",
+      "status": "idea"
+    },
+    {
+      "source": "Motionographer",
+      "name": "Artful Being Brings Collage Animation to Football’s Off-Pitch Careers",
+      "url": "https://motionographer.com/news/artful-being-follow-your-passion-open-university-bbc-bitesize/",
+      "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/artful-being-follow-your-passion-header.gif?fit=700%2C394&ssl=1",
+      "fit": "Kept from Inspiration. Say where it fits.",
+      "status": "idea"
+    },
+    {
+      "source": "Abduzeedo",
+      "name": "Mosby’s Files: Archival Web Design by tubik studio",
+      "url": "https://abduzeedo.com/mosbys-files-archival-web-design-tubik-studio/",
+      "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_mosby-s-files-tubik-studio.jpg",
+      "fit": "Kept from Inspiration. Say where it fits.",
+      "status": "idea"
+    },
+    {
+      "source": "Magic UI",
+      "name": "Animated List",
+      "url": "https://magicui.design/docs/components/animated-list",
+      "fit": "Notifications stacking one by one. Lock screen and inbox films already do this in glass; use it for a desk page of today's pieces.",
+      "status": "made"
+    },
+    {
+      "source": "Magic UI",
+      "name": "Number Ticker",
+      "url": "https://magicui.design/docs/components/number-ticker",
+      "fit": "Counting up a number from the week's brief on a card. Only numbers already in the brief.",
+      "status": "idea"
+    },
+    {
+      "source": "Magic UI",
+      "name": "Bento Grid",
+      "url": "https://magicui.design/docs/components/bento-grid",
+      "fit": "A carousel cover or a launch film frame: the four accounts as four tiles.",
+      "status": "idea"
+    },
+    {
+      "source": "Magic UI",
+      "name": "Marquee",
+      "url": "https://magicui.design/docs/components/marquee",
+      "fit": "A row of student habits scrolling past behind a hook, like a news ticker.",
+      "status": "idea"
+    },
+    {
+      "source": "Magic UI",
+      "name": "Blur Fade",
+      "url": "https://magicui.design/docs/components/blur-fade",
+      "fit": "Line-by-line reveal for spoken words. Close to how the scene film already brings lines in.",
+      "status": "made"
+    },
+    {
+      "source": "Magic UI",
+      "name": "Word Rotate",
+      "url": "https://magicui.design/docs/components/word-rotate",
+      "fit": "\"Revise ___\" with the blank rotating: biology, maths, pharmacology. A hook card.",
+      "status": "idea"
+    },
+    {
+      "source": "Magic UI",
+      "name": "Animated Beam",
+      "url": "https://magicui.design/docs/components/animated-beam",
+      "fit": "Notes, calendar and flashcards joined by beams into Offload. The 'how it works' film.",
+      "status": "idea"
+    },
+    {
+      "source": "Magic UI",
+      "name": "iPhone mockup",
+      "url": "https://magicui.design/docs/components/iphone",
+      "fit": "The app's real screens in a phone frame for the product line. Needs real screenshots.",
+      "status": "idea"
+    },
+    {
+      "source": "Apple",
+      "name": "Liquid glass notifications",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/materials",
+      "fit": "The glass kit: GlassNotification and GlassMail in remotion/src/world/kit/glass.tsx.",
+      "status": "made"
+    },
+    {
+      "source": "Apple",
+      "name": "Calendar Tetris ad",
+      "url": "",
+      "fit": "Events dropping into a week until it fits. Built as the blockfall format.",
+      "status": "made"
+    }
+  ]
+}

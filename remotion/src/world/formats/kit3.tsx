@@ -6,6 +6,7 @@ import { Type } from "../kit/talk";
 import { SCRIPT, SERIF } from "../../story/fonts";
 import { Br, DISPLAY, grain, Mark, Stamp } from "../posters/Posters";
 import { Sound } from "./kit";
+import { GlassMail, GlassNotification, Wallpaper } from "../kit/glass";
 
 /**
  * Twelve everyday-object templates: a lock screen, an inbox, a marked exam paper, a battery, a forecast, terms and
@@ -19,60 +20,67 @@ type Timing = { duration: number; lines: { id: string; start: number; end: numbe
 type Base = { timing: Timing; T: T; vo: string };
 type At = { at: Ref };
 
-export type LockSpec = { format: "lockscreen"; time: string; date: string; notifs: ({ app: string; title: string; body: string } & At)[]; final: { app: string; title: string; body: string } & At };
-export type InboxSpec = { format: "inbox"; account: string; emails: ({ from: string; subject: string; preview: string } & At)[]; clear?: At; final: { from: string; subject: string; preview: string } & At };
+/** A flood: many items arriving fast from `at`, one every `every` seconds. Use it whenever the line says "everything". */
+type Flood<I> = { at: Ref; every?: number; items: I[] };
+export type LockSpec = { format: "lockscreen"; time: string; date: string; flood?: Flood<{ app: string; title: string; body: string }>; notifs: ({ app: string; title: string; body: string } & At)[]; final: { app: string; title: string; body: string } & At };
+export type InboxSpec = { format: "inbox"; account: string; flood?: Flood<{ from: string; subject: string }>; emails: ({ from: string; subject: string; preview: string } & At)[]; clear?: At; final: { from: string; subject: string; preview: string } & At };
 export type PaperSpec = { format: "exampaper"; paper: string; number: string; question: string; marks: string; answer: { text: string } & At; ticks: ({ kind: "tick" | "cross" } & At)[]; verdict: { text: string } & At };
 export type BatterySpec = { format: "battery"; label: string; steps: ({ day: string; level: number; note: string } & At)[]; final: { text: string } & At };
 export type WeatherSpec = { format: "weather"; title: string; days: ({ day: string; sky: "sun" | "cloud" | "rain" | "storm"; label: string } & At)[]; final: { text: string } & At };
 export type TermsSpec = { format: "terms"; title: string; clauses: ({ text: string } & At)[]; sign: At; final: { text: string } & At };
-export type DialogSpec = { format: "dialog"; dialogs: ({ title: string; message: string; buttons: string[]; press?: number } & At)[]; final: { text: string } & At };
+export type DialogSpec = { format: "dialog"; cascade?: Flood<{ title: string; message: string }>; dialogs: ({ title: string; message: string; buttons: string[]; press?: number } & At)[]; final: { text: string } & At };
 export type SatnavSpec = { format: "satnav"; steps: ({ kind: "go" | "miss" | "reroute" | "arrive"; text: string } & At)[] };
 export type BoardSpec2 = { format: "departures"; title: string; rows: ({ time: string; dest: string; status: string; tone?: "ok" | "bad" } & At)[]; final: { text: string } & At };
 export type RecipeSpec = { format: "recipe"; title: string; serves: string; ingredients: ({ text: string } & At)[]; method: ({ text: string } & At)[] };
 export type MissingSpec = { format: "missing"; subject: string; details: ({ label: string; value: string } & At)[]; reward: { text: string } & At };
-export type KanbanSpec = { format: "kanban"; title: string; cards: ({ text: string; col: number; move?: { col: number } & At } & At)[]; final: { text: string } & At };
+export type KanbanSpec = { format: "kanban"; title: string; pile?: Flood<string> & { col: number; calm?: Ref }; cards: ({ text: string; col: number; move?: { col: number } & At } & At)[]; final: { text: string } & At };
 export type FormatSpec3 = LockSpec | InboxSpec | PaperSpec | BatterySpec | WeatherSpec | TermsSpec | DialogSpec | SatnavSpec | BoardSpec2 | RecipeSpec | MissingSpec | KanbanSpec;
 
 const Corner: React.FC<{ colour?: string }> = ({ colour = tokens.mark }) => <div style={{ position: "absolute", right: 70, bottom: 90 }}><Mark size={70} colour={colour} /></div>;
 const Captions: React.FC<{ timing: Timing; colour: string; y?: number }> = ({ timing, colour, y = 130 }) => <Type timing={timing} hook={0} y={y} colour={colour} floor={y + 230} />;
 const pop = (sp: (t: number, c?: object) => number, a: number) => sp(a, POP);
-const AppDot: React.FC<{ colour?: string; size?: number }> = ({ colour = tokens.mark, size = 70 }) => <div style={{ flex: "none", width: size, height: size, borderRadius: size * 0.24, background: colour, display: "flex", alignItems: "center", justifyContent: "center" }}><div style={{ width: size * 0.32, height: size * 0.32, borderRadius: size, background: tokens.white }} /></div>;
+
+/** Chaos. A fixed random number per index, and a shake that only runs inside a window and fades out. */
+const rnd = (i: number, s = 1) => {
+  const x = Math.sin(i * 127.1 + s * 311.7) * 43758.5453;
+  return x - Math.floor(x);
+};
+const shake = (t: number, from: number, to: number, amp = 10) => {
+  if (t < from || t > to) return "none";
+  const fade = Math.min(1, (to - t) / 0.4, (t - from) / 0.1);
+  return `translate(${Math.sin(t * 61) * amp * fade}px, ${Math.cos(t * 47) * amp * fade}px)`;
+};
+const flooded = <I,>(T: T, f: Flood<I> | undefined) => (f ? f.items.map((item, i) => ({ item, a: T(f.at) + i * (f.every ?? 0.14) })) : []);
+const Count: React.FC<{ n: number; style?: React.CSSProperties }> = ({ n, style }) => (
+  <div style={{ display: "inline-block", padding: "6px 22px", borderRadius: 40, background: tokens.problem, color: tokens.white, fontFamily: INTER, fontWeight: 800, fontSize: 34, ...style }}>{n}</div>
+);
 
 // 1. Lock screen
 export const LockScreen: React.FC<{ spec: LockSpec } & Base> = ({ spec, T, timing, vo }) => {
   const { t, sp } = useK();
-  const ns = spec.notifs.map((n) => ({ ...n, a: T(n.at) }));
+  const fl = flooded(T, spec.flood).map(({ item, a }) => ({ ...item, a, flood: true }));
+  const ns = [...spec.notifs.map((n) => ({ ...n, a: T(n.at), flood: false })), ...fl].sort((x, y) => x.a - y.a);
   const f = T(spec.final.at);
-  const cues: Cue[] = [...ns.map((n) => ({ t: n.a, s: "ding", v: 0.22 })), { t: f, s: "sparkle", v: 0.28 }];
+  const cues: Cue[] = [...ns.map((n) => ({ t: n.a, s: "ding", v: n.flood ? 0.12 : 0.22 })), { t: f, s: "sparkle", v: 0.28 }];
   const clear = sp(f - 0.2);
+  const shown = ns.filter((n) => t >= n.a && t < f + 0.6);
+  const gap = shown.length <= 4 ? 200 : Math.max(46, 820 / (shown.length - 1));
+  const rush = fl.length ? shake(t, fl[0].a, fl[fl.length - 1].a + 0.5, 9) : "none";
   return (
-    <AbsoluteFill style={{ background: `linear-gradient(180deg, ${tokens.night}, ${tokens.ink})` }}>
+    <AbsoluteFill>
+      <Wallpaper dark />
       <div style={{ position: "absolute", left: 0, right: 0, top: 360, textAlign: "center", fontFamily: INTER, fontWeight: 300, fontSize: 210, color: tokens.white, letterSpacing: "-0.04em" }}>{spec.time}</div>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 330, textAlign: "center", fontFamily: INTER, fontWeight: 600, fontSize: 40, color: alpha(tokens.white, 0.75) }}>{spec.date}</div>
-      {ns.filter((n) => t >= n.a).map((n, i, arr) => {
-        const k = pop(sp, n.a);
-        const fromTop = arr.length - 1 - i;
-        return (
-          <div key={i} style={{ position: "absolute", left: 50, right: 50, top: 720 + fromTop * 175, padding: "26px 30px", borderRadius: 34, background: alpha(tokens.white, 0.16), display: "flex", gap: 22, alignItems: "center", transform: `translateY(${(1 - k) * -60}px)`, opacity: k * (1 - clear * 0.85) }}>
-            <AppDot colour={alpha(tokens.white, 0.35)} />
-            <div style={{ color: tokens.white }}>
-              <div style={{ fontFamily: INTER, fontWeight: 700, fontSize: 26, opacity: 0.7 }}>{n.app}</div>
-              <div style={{ fontFamily: INTER, fontWeight: 750, fontSize: 36 }}>{n.title}</div>
-              <div style={{ fontFamily: INTER, fontSize: 30, opacity: 0.85 }}>{n.body}</div>
-            </div>
-          </div>
-        );
-      })}
-      {t >= f ? (
-        <div style={{ position: "absolute", left: 50, right: 50, top: 720, padding: "30px 34px", borderRadius: 34, background: tokens.white, display: "flex", gap: 22, alignItems: "center", boxShadow: soft(1.2), transform: `scale(${0.9 + 0.1 * pop(sp, f)})`, opacity: pop(sp, f) }}>
-          <AppDot />
-          <div>
-            <div style={{ fontFamily: INTER, fontWeight: 700, fontSize: 26, color: tokens.quiet }}>{spec.final.app}</div>
-            <div style={{ fontFamily: INTER, fontWeight: 800, fontSize: 40, color: tokens.ink }}>{spec.final.title}</div>
-            <div style={{ fontFamily: INTER, fontSize: 32, color: tokens.ink }}>{spec.final.body}</div>
-          </div>
-        </div>
-      ) : null}
+      <div style={{ position: "absolute", left: 0, right: 0, top: 330, textAlign: "center", fontFamily: INTER, fontWeight: 600, fontSize: 40, color: alpha(tokens.white, 0.8) }}>{spec.date}</div>
+      {shown.length > 4 && t < f ? <div style={{ position: "absolute", left: 0, right: 0, top: 618, textAlign: "center" }}><Count n={shown.length} /></div> : null}
+      <AbsoluteFill style={{ transform: rush }}>
+        {shown.map((n, i, arr) => {
+          const k = pop(sp, n.a);
+          const fromTop = arr.length - 1 - i;
+          const tilt = n.flood ? (rnd(i) - 0.5) * 6 : 0;
+          return <GlassNotification key={i} dark app={n.app} title={n.title} body={n.body} tone={n.flood ? "problem" : "glass"} style={{ position: "absolute", left: 40 + (n.flood ? (rnd(i, 2) - 0.5) * 40 : 0), right: 40 - (n.flood ? (rnd(i, 2) - 0.5) * 40 : 0), top: 700 + fromTop * gap, transform: `translateY(${(1 - k) * -80}px) rotate(${tilt}deg) scale(${Math.max(0.85, 1 - fromTop * 0.012)})`, opacity: k * (1 - clear * 0.95) }} />;
+        })}
+      </AbsoluteFill>
+      {t >= f ? <GlassNotification app={spec.final.app} title={spec.final.title} body={spec.final.body} style={{ position: "absolute", left: 40, right: 40, top: 700, transform: `scale(${0.9 + 0.1 * pop(sp, f)})`, opacity: pop(sp, f) }} /> : null}
       <Captions timing={timing} colour={tokens.white} y={110} />
       <Corner colour={tokens.white} />
       <Sound vo={vo} cues={cues} />
@@ -83,30 +91,38 @@ export const LockScreen: React.FC<{ spec: LockSpec } & Base> = ({ spec, T, timin
 // 2. Inbox
 export const Inbox: React.FC<{ spec: InboxSpec } & Base> = ({ spec, T, timing, vo }) => {
   const { t, sp } = useK();
-  const es = spec.emails.map((e) => ({ ...e, a: T(e.at) }));
+  const fl = flooded(T, spec.flood).map(({ item, a }) => ({ ...item, preview: "", a }));
+  const es = [...spec.emails.map((e) => ({ ...e, a: T(e.at) })), ...fl].sort((x, y) => x.a - y.a);
   const clear = spec.clear ? T(spec.clear.at) : 1e9;
+  const unread = es.filter((e) => t >= e.a).length;
+  const rush = fl.length ? shake(t, fl[0].a, fl[fl.length - 1].a + 0.5, 8) : "none";
   const f = T(spec.final.at);
-  const cues: Cue[] = [...es.map((e) => ({ t: e.a, s: "pop", v: 0.22 })), ...(spec.clear ? [{ t: clear, s: "swish", v: 0.3 }] : []), { t: f, s: "ding", v: 0.26 }];
-  const Row: React.FC<{ e: { from: string; subject: string; preview: string }; bold?: boolean; hi?: boolean }> = ({ e, bold, hi }) => (
+  const cues: Cue[] = [...es.map((e) => ({ t: e.a, s: "pop", v: e.preview ? 0.22 : 0.12 })), ...(spec.clear ? [{ t: clear, s: "swish", v: 0.3 }] : []), { t: f, s: "ding", v: 0.26 }];
+  const Row: React.FC<{ e: { from: string; subject: string; preview?: string }; bold?: boolean; hi?: boolean }> = ({ e, bold, hi }) => (
     <div style={{ padding: "30px 40px", borderBottom: `2px solid ${tokens.rule}`, background: hi ? alpha(tokens.mark, 0.08) : tokens.white, display: "flex", gap: 22 }}>
       <div style={{ flex: "none", width: 18, height: 18, borderRadius: 9, marginTop: 14, background: bold ? tokens.mark : "transparent" }} />
       <div style={{ minWidth: 0 }}>
         <div style={{ fontFamily: INTER, fontWeight: bold ? 800 : 600, fontSize: 36, color: tokens.ink }}>{e.from}</div>
         <div style={{ fontFamily: INTER, fontWeight: bold ? 700 : 500, fontSize: 32, color: tokens.ink }}>{e.subject}</div>
-        <div style={{ fontFamily: INTER, fontSize: 28, color: tokens.quiet, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{e.preview}</div>
+        {e.preview ? <div style={{ fontFamily: INTER, fontSize: 28, color: tokens.quiet, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{e.preview}</div> : null}
       </div>
     </div>
   );
   return (
     <AbsoluteFill style={{ background: tokens.white }}>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 380, padding: "0 40px 20px", fontFamily: INTER, fontWeight: 800, fontSize: 64, color: tokens.ink }}>Inbox <span style={{ fontWeight: 500, fontSize: 32, color: tokens.quiet }}>{spec.account}</span></div>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 480 }}>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 380, padding: "0 40px 20px", fontFamily: INTER, fontWeight: 800, fontSize: 64, color: tokens.ink }}>Inbox <span style={{ fontWeight: 500, fontSize: 32, color: tokens.quiet }}>{spec.account}</span>{unread > 4 && t < clear ? <Count n={unread} style={{ marginLeft: 20, verticalAlign: "middle" }} /> : null}</div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 480, transform: rush }}>
         {t >= f ? <div style={{ transform: `translateY(${(1 - pop(sp, f)) * -80}px)`, opacity: pop(sp, f) }}><Row e={spec.final} bold hi /></div> : null}
         {[...es].reverse().filter((e) => t >= e.a).map((e, i) => {
-          const gone = t >= clear ? sp(clear + i * 0.06, { damping: 200, stiffness: 200, mass: 0.5 }) : 0;
-          return <div key={e.subject} style={{ transform: `translateX(${-gone * 1200}px)`, opacity: pop(sp, e.a) * (1 - gone), height: gone > 0.98 ? 0 : undefined, overflow: "hidden" }}><Row e={e} bold /></div>;
+          const gone = t >= clear ? sp(clear + i * (es.length > 8 ? 0.025 : 0.06), { damping: 200, stiffness: 200, mass: 0.5 }) : 0;
+          return <div key={`${e.subject}${i}`} style={{ transform: `translateX(${-gone * 1200}px)`, opacity: pop(sp, e.a) * (1 - gone), height: gone > 0.98 ? 0 : undefined, overflow: "hidden" }}><Row e={e} bold /></div>;
         })}
       </div>
+      {t >= f + 0.8 ? (
+        <AbsoluteFill style={{ background: alpha(tokens.ink, 0.12 * pop(sp, f + 0.8)) }}>
+          <GlassMail from={spec.final.from} subject={spec.final.subject} lines={[spec.final.preview]} style={{ position: "absolute", left: 50, right: 50, top: 900, transform: `translateY(${(1 - pop(sp, f + 0.8)) * 300}px)` }} />
+        </AbsoluteFill>
+      ) : null}
       <Captions timing={timing} colour={tokens.ink} />
       <Corner />
       <Sound vo={vo} cues={cues} />
@@ -182,9 +198,10 @@ export const Weather: React.FC<{ spec: WeatherSpec } & Base> = ({ spec, T, timin
   const { t, sp } = useK();
   const days = spec.days.map((d) => ({ ...d, a: T(d.at) }));
   const f = T(spec.final.at);
-  const cues: Cue[] = [...days.map((d) => ({ t: d.a, s: d.sky === "storm" ? "rumble" : "pop", v: 0.26 })), { t: f, s: "sparkle", v: 0.26 }];
+  const storm = days.find((d) => d.sky === "storm");
+  const cues: Cue[] = [...days.map((d) => ({ t: d.a, s: d.sky === "storm" ? "rumble" : "pop", v: 0.26 })), ...(storm ? [1.25, 1.9].map((k) => ({ t: storm.a + k, s: "rumble", v: 0.18 })) : []), { t: f, s: "sparkle", v: 0.26 }];
   return (
-    <AbsoluteFill style={{ background: `linear-gradient(180deg, ${tokens.mark}, ${alpha(tokens.mark, 0.75)})` }}>
+    <AbsoluteFill style={{ background: `linear-gradient(180deg, ${tokens.mark}, ${alpha(tokens.mark, 0.75)})`, transform: storm ? shake(t, storm.a, storm.a + 2.4, 12) : "none" }}>
       <div style={{ position: "absolute", left: 70, right: 70, top: 380, fontFamily: INTER, fontWeight: 800, fontSize: 66, color: tokens.white, letterSpacing: "-0.03em" }}>{spec.title}</div>
       <div style={{ position: "absolute", left: 50, right: 50, top: 500, borderRadius: 40, background: alpha(tokens.white, 0.16), padding: "20px 30px" }}>
         {days.map((d, i) => (
@@ -195,6 +212,19 @@ export const Weather: React.FC<{ spec: WeatherSpec } & Base> = ({ spec, T, timin
           </div>
         ))}
       </div>
+      {storm && t >= storm.a && t < f + 0.4 ? (
+        <AbsoluteFill style={{ pointerEvents: "none", opacity: Math.min(1, (t - storm.a) / 0.3) * (t < f ? 1 : 1 - (t - f) / 0.4) }}>
+          <AbsoluteFill style={{ background: alpha(tokens.night, 0.45) }} />
+          <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
+            {Array.from({ length: 90 }, (_, i) => {
+              const x = rnd(i) * 1180 - 50;
+              const y = ((t * (1700 + rnd(i, 4) * 600) + rnd(i, 2) * 2100) % 2100) - 120;
+              return <path key={i} d={`M ${x} ${y} l -22 70`} stroke={alpha(tokens.white, 0.55)} strokeWidth={4} strokeLinecap="round" />;
+            })}
+          </svg>
+          <AbsoluteFill style={{ background: tokens.white, opacity: Math.max(0, ...[0, 1.25, 1.9].map((k) => 0.85 - (t - storm.a - k) / 0.14 * 0.85).map((v, j) => (t - storm.a >= [0, 1.25, 1.9][j] ? v : 0))) }} />
+        </AbsoluteFill>
+      ) : null}
       {t >= f ? <div style={{ position: "absolute", left: 70, right: 70, bottom: 210, padding: "30px 36px", borderRadius: 30, background: tokens.white, color: tokens.ink, fontFamily: INTER, fontWeight: 760, fontSize: 44, lineHeight: 1.15, opacity: pop(sp, f) }}><Br text={spec.final.text} /></div> : null}
       <Captions timing={timing} colour={tokens.white} />
       <Corner colour={tokens.white} />
@@ -236,28 +266,38 @@ export const ErrorDialog: React.FC<{ spec: DialogSpec } & Base> = ({ spec, T, ti
   const ds = spec.dialogs.map((d) => ({ ...d, a: T(d.at) }));
   const f = T(spec.final.at);
   const cur = [...ds].reverse().find((d) => t >= d.a);
-  const cues: Cue[] = [...ds.map((d) => ({ t: d.a, s: "glass", v: 0.3 })), { t: f, s: "sparkle", v: 0.26 }];
+  const cas = flooded(T, spec.cascade);
+  const cues: Cue[] = [...ds.map((d) => ({ t: d.a, s: "glass", v: 0.3 })), ...cas.map((c) => ({ t: c.a, s: "glass", v: 0.14 })), { t: f, s: "sparkle", v: 0.26 }];
+  const rush = cas.length ? shake(t, cas[0].a, cas[cas.length - 1].a + 0.5, 10) : "none";
+  const Box: React.FC<{ title: string; message: string; buttons: string[]; press?: number; a: number; style: React.CSSProperties }> = ({ title, message, buttons, press, a, style }) => (
+    <div style={{ position: "absolute", borderRadius: 28, background: tokens.card, boxShadow: soft(1.5), overflow: "hidden", ...style }}>
+      <div style={{ height: 70, background: tokens.rule, display: "flex", alignItems: "center", gap: 14, padding: "0 26px" }}>
+        {[tokens.problem, tokens.kraft, alpha(tokens.ink, 0.3)].map((c, i) => <div key={i} style={{ width: 24, height: 24, borderRadius: 12, background: c }} />)}
+        <div style={{ fontFamily: INTER, fontWeight: 700, fontSize: 28, color: tokens.ink, marginLeft: 10 }}>{title}</div>
+      </div>
+      <div style={{ padding: "50px 50px 40px", display: "flex", gap: 34 }}>
+        <div style={{ flex: "none", width: 110, height: 110, borderRadius: 55, background: tokens.problem, color: tokens.white, fontFamily: INTER, fontWeight: 900, fontSize: 76, display: "flex", alignItems: "center", justifyContent: "center" }}>!</div>
+        <div style={{ fontFamily: INTER, fontSize: 44, lineHeight: 1.2, color: tokens.ink }}>{message}</div>
+      </div>
+      <div style={{ display: "flex", justifyContent: "flex-end", gap: 20, padding: "0 50px 46px" }}>
+        {buttons.map((b, i) => {
+          const pressed = press === i && t > a + 1.2;
+          return <div key={b} style={{ padding: "18px 40px", borderRadius: 18, background: i === buttons.length - 1 ? tokens.mark : tokens.white, color: i === buttons.length - 1 ? tokens.white : tokens.ink, border: `2px solid ${tokens.rule}`, fontFamily: INTER, fontWeight: 700, fontSize: 36, transform: `scale(${pressed ? 0.92 : 1})` }}>{b}</div>;
+        })}
+      </div>
+    </div>
+  );
   return (
     <AbsoluteFill style={{ background: tokens.mark }}>
       <AbsoluteFill style={{ backgroundImage: `linear-gradient(${alpha(tokens.white, 0.06)} 2px, transparent 2px), linear-gradient(90deg, ${alpha(tokens.white, 0.06)} 2px, transparent 2px)`, backgroundSize: "60px 60px" }} />
-      {cur && t < f ? (
-        <div key={cur.title} style={{ position: "absolute", left: 90, right: 90, top: 640, borderRadius: 28, background: tokens.card, boxShadow: soft(1.5), overflow: "hidden", transform: `scale(${0.85 + 0.15 * pop(sp, cur.a)})` }}>
-          <div style={{ height: 70, background: tokens.rule, display: "flex", alignItems: "center", gap: 14, padding: "0 26px" }}>
-            {[tokens.problem, tokens.kraft, alpha(tokens.ink, 0.3)].map((c, i) => <div key={i} style={{ width: 24, height: 24, borderRadius: 12, background: c }} />)}
-            <div style={{ fontFamily: INTER, fontWeight: 700, fontSize: 28, color: tokens.ink, marginLeft: 10 }}>{cur.title}</div>
-          </div>
-          <div style={{ padding: "50px 50px 40px", display: "flex", gap: 34 }}>
-            <div style={{ flex: "none", width: 110, height: 110, borderRadius: 55, background: tokens.problem, color: tokens.white, fontFamily: INTER, fontWeight: 900, fontSize: 76, display: "flex", alignItems: "center", justifyContent: "center" }}>!</div>
-            <div style={{ fontFamily: INTER, fontSize: 44, lineHeight: 1.2, color: tokens.ink }}>{cur.message}</div>
-          </div>
-          <div style={{ display: "flex", justifyContent: "flex-end", gap: 20, padding: "0 50px 46px" }}>
-            {cur.buttons.map((b, i) => {
-              const pressed = cur.press === i && t > cur.a + 1.2;
-              return <div key={b} style={{ padding: "18px 40px", borderRadius: 18, background: i === cur.buttons.length - 1 ? tokens.mark : tokens.white, color: i === cur.buttons.length - 1 ? tokens.white : tokens.ink, border: `2px solid ${tokens.rule}`, fontFamily: INTER, fontWeight: 700, fontSize: 36, transform: `scale(${pressed ? 0.92 : 1})` }}>{b}</div>;
-            })}
-          </div>
-        </div>
-      ) : null}
+      <AbsoluteFill style={{ transform: rush }}>
+        {cur && t < f ? <Box key={cur.title} {...cur} style={{ left: 90, right: 90, top: 640, transform: `scale(${0.85 + 0.15 * pop(sp, cur.a)})` }} /> : null}
+        {t < f
+          ? cas.filter((c) => t >= c.a).map((c, i) => (
+              <Box key={i} title={c.item.title} message={c.item.message} buttons={["OK"]} a={c.a} style={{ left: 40 + rnd(i) * 160, width: 820, top: 260 + rnd(i, 2) * 1050, transform: `rotate(${(rnd(i, 3) - 0.5) * 10}deg) scale(${0.7 + 0.15 * pop(sp, c.a)})` }} />
+            ))
+          : null}
+      </AbsoluteFill>
       {t >= f ? <div style={{ position: "absolute", left: 90, right: 90, top: 700, padding: "50px 54px", borderRadius: 34, background: tokens.white, boxShadow: soft(1.4), fontFamily: INTER, fontWeight: 780, fontSize: 60, lineHeight: 1.08, letterSpacing: "-0.03em", color: tokens.ink, transform: `scale(${0.9 + 0.1 * pop(sp, f)})` }}><Br text={spec.final.text} /></div> : null}
       <Captions timing={timing} colour={tokens.white} />
       <Corner colour={tokens.white} />
@@ -401,14 +441,40 @@ export const Kanban: React.FC<{ spec: KanbanSpec } & Base> = ({ spec, T, timing,
   const W = 320;
   const cues: Cue[] = [...cards.map((c) => ({ t: c.a, s: "pop_low", v: 0.2 })), ...cards.filter((c) => c.move).map((c) => ({ t: c.m, s: "whoosh", v: 0.24 })), { t: f, s: "sparkle", v: 0.26 }];
   const slots: Record<number, number> = {};
+  const pile = flooded(T, spec.pile);
+  const calm = spec.pile?.calm ? T(spec.pile.calm) : 1e9;
+  const settle = sp(calm, { damping: 200, stiffness: 120, mass: 0.8 });
+  if (spec.pile) cues.push(...pile.map((p) => ({ t: p.a, s: "pop_low", v: 0.12 })));
+  const inCol = (col: number) => cards.filter((c) => t >= c.a && (c.move && t >= c.m ? c.move.col : c.col) === col).length + (spec.pile?.col === col ? pile.filter((p) => t >= p.a).length : 0);
+  const rush = pile.length ? shake(t, pile[0].a, pile[pile.length - 1].a + 0.5, 9) : "none";
   return (
-    <AbsoluteFill style={{ background: tokens.white }}>
+    <AbsoluteFill style={{ background: tokens.white, transform: rush }}>
       <div style={{ position: "absolute", left: 40, right: 40, top: 360, fontFamily: INTER, fontWeight: 800, fontSize: 56, color: tokens.ink }}>{spec.title}</div>
       {cols.map((c, i) => (
         <div key={c} style={{ position: "absolute", left: 30 + i * (W + 20), top: 460, width: W, bottom: 300, borderRadius: 26, background: tokens.rule, padding: "24px 18px" }}>
-          <div style={{ fontFamily: INTER, fontWeight: 800, fontSize: 32, color: tokens.quiet }}>{c}</div>
+          <div style={{ fontFamily: INTER, fontWeight: 800, fontSize: 32, color: tokens.quiet, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            {c}
+            {spec.pile?.col === i && inCol(i) > 4 ? <Count n={inCol(i)} style={{ fontSize: 28, padding: "2px 16px" }} /> : null}
+          </div>
         </div>
       ))}
+      {spec.pile
+        ? pile.filter((p) => t >= p.a).map((p, i) => {
+            const k = sp(p.a, { damping: 11, stiffness: 170, mass: 0.6 });
+            const base = 540 + spec.cards.filter((c) => c.col === spec.pile!.col).length * 170;
+            const wild = { x: (rnd(i) - 0.5) * 90, y: i * 64 + (rnd(i, 2) - 0.5) * 50, r: (rnd(i, 3) - 0.5) * 34 };
+            const tidy = { x: 0, y: Math.min(i, 5) * 12, r: 0 };
+            const m = (a: number, b: number) => a + (b - a) * settle;
+            return <div key={i} style={{ position: "absolute", left: 30 + spec.pile!.col * (W + 20) + 16 + m(wild.x, tidy.x), top: base + m(wild.y, tidy.y) - (1 - k) * 420, width: W - 32, padding: "22px 20px", borderRadius: 18, background: tokens.white, border: `2px solid ${alpha(tokens.problem, 0.35 * (1 - settle))}`, boxShadow: soft(0.6), fontFamily: INTER, fontWeight: 700, fontSize: 30, lineHeight: 1.15, color: alpha(tokens.ink, 1 - settle), transform: `rotate(${m(wild.r, tidy.r)}deg)` }}>{p.item}</div>;
+          })
+        : null}
+      {spec.pile && settle > 0.02 ? (
+        <div style={{ position: "absolute", left: 30 + spec.pile.col * (W + 20) + 16, top: 540 + spec.cards.filter((c) => c.col === spec.pile!.col).length * 170 + 72, width: W - 32, padding: "22px 20px", borderRadius: 18, background: tokens.mark, color: tokens.white, boxShadow: soft(0.8), fontFamily: INTER, fontWeight: 800, fontSize: 30, lineHeight: 1.15, opacity: settle, transform: `scale(${0.9 + 0.1 * settle})` }}>
+          {pile.length} tasks,
+          <br />
+          scheduled
+        </div>
+      ) : null}
       {cards.filter((c) => t >= c.a).map((c) => {
         const k = sp(c.m, { damping: 18, stiffness: 160, mass: 0.7 });
         const col = c.move && t >= c.m ? c.col + (c.move.col - c.col) * k : c.col;

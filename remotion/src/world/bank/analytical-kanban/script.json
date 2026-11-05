@@ -1,33 +1,51 @@
 {
  "id": "bank/analytical-kanban",
- "voice": "bm_daniel*0.5+bm_lewis*0.5",
+ "voice": "bm_george",
  "lang": "en-gb",
- "speed": 1.02,
- "gap": 0.26,
+ "speed": 0.94,
+ "gap": 0.42,
  "takes": "line",
  "master": true,
  "lines": [
   {
    "id": "L1",
-   "say": "Group project board, week ten."
-  },
-  {
-   "id": "L2",
-   "say": "To do: literally everything."
-  },
-  {
-   "id": "L3",
-   "say": "Doing: arguing in the group chat."
-  },
-  {
-   "id": "L4",
-   "say": "Done: one slide. It's the title slide.",
+   "say": "Your group project board. Week ten.",
    "after": 0.4
   },
   {
-   "id": "L5",
-   "say": "The app slots revision in around the deadlines, so it stops living in to do.",
+   "id": "L2",
+   "say": "To do? Everything. All of it.",
+   "after": 0.6
+  },
+  {
+   "id": "L3",
+   "say": "Doing? Arguing in the group chat.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "Done? One slide. The title slide.",
    "after": 0.7
+  },
+  {
+   "id": "L5",
+   "say": "Offload slots revision in around the deadlines.",
+   "after": 0.4
+  },
+  {
+   "id": "L6",
+   "say": "When a deadline moves, it reschedules the rest.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "It tests you as you go, and brings topics back before you forget.",
+   "after": 0.4
+  },
+  {
+   "id": "L8",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 0.9
   }
  ]
 }

@@ -1,0 +1,53 @@
+{
+  "note": "LinkedIn posts for the three accounts. status: draft, approved, posted. Reject deletes. Drafted by Claude from brand/linkedin.md, or written by hand.",
+  "posts": [
+    {
+      "id": "p1",
+      "account": "founder",
+      "text": "Most revision timetables die on a Wednesday.\n\nNot because students are lazy. Because the timetable was written on Sunday for a week that never happened. One late shift, one bad night, one extra assignment, and the plan is out of date.\n\nThat's the problem we built Offload around. It builds a revision plan from your own notes and exam dates, and when you miss a session, it moves it into time you actually have. No starting over.\n\nWe launch on 16 November. If you study, teach, or support students, I'd love to hear what breaks your plans.\n\nWhat day does your plan usually fall apart?",
+      "status": "draft",
+      "by": "Claude",
+      "at": "2026-11-05"
+    },
+    {
+      "id": "p2",
+      "account": "founder",
+      "text": "Building in public, week one before launch.\n\nThe hardest decision so far wasn't a feature. It was deciding what Offload would not be.\n\nIt is not an AI chat tutor that invents your syllabus. It's a plan, a calendar, and study methods on your own materials: flashcards, blurting, explaining it in your own words, exam-style questions. The schedule is rule-based, so you can see why something is on today.\n\nStudents told us they don't need more content. They need someone to decide what to do next.\n\nWhat would you want a study app to decide for you?",
+      "status": "draft",
+      "by": "Claude",
+      "at": "2026-11-05"
+    },
+    {
+      "id": "p3",
+      "account": "outreach",
+      "text": "If you run a student society, I'd like to hear from you.\n\nThis term I've been talking to medics, nurses, maths and economics students about one thing: how revision fits around everything else. Placement rotas. Part-time jobs. Problem sheets that never close.\n\nThe same pattern comes up every time. People know how to revise. What they lose is the plan, the first week something goes wrong.\n\nWe're launching Offload on 16 November and looking for societies who want to try it with their members and tell us honestly what works.\n\nComment or message me if that's you.",
+      "status": "draft",
+      "by": "Claude",
+      "at": "2026-11-05"
+    },
+    {
+      "id": "p4",
+      "account": "outreach",
+      "text": "Three things placement students told me this month.\n\n1. Revision happens after a twelve-hour shift, or not at all.\n2. The question bank backlog feels worse than the exam.\n3. A plan that assumes a free evening is useless on a rota.\n\nNone of that is about motivation. It's about time that someone else controls.\n\nIf you support clinical students, at a university, a trust or a society, what has actually helped yours?",
+      "status": "draft",
+      "by": "Claude",
+      "at": "2026-11-05"
+    },
+    {
+      "id": "p5",
+      "account": "brand",
+      "text": "Rereading your notes feels like revision. It mostly isn't.\n\nRereading makes material familiar, and familiar feels like known. But in the exam you have to pull it out cold, with nothing in front of you.\n\nWhat works better:\n\nClose the notes. Write down everything you remember (blurting).\nThen open them and check what you missed.\nCome back to the gaps in a few days, not tomorrow, not in a month.\n\nThat's recall plus spacing, two of the most reliable findings in learning research.\n\nOffload builds both into your plan, from your own notes. Link in the comments.\n\n#StudyTips #Revision",
+      "status": "draft",
+      "by": "Claude",
+      "at": "2026-11-05"
+    },
+    {
+      "id": "p6",
+      "account": "brand",
+      "text": "Offload launches on 16 November.\n\nOffload builds your revision plan from your notes and exam dates.\nWhen you miss a session, it moves it into free time, around your calendar.\nIt tests you as you go, and brings topics back before you forget them.\nYou just click the link in your calendar and show up.\n\nBuilt for students whose weeks don't go to plan: placement rotas, part-time jobs, January exams, mocks.\n\nLink in the comments.",
+      "status": "draft",
+      "by": "Claude",
+      "at": "2026-11-05"
+    }
+  ]
+}

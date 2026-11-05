@@ -1,216 +1,327 @@
 {
- "duration": 20.198,
+ "duration": 28.762,
  "lines": [
   {
    "id": "L1",
-   "say": "This week's departures, for anyone on placement.",
+   "say": "The departures board for your placement week.",
    "start": 0.15,
-   "end": 3.438,
+   "end": 3.009,
    "words": [
     {
-     "text": "This",
+     "text": "The",
      "start": 0.15,
-     "end": 0.776
+     "end": 0.425
     },
     {
-     "text": "week's",
-     "start": 0.776,
-     "end": 1.507
+     "text": "departures",
+     "start": 0.425,
+     "end": 1.085
     },
     {
-     "text": "departures,",
-     "start": 1.507,
-     "end": 2.76
+     "text": "board",
+     "start": 1.085,
+     "end": 1.469
     },
     {
      "text": "for",
-     "start": 2.9,
-     "end": 2.996
+     "start": 1.469,
+     "end": 1.744
     },
     {
-     "text": "anyone",
-     "start": 2.996,
-     "end": 3.15
+     "text": "your",
+     "start": 1.744,
+     "end": 2.074
     },
     {
-     "text": "on",
-     "start": 3.15,
-     "end": 3.226
+     "text": "placement",
+     "start": 2.074,
+     "end": 2.679
     },
     {
-     "text": "placement.",
-     "start": 3.226,
-     "end": 3.438
+     "text": "week.",
+     "start": 2.679,
+     "end": 3.009
     }
    ]
   },
   {
    "id": "L2",
    "say": "Pharmacology. Delayed.",
-   "start": 3.698,
-   "end": 5.856,
+   "start": 3.409,
+   "end": 5.413,
    "words": [
     {
      "text": "Pharmacology.",
-     "start": 3.698,
-     "end": 4.598
+     "start": 3.409,
+     "end": 4.479
     },
     {
      "text": "Delayed.",
-     "start": 4.718,
-     "end": 5.856
+     "start": 4.689,
+     "end": 5.413
     }
    ]
   },
   {
    "id": "L3",
-   "say": "Anatomy. Delayed, again.",
-   "start": 6.116,
-   "end": 8.391,
+   "say": "Anatomy. Delayed. Again.",
+   "start": 5.913,
+   "end": 8.272,
    "words": [
     {
      "text": "Anatomy.",
-     "start": 6.116,
-     "end": 6.736
+     "start": 5.913,
+     "end": 6.663
     },
     {
-     "text": "Delayed,",
-     "start": 6.836,
-     "end": 7.286
+     "text": "Delayed.",
+     "start": 6.803,
+     "end": 7.353
     },
     {
-     "text": "again.",
-     "start": 7.366,
-     "end": 8.391
+     "text": "Again.",
+     "start": 7.593,
+     "end": 8.272
     }
    ]
   },
   {
    "id": "L4",
    "say": "The timetable. Cancelled.",
-   "start": 8.651,
-   "end": 10.834,
+   "start": 8.772,
+   "end": 10.73,
    "words": [
     {
      "text": "The",
-     "start": 8.651,
-     "end": 9.161
+     "start": 8.772,
+     "end": 9.084
     },
     {
      "text": "timetable.",
-     "start": 9.161,
-     "end": 10.281
+     "start": 9.084,
+     "end": 9.772
     },
     {
      "text": "Cancelled.",
-     "start": 10.571,
-     "end": 10.834
+     "start": 9.962,
+     "end": 10.73
     }
    ]
   },
   {
    "id": "L5",
-   "say": "Your exam. On time. Obviously.",
-   "start": 11.094,
-   "end": 13.837,
+   "say": "Your exam? On time. Obviously.",
+   "start": 11.33,
+   "end": 14.057,
    "words": [
     {
      "text": "Your",
-     "start": 11.094,
-     "end": 11.744
+     "start": 11.33,
+     "end": 11.735
     },
     {
-     "text": "exam.",
-     "start": 11.744,
-     "end": 12.394
+     "text": "exam?",
+     "start": 11.735,
+     "end": 12.14
     },
     {
      "text": "On",
-     "start": 12.504,
-     "end": 12.776
+     "start": 12.31,
+     "end": 12.586
     },
     {
      "text": "time.",
-     "start": 12.776,
-     "end": 13.184
+     "start": 12.586,
+     "end": 13.0
     },
     {
      "text": "Obviously.",
-     "start": 13.524,
-     "end": 13.837
+     "start": 13.23,
+     "end": 14.057
     }
    ]
   },
   {
    "id": "L6",
-   "say": "The app reschedules what got delayed into the free time you actually have.",
-   "start": 14.237,
-   "end": 18.498,
+   "say": "Offload moves what got delayed into the time you actually have.",
+   "start": 14.757,
+   "end": 19.108,
    "words": [
     {
-     "text": "The",
-     "start": 14.237,
-     "end": 14.482
+     "text": "Offload",
+     "start": 14.757,
+     "end": 15.286
     },
     {
-     "text": "app",
-     "start": 14.482,
-     "end": 14.727
-    },
-    {
-     "text": "reschedules",
-     "start": 14.727,
-     "end": 15.364
+     "text": "moves",
+     "start": 15.286,
+     "end": 15.697
     },
     {
      "text": "what",
-     "start": 15.364,
-     "end": 15.657
+     "start": 15.697,
+     "end": 16.05
     },
     {
      "text": "got",
-     "start": 15.657,
-     "end": 15.902
+     "start": 16.05,
+     "end": 16.344
     },
     {
      "text": "delayed",
-     "start": 15.902,
-     "end": 16.343
+     "start": 16.344,
+     "end": 16.873
     },
     {
      "text": "into",
-     "start": 16.343,
-     "end": 16.637
+     "start": 16.873,
+     "end": 17.226
     },
     {
      "text": "the",
-     "start": 16.637,
-     "end": 16.882
-    },
-    {
-     "text": "free",
-     "start": 16.882,
-     "end": 17.176
+     "start": 17.226,
+     "end": 17.52
     },
     {
      "text": "time",
-     "start": 17.176,
-     "end": 17.469
+     "start": 17.52,
+     "end": 17.873
     },
     {
      "text": "you",
-     "start": 17.469,
-     "end": 17.714
+     "start": 17.873,
+     "end": 18.167
     },
     {
      "text": "actually",
-     "start": 17.714,
-     "end": 18.204
+     "start": 18.167,
+     "end": 18.755
     },
     {
      "text": "have.",
-     "start": 18.204,
-     "end": 18.498
+     "start": 18.755,
+     "end": 19.108
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "It plans your revision from your notes, and tests you as you go.",
+   "start": 19.508,
+   "end": 23.78,
+   "words": [
+    {
+     "text": "It",
+     "start": 19.508,
+     "end": 19.703
+    },
+    {
+     "text": "plans",
+     "start": 19.703,
+     "end": 20.046
+    },
+    {
+     "text": "your",
+     "start": 20.046,
+     "end": 20.339
+    },
+    {
+     "text": "revision",
+     "start": 20.339,
+     "end": 20.828
+    },
+    {
+     "text": "from",
+     "start": 20.828,
+     "end": 21.122
+    },
+    {
+     "text": "your",
+     "start": 21.122,
+     "end": 21.415
+    },
+    {
+     "text": "notes,",
+     "start": 21.415,
+     "end": 21.758
+    },
+    {
+     "text": "and",
+     "start": 22.078,
+     "end": 22.361
+    },
+    {
+     "text": "tests",
+     "start": 22.361,
+     "end": 22.758
+    },
+    {
+     "text": "you",
+     "start": 22.758,
+     "end": 23.042
+    },
+    {
+     "text": "as",
+     "start": 23.042,
+     "end": 23.269
+    },
+    {
+     "text": "you",
+     "start": 23.269,
+     "end": 23.553
+    },
+    {
+     "text": "go.",
+     "start": 23.553,
+     "end": 23.78
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "You just click the link in your calendar.",
+   "start": 24.18,
+   "end": 26.862,
+   "words": [
+    {
+     "text": "You",
+     "start": 24.18,
+     "end": 24.453
+    },
+    {
+     "text": "just",
+     "start": 24.453,
+     "end": 24.782
+    },
+    {
+     "text": "click",
+     "start": 24.782,
+     "end": 25.165
+    },
+    {
+     "text": "the",
+     "start": 25.165,
+     "end": 25.439
+    },
+    {
+     "text": "link",
+     "start": 25.439,
+     "end": 25.767
+    },
+    {
+     "text": "in",
+     "start": 25.767,
+     "end": 25.986
+    },
+    {
+     "text": "your",
+     "start": 25.986,
+     "end": 26.315
+    },
+    {
+     "text": "calendar.",
+     "start": 26.315,
+     "end": 26.862
     }
    ]
   }

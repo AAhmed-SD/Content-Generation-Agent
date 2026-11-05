@@ -1,0 +1,520 @@
+{
+ "duration": 39.816,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "The study police have made an arrest.",
+   "start": 0.15,
+   "end": 2.814,
+   "words": [
+    {
+     "text": "The",
+     "start": 0.15,
+     "end": 0.453
+    },
+    {
+     "text": "study",
+     "start": 0.453,
+     "end": 0.877
+    },
+    {
+     "text": "police",
+     "start": 0.877,
+     "end": 1.361
+    },
+    {
+     "text": "have",
+     "start": 1.361,
+     "end": 1.724
+    },
+    {
+     "text": "made",
+     "start": 1.724,
+     "end": 2.087
+    },
+    {
+     "text": "an",
+     "start": 2.087,
+     "end": 2.33
+    },
+    {
+     "text": "arrest.",
+     "start": 2.33,
+     "end": 2.814
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Suspect: the notes app. Face the camera.",
+   "start": 3.314,
+   "end": 6.289,
+   "words": [
+    {
+     "text": "Suspect:",
+     "start": 3.314,
+     "end": 3.944
+    },
+    {
+     "text": "the",
+     "start": 4.024,
+     "end": 4.245
+    },
+    {
+     "text": "notes",
+     "start": 4.245,
+     "end": 4.553
+    },
+    {
+     "text": "app.",
+     "start": 4.553,
+     "end": 4.774
+    },
+    {
+     "text": "Face",
+     "start": 5.184,
+     "end": 5.533
+    },
+    {
+     "text": "the",
+     "start": 5.533,
+     "end": 5.824
+    },
+    {
+     "text": "camera.",
+     "start": 5.824,
+     "end": 6.289
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "And to the side.",
+   "start": 6.889,
+   "end": 8.132,
+   "words": [
+    {
+     "text": "And",
+     "start": 6.889,
+     "end": 7.2
+    },
+    {
+     "text": "to",
+     "start": 7.2,
+     "end": 7.448
+    },
+    {
+     "text": "the",
+     "start": 7.448,
+     "end": 7.759
+    },
+    {
+     "text": "side.",
+     "start": 7.759,
+     "end": 8.132
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Count one: holds every lecture, never tells you to open one.",
+   "start": 8.932,
+   "end": 12.962,
+   "words": [
+    {
+     "text": "Count",
+     "start": 8.932,
+     "end": 9.334
+    },
+    {
+     "text": "one:",
+     "start": 9.334,
+     "end": 9.622
+    },
+    {
+     "text": "holds",
+     "start": 9.742,
+     "end": 10.095
+    },
+    {
+     "text": "every",
+     "start": 10.095,
+     "end": 10.448
+    },
+    {
+     "text": "lecture,",
+     "start": 10.448,
+     "end": 10.902
+    },
+    {
+     "text": "never",
+     "start": 11.262,
+     "end": 11.612
+    },
+    {
+     "text": "tells",
+     "start": 11.612,
+     "end": 11.962
+    },
+    {
+     "text": "you",
+     "start": 11.962,
+     "end": 12.212
+    },
+    {
+     "text": "to",
+     "start": 12.212,
+     "end": 12.412
+    },
+    {
+     "text": "open",
+     "start": 12.412,
+     "end": 12.712
+    },
+    {
+     "text": "one.",
+     "start": 12.712,
+     "end": 12.962
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Count two: two hundred notes, all called untitled.",
+   "start": 13.562,
+   "end": 17.122,
+   "words": [
+    {
+     "text": "Count",
+     "start": 13.562,
+     "end": 13.982
+    },
+    {
+     "text": "two:",
+     "start": 13.982,
+     "end": 14.282
+    },
+    {
+     "text": "two",
+     "start": 14.382,
+     "end": 14.615
+    },
+    {
+     "text": "hundred",
+     "start": 14.615,
+     "end": 15.035
+    },
+    {
+     "text": "notes,",
+     "start": 15.035,
+     "end": 15.362
+    },
+    {
+     "text": "all",
+     "start": 15.642,
+     "end": 15.964
+    },
+    {
+     "text": "called",
+     "start": 15.964,
+     "end": 16.479
+    },
+    {
+     "text": "untitled.",
+     "start": 16.479,
+     "end": 17.122
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Count three: organising notes, disguised as studying.",
+   "start": 17.722,
+   "end": 21.606,
+   "words": [
+    {
+     "text": "Count",
+     "start": 17.722,
+     "end": 18.107
+    },
+    {
+     "text": "three:",
+     "start": 18.107,
+     "end": 18.492
+    },
+    {
+     "text": "organising",
+     "start": 18.702,
+     "end": 19.41
+    },
+    {
+     "text": "notes,",
+     "start": 19.41,
+     "end": 19.822
+    },
+    {
+     "text": "disguised",
+     "start": 20.092,
+     "end": 20.758
+    },
+    {
+     "text": "as",
+     "start": 20.758,
+     "end": 21.001
+    },
+    {
+     "text": "studying.",
+     "start": 21.001,
+     "end": 21.606
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Sentence: one more folder.",
+   "start": 22.306,
+   "end": 24.429,
+   "words": [
+    {
+     "text": "Sentence:",
+     "start": 22.306,
+     "end": 22.956
+    },
+    {
+     "text": "one",
+     "start": 23.176,
+     "end": 23.506
+    },
+    {
+     "text": "more",
+     "start": 23.506,
+     "end": 23.901
+    },
+    {
+     "text": "folder.",
+     "start": 23.901,
+     "end": 24.429
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "Offload turns your notes into a plan, one block at a time, and moves it when you miss a day.",
+   "start": 25.329,
+   "end": 31.395,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 25.329,
+     "end": 25.791
+    },
+    {
+     "text": "turns",
+     "start": 25.791,
+     "end": 26.15
+    },
+    {
+     "text": "your",
+     "start": 26.15,
+     "end": 26.459
+    },
+    {
+     "text": "notes",
+     "start": 26.459,
+     "end": 26.818
+    },
+    {
+     "text": "into",
+     "start": 26.818,
+     "end": 27.126
+    },
+    {
+     "text": "a",
+     "start": 27.126,
+     "end": 27.28
+    },
+    {
+     "text": "plan,",
+     "start": 27.28,
+     "end": 27.589
+    },
+    {
+     "text": "one",
+     "start": 27.949,
+     "end": 28.193
+    },
+    {
+     "text": "block",
+     "start": 28.193,
+     "end": 28.534
+    },
+    {
+     "text": "at",
+     "start": 28.534,
+     "end": 28.729
+    },
+    {
+     "text": "a",
+     "start": 28.729,
+     "end": 28.876
+    },
+    {
+     "text": "time,",
+     "start": 28.876,
+     "end": 29.169
+    },
+    {
+     "text": "and",
+     "start": 29.539,
+     "end": 29.765
+    },
+    {
+     "text": "moves",
+     "start": 29.765,
+     "end": 30.082
+    },
+    {
+     "text": "it",
+     "start": 30.082,
+     "end": 30.263
+    },
+    {
+     "text": "when",
+     "start": 30.263,
+     "end": 30.535
+    },
+    {
+     "text": "you",
+     "start": 30.535,
+     "end": 30.761
+    },
+    {
+     "text": "miss",
+     "start": 30.761,
+     "end": 31.033
+    },
+    {
+     "text": "a",
+     "start": 31.033,
+     "end": 31.169
+    },
+    {
+     "text": "day.",
+     "start": 31.169,
+     "end": 31.395
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "It tests you on them, so they stick.",
+   "start": 31.795,
+   "end": 34.186,
+   "words": [
+    {
+     "text": "It",
+     "start": 31.795,
+     "end": 31.973
+    },
+    {
+     "text": "tests",
+     "start": 31.973,
+     "end": 32.286
+    },
+    {
+     "text": "you",
+     "start": 32.286,
+     "end": 32.509
+    },
+    {
+     "text": "on",
+     "start": 32.509,
+     "end": 32.687
+    },
+    {
+     "text": "them,",
+     "start": 32.687,
+     "end": 32.955
+    },
+    {
+     "text": "so",
+     "start": 33.165,
+     "end": 33.405
+    },
+    {
+     "text": "they",
+     "start": 33.405,
+     "end": 33.766
+    },
+    {
+     "text": "stick.",
+     "start": 33.766,
+     "end": 34.186
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 34.586,
+   "end": 37.816,
+   "words": [
+    {
+     "text": "You",
+     "start": 34.586,
+     "end": 34.838
+    },
+    {
+     "text": "just",
+     "start": 34.838,
+     "end": 35.141
+    },
+    {
+     "text": "click",
+     "start": 35.141,
+     "end": 35.495
+    },
+    {
+     "text": "the",
+     "start": 35.495,
+     "end": 35.747
+    },
+    {
+     "text": "link",
+     "start": 35.747,
+     "end": 36.05
+    },
+    {
+     "text": "in",
+     "start": 36.05,
+     "end": 36.252
+    },
+    {
+     "text": "your",
+     "start": 36.252,
+     "end": 36.554
+    },
+    {
+     "text": "calendar",
+     "start": 36.554,
+     "end": 37.059
+    },
+    {
+     "text": "and",
+     "start": 37.059,
+     "end": 37.312
+    },
+    {
+     "text": "show",
+     "start": 37.312,
+     "end": 37.614
+    },
+    {
+     "text": "up.",
+     "start": 37.614,
+     "end": 37.816
+    }
+   ]
+  }
+ ]
+}

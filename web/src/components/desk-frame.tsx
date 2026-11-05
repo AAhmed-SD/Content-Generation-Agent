@@ -1,46 +1,104 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { signOut } from "@/app/actions";
 import type { Person } from "@/lib/people";
 
-export type DeskStep = "research" | "scripts" | "yes" | "posts" | "numbers" | "layouts" | "editor" | "brand" | "week" | "loop" | "signals";
+export type DeskStep =
+  | "home"
+  | "research"
+  | "scripts"
+  | "yes"
+  | "posts"
+  | "numbers"
+  | "layouts"
+  | "editor"
+  | "brand"
+  | "week"
+  | "loop"
+  | "signals"
+  | "library"
+  | "inspiration"
+  | "ideas"
+  | "linkedin";
 
-const steps = [
-  { href: "/desk/signals", step: "signals", label: "Signals" },
-  { href: "/desk/research", step: "research", label: "Research" },
-  { href: "/desk/scripts", step: "scripts", label: "Scripts" },
-  { href: "/desk", step: "yes", label: "Approval" },
-  { href: "/desk/posts", step: "posts", label: "Posts" },
-  { href: "/desk/loop", step: "numbers", label: "Numbers" },
-] as const;
+type NavLink = { href: string; key: string; label: string; n?: number };
+type Section = { id: string; label: string; links: NavLink[] };
 
-const files = [
+const sections: Section[] = [
   {
-    label: "Brand",
+    id: "loop",
+    label: "Content generation loop",
     links: [
-      { href: "/desk/brand/brand", slug: "brand", label: "Brand" },
-      { href: "/desk/brand/product-facts", slug: "product-facts", label: "Product facts" },
-      { href: "/desk/layouts", slug: "layouts", label: "Layouts" },
-      { href: "/desk/brand/motion", slug: "motion", label: "Motion" },
-      { href: "/desk/brand/sound", slug: "sound", label: "Sound" },
-      { href: "/desk/brand/hook", slug: "hook", label: "Hook" },
-      { href: "/desk/brand/payoff", slug: "payoff", label: "Payoff" },
-      { href: "/desk/brand/still", slug: "still", label: "Still" },
-      { href: "/desk/brand/carousel", slug: "carousel", label: "Carousel" },
+      { href: "/desk/signals", key: "signals", label: "Signals", n: 1 },
+      { href: "/desk/research", key: "research", label: "Research", n: 2 },
+      { href: "/desk/scripts", key: "scripts", label: "Scripts", n: 3 },
+      { href: "/desk", key: "yes", label: "Approval", n: 4 },
+      { href: "/desk/posts", key: "posts", label: "Posts", n: 5 },
+      { href: "/desk/loop", key: "numbers", label: "Numbers", n: 6 },
     ],
   },
   {
+    id: "brand",
+    label: "Brand",
+    links: [{ href: "/desk/brand", key: "brand", label: "Brand files" }],
+  },
+  {
+    id: "make",
+    label: "Make",
+    links: [
+      { href: "/desk/library", key: "library", label: "Library" },
+      { href: "/desk/layouts", key: "layouts", label: "Layouts" },
+      { href: "/desk/inspiration", key: "inspiration", label: "Inspiration" },
+      { href: "/desk/ideas", key: "ideas", label: "Ideas" },
+      { href: "/desk/linkedin", key: "linkedin", label: "LinkedIn" },
+    ],
+  },
+  {
+    id: "accounts",
     label: "Accounts",
     links: [
-      { href: "/desk/brand/clinical", slug: "clinical", label: "offload.clinical" },
-      { href: "/desk/brand/analytical", slug: "analytical", label: "offload.analytical" },
-      { href: "/desk/brand/mentalhealth", slug: "mentalhealth", label: "offload.mentalhealth" },
-      { href: "/desk/brand/gcsealevel", slug: "gcsealevel", label: "offload.gcsealevel" },
+      { href: "/desk/brand/clinical", key: "clinical", label: "offload.clinical" },
+      { href: "/desk/brand/analytical", key: "analytical", label: "offload.analytical" },
+      { href: "/desk/brand/mentalhealth", key: "mentalhealth", label: "offload.mentalhealth" },
+      { href: "/desk/brand/gcsealevel", key: "gcsealevel", label: "offload.gcsealevel" },
     ],
   },
-] as const;
+];
+
+const ACCOUNTS = new Set(["clinical", "analytical", "mentalhealth", "gcsealevel"]);
+
+const Chevron = ({ open }: { open: boolean }) => (
+  <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" style={{ transform: `rotate(${open ? 90 : 0}deg)`, transition: "transform 180ms cubic-bezier(0.22, 1, 0.36, 1)" }}>
+    <path d="M4 2.5 7.5 6 4 9.5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+const PanelIcon = ({ open }: { open: boolean }) => (
+  <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+    <rect x="2" y="3" width="14" height="12" rx="2.5" fill="none" stroke="currentColor" strokeWidth="1.5" />
+    <path d={open ? "M7 3v12" : "M5.5 3v12"} stroke="currentColor" strokeWidth="1.5" />
+  </svg>
+);
+
+/** Remembered on this browser: whether the sidebar is open, and which sections are folded. */
+function useStored<T>(key: string, initial: T) {
+  const [value, setValue] = useState<T>(initial);
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(key);
+      if (raw !== null) setValue(JSON.parse(raw) as T);
+    } catch {}
+  }, [key]);
+  const set = (next: T) => {
+    setValue(next);
+    try {
+      localStorage.setItem(key, JSON.stringify(next));
+    } catch {}
+  };
+  return [value, set] as const;
+}
 
 export function DeskFrame({
   current,
@@ -52,56 +110,60 @@ export function DeskFrame({
   doc?: string;
   children: ReactNode;
 }) {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useStored("desk.side.open", true);
+  const [folded, setFolded] = useStored<string[]>("desk.side.folded", []);
+  const active = (link: NavLink) => (ACCOUNTS.has(link.key) ? doc === link.key : link.key === current || (link.key === "brand" && current === "brand" && !ACCOUNTS.has(doc ?? "")));
+
   return (
     <div className={open ? "sheet desk-shell" : "sheet desk-shell is-shut"}>
       <aside className="side">
-        <p className="wordmark">
-          {open ? (
-            <>
-              offload <span>desk</span>
-            </>
-          ) : (
-            "o"
-          )}
-        </p>
-        <button type="button" className="text-button side-fold" onClick={() => setOpen((value) => !value)} aria-expanded={open}>
-          {open ? "Hide" : "Show"}
-        </button>
+        <div className="side-top">
+          <Link href="/desk/home" className="wordmark side-mark" aria-label="Offload Marketing desk, home">
+            {open ? (
+              <>
+                offload <span>marketing desk</span>
+              </>
+            ) : (
+              "o"
+            )}
+          </Link>
+          <button type="button" className="side-fold" onClick={() => setOpen(!open)} aria-expanded={open} aria-label={open ? "Hide the sidebar" : "Show the sidebar"} title={open ? "Hide the sidebar" : "Show the sidebar"}>
+            <PanelIcon open={open} />
+          </button>
+        </div>
         {open ? (
-          <nav aria-label="The week">
-            <ol className="side-sequence">
-              {steps.map((link, index) => (
-                <li key={link.href}>
-                  <Link href={link.href} aria-current={current === link.step ? "page" : undefined}>
-                    <span>{index + 1}</span>
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ol>
-          </nav>
-        ) : null}
-        {open ? (
-          <div className="side-person">
-            <nav className="side-files" aria-label="Brand files">
-              {files.map((group) => (
-                <div key={group.label}>
-                  <p className="side-label">{group.label}</p>
-                  {group.links.map((link) => (
-                    <Link
-                      key={link.slug}
-                      href={link.href}
-                      className="sub"
-                      aria-current={doc === link.slug || (link.slug === "layouts" && current === "layouts") ? "page" : undefined}
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
+          <nav className="side-nav" aria-label="Desk">
+            <Link href="/desk/home" className="side-home" aria-current={current === "home" ? "page" : undefined}>
+              Home
+            </Link>
+            {sections.map((section) => {
+              const isOpen = !folded.includes(section.id);
+              return (
+                <div key={section.id} className="side-section">
+                  <button
+                    type="button"
+                    className="side-section-toggle"
+                    aria-expanded={isOpen}
+                    aria-controls={`side-${section.id}`}
+                    onClick={() => setFolded(isOpen ? [...folded, section.id] : folded.filter((id) => id !== section.id))}
+                  >
+                    <Chevron open={isOpen} />
+                    {section.label}
+                  </button>
+                  <div id={`side-${section.id}`} className="side-section-body" data-open={isOpen}>
+                    <div>
+                      {section.links.map((link) => (
+                        <Link key={link.href} href={link.href} aria-current={active(link) ? "page" : undefined}>
+                          {link.n ? <span className="side-n">{link.n}</span> : null}
+                          {link.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-              ))}
-            </nav>
-          </div>
+              );
+            })}
+          </nav>
         ) : null}
         <div className="who">
           <form action={signOut}>

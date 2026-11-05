@@ -1,324 +1,440 @@
 {
- "duration": 24.779,
+ "duration": 35.09,
  "lines": [
   {
    "id": "L1",
-   "say": "Here's the receipt for your Sunday revision session.",
+   "say": "The receipt for your Sunday revision.",
    "start": 0.15,
-   "end": 3.047,
+   "end": 2.677,
    "words": [
     {
-     "text": "Here's",
+     "text": "The",
      "start": 0.15,
-     "end": 0.494
-    },
-    {
-     "text": "the",
-     "start": 0.494,
-     "end": 0.739
+     "end": 0.444
     },
     {
      "text": "receipt",
-     "start": 0.739,
-     "end": 1.181
+     "start": 0.444,
+     "end": 0.973
     },
     {
      "text": "for",
-     "start": 1.181,
-     "end": 1.427
+     "start": 0.973,
+     "end": 1.267
     },
     {
      "text": "your",
-     "start": 1.427,
-     "end": 1.721
+     "start": 1.267,
+     "end": 1.619
     },
     {
      "text": "Sunday",
-     "start": 1.721,
-     "end": 2.114
+     "start": 1.619,
+     "end": 2.09
     },
     {
-     "text": "revision",
-     "start": 2.114,
-     "end": 2.605
-    },
-    {
-     "text": "session.",
-     "start": 2.605,
-     "end": 3.047
+     "text": "revision.",
+     "start": 2.09,
+     "end": 2.677
     }
    ]
   },
   {
    "id": "L2",
    "say": "Colour-coding the timetable. Most of the afternoon.",
-   "start": 3.307,
-   "end": 6.538,
+   "start": 3.077,
+   "end": 6.557,
    "words": [
     {
      "text": "Colour-coding",
-     "start": 3.307,
-     "end": 4.026
+     "start": 3.077,
+     "end": 3.885
     },
     {
      "text": "the",
-     "start": 4.026,
-     "end": 4.282
+     "start": 3.885,
+     "end": 4.173
     },
     {
      "text": "timetable.",
-     "start": 4.282,
-     "end": 4.847
+     "start": 4.173,
+     "end": 4.807
     },
     {
      "text": "Most",
-     "start": 5.307,
-     "end": 5.591
+     "start": 5.127,
+     "end": 5.457
     },
     {
      "text": "of",
-     "start": 5.591,
-     "end": 5.78
+     "start": 5.457,
+     "end": 5.677
     },
     {
      "text": "the",
-     "start": 5.78,
-     "end": 6.017
+     "start": 5.677,
+     "end": 5.952
     },
     {
      "text": "afternoon.",
-     "start": 6.017,
-     "end": 6.538
+     "start": 5.952,
+     "end": 6.557
     }
    ]
   },
   {
    "id": "L3",
    "say": "Making it look nice. The rest of the afternoon.",
-   "start": 6.798,
-   "end": 9.706,
+   "start": 7.057,
+   "end": 10.257,
    "words": [
     {
      "text": "Making",
-     "start": 6.798,
-     "end": 7.161
+     "start": 7.057,
+     "end": 7.487
     },
     {
      "text": "it",
-     "start": 7.161,
-     "end": 7.343
+     "start": 7.487,
+     "end": 7.702
     },
     {
      "text": "look",
-     "start": 7.343,
-     "end": 7.615
+     "start": 7.702,
+     "end": 8.024
     },
     {
      "text": "nice.",
-     "start": 7.615,
-     "end": 7.888
+     "start": 8.024,
+     "end": 8.347
     },
     {
      "text": "The",
-     "start": 8.288,
-     "end": 8.517
+     "start": 8.657,
+     "end": 8.915
     },
     {
      "text": "rest",
-     "start": 8.517,
-     "end": 8.791
+     "start": 8.915,
+     "end": 9.225
     },
     {
      "text": "of",
-     "start": 8.791,
-     "end": 8.974
+     "start": 9.225,
+     "end": 9.431
     },
     {
      "text": "the",
-     "start": 8.974,
-     "end": 9.203
+     "start": 9.431,
+     "end": 9.689
     },
     {
      "text": "afternoon.",
-     "start": 9.203,
-     "end": 9.706
+     "start": 9.689,
+     "end": 10.257
     }
    ]
   },
   {
    "id": "L4",
-   "say": "Actual revision. Not yet.",
-   "start": 9.966,
-   "end": 11.917,
+   "say": "Actual revision? Not yet.",
+   "start": 10.757,
+   "end": 12.974,
    "words": [
     {
      "text": "Actual",
-     "start": 9.966,
-     "end": 10.379
+     "start": 10.757,
+     "end": 11.281
     },
     {
-     "text": "revision.",
-     "start": 10.379,
-     "end": 10.896
+     "text": "revision?",
+     "start": 11.281,
+     "end": 11.937
     },
     {
      "text": "Not",
-     "start": 11.226,
-     "end": 11.571
+     "start": 12.147,
+     "end": 12.561
     },
     {
      "text": "yet.",
-     "start": 11.571,
-     "end": 11.917
+     "start": 12.561,
+     "end": 12.974
     }
    ]
   },
   {
    "id": "L5",
-   "say": "The timetable survived until Wednesday.",
-   "start": 12.177,
-   "end": 14.743,
+   "say": "The timetable lasted until Wednesday.",
+   "start": 13.574,
+   "end": 16.544,
    "words": [
     {
      "text": "The",
-     "start": 12.177,
-     "end": 12.468
+     "start": 13.574,
+     "end": 13.928
     },
     {
      "text": "timetable",
-     "start": 12.468,
-     "end": 13.11
+     "start": 13.928,
+     "end": 14.705
     },
     {
-     "text": "survived",
-     "start": 13.11,
-     "end": 13.693
+     "text": "lasted",
+     "start": 14.705,
+     "end": 15.271
     },
     {
      "text": "until",
-     "start": 13.693,
-     "end": 14.102
+     "start": 15.271,
+     "end": 15.766
     },
     {
      "text": "Wednesday.",
-     "start": 14.102,
-     "end": 14.743
+     "start": 15.766,
+     "end": 16.544
     }
    ]
   },
   {
    "id": "L6",
-   "say": "Total. One Sunday, gone.",
-   "start": 15.043,
-   "end": 16.929,
+   "say": "Total: one Sunday. Gone.",
+   "start": 17.044,
+   "end": 19.363,
    "words": [
     {
-     "text": "Total.",
-     "start": 15.043,
-     "end": 15.453
+     "text": "Total:",
+     "start": 17.044,
+     "end": 17.668
     },
     {
-     "text": "One",
-     "start": 15.663,
-     "end": 15.963
+     "text": "one",
+     "start": 17.668,
+     "end": 18.114
     },
     {
-     "text": "Sunday,",
-     "start": 15.963,
-     "end": 16.443
+     "text": "Sunday.",
+     "start": 18.114,
+     "end": 18.828
     },
     {
-     "text": "gone.",
-     "start": 16.563,
-     "end": 16.929
+     "text": "Gone.",
+     "start": 18.828,
+     "end": 19.363
     }
    ]
   },
   {
    "id": "L7",
-   "say": "Next Sunday, skip the timetable. The app builds the plan from your notes and your calendar.",
-   "start": 17.429,
-   "end": 23.079,
+   "say": "Next Sunday, skip it. Offload builds the plan from your notes and your calendar.",
+   "start": 20.063,
+   "end": 25.467,
    "words": [
     {
      "text": "Next",
-     "start": 17.429,
-     "end": 18.29
+     "start": 20.063,
+     "end": 20.685
     },
     {
      "text": "Sunday,",
-     "start": 18.29,
-     "end": 19.439
+     "start": 20.685,
+     "end": 21.513
     },
     {
      "text": "skip",
-     "start": 19.979,
-     "end": 20.524
+     "start": 22.013,
+     "end": 23.291
     },
     {
-     "text": "the",
-     "start": 20.524,
-     "end": 20.979
+     "text": "it.",
+     "start": 23.291,
+     "end": 24.143
     },
     {
-     "text": "timetable.",
-     "start": 20.979,
-     "end": 21.979
-    },
-    {
-     "text": "The",
-     "start": 22.219,
-     "end": 22.281
-    },
-    {
-     "text": "app",
-     "start": 22.281,
-     "end": 22.343
+     "text": "Offload",
+     "start": 24.423,
+     "end": 24.562
     },
     {
      "text": "builds",
-     "start": 22.343,
-     "end": 22.443
+     "start": 24.562,
+     "end": 24.684
     },
     {
      "text": "the",
-     "start": 22.443,
-     "end": 22.505
+     "start": 24.684,
+     "end": 24.761
     },
     {
      "text": "plan",
-     "start": 22.505,
-     "end": 22.58
+     "start": 24.761,
+     "end": 24.853
     },
     {
      "text": "from",
-     "start": 22.58,
-     "end": 22.655
+     "start": 24.853,
+     "end": 24.945
     },
     {
      "text": "your",
-     "start": 22.655,
-     "end": 22.73
+     "start": 24.945,
+     "end": 25.037
     },
     {
      "text": "notes",
-     "start": 22.73,
-     "end": 22.817
+     "start": 25.037,
+     "end": 25.145
     },
     {
      "text": "and",
-     "start": 22.817,
-     "end": 22.879
+     "start": 25.145,
+     "end": 25.222
     },
     {
      "text": "your",
-     "start": 22.879,
-     "end": 22.954
+     "start": 25.222,
+     "end": 25.314
     },
     {
      "text": "calendar.",
-     "start": 22.954,
-     "end": 23.079
+     "start": 25.314,
+     "end": 25.467
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "Miss a session, and it moves it. Then it tests you on it.",
+   "start": 25.867,
+   "end": 29.56,
+   "words": [
+    {
+     "text": "Miss",
+     "start": 25.867,
+     "end": 26.171
+    },
+    {
+     "text": "a",
+     "start": 26.171,
+     "end": 26.322
+    },
+    {
+     "text": "session,",
+     "start": 26.322,
+     "end": 26.777
+    },
+    {
+     "text": "and",
+     "start": 26.937,
+     "end": 27.15
+    },
+    {
+     "text": "it",
+     "start": 27.15,
+     "end": 27.32
+    },
+    {
+     "text": "moves",
+     "start": 27.32,
+     "end": 27.617
+    },
+    {
+     "text": "it.",
+     "start": 27.617,
+     "end": 27.787
+    },
+    {
+     "text": "Then",
+     "start": 28.167,
+     "end": 28.446
+    },
+    {
+     "text": "it",
+     "start": 28.446,
+     "end": 28.632
+    },
+    {
+     "text": "tests",
+     "start": 28.632,
+     "end": 28.957
+    },
+    {
+     "text": "you",
+     "start": 28.957,
+     "end": 29.189
+    },
+    {
+     "text": "on",
+     "start": 29.189,
+     "end": 29.374
+    },
+    {
+     "text": "it.",
+     "start": 29.374,
+     "end": 29.56
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 29.96,
+   "end": 33.19,
+   "words": [
+    {
+     "text": "You",
+     "start": 29.96,
+     "end": 30.213
+    },
+    {
+     "text": "just",
+     "start": 30.213,
+     "end": 30.515
+    },
+    {
+     "text": "click",
+     "start": 30.515,
+     "end": 30.869
+    },
+    {
+     "text": "the",
+     "start": 30.869,
+     "end": 31.121
+    },
+    {
+     "text": "link",
+     "start": 31.121,
+     "end": 31.424
+    },
+    {
+     "text": "in",
+     "start": 31.424,
+     "end": 31.626
+    },
+    {
+     "text": "your",
+     "start": 31.626,
+     "end": 31.929
+    },
+    {
+     "text": "calendar",
+     "start": 31.929,
+     "end": 32.433
+    },
+    {
+     "text": "and",
+     "start": 32.433,
+     "end": 32.686
+    },
+    {
+     "text": "show",
+     "start": 32.686,
+     "end": 32.989
+    },
+    {
+     "text": "up.",
+     "start": 32.989,
+     "end": 33.19
     }
    ]
   }

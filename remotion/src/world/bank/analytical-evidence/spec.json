@@ -1,0 +1,31 @@
+{
+ "id": "analytical-evidence",
+ "format": "evidence",
+ "title": "THE CASE AGAINST",
+ "subject": "Your revision",
+ "exhibits": [
+  {
+   "label": "EXHIBIT A",
+   "text": "A browser full of the same worked example.",
+   "at": "L2"
+  },
+  {
+   "label": "EXHIBIT B",
+   "text": "A problem sheet, still blank, saved as final.",
+   "at": "L3"
+  },
+  {
+   "label": "EXHIBIT C",
+   "text": "A highlighter, out of ink.",
+   "at": "L4"
+  }
+ ],
+ "verdict": {
+  "text": "GUILTY",
+  "at": "L5:guilty"
+ },
+ "sentence": {
+  "text": "Sentence: explain it\nfrom a blank page.",
+  "at": "L6"
+ }
+}

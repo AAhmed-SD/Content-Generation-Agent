@@ -1,0 +1,97 @@
+{
+ "id": "clinical-blockfall",
+ "format": "blockfall",
+ "title": "Your placement week",
+ "blocks": [
+  {
+   "day": 0,
+   "start": 0,
+   "len": 5,
+   "label": "Shift",
+   "kind": "shift",
+   "at": "L2@0.0"
+  },
+  {
+   "day": 1,
+   "start": 0,
+   "len": 5,
+   "label": "Shift",
+   "kind": "shift",
+   "at": "L2@0.25"
+  },
+  {
+   "day": 3,
+   "start": 0,
+   "len": 5,
+   "label": "Shift",
+   "kind": "shift",
+   "at": "L2@0.5"
+  },
+  {
+   "day": 2,
+   "start": 0,
+   "len": 2,
+   "label": "Lecture",
+   "kind": "fixed",
+   "at": "L3@0.0"
+  },
+  {
+   "day": 4,
+   "start": 0,
+   "len": 2,
+   "label": "Lecture",
+   "kind": "fixed",
+   "at": "L3@0.3"
+  },
+  {
+   "day": 2,
+   "start": 3,
+   "len": 2,
+   "label": "Study",
+   "kind": "study",
+   "at": "L4:study"
+  },
+  {
+   "day": 4,
+   "start": 3,
+   "len": 2,
+   "label": "Study",
+   "kind": "study",
+   "at": "L4:drops"
+  },
+  {
+   "day": 1,
+   "start": 6,
+   "len": 2,
+   "label": "Study",
+   "kind": "study",
+   "at": "L4:free",
+   "miss": "L5:miss",
+   "moveTo": {
+    "day": 5,
+    "start": 2,
+    "at": "L6:drops"
+   }
+  },
+  {
+   "day": 0,
+   "start": 6,
+   "len": 2,
+   "label": "Review",
+   "kind": "study",
+   "at": "L4:actually"
+  },
+  {
+   "day": 3,
+   "start": 6,
+   "len": 2,
+   "label": "Review",
+   "kind": "study",
+   "at": "L4:free@0.2"
+  }
+ ],
+ "done": {
+  "text": "Everything fits.",
+  "at": "L6:nothing"
+ }
+}

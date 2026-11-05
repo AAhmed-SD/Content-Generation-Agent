@@ -1,42 +1,56 @@
 {
  "id": "bank/clinical-receipt",
- "voice": "bm_lewis",
+ "voice": "bm_george",
  "lang": "en-gb",
- "speed": 1.02,
- "gap": 0.26,
+ "speed": 0.94,
+ "gap": 0.42,
  "takes": "line",
  "master": true,
  "lines": [
   {
    "id": "L1",
-   "say": "Here's the receipt for your Sunday revision session."
+   "say": "The receipt for your Sunday revision.",
+   "after": 0.4
   },
   {
    "id": "L2",
-   "say": "Colour-coding the timetable. Most of the afternoon."
-  },
-  {
-   "id": "L3",
-   "say": "Making it look nice. The rest of the afternoon."
-  },
-  {
-   "id": "L4",
-   "say": "Actual revision. Not yet."
-  },
-  {
-   "id": "L5",
-   "say": "The timetable survived until Wednesday.",
-   "after": 0.3
-  },
-  {
-   "id": "L6",
-   "say": "Total. One Sunday, gone.",
+   "say": "Colour-coding the timetable. Most of the afternoon.",
    "after": 0.5
   },
   {
-   "id": "L7",
-   "say": "Next Sunday, skip the timetable. The app builds the plan from your notes and your calendar.",
+   "id": "L3",
+   "say": "Making it look nice. The rest of the afternoon.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "Actual revision? Not yet.",
+   "after": 0.6
+  },
+  {
+   "id": "L5",
+   "say": "The timetable lasted until Wednesday.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "Total: one Sunday. Gone.",
    "after": 0.7
+  },
+  {
+   "id": "L7",
+   "say": "Next Sunday, skip it. Offload builds the plan from your notes and your calendar.",
+   "after": 0.4
+  },
+  {
+   "id": "L8",
+   "say": "Miss a session, and it moves it. Then it tests you on it.",
+   "after": 0.4
+  },
+  {
+   "id": "L9",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 0.9
   }
  ]
 }

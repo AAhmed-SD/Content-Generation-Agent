@@ -1,0 +1,61 @@
+{
+ "id": "bank/analytical-jail-flashcards",
+ "voice": "bm_george",
+ "lang": "en-gb",
+ "speed": 0.94,
+ "gap": 0.42,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "The study police have made an arrest.",
+   "after": 0.5
+  },
+  {
+   "id": "L2",
+   "say": "Suspect: the flashcard app. Face the camera.",
+   "after": 0.6
+  },
+  {
+   "id": "L3",
+   "say": "And to the side.",
+   "after": 0.8
+  },
+  {
+   "id": "L4",
+   "say": "Count one: four hundred cards. Never told you which were due.",
+   "after": 0.6
+  },
+  {
+   "id": "L5",
+   "say": "Count two: you flipped it, saw the answer, and called that revision.",
+   "after": 0.6
+  },
+  {
+   "id": "L6",
+   "say": "Count three: it has no idea when your exam is.",
+   "after": 0.7
+  },
+  {
+   "id": "L7",
+   "say": "Sentence: life, in a folder you never open.",
+   "after": 0.9
+  },
+  {
+   "id": "L8",
+   "say": "Offload knows your exam date, and plans your revision for you.",
+   "after": 0.4
+  },
+  {
+   "id": "L9",
+   "say": "It tests you, and brings each card back before you forget it.",
+   "after": 0.4
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1.0
+  }
+ ]
+}

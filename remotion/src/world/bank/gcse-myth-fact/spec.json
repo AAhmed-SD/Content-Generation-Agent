@@ -18,7 +18,7 @@
  "reveal": {
   "at": "L5",
   "head": "Blurt it. Then see\nthe gaps.",
-  "title": "Your blurt · Cell biology",
+  "title": "Your blurt \u00b7 Cell biology",
   "rows": [
    {
     "text": "Nucleus holds the DNA"
@@ -37,7 +37,7 @@
   ]
  },
  "loop": {
-  "at": "L6",
+  "at": "L7",
   "myth": "Rereading is revision?",
   "fact": "Comment which."
  }

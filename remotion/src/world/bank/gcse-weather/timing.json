@@ -1,256 +1,367 @@
 {
- "duration": 18.381,
+ "duration": 30.603,
  "lines": [
   {
    "id": "L1",
    "say": "Your mock week forecast.",
    "start": 0.15,
-   "end": 1.869,
+   "end": 2.056,
    "words": [
     {
      "text": "Your",
      "start": 0.15,
-     "end": 0.518
+     "end": 0.558
     },
     {
      "text": "mock",
-     "start": 0.518,
-     "end": 0.887
+     "start": 0.558,
+     "end": 0.967
     },
     {
      "text": "week",
-     "start": 0.887,
-     "end": 1.255
+     "start": 0.967,
+     "end": 1.375
     },
     {
      "text": "forecast.",
-     "start": 1.255,
-     "end": 1.869
+     "start": 1.375,
+     "end": 2.056
     }
    ]
   },
   {
    "id": "L2",
    "say": "Monday. Sunny. You've got a plan.",
-   "start": 2.129,
-   "end": 4.092,
+   "start": 2.456,
+   "end": 4.774,
    "words": [
     {
      "text": "Monday.",
-     "start": 2.129,
-     "end": 3.179
+     "start": 2.456,
+     "end": 3.466
     },
     {
      "text": "Sunny.",
-     "start": 3.239,
-     "end": 3.419
+     "start": 3.706,
+     "end": 4.096
     },
     {
      "text": "You've",
-     "start": 3.469,
-     "end": 3.677
+     "start": 4.146,
+     "end": 4.355
     },
     {
      "text": "got",
-     "start": 3.677,
-     "end": 3.825
+     "start": 4.355,
+     "end": 4.505
     },
     {
      "text": "a",
-     "start": 3.825,
-     "end": 3.914
+     "start": 4.505,
+     "end": 4.595
     },
     {
      "text": "plan.",
-     "start": 3.914,
-     "end": 4.093
+     "start": 4.595,
+     "end": 4.774
     }
    ]
   },
   {
    "id": "L3",
    "say": "Tuesday. Cloudy. One evening missed.",
-   "start": 4.352,
-   "end": 6.623,
+   "start": 5.274,
+   "end": 7.96,
    "words": [
     {
      "text": "Tuesday.",
-     "start": 4.352,
-     "end": 4.862
+     "start": 5.274,
+     "end": 5.894
     },
     {
      "text": "Cloudy.",
-     "start": 4.932,
-     "end": 6.392
+     "start": 5.964,
+     "end": 6.494
     },
     {
      "text": "One",
-     "start": 6.452,
-     "end": 6.491
+     "start": 6.734,
+     "end": 7.013
     },
     {
      "text": "evening",
-     "start": 6.491,
-     "end": 6.561
+     "start": 7.013,
+     "end": 7.514
     },
     {
      "text": "missed.",
-     "start": 6.561,
-     "end": 6.623
+     "start": 7.514,
+     "end": 7.96
     }
    ]
   },
   {
    "id": "L4",
    "say": "Wednesday. Rain. The timetable's out of date.",
-   "start": 6.883,
-   "end": 9.626,
+   "start": 8.46,
+   "end": 11.744,
    "words": [
     {
      "text": "Wednesday.",
-     "start": 6.883,
-     "end": 7.853
+     "start": 8.46,
+     "end": 9.09
     },
     {
      "text": "Rain.",
-     "start": 7.933,
-     "end": 8.993
+     "start": 9.19,
+     "end": 9.71
     },
     {
      "text": "The",
-     "start": 9.083,
-     "end": 9.168
+     "start": 10.01,
+     "end": 10.281
     },
     {
      "text": "timetable's",
-     "start": 9.168,
-     "end": 9.372
+     "start": 10.281,
+     "end": 10.931
     },
     {
      "text": "out",
-     "start": 9.372,
-     "end": 9.457
+     "start": 10.931,
+     "end": 11.202
     },
     {
      "text": "of",
-     "start": 9.457,
-     "end": 9.525
+     "start": 11.202,
+     "end": 11.419
     },
     {
      "text": "date.",
-     "start": 9.525,
-     "end": 9.626
+     "start": 11.419,
+     "end": 11.744
     }
    ]
   },
   {
    "id": "L5",
    "say": "Thursday. Storms. You're starting again.",
-   "start": 9.886,
-   "end": 12.185,
+   "start": 12.244,
+   "end": 15.119,
    "words": [
     {
      "text": "Thursday.",
-     "start": 9.886,
-     "end": 10.536
+     "start": 12.244,
+     "end": 13.574
     },
     {
      "text": "Storms.",
-     "start": 10.586,
-     "end": 10.996
+     "start": 13.874,
+     "end": 14.104
     },
     {
      "text": "You're",
-     "start": 11.046,
-     "end": 11.379
+     "start": 14.154,
+     "end": 14.435
     },
     {
      "text": "starting",
-     "start": 11.379,
-     "end": 11.853
+     "start": 14.435,
+     "end": 14.838
     },
     {
      "text": "again.",
-     "start": 11.853,
-     "end": 12.185
+     "start": 14.838,
+     "end": 15.119
     }
    ]
   },
   {
    "id": "L6",
-   "say": "With a plan that moves when you miss an evening, Thursday looks like Monday.",
-   "start": 12.585,
-   "end": 16.681,
+   "say": "With Offload, a missed evening just moves. Thursday looks like Monday.",
+   "start": 15.819,
+   "end": 20.494,
    "words": [
     {
      "text": "With",
-     "start": 12.585,
-     "end": 12.826
+     "start": 15.819,
+     "end": 16.107
+    },
+    {
+     "text": "Offload,",
+     "start": 16.107,
+     "end": 16.539
     },
     {
      "text": "a",
-     "start": 12.826,
-     "end": 12.947
+     "start": 16.719,
+     "end": 16.881
     },
     {
-     "text": "plan",
-     "start": 12.947,
-     "end": 13.188
+     "text": "missed",
+     "start": 16.881,
+     "end": 17.313
     },
     {
-     "text": "that",
-     "start": 13.188,
-     "end": 13.429
+     "text": "evening",
+     "start": 17.313,
+     "end": 17.798
     },
     {
-     "text": "moves",
-     "start": 13.429,
-     "end": 13.71
+     "text": "just",
+     "start": 17.798,
+     "end": 18.122
     },
     {
-     "text": "when",
-     "start": 13.71,
-     "end": 13.951
-    },
-    {
-     "text": "you",
-     "start": 13.951,
-     "end": 14.152
-    },
-    {
-     "text": "miss",
-     "start": 14.152,
-     "end": 14.393
-    },
-    {
-     "text": "an",
-     "start": 14.393,
-     "end": 14.554
-    },
-    {
-     "text": "evening,",
-     "start": 14.554,
-     "end": 14.915
+     "text": "moves.",
+     "start": 18.122,
+     "end": 18.499
     },
     {
      "text": "Thursday",
-     "start": 15.095,
-     "end": 15.607
+     "start": 18.879,
+     "end": 19.4
     },
     {
      "text": "looks",
-     "start": 15.607,
-     "end": 15.965
+     "start": 19.4,
+     "end": 19.765
     },
     {
      "text": "like",
-     "start": 15.965,
-     "end": 16.271
+     "start": 19.765,
+     "end": 20.077
     },
     {
      "text": "Monday.",
-     "start": 16.271,
-     "end": 16.681
+     "start": 20.077,
+     "end": 20.494
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "It plans your revision from your exam dates, and tests you as you go.",
+   "start": 20.894,
+   "end": 25.62,
+   "words": [
+    {
+     "text": "It",
+     "start": 20.894,
+     "end": 21.097
+    },
+    {
+     "text": "plans",
+     "start": 21.097,
+     "end": 21.452
+    },
+    {
+     "text": "your",
+     "start": 21.452,
+     "end": 21.757
+    },
+    {
+     "text": "revision",
+     "start": 21.757,
+     "end": 22.265
+    },
+    {
+     "text": "from",
+     "start": 22.265,
+     "end": 22.569
+    },
+    {
+     "text": "your",
+     "start": 22.569,
+     "end": 22.874
+    },
+    {
+     "text": "exam",
+     "start": 22.874,
+     "end": 23.179
+    },
+    {
+     "text": "dates,",
+     "start": 23.179,
+     "end": 23.534
+    },
+    {
+     "text": "and",
+     "start": 23.884,
+     "end": 24.173
+    },
+    {
+     "text": "tests",
+     "start": 24.173,
+     "end": 24.578
+    },
+    {
+     "text": "you",
+     "start": 24.578,
+     "end": 24.868
+    },
+    {
+     "text": "as",
+     "start": 24.868,
+     "end": 25.099
+    },
+    {
+     "text": "you",
+     "start": 25.099,
+     "end": 25.388
+    },
+    {
+     "text": "go.",
+     "start": 25.388,
+     "end": 25.62
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "You just click the link in your calendar.",
+   "start": 26.02,
+   "end": 28.703,
+   "words": [
+    {
+     "text": "You",
+     "start": 26.02,
+     "end": 26.294
+    },
+    {
+     "text": "just",
+     "start": 26.294,
+     "end": 26.622
+    },
+    {
+     "text": "click",
+     "start": 26.622,
+     "end": 27.005
+    },
+    {
+     "text": "the",
+     "start": 27.005,
+     "end": 27.279
+    },
+    {
+     "text": "link",
+     "start": 27.279,
+     "end": 27.608
+    },
+    {
+     "text": "in",
+     "start": 27.608,
+     "end": 27.827
+    },
+    {
+     "text": "your",
+     "start": 27.827,
+     "end": 28.155
+    },
+    {
+     "text": "calendar.",
+     "start": 28.155,
+     "end": 28.703
     }
    ]
   }

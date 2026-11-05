@@ -6,6 +6,7 @@ import { Type } from "../kit/talk";
 import { SCRIPT, SERIF } from "../../story/fonts";
 import { Br, DISPLAY, grain, Mark, Stamp } from "../posters/Posters";
 import { Sound } from "./kit";
+import { GlassNotification } from "../kit/glass";
 
 /**
  * Five more format templates, each its own world: a tier list, a chat thread, a search bar, a receipt, a whiteboard.
@@ -103,16 +104,7 @@ export const Chat: React.FC<{ spec: ChatSpec }> = ({ spec }) => {
         ) : null}
       </div>
       <div style={{ position: "absolute", left: 50, right: 50, bottom: 70, height: 100, borderRadius: 50, border: `2px solid ${tokens.rule}`, display: "flex", alignItems: "center", padding: "0 40px", fontFamily: INTER, fontSize: 34, color: tokens.quiet }}>Message</div>
-      {t >= n.at ? (
-        <div style={{ position: "absolute", left: 40, right: 40, top: 40, padding: "28px 34px", borderRadius: 34, background: alpha(tokens.card, 0.97), boxShadow: soft(1.2), transform: `translateY(${(1 - sp(n.at, { damping: 16, stiffness: 200, mass: 0.6 })) * -260}px)`, display: "flex", gap: 24, alignItems: "center" }}>
-          <div style={{ width: 84, height: 84, borderRadius: 20, background: tokens.mark, display: "flex", alignItems: "center", justifyContent: "center" }}><div style={{ width: 26, height: 26, borderRadius: 13, background: tokens.white }} /></div>
-          <div>
-            <div style={{ fontFamily: INTER, fontWeight: 700, fontSize: 24, color: tokens.quiet, textTransform: "uppercase", letterSpacing: "0.08em" }}>{n.app} · now</div>
-            <div style={{ fontFamily: INTER, fontWeight: 800, fontSize: 36, color: tokens.ink }}>{n.title}</div>
-            <div style={{ fontFamily: INTER, fontSize: 32, color: tokens.ink }}>{n.body}</div>
-          </div>
-        </div>
-      ) : null}
+      {t >= n.at ? <GlassNotification app={n.app} title={n.title} body={n.body} style={{ position: "absolute", left: 30, right: 30, top: 30, transform: `translateY(${(1 - sp(n.at, { damping: 16, stiffness: 200, mass: 0.6 })) * -260}px)` }} /> : null}
       {spec.caption && t >= n.at + 1.2 ? <div style={{ position: "absolute", left: 60, right: 60, top: 300, textAlign: "center", fontFamily: SCRIPT, fontWeight: 700, fontSize: 70, color: tokens.mark, opacity: sp(n.at + 1.2, POP) }}>{spec.caption}</div> : null}
       <Sound cues={cues} />
     </AbsoluteFill>

@@ -1,38 +1,41 @@
 {
  "id": "bank/gcse-exampaper",
- "voice": "bf_lily",
+ "voice": "bm_george",
  "lang": "en-gb",
- "speed": 1.02,
- "gap": 0.26,
+ "speed": 0.94,
+ "gap": 0.42,
  "takes": "line",
  "master": true,
  "lines": [
   {
    "id": "L1",
-   "say": "Marking your own past paper, be like."
+   "say": "Marking your own past paper. Be honest.",
+   "after": 0.4
   },
   {
    "id": "L2",
-   "say": "Question: explain why enzymes stop working at high temperatures.",
-   "after": 0.3
+   "say": "Explain why enzymes stop working when it's hot.",
+   "after": 0.5
   },
   {
    "id": "L3",
-   "say": "Your answer: because it's too hot."
+   "say": "Your answer: because it's too hot.",
+   "after": 0.5
   },
   {
    "id": "L4",
    "say": "Two ticks. Full marks. Generous.",
-   "after": 0.4
+   "after": 0.7
   },
   {
    "id": "L5",
-   "say": "The mark scheme wants the active site to change shape. Denatured."
+   "say": "The mark scheme wants: the active site changes shape. Denatured.",
+   "after": 0.6
   },
   {
    "id": "L6",
-   "say": "Mark yourself like an examiner, not like a friend.",
-   "after": 0.7
+   "say": "Mark yourself like an examiner. Not like a friend.",
+   "after": 1.0
   }
  ]
 }

@@ -39,9 +39,20 @@ export function readSignals(): Signal[] {
     });
 }
 
+/** The accounts on the watch list now. Niche videos count only from these, so a removed (non-UK) account drops out. */
+function watched() {
+  try {
+    const list = JSON.parse(readFileSync(path.join(process.cwd(), "research", "watchlist.json"), "utf8")) as { accounts: { handle: string }[] };
+    return new Set(list.accounts.map((a) => a.handle));
+  } catch {
+    return null;
+  }
+}
+
 export function outliers(since?: string): Outlier[] {
+  const now = watched();
   return readSignals()
-    .filter((s): s is Outlier => s.type === "outlier" && (!since || s.at > since))
+    .filter((s): s is Outlier => s.type === "outlier" && (!since || s.at > since) && (!now || now.has(s.account)))
     .sort((a, b) => b.at.localeCompare(a.at) || b.ratio - a.ratio);
 }
 
@@ -51,10 +62,10 @@ export function lastRun(): Run | undefined {
 
 let running = false;
 /** Start one collection run in the background. Returns false if one is already going. */
-export function startRun() {
+export function startRun(args: string[] = []) {
   if (running || !existsSync(python)) return false;
   running = true;
-  const child = spawn(python, ["-I", script], { cwd: root, stdio: "ignore" });
+  const child = spawn(python, ["-I", script, ...args], { cwd: root, stdio: "ignore" });
   child.on("exit", () => (running = false));
   child.on("error", () => (running = false));
   return true;

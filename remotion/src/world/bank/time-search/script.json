@@ -1,34 +1,46 @@
 {
  "id": "bank/time-search",
- "voice": "af_heart*0.7+af_bella*0.3",
+ "voice": "bm_george",
  "lang": "en-gb",
- "speed": 1.0,
- "gap": 0.26,
+ "speed": 0.94,
+ "gap": 0.42,
  "takes": "line",
  "master": true,
  "lines": [
   {
    "id": "L1",
-   "say": "Be honest. You've typed one of these."
+   "say": "Be honest. You've typed one of these.",
+   "after": 0.4
   },
   {
    "id": "L2",
    "say": "How to start when everything feels urgent.",
-   "after": 0.4
+   "after": 0.6
   },
   {
    "id": "L3",
-   "say": "My brother's problem was never ability. It was starting.",
-   "after": 0.4
+   "say": "The problem is rarely ability. It's starting.",
+   "after": 0.5
   },
   {
    "id": "L4",
-   "say": "The answer is boring. Pick the next thing. Just one."
+   "say": "The answer is boring. Pick the next thing. Just one.",
+   "after": 0.5
   },
   {
    "id": "L5",
-   "say": "That's why I built the app to hand you the next block, so you don't have to pick.",
-   "after": 0.8
+   "say": "Offload hands you the next block, so you don't have to pick.",
+   "after": 0.4
+  },
+  {
+   "id": "L6",
+   "say": "It plans the whole week, moves what you miss, and tests you as you go.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "You just click the link in your calendar.",
+   "after": 0.9
   }
  ]
 }

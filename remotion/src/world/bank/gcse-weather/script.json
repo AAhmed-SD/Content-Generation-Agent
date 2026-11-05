@@ -1,37 +1,51 @@
 {
  "id": "bank/gcse-weather",
- "voice": "bf_alice",
+ "voice": "bm_george",
  "lang": "en-gb",
- "speed": 1.02,
- "gap": 0.26,
+ "speed": 0.94,
+ "gap": 0.42,
  "takes": "line",
  "master": true,
  "lines": [
   {
    "id": "L1",
-   "say": "Your mock week forecast."
+   "say": "Your mock week forecast.",
+   "after": 0.4
   },
   {
    "id": "L2",
-   "say": "Monday. Sunny. You've got a plan."
+   "say": "Monday. Sunny. You've got a plan.",
+   "after": 0.5
   },
   {
    "id": "L3",
-   "say": "Tuesday. Cloudy. One evening missed."
+   "say": "Tuesday. Cloudy. One evening missed.",
+   "after": 0.5
   },
   {
    "id": "L4",
-   "say": "Wednesday. Rain. The timetable's out of date."
+   "say": "Wednesday. Rain. The timetable's out of date.",
+   "after": 0.5
   },
   {
    "id": "L5",
    "say": "Thursday. Storms. You're starting again.",
-   "after": 0.4
+   "after": 0.7
   },
   {
    "id": "L6",
-   "say": "With a plan that moves when you miss an evening, Thursday looks like Monday.",
-   "after": 0.7
+   "say": "With Offload, a missed evening just moves. Thursday looks like Monday.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "It plans your revision from your exam dates, and tests you as you go.",
+   "after": 0.4
+  },
+  {
+   "id": "L8",
+   "say": "You just click the link in your calendar.",
+   "after": 0.9
   }
  ]
 }

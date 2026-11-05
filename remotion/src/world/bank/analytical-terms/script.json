@@ -1,38 +1,51 @@
 {
  "id": "bank/analytical-terms",
- "voice": "bm_daniel*0.5+bm_lewis*0.5",
+ "voice": "bm_george",
  "lang": "en-gb",
- "speed": 1.02,
- "gap": 0.26,
+ "speed": 0.94,
+ "gap": 0.42,
  "takes": "line",
  "master": true,
  "lines": [
   {
    "id": "L1",
-   "say": "Terms and conditions of making a revision timetable."
+   "say": "The terms and conditions of your revision timetable.",
+   "after": 0.4
   },
   {
    "id": "L2",
-   "say": "One. You'll spend longer colouring it in than using it."
+   "say": "Clause one. You'll spend longer colouring it than using it.",
+   "after": 0.5
   },
   {
    "id": "L3",
-   "say": "Two. It assumes you'll never be ill, tired, or busy."
+   "say": "Clause two. It assumes you'll never be ill, or tired.",
+   "after": 0.5
   },
   {
    "id": "L4",
-   "say": "Three. It expires on Wednesday.",
-   "after": 0.3
+   "say": "Clause three. It expires on Wednesday.",
+   "after": 0.6
   },
   {
    "id": "L5",
    "say": "You agree. You always agree.",
-   "after": 0.4
+   "after": 0.6
   },
   {
    "id": "L6",
-   "say": "Or skip the contract. The app's plan moves when your week does.",
-   "after": 0.7
+   "say": "Or skip the contract. Offload builds your plan from your notes and exam dates.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "It moves when your week does, and tests you as you go.",
+   "after": 0.4
+  },
+  {
+   "id": "L8",
+   "say": "You just click the link in your calendar.",
+   "after": 0.9
   }
  ]
 }

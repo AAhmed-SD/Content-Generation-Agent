@@ -1,37 +1,51 @@
 {
  "id": "bank/time-lockscreen",
- "voice": "af_heart*0.7+af_bella*0.3",
+ "voice": "bm_george",
  "lang": "en-gb",
- "speed": 1.02,
- "gap": 0.26,
+ "speed": 0.94,
+ "gap": 0.42,
  "takes": "line",
  "master": true,
  "lines": [
   {
    "id": "L1",
-   "say": "It's eleven forty-seven. Here's the lock screen."
+   "say": "Eleven forty-seven. Your lock screen.",
+   "after": 0.4
   },
   {
    "id": "L2",
-   "say": "Essay due tomorrow."
+   "say": "Essay due tomorrow.",
+   "after": 0.4
   },
   {
    "id": "L3",
-   "say": "Group chat, still going."
+   "say": "The group chat. Still going.",
+   "after": 0.4
   },
   {
    "id": "L4",
-   "say": "Your screen time report. Don't."
+   "say": "Your screen time report. Don't.",
+   "after": 0.5
   },
   {
    "id": "L5",
    "say": "Every one of these is a start you haven't made.",
-   "after": 0.4
+   "after": 0.7
   },
   {
    "id": "L6",
-   "say": "I wanted one notification that just says: here's your next block.",
-   "after": 0.7
+   "say": "Offload plans your week, so there's one thing to do: your next block.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "It moves what you miss, and tests you as you go.",
+   "after": 0.4
+  },
+  {
+   "id": "L8",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 0.9
   }
  ]
 }

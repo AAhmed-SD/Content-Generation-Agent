@@ -1,45 +1,185 @@
 {
-  "note": "TikTok accounts to watch for outliers, per niche. handle is the @name without the @. Each was checked: its captions match the creator. Add the accounts your audience actually watches, the ones on your own For You page, and check each one reads before relying on it. platform can also be youtube.",
+  "note": "TikTok accounts to watch, per niche. Niche accounts are UK only (market \"uk\"), aimed at the right qualification: UK medicine, dentistry, nursing and radiography; UK maths, economics and computer science degrees; GCSE and A-level; UK students who struggle with time. US accounts were removed on 2026-11-05: their videos were about US residency and US salaries. handle is the @name without the @. Each one was checked: it reads publicly. Niche \"motion\" is motion-design and brand accounts: their outliers show on the Inspiration page, not as hooks.",
   "accounts": [
     {
       "niche": "clinical",
       "platform": "tiktok",
-      "handle": "zerotofinals"
+      "handle": "zerotofinals",
+      "market": "uk"
     },
     {
       "niche": "clinical",
       "platform": "tiktok",
-      "handle": "medschoolinsiders"
+      "handle": "geekymedics",
+      "market": "uk"
+    },
+    {
+      "niche": "clinical",
+      "platform": "tiktok",
+      "handle": "medicmind",
+      "market": "uk"
     },
     {
       "niche": "analytical",
       "platform": "tiktok",
-      "handle": "3blue1brown"
+      "handle": "aliabdaal",
+      "market": "uk"
     },
     {
       "niche": "analytical",
       "platform": "tiktok",
-      "handle": "theorganicchemistrytutor"
+      "handle": "tomrocksmaths",
+      "market": "uk"
     },
     {
       "niche": "analytical",
       "platform": "tiktok",
-      "handle": "aliabdaal"
+      "handle": "economicshelp",
+      "market": "uk"
     },
     {
       "niche": "gcsealevel",
       "platform": "tiktok",
-      "handle": "cognitoedu"
+      "handle": "cognitoedu",
+      "market": "uk"
     },
     {
       "niche": "gcsealevel",
       "platform": "tiktok",
-      "handle": "mrbruff"
+      "handle": "mrbruff",
+      "market": "uk"
+    },
+    {
+      "niche": "gcsealevel",
+      "platform": "tiktok",
+      "handle": "gcsepod",
+      "market": "uk"
+    },
+    {
+      "niche": "gcsealevel",
+      "platform": "tiktok",
+      "handle": "savemyexams",
+      "market": "uk"
+    },
+    {
+      "niche": "gcsealevel",
+      "platform": "tiktok",
+      "handle": "thestudentroom",
+      "market": "uk"
+    },
+    {
+      "niche": "gcsealevel",
+      "platform": "tiktok",
+      "handle": "corbettmaths",
+      "market": "uk"
     },
     {
       "niche": "mentalhealth",
       "platform": "tiktok",
-      "handle": "howtoadhd"
+      "handle": "adhd_love",
+      "market": "uk"
+    },
+    {
+      "niche": "mentalhealth",
+      "platform": "tiktok",
+      "handle": "adhdfoundation",
+      "market": "uk"
+    },
+    {
+      "niche": "motion",
+      "platform": "tiktok",
+      "handle": "schoolofmotion",
+      "market": "global"
+    },
+    {
+      "niche": "motion",
+      "platform": "tiktok",
+      "handle": "motionarray",
+      "market": "global"
+    },
+    {
+      "niche": "motion",
+      "platform": "tiktok",
+      "handle": "jitter.video",
+      "market": "global"
+    },
+    {
+      "niche": "motion",
+      "platform": "tiktok",
+      "handle": "rive_app",
+      "market": "global"
+    },
+    {
+      "niche": "motion",
+      "platform": "tiktok",
+      "handle": "framer",
+      "market": "global"
+    },
+    {
+      "niche": "motion",
+      "platform": "tiktok",
+      "handle": "figma",
+      "market": "global"
+    },
+    {
+      "niche": "motion",
+      "platform": "tiktok",
+      "handle": "apple",
+      "market": "global"
+    },
+    {
+      "niche": "motion",
+      "platform": "tiktok",
+      "handle": "duolingo",
+      "market": "global"
+    },
+    {
+      "niche": "motion",
+      "platform": "tiktok",
+      "handle": "notionhq",
+      "market": "global"
+    },
+    {
+      "niche": "motion",
+      "platform": "tiktok",
+      "handle": "spotify",
+      "market": "global"
+    },
+    {
+      "niche": "motion",
+      "platform": "tiktok",
+      "handle": "raycastapp",
+      "market": "global"
+    },
+    {
+      "niche": "motion",
+      "platform": "tiktok",
+      "handle": "canva",
+      "market": "global"
+    },
+    {
+      "niche": "motion",
+      "platform": "tiktok",
+      "handle": "envato",
+      "market": "global"
+    },
+    {
+      "niche": "motion",
+      "platform": "tiktok",
+      "handle": "ukramedia",
+      "market": "global"
+    },
+    {
+      "niche": "motion",
+      "platform": "tiktok",
+      "handle": "sonduckfilm",
+      "market": "global"
+    },
+    {
+      "niche": "motion",
+      "platform": "tiktok",
+      "handle": "adobe",
+      "market": "global"
     }
   ]
 }

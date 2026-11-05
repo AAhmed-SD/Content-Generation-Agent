@@ -17,3 +17,6 @@ web/public/models/
 __pycache__/
 *.pyc
 web/data/*.jsonl
+
+remotion/rejected/
+.DS_Store

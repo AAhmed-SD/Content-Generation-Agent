@@ -1,44 +1,65 @@
 {
  "id": "bank/analytical-tier-list",
- "voice": "bm_daniel*0.5+bm_lewis*0.5",
+ "voice": "bm_george",
  "lang": "en-gb",
- "speed": 1.03,
- "gap": 0.26,
+ "speed": 0.94,
+ "gap": 0.42,
  "takes": "line",
  "master": true,
  "lines": [
   {
    "id": "L1",
-   "say": "Ranking every way to revise maths. Don't come for me."
+   "say": "Ranking every way to revise maths.",
+   "after": 0.4
   },
   {
    "id": "L2",
-   "say": "Rereading the worked solution. F tier. You're watching, not doing."
+   "say": "Rereading the worked solution. F tier. You're watching, not doing.",
+   "after": 0.5
   },
   {
    "id": "L3",
-   "say": "Watching the lecture back at double speed. C."
+   "say": "Lectures at double speed. C.",
+   "after": 0.5
   },
   {
    "id": "L4",
-   "say": "Ten of the same question in a row. B. Feels great. Won't last."
+   "say": "Ten of the same question in a row. B. Feels good. Won't last.",
+   "after": 0.5
   },
   {
    "id": "L5",
-   "say": "Mixing your topics. A."
+   "say": "Mixing your topics. A.",
+   "after": 0.5
   },
   {
    "id": "L6",
-   "say": "Explaining it out loud, from a blank page. S tier."
+   "say": "Explaining it out loud, from a blank page. S.",
+   "after": 0.5
   },
   {
    "id": "L7",
    "say": "Spaced flashcards on the methods. Also S.",
-   "after": 0.4
+   "after": 0.6
   },
   {
    "id": "L8",
-   "say": "The app does both S tiers, on your own notes. Which one would you move?",
+   "say": "Offload does both S tiers, from your own notes.",
+   "after": 0.4
+  },
+  {
+   "id": "L9",
+   "say": "It plans the sessions, and moves them when your week changes.",
+   "after": 0.4
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar.",
+   "after": 0.6
+  },
+  {
+   "id": "L11",
+   "say": "Which one would you move?",
    "after": 0.9
   }
  ]

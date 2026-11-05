@@ -1,0 +1,46 @@
+{
+ "id": "bank/gcse-split",
+ "voice": "bm_george",
+ "lang": "en-gb",
+ "speed": 0.94,
+ "gap": 0.42,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Revision. Expectation versus reality.",
+   "after": 0.4
+  },
+  {
+   "id": "L2",
+   "say": "Expectation: two hours of biology. Reality: colour-coding the timetable.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "Expectation: phone in another room. Reality: phone under the textbook.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "Expectation: start at four. Reality: start at nine, panicking.",
+   "after": 0.6
+  },
+  {
+   "id": "L5",
+   "say": "The fix isn't willpower. It's a plan that moves when reality happens.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "Offload builds that plan from your exam dates, and tests you as you go.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 0.9
+  }
+ ]
+}

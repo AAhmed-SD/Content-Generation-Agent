@@ -1,8 +1,8 @@
-import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { saveBrandPage } from "@/app/actions";
 import { DeskFrame } from "@/components/desk-frame";
 import { Markdown } from "@/components/markdown";
+import { BrandTabs } from "@/components/brand-tabs";
 import { PendingButton } from "@/components/pending-button";
 import { brandDoc, brandFileEditable, readBrandFile } from "@/lib/brand";
 import { readSession } from "@/lib/session";
@@ -36,11 +36,11 @@ export default async function BrandDocPage({
 
   return (
     <DeskFrame person={person} current="brand" doc={slug}>
-      <p className="file-no">
-        <Link href="/desk/brand">Brand</Link> · {doc.group}
-      </p>
+      {doc.group === "Niches" ? <p className="file-no">Account</p> : <BrandTabs current={slug} />}
       <Markdown text={text} />
       {editable ? (
+        <details className="brand-edit-toggle" open={Boolean(note)}>
+        <summary>Edit this file</summary>
         <form action={saveBrandPage} className="stack-form brand-edit">
           <input type="hidden" name="slug" value={slug} />
           <label>
@@ -55,6 +55,7 @@ export default async function BrandDocPage({
           {note ? <p className={query.saved === "1" ? "split" : "error"}>{note}</p> : null}
           <PendingButton idle="Save" pending="Saving" />
         </form>
+        </details>
       ) : null}
     </DeskFrame>
   );

@@ -30,6 +30,11 @@ function outlierHooks(niche) {
   const file = path.join(brandRoot(), "..", "web", "data", "signals.jsonl");
   if (!existsSync(file)) return [];
   const weekAgo = new Date(Date.now() - 7 * 24 * 3600 * 1000).toISOString();
+  let uk = null;
+  try {
+    const list = JSON.parse(readFileSync(path.join(brandRoot(), "..", "web", "research", "watchlist.json"), "utf8"));
+    uk = new Set(list.accounts.filter((a) => a.market === "uk").map((a) => a.handle));
+  } catch {}
   return readFileSync(file, "utf8")
     .split("\n")
     .filter(Boolean)
@@ -40,7 +45,7 @@ function outlierHooks(niche) {
         return [];
       }
     })
-    .filter((e) => e.type === "outlier" && e.niche === niche && e.at >= weekAgo && (e.hook || e.title))
+    .filter((e) => e.type === "outlier" && e.niche === niche && e.at >= weekAgo && (e.hook || e.title) && (!uk || uk.has(e.account)))
     .sort((a, b) => b.ratio - a.ratio)
     .slice(0, 6)
     .map((e) => (e.hook || e.title).split(/(?<=[.?!])\s/)[0].slice(0, 160));

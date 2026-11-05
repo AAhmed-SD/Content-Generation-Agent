@@ -1,35 +1,51 @@
 {
  "id": "bank/analytical-dialog",
- "voice": "bm_daniel*0.5+bm_lewis*0.5",
+ "voice": "bm_george",
  "lang": "en-gb",
- "speed": 1.02,
- "gap": 0.26,
+ "speed": 0.94,
+ "gap": 0.42,
  "takes": "line",
  "master": true,
  "lines": [
   {
    "id": "L1",
-   "say": "Week ten of term. A summary."
+   "say": "Week ten of term. Your brain, as a computer.",
+   "after": 0.4
   },
   {
    "id": "L2",
-   "say": "Brain has stopped responding. Retry?",
-   "after": 0.9
+   "say": "Error. Brain has stopped responding.",
+   "after": 0.8
   },
   {
    "id": "L3",
-   "say": "You press retry. Three lab reports are still open.",
-   "after": 0.7
+   "say": "Why? Three lab reports are still open.",
+   "after": 0.6
   },
   {
    "id": "L4",
    "say": "Close them? No. Later.",
-   "after": 0.4
+   "after": 0.6
   },
   {
    "id": "L5",
-   "say": "The app puts it in your calendar one session at a time, so your brain only runs one thing.",
-   "after": 0.7
+   "say": "Offload plans your revision, one session at a time.",
+   "after": 0.4
+  },
+  {
+   "id": "L6",
+   "say": "It reschedules what you miss, and tests you as you go.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 0.5
+  },
+  {
+   "id": "L8",
+   "say": "So your brain only runs one thing.",
+   "after": 0.9
   }
  ]
 }

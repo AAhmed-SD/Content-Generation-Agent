@@ -32,7 +32,31 @@ Hadiqa leads clinical and analytical. Laiba leads mental health and GCSE and A-l
 
 ## The loop
 
-Numbers arrive as a CSV, or typed on the card, into `web/data/loop.json` and the piece’s checkpoints: 1 hour, 24 hours, 72 hours, 7 days. The next brief can name a winner only from those stored numbers. An empty checkpoint is not a zero.
+Today, numbers arrive as a CSV, or typed on the card, into `web/data/loop.json` and the piece’s checkpoints: 1 hour, 24 hours, 72 hours, 7 days. The next brief can name a winner only from those stored numbers. An empty checkpoint is not a zero.
+
+### The loop from launch (decided 2026-11-05, partly built)
+
+Each turn of the loop is the same five steps. The first turn starts from the outside world only. From the second turn on, our own post numbers feed the top as well.
+
+| Step | What happens | Who or what | Built? |
+| --- | --- | --- | --- |
+| 1. Inputs | For videos: what is going viral in each niche (Virlo) and outlier videos on our watch list (Signals). For carousels: what students are searching for (Research). From turn two: how our own posts did, per platform and per opener. | Virlo, `signals.py`, `pipeline.ts`, the Numbers page | Signals and Research yes. Virlo is on trial; its key goes in `web/.env.local`. |
+| 2. Build | The hook (two openers, A and B), the script, and the video idea: format, hook style, scenes. Picked from `docs/library.md` and written to the brand files and the week's brief. | Claude | Yes, per film. Not yet a daily batch. |
+| 3. Approve | A person watches the render and approves it or rejects it on the desk. Nothing posts without a stamp. | Hadiqa, Laiba | Yes |
+| 4. Post | Approved films are scheduled to the 19 accounts. | Blotato Creator | Not connected yet. Until then, post by hand. |
+| 5. Data back | Views, watch time, shares and follows per post, per platform, per opener, saved to `web/data/loop.json`. They become step 1 of the next turn. | Platform analytics, then the Numbers page | CSV import yes. Automatic pull not yet. Confirm what Blotato's analytics return before relying on them; the platforms' own analytics are the fallback. |
+
+What each input is for (the Research page shows them in two halves, with a divider):
+- **Research (web)** feeds carousels. It is the guides and questions students are already searching for. Carousels are free, data-backed and useful without Offload (`brand/posts/carousel.md`).
+- **Virlo** shows what is moving across a whole niche on TikTok.
+- **Signals** watches a short list of named accounts. It is free, and it is the check on Virlo.
+- **Our own numbers** say which hook styles and formats work for us. They outrank the other three once there are a few weeks of them.
+
+The writer never sees raw research or account names. It reads the brief, which carries shapes and themes only.
+
+## Outreach (decided 2026-11-05)
+
+The outreach officer spends part of each day engaging from our 19 accounts: replying to comments on our posts, then commenting on and following accounts in the niche. Half the accounts one day, the other half the next, alternating. The rota is in `docs/outreach-rota.md`.
 
 ## The picture
 

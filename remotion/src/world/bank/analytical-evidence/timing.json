@@ -1,0 +1,442 @@
+{
+ "duration": 35.684,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "The case against your revision.",
+   "start": 0.15,
+   "end": 2.541,
+   "words": [
+    {
+     "text": "The",
+     "start": 0.15,
+     "end": 0.482
+    },
+    {
+     "text": "case",
+     "start": 0.482,
+     "end": 0.881
+    },
+    {
+     "text": "against",
+     "start": 0.881,
+     "end": 1.479
+    },
+    {
+     "text": "your",
+     "start": 1.479,
+     "end": 1.877
+    },
+    {
+     "text": "revision.",
+     "start": 1.877,
+     "end": 2.541
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Exhibit A. Nine tabs of the same worked example.",
+   "start": 2.941,
+   "end": 6.964,
+   "words": [
+    {
+     "text": "Exhibit",
+     "start": 2.941,
+     "end": 3.654
+    },
+    {
+     "text": "A.",
+     "start": 3.654,
+     "end": 3.891
+    },
+    {
+     "text": "Nine",
+     "start": 4.241,
+     "end": 4.613
+    },
+    {
+     "text": "tabs",
+     "start": 4.613,
+     "end": 4.984
+    },
+    {
+     "text": "of",
+     "start": 4.984,
+     "end": 5.231
+    },
+    {
+     "text": "the",
+     "start": 5.231,
+     "end": 5.541
+    },
+    {
+     "text": "same",
+     "start": 5.541,
+     "end": 5.912
+    },
+    {
+     "text": "worked",
+     "start": 5.912,
+     "end": 6.407
+    },
+    {
+     "text": "example.",
+     "start": 6.407,
+     "end": 6.964
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Exhibit B. A problem sheet, blank, saved as final.",
+   "start": 7.464,
+   "end": 11.248,
+   "words": [
+    {
+     "text": "Exhibit",
+     "start": 7.464,
+     "end": 8.139
+    },
+    {
+     "text": "B.",
+     "start": 8.139,
+     "end": 8.364
+    },
+    {
+     "text": "A",
+     "start": 8.664,
+     "end": 8.801
+    },
+    {
+     "text": "problem",
+     "start": 8.801,
+     "end": 9.213
+    },
+    {
+     "text": "sheet,",
+     "start": 9.213,
+     "end": 9.534
+    },
+    {
+     "text": "blank,",
+     "start": 9.674,
+     "end": 9.974
+    },
+    {
+     "text": "saved",
+     "start": 10.114,
+     "end": 10.555
+    },
+    {
+     "text": "as",
+     "start": 10.555,
+     "end": 10.807
+    },
+    {
+     "text": "final.",
+     "start": 10.807,
+     "end": 11.248
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Exhibit C. A highlighter. Out of ink.",
+   "start": 11.748,
+   "end": 14.737,
+   "words": [
+    {
+     "text": "Exhibit",
+     "start": 11.748,
+     "end": 12.446
+    },
+    {
+     "text": "C.",
+     "start": 12.446,
+     "end": 12.678
+    },
+    {
+     "text": "A",
+     "start": 12.918,
+     "end": 13.076
+    },
+    {
+     "text": "highlighter.",
+     "start": 13.076,
+     "end": 13.758
+    },
+    {
+     "text": "Out",
+     "start": 13.948,
+     "end": 14.23
+    },
+    {
+     "text": "of",
+     "start": 14.23,
+     "end": 14.456
+    },
+    {
+     "text": "ink.",
+     "start": 14.456,
+     "end": 14.737
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "The verdict? Guilty. Of reading, not doing.",
+   "start": 15.337,
+   "end": 18.569,
+   "words": [
+    {
+     "text": "The",
+     "start": 15.337,
+     "end": 15.527
+    },
+    {
+     "text": "verdict?",
+     "start": 15.527,
+     "end": 15.867
+    },
+    {
+     "text": "Guilty.",
+     "start": 15.947,
+     "end": 16.037
+    },
+    {
+     "text": "Of",
+     "start": 16.257,
+     "end": 16.439
+    },
+    {
+     "text": "reading,",
+     "start": 16.439,
+     "end": 16.847
+    },
+    {
+     "text": "not",
+     "start": 17.117,
+     "end": 17.722
+    },
+    {
+     "text": "doing.",
+     "start": 17.722,
+     "end": 18.569
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "The sentence: explain it from a blank page.",
+   "start": 19.369,
+   "end": 22.506,
+   "words": [
+    {
+     "text": "The",
+     "start": 19.369,
+     "end": 19.636
+    },
+    {
+     "text": "sentence:",
+     "start": 19.636,
+     "end": 20.169
+    },
+    {
+     "text": "explain",
+     "start": 20.469,
+     "end": 20.993
+    },
+    {
+     "text": "it",
+     "start": 20.993,
+     "end": 21.225
+    },
+    {
+     "text": "from",
+     "start": 21.225,
+     "end": 21.575
+    },
+    {
+     "text": "a",
+     "start": 21.575,
+     "end": 21.749
+    },
+    {
+     "text": "blank",
+     "start": 21.749,
+     "end": 22.157
+    },
+    {
+     "text": "page.",
+     "start": 22.157,
+     "end": 22.506
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Offload plans those sessions, then tests you from a blank page.",
+   "start": 23.106,
+   "end": 27.341,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 23.106,
+     "end": 23.602
+    },
+    {
+     "text": "plans",
+     "start": 23.602,
+     "end": 23.988
+    },
+    {
+     "text": "those",
+     "start": 23.988,
+     "end": 24.374
+    },
+    {
+     "text": "sessions,",
+     "start": 24.374,
+     "end": 24.926
+    },
+    {
+     "text": "then",
+     "start": 25.296,
+     "end": 25.603
+    },
+    {
+     "text": "tests",
+     "start": 25.603,
+     "end": 25.961
+    },
+    {
+     "text": "you",
+     "start": 25.961,
+     "end": 26.216
+    },
+    {
+     "text": "from",
+     "start": 26.216,
+     "end": 26.523
+    },
+    {
+     "text": "a",
+     "start": 26.523,
+     "end": 26.676
+    },
+    {
+     "text": "blank",
+     "start": 26.676,
+     "end": 27.034
+    },
+    {
+     "text": "page.",
+     "start": 27.034,
+     "end": 27.341
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "It brings each topic back before you forget it.",
+   "start": 27.741,
+   "end": 30.701,
+   "words": [
+    {
+     "text": "It",
+     "start": 27.741,
+     "end": 27.952
+    },
+    {
+     "text": "brings",
+     "start": 27.952,
+     "end": 28.375
+    },
+    {
+     "text": "each",
+     "start": 28.375,
+     "end": 28.692
+    },
+    {
+     "text": "topic",
+     "start": 28.692,
+     "end": 29.062
+    },
+    {
+     "text": "back",
+     "start": 29.062,
+     "end": 29.379
+    },
+    {
+     "text": "before",
+     "start": 29.379,
+     "end": 29.802
+    },
+    {
+     "text": "you",
+     "start": 29.802,
+     "end": 30.066
+    },
+    {
+     "text": "forget",
+     "start": 30.066,
+     "end": 30.489
+    },
+    {
+     "text": "it.",
+     "start": 30.489,
+     "end": 30.701
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "You just click the link in your calendar.",
+   "start": 31.101,
+   "end": 33.784,
+   "words": [
+    {
+     "text": "You",
+     "start": 31.101,
+     "end": 31.375
+    },
+    {
+     "text": "just",
+     "start": 31.375,
+     "end": 31.703
+    },
+    {
+     "text": "click",
+     "start": 31.703,
+     "end": 32.086
+    },
+    {
+     "text": "the",
+     "start": 32.086,
+     "end": 32.36
+    },
+    {
+     "text": "link",
+     "start": 32.36,
+     "end": 32.689
+    },
+    {
+     "text": "in",
+     "start": 32.689,
+     "end": 32.908
+    },
+    {
+     "text": "your",
+     "start": 32.908,
+     "end": 33.236
+    },
+    {
+     "text": "calendar.",
+     "start": 33.236,
+     "end": 33.784
+    }
+   ]
+  }
+ ]
+}

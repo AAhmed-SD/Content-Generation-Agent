@@ -1,0 +1,387 @@
+{
+ "duration": 31.119,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Watch a placement week fit together.",
+   "start": 0.15,
+   "end": 2.596,
+   "words": [
+    {
+     "text": "Watch",
+     "start": 0.15,
+     "end": 0.558
+    },
+    {
+     "text": "a",
+     "start": 0.558,
+     "end": 0.732
+    },
+    {
+     "text": "placement",
+     "start": 0.732,
+     "end": 1.373
+    },
+    {
+     "text": "week",
+     "start": 1.373,
+     "end": 1.723
+    },
+    {
+     "text": "fit",
+     "start": 1.723,
+     "end": 2.014
+    },
+    {
+     "text": "together.",
+     "start": 2.014,
+     "end": 2.596
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Shifts go in first.",
+   "start": 2.996,
+   "end": 4.564,
+   "words": [
+    {
+     "text": "Shifts",
+     "start": 2.996,
+     "end": 3.542
+    },
+    {
+     "text": "go",
+     "start": 3.542,
+     "end": 3.814
+    },
+    {
+     "text": "in",
+     "start": 3.814,
+     "end": 4.087
+    },
+    {
+     "text": "first.",
+     "start": 4.087,
+     "end": 4.564
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Then lectures.",
+   "start": 5.064,
+   "end": 6.278,
+   "words": [
+    {
+     "text": "Then",
+     "start": 5.064,
+     "end": 5.519
+    },
+    {
+     "text": "lectures.",
+     "start": 5.519,
+     "end": 6.278
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Then study drops into whatever's actually free.",
+   "start": 6.778,
+   "end": 10.314,
+   "words": [
+    {
+     "text": "Then",
+     "start": 6.778,
+     "end": 7.178
+    },
+    {
+     "text": "study",
+     "start": 7.178,
+     "end": 7.645
+    },
+    {
+     "text": "drops",
+     "start": 7.645,
+     "end": 8.112
+    },
+    {
+     "text": "into",
+     "start": 8.112,
+     "end": 8.513
+    },
+    {
+     "text": "whatever's",
+     "start": 8.513,
+     "end": 9.247
+    },
+    {
+     "text": "actually",
+     "start": 9.247,
+     "end": 9.914
+    },
+    {
+     "text": "free.",
+     "start": 9.914,
+     "end": 10.314
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Miss Tuesday's session?",
+   "start": 10.914,
+   "end": 12.719,
+   "words": [
+    {
+     "text": "Miss",
+     "start": 10.914,
+     "end": 11.348
+    },
+    {
+     "text": "Tuesday's",
+     "start": 11.348,
+     "end": 12.07
+    },
+    {
+     "text": "session?",
+     "start": 12.07,
+     "end": 12.719
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "It drops somewhere else. Nothing breaks.",
+   "start": 13.119,
+   "end": 15.761,
+   "words": [
+    {
+     "text": "It",
+     "start": 13.119,
+     "end": 13.306
+    },
+    {
+     "text": "drops",
+     "start": 13.306,
+     "end": 13.634
+    },
+    {
+     "text": "somewhere",
+     "start": 13.634,
+     "end": 14.149
+    },
+    {
+     "text": "else.",
+     "start": 14.149,
+     "end": 14.429
+    },
+    {
+     "text": "Nothing",
+     "start": 14.719,
+     "end": 15.271
+    },
+    {
+     "text": "breaks.",
+     "start": 15.271,
+     "end": 15.761
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "That's Offload. It plans around your shifts, with your Google Calendar connected.",
+   "start": 16.461,
+   "end": 21.524,
+   "words": [
+    {
+     "text": "That's",
+     "start": 16.461,
+     "end": 16.859
+    },
+    {
+     "text": "Offload.",
+     "start": 16.859,
+     "end": 17.371
+    },
+    {
+     "text": "It",
+     "start": 17.711,
+     "end": 17.906
+    },
+    {
+     "text": "plans",
+     "start": 17.906,
+     "end": 18.247
+    },
+    {
+     "text": "around",
+     "start": 18.247,
+     "end": 18.638
+    },
+    {
+     "text": "your",
+     "start": 18.638,
+     "end": 18.93
+    },
+    {
+     "text": "shifts,",
+     "start": 18.93,
+     "end": 19.321
+    },
+    {
+     "text": "with",
+     "start": 19.581,
+     "end": 19.865
+    },
+    {
+     "text": "your",
+     "start": 19.865,
+     "end": 20.149
+    },
+    {
+     "text": "Google",
+     "start": 20.149,
+     "end": 20.529
+    },
+    {
+     "text": "Calendar",
+     "start": 20.529,
+     "end": 21.003
+    },
+    {
+     "text": "connected.",
+     "start": 21.003,
+     "end": 21.524
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "Then it tests you, and brings topics back before you forget.",
+   "start": 21.924,
+   "end": 25.589,
+   "words": [
+    {
+     "text": "Then",
+     "start": 21.924,
+     "end": 22.197
+    },
+    {
+     "text": "it",
+     "start": 22.197,
+     "end": 22.379
+    },
+    {
+     "text": "tests",
+     "start": 22.379,
+     "end": 22.697
+    },
+    {
+     "text": "you,",
+     "start": 22.697,
+     "end": 22.924
+    },
+    {
+     "text": "and",
+     "start": 23.224,
+     "end": 23.471
+    },
+    {
+     "text": "brings",
+     "start": 23.471,
+     "end": 23.865
+    },
+    {
+     "text": "topics",
+     "start": 23.865,
+     "end": 24.259
+    },
+    {
+     "text": "back",
+     "start": 24.259,
+     "end": 24.554
+    },
+    {
+     "text": "before",
+     "start": 24.554,
+     "end": 24.949
+    },
+    {
+     "text": "you",
+     "start": 24.949,
+     "end": 25.195
+    },
+    {
+     "text": "forget.",
+     "start": 25.195,
+     "end": 25.589
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 25.989,
+   "end": 29.219,
+   "words": [
+    {
+     "text": "You",
+     "start": 25.989,
+     "end": 26.241
+    },
+    {
+     "text": "just",
+     "start": 26.241,
+     "end": 26.544
+    },
+    {
+     "text": "click",
+     "start": 26.544,
+     "end": 26.898
+    },
+    {
+     "text": "the",
+     "start": 26.898,
+     "end": 27.15
+    },
+    {
+     "text": "link",
+     "start": 27.15,
+     "end": 27.453
+    },
+    {
+     "text": "in",
+     "start": 27.453,
+     "end": 27.655
+    },
+    {
+     "text": "your",
+     "start": 27.655,
+     "end": 27.957
+    },
+    {
+     "text": "calendar",
+     "start": 27.957,
+     "end": 28.462
+    },
+    {
+     "text": "and",
+     "start": 28.462,
+     "end": 28.715
+    },
+    {
+     "text": "show",
+     "start": 28.715,
+     "end": 29.017
+    },
+    {
+     "text": "up.",
+     "start": 29.017,
+     "end": 29.219
+    }
+   ]
+  }
+ ]
+}

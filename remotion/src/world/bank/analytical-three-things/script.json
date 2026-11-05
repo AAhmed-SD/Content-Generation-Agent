@@ -1,40 +1,51 @@
 {
  "id": "bank/analytical-three-things",
- "voice": "bm_daniel",
+ "voice": "bm_george",
  "lang": "en-gb",
- "speed": 1.1,
- "gap": 0.25,
+ "speed": 0.94,
+ "gap": 0.42,
  "takes": "line",
  "master": true,
  "lines": [
   {
    "id": "L1",
-   "say": "Three things to do this week if you've got January exams."
+   "say": "January exams? Three things to do this week.",
+   "after": 0.4
   },
   {
    "id": "L2",
-   "say": "One. Close the solution and explain the method out loud. If you can't explain it, you can't use it.",
-   "after": 0.4
+   "say": "One. Close the solution, and explain the method out loud.",
+   "after": 0.6
   },
   {
    "id": "L3",
-   "say": "Two. Mix your topics. The exam won't tell you which method it wants.",
-   "after": 0.4
+   "say": "Two. Mix your topics. The exam won't say which method it wants.",
+   "after": 0.6
   },
   {
    "id": "L4",
-   "say": "Three. Go back to the topic you did first. That's the one you've forgotten.",
-   "after": 0.5
+   "say": "Three. Go back to the first topic you did. That's the one you've forgotten.",
+   "after": 0.6
   },
   {
    "id": "L5",
-   "say": "Offload does number one for you. It makes you explain each method in your own words, from your own notes.",
-   "after": 0.5
+   "say": "Offload does number one: it makes you explain each method, from your notes.",
+   "after": 0.6
   },
   {
    "id": "L6",
-   "say": "Number three, honestly, is the one nobody does.",
-   "after": 1.2
+   "say": "And number three? That's the one nobody does.",
+   "after": 0.6
+  },
+  {
+   "id": "L7",
+   "say": "Offload does that one too. It brings old topics back before you forget.",
+   "after": 0.4
+  },
+  {
+   "id": "L8",
+   "say": "It plans every session. You just click the link in your calendar.",
+   "after": 1.0
   }
  ]
 }

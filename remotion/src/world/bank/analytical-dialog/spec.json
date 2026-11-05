@@ -26,5 +26,59 @@
  "final": {
   "text": "One session at a time.\nIn your calendar.",
   "at": "L5"
+ },
+ "cascade": {
+  "at": "L4",
+  "every": 0.11,
+  "items": [
+   {
+    "title": "Lab report 1",
+    "message": "Still open."
+   },
+   {
+    "title": "Lab report 2",
+    "message": "Still open."
+   },
+   {
+    "title": "Lab report 3",
+    "message": "Still open."
+   },
+   {
+    "title": "Problem sheet",
+    "message": "Not started."
+   },
+   {
+    "title": "Lecture 12",
+    "message": "Not watched."
+   },
+   {
+    "title": "Group project",
+    "message": "Waiting for you."
+   },
+   {
+    "title": "Email",
+    "message": "Unread: 43"
+   },
+   {
+    "title": "Lab report 1",
+    "message": "Still. Open."
+   },
+   {
+    "title": "Tabs",
+    "message": "You have 38 tabs open."
+   },
+   {
+    "title": "Brain",
+    "message": "Not responding."
+   },
+   {
+    "title": "Brain",
+    "message": "Not responding."
+   },
+   {
+    "title": "Brain",
+    "message": "Not responding."
+   }
+  ]
  }
 }

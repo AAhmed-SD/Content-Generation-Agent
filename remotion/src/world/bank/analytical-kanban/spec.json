@@ -36,5 +36,29 @@
  "final": {
   "text": "Revision, slotted in\naround the deadlines.",
   "at": "L5:deadlines"
+ },
+ "pile": {
+  "col": 0,
+  "at": "L2:everything",
+  "every": 0.11,
+  "calm": "L5:slots",
+  "items": [
+   "Lecture 14",
+   "Lecture 15",
+   "Lab write-up",
+   "Problem sheet 5",
+   "Group slides",
+   "Reading list",
+   "Past paper",
+   "Quiz prep",
+   "Tutorial sheet",
+   "Referencing",
+   "Email supervisor",
+   "Lecture 16",
+   "Coursework draft",
+   "Revision notes",
+   "Mock paper",
+   "Lab report 2"
+  ]
  }
 }

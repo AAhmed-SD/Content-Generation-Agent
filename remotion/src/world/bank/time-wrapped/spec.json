@@ -1,0 +1,44 @@
+{
+ "id": "time-wrapped",
+ "format": "wrapped",
+ "cards": [
+  {
+   "kicker": "This week",
+   "big": "Your week,\nwrapped",
+   "bg": "mark",
+   "at": "L1"
+  },
+  {
+   "kicker": "Top activity",
+   "big": "Starting\nthings",
+   "bg": "kraft",
+   "at": "L2"
+  },
+  {
+   "kicker": "Most opened",
+   "big": "The app you said you'd delete",
+   "bg": "problem",
+   "at": "L3"
+  },
+  {
+   "kicker": "Finished",
+   "big": "One thing",
+   "sub": "the rest are tabs",
+   "bg": "ink",
+   "at": "L4"
+  },
+  {
+   "kicker": "Your vibe",
+   "big": "Busy. Nothing moved.",
+   "bg": "paper",
+   "at": "L5"
+  },
+  {
+   "kicker": "Next week",
+   "big": "One block\nat a time",
+   "sub": "so something moves",
+   "bg": "mark",
+   "at": "L6"
+  }
+ ]
+}

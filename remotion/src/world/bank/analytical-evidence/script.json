@@ -1,0 +1,56 @@
+{
+ "id": "bank/analytical-evidence",
+ "voice": "bm_george",
+ "lang": "en-gb",
+ "speed": 0.94,
+ "gap": 0.42,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "The case against your revision.",
+   "after": 0.4
+  },
+  {
+   "id": "L2",
+   "say": "Exhibit A. Nine tabs of the same worked example.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "Exhibit B. A problem sheet, blank, saved as final.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "Exhibit C. A highlighter. Out of ink.",
+   "after": 0.6
+  },
+  {
+   "id": "L5",
+   "say": "The verdict? Guilty. Of reading, not doing.",
+   "after": 0.8
+  },
+  {
+   "id": "L6",
+   "say": "The sentence: explain it from a blank page.",
+   "after": 0.6
+  },
+  {
+   "id": "L7",
+   "say": "Offload plans those sessions, then tests you from a blank page.",
+   "after": 0.4
+  },
+  {
+   "id": "L8",
+   "say": "It brings each topic back before you forget it.",
+   "after": 0.4
+  },
+  {
+   "id": "L9",
+   "say": "You just click the link in your calendar.",
+   "after": 0.9
+  }
+ ]
+}

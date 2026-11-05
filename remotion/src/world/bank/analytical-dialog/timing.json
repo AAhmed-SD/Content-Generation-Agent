@@ -1,258 +1,382 @@
 {
- "duration": 18.308,
+ "duration": 29.349,
  "lines": [
   {
    "id": "L1",
-   "say": "Week ten of term. A summary.",
+   "say": "Week ten of term. Your brain, as a computer.",
    "start": 0.15,
-   "end": 2.109,
+   "end": 3.582,
    "words": [
     {
      "text": "Week",
      "start": 0.15,
-     "end": 0.453
+     "end": 0.504
     },
     {
      "text": "ten",
-     "start": 0.453,
-     "end": 0.705
+     "start": 0.504,
+     "end": 0.8
     },
     {
      "text": "of",
-     "start": 0.705,
-     "end": 0.907
+     "start": 0.8,
+     "end": 1.036
     },
     {
      "text": "term.",
-     "start": 0.907,
-     "end": 1.21
+     "start": 1.036,
+     "end": 1.39
     },
     {
-     "text": "A",
-     "start": 1.38,
-     "end": 1.562
+     "text": "Your",
+     "start": 1.72,
+     "end": 2.057
     },
     {
-     "text": "summary.",
-     "start": 1.562,
-     "end": 2.109
+     "text": "brain,",
+     "start": 2.057,
+     "end": 2.45
+    },
+    {
+     "text": "as",
+     "start": 2.57,
+     "end": 2.808
+    },
+    {
+     "text": "a",
+     "start": 2.808,
+     "end": 2.987
+    },
+    {
+     "text": "computer.",
+     "start": 2.987,
+     "end": 3.582
     }
    ]
   },
   {
    "id": "L2",
-   "say": "Brain has stopped responding. Retry?",
-   "start": 2.369,
-   "end": 4.786,
+   "say": "Error. Brain has stopped responding.",
+   "start": 3.982,
+   "end": 6.357,
    "words": [
     {
+     "text": "Error.",
+     "start": 3.982,
+     "end": 4.382
+    },
+    {
      "text": "Brain",
-     "start": 2.369,
-     "end": 2.683
+     "start": 4.502,
+     "end": 4.895
     },
     {
      "text": "has",
-     "start": 2.683,
-     "end": 2.908
+     "start": 4.895,
+     "end": 5.176
     },
     {
      "text": "stopped",
-     "start": 2.908,
-     "end": 3.311
+     "start": 5.176,
+     "end": 5.683
     },
     {
      "text": "responding.",
-     "start": 3.311,
-     "end": 3.849
-    },
-    {
-     "text": "Retry?",
-     "start": 4.119,
-     "end": 4.786
+     "start": 5.683,
+     "end": 6.357
     }
    ]
   },
   {
    "id": "L3",
-   "say": "You press retry. Three lab reports are still open.",
-   "start": 5.686,
-   "end": 8.807,
+   "say": "Why? Three lab reports are still open.",
+   "start": 7.157,
+   "end": 9.712,
    "words": [
     {
-     "text": "You",
-     "start": 5.686,
-     "end": 5.933
-    },
-    {
-     "text": "press",
-     "start": 5.933,
-     "end": 6.279
-    },
-    {
-     "text": "retry.",
-     "start": 6.279,
-     "end": 6.626
+     "text": "Why?",
+     "start": 7.157,
+     "end": 7.547
     },
     {
      "text": "Three",
-     "start": 6.936,
-     "end": 7.272
+     "start": 7.677,
+     "end": 8.043
     },
     {
      "text": "lab",
-     "start": 7.272,
-     "end": 7.512
+     "start": 8.043,
+     "end": 8.303
     },
     {
      "text": "reports",
-     "start": 7.512,
-     "end": 7.943
+     "start": 8.303,
+     "end": 8.773
     },
     {
      "text": "are",
-     "start": 7.943,
-     "end": 8.183
+     "start": 8.773,
+     "end": 9.034
     },
     {
      "text": "still",
-     "start": 8.183,
-     "end": 8.519
+     "start": 9.034,
+     "end": 9.399
     },
     {
      "text": "open.",
-     "start": 8.519,
-     "end": 8.807
+     "start": 9.399,
+     "end": 9.712
     }
    ]
   },
   {
    "id": "L4",
    "say": "Close them? No. Later.",
-   "start": 9.507,
-   "end": 11.046,
+   "start": 10.312,
+   "end": 12.258,
    "words": [
     {
      "text": "Close",
-     "start": 9.507,
-     "end": 9.674
+     "start": 10.312,
+     "end": 10.662
     },
     {
      "text": "them?",
-     "start": 9.674,
-     "end": 9.817
+     "start": 10.662,
+     "end": 10.962
     },
     {
      "text": "No.",
-     "start": 9.867,
-     "end": 10.047
+     "start": 11.062,
+     "end": 11.492
     },
     {
      "text": "Later.",
-     "start": 10.127,
-     "end": 11.046
+     "start": 11.582,
+     "end": 12.258
     }
    ]
   },
   {
    "id": "L5",
-   "say": "The app puts it in your calendar one session at a time, so your brain only runs one thing.",
-   "start": 11.446,
-   "end": 16.608,
+   "say": "Offload plans your revision, one session at a time.",
+   "start": 12.858,
+   "end": 16.632,
    "words": [
     {
-     "text": "The",
-     "start": 11.446,
-     "end": 11.644
+     "text": "Offload",
+     "start": 12.858,
+     "end": 13.367
     },
     {
-     "text": "app",
-     "start": 11.644,
-     "end": 11.842
-    },
-    {
-     "text": "puts",
-     "start": 11.842,
-     "end": 12.079
-    },
-    {
-     "text": "it",
-     "start": 12.079,
-     "end": 12.237
-    },
-    {
-     "text": "in",
-     "start": 12.237,
-     "end": 12.396
+     "text": "plans",
+     "start": 13.367,
+     "end": 13.763
     },
     {
      "text": "your",
-     "start": 12.396,
-     "end": 12.633
+     "start": 13.763,
+     "end": 14.103
     },
     {
-     "text": "calendar",
-     "start": 12.633,
-     "end": 13.028
+     "text": "revision,",
+     "start": 14.103,
+     "end": 14.668
     },
     {
      "text": "one",
-     "start": 13.028,
-     "end": 13.226
+     "start": 14.998,
+     "end": 15.301
     },
     {
      "text": "session",
-     "start": 13.226,
-     "end": 13.582
+     "start": 15.301,
+     "end": 15.845
     },
     {
      "text": "at",
-     "start": 13.582,
-     "end": 13.74
+     "start": 15.845,
+     "end": 16.087
     },
     {
      "text": "a",
-     "start": 13.74,
-     "end": 13.859
+     "start": 16.087,
+     "end": 16.269
     },
     {
-     "text": "time,",
-     "start": 13.859,
-     "end": 14.096
+     "text": "time.",
+     "start": 16.269,
+     "end": 16.632
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "It reschedules what you miss, and tests you as you go.",
+   "start": 17.032,
+   "end": 20.511,
+   "words": [
+    {
+     "text": "It",
+     "start": 17.032,
+     "end": 17.212
     },
     {
-     "text": "so",
-     "start": 14.476,
-     "end": 14.684
+     "text": "reschedules",
+     "start": 17.212,
+     "end": 17.797
+    },
+    {
+     "text": "what",
+     "start": 17.797,
+     "end": 18.067
+    },
+    {
+     "text": "you",
+     "start": 18.067,
+     "end": 18.292
+    },
+    {
+     "text": "miss,",
+     "start": 18.292,
+     "end": 18.562
+    },
+    {
+     "text": "and",
+     "start": 18.852,
+     "end": 19.129
+    },
+    {
+     "text": "tests",
+     "start": 19.129,
+     "end": 19.516
+    },
+    {
+     "text": "you",
+     "start": 19.516,
+     "end": 19.792
+    },
+    {
+     "text": "as",
+     "start": 19.792,
+     "end": 20.013
+    },
+    {
+     "text": "you",
+     "start": 20.013,
+     "end": 20.29
+    },
+    {
+     "text": "go.",
+     "start": 20.29,
+     "end": 20.511
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 20.911,
+   "end": 24.141,
+   "words": [
+    {
+     "text": "You",
+     "start": 20.911,
+     "end": 21.163
+    },
+    {
+     "text": "just",
+     "start": 21.163,
+     "end": 21.466
+    },
+    {
+     "text": "click",
+     "start": 21.466,
+     "end": 21.819
+    },
+    {
+     "text": "the",
+     "start": 21.819,
+     "end": 22.072
+    },
+    {
+     "text": "link",
+     "start": 22.072,
+     "end": 22.375
+    },
+    {
+     "text": "in",
+     "start": 22.375,
+     "end": 22.577
     },
     {
      "text": "your",
-     "start": 14.684,
-     "end": 14.996
+     "start": 22.577,
+     "end": 22.879
+    },
+    {
+     "text": "calendar",
+     "start": 22.879,
+     "end": 23.384
+    },
+    {
+     "text": "and",
+     "start": 23.384,
+     "end": 23.636
+    },
+    {
+     "text": "show",
+     "start": 23.636,
+     "end": 23.939
+    },
+    {
+     "text": "up.",
+     "start": 23.939,
+     "end": 24.141
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "So your brain only runs one thing.",
+   "start": 24.641,
+   "end": 27.449,
+   "words": [
+    {
+     "text": "So",
+     "start": 24.641,
+     "end": 24.915
+    },
+    {
+     "text": "your",
+     "start": 24.915,
+     "end": 25.326
     },
     {
      "text": "brain",
-     "start": 14.996,
-     "end": 15.36
+     "start": 25.326,
+     "end": 25.805
     },
     {
      "text": "only",
-     "start": 15.36,
-     "end": 15.672
+     "start": 25.805,
+     "end": 26.216
     },
     {
      "text": "runs",
-     "start": 15.672,
-     "end": 15.984
+     "start": 26.216,
+     "end": 26.627
     },
     {
      "text": "one",
-     "start": 15.984,
-     "end": 16.244
+     "start": 26.627,
+     "end": 26.969
     },
     {
      "text": "thing.",
-     "start": 16.244,
-     "end": 16.608
+     "start": 26.969,
+     "end": 27.449
     }
    ]
   }

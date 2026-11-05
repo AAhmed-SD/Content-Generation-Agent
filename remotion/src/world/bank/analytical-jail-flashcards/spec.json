@@ -1,0 +1,48 @@
+{
+ "id": "analytical-jail-flashcards",
+ "format": "jail",
+ "caseNo": "CASE 001",
+ "siren": "L1",
+ "suspect": {
+  "name": "The Flashcard App",
+  "icon": "flashcards",
+  "at": "L2:suspect"
+ },
+ "side": "L3:side",
+ "charges": [
+  {
+   "text": "Four hundred cards. Never said which were due.",
+   "at": "L4"
+  },
+  {
+   "text": "You saw the answer and called it revision.",
+   "at": "L5"
+  },
+  {
+   "text": "No idea when your exam is.",
+   "at": "L6"
+  }
+ ],
+ "sentence": {
+  "text": "Life, in a folder\nyou never open.",
+  "at": "L7"
+ },
+ "release": {
+  "title": "Offload, meanwhile:",
+  "at": "L8",
+  "points": [
+   {
+    "text": "Plans your revision from your exam date",
+    "at": "L8"
+   },
+   {
+    "text": "Tests you, and brings cards back in time",
+    "at": "L9"
+   },
+   {
+    "text": "You click the link in your calendar",
+    "at": "L10"
+   }
+  ]
+ }
+}

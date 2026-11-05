@@ -120,6 +120,10 @@ Google Calendar connect: schedules around existing busy time; two-way sync for O
 
 
 
+Each Offload block in the student's calendar links straight into that session in the app: they click it and start. (Confirmed by Hadiqa, 2026-11-05.) Say it like this: "You just click the link in your calendar and show up."  
+
+
+
 Conflict-aware placement (does not deliberately double-book Google busy time)  
 
 

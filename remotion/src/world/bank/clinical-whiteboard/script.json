@@ -1,35 +1,46 @@
 {
  "id": "bank/clinical-whiteboard",
- "voice": "bm_fable",
+ "voice": "bm_george",
  "lang": "en-gb",
- "speed": 1.0,
- "gap": 0.26,
+ "speed": 0.94,
+ "gap": 0.42,
  "takes": "line",
  "master": true,
  "lines": [
   {
    "id": "L1",
-   "say": "Why you blank on the ward round, when you knew it last night."
+   "say": "Why you blank on the ward round, when you knew it last night.",
+   "after": 0.5
   },
   {
    "id": "L2",
    "say": "Last night, you reread it. That's recognition.",
-   "after": 0.3
+   "after": 0.5
   },
   {
    "id": "L3",
-   "say": "On the ward, you have to pull it out cold. That's recall.",
-   "after": 0.3
+   "say": "On the ward, you pull it out cold. That's recall.",
+   "after": 0.5
   },
   {
    "id": "L4",
    "say": "You practised the wrong one.",
-   "after": 0.5
+   "after": 0.7
   },
   {
    "id": "L5",
-   "say": "So practise recall. The app quizzes you on your own lecture notes, before the ward round does.",
-   "after": 0.8
+   "say": "So practise recall. Offload quizzes you on your own lecture notes.",
+   "after": 0.4
+  },
+  {
+   "id": "L6",
+   "say": "It plans when, and brings each topic back before you forget.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 0.9
   }
  ]
 }

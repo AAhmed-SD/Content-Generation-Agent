@@ -1,0 +1,61 @@
+{
+ "id": "bank/time-jail-notes",
+ "voice": "bm_george",
+ "lang": "en-gb",
+ "speed": 0.94,
+ "gap": 0.42,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "The study police have made an arrest.",
+   "after": 0.5
+  },
+  {
+   "id": "L2",
+   "say": "Suspect: the notes app. Face the camera.",
+   "after": 0.6
+  },
+  {
+   "id": "L3",
+   "say": "And to the side.",
+   "after": 0.8
+  },
+  {
+   "id": "L4",
+   "say": "Count one: holds every lecture, never tells you to open one.",
+   "after": 0.6
+  },
+  {
+   "id": "L5",
+   "say": "Count two: two hundred notes, all called untitled.",
+   "after": 0.6
+  },
+  {
+   "id": "L6",
+   "say": "Count three: organising notes, disguised as studying.",
+   "after": 0.7
+  },
+  {
+   "id": "L7",
+   "say": "Sentence: one more folder.",
+   "after": 0.9
+  },
+  {
+   "id": "L8",
+   "say": "Offload turns your notes into a plan, one block at a time, and moves it when you miss a day.",
+   "after": 0.4
+  },
+  {
+   "id": "L9",
+   "say": "It tests you on them, so they stick.",
+   "after": 0.4
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1.0
+  }
+ ]
+}

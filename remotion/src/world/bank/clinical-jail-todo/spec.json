@@ -1,0 +1,48 @@
+{
+ "id": "clinical-jail-todo",
+ "format": "jail",
+ "caseNo": "CASE 003",
+ "siren": "L1",
+ "suspect": {
+  "name": "The To-Do List",
+  "icon": "todo",
+  "at": "L2:suspect"
+ },
+ "side": "L3:side",
+ "charges": [
+  {
+   "text": "Forty-three unticked tasks. Which one matters?",
+   "at": "L4"
+  },
+  {
+   "text": "Knows nothing about your rota.",
+   "at": "L5"
+  },
+  {
+   "text": "“Revise cardio” is not a plan.",
+   "at": "L6"
+  }
+ ],
+ "sentence": {
+  "text": "One more task,\nadded to itself.",
+  "at": "L7"
+ },
+ "release": {
+  "title": "Offload, meanwhile:",
+  "at": "L8",
+  "points": [
+   {
+    "text": "Plans around your shifts",
+    "at": "L8"
+   },
+   {
+    "text": "Tests you on your own notes",
+    "at": "L9"
+   },
+   {
+    "text": "You click the link in your calendar",
+    "at": "L10"
+   }
+  ]
+ }
+}

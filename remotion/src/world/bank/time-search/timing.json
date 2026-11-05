@@ -1,298 +1,389 @@
 {
- "duration": 17.512,
+ "duration": 28.035,
  "lines": [
   {
    "id": "L1",
    "say": "Be honest. You've typed one of these.",
    "start": 0.15,
-   "end": 2.091,
+   "end": 2.573,
    "words": [
     {
      "text": "Be",
      "start": 0.15,
-     "end": 0.343
+     "end": 0.38
     },
     {
      "text": "honest.",
-     "start": 0.343,
-     "end": 0.73
+     "start": 0.38,
+     "end": 0.84
     },
     {
      "text": "You've",
-     "start": 0.93,
-     "end": 1.201
+     "start": 1.12,
+     "end": 1.459
     },
     {
      "text": "typed",
-     "start": 1.201,
-     "end": 1.472
+     "start": 1.459,
+     "end": 1.798
     },
     {
      "text": "one",
-     "start": 1.472,
-     "end": 1.665
+     "start": 1.798,
+     "end": 2.04
     },
     {
      "text": "of",
-     "start": 1.665,
-     "end": 1.82
+     "start": 2.04,
+     "end": 2.234
     },
     {
      "text": "these.",
-     "start": 1.82,
-     "end": 2.091
+     "start": 2.234,
+     "end": 2.573
     }
    ]
   },
   {
    "id": "L2",
    "say": "How to start when everything feels urgent.",
-   "start": 2.351,
-   "end": 4.571,
+   "start": 2.973,
+   "end": 6.084,
    "words": [
     {
      "text": "How",
-     "start": 2.351,
-     "end": 2.577
+     "start": 2.973,
+     "end": 3.29
     },
     {
      "text": "to",
-     "start": 2.577,
-     "end": 2.759
+     "start": 3.29,
+     "end": 3.544
     },
     {
      "text": "start",
-     "start": 2.759,
-     "end": 3.076
+     "start": 3.544,
+     "end": 3.988
     },
     {
      "text": "when",
-     "start": 3.076,
-     "end": 3.347
+     "start": 3.988,
+     "end": 4.369
     },
     {
      "text": "everything",
-     "start": 3.347,
-     "end": 3.891
+     "start": 4.369,
+     "end": 5.131
     },
     {
      "text": "feels",
-     "start": 3.891,
-     "end": 4.208
+     "start": 5.131,
+     "end": 5.576
     },
     {
      "text": "urgent.",
-     "start": 4.208,
-     "end": 4.571
+     "start": 5.576,
+     "end": 6.084
     }
    ]
   },
   {
    "id": "L3",
-   "say": "My brother's problem was never ability. It was starting.",
-   "start": 4.971,
-   "end": 8.255,
+   "say": "The problem is rarely ability. It's starting.",
+   "start": 6.684,
+   "end": 9.915,
    "words": [
     {
-     "text": "My",
-     "start": 4.971,
-     "end": 5.157
-    },
-    {
-     "text": "brother's",
-     "start": 5.157,
-     "end": 5.623
+     "text": "The",
+     "start": 6.684,
+     "end": 6.968
     },
     {
      "text": "problem",
-     "start": 5.623,
-     "end": 6.042
+     "start": 6.968,
+     "end": 7.48
     },
     {
-     "text": "was",
-     "start": 6.042,
-     "end": 6.275
+     "text": "is",
+     "start": 7.48,
+     "end": 7.707
     },
     {
-     "text": "never",
-     "start": 6.275,
-     "end": 6.601
+     "text": "rarely",
+     "start": 7.707,
+     "end": 8.162
     },
     {
      "text": "ability.",
-     "start": 6.601,
-     "end": 7.021
+     "start": 8.162,
+     "end": 8.674
     },
     {
-     "text": "It",
-     "start": 7.431,
-     "end": 7.604
-    },
-    {
-     "text": "was",
-     "start": 7.604,
-     "end": 7.821
+     "text": "It's",
+     "start": 8.994,
+     "end": 9.301
     },
     {
      "text": "starting.",
-     "start": 7.821,
-     "end": 8.255
+     "start": 9.301,
+     "end": 9.915
     }
    ]
   },
   {
    "id": "L4",
    "say": "The answer is boring. Pick the next thing. Just one.",
-   "start": 8.655,
-   "end": 11.633,
+   "start": 10.415,
+   "end": 13.994,
    "words": [
     {
      "text": "The",
-     "start": 8.655,
-     "end": 8.883
+     "start": 10.415,
+     "end": 10.689
     },
     {
      "text": "answer",
-     "start": 8.883,
-     "end": 9.248
+     "start": 10.689,
+     "end": 11.127
     },
     {
      "text": "is",
-     "start": 9.248,
-     "end": 9.43
+     "start": 11.127,
+     "end": 11.347
     },
     {
      "text": "boring.",
-     "start": 9.43,
-     "end": 9.795
+     "start": 11.347,
+     "end": 11.785
     },
     {
      "text": "Pick",
-     "start": 10.135,
-     "end": 10.335
+     "start": 12.095,
+     "end": 12.335
     },
     {
      "text": "the",
-     "start": 10.335,
-     "end": 10.501
+     "start": 12.335,
+     "end": 12.535
     },
     {
      "text": "next",
-     "start": 10.501,
-     "end": 10.701
+     "start": 12.535,
+     "end": 12.775
     },
     {
      "text": "thing.",
-     "start": 10.701,
-     "end": 10.935
+     "start": 12.775,
+     "end": 13.055
     },
     {
      "text": "Just",
-     "start": 11.005,
-     "end": 11.348
+     "start": 13.205,
+     "end": 13.635
     },
     {
      "text": "one.",
-     "start": 11.348,
-     "end": 11.633
+     "start": 13.635,
+     "end": 13.994
     }
    ]
   },
   {
    "id": "L5",
-   "say": "That's why I built the app to hand you the next block, so you don't have to pick.",
-   "start": 11.893,
-   "end": 15.712,
+   "say": "Offload hands you the next block, so you don't have to pick.",
+   "start": 14.494,
+   "end": 18.024,
    "words": [
     {
-     "text": "That's",
-     "start": 11.893,
-     "end": 12.142
+     "text": "Offload",
+     "start": 14.494,
+     "end": 14.893
     },
     {
-     "text": "why",
-     "start": 12.142,
-     "end": 12.32
-    },
-    {
-     "text": "I",
-     "start": 12.32,
-     "end": 12.426
-    },
-    {
-     "text": "built",
-     "start": 12.426,
-     "end": 12.675
-    },
-    {
-     "text": "the",
-     "start": 12.675,
-     "end": 12.853
-    },
-    {
-     "text": "app",
-     "start": 12.853,
-     "end": 13.031
-    },
-    {
-     "text": "to",
-     "start": 13.031,
-     "end": 13.173
-    },
-    {
-     "text": "hand",
-     "start": 13.173,
-     "end": 13.386
+     "text": "hands",
+     "start": 14.893,
+     "end": 15.204
     },
     {
      "text": "you",
-     "start": 13.386,
-     "end": 13.564
+     "start": 15.204,
+     "end": 15.425
     },
     {
      "text": "the",
-     "start": 13.564,
-     "end": 13.741
+     "start": 15.425,
+     "end": 15.647
     },
     {
      "text": "next",
-     "start": 13.741,
-     "end": 13.955
+     "start": 15.647,
+     "end": 15.913
     },
     {
      "text": "block,",
-     "start": 13.955,
-     "end": 14.203
+     "start": 15.913,
+     "end": 16.224
     },
     {
      "text": "so",
-     "start": 14.553,
-     "end": 14.703
+     "start": 16.644,
+     "end": 16.822
     },
     {
      "text": "you",
-     "start": 14.703,
-     "end": 14.89
+     "start": 16.822,
+     "end": 17.045
     },
     {
      "text": "don't",
-     "start": 14.89,
-     "end": 15.114
+     "start": 17.045,
+     "end": 17.312
     },
     {
      "text": "have",
-     "start": 15.114,
-     "end": 15.339
+     "start": 17.312,
+     "end": 17.579
     },
     {
      "text": "to",
-     "start": 15.339,
-     "end": 15.488
+     "start": 17.579,
+     "end": 17.757
     },
     {
      "text": "pick.",
-     "start": 15.488,
-     "end": 15.712
+     "start": 17.757,
+     "end": 18.024
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "It plans the whole week, moves what you miss, and tests you as you go.",
+   "start": 18.424,
+   "end": 23.052,
+   "words": [
+    {
+     "text": "It",
+     "start": 18.424,
+     "end": 18.618
+    },
+    {
+     "text": "plans",
+     "start": 18.618,
+     "end": 18.955
+    },
+    {
+     "text": "the",
+     "start": 18.955,
+     "end": 19.197
+    },
+    {
+     "text": "whole",
+     "start": 19.197,
+     "end": 19.535
+    },
+    {
+     "text": "week,",
+     "start": 19.535,
+     "end": 19.824
+    },
+    {
+     "text": "moves",
+     "start": 20.184,
+     "end": 20.494
+    },
+    {
+     "text": "what",
+     "start": 20.494,
+     "end": 20.759
+    },
+    {
+     "text": "you",
+     "start": 20.759,
+     "end": 20.979
+    },
+    {
+     "text": "miss,",
+     "start": 20.979,
+     "end": 21.244
+    },
+    {
+     "text": "and",
+     "start": 21.514,
+     "end": 21.771
+    },
+    {
+     "text": "tests",
+     "start": 21.771,
+     "end": 22.13
+    },
+    {
+     "text": "you",
+     "start": 22.13,
+     "end": 22.386
+    },
+    {
+     "text": "as",
+     "start": 22.386,
+     "end": 22.591
+    },
+    {
+     "text": "you",
+     "start": 22.591,
+     "end": 22.847
+    },
+    {
+     "text": "go.",
+     "start": 22.847,
+     "end": 23.052
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "You just click the link in your calendar.",
+   "start": 23.452,
+   "end": 26.135,
+   "words": [
+    {
+     "text": "You",
+     "start": 23.452,
+     "end": 23.726
+    },
+    {
+     "text": "just",
+     "start": 23.726,
+     "end": 24.054
+    },
+    {
+     "text": "click",
+     "start": 24.054,
+     "end": 24.438
+    },
+    {
+     "text": "the",
+     "start": 24.438,
+     "end": 24.712
+    },
+    {
+     "text": "link",
+     "start": 24.712,
+     "end": 25.04
+    },
+    {
+     "text": "in",
+     "start": 25.04,
+     "end": 25.259
+    },
+    {
+     "text": "your",
+     "start": 25.259,
+     "end": 25.588
+    },
+    {
+     "text": "calendar.",
+     "start": 25.588,
+     "end": 26.135
     }
    ]
   }

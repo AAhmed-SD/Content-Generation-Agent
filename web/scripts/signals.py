@@ -122,8 +122,9 @@ def main():
     ap.add_argument("--recent", type=int, default=30)
     ap.add_argument("--ratio", type=float, default=3.0)
     ap.add_argument("--min-views", type=int, default=1000)
+    ap.add_argument("--niche", default=None, help="only this niche, e.g. motion")
     a = ap.parse_args()
-    accounts = json.loads(WATCHLIST.read_text())["accounts"]
+    accounts = [x for x in json.loads(WATCHLIST.read_text())["accounts"] if not a.niche or x["niche"] == a.niche]
     seen = seen_ids()
     found, failed = 0, []
     for account in accounts:
@@ -144,7 +145,7 @@ def main():
             if ratio < a.ratio or v["views"] < a.min_views or key in seen:
                 continue
             url = video_url(account, v["id"])
-            spoken = hook(url)
+            spoken = "" if account["niche"] == "motion" else hook(url)  # motion is about the picture
             emit({
                 "type": "outlier", "at": now(), "niche": account["niche"], "platform": account["platform"],
                 "account": account["handle"], "id": v["id"], "url": url, "title": v["title"][:200],

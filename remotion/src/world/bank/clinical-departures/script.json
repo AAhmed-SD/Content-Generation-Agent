@@ -1,37 +1,51 @@
 {
  "id": "bank/clinical-departures",
- "voice": "bm_fable",
+ "voice": "bm_george",
  "lang": "en-gb",
- "speed": 1.02,
- "gap": 0.26,
+ "speed": 0.94,
+ "gap": 0.42,
  "takes": "line",
  "master": true,
  "lines": [
   {
    "id": "L1",
-   "say": "This week's departures, for anyone on placement."
-  },
-  {
-   "id": "L2",
-   "say": "Pharmacology. Delayed."
-  },
-  {
-   "id": "L3",
-   "say": "Anatomy. Delayed, again."
-  },
-  {
-   "id": "L4",
-   "say": "The timetable. Cancelled."
-  },
-  {
-   "id": "L5",
-   "say": "Your exam. On time. Obviously.",
+   "say": "The departures board for your placement week.",
    "after": 0.4
   },
   {
-   "id": "L6",
-   "say": "The app reschedules what got delayed into the free time you actually have.",
+   "id": "L2",
+   "say": "Pharmacology. Delayed.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "Anatomy. Delayed. Again.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "The timetable. Cancelled.",
+   "after": 0.6
+  },
+  {
+   "id": "L5",
+   "say": "Your exam? On time. Obviously.",
    "after": 0.7
+  },
+  {
+   "id": "L6",
+   "say": "Offload moves what got delayed into the time you actually have.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "It plans your revision from your notes, and tests you as you go.",
+   "after": 0.4
+  },
+  {
+   "id": "L8",
+   "say": "You just click the link in your calendar.",
+   "after": 0.9
   }
  ]
 }

@@ -1,0 +1,46 @@
+{
+  "note": "Feeds for the Inspiration page: motion design, ads and interface craft. Read plainly with a named client a few times a day at most. A site that refuses automated readers (Codrops did) is left off, not worked around. keep is an optional list of words: an item is kept only if its title or summary has one.",
+  "feeds": [
+    {
+      "name": "Abduzeedo",
+      "url": "https://abduzeedo.com/rss.xml",
+      "favourite": true
+    },
+    {
+      "name": "Motionographer",
+      "url": "https://motionographer.com/feed/"
+    },
+    {
+      "name": "Awwwards",
+      "url": "https://www.awwwards.com/blog/feed/"
+    },
+    {
+      "name": "Creative Bloq",
+      "url": "https://www.creativebloq.com/feeds/all",
+      "keep": [
+        "motion",
+        "animation",
+        "ad ",
+        "advert",
+        "campaign",
+        "typography",
+        "ui",
+        "apple",
+        "kinetic",
+        "3d"
+      ]
+    },
+    {
+      "name": "designboom",
+      "url": "https://www.designboom.com/feed/",
+      "keep": [
+        "motion",
+        "animation",
+        "typography",
+        "interface",
+        "campaign",
+        "film"
+      ]
+    }
+  ]
+}

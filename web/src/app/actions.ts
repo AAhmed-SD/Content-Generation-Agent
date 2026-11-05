@@ -35,7 +35,7 @@ export async function signIn(_state: SignInState, formData: FormData): Promise<S
     path: "/",
     maxAge: 60 * 60 * 24 * 7,
   });
-  redirect("/desk");
+  redirect("/desk/home");
 }
 
 export async function signOut() {
@@ -370,4 +370,132 @@ export async function collectSignals() {
   const { startRun } = await import("@/lib/signals");
   startRun();
   revalidatePath("/desk/signals");
+}
+
+export async function collectInspiration() {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const { startInspirationRun } = await import("@/lib/library");
+  startInspirationRun();
+  const { startRun } = await import("@/lib/signals");
+  startRun(["--niche", "motion", "--ratio", "2"]);
+  revalidatePath("/desk/inspiration");
+}
+
+export async function keepInspiration(formData: FormData) {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const { keepPulled } = await import("@/lib/library");
+  const url = String(formData.get("url") ?? "");
+  if (!/^https:\/\//.test(url)) return;
+  keepPulled({
+    source: String(formData.get("source") ?? "").slice(0, 80),
+    name: String(formData.get("name") ?? "").slice(0, 160),
+    url,
+    image: String(formData.get("image") ?? "").slice(0, 600) || undefined,
+    fit: String(formData.get("fit") ?? "").trim().slice(0, 400) || "Kept from Inspiration. Say where it fits.",
+    status: "idea",
+  });
+  revalidatePath("/desk/inspiration");
+  revalidatePath("/desk/library");
+}
+
+export async function rebuildLibrary() {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const { startCatalogueRun } = await import("@/lib/library");
+  await startCatalogueRun();
+  revalidatePath("/desk/library");
+}
+
+export async function addIdeaAction(formData: FormData) {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const title = String(formData.get("title") ?? "").trim().slice(0, 140);
+  const pitch = String(formData.get("pitch") ?? "").trim().slice(0, 800);
+  if (!title) return;
+  const { addIdea } = await import("@/lib/library");
+  addIdea({ title, pitch, kind: String(formData.get("kind") ?? "Idea").slice(0, 40), niche: String(formData.get("niche") ?? "all").slice(0, 20), by: person.name });
+  revalidatePath("/desk/ideas");
+}
+
+export async function rejectIdeaAction(formData: FormData) {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const { rejectIdea } = await import("@/lib/library");
+  rejectIdea(String(formData.get("id") ?? ""));
+  revalidatePath("/desk/ideas");
+}
+
+/** One Reject button for everything in the Library and Inspiration. */
+export async function rejectAction(formData: FormData) {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const lib = await import("@/lib/library");
+  const kind = String(formData.get("kind") ?? "");
+  const value = String(formData.get("value") ?? "");
+  if (kind === "film" && lib.rejectFilm(value)) await lib.reindex();
+  if (kind === "still" && lib.rejectStill(value)) await lib.startCatalogueRun();
+  if (kind === "format") {
+    lib.rejectFormat(value);
+    await lib.startCatalogueRun();
+  }
+  if (kind === "pulled") lib.rejectPulled(value, String(formData.get("name") ?? ""));
+  if (kind === "inspiration") lib.rejectInspiration(value);
+  revalidatePath("/desk/library");
+  revalidatePath("/desk/inspiration");
+}
+
+export async function setIdeaStatusAction(formData: FormData) {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const { IDEA_STATUS, setIdeaStatus } = await import("@/lib/library");
+  const status = String(formData.get("status") ?? "");
+  if (!(IDEA_STATUS as readonly string[]).includes(status)) return;
+  setIdeaStatus(String(formData.get("id") ?? ""), status as (typeof IDEA_STATUS)[number]);
+  revalidatePath("/desk/ideas");
+}
+
+export async function linkedinStatus(formData: FormData) {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const { STATUS, setStatus } = await import("@/lib/linkedin");
+  const status = String(formData.get("status") ?? "");
+  if ((STATUS as readonly string[]).includes(status)) setStatus(String(formData.get("id") ?? ""), status as (typeof STATUS)[number]);
+  revalidatePath("/desk/linkedin");
+}
+
+export async function linkedinReject(formData: FormData) {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const { removePost } = await import("@/lib/linkedin");
+  removePost(String(formData.get("id") ?? ""));
+  revalidatePath("/desk/linkedin");
+}
+
+export async function linkedinDraft() {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const { draftPosts } = await import("@/lib/linkedin");
+  try {
+    await draftPosts(person.name);
+  } catch (error) {
+    redirect(`/desk/linkedin?error=${encodeURIComponent(publicClaudeError(error instanceof Error ? error.message : "Drafting failed."))}`);
+  }
+  revalidatePath("/desk/linkedin");
+}
+
+export async function saveStoryboard(formData: FormData) {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const { setFrames } = await import("@/lib/library");
+  const frames = String(formData.get("frames") ?? "")
+    .split("\n")
+    .map((l) => l.trim())
+    .filter(Boolean)
+    .slice(0, 12)
+    .map((l) => l.slice(0, 200));
+  setFrames(String(formData.get("id") ?? ""), frames);
+  revalidatePath("/desk/ideas");
+  revalidatePath("/desk/home");
 }

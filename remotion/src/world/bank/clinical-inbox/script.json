@@ -1,42 +1,56 @@
 {
  "id": "bank/clinical-inbox",
- "voice": "bm_fable",
+ "voice": "bm_george",
  "lang": "en-gb",
- "speed": 1.02,
- "gap": 0.26,
+ "speed": 0.94,
+ "gap": 0.42,
  "takes": "line",
  "master": true,
  "lines": [
   {
    "id": "L1",
-   "say": "Your uni inbox on a Sunday night."
+   "say": "Your uni inbox. Sunday night.",
+   "after": 0.4
   },
   {
    "id": "L2",
-   "say": "Rota updated."
+   "say": "Rota updated.",
+   "after": 0.3
   },
   {
    "id": "L3",
-   "say": "Reminder: coursework due Friday."
+   "say": "Coursework due Friday.",
+   "after": 0.3
   },
   {
    "id": "L4",
-   "say": "Teaching moved to nine a.m."
+   "say": "Teaching moved to nine.",
+   "after": 0.3
   },
   {
    "id": "L5",
-   "say": "Placement sign-off outstanding.",
-   "after": 0.3
+   "say": "Placement sign-off, outstanding.",
+   "after": 0.6
   },
   {
    "id": "L6",
    "say": "You can't answer all of it tonight. So clear it.",
-   "after": 0.3
+   "after": 0.6
   },
   {
    "id": "L7",
-   "say": "The one worth opening is the plan that's already moved around all of that.",
-   "after": 0.7
+   "say": "The one worth opening? Today's plan, already moved around all of that.",
+   "after": 0.5
+  },
+  {
+   "id": "L8",
+   "say": "Offload plans your revision around your rota, and tests you on your notes.",
+   "after": 0.4
+  },
+  {
+   "id": "L9",
+   "say": "You just click the link in your calendar.",
+   "after": 0.9
   }
  ]
 }

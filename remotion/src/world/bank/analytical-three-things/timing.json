@@ -1,476 +1,517 @@
 {
- "duration": 27.108,
+ "duration": 38.616,
  "lines": [
   {
    "id": "L1",
-   "say": "Three things to do this week if you've got January exams.",
+   "say": "January exams? Three things to do this week.",
    "start": 0.15,
-   "end": 3.287,
+   "end": 3.401,
    "words": [
     {
-     "text": "Three",
+     "text": "January",
      "start": 0.15,
-     "end": 0.478
+     "end": 0.859
+    },
+    {
+     "text": "exams?",
+     "start": 0.859,
+     "end": 1.41
+    },
+    {
+     "text": "Three",
+     "start": 1.73,
+     "end": 2.064
     },
     {
      "text": "things",
-     "start": 0.478,
-     "end": 0.852
+     "start": 2.064,
+     "end": 2.446
     },
     {
      "text": "to",
-     "start": 0.852,
-     "end": 1.04
+     "start": 2.446,
+     "end": 2.637
     },
     {
      "text": "do",
-     "start": 1.04,
-     "end": 1.227
+     "start": 2.637,
+     "end": 2.828
     },
     {
      "text": "this",
-     "start": 1.227,
-     "end": 1.508
+     "start": 2.828,
+     "end": 3.114
     },
     {
-     "text": "week",
-     "start": 1.508,
-     "end": 1.789
-    },
-    {
-     "text": "if",
-     "start": 1.789,
-     "end": 1.976
-    },
-    {
-     "text": "you've",
-     "start": 1.976,
-     "end": 2.304
-    },
-    {
-     "text": "got",
-     "start": 2.304,
-     "end": 2.538
-    },
-    {
-     "text": "January",
-     "start": 2.538,
-     "end": 2.96
-    },
-    {
-     "text": "exams.",
-     "start": 2.96,
-     "end": 3.287
+     "text": "week.",
+     "start": 3.114,
+     "end": 3.401
     }
    ]
   },
   {
    "id": "L2",
-   "say": "One. Close the solution and explain the method out loud. If you can't explain it, you can't use it.",
-   "start": 3.537,
-   "end": 8.561,
+   "say": "One. Close the solution, and explain the method out loud.",
+   "start": 3.801,
+   "end": 7.779,
    "words": [
     {
      "text": "One.",
-     "start": 3.537,
-     "end": 4.067
+     "start": 3.801,
+     "end": 5.381
     },
     {
      "text": "Close",
-     "start": 4.137,
-     "end": 4.393
+     "start": 5.721,
+     "end": 6.147
     },
     {
      "text": "the",
-     "start": 4.393,
-     "end": 4.575
+     "start": 6.147,
+     "end": 6.452
     },
     {
-     "text": "solution",
-     "start": 4.575,
-     "end": 4.94
+     "text": "solution,",
+     "start": 6.452,
+     "end": 7.061
     },
     {
      "text": "and",
-     "start": 4.94,
-     "end": 5.123
+     "start": 7.131,
+     "end": 7.216
     },
     {
      "text": "explain",
-     "start": 5.123,
-     "end": 5.451
+     "start": 7.216,
+     "end": 7.37
     },
     {
      "text": "the",
-     "start": 5.451,
-     "end": 5.634
+     "start": 7.37,
+     "end": 7.455
     },
     {
      "text": "method",
-     "start": 5.634,
-     "end": 5.926
+     "start": 7.455,
+     "end": 7.591
     },
     {
      "text": "out",
-     "start": 5.926,
-     "end": 6.108
+     "start": 7.591,
+     "end": 7.677
     },
     {
      "text": "loud.",
-     "start": 6.108,
-     "end": 6.327
-    },
-    {
-     "text": "If",
-     "start": 6.647,
-     "end": 6.793
-    },
-    {
-     "text": "you",
-     "start": 6.793,
-     "end": 6.975
-    },
-    {
-     "text": "can't",
-     "start": 6.975,
-     "end": 7.194
-    },
-    {
-     "text": "explain",
-     "start": 7.194,
-     "end": 7.522
-    },
-    {
-     "text": "it,",
-     "start": 7.522,
-     "end": 7.667
-    },
-    {
-     "text": "you",
-     "start": 7.757,
-     "end": 7.958
-    },
-    {
-     "text": "can't",
-     "start": 7.958,
-     "end": 8.2
-    },
-    {
-     "text": "use",
-     "start": 8.2,
-     "end": 8.4
-    },
-    {
-     "text": "it.",
-     "start": 8.4,
-     "end": 8.561
+     "start": 7.677,
+     "end": 7.779
     }
    ]
   },
   {
    "id": "L3",
-   "say": "Two. Mix your topics. The exam won't tell you which method it wants.",
-   "start": 8.961,
-   "end": 12.37,
+   "say": "Two. Mix your topics. The exam won't say which method it wants.",
+   "start": 8.379,
+   "end": 12.731,
    "words": [
     {
      "text": "Two.",
-     "start": 8.961,
-     "end": 10.091
+     "start": 8.379,
+     "end": 8.749
     },
     {
      "text": "Mix",
-     "start": 10.341,
-     "end": 10.502
+     "start": 8.839,
+     "end": 9.115
     },
     {
      "text": "your",
-     "start": 10.502,
-     "end": 10.694
+     "start": 9.115,
+     "end": 9.447
     },
     {
      "text": "topics.",
-     "start": 10.694,
-     "end": 10.951
+     "start": 9.447,
+     "end": 9.889
     },
     {
      "text": "The",
-     "start": 11.001,
-     "end": 11.128
+     "start": 10.269,
+     "end": 10.526
     },
     {
      "text": "exam",
-     "start": 11.128,
-     "end": 11.28
+     "start": 10.526,
+     "end": 10.833
     },
     {
      "text": "won't",
-     "start": 11.28,
-     "end": 11.432
+     "start": 10.833,
+     "end": 11.141
     },
     {
-     "text": "tell",
-     "start": 11.432,
-     "end": 11.584
-    },
-    {
-     "text": "you",
-     "start": 11.584,
-     "end": 11.711
+     "text": "say",
+     "start": 11.141,
+     "end": 11.397
     },
     {
      "text": "which",
-     "start": 11.711,
-     "end": 11.888
+     "start": 11.397,
+     "end": 11.756
     },
     {
      "text": "method",
-     "start": 11.888,
-     "end": 12.091
+     "start": 11.756,
+     "end": 12.167
     },
     {
      "text": "it",
-     "start": 12.091,
-     "end": 12.192
+     "start": 12.167,
+     "end": 12.372
     },
     {
      "text": "wants.",
-     "start": 12.192,
-     "end": 12.37
+     "start": 12.372,
+     "end": 12.731
     }
    ]
   },
   {
    "id": "L4",
-   "say": "Three. Go back to the topic you did first. That's the one you've forgotten.",
-   "start": 12.77,
-   "end": 16.297,
+   "say": "Three. Go back to the first topic you did. That's the one you've forgotten.",
+   "start": 13.331,
+   "end": 17.693,
    "words": [
     {
      "text": "Three.",
-     "start": 12.77,
-     "end": 14.76
+     "start": 13.331,
+     "end": 14.541
     },
     {
      "text": "Go",
-     "start": 14.98,
-     "end": 15.041
+     "start": 14.611,
+     "end": 14.716
     },
     {
      "text": "back",
-     "start": 15.041,
-     "end": 15.133
+     "start": 14.716,
+     "end": 14.874
     },
     {
      "text": "to",
-     "start": 15.133,
-     "end": 15.195
+     "start": 14.874,
+     "end": 14.979
     },
     {
      "text": "the",
-     "start": 15.195,
-     "end": 15.271
+     "start": 14.979,
+     "end": 15.11
+    },
+    {
+     "text": "first",
+     "start": 15.11,
+     "end": 15.294
     },
     {
      "text": "topic",
-     "start": 15.271,
-     "end": 15.379
+     "start": 15.294,
+     "end": 15.478
     },
     {
      "text": "you",
-     "start": 15.379,
-     "end": 15.455
+     "start": 15.478,
+     "end": 15.61
     },
     {
-     "text": "did",
-     "start": 15.455,
-     "end": 15.532
-    },
-    {
-     "text": "first.",
-     "start": 15.532,
-     "end": 15.64
+     "text": "did.",
+     "start": 15.61,
+     "end": 15.741
     },
     {
      "text": "That's",
-     "start": 15.69,
-     "end": 15.811
+     "start": 16.151,
+     "end": 16.459
     },
     {
      "text": "the",
-     "start": 15.811,
-     "end": 15.898
+     "start": 16.459,
+     "end": 16.68
     },
     {
      "text": "one",
-     "start": 15.898,
-     "end": 15.985
+     "start": 16.68,
+     "end": 16.9
     },
     {
      "text": "you've",
-     "start": 15.985,
-     "end": 16.106
+     "start": 16.9,
+     "end": 17.208
     },
     {
      "text": "forgotten.",
-     "start": 16.106,
-     "end": 16.297
+     "start": 17.208,
+     "end": 17.693
     }
    ]
   },
   {
    "id": "L5",
-   "say": "Offload does number one for you. It makes you explain each method in your own words, from your own notes.",
-   "start": 16.797,
-   "end": 21.855,
+   "say": "Offload does number one: it makes you explain each method, from your notes.",
+   "start": 18.293,
+   "end": 23.032,
    "words": [
     {
      "text": "Offload",
-     "start": 16.797,
-     "end": 17.138
+     "start": 18.293,
+     "end": 18.753
     },
     {
      "text": "does",
-     "start": 17.138,
-     "end": 17.366
+     "start": 18.753,
+     "end": 19.059
     },
     {
      "text": "number",
-     "start": 17.366,
-     "end": 17.669
+     "start": 19.059,
+     "end": 19.468
     },
     {
-     "text": "one",
-     "start": 17.669,
-     "end": 17.858
+     "text": "one:",
+     "start": 19.468,
+     "end": 19.723
     },
     {
-     "text": "for",
-     "start": 17.858,
-     "end": 18.048
-    },
-    {
-     "text": "you.",
-     "start": 18.048,
-     "end": 18.237
-    },
-    {
-     "text": "It",
-     "start": 18.527,
-     "end": 18.68
+     "text": "it",
+     "start": 20.103,
+     "end": 20.281
     },
     {
      "text": "makes",
-     "start": 18.68,
-     "end": 18.948
+     "start": 20.281,
+     "end": 20.594
     },
     {
      "text": "you",
-     "start": 18.948,
-     "end": 19.139
+     "start": 20.594,
+     "end": 20.817
     },
     {
      "text": "explain",
-     "start": 19.139,
-     "end": 19.482
+     "start": 20.817,
+     "end": 21.218
     },
     {
      "text": "each",
-     "start": 19.482,
-     "end": 19.712
+     "start": 21.218,
+     "end": 21.486
     },
     {
-     "text": "method",
-     "start": 19.712,
-     "end": 20.017
-    },
-    {
-     "text": "in",
-     "start": 20.017,
-     "end": 20.17
-    },
-    {
-     "text": "your",
-     "start": 20.17,
-     "end": 20.399
-    },
-    {
-     "text": "own",
-     "start": 20.399,
-     "end": 20.59
-    },
-    {
-     "text": "words,",
-     "start": 20.59,
-     "end": 20.857
+     "text": "method,",
+     "start": 21.486,
+     "end": 21.843
     },
     {
      "text": "from",
-     "start": 20.977,
-     "end": 21.197
+     "start": 22.073,
+     "end": 22.376
     },
     {
      "text": "your",
-     "start": 21.197,
-     "end": 21.416
-    },
-    {
-     "text": "own",
-     "start": 21.416,
-     "end": 21.599
+     "start": 22.376,
+     "end": 22.679
     },
     {
      "text": "notes.",
-     "start": 21.599,
-     "end": 21.855
+     "start": 22.679,
+     "end": 23.032
     }
    ]
   },
   {
    "id": "L6",
-   "say": "Number three, honestly, is the one nobody does.",
-   "start": 22.355,
-   "end": 24.908,
+   "say": "And number three? That's the one nobody does.",
+   "start": 23.632,
+   "end": 26.598,
    "words": [
     {
-     "text": "Number",
-     "start": 22.355,
-     "end": 22.74
+     "text": "And",
+     "start": 23.632,
+     "end": 23.864
     },
     {
-     "text": "three,",
-     "start": 22.74,
-     "end": 23.077
+     "text": "number",
+     "start": 23.864,
+     "end": 24.236
     },
     {
-     "text": "honestly,",
-     "start": 23.077,
-     "end": 23.559
+     "text": "three?",
+     "start": 24.236,
+     "end": 24.562
     },
     {
-     "text": "is",
-     "start": 23.559,
-     "end": 23.752
+     "text": "That's",
+     "start": 24.862,
+     "end": 25.254
     },
     {
      "text": "the",
-     "start": 23.752,
-     "end": 23.993
+     "start": 25.254,
+     "end": 25.534
     },
     {
      "text": "one",
-     "start": 23.993,
-     "end": 24.234
+     "start": 25.534,
+     "end": 25.814
     },
     {
      "text": "nobody",
-     "start": 24.234,
-     "end": 24.619
+     "start": 25.814,
+     "end": 26.262
     },
     {
      "text": "does.",
-     "start": 24.619,
-     "end": 24.908
+     "start": 26.262,
+     "end": 26.598
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Offload does that one too. It brings old topics back before you forget.",
+   "start": 27.198,
+   "end": 31.897,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 27.198,
+     "end": 27.686
+    },
+    {
+     "text": "does",
+     "start": 27.686,
+     "end": 28.011
+    },
+    {
+     "text": "that",
+     "start": 28.011,
+     "end": 28.336
+    },
+    {
+     "text": "one",
+     "start": 28.336,
+     "end": 28.607
+    },
+    {
+     "text": "too.",
+     "start": 28.607,
+     "end": 28.878
+    },
+    {
+     "text": "It",
+     "start": 29.258,
+     "end": 29.461
+    },
+    {
+     "text": "brings",
+     "start": 29.461,
+     "end": 29.867
+    },
+    {
+     "text": "old",
+     "start": 29.867,
+     "end": 30.12
+    },
+    {
+     "text": "topics",
+     "start": 30.12,
+     "end": 30.526
+    },
+    {
+     "text": "back",
+     "start": 30.526,
+     "end": 30.831
+    },
+    {
+     "text": "before",
+     "start": 30.831,
+     "end": 31.237
+    },
+    {
+     "text": "you",
+     "start": 31.237,
+     "end": 31.491
+    },
+    {
+     "text": "forget.",
+     "start": 31.491,
+     "end": 31.897
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "It plans every session. You just click the link in your calendar.",
+   "start": 32.297,
+   "end": 36.616,
+   "words": [
+    {
+     "text": "It",
+     "start": 32.297,
+     "end": 32.538
+    },
+    {
+     "text": "plans",
+     "start": 32.538,
+     "end": 32.961
+    },
+    {
+     "text": "every",
+     "start": 32.961,
+     "end": 33.383
+    },
+    {
+     "text": "session.",
+     "start": 33.383,
+     "end": 33.927
+    },
+    {
+     "text": "You",
+     "start": 34.307,
+     "end": 34.542
+    },
+    {
+     "text": "just",
+     "start": 34.542,
+     "end": 34.825
+    },
+    {
+     "text": "click",
+     "start": 34.825,
+     "end": 35.155
+    },
+    {
+     "text": "the",
+     "start": 35.155,
+     "end": 35.391
+    },
+    {
+     "text": "link",
+     "start": 35.391,
+     "end": 35.673
+    },
+    {
+     "text": "in",
+     "start": 35.673,
+     "end": 35.862
+    },
+    {
+     "text": "your",
+     "start": 35.862,
+     "end": 36.145
+    },
+    {
+     "text": "calendar.",
+     "start": 36.145,
+     "end": 36.616
     }
    ]
   }

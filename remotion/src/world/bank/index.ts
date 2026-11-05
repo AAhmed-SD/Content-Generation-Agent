@@ -6,10 +6,14 @@ import s_analytical_chatgpt_v2 from "./analytical-chatgpt-v2/spec.json";
 import t_analytical_chatgpt_v2 from "./analytical-chatgpt-v2/timing.json";
 import s_analytical_dialog from "./analytical-dialog/spec.json";
 import t_analytical_dialog from "./analytical-dialog/timing.json";
+import s_analytical_evidence from "./analytical-evidence/spec.json";
+import t_analytical_evidence from "./analytical-evidence/timing.json";
 import s_analytical_forgetting from "./analytical-forgetting/spec.json";
 import t_analytical_forgetting from "./analytical-forgetting/timing.json";
 import s_analytical_haskell from "./analytical-haskell/spec.json";
 import t_analytical_haskell from "./analytical-haskell/timing.json";
+import s_analytical_jail_flashcards from "./analytical-jail-flashcards/spec.json";
+import t_analytical_jail_flashcards from "./analytical-jail-flashcards/timing.json";
 import s_analytical_kanban from "./analytical-kanban/spec.json";
 import t_analytical_kanban from "./analytical-kanban/timing.json";
 import s_analytical_spot_mistake from "./analytical-spot-mistake/spec.json";
@@ -22,12 +26,16 @@ import s_analytical_three_things from "./analytical-three-things/spec.json";
 import t_analytical_three_things from "./analytical-three-things/timing.json";
 import s_analytical_tier_list from "./analytical-tier-list/spec.json";
 import t_analytical_tier_list from "./analytical-tier-list/timing.json";
+import s_clinical_blockfall from "./clinical-blockfall/spec.json";
+import t_clinical_blockfall from "./clinical-blockfall/timing.json";
 import s_clinical_departures from "./clinical-departures/spec.json";
 import t_clinical_departures from "./clinical-departures/timing.json";
 import s_clinical_endocrine from "./clinical-endocrine/spec.json";
 import t_clinical_endocrine from "./clinical-endocrine/timing.json";
 import s_clinical_inbox from "./clinical-inbox/spec.json";
 import t_clinical_inbox from "./clinical-inbox/timing.json";
+import s_clinical_jail_todo from "./clinical-jail-todo/spec.json";
+import t_clinical_jail_todo from "./clinical-jail-todo/timing.json";
 import s_clinical_next_question from "./clinical-next-question/spec.json";
 import t_clinical_next_question from "./clinical-next-question/timing.json";
 import s_clinical_next_question_v2 from "./clinical-next-question-v2/spec.json";
@@ -60,10 +68,14 @@ import s_gcse_exampaper from "./gcse-exampaper/spec.json";
 import t_gcse_exampaper from "./gcse-exampaper/timing.json";
 import s_gcse_final_tips from "./gcse-final-tips/spec.json";
 import t_gcse_final_tips from "./gcse-final-tips/timing.json";
+import s_gcse_jail_planner from "./gcse-jail-planner/spec.json";
+import t_gcse_jail_planner from "./gcse-jail-planner/timing.json";
 import s_gcse_missing from "./gcse-missing/spec.json";
 import t_gcse_missing from "./gcse-missing/timing.json";
 import s_gcse_myth_fact from "./gcse-myth-fact/spec.json";
 import t_gcse_myth_fact from "./gcse-myth-fact/timing.json";
+import s_gcse_split from "./gcse-split/spec.json";
+import t_gcse_split from "./gcse-split/timing.json";
 import s_gcse_weather from "./gcse-weather/spec.json";
 import t_gcse_weather from "./gcse-weather/timing.json";
 import s_gcse_which_one from "./gcse-which-one/spec.json";
@@ -74,6 +86,8 @@ import s_time_afternoon from "./time-afternoon/spec.json";
 import t_time_afternoon from "./time-afternoon/timing.json";
 import s_time_battery from "./time-battery/spec.json";
 import t_time_battery from "./time-battery/timing.json";
+import s_time_jail_notes from "./time-jail-notes/spec.json";
+import t_time_jail_notes from "./time-jail-notes/timing.json";
 import s_time_lockscreen from "./time-lockscreen/spec.json";
 import t_time_lockscreen from "./time-lockscreen/timing.json";
 import s_time_night_before from "./time-night-before/spec.json";
@@ -90,6 +104,8 @@ import s_time_which_wrecks from "./time-which-wrecks/spec.json";
 import t_time_which_wrecks from "./time-which-wrecks/timing.json";
 import s_time_which_wrecks_v2 from "./time-which-wrecks-v2/spec.json";
 import t_time_which_wrecks_v2 from "./time-which-wrecks-v2/timing.json";
+import s_time_wrapped from "./time-wrapped/spec.json";
+import t_time_wrapped from "./time-wrapped/timing.json";
 import s_time_zero_v2 from "./time-zero-v2/spec.json";
 import t_time_zero_v2 from "./time-zero-v2/timing.json";
 
@@ -97,17 +113,21 @@ export const BANK = [
   { id: "analytical-chatgpt", spec: s_analytical_chatgpt as AnySpec, timing: t_analytical_chatgpt },
   { id: "analytical-chatgpt-v2", spec: s_analytical_chatgpt_v2 as AnySpec, timing: t_analytical_chatgpt_v2 },
   { id: "analytical-dialog", spec: s_analytical_dialog as AnySpec, timing: t_analytical_dialog },
+  { id: "analytical-evidence", spec: s_analytical_evidence as AnySpec, timing: t_analytical_evidence },
   { id: "analytical-forgetting", spec: s_analytical_forgetting as AnySpec, timing: t_analytical_forgetting },
   { id: "analytical-haskell", spec: s_analytical_haskell as AnySpec, timing: t_analytical_haskell },
+  { id: "analytical-jail-flashcards", spec: s_analytical_jail_flashcards as AnySpec, timing: t_analytical_jail_flashcards },
   { id: "analytical-kanban", spec: s_analytical_kanban as AnySpec, timing: t_analytical_kanban },
   { id: "analytical-spot-mistake", spec: s_analytical_spot_mistake as AnySpec, timing: t_analytical_spot_mistake },
   { id: "analytical-spot-mistake-v2", spec: s_analytical_spot_mistake_v2 as AnySpec, timing: t_analytical_spot_mistake_v2 },
   { id: "analytical-terms", spec: s_analytical_terms as AnySpec, timing: t_analytical_terms },
   { id: "analytical-three-things", spec: s_analytical_three_things as AnySpec, timing: t_analytical_three_things },
   { id: "analytical-tier-list", spec: s_analytical_tier_list as AnySpec, timing: t_analytical_tier_list },
+  { id: "clinical-blockfall", spec: s_clinical_blockfall as AnySpec, timing: t_clinical_blockfall },
   { id: "clinical-departures", spec: s_clinical_departures as AnySpec, timing: t_clinical_departures },
   { id: "clinical-endocrine", spec: s_clinical_endocrine as AnySpec, timing: t_clinical_endocrine },
   { id: "clinical-inbox", spec: s_clinical_inbox as AnySpec, timing: t_clinical_inbox },
+  { id: "clinical-jail-todo", spec: s_clinical_jail_todo as AnySpec, timing: t_clinical_jail_todo },
   { id: "clinical-next-question", spec: s_clinical_next_question as AnySpec, timing: t_clinical_next_question },
   { id: "clinical-next-question-v2", spec: s_clinical_next_question_v2 as AnySpec, timing: t_clinical_next_question_v2 },
   { id: "clinical-placement-poll", spec: s_clinical_placement_poll as AnySpec, timing: t_clinical_placement_poll },
@@ -124,13 +144,16 @@ export const BANK = [
   { id: "gcse-deck", spec: s_gcse_deck as AnySpec, timing: t_gcse_deck },
   { id: "gcse-exampaper", spec: s_gcse_exampaper as AnySpec, timing: t_gcse_exampaper },
   { id: "gcse-final-tips", spec: s_gcse_final_tips as AnySpec, timing: t_gcse_final_tips },
+  { id: "gcse-jail-planner", spec: s_gcse_jail_planner as AnySpec, timing: t_gcse_jail_planner },
   { id: "gcse-missing", spec: s_gcse_missing as AnySpec, timing: t_gcse_missing },
   { id: "gcse-myth-fact", spec: s_gcse_myth_fact as AnySpec, timing: t_gcse_myth_fact },
+  { id: "gcse-split", spec: s_gcse_split as AnySpec, timing: t_gcse_split },
   { id: "gcse-weather", spec: s_gcse_weather as AnySpec, timing: t_gcse_weather },
   { id: "gcse-which-one", spec: s_gcse_which_one as AnySpec, timing: t_gcse_which_one },
   { id: "gcse-which-one-v2", spec: s_gcse_which_one_v2 as AnySpec, timing: t_gcse_which_one_v2 },
   { id: "time-afternoon", spec: s_time_afternoon as AnySpec, timing: t_time_afternoon },
   { id: "time-battery", spec: s_time_battery as AnySpec, timing: t_time_battery },
+  { id: "time-jail-notes", spec: s_time_jail_notes as AnySpec, timing: t_time_jail_notes },
   { id: "time-lockscreen", spec: s_time_lockscreen as AnySpec, timing: t_time_lockscreen },
   { id: "time-night-before", spec: s_time_night_before as AnySpec, timing: t_time_night_before },
   { id: "time-pov", spec: s_time_pov as AnySpec, timing: t_time_pov },
@@ -139,5 +162,6 @@ export const BANK = [
   { id: "time-search", spec: s_time_search as AnySpec, timing: t_time_search },
   { id: "time-which-wrecks", spec: s_time_which_wrecks as AnySpec, timing: t_time_which_wrecks },
   { id: "time-which-wrecks-v2", spec: s_time_which_wrecks_v2 as AnySpec, timing: t_time_which_wrecks_v2 },
+  { id: "time-wrapped", spec: s_time_wrapped as AnySpec, timing: t_time_wrapped },
   { id: "time-zero-v2", spec: s_time_zero_v2 as AnySpec, timing: t_time_zero_v2 },
 ];

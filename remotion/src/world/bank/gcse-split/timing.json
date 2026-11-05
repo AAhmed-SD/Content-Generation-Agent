@@ -1,0 +1,406 @@
+{
+ "duration": 37.081,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Revision. Expectation versus reality.",
+   "start": 0.15,
+   "end": 3.502,
+   "words": [
+    {
+     "text": "Revision.",
+     "start": 0.15,
+     "end": 0.81
+    },
+    {
+     "text": "Expectation",
+     "start": 1.08,
+     "end": 2.129
+    },
+    {
+     "text": "versus",
+     "start": 2.129,
+     "end": 2.775
+    },
+    {
+     "text": "reality.",
+     "start": 2.775,
+     "end": 3.502
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Expectation: two hours of biology. Reality: colour-coding the timetable.",
+   "start": 3.902,
+   "end": 9.584,
+   "words": [
+    {
+     "text": "Expectation:",
+     "start": 3.902,
+     "end": 4.812
+    },
+    {
+     "text": "two",
+     "start": 4.992,
+     "end": 5.3
+    },
+    {
+     "text": "hours",
+     "start": 5.3,
+     "end": 5.731
+    },
+    {
+     "text": "of",
+     "start": 5.731,
+     "end": 5.977
+    },
+    {
+     "text": "biology.",
+     "start": 5.977,
+     "end": 6.532
+    },
+    {
+     "text": "Reality:",
+     "start": 7.002,
+     "end": 7.692
+    },
+    {
+     "text": "colour-coding",
+     "start": 7.932,
+     "end": 8.703
+    },
+    {
+     "text": "the",
+     "start": 8.703,
+     "end": 8.978
+    },
+    {
+     "text": "timetable.",
+     "start": 8.978,
+     "end": 9.584
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Expectation: phone in another room. Reality: phone under the textbook.",
+   "start": 10.084,
+   "end": 15.32,
+   "words": [
+    {
+     "text": "Expectation:",
+     "start": 10.084,
+     "end": 11.004
+    },
+    {
+     "text": "phone",
+     "start": 11.254,
+     "end": 11.626
+    },
+    {
+     "text": "in",
+     "start": 11.626,
+     "end": 11.838
+    },
+    {
+     "text": "another",
+     "start": 11.838,
+     "end": 12.316
+    },
+    {
+     "text": "room.",
+     "start": 12.316,
+     "end": 12.634
+    },
+    {
+     "text": "Reality:",
+     "start": 13.054,
+     "end": 13.744
+    },
+    {
+     "text": "phone",
+     "start": 13.934,
+     "end": 14.269
+    },
+    {
+     "text": "under",
+     "start": 14.269,
+     "end": 14.603
+    },
+    {
+     "text": "the",
+     "start": 14.603,
+     "end": 14.842
+    },
+    {
+     "text": "textbook.",
+     "start": 14.842,
+     "end": 15.32
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Expectation: start at four. Reality: start at nine, panicking.",
+   "start": 15.82,
+   "end": 20.611,
+   "words": [
+    {
+     "text": "Expectation:",
+     "start": 15.82,
+     "end": 16.71
+    },
+    {
+     "text": "start",
+     "start": 16.85,
+     "end": 17.052
+    },
+    {
+     "text": "at",
+     "start": 17.052,
+     "end": 17.167
+    },
+    {
+     "text": "four.",
+     "start": 17.167,
+     "end": 17.34
+    },
+    {
+     "text": "Reality:",
+     "start": 17.46,
+     "end": 17.82
+    },
+    {
+     "text": "start",
+     "start": 18.26,
+     "end": 18.552
+    },
+    {
+     "text": "at",
+     "start": 18.552,
+     "end": 18.719
+    },
+    {
+     "text": "nine,",
+     "start": 18.719,
+     "end": 18.97
+    },
+    {
+     "text": "panicking.",
+     "start": 19.05,
+     "end": 20.611
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "The fix isn't willpower. It's a plan that moves when reality happens.",
+   "start": 21.211,
+   "end": 26.277,
+   "words": [
+    {
+     "text": "The",
+     "start": 21.211,
+     "end": 21.533
+    },
+    {
+     "text": "fix",
+     "start": 21.533,
+     "end": 21.856
+    },
+    {
+     "text": "isn't",
+     "start": 21.856,
+     "end": 22.242
+    },
+    {
+     "text": "willpower.",
+     "start": 22.242,
+     "end": 22.951
+    },
+    {
+     "text": "It's",
+     "start": 23.371,
+     "end": 23.656
+    },
+    {
+     "text": "a",
+     "start": 23.656,
+     "end": 23.827
+    },
+    {
+     "text": "plan",
+     "start": 23.827,
+     "end": 24.169
+    },
+    {
+     "text": "that",
+     "start": 24.169,
+     "end": 24.511
+    },
+    {
+     "text": "moves",
+     "start": 24.511,
+     "end": 24.91
+    },
+    {
+     "text": "when",
+     "start": 24.91,
+     "end": 25.252
+    },
+    {
+     "text": "reality",
+     "start": 25.252,
+     "end": 25.765
+    },
+    {
+     "text": "happens.",
+     "start": 25.765,
+     "end": 26.277
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload builds that plan from your exam dates, and tests you as you go.",
+   "start": 26.777,
+   "end": 31.55,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 26.777,
+     "end": 27.234
+    },
+    {
+     "text": "builds",
+     "start": 27.234,
+     "end": 27.64
+    },
+    {
+     "text": "that",
+     "start": 27.64,
+     "end": 27.944
+    },
+    {
+     "text": "plan",
+     "start": 27.944,
+     "end": 28.249
+    },
+    {
+     "text": "from",
+     "start": 28.249,
+     "end": 28.553
+    },
+    {
+     "text": "your",
+     "start": 28.553,
+     "end": 28.858
+    },
+    {
+     "text": "exam",
+     "start": 28.858,
+     "end": 29.162
+    },
+    {
+     "text": "dates,",
+     "start": 29.162,
+     "end": 29.517
+    },
+    {
+     "text": "and",
+     "start": 29.867,
+     "end": 30.148
+    },
+    {
+     "text": "tests",
+     "start": 30.148,
+     "end": 30.541
+    },
+    {
+     "text": "you",
+     "start": 30.541,
+     "end": 30.821
+    },
+    {
+     "text": "as",
+     "start": 30.821,
+     "end": 31.045
+    },
+    {
+     "text": "you",
+     "start": 31.045,
+     "end": 31.326
+    },
+    {
+     "text": "go.",
+     "start": 31.326,
+     "end": 31.55
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 31.95,
+   "end": 35.18,
+   "words": [
+    {
+     "text": "You",
+     "start": 31.95,
+     "end": 32.203
+    },
+    {
+     "text": "just",
+     "start": 32.203,
+     "end": 32.505
+    },
+    {
+     "text": "click",
+     "start": 32.505,
+     "end": 32.859
+    },
+    {
+     "text": "the",
+     "start": 32.859,
+     "end": 33.111
+    },
+    {
+     "text": "link",
+     "start": 33.111,
+     "end": 33.414
+    },
+    {
+     "text": "in",
+     "start": 33.414,
+     "end": 33.616
+    },
+    {
+     "text": "your",
+     "start": 33.616,
+     "end": 33.919
+    },
+    {
+     "text": "calendar",
+     "start": 33.919,
+     "end": 34.423
+    },
+    {
+     "text": "and",
+     "start": 34.423,
+     "end": 34.676
+    },
+    {
+     "text": "show",
+     "start": 34.676,
+     "end": 34.979
+    },
+    {
+     "text": "up.",
+     "start": 34.979,
+     "end": 35.18
+    }
+   ]
+  }
+ ]
+}

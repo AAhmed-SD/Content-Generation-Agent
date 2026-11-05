@@ -36,5 +36,75 @@
   "subject": "Today's plan",
   "preview": "One block before your shift. Everything else moved.",
   "at": "L7"
+ },
+ "flood": {
+  "at": "L5$",
+  "every": 0.09,
+  "items": [
+   {
+    "from": "Placement office",
+    "subject": "Rota updated (again)"
+   },
+   {
+    "from": "Module lead",
+    "subject": "Re: coursework"
+   },
+   {
+    "from": "Library",
+    "subject": "Loan overdue"
+   },
+   {
+    "from": "Year rep",
+    "subject": "Survey closes tonight"
+   },
+   {
+    "from": "Timetabling",
+    "subject": "Room change"
+   },
+   {
+    "from": "Clinical skills",
+    "subject": "Booking reminder"
+   },
+   {
+    "from": "Students' union",
+    "subject": "This week's events"
+   },
+   {
+    "from": "Module lead",
+    "subject": "Re: Re: coursework"
+   },
+   {
+    "from": "Placement office",
+    "subject": "Shift swap request"
+   },
+   {
+    "from": "IT services",
+    "subject": "Password expires"
+   },
+   {
+    "from": "Wellbeing",
+    "subject": "Drop-in sessions"
+   },
+   {
+    "from": "Timetabling",
+    "subject": "Teaching cancelled"
+   },
+   {
+    "from": "Year rep",
+    "subject": "Group chat link"
+   },
+   {
+    "from": "Library",
+    "subject": "Hold ready"
+   },
+   {
+    "from": "Module lead",
+    "subject": "Slides uploaded"
+   },
+   {
+    "from": "Placement office",
+    "subject": "Sign-off deadline"
+   }
+  ]
  }
 }

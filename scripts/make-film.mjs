@@ -20,6 +20,7 @@ const given = [
   ["platforms.md", "Platforms. The trial sentence is unset. Do not invent one. No link. No price."],
   ["goals.md", "Goals. One job for the film."],
   ["scripting.md", "Scripting. Who narrates each account, the shape, the words, the endings."],
+  ["hook-styles.md", "Hook styles. Pick one, not the last one this account used. Sharp styles aim at habits, never people."],
   ["niches/clinical.md", "offload.clinical"],
   ["niches/analytical.md", "offload.analytical"],
   ["niches/mentalhealth.md", "offload.mentalhealth"],

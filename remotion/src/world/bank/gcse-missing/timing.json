@@ -1,218 +1,324 @@
 {
- "duration": 16.747,
+ "duration": 26.046,
  "lines": [
   {
    "id": "L1",
-   "say": "Missing. One revision timetable.",
+   "say": "Missing: one revision timetable.",
    "start": 0.15,
-   "end": 2.471,
+   "end": 2.753,
    "words": [
     {
-     "text": "Missing.",
+     "text": "Missing:",
      "start": 0.15,
      "end": 0.68
     },
     {
-     "text": "One",
-     "start": 0.75,
-     "end": 1.081
+     "text": "one",
+     "start": 0.85,
+     "end": 1.216
     },
     {
      "text": "revision",
-     "start": 1.081,
-     "end": 1.743
+     "start": 1.216,
+     "end": 1.948
     },
     {
      "text": "timetable.",
-     "start": 1.743,
-     "end": 2.471
+     "start": 1.948,
+     "end": 2.753
     }
    ]
   },
   {
    "id": "L2",
    "say": "Last seen: Sunday night.",
-   "start": 2.731,
-   "end": 4.533,
+   "start": 3.153,
+   "end": 5.048,
    "words": [
     {
      "text": "Last",
-     "start": 2.731,
-     "end": 3.491
+     "start": 3.153,
+     "end": 3.523
     },
     {
      "text": "seen:",
-     "start": 3.491,
-     "end": 4.251
+     "start": 3.523,
+     "end": 3.893
     },
     {
      "text": "Sunday",
-     "start": 4.311,
-     "end": 4.43
+     "start": 4.043,
+     "end": 4.579
     },
     {
      "text": "night.",
-     "start": 4.43,
-     "end": 4.533
+     "start": 4.579,
+     "end": 5.048
     }
    ]
   },
   {
    "id": "L3",
-   "say": "Distinguishing features: seven colours, never used.",
-   "start": 4.793,
-   "end": 7.905,
+   "say": "Seven colours. Never used.",
+   "start": 5.548,
+   "end": 7.755,
    "words": [
     {
-     "text": "Distinguishing",
-     "start": 4.793,
-     "end": 5.353
+     "text": "Seven",
+     "start": 5.548,
+     "end": 5.973
     },
     {
-     "text": "features:",
-     "start": 5.353,
-     "end": 5.703
+     "text": "colours.",
+     "start": 5.973,
+     "end": 6.518
     },
     {
-     "text": "seven",
-     "start": 5.773,
-     "end": 5.9
-    },
-    {
-     "text": "colours,",
-     "start": 5.9,
-     "end": 6.063
-    },
-    {
-     "text": "never",
-     "start": 6.163,
-     "end": 7.101
+     "text": "Never",
+     "start": 6.758,
+     "end": 7.295
     },
     {
      "text": "used.",
-     "start": 7.101,
-     "end": 7.905
+     "start": 7.295,
+     "end": 7.755
     }
    ]
   },
   {
    "id": "L4",
    "say": "Answers to: I'll start tomorrow.",
-   "start": 8.165,
-   "end": 10.241,
+   "start": 8.255,
+   "end": 10.709,
    "words": [
     {
      "text": "Answers",
-     "start": 8.165,
-     "end": 9.072
+     "start": 8.255,
+     "end": 8.871
     },
     {
      "text": "to:",
-     "start": 9.072,
-     "end": 9.475
+     "start": 8.871,
+     "end": 9.145
     },
     {
      "text": "I'll",
-     "start": 9.545,
-     "end": 9.703
+     "start": 9.375,
+     "end": 9.678
     },
     {
      "text": "start",
-     "start": 9.703,
-     "end": 9.924
+     "start": 9.678,
+     "end": 10.103
     },
     {
      "text": "tomorrow.",
-     "start": 9.924,
-     "end": 10.241
+     "start": 10.103,
+     "end": 10.709
     }
    ]
   },
   {
    "id": "L5",
-   "say": "If found, don't bother. The app makes the plan from your spec and your exam dates.",
-   "start": 10.641,
-   "end": 15.047,
+   "say": "If found, don't bother. Offload makes the plan from your spec and your exam dates.",
+   "start": 11.309,
+   "end": 16.785,
    "words": [
     {
      "text": "If",
-     "start": 10.641,
-     "end": 11.07
+     "start": 11.309,
+     "end": 11.789
     },
     {
      "text": "found,",
-     "start": 11.07,
-     "end": 11.821
+     "start": 11.789,
+     "end": 12.629
     },
     {
      "text": "don't",
-     "start": 12.041,
-     "end": 12.731
+     "start": 13.079,
+     "end": 13.902
     },
     {
      "text": "bother.",
-     "start": 12.731,
-     "end": 13.651
+     "start": 13.902,
+     "end": 14.999
     },
     {
-     "text": "The",
-     "start": 13.801,
-     "end": 13.89
-    },
-    {
-     "text": "app",
-     "start": 13.89,
-     "end": 13.979
+     "text": "Offload",
+     "start": 15.429,
+     "end": 15.606
     },
     {
      "text": "makes",
-     "start": 13.979,
-     "end": 14.104
+     "start": 15.606,
+     "end": 15.744
     },
     {
      "text": "the",
-     "start": 14.104,
-     "end": 14.193
+     "start": 15.744,
+     "end": 15.842
     },
     {
      "text": "plan",
-     "start": 14.193,
-     "end": 14.299
+     "start": 15.842,
+     "end": 15.96
     },
     {
      "text": "from",
-     "start": 14.299,
-     "end": 14.406
+     "start": 15.96,
+     "end": 16.078
     },
     {
      "text": "your",
-     "start": 14.406,
-     "end": 14.513
+     "start": 16.078,
+     "end": 16.196
     },
     {
      "text": "spec",
-     "start": 14.513,
-     "end": 14.62
+     "start": 16.196,
+     "end": 16.314
     },
     {
      "text": "and",
-     "start": 14.62,
-     "end": 14.709
+     "start": 16.314,
+     "end": 16.412
     },
     {
      "text": "your",
-     "start": 14.709,
-     "end": 14.816
+     "start": 16.412,
+     "end": 16.53
     },
     {
      "text": "exam",
-     "start": 14.816,
-     "end": 14.923
+     "start": 16.53,
+     "end": 16.648
     },
     {
      "text": "dates.",
-     "start": 14.923,
-     "end": 15.047
+     "start": 16.648,
+     "end": 16.785
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "It moves when you miss an evening, and tests you as you go.",
+   "start": 17.185,
+   "end": 21.063,
+   "words": [
+    {
+     "text": "It",
+     "start": 17.185,
+     "end": 17.361
+    },
+    {
+     "text": "moves",
+     "start": 17.361,
+     "end": 17.668
+    },
+    {
+     "text": "when",
+     "start": 17.668,
+     "end": 17.932
+    },
+    {
+     "text": "you",
+     "start": 17.932,
+     "end": 18.151
+    },
+    {
+     "text": "miss",
+     "start": 18.151,
+     "end": 18.415
+    },
+    {
+     "text": "an",
+     "start": 18.415,
+     "end": 18.59
+    },
+    {
+     "text": "evening,",
+     "start": 18.59,
+     "end": 18.985
+    },
+    {
+     "text": "and",
+     "start": 19.305,
+     "end": 19.598
+    },
+    {
+     "text": "tests",
+     "start": 19.598,
+     "end": 20.008
+    },
+    {
+     "text": "you",
+     "start": 20.008,
+     "end": 20.301
+    },
+    {
+     "text": "as",
+     "start": 20.301,
+     "end": 20.536
+    },
+    {
+     "text": "you",
+     "start": 20.536,
+     "end": 20.829
+    },
+    {
+     "text": "go.",
+     "start": 20.829,
+     "end": 21.063
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "You just click the link in your calendar.",
+   "start": 21.463,
+   "end": 24.146,
+   "words": [
+    {
+     "text": "You",
+     "start": 21.463,
+     "end": 21.737
+    },
+    {
+     "text": "just",
+     "start": 21.737,
+     "end": 22.065
+    },
+    {
+     "text": "click",
+     "start": 22.065,
+     "end": 22.449
+    },
+    {
+     "text": "the",
+     "start": 22.449,
+     "end": 22.722
+    },
+    {
+     "text": "link",
+     "start": 22.722,
+     "end": 23.051
+    },
+    {
+     "text": "in",
+     "start": 23.051,
+     "end": 23.27
+    },
+    {
+     "text": "your",
+     "start": 23.27,
+     "end": 23.598
+    },
+    {
+     "text": "calendar.",
+     "start": 23.598,
+     "end": 24.146
     }
    ]
   }

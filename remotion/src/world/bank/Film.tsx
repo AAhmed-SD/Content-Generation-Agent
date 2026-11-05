@@ -1,3 +1,4 @@
+import { AbsoluteFill } from "remotion";
 import { tokens } from "../../tokens";
 import { DocCard, Flood, INTER, makeTiming, POP, S0, ScreenClip, Shell, track, useK, WeekStrip, type Block, type Cam, type Cue, type Row } from "../kit/dark";
 import { Kinetic, type Fx } from "../kinetic";
@@ -5,8 +6,9 @@ import { Chart, forget, PillOrbit, pillCues, phraseStarts, Source, Type } from "
 import { LogoEnd, logoCues } from "../kit/logo";
 import { Mark } from "../posters/Posters";
 import { BlankCard, ChoiceCard, Countdown, Flashcard, quizCues } from "../kit/quiz";
-import { MythFact, Pov, ThreeThings, type FormatSpec } from "../formats/kit";
+import { MythFact, Pov, Sound, ThreeThings, type FormatSpec } from "../formats/kit";
 import { Chat, Receipt, Search, TierList, Whiteboard, type FormatSpec2 } from "../formats/kit2";
+import { Blockfall, Evidence, Jail, Split, Wrapped, type FormatSpec4 } from "../formats/kit4";
 import { Battery, Departures, ErrorDialog, ExamPaper, Inbox, Kanban, LockScreen, Missing, Recipe, Satnav, Terms, Weather, type FormatSpec3 } from "../formats/kit3";
 
 /**
@@ -43,15 +45,24 @@ export type Spec = {
 };
 
 /** A bank film is either the scene template (no format) or one of the format templates. */
-export type AnySpec = Spec | ((FormatSpec | FormatSpec2 | FormatSpec3) & { id: string });
-const isFormat = (spec: AnySpec): spec is (FormatSpec | FormatSpec2 | FormatSpec3) & { id: string } => "format" in spec;
+export type AnySpec = Spec | ((FormatSpec | FormatSpec2 | FormatSpec3 | FormatSpec4) & { id: string });
+const isFormat = (spec: AnySpec): spec is (FormatSpec | FormatSpec2 | FormatSpec3 | FormatSpec4) & { id: string } => "format" in spec;
 
 type Timing = Parameters<typeof makeTiming>[0];
 
 const REF = /^(L\d+)(\$?)(?::([^#@]+))?(?:#(\d+))?(?:@([+-]?\d*\.?\d+))?$/;
 
+const CARD = 4.4;
+/** The end card's words. GCSE never says "link in bio": it ends on "Search Offload" (safety.md). */
+const endWords = (spec: AnySpec) => {
+  const own = (spec as { endCard?: { lead: string; pill: string } }).endCard;
+  if (own) return own;
+  return spec.id.startsWith("gcse") ? { lead: "Want to try it?", pill: "Search Offload" } : { lead: "Free trial", pill: "Link in bio" };
+};
+
 export const film = (spec: AnySpec, timing: Timing) => {
-  if (isFormat(spec) && (spec.format === "pov" || spec.format === "chat")) return { T: () => 0, kw: () => [], end: spec.duration, duration: spec.duration };
+  // every format film ends on the Offload end card, CARD seconds long
+  if (isFormat(spec) && (spec.format === "pov" || spec.format === "chat")) return { T: () => 0, kw: () => [], end: spec.duration, duration: spec.duration + CARD };
   const { ls, le, at, kw, duration } = makeTiming(timing);
   const T = (ref: Ref): number => {
     const m = REF.exec(ref);
@@ -61,7 +72,10 @@ export const film = (spec: AnySpec, timing: Timing) => {
     return base + (shift ? Number(shift) : 0);
   };
   const last = timing.lines[timing.lines.length - 1].id;
-  if (isFormat(spec)) return { T, kw, end: le(last), duration: Math.max(duration, le(last) + 1.0) };
+  if (isFormat(spec)) {
+    const end = Math.max(duration, le(last) + 1.0);
+    return { T, kw, end, duration: end + CARD };
+  }
   if (spec.end.style === "corner") return { T, kw, end: le(last) + 1.2, duration: Math.max(duration, le(last) + 2.0) };
   const end = ls(last) - 0.1;
   return { T, kw, end, duration: Math.max(duration, end + 4.4) };
@@ -72,6 +86,18 @@ const lineOf = (ref: Ref) => /^L\d+/.exec(ref)![0];
 
 export const BankFilm: React.FC<{ spec: AnySpec; timing: Timing; vo: string }> = ({ spec, timing, vo }) => {
   if (!isFormat(spec)) return <SceneFilm spec={spec} timing={timing} vo={vo} />;
+  const { end } = film(spec, timing);
+  const words = endWords(spec);
+  return (
+    <AbsoluteFill>
+      <FormatBody spec={spec} timing={timing} vo={vo} />
+      <LogoEnd at={end} lead={words.lead} pill={words.pill} />
+      <Sound cues={logoCues(end)} />
+    </AbsoluteFill>
+  );
+};
+
+const FormatBody: React.FC<{ spec: Extract<AnySpec, { format: string }>; timing: Timing; vo: string }> = ({ spec, timing, vo }) => {
   if (spec.format === "pov") return <Pov spec={spec} />;
   if (spec.format === "chat") return <Chat spec={spec} />;
   const { T, kw } = film(spec, timing);
@@ -115,6 +141,16 @@ export const BankFilm: React.FC<{ spec: AnySpec; timing: Timing; vo: string }> =
       return <Missing spec={spec} {...b} />;
     case "kanban":
       return <Kanban spec={spec} {...b} />;
+    case "blockfall":
+      return <Blockfall spec={spec} {...b} />;
+    case "evidence":
+      return <Evidence spec={spec} {...b} />;
+    case "split":
+      return <Split spec={spec} {...b} />;
+    case "wrapped":
+      return <Wrapped spec={spec} {...b} />;
+    case "jail":
+      return <Jail spec={spec} {...b} />;
   }
 };
 

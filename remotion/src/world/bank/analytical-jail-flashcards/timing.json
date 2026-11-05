@@ -1,0 +1,550 @@
+{
+ "duration": 41.527,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "The study police have made an arrest.",
+   "start": 0.15,
+   "end": 2.814,
+   "words": [
+    {
+     "text": "The",
+     "start": 0.15,
+     "end": 0.453
+    },
+    {
+     "text": "study",
+     "start": 0.453,
+     "end": 0.877
+    },
+    {
+     "text": "police",
+     "start": 0.877,
+     "end": 1.361
+    },
+    {
+     "text": "have",
+     "start": 1.361,
+     "end": 1.724
+    },
+    {
+     "text": "made",
+     "start": 1.724,
+     "end": 2.087
+    },
+    {
+     "text": "an",
+     "start": 2.087,
+     "end": 2.33
+    },
+    {
+     "text": "arrest.",
+     "start": 2.33,
+     "end": 2.814
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Suspect: the flashcard app. Face the camera.",
+   "start": 3.314,
+   "end": 6.629,
+   "words": [
+    {
+     "text": "Suspect:",
+     "start": 3.314,
+     "end": 3.964
+    },
+    {
+     "text": "the",
+     "start": 4.054,
+     "end": 4.302
+    },
+    {
+     "text": "flashcard",
+     "start": 4.302,
+     "end": 4.846
+    },
+    {
+     "text": "app.",
+     "start": 4.846,
+     "end": 5.094
+    },
+    {
+     "text": "Face",
+     "start": 5.554,
+     "end": 5.893
+    },
+    {
+     "text": "the",
+     "start": 5.893,
+     "end": 6.176
+    },
+    {
+     "text": "camera.",
+     "start": 6.176,
+     "end": 6.629
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "And to the side.",
+   "start": 7.229,
+   "end": 8.471,
+   "words": [
+    {
+     "text": "And",
+     "start": 7.229,
+     "end": 7.54
+    },
+    {
+     "text": "to",
+     "start": 7.54,
+     "end": 7.788
+    },
+    {
+     "text": "the",
+     "start": 7.788,
+     "end": 8.099
+    },
+    {
+     "text": "side.",
+     "start": 8.099,
+     "end": 8.471
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Count one: four hundred cards. Never told you which were due.",
+   "start": 9.271,
+   "end": 13.299,
+   "words": [
+    {
+     "text": "Count",
+     "start": 9.271,
+     "end": 9.691
+    },
+    {
+     "text": "one:",
+     "start": 9.691,
+     "end": 9.991
+    },
+    {
+     "text": "four",
+     "start": 10.121,
+     "end": 10.46
+    },
+    {
+     "text": "hundred",
+     "start": 10.46,
+     "end": 10.967
+    },
+    {
+     "text": "cards.",
+     "start": 10.967,
+     "end": 11.361
+    },
+    {
+     "text": "Never",
+     "start": 11.701,
+     "end": 12.012
+    },
+    {
+     "text": "told",
+     "start": 12.012,
+     "end": 12.278
+    },
+    {
+     "text": "you",
+     "start": 12.278,
+     "end": 12.5
+    },
+    {
+     "text": "which",
+     "start": 12.5,
+     "end": 12.811
+    },
+    {
+     "text": "were",
+     "start": 12.811,
+     "end": 13.077
+    },
+    {
+     "text": "due.",
+     "start": 13.077,
+     "end": 13.299
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Count two: you flipped it, saw the answer, and called that revision.",
+   "start": 13.899,
+   "end": 18.122,
+   "words": [
+    {
+     "text": "Count",
+     "start": 13.899,
+     "end": 14.581
+    },
+    {
+     "text": "two:",
+     "start": 14.581,
+     "end": 15.069
+    },
+    {
+     "text": "you",
+     "start": 15.169,
+     "end": 15.23
+    },
+    {
+     "text": "flipped",
+     "start": 15.23,
+     "end": 15.34
+    },
+    {
+     "text": "it,",
+     "start": 15.34,
+     "end": 15.389
+    },
+    {
+     "text": "saw",
+     "start": 15.659,
+     "end": 15.9
+    },
+    {
+     "text": "the",
+     "start": 15.9,
+     "end": 16.142
+    },
+    {
+     "text": "answer,",
+     "start": 16.142,
+     "end": 16.529
+    },
+    {
+     "text": "and",
+     "start": 16.739,
+     "end": 16.977
+    },
+    {
+     "text": "called",
+     "start": 16.977,
+     "end": 17.359
+    },
+    {
+     "text": "that",
+     "start": 17.359,
+     "end": 17.645
+    },
+    {
+     "text": "revision.",
+     "start": 17.645,
+     "end": 18.122
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Count three: it has no idea when your exam is.",
+   "start": 18.722,
+   "end": 22.258,
+   "words": [
+    {
+     "text": "Count",
+     "start": 18.722,
+     "end": 19.107
+    },
+    {
+     "text": "three:",
+     "start": 19.107,
+     "end": 19.492
+    },
+    {
+     "text": "it",
+     "start": 19.772,
+     "end": 20.015
+    },
+    {
+     "text": "has",
+     "start": 20.015,
+     "end": 20.318
+    },
+    {
+     "text": "no",
+     "start": 20.318,
+     "end": 20.56
+    },
+    {
+     "text": "idea",
+     "start": 20.56,
+     "end": 20.924
+    },
+    {
+     "text": "when",
+     "start": 20.924,
+     "end": 21.288
+    },
+    {
+     "text": "your",
+     "start": 21.288,
+     "end": 21.651
+    },
+    {
+     "text": "exam",
+     "start": 21.651,
+     "end": 22.015
+    },
+    {
+     "text": "is.",
+     "start": 22.015,
+     "end": 22.257
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Sentence: life, in a folder you never open.",
+   "start": 22.957,
+   "end": 26.418,
+   "words": [
+    {
+     "text": "Sentence:",
+     "start": 22.957,
+     "end": 23.637
+    },
+    {
+     "text": "life,",
+     "start": 23.898,
+     "end": 24.268
+    },
+    {
+     "text": "in",
+     "start": 24.578,
+     "end": 24.801
+    },
+    {
+     "text": "a",
+     "start": 24.801,
+     "end": 24.968
+    },
+    {
+     "text": "folder",
+     "start": 24.968,
+     "end": 25.414
+    },
+    {
+     "text": "you",
+     "start": 25.414,
+     "end": 25.693
+    },
+    {
+     "text": "never",
+     "start": 25.693,
+     "end": 26.084
+    },
+    {
+     "text": "open.",
+     "start": 26.084,
+     "end": 26.418
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "Offload knows your exam date, and plans your revision for you.",
+   "start": 27.318,
+   "end": 31.79,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 27.318,
+     "end": 27.877
+    },
+    {
+     "text": "knows",
+     "start": 27.877,
+     "end": 28.311
+    },
+    {
+     "text": "your",
+     "start": 28.311,
+     "end": 28.684
+    },
+    {
+     "text": "exam",
+     "start": 28.684,
+     "end": 29.056
+    },
+    {
+     "text": "date,",
+     "start": 29.056,
+     "end": 29.428
+    },
+    {
+     "text": "and",
+     "start": 29.778,
+     "end": 30.043
+    },
+    {
+     "text": "plans",
+     "start": 30.043,
+     "end": 30.414
+    },
+    {
+     "text": "your",
+     "start": 30.414,
+     "end": 30.731
+    },
+    {
+     "text": "revision",
+     "start": 30.731,
+     "end": 31.261
+    },
+    {
+     "text": "for",
+     "start": 31.261,
+     "end": 31.525
+    },
+    {
+     "text": "you.",
+     "start": 31.525,
+     "end": 31.79
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "It tests you, and brings each card back before you forget it.",
+   "start": 32.19,
+   "end": 35.897,
+   "words": [
+    {
+     "text": "It",
+     "start": 32.19,
+     "end": 32.387
+    },
+    {
+     "text": "tests",
+     "start": 32.387,
+     "end": 32.733
+    },
+    {
+     "text": "you,",
+     "start": 32.733,
+     "end": 32.98
+    },
+    {
+     "text": "and",
+     "start": 33.29,
+     "end": 33.523
+    },
+    {
+     "text": "brings",
+     "start": 33.523,
+     "end": 33.895
+    },
+    {
+     "text": "each",
+     "start": 33.895,
+     "end": 34.174
+    },
+    {
+     "text": "card",
+     "start": 34.174,
+     "end": 34.454
+    },
+    {
+     "text": "back",
+     "start": 34.454,
+     "end": 34.733
+    },
+    {
+     "text": "before",
+     "start": 34.733,
+     "end": 35.105
+    },
+    {
+     "text": "you",
+     "start": 35.105,
+     "end": 35.338
+    },
+    {
+     "text": "forget",
+     "start": 35.338,
+     "end": 35.711
+    },
+    {
+     "text": "it.",
+     "start": 35.711,
+     "end": 35.897
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 36.297,
+   "end": 39.527,
+   "words": [
+    {
+     "text": "You",
+     "start": 36.297,
+     "end": 36.549
+    },
+    {
+     "text": "just",
+     "start": 36.549,
+     "end": 36.852
+    },
+    {
+     "text": "click",
+     "start": 36.852,
+     "end": 37.205
+    },
+    {
+     "text": "the",
+     "start": 37.205,
+     "end": 37.458
+    },
+    {
+     "text": "link",
+     "start": 37.458,
+     "end": 37.761
+    },
+    {
+     "text": "in",
+     "start": 37.761,
+     "end": 37.962
+    },
+    {
+     "text": "your",
+     "start": 37.962,
+     "end": 38.265
+    },
+    {
+     "text": "calendar",
+     "start": 38.265,
+     "end": 38.77
+    },
+    {
+     "text": "and",
+     "start": 38.77,
+     "end": 39.022
+    },
+    {
+     "text": "show",
+     "start": 39.022,
+     "end": 39.325
+    },
+    {
+     "text": "up.",
+     "start": 39.325,
+     "end": 39.527
+    }
+   ]
+  }
+ ]
+}

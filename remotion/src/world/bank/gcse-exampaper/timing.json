@@ -1,286 +1,276 @@
 {
- "duration": 20.661,
+ "duration": 24.038,
  "lines": [
   {
    "id": "L1",
-   "say": "Marking your own past paper, be like.",
+   "say": "Marking your own past paper. Be honest.",
    "start": 0.15,
-   "end": 2.655,
+   "end": 3.123,
    "words": [
     {
      "text": "Marking",
      "start": 0.15,
-     "end": 0.753
+     "end": 0.679
     },
     {
      "text": "your",
-     "start": 0.753,
-     "end": 1.155
+     "start": 0.679,
+     "end": 1.032
     },
     {
      "text": "own",
-     "start": 1.155,
-     "end": 1.489
+     "start": 1.032,
+     "end": 1.326
     },
     {
      "text": "past",
-     "start": 1.489,
-     "end": 1.891
+     "start": 1.326,
+     "end": 1.678
     },
     {
-     "text": "paper,",
-     "start": 1.891,
-     "end": 2.36
+     "text": "paper.",
+     "start": 1.678,
+     "end": 2.09
     },
     {
-     "text": "be",
-     "start": 2.44,
-     "end": 2.526
+     "text": "Be",
+     "start": 2.36,
+     "end": 2.614
     },
     {
-     "text": "like.",
-     "start": 2.526,
-     "end": 2.655
+     "text": "honest.",
+     "start": 2.614,
+     "end": 3.123
     }
    ]
   },
   {
    "id": "L2",
-   "say": "Question: explain why enzymes stop working at high temperatures.",
-   "start": 2.915,
-   "end": 6.811,
+   "say": "Explain why enzymes stop working when it's hot.",
+   "start": 3.523,
+   "end": 6.944,
    "words": [
     {
-     "text": "Question:",
-     "start": 2.915,
-     "end": 5.115
-    },
-    {
-     "text": "explain",
-     "start": 5.215,
-     "end": 5.447
+     "text": "Explain",
+     "start": 3.523,
+     "end": 4.093
     },
     {
      "text": "why",
-     "start": 5.447,
-     "end": 5.576
+     "start": 4.093,
+     "end": 4.41
     },
     {
      "text": "enzymes",
-     "start": 5.576,
-     "end": 5.807
+     "start": 4.41,
+     "end": 4.98
     },
     {
      "text": "stop",
-     "start": 5.807,
-     "end": 5.962
+     "start": 4.98,
+     "end": 5.36
     },
     {
      "text": "working",
-     "start": 5.962,
-     "end": 6.193
+     "start": 5.36,
+     "end": 5.93
     },
     {
-     "text": "at",
-     "start": 6.193,
-     "end": 6.296
+     "text": "when",
+     "start": 5.93,
+     "end": 6.31
     },
     {
-     "text": "high",
-     "start": 6.296,
-     "end": 6.451
+     "text": "it's",
+     "start": 6.31,
+     "end": 6.627
     },
     {
-     "text": "temperatures.",
-     "start": 6.451,
-     "end": 6.811
+     "text": "hot.",
+     "start": 6.627,
+     "end": 6.943
     }
    ]
   },
   {
    "id": "L3",
    "say": "Your answer: because it's too hot.",
-   "start": 7.111,
-   "end": 9.335,
+   "start": 7.444,
+   "end": 9.835,
    "words": [
     {
      "text": "Your",
-     "start": 7.111,
-     "end": 7.934
+     "start": 7.444,
+     "end": 7.812
     },
     {
      "text": "answer:",
-     "start": 7.934,
-     "end": 9.031
+     "start": 7.812,
+     "end": 8.303
     },
     {
      "text": "because",
-     "start": 9.111,
-     "end": 9.195
+     "start": 8.534,
+     "end": 9.022
     },
     {
      "text": "it's",
-     "start": 9.195,
-     "end": 9.242
+     "start": 9.022,
+     "end": 9.293
     },
     {
      "text": "too",
-     "start": 9.242,
-     "end": 9.289
+     "start": 9.293,
+     "end": 9.564
     },
     {
      "text": "hot.",
-     "start": 9.289,
-     "end": 9.335
+     "start": 9.564,
+     "end": 9.835
     }
    ]
   },
   {
    "id": "L4",
    "say": "Two ticks. Full marks. Generous.",
-   "start": 9.595,
-   "end": 11.76,
+   "start": 10.335,
+   "end": 12.897,
    "words": [
     {
      "text": "Two",
-     "start": 9.595,
-     "end": 9.77
+     "start": 10.335,
+     "end": 10.597
     },
     {
      "text": "ticks.",
-     "start": 9.77,
-     "end": 10.015
+     "start": 10.597,
+     "end": 10.965
     },
     {
      "text": "Full",
-     "start": 10.075,
-     "end": 10.131
+     "start": 11.175,
+     "end": 11.516
     },
     {
      "text": "marks.",
-     "start": 10.131,
-     "end": 10.195
+     "start": 11.516,
+     "end": 11.915
     },
     {
      "text": "Generous.",
-     "start": 10.275,
-     "end": 11.76
+     "start": 12.145,
+     "end": 12.897
     }
    ]
   },
   {
    "id": "L5",
-   "say": "The mark scheme wants the active site to change shape. Denatured.",
-   "start": 12.16,
-   "end": 15.804,
+   "say": "The mark scheme wants: the active site changes shape. Denatured.",
+   "start": 13.597,
+   "end": 18.032,
    "words": [
     {
      "text": "The",
-     "start": 12.16,
-     "end": 12.364
+     "start": 13.597,
+     "end": 13.847
     },
     {
      "text": "mark",
-     "start": 12.364,
-     "end": 12.609
+     "start": 13.847,
+     "end": 14.147
     },
     {
      "text": "scheme",
-     "start": 12.609,
-     "end": 12.935
+     "start": 14.147,
+     "end": 14.547
     },
     {
-     "text": "wants",
-     "start": 12.935,
-     "end": 13.22
+     "text": "wants:",
+     "start": 14.547,
+     "end": 14.897
     },
     {
      "text": "the",
-     "start": 13.22,
-     "end": 13.424
+     "start": 15.177,
+     "end": 15.423
     },
     {
      "text": "active",
-     "start": 13.424,
-     "end": 13.75
+     "start": 15.423,
+     "end": 15.816
     },
     {
      "text": "site",
-     "start": 13.75,
-     "end": 13.995
+     "start": 15.816,
+     "end": 16.111
     },
     {
-     "text": "to",
-     "start": 13.995,
-     "end": 14.158
-    },
-    {
-     "text": "change",
-     "start": 14.158,
-     "end": 14.484
+     "text": "changes",
+     "start": 16.111,
+     "end": 16.553
     },
     {
      "text": "shape.",
-     "start": 14.484,
-     "end": 14.77
+     "start": 16.553,
+     "end": 16.897
     },
     {
      "text": "Denatured.",
-     "start": 15.09,
-     "end": 15.804
+     "start": 17.317,
+     "end": 18.032
     }
    ]
   },
   {
    "id": "L6",
-   "say": "Mark yourself like an examiner, not like a friend.",
-   "start": 16.064,
-   "end": 18.961,
+   "say": "Mark yourself like an examiner. Not like a friend.",
+   "start": 18.632,
+   "end": 22.038,
    "words": [
     {
      "text": "Mark",
-     "start": 16.064,
-     "end": 16.189
+     "start": 18.632,
+     "end": 18.962
     },
     {
      "text": "yourself",
-     "start": 16.189,
-     "end": 16.397
+     "start": 18.962,
+     "end": 19.512
     },
     {
      "text": "like",
-     "start": 16.397,
-     "end": 16.522
+     "start": 19.512,
+     "end": 19.842
     },
     {
      "text": "an",
-     "start": 16.522,
-     "end": 16.606
+     "start": 19.842,
+     "end": 20.062
     },
     {
-     "text": "examiner,",
-     "start": 16.606,
-     "end": 16.814
+     "text": "examiner.",
+     "start": 20.062,
+     "end": 20.612
     },
     {
-     "text": "not",
-     "start": 16.894,
-     "end": 17.364
+     "text": "Not",
+     "start": 20.932,
+     "end": 21.183
     },
     {
      "text": "like",
-     "start": 17.364,
-     "end": 17.928
+     "start": 21.183,
+     "end": 21.485
     },
     {
      "text": "a",
-     "start": 17.928,
-     "end": 18.21
+     "start": 21.485,
+     "end": 21.636
     },
     {
      "text": "friend.",
-     "start": 18.21,
-     "end": 18.961
+     "start": 21.636,
+     "end": 22.038
     }
    ]
   }

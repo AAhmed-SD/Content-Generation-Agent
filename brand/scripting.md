@@ -9,9 +9,19 @@ How a film script sounds. Read with `product-facts.md` (what may be claimed), `s
 | offload.clinical | An older student in the same degree, speaking to someone a year or two behind | "you", "we", "most of us" | "I passed", "on my placement I", any first-person exam or placement claim. No patient, no case. |
 | offload.analytical | The same older-student voice, a little drier and more deadpan | "you", "we" | "I got a first", a worked answer, an invented number |
 | offload.gcsealevel | An older sibling who did their GCSEs a few years ago and remembers it | "you", "be honest", "everyone does this" | Teacher voice, parent voice, fake slang, a grade promise, "DM me" |
-| offload.mentalhealth (time) | Hadiqa, the founder, in her own words | "I", "my brother", "I built this because" | That the viewer has a condition, treatment language, exam or placement claims about herself |
+| offload.mentalhealth (time) | The same voice, warm and unhurried, about time and starting | "you", "most of us", "Offload" | That the viewer has a condition, treatment language, "I built", "my brother" |
 
-The founder story is told as written in `product-facts.md` section 7, and only on the time account and LinkedIn.
+One voice reads every film on every account: a single, smooth male voice (Kokoro `bm_george`, speed 0.94, gap 0.42). Never blend or switch voices between films. The founder story (`product-facts.md` section 7) is told only when Hadiqa records it herself, on camera or in her own voice, and on LinkedIn.
+
+## Pacing
+
+Viewers must follow it on the first listen.
+
+- **Line one says what the film is about.** "The receipt for your Sunday revision." Not a riddle.
+- **One idea per line, under about ten words.** Split anything longer into two lines.
+- **Leave air.** Give each line an `after` pause of 0.4 to 0.6 seconds, 0.7 before the product line, and 0.9 to 1.2 at the end. The picture changes in the pause.
+- **The product line is its own short line,** with "Offload" in it, after a pause.
+- **When the words say chaos, the picture shows chaos:** a flood, a pile, shake, overflow, a red count going up. "Everything" is never three tidy cards. Formats with a chaos layer: `kanban` (pile), `inbox` and `lockscreen` (flood), `dialog` (cascade), `weather` (a storm day).
 
 ## The shape
 
@@ -35,9 +45,17 @@ Never use: "game-changer", "unlock", "level up", "hack", "journey", "seamless", 
 
 ## The product line
 
-- One LIVE feature per film, from `product-facts.md`, using its "Say it like this" words loosely. Rotate through all of them. Do not use the same feature twice on one account in a week.
-- Name the product at most once. "The app" is fine after that, or nothing at all.
-- The tagline is not spoken in most films. It may sit on the end card as text.
+Assume the viewer has never heard of Offload. "Offload shows you your next block" means nothing to them. Every film that names Offload explains it in three short beats, each its own line, worded to fit the film:
+
+1. **It plans for you.** Offload builds the revision plan from your notes and exam dates, and moves it when life happens (a missed session, a shift, a deadline).
+2. **It teaches and tests you.** It tests you as you go, and brings topics back before you forget them.
+3. **You just show up.** "You just click the link in your calendar and show up."
+
+Offload is built to offload: the planning, tracking and rescheduling are done for you, and so are the learning, testing and remembering. Say that idea. Do not go off on a tangent through every feature: no feature names (FSRS, remediation, Learn / Test / Retain) unless the film is about that one feature.
+
+- Name the product once, at the start of beat one. "It" after that.
+- Beat one can carry the film's own feature: "Offload slots revision in around the deadlines."
+- The tagline is not spoken. It sits on the end card.
 
 ## Endings
 

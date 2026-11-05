@@ -1,37 +1,51 @@
 {
  "id": "bank/clinical-satnav",
- "voice": "bm_lewis",
+ "voice": "bm_george",
  "lang": "en-gb",
- "speed": 1.02,
- "gap": 0.26,
+ "speed": 0.94,
+ "gap": 0.42,
  "takes": "line",
  "master": true,
  "lines": [
   {
    "id": "L1",
-   "say": "Think of your revision plan like a sat nav."
+   "say": "Your revision plan is a sat nav.",
+   "after": 0.4
   },
   {
    "id": "L2",
-   "say": "You set off fine."
+   "say": "You set off fine.",
+   "after": 0.5
   },
   {
    "id": "L3",
-   "say": "Then a twelve-hour shift happens, and you miss the turn."
+   "say": "Then a twelve-hour shift, and you miss the turn.",
+   "after": 0.6
   },
   {
    "id": "L4",
    "say": "A paper timetable just says: you're lost.",
-   "after": 0.3
+   "after": 0.6
   },
   {
    "id": "L5",
-   "say": "A sat nav reroutes. That's what the app does around your rota."
+   "say": "A sat nav reroutes. Offload does that around your rota.",
+   "after": 0.4
   },
   {
    "id": "L6",
-   "say": "You still get there. Exam day.",
-   "after": 0.7
+   "say": "It plans your revision, moves what you miss, and tests you as you go.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "You just click the link in your calendar.",
+   "after": 0.6
+  },
+  {
+   "id": "L8",
+   "say": "You still arrive. Exam day.",
+   "after": 0.9
   }
  ]
 }

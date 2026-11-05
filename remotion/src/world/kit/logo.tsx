@@ -36,7 +36,9 @@ export const LogoSting: React.FC<{
   /** the dot bursts into this colour, then re-forms in dotAfter */
   splashColour?: string;
   dotAfter?: string;
-}> = ({ at, x = 540, y = 900, width = 820, splash = true, lift, text = tokens.white, textAfter = tokens.white, splashColour = tokens.mark, dotAfter = tokens.white }) => {
+  /** draw past the 1080x1920 canvas (for a wide screen): the ring and the flash bleed out */
+  bleed?: boolean;
+}> = ({ at, x = 540, y = 900, width = 820, splash = true, lift, text = tokens.white, textAfter = tokens.white, splashColour = tokens.mark, dotAfter = tokens.white, bleed = false }) => {
   const { t, sp } = useK();
   const u = t - at;
   if (u < -0.05) return null;
@@ -118,7 +120,7 @@ export const LogoSting: React.FC<{
   const wave = splash && sU > 0 && sU < 0.9 ? sU / 0.9 : 0;
   return (
     <AbsoluteFill style={{ transform: shake ? `translate(${Math.sin(u * 90) * shake}px, ${Math.cos(u * 77) * shake}px)` : undefined }}>
-      <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
+      <svg width={1080} height={1920} style={{ position: "absolute", inset: 0, overflow: bleed ? "visible" : undefined }}>
         <defs>
           <filter id="lg-a-rough" x="-20%" y="-50%" width="140%" height="200%">
             <feTurbulence type="fractalNoise" baseFrequency="0.09" numOctaves={2} seed={3} />
@@ -150,7 +152,7 @@ export const LogoSting: React.FC<{
         {Dot}
         {wave > 0 ? <circle cx={dot.x} cy={dot.y} r={r + wave * 900} fill="none" stroke={tokens.white} strokeWidth={14 * (1 - wave)} opacity={1 - wave} /> : null}
       </svg>
-      {flash > 0.01 ? <AbsoluteFill style={{ background: tokens.white, opacity: flash }} /> : null}
+      {flash > 0.01 ? <AbsoluteFill style={{ background: tokens.white, opacity: flash, ...(bleed ? { inset: -2000, width: "auto", height: "auto" } : {}) }} /> : null}
     </AbsoluteFill>
   );
 };
@@ -199,6 +201,28 @@ export const LogoIntro: React.FC = () => {
           <Audio src={staticFile(`sfx/${c.s}.wav`)} volume={c.v} />
         </Sequence>
       ))}
+    </AbsoluteFill>
+  );
+};
+
+/** The desk's opening: the end card's sting and tagline, with no call to action, centred on a wide screen. */
+export const DeskIntro: React.FC = () => {
+  const { t, sp } = useK();
+  const at = 0.3;
+  const c = at + STING.settle;
+  const g = Math.min(1, Math.max(0, (t - (at + STING.splash)) / 0.5));
+  const wash = 1 - Math.pow(1 - g, 3);
+  return (
+    <AbsoluteFill style={{ background: tokens.ink }}>
+      <AbsoluteFill style={{ background: tokens.mark, clipPath: `circle(${wash * 2300}px at 640px 650px)` }} />
+      <div style={{ position: "absolute", left: 420, top: -250, width: 1080, height: 1920 }}>
+        <LogoSting at={at} y={900} width={820} lift={{ at: c - 0.1, y: 640, width: 640 }} bleed />
+        {t > c ? (
+          <div style={{ position: "absolute", left: 110, right: 110, top: 760, textAlign: "center", fontFamily: INTER, fontWeight: 650, fontSize: 50, lineHeight: 1.18, letterSpacing: "-0.02em", color: alpha(tokens.white, 0.92), opacity: Math.min(1, sp(c - 0.05) * 1.5), transform: `translateY(${(1 - sp(c - 0.05)) * 30}px)` }}>
+            A study system that adapts when real life happens.
+          </div>
+        ) : null}
+      </div>
     </AbsoluteFill>
   );
 };

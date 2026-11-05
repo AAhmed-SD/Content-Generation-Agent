@@ -1,0 +1,535 @@
+{
+ "duration": 42.651,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "The study police have made an arrest.",
+   "start": 0.15,
+   "end": 2.814,
+   "words": [
+    {
+     "text": "The",
+     "start": 0.15,
+     "end": 0.453
+    },
+    {
+     "text": "study",
+     "start": 0.453,
+     "end": 0.877
+    },
+    {
+     "text": "police",
+     "start": 0.877,
+     "end": 1.361
+    },
+    {
+     "text": "have",
+     "start": 1.361,
+     "end": 1.724
+    },
+    {
+     "text": "made",
+     "start": 1.724,
+     "end": 2.087
+    },
+    {
+     "text": "an",
+     "start": 2.087,
+     "end": 2.33
+    },
+    {
+     "text": "arrest.",
+     "start": 2.33,
+     "end": 2.814
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Suspect: the to-do list app. Face the camera.",
+   "start": 3.314,
+   "end": 6.616,
+   "words": [
+    {
+     "text": "Suspect:",
+     "start": 3.314,
+     "end": 3.974
+    },
+    {
+     "text": "the",
+     "start": 4.074,
+     "end": 4.304
+    },
+    {
+     "text": "to-do",
+     "start": 4.304,
+     "end": 4.579
+    },
+    {
+     "text": "list",
+     "start": 4.579,
+     "end": 4.854
+    },
+    {
+     "text": "app.",
+     "start": 4.854,
+     "end": 5.084
+    },
+    {
+     "text": "Face",
+     "start": 5.534,
+     "end": 5.876
+    },
+    {
+     "text": "the",
+     "start": 5.876,
+     "end": 6.161
+    },
+    {
+     "text": "camera.",
+     "start": 6.161,
+     "end": 6.616
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "And to the side.",
+   "start": 7.216,
+   "end": 8.459,
+   "words": [
+    {
+     "text": "And",
+     "start": 7.216,
+     "end": 7.527
+    },
+    {
+     "text": "to",
+     "start": 7.527,
+     "end": 7.775
+    },
+    {
+     "text": "the",
+     "start": 7.775,
+     "end": 8.086
+    },
+    {
+     "text": "side.",
+     "start": 8.086,
+     "end": 8.459
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Count one: forty-three unticked tasks, and no idea which one matters.",
+   "start": 9.259,
+   "end": 14.149,
+   "words": [
+    {
+     "text": "Count",
+     "start": 9.259,
+     "end": 9.609
+    },
+    {
+     "text": "one:",
+     "start": 9.609,
+     "end": 9.859
+    },
+    {
+     "text": "forty-three",
+     "start": 10.039,
+     "end": 10.75
+    },
+    {
+     "text": "unticked",
+     "start": 10.75,
+     "end": 11.343
+    },
+    {
+     "text": "tasks,",
+     "start": 11.343,
+     "end": 11.759
+    },
+    {
+     "text": "and",
+     "start": 12.129,
+     "end": 12.409
+    },
+    {
+     "text": "no",
+     "start": 12.409,
+     "end": 12.634
+    },
+    {
+     "text": "idea",
+     "start": 12.634,
+     "end": 12.97
+    },
+    {
+     "text": "which",
+     "start": 12.97,
+     "end": 13.363
+    },
+    {
+     "text": "one",
+     "start": 13.363,
+     "end": 13.644
+    },
+    {
+     "text": "matters.",
+     "start": 13.644,
+     "end": 14.149
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Count two: it knows nothing about your rota.",
+   "start": 14.749,
+   "end": 17.752,
+   "words": [
+    {
+     "text": "Count",
+     "start": 14.749,
+     "end": 15.169
+    },
+    {
+     "text": "two:",
+     "start": 15.169,
+     "end": 15.469
+    },
+    {
+     "text": "it",
+     "start": 15.689,
+     "end": 15.9
+    },
+    {
+     "text": "knows",
+     "start": 15.9,
+     "end": 16.27
+    },
+    {
+     "text": "nothing",
+     "start": 16.27,
+     "end": 16.747
+    },
+    {
+     "text": "about",
+     "start": 16.747,
+     "end": 17.117
+    },
+    {
+     "text": "your",
+     "start": 17.117,
+     "end": 17.434
+    },
+    {
+     "text": "rota.",
+     "start": 17.434,
+     "end": 17.752
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Count three: revise cardio is not a plan.",
+   "start": 18.352,
+   "end": 21.556,
+   "words": [
+    {
+     "text": "Count",
+     "start": 18.352,
+     "end": 18.752
+    },
+    {
+     "text": "three:",
+     "start": 18.752,
+     "end": 19.152
+    },
+    {
+     "text": "revise",
+     "start": 19.412,
+     "end": 19.916
+    },
+    {
+     "text": "cardio",
+     "start": 19.916,
+     "end": 20.421
+    },
+    {
+     "text": "is",
+     "start": 20.421,
+     "end": 20.673
+    },
+    {
+     "text": "not",
+     "start": 20.673,
+     "end": 20.988
+    },
+    {
+     "text": "a",
+     "start": 20.988,
+     "end": 21.177
+    },
+    {
+     "text": "plan.",
+     "start": 21.177,
+     "end": 21.556
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Sentence: one more task, added to itself.",
+   "start": 22.256,
+   "end": 25.513,
+   "words": [
+    {
+     "text": "Sentence:",
+     "start": 22.256,
+     "end": 22.896
+    },
+    {
+     "text": "one",
+     "start": 23.136,
+     "end": 23.403
+    },
+    {
+     "text": "more",
+     "start": 23.403,
+     "end": 23.724
+    },
+    {
+     "text": "task,",
+     "start": 23.724,
+     "end": 24.046
+    },
+    {
+     "text": "added",
+     "start": 24.376,
+     "end": 24.795
+    },
+    {
+     "text": "to",
+     "start": 24.795,
+     "end": 25.034
+    },
+    {
+     "text": "itself.",
+     "start": 25.034,
+     "end": 25.513
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "Offload plans your revision around your shifts, with your Google Calendar connected.",
+   "start": 26.413,
+   "end": 32.011,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 26.413,
+     "end": 26.948
+    },
+    {
+     "text": "plans",
+     "start": 26.948,
+     "end": 27.364
+    },
+    {
+     "text": "your",
+     "start": 27.364,
+     "end": 27.721
+    },
+    {
+     "text": "revision",
+     "start": 27.721,
+     "end": 28.315
+    },
+    {
+     "text": "around",
+     "start": 28.315,
+     "end": 28.791
+    },
+    {
+     "text": "your",
+     "start": 28.791,
+     "end": 29.147
+    },
+    {
+     "text": "shifts,",
+     "start": 29.147,
+     "end": 29.623
+    },
+    {
+     "text": "with",
+     "start": 30.003,
+     "end": 30.297
+    },
+    {
+     "text": "your",
+     "start": 30.297,
+     "end": 30.59
+    },
+    {
+     "text": "Google",
+     "start": 30.59,
+     "end": 30.982
+    },
+    {
+     "text": "Calendar",
+     "start": 30.982,
+     "end": 31.472
+    },
+    {
+     "text": "connected.",
+     "start": 31.472,
+     "end": 32.011
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "It tests you on your own notes, and brings topics back before you forget.",
+   "start": 32.411,
+   "end": 37.02,
+   "words": [
+    {
+     "text": "It",
+     "start": 32.411,
+     "end": 32.609
+    },
+    {
+     "text": "tests",
+     "start": 32.609,
+     "end": 32.955
+    },
+    {
+     "text": "you",
+     "start": 32.955,
+     "end": 33.202
+    },
+    {
+     "text": "on",
+     "start": 33.202,
+     "end": 33.4
+    },
+    {
+     "text": "your",
+     "start": 33.4,
+     "end": 33.697
+    },
+    {
+     "text": "own",
+     "start": 33.697,
+     "end": 33.944
+    },
+    {
+     "text": "notes,",
+     "start": 33.944,
+     "end": 34.291
+    },
+    {
+     "text": "and",
+     "start": 34.631,
+     "end": 34.88
+    },
+    {
+     "text": "brings",
+     "start": 34.88,
+     "end": 35.278
+    },
+    {
+     "text": "topics",
+     "start": 35.278,
+     "end": 35.676
+    },
+    {
+     "text": "back",
+     "start": 35.676,
+     "end": 35.975
+    },
+    {
+     "text": "before",
+     "start": 35.975,
+     "end": 36.373
+    },
+    {
+     "text": "you",
+     "start": 36.373,
+     "end": 36.622
+    },
+    {
+     "text": "forget.",
+     "start": 36.622,
+     "end": 37.02
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 37.42,
+   "end": 40.651,
+   "words": [
+    {
+     "text": "You",
+     "start": 37.42,
+     "end": 37.673
+    },
+    {
+     "text": "just",
+     "start": 37.673,
+     "end": 37.975
+    },
+    {
+     "text": "click",
+     "start": 37.975,
+     "end": 38.329
+    },
+    {
+     "text": "the",
+     "start": 38.329,
+     "end": 38.581
+    },
+    {
+     "text": "link",
+     "start": 38.581,
+     "end": 38.884
+    },
+    {
+     "text": "in",
+     "start": 38.884,
+     "end": 39.086
+    },
+    {
+     "text": "your",
+     "start": 39.086,
+     "end": 39.389
+    },
+    {
+     "text": "calendar",
+     "start": 39.389,
+     "end": 39.893
+    },
+    {
+     "text": "and",
+     "start": 39.893,
+     "end": 40.146
+    },
+    {
+     "text": "show",
+     "start": 40.146,
+     "end": 40.449
+    },
+    {
+     "text": "up.",
+     "start": 40.449,
+     "end": 40.651
+    }
+   ]
+  }
+ ]
+}

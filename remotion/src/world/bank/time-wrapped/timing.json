@@ -1,0 +1,379 @@
+{
+ "duration": 29.43,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Your week, wrapped.",
+   "start": 0.15,
+   "end": 1.537,
+   "words": [
+    {
+     "text": "Your",
+     "start": 0.15,
+     "end": 0.45
+    },
+    {
+     "text": "week,",
+     "start": 0.45,
+     "end": 0.75
+    },
+    {
+     "text": "wrapped.",
+     "start": 0.85,
+     "end": 1.537
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Top activity: starting things.",
+   "start": 1.937,
+   "end": 4.411,
+   "words": [
+    {
+     "text": "Top",
+     "start": 1.937,
+     "end": 2.287
+    },
+    {
+     "text": "activity:",
+     "start": 2.287,
+     "end": 2.987
+    },
+    {
+     "text": "starting",
+     "start": 3.207,
+     "end": 3.876
+    },
+    {
+     "text": "things.",
+     "start": 3.876,
+     "end": 4.411
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Most opened app: the one you said you'd delete.",
+   "start": 4.911,
+   "end": 8.093,
+   "words": [
+    {
+     "text": "Most",
+     "start": 4.911,
+     "end": 5.261
+    },
+    {
+     "text": "opened",
+     "start": 5.261,
+     "end": 5.729
+    },
+    {
+     "text": "app:",
+     "start": 5.729,
+     "end": 6.021
+    },
+    {
+     "text": "the",
+     "start": 6.461,
+     "end": 6.694
+    },
+    {
+     "text": "one",
+     "start": 6.694,
+     "end": 6.927
+    },
+    {
+     "text": "you",
+     "start": 6.927,
+     "end": 7.16
+    },
+    {
+     "text": "said",
+     "start": 7.16,
+     "end": 7.44
+    },
+    {
+     "text": "you'd",
+     "start": 7.44,
+     "end": 7.72
+    },
+    {
+     "text": "delete.",
+     "start": 7.72,
+     "end": 8.093
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Finished: one thing. The rest are tabs.",
+   "start": 8.593,
+   "end": 11.479,
+   "words": [
+    {
+     "text": "Finished:",
+     "start": 8.593,
+     "end": 9.003
+    },
+    {
+     "text": "one",
+     "start": 9.083,
+     "end": 9.412
+    },
+    {
+     "text": "thing.",
+     "start": 9.412,
+     "end": 9.873
+    },
+    {
+     "text": "The",
+     "start": 10.123,
+     "end": 10.431
+    },
+    {
+     "text": "rest",
+     "start": 10.431,
+     "end": 10.801
+    },
+    {
+     "text": "are",
+     "start": 10.801,
+     "end": 11.109
+    },
+    {
+     "text": "tabs.",
+     "start": 11.109,
+     "end": 11.479
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Your vibe: busy, but nothing moved.",
+   "start": 11.979,
+   "end": 14.688,
+   "words": [
+    {
+     "text": "Your",
+     "start": 11.979,
+     "end": 12.314
+    },
+    {
+     "text": "vibe:",
+     "start": 12.314,
+     "end": 12.649
+    },
+    {
+     "text": "busy,",
+     "start": 12.839,
+     "end": 13.289
+    },
+    {
+     "text": "but",
+     "start": 13.529,
+     "end": 13.805
+    },
+    {
+     "text": "nothing",
+     "start": 13.805,
+     "end": 14.302
+    },
+    {
+     "text": "moved.",
+     "start": 14.302,
+     "end": 14.688
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload plans one block at a time, so something actually moves.",
+   "start": 15.288,
+   "end": 19.764,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 15.288,
+     "end": 15.787
+    },
+    {
+     "text": "plans",
+     "start": 15.787,
+     "end": 16.174
+    },
+    {
+     "text": "one",
+     "start": 16.174,
+     "end": 16.451
+    },
+    {
+     "text": "block",
+     "start": 16.451,
+     "end": 16.839
+    },
+    {
+     "text": "at",
+     "start": 16.839,
+     "end": 17.06
+    },
+    {
+     "text": "a",
+     "start": 17.06,
+     "end": 17.226
+    },
+    {
+     "text": "time,",
+     "start": 17.226,
+     "end": 17.558
+    },
+    {
+     "text": "so",
+     "start": 17.898,
+     "end": 18.132
+    },
+    {
+     "text": "something",
+     "start": 18.132,
+     "end": 18.773
+    },
+    {
+     "text": "actually",
+     "start": 18.773,
+     "end": 19.356
+    },
+    {
+     "text": "moves.",
+     "start": 19.356,
+     "end": 19.764
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Miss one, and it reschedules. It tests you, so it sticks.",
+   "start": 20.164,
+   "end": 23.9,
+   "words": [
+    {
+     "text": "Miss",
+     "start": 20.164,
+     "end": 21.091
+    },
+    {
+     "text": "one,",
+     "start": 21.091,
+     "end": 21.864
+    },
+    {
+     "text": "and",
+     "start": 22.224,
+     "end": 22.487
+    },
+    {
+     "text": "it",
+     "start": 22.487,
+     "end": 22.698
+    },
+    {
+     "text": "reschedules.",
+     "start": 22.698,
+     "end": 23.384
+    },
+    {
+     "text": "It",
+     "start": 23.454,
+     "end": 23.486
+    },
+    {
+     "text": "tests",
+     "start": 23.486,
+     "end": 23.543
+    },
+    {
+     "text": "you,",
+     "start": 23.543,
+     "end": 23.584
+    },
+    {
+     "text": "so",
+     "start": 23.674,
+     "end": 23.73
+    },
+    {
+     "text": "it",
+     "start": 23.73,
+     "end": 23.787
+    },
+    {
+     "text": "sticks.",
+     "start": 23.787,
+     "end": 23.9
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 24.3,
+   "end": 27.53,
+   "words": [
+    {
+     "text": "You",
+     "start": 24.3,
+     "end": 24.553
+    },
+    {
+     "text": "just",
+     "start": 24.553,
+     "end": 24.855
+    },
+    {
+     "text": "click",
+     "start": 24.855,
+     "end": 25.209
+    },
+    {
+     "text": "the",
+     "start": 25.209,
+     "end": 25.461
+    },
+    {
+     "text": "link",
+     "start": 25.461,
+     "end": 25.764
+    },
+    {
+     "text": "in",
+     "start": 25.764,
+     "end": 25.966
+    },
+    {
+     "text": "your",
+     "start": 25.966,
+     "end": 26.269
+    },
+    {
+     "text": "calendar",
+     "start": 26.269,
+     "end": 26.773
+    },
+    {
+     "text": "and",
+     "start": 26.773,
+     "end": 27.026
+    },
+    {
+     "text": "show",
+     "start": 27.026,
+     "end": 27.329
+    },
+    {
+     "text": "up.",
+     "start": 27.329,
+     "end": 27.53
+    }
+   ]
+  }
+ ]
+}
