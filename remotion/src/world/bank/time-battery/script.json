@@ -1,0 +1,37 @@
+{
+ "id": "bank/time-battery",
+ "voice": "af_heart*0.7+af_bella*0.3",
+ "lang": "en-gb",
+ "speed": 1.02,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Your battery on a busy week."
+  },
+  {
+   "id": "L2",
+   "say": "Monday. Full. Big plans."
+  },
+  {
+   "id": "L3",
+   "say": "Tuesday. Every new thing costs a bit."
+  },
+  {
+   "id": "L4",
+   "say": "Wednesday. Too many starts."
+  },
+  {
+   "id": "L5",
+   "say": "Thursday. Running on nothing.",
+   "after": 0.4
+  },
+  {
+   "id": "L6",
+   "say": "I built the app so starting costs less. It tells you the next thing, so you're not choosing all day.",
+   "after": 0.7
+  }
+ ]
+}

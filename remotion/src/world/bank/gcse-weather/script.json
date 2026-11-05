@@ -1,0 +1,37 @@
+{
+ "id": "bank/gcse-weather",
+ "voice": "bf_alice",
+ "lang": "en-gb",
+ "speed": 1.02,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Your mock week forecast."
+  },
+  {
+   "id": "L2",
+   "say": "Monday. Sunny. You've got a plan."
+  },
+  {
+   "id": "L3",
+   "say": "Tuesday. Cloudy. One evening missed."
+  },
+  {
+   "id": "L4",
+   "say": "Wednesday. Rain. The timetable's out of date."
+  },
+  {
+   "id": "L5",
+   "say": "Thursday. Storms. You're starting again.",
+   "after": 0.4
+  },
+  {
+   "id": "L6",
+   "say": "With a plan that moves when you miss an evening, Thursday looks like Monday.",
+   "after": 0.7
+  }
+ ]
+}

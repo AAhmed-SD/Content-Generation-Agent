@@ -1,0 +1,26 @@
+{
+ "id": "analytical-terms",
+ "format": "terms",
+ "title": "Terms and conditions",
+ "clauses": [
+  {
+   "text": "You will spend longer colouring it in than using it.",
+   "at": "L2"
+  },
+  {
+   "text": "It assumes you will never be ill, tired or busy.",
+   "at": "L3"
+  },
+  {
+   "text": "It expires on Wednesday.",
+   "at": "L4"
+  }
+ ],
+ "sign": {
+  "at": "L5"
+ },
+ "final": {
+  "text": "VOID",
+  "at": "L6"
+ }
+}

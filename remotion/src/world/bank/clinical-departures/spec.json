@@ -1,0 +1,36 @@
+{
+ "id": "clinical-departures",
+ "format": "departures",
+ "title": "Departures",
+ "rows": [
+  {
+   "time": "Mon",
+   "dest": "Pharmacology",
+   "status": "Delayed",
+   "at": "L2"
+  },
+  {
+   "time": "Tue",
+   "dest": "Anatomy",
+   "status": "Delayed",
+   "at": "L3"
+  },
+  {
+   "time": "Wed",
+   "dest": "Timetable",
+   "status": "Cancelled",
+   "at": "L4"
+  },
+  {
+   "time": "Fri",
+   "dest": "Exam",
+   "status": "On time",
+   "tone": "ok",
+   "at": "L5"
+  }
+ ],
+ "final": {
+  "text": "Delayed work moves into\nyour free time.",
+  "at": "L6"
+ }
+}

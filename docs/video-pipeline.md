@@ -86,6 +86,23 @@ The scene template gives every film the same skeleton, so a feed of only those r
 | `receipt` | A thermal receipt printing line by line on a kraft desk, totalled and stamped. | `shop`, `sub`, `items` (label, value, `at`), `total` (label, value, `at`), optional `stamp` and `footer` (text, `at`) | Any | The stamp and footer |
 | `whiteboard` | A whiteboard: a title written in marker and underlined, lines written one by one, a strike, a circle, a sticky note. | `title` (text, `at`), up to four `lines` (text, `at`, colour), optional `strike`, `circle` (line, `at`), `arrow`, `sticky` (text, `at`) | Any | The sticky note |
 
+Twelve everyday-object templates, in `remotion/src/world/formats/kit3.tsx`, all voiced, every time a ref on a spoken word. Field names are in each type at the top of that file.
+
+| `format` | The object | Example |
+| --- | --- | --- |
+| `lockscreen` | A lock screen at night; notifications stack, then clear for one from the app | `bank/time-lockscreen` |
+| `inbox` | An inbox fills, is swiped clear, and one message is left | `bank/clinical-inbox` |
+| `exampaper` | An exam question, a handwritten answer, red-pen ticks and a stamp | `bank/gcse-exampaper` |
+| `battery` | A battery draining day by day | `bank/time-battery` |
+| `weather` | A week's forecast, sun to storm | `bank/gcse-weather` |
+| `terms` | Terms and conditions, clause by clause, signed and stamped | `bank/analytical-terms` |
+| `dialog` | System error dialogs, then a plain answer card | `bank/analytical-dialog` |
+| `satnav` | A sat-nav: a route, a missed turn, a reroute, arrival | `bank/clinical-satnav` |
+| `departures` | A split-flap departures board | `bank/clinical-departures` |
+| `recipe` | A recipe card: what you need, then the method | `bank/time-recipe` |
+| `missing` | A missing poster taped to a wall | `bank/gcse-missing` |
+| `kanban` | A to-do, doing, done board where cards move | `bank/analytical-kanban` |
+
 Examples: `bank/analytical-tier-list`, `bank/gcse-chat`, `bank/time-search`, `bank/clinical-receipt`, `bank/clinical-whiteboard`, `bank/gcse-myth-fact`, `bank/analytical-three-things`, `bank/time-pov`. Voice and render them like any bank film. A photo-story format was tried and dropped: the photo plates work as stills and carousel covers, not as a slideshow.
 
 Rules for a week of films, per account:

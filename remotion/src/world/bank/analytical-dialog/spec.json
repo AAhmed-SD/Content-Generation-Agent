@@ -1,0 +1,30 @@
+{
+ "id": "analytical-dialog",
+ "format": "dialog",
+ "dialogs": [
+  {
+   "title": "Brain",
+   "message": "Brain has stopped responding.",
+   "buttons": [
+    "Cancel",
+    "Retry"
+   ],
+   "press": 1,
+   "at": "L2"
+  },
+  {
+   "title": "Coursework",
+   "message": "Three lab reports are still open. Close them?",
+   "buttons": [
+    "Later",
+    "Close"
+   ],
+   "press": 0,
+   "at": "L3:three"
+  }
+ ],
+ "final": {
+  "text": "One session at a time.\nIn your calendar.",
+  "at": "L5"
+ }
+}

@@ -1,0 +1,260 @@
+{
+ "duration": 18.308,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Week ten of term. A summary.",
+   "start": 0.15,
+   "end": 2.109,
+   "words": [
+    {
+     "text": "Week",
+     "start": 0.15,
+     "end": 0.453
+    },
+    {
+     "text": "ten",
+     "start": 0.453,
+     "end": 0.705
+    },
+    {
+     "text": "of",
+     "start": 0.705,
+     "end": 0.907
+    },
+    {
+     "text": "term.",
+     "start": 0.907,
+     "end": 1.21
+    },
+    {
+     "text": "A",
+     "start": 1.38,
+     "end": 1.562
+    },
+    {
+     "text": "summary.",
+     "start": 1.562,
+     "end": 2.109
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Brain has stopped responding. Retry?",
+   "start": 2.369,
+   "end": 4.786,
+   "words": [
+    {
+     "text": "Brain",
+     "start": 2.369,
+     "end": 2.683
+    },
+    {
+     "text": "has",
+     "start": 2.683,
+     "end": 2.908
+    },
+    {
+     "text": "stopped",
+     "start": 2.908,
+     "end": 3.311
+    },
+    {
+     "text": "responding.",
+     "start": 3.311,
+     "end": 3.849
+    },
+    {
+     "text": "Retry?",
+     "start": 4.119,
+     "end": 4.786
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "You press retry. Three lab reports are still open.",
+   "start": 5.686,
+   "end": 8.807,
+   "words": [
+    {
+     "text": "You",
+     "start": 5.686,
+     "end": 5.933
+    },
+    {
+     "text": "press",
+     "start": 5.933,
+     "end": 6.279
+    },
+    {
+     "text": "retry.",
+     "start": 6.279,
+     "end": 6.626
+    },
+    {
+     "text": "Three",
+     "start": 6.936,
+     "end": 7.272
+    },
+    {
+     "text": "lab",
+     "start": 7.272,
+     "end": 7.512
+    },
+    {
+     "text": "reports",
+     "start": 7.512,
+     "end": 7.943
+    },
+    {
+     "text": "are",
+     "start": 7.943,
+     "end": 8.183
+    },
+    {
+     "text": "still",
+     "start": 8.183,
+     "end": 8.519
+    },
+    {
+     "text": "open.",
+     "start": 8.519,
+     "end": 8.807
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Close them? No. Later.",
+   "start": 9.507,
+   "end": 11.046,
+   "words": [
+    {
+     "text": "Close",
+     "start": 9.507,
+     "end": 9.674
+    },
+    {
+     "text": "them?",
+     "start": 9.674,
+     "end": 9.817
+    },
+    {
+     "text": "No.",
+     "start": 9.867,
+     "end": 10.047
+    },
+    {
+     "text": "Later.",
+     "start": 10.127,
+     "end": 11.046
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "The app puts it in your calendar one session at a time, so your brain only runs one thing.",
+   "start": 11.446,
+   "end": 16.608,
+   "words": [
+    {
+     "text": "The",
+     "start": 11.446,
+     "end": 11.644
+    },
+    {
+     "text": "app",
+     "start": 11.644,
+     "end": 11.842
+    },
+    {
+     "text": "puts",
+     "start": 11.842,
+     "end": 12.079
+    },
+    {
+     "text": "it",
+     "start": 12.079,
+     "end": 12.237
+    },
+    {
+     "text": "in",
+     "start": 12.237,
+     "end": 12.396
+    },
+    {
+     "text": "your",
+     "start": 12.396,
+     "end": 12.633
+    },
+    {
+     "text": "calendar",
+     "start": 12.633,
+     "end": 13.028
+    },
+    {
+     "text": "one",
+     "start": 13.028,
+     "end": 13.226
+    },
+    {
+     "text": "session",
+     "start": 13.226,
+     "end": 13.582
+    },
+    {
+     "text": "at",
+     "start": 13.582,
+     "end": 13.74
+    },
+    {
+     "text": "a",
+     "start": 13.74,
+     "end": 13.859
+    },
+    {
+     "text": "time,",
+     "start": 13.859,
+     "end": 14.096
+    },
+    {
+     "text": "so",
+     "start": 14.476,
+     "end": 14.684
+    },
+    {
+     "text": "your",
+     "start": 14.684,
+     "end": 14.996
+    },
+    {
+     "text": "brain",
+     "start": 14.996,
+     "end": 15.36
+    },
+    {
+     "text": "only",
+     "start": 15.36,
+     "end": 15.672
+    },
+    {
+     "text": "runs",
+     "start": 15.672,
+     "end": 15.984
+    },
+    {
+     "text": "one",
+     "start": 15.984,
+     "end": 16.244
+    },
+    {
+     "text": "thing.",
+     "start": 16.244,
+     "end": 16.608
+    }
+   ]
+  }
+ ]
+}

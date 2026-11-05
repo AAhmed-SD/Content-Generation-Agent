@@ -1,0 +1,35 @@
+{
+ "id": "gcse-weather",
+ "format": "weather",
+ "title": "Mock week forecast",
+ "days": [
+  {
+   "day": "Mon",
+   "sky": "sun",
+   "label": "Got a plan",
+   "at": "L2"
+  },
+  {
+   "day": "Tue",
+   "sky": "cloud",
+   "label": "One evening missed",
+   "at": "L3"
+  },
+  {
+   "day": "Wed",
+   "sky": "rain",
+   "label": "Out of date",
+   "at": "L4"
+  },
+  {
+   "day": "Thu",
+   "sky": "storm",
+   "label": "Starting again",
+   "at": "L5"
+  }
+ ],
+ "final": {
+  "text": "Miss an evening, the work moves.\nThursday looks like Monday.",
+  "at": "L6"
+ }
+}

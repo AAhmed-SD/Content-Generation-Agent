@@ -1,0 +1,220 @@
+{
+ "duration": 16.747,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Missing. One revision timetable.",
+   "start": 0.15,
+   "end": 2.471,
+   "words": [
+    {
+     "text": "Missing.",
+     "start": 0.15,
+     "end": 0.68
+    },
+    {
+     "text": "One",
+     "start": 0.75,
+     "end": 1.081
+    },
+    {
+     "text": "revision",
+     "start": 1.081,
+     "end": 1.743
+    },
+    {
+     "text": "timetable.",
+     "start": 1.743,
+     "end": 2.471
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Last seen: Sunday night.",
+   "start": 2.731,
+   "end": 4.533,
+   "words": [
+    {
+     "text": "Last",
+     "start": 2.731,
+     "end": 3.491
+    },
+    {
+     "text": "seen:",
+     "start": 3.491,
+     "end": 4.251
+    },
+    {
+     "text": "Sunday",
+     "start": 4.311,
+     "end": 4.43
+    },
+    {
+     "text": "night.",
+     "start": 4.43,
+     "end": 4.533
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Distinguishing features: seven colours, never used.",
+   "start": 4.793,
+   "end": 7.905,
+   "words": [
+    {
+     "text": "Distinguishing",
+     "start": 4.793,
+     "end": 5.353
+    },
+    {
+     "text": "features:",
+     "start": 5.353,
+     "end": 5.703
+    },
+    {
+     "text": "seven",
+     "start": 5.773,
+     "end": 5.9
+    },
+    {
+     "text": "colours,",
+     "start": 5.9,
+     "end": 6.063
+    },
+    {
+     "text": "never",
+     "start": 6.163,
+     "end": 7.101
+    },
+    {
+     "text": "used.",
+     "start": 7.101,
+     "end": 7.905
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Answers to: I'll start tomorrow.",
+   "start": 8.165,
+   "end": 10.241,
+   "words": [
+    {
+     "text": "Answers",
+     "start": 8.165,
+     "end": 9.072
+    },
+    {
+     "text": "to:",
+     "start": 9.072,
+     "end": 9.475
+    },
+    {
+     "text": "I'll",
+     "start": 9.545,
+     "end": 9.703
+    },
+    {
+     "text": "start",
+     "start": 9.703,
+     "end": 9.924
+    },
+    {
+     "text": "tomorrow.",
+     "start": 9.924,
+     "end": 10.241
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "If found, don't bother. The app makes the plan from your spec and your exam dates.",
+   "start": 10.641,
+   "end": 15.047,
+   "words": [
+    {
+     "text": "If",
+     "start": 10.641,
+     "end": 11.07
+    },
+    {
+     "text": "found,",
+     "start": 11.07,
+     "end": 11.821
+    },
+    {
+     "text": "don't",
+     "start": 12.041,
+     "end": 12.731
+    },
+    {
+     "text": "bother.",
+     "start": 12.731,
+     "end": 13.651
+    },
+    {
+     "text": "The",
+     "start": 13.801,
+     "end": 13.89
+    },
+    {
+     "text": "app",
+     "start": 13.89,
+     "end": 13.979
+    },
+    {
+     "text": "makes",
+     "start": 13.979,
+     "end": 14.104
+    },
+    {
+     "text": "the",
+     "start": 14.104,
+     "end": 14.193
+    },
+    {
+     "text": "plan",
+     "start": 14.193,
+     "end": 14.299
+    },
+    {
+     "text": "from",
+     "start": 14.299,
+     "end": 14.406
+    },
+    {
+     "text": "your",
+     "start": 14.406,
+     "end": 14.513
+    },
+    {
+     "text": "spec",
+     "start": 14.513,
+     "end": 14.62
+    },
+    {
+     "text": "and",
+     "start": 14.62,
+     "end": 14.709
+    },
+    {
+     "text": "your",
+     "start": 14.709,
+     "end": 14.816
+    },
+    {
+     "text": "exam",
+     "start": 14.816,
+     "end": 14.923
+    },
+    {
+     "text": "dates.",
+     "start": 14.923,
+     "end": 15.047
+    }
+   ]
+  }
+ ]
+}

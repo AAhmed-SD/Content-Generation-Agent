@@ -1,0 +1,38 @@
+{
+ "id": "bank/analytical-terms",
+ "voice": "bm_daniel*0.5+bm_lewis*0.5",
+ "lang": "en-gb",
+ "speed": 1.02,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Terms and conditions of making a revision timetable."
+  },
+  {
+   "id": "L2",
+   "say": "One. You'll spend longer colouring it in than using it."
+  },
+  {
+   "id": "L3",
+   "say": "Two. It assumes you'll never be ill, tired, or busy."
+  },
+  {
+   "id": "L4",
+   "say": "Three. It expires on Wednesday.",
+   "after": 0.3
+  },
+  {
+   "id": "L5",
+   "say": "You agree. You always agree.",
+   "after": 0.4
+  },
+  {
+   "id": "L6",
+   "say": "Or skip the contract. The app's plan moves when your week does.",
+   "after": 0.7
+  }
+ ]
+}

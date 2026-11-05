@@ -1,0 +1,253 @@
+{
+ "duration": 16.304,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "It's eleven forty-seven. Here's the lock screen.",
+   "start": 0.15,
+   "end": 2.942,
+   "words": [
+    {
+     "text": "It's",
+     "start": 0.15,
+     "end": 0.416
+    },
+    {
+     "text": "eleven",
+     "start": 0.416,
+     "end": 0.842
+    },
+    {
+     "text": "forty-seven.",
+     "start": 0.842,
+     "end": 1.48
+    },
+    {
+     "text": "Here's",
+     "start": 1.84,
+     "end": 2.137
+    },
+    {
+     "text": "the",
+     "start": 2.137,
+     "end": 2.349
+    },
+    {
+     "text": "lock",
+     "start": 2.349,
+     "end": 2.603
+    },
+    {
+     "text": "screen.",
+     "start": 2.603,
+     "end": 2.942
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Essay due tomorrow.",
+   "start": 3.202,
+   "end": 4.272,
+   "words": [
+    {
+     "text": "Essay",
+     "start": 3.202,
+     "end": 3.543
+    },
+    {
+     "text": "due",
+     "start": 3.543,
+     "end": 3.786
+    },
+    {
+     "text": "tomorrow.",
+     "start": 3.786,
+     "end": 4.272
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Group chat, still going.",
+   "start": 4.532,
+   "end": 5.904,
+   "words": [
+    {
+     "text": "Group",
+     "start": 4.532,
+     "end": 4.801
+    },
+    {
+     "text": "chat,",
+     "start": 4.801,
+     "end": 5.032
+    },
+    {
+     "text": "still",
+     "start": 5.102,
+     "end": 5.503
+    },
+    {
+     "text": "going.",
+     "start": 5.503,
+     "end": 5.904
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Your screen time report. Don't.",
+   "start": 6.164,
+   "end": 8.134,
+   "words": [
+    {
+     "text": "Your",
+     "start": 6.164,
+     "end": 6.44
+    },
+    {
+     "text": "screen",
+     "start": 6.44,
+     "end": 6.809
+    },
+    {
+     "text": "time",
+     "start": 6.809,
+     "end": 7.085
+    },
+    {
+     "text": "report.",
+     "start": 7.085,
+     "end": 7.454
+    },
+    {
+     "text": "Don't.",
+     "start": 7.714,
+     "end": 8.134
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Every one of these is a start you haven't made.",
+   "start": 8.394,
+   "end": 10.686,
+   "words": [
+    {
+     "text": "Every",
+     "start": 8.394,
+     "end": 8.681
+    },
+    {
+     "text": "one",
+     "start": 8.681,
+     "end": 8.886
+    },
+    {
+     "text": "of",
+     "start": 8.886,
+     "end": 9.049
+    },
+    {
+     "text": "these",
+     "start": 9.049,
+     "end": 9.336
+    },
+    {
+     "text": "is",
+     "start": 9.336,
+     "end": 9.499
+    },
+    {
+     "text": "a",
+     "start": 9.499,
+     "end": 9.622
+    },
+    {
+     "text": "start",
+     "start": 9.622,
+     "end": 9.909
+    },
+    {
+     "text": "you",
+     "start": 9.909,
+     "end": 10.113
+    },
+    {
+     "text": "haven't",
+     "start": 10.113,
+     "end": 10.441
+    },
+    {
+     "text": "made.",
+     "start": 10.441,
+     "end": 10.686
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "I wanted one notification that just says: here's your next block.",
+   "start": 11.086,
+   "end": 14.604,
+   "words": [
+    {
+     "text": "I",
+     "start": 11.086,
+     "end": 11.212
+    },
+    {
+     "text": "wanted",
+     "start": 11.212,
+     "end": 11.547
+    },
+    {
+     "text": "one",
+     "start": 11.547,
+     "end": 11.756
+    },
+    {
+     "text": "notification",
+     "start": 11.756,
+     "end": 12.342
+    },
+    {
+     "text": "that",
+     "start": 12.342,
+     "end": 12.594
+    },
+    {
+     "text": "just",
+     "start": 12.594,
+     "end": 12.845
+    },
+    {
+     "text": "says:",
+     "start": 12.845,
+     "end": 13.096
+    },
+    {
+     "text": "here's",
+     "start": 13.496,
+     "end": 13.795
+    },
+    {
+     "text": "your",
+     "start": 13.795,
+     "end": 14.05
+    },
+    {
+     "text": "next",
+     "start": 14.05,
+     "end": 14.306
+    },
+    {
+     "text": "block.",
+     "start": 14.306,
+     "end": 14.604
+    }
+   ]
+  }
+ ]
+}

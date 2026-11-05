@@ -1,0 +1,26 @@
+{
+ "id": "clinical-satnav",
+ "format": "satnav",
+ "steps": [
+  {
+   "kind": "go",
+   "text": "Head to exam day",
+   "at": "L2"
+  },
+  {
+   "kind": "miss",
+   "text": "Missed: Tuesday's session",
+   "at": "L3:miss"
+  },
+  {
+   "kind": "reroute",
+   "text": "Rerouting around your shift",
+   "at": "L5"
+  },
+  {
+   "kind": "arrive",
+   "text": "Arriving: exam day",
+   "at": "L6"
+  }
+ ]
+}

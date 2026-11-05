@@ -1,0 +1,33 @@
+{
+ "id": "bank/gcse-missing",
+ "voice": "bf_lily",
+ "lang": "en-gb",
+ "speed": 1.02,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Missing. One revision timetable."
+  },
+  {
+   "id": "L2",
+   "say": "Last seen: Sunday night."
+  },
+  {
+   "id": "L3",
+   "say": "Distinguishing features: seven colours, never used."
+  },
+  {
+   "id": "L4",
+   "say": "Answers to: I'll start tomorrow.",
+   "after": 0.4
+  },
+  {
+   "id": "L5",
+   "say": "If found, don't bother. The app makes the plan from your spec and your exam dates.",
+   "after": 0.7
+  }
+ ]
+}

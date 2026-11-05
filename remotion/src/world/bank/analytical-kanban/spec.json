@@ -1,0 +1,40 @@
+{
+ "id": "analytical-kanban",
+ "format": "kanban",
+ "title": "Week ten",
+ "cards": [
+  {
+   "text": "Lab report",
+   "col": 0,
+   "at": "L2@0.1"
+  },
+  {
+   "text": "Problem sheet",
+   "col": 0,
+   "at": "L2@0.3"
+  },
+  {
+   "text": "Revision",
+   "col": 0,
+   "at": "L2@0.5",
+   "move": {
+    "col": 1,
+    "at": "L5:slots"
+   }
+  },
+  {
+   "text": "Group chat argument",
+   "col": 1,
+   "at": "L3"
+  },
+  {
+   "text": "Title slide",
+   "col": 2,
+   "at": "L4:one"
+  }
+ ],
+ "final": {
+  "text": "Revision, slotted in\naround the deadlines.",
+  "at": "L5:deadlines"
+ }
+}

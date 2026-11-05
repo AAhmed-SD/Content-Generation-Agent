@@ -1,0 +1,293 @@
+{
+ "duration": 18.948,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Think of your revision plan like a sat nav.",
+   "start": 0.15,
+   "end": 2.924,
+   "words": [
+    {
+     "text": "Think",
+     "start": 0.15,
+     "end": 0.523
+    },
+    {
+     "text": "of",
+     "start": 0.523,
+     "end": 0.737
+    },
+    {
+     "text": "your",
+     "start": 0.737,
+     "end": 1.057
+    },
+    {
+     "text": "revision",
+     "start": 1.057,
+     "end": 1.59
+    },
+    {
+     "text": "plan",
+     "start": 1.59,
+     "end": 1.91
+    },
+    {
+     "text": "like",
+     "start": 1.91,
+     "end": 2.231
+    },
+    {
+     "text": "a",
+     "start": 2.231,
+     "end": 2.391
+    },
+    {
+     "text": "sat",
+     "start": 2.391,
+     "end": 2.657
+    },
+    {
+     "text": "nav.",
+     "start": 2.657,
+     "end": 2.924
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "You set off fine.",
+   "start": 3.184,
+   "end": 4.405,
+   "words": [
+    {
+     "text": "You",
+     "start": 3.184,
+     "end": 3.475
+    },
+    {
+     "text": "set",
+     "start": 3.475,
+     "end": 3.766
+    },
+    {
+     "text": "off",
+     "start": 3.766,
+     "end": 4.056
+    },
+    {
+     "text": "fine.",
+     "start": 4.056,
+     "end": 4.405
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Then a twelve-hour shift happens, and you miss the turn.",
+   "start": 4.665,
+   "end": 7.737,
+   "words": [
+    {
+     "text": "Then",
+     "start": 4.665,
+     "end": 4.931
+    },
+    {
+     "text": "a",
+     "start": 4.931,
+     "end": 5.064
+    },
+    {
+     "text": "twelve-hour",
+     "start": 5.064,
+     "end": 5.596
+    },
+    {
+     "text": "shift",
+     "start": 5.596,
+     "end": 5.906
+    },
+    {
+     "text": "happens,",
+     "start": 5.906,
+     "end": 6.305
+    },
+    {
+     "text": "and",
+     "start": 6.655,
+     "end": 6.856
+    },
+    {
+     "text": "you",
+     "start": 6.856,
+     "end": 7.056
+    },
+    {
+     "text": "miss",
+     "start": 7.056,
+     "end": 7.296
+    },
+    {
+     "text": "the",
+     "start": 7.296,
+     "end": 7.496
+    },
+    {
+     "text": "turn.",
+     "start": 7.496,
+     "end": 7.737
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "A paper timetable just says: you're lost.",
+   "start": 7.997,
+   "end": 10.804,
+   "words": [
+    {
+     "text": "A",
+     "start": 7.997,
+     "end": 8.149
+    },
+    {
+     "text": "paper",
+     "start": 8.149,
+     "end": 8.506
+    },
+    {
+     "text": "timetable",
+     "start": 8.506,
+     "end": 9.066
+    },
+    {
+     "text": "just",
+     "start": 9.066,
+     "end": 9.371
+    },
+    {
+     "text": "says:",
+     "start": 9.371,
+     "end": 9.677
+    },
+    {
+     "text": "you're",
+     "start": 10.107,
+     "end": 10.482
+    },
+    {
+     "text": "lost.",
+     "start": 10.482,
+     "end": 10.804
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "A sat nav reroutes. That's what the app does around your rota.",
+   "start": 11.104,
+   "end": 14.868,
+   "words": [
+    {
+     "text": "A",
+     "start": 11.104,
+     "end": 11.28
+    },
+    {
+     "text": "sat",
+     "start": 11.28,
+     "end": 11.574
+    },
+    {
+     "text": "nav",
+     "start": 11.574,
+     "end": 11.867
+    },
+    {
+     "text": "reroutes.",
+     "start": 11.867,
+     "end": 12.454
+    },
+    {
+     "text": "That's",
+     "start": 12.854,
+     "end": 13.142
+    },
+    {
+     "text": "what",
+     "start": 13.142,
+     "end": 13.389
+    },
+    {
+     "text": "the",
+     "start": 13.389,
+     "end": 13.594
+    },
+    {
+     "text": "app",
+     "start": 13.594,
+     "end": 13.799
+    },
+    {
+     "text": "does",
+     "start": 13.799,
+     "end": 14.046
+    },
+    {
+     "text": "around",
+     "start": 14.046,
+     "end": 14.375
+    },
+    {
+     "text": "your",
+     "start": 14.375,
+     "end": 14.621
+    },
+    {
+     "text": "rota.",
+     "start": 14.621,
+     "end": 14.868
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "You still get there. Exam day.",
+   "start": 15.128,
+   "end": 17.248,
+   "words": [
+    {
+     "text": "You",
+     "start": 15.128,
+     "end": 15.299
+    },
+    {
+     "text": "still",
+     "start": 15.299,
+     "end": 15.538
+    },
+    {
+     "text": "get",
+     "start": 15.538,
+     "end": 15.709
+    },
+    {
+     "text": "there.",
+     "start": 15.709,
+     "end": 15.948
+    },
+    {
+     "text": "Exam",
+     "start": 16.318,
+     "end": 16.825
+    },
+    {
+     "text": "day.",
+     "start": 16.825,
+     "end": 17.248
+    }
+   ]
+  }
+ ]
+}

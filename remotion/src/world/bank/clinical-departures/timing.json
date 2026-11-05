@@ -1,0 +1,218 @@
+{
+ "duration": 20.198,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "This week's departures, for anyone on placement.",
+   "start": 0.15,
+   "end": 3.438,
+   "words": [
+    {
+     "text": "This",
+     "start": 0.15,
+     "end": 0.776
+    },
+    {
+     "text": "week's",
+     "start": 0.776,
+     "end": 1.507
+    },
+    {
+     "text": "departures,",
+     "start": 1.507,
+     "end": 2.76
+    },
+    {
+     "text": "for",
+     "start": 2.9,
+     "end": 2.996
+    },
+    {
+     "text": "anyone",
+     "start": 2.996,
+     "end": 3.15
+    },
+    {
+     "text": "on",
+     "start": 3.15,
+     "end": 3.226
+    },
+    {
+     "text": "placement.",
+     "start": 3.226,
+     "end": 3.438
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Pharmacology. Delayed.",
+   "start": 3.698,
+   "end": 5.856,
+   "words": [
+    {
+     "text": "Pharmacology.",
+     "start": 3.698,
+     "end": 4.598
+    },
+    {
+     "text": "Delayed.",
+     "start": 4.718,
+     "end": 5.856
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Anatomy. Delayed, again.",
+   "start": 6.116,
+   "end": 8.391,
+   "words": [
+    {
+     "text": "Anatomy.",
+     "start": 6.116,
+     "end": 6.736
+    },
+    {
+     "text": "Delayed,",
+     "start": 6.836,
+     "end": 7.286
+    },
+    {
+     "text": "again.",
+     "start": 7.366,
+     "end": 8.391
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "The timetable. Cancelled.",
+   "start": 8.651,
+   "end": 10.834,
+   "words": [
+    {
+     "text": "The",
+     "start": 8.651,
+     "end": 9.161
+    },
+    {
+     "text": "timetable.",
+     "start": 9.161,
+     "end": 10.281
+    },
+    {
+     "text": "Cancelled.",
+     "start": 10.571,
+     "end": 10.834
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Your exam. On time. Obviously.",
+   "start": 11.094,
+   "end": 13.837,
+   "words": [
+    {
+     "text": "Your",
+     "start": 11.094,
+     "end": 11.744
+    },
+    {
+     "text": "exam.",
+     "start": 11.744,
+     "end": 12.394
+    },
+    {
+     "text": "On",
+     "start": 12.504,
+     "end": 12.776
+    },
+    {
+     "text": "time.",
+     "start": 12.776,
+     "end": 13.184
+    },
+    {
+     "text": "Obviously.",
+     "start": 13.524,
+     "end": 13.837
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "The app reschedules what got delayed into the free time you actually have.",
+   "start": 14.237,
+   "end": 18.498,
+   "words": [
+    {
+     "text": "The",
+     "start": 14.237,
+     "end": 14.482
+    },
+    {
+     "text": "app",
+     "start": 14.482,
+     "end": 14.727
+    },
+    {
+     "text": "reschedules",
+     "start": 14.727,
+     "end": 15.364
+    },
+    {
+     "text": "what",
+     "start": 15.364,
+     "end": 15.657
+    },
+    {
+     "text": "got",
+     "start": 15.657,
+     "end": 15.902
+    },
+    {
+     "text": "delayed",
+     "start": 15.902,
+     "end": 16.343
+    },
+    {
+     "text": "into",
+     "start": 16.343,
+     "end": 16.637
+    },
+    {
+     "text": "the",
+     "start": 16.637,
+     "end": 16.882
+    },
+    {
+     "text": "free",
+     "start": 16.882,
+     "end": 17.176
+    },
+    {
+     "text": "time",
+     "start": 17.176,
+     "end": 17.469
+    },
+    {
+     "text": "you",
+     "start": 17.469,
+     "end": 17.714
+    },
+    {
+     "text": "actually",
+     "start": 17.714,
+     "end": 18.204
+    },
+    {
+     "text": "have.",
+     "start": 18.204,
+     "end": 18.498
+    }
+   ]
+  }
+ ]
+}

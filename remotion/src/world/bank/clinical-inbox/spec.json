@@ -1,0 +1,40 @@
+{
+ "id": "clinical-inbox",
+ "format": "inbox",
+ "account": "uni mail",
+ "emails": [
+  {
+   "from": "Placement office",
+   "subject": "Rota updated",
+   "preview": "Please check your shifts for next week",
+   "at": "L2"
+  },
+  {
+   "from": "Module lead",
+   "subject": "Reminder: coursework due Friday",
+   "preview": "Submissions close at midnight",
+   "at": "L3"
+  },
+  {
+   "from": "Timetabling",
+   "subject": "Teaching moved to 9am",
+   "preview": "Room change for this week",
+   "at": "L4"
+  },
+  {
+   "from": "Clinical skills",
+   "subject": "Sign-off outstanding",
+   "preview": "Please book with your supervisor",
+   "at": "L5"
+  }
+ ],
+ "clear": {
+  "at": "L6:clear"
+ },
+ "final": {
+  "from": "offload",
+  "subject": "Today's plan",
+  "preview": "One block before your shift. Everything else moved.",
+  "at": "L7"
+ }
+}

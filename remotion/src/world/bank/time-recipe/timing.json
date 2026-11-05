@@ -1,0 +1,268 @@
+{
+ "duration": 15.968,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Recipe for one study block. Serves one tired student.",
+   "start": 0.15,
+   "end": 3.609,
+   "words": [
+    {
+     "text": "Recipe",
+     "start": 0.15,
+     "end": 0.532
+    },
+    {
+     "text": "for",
+     "start": 0.532,
+     "end": 0.772
+    },
+    {
+     "text": "one",
+     "start": 0.772,
+     "end": 1.011
+    },
+    {
+     "text": "study",
+     "start": 1.011,
+     "end": 1.345
+    },
+    {
+     "text": "block.",
+     "start": 1.345,
+     "end": 1.68
+    },
+    {
+     "text": "Serves",
+     "start": 2.04,
+     "end": 2.473
+    },
+    {
+     "text": "one",
+     "start": 2.473,
+     "end": 2.743
+    },
+    {
+     "text": "tired",
+     "start": 2.743,
+     "end": 3.122
+    },
+    {
+     "text": "student.",
+     "start": 3.122,
+     "end": 3.609
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "You'll need one thing to start.",
+   "start": 3.869,
+   "end": 5.307,
+   "words": [
+    {
+     "text": "You'll",
+     "start": 3.869,
+     "end": 4.149
+    },
+    {
+     "text": "need",
+     "start": 4.149,
+     "end": 4.388
+    },
+    {
+     "text": "one",
+     "start": 4.388,
+     "end": 4.588
+    },
+    {
+     "text": "thing",
+     "start": 4.588,
+     "end": 4.868
+    },
+    {
+     "text": "to",
+     "start": 4.868,
+     "end": 5.028
+    },
+    {
+     "text": "start.",
+     "start": 5.028,
+     "end": 5.307
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "A phone, in another room.",
+   "start": 5.567,
+   "end": 7.01,
+   "words": [
+    {
+     "text": "A",
+     "start": 5.567,
+     "end": 5.714
+    },
+    {
+     "text": "phone,",
+     "start": 5.714,
+     "end": 6.057
+    },
+    {
+     "text": "in",
+     "start": 6.167,
+     "end": 6.345
+    },
+    {
+     "text": "another",
+     "start": 6.345,
+     "end": 6.744
+    },
+    {
+     "text": "room.",
+     "start": 6.744,
+     "end": 7.01
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "And a plan you didn't have to make.",
+   "start": 7.27,
+   "end": 8.863,
+   "words": [
+    {
+     "text": "And",
+     "start": 7.27,
+     "end": 7.46
+    },
+    {
+     "text": "a",
+     "start": 7.46,
+     "end": 7.574
+    },
+    {
+     "text": "plan",
+     "start": 7.574,
+     "end": 7.801
+    },
+    {
+     "text": "you",
+     "start": 7.801,
+     "end": 7.991
+    },
+    {
+     "text": "didn't",
+     "start": 7.991,
+     "end": 8.256
+    },
+    {
+     "text": "have",
+     "start": 8.256,
+     "end": 8.484
+    },
+    {
+     "text": "to",
+     "start": 8.484,
+     "end": 8.635
+    },
+    {
+     "text": "make.",
+     "start": 8.635,
+     "end": 8.863
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Method. Open the app. Do the next block. Stop.",
+   "start": 9.163,
+   "end": 11.945,
+   "words": [
+    {
+     "text": "Method.",
+     "start": 9.163,
+     "end": 10.213
+    },
+    {
+     "text": "Open",
+     "start": 10.283,
+     "end": 10.287
+    },
+    {
+     "text": "the",
+     "start": 10.287,
+     "end": 10.29
+    },
+    {
+     "text": "app.",
+     "start": 10.29,
+     "end": 10.293
+    },
+    {
+     "text": "Do",
+     "start": 10.553,
+     "end": 10.688
+    },
+    {
+     "text": "the",
+     "start": 10.688,
+     "end": 10.856
+    },
+    {
+     "text": "next",
+     "start": 10.856,
+     "end": 11.058
+    },
+    {
+     "text": "block.",
+     "start": 11.058,
+     "end": 11.293
+    },
+    {
+     "text": "Stop.",
+     "start": 11.433,
+     "end": 11.945
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "That's it. That's the whole recipe.",
+   "start": 12.345,
+   "end": 14.268,
+   "words": [
+    {
+     "text": "That's",
+     "start": 12.345,
+     "end": 12.676
+    },
+    {
+     "text": "it.",
+     "start": 12.676,
+     "end": 12.865
+    },
+    {
+     "text": "That's",
+     "start": 13.035,
+     "end": 13.355
+    },
+    {
+     "text": "the",
+     "start": 13.355,
+     "end": 13.583
+    },
+    {
+     "text": "whole",
+     "start": 13.583,
+     "end": 13.903
+    },
+    {
+     "text": "recipe.",
+     "start": 13.903,
+     "end": 14.268
+    }
+   ]
+  }
+ ]
+}

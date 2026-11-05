@@ -1,0 +1,42 @@
+{
+ "id": "bank/clinical-inbox",
+ "voice": "bm_fable",
+ "lang": "en-gb",
+ "speed": 1.02,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Your uni inbox on a Sunday night."
+  },
+  {
+   "id": "L2",
+   "say": "Rota updated."
+  },
+  {
+   "id": "L3",
+   "say": "Reminder: coursework due Friday."
+  },
+  {
+   "id": "L4",
+   "say": "Teaching moved to nine a.m."
+  },
+  {
+   "id": "L5",
+   "say": "Placement sign-off outstanding.",
+   "after": 0.3
+  },
+  {
+   "id": "L6",
+   "say": "You can't answer all of it tonight. So clear it.",
+   "after": 0.3
+  },
+  {
+   "id": "L7",
+   "say": "The one worth opening is the plan that's already moved around all of that.",
+   "after": 0.7
+  }
+ ]
+}

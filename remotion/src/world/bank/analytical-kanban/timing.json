@@ -1,0 +1,230 @@
+{
+ "duration": 15.227,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Group project board, week ten.",
+   "start": 0.15,
+   "end": 2.073,
+   "words": [
+    {
+     "text": "Group",
+     "start": 0.15,
+     "end": 0.491
+    },
+    {
+     "text": "project",
+     "start": 0.491,
+     "end": 0.929
+    },
+    {
+     "text": "board,",
+     "start": 0.929,
+     "end": 1.27
+    },
+    {
+     "text": "week",
+     "start": 1.38,
+     "end": 1.758
+    },
+    {
+     "text": "ten.",
+     "start": 1.758,
+     "end": 2.073
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "To do: literally everything.",
+   "start": 2.333,
+   "end": 4.089,
+   "words": [
+    {
+     "text": "To",
+     "start": 2.333,
+     "end": 2.573
+    },
+    {
+     "text": "do:",
+     "start": 2.573,
+     "end": 2.813
+    },
+    {
+     "text": "literally",
+     "start": 2.903,
+     "end": 3.47
+    },
+    {
+     "text": "everything.",
+     "start": 3.47,
+     "end": 4.089
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Doing: arguing in the group chat.",
+   "start": 4.349,
+   "end": 6.187,
+   "words": [
+    {
+     "text": "Doing:",
+     "start": 4.349,
+     "end": 4.719
+    },
+    {
+     "text": "arguing",
+     "start": 4.819,
+     "end": 5.216
+    },
+    {
+     "text": "in",
+     "start": 5.216,
+     "end": 5.393
+    },
+    {
+     "text": "the",
+     "start": 5.393,
+     "end": 5.613
+    },
+    {
+     "text": "group",
+     "start": 5.613,
+     "end": 5.922
+    },
+    {
+     "text": "chat.",
+     "start": 5.922,
+     "end": 6.187
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Done: one slide. It's the title slide.",
+   "start": 6.447,
+   "end": 8.919,
+   "words": [
+    {
+     "text": "Done:",
+     "start": 6.447,
+     "end": 6.8
+    },
+    {
+     "text": "one",
+     "start": 6.8,
+     "end": 7.094
+    },
+    {
+     "text": "slide.",
+     "start": 7.094,
+     "end": 7.506
+    },
+    {
+     "text": "It's",
+     "start": 7.506,
+     "end": 7.801
+    },
+    {
+     "text": "the",
+     "start": 7.801,
+     "end": 8.095
+    },
+    {
+     "text": "title",
+     "start": 8.095,
+     "end": 8.507
+    },
+    {
+     "text": "slide.",
+     "start": 8.507,
+     "end": 8.919
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "The app slots revision in around the deadlines, so it stops living in to do.",
+   "start": 9.319,
+   "end": 13.527,
+   "words": [
+    {
+     "text": "The",
+     "start": 9.319,
+     "end": 9.534
+    },
+    {
+     "text": "app",
+     "start": 9.534,
+     "end": 9.748
+    },
+    {
+     "text": "slots",
+     "start": 9.748,
+     "end": 10.048
+    },
+    {
+     "text": "revision",
+     "start": 10.048,
+     "end": 10.478
+    },
+    {
+     "text": "in",
+     "start": 10.478,
+     "end": 10.649
+    },
+    {
+     "text": "around",
+     "start": 10.649,
+     "end": 10.992
+    },
+    {
+     "text": "the",
+     "start": 10.992,
+     "end": 11.207
+    },
+    {
+     "text": "deadlines,",
+     "start": 11.207,
+     "end": 11.679
+    },
+    {
+     "text": "so",
+     "start": 12.019,
+     "end": 12.191
+    },
+    {
+     "text": "it",
+     "start": 12.191,
+     "end": 12.364
+    },
+    {
+     "text": "stops",
+     "start": 12.364,
+     "end": 12.665
+    },
+    {
+     "text": "living",
+     "start": 12.665,
+     "end": 13.01
+    },
+    {
+     "text": "in",
+     "start": 13.01,
+     "end": 13.182
+    },
+    {
+     "text": "to",
+     "start": 13.182,
+     "end": 13.355
+    },
+    {
+     "text": "do.",
+     "start": 13.355,
+     "end": 13.527
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "id": "time-recipe",
+ "format": "recipe",
+ "title": "One study block",
+ "serves": "Serves one tired student",
+ "ingredients": [
+  {
+   "text": "one thing to start",
+   "at": "L2"
+  },
+  {
+   "text": "a phone, in another room",
+   "at": "L3"
+  },
+  {
+   "text": "a plan you didn't make",
+   "at": "L4"
+  }
+ ],
+ "method": [
+  {
+   "text": "open the app",
+   "at": "L5:open"
+  },
+  {
+   "text": "do the next block",
+   "at": "L5:do"
+  },
+  {
+   "text": "stop",
+   "at": "L5:stop"
+  }
+ ]
+}

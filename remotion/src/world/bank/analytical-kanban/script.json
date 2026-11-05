@@ -1,0 +1,33 @@
+{
+ "id": "bank/analytical-kanban",
+ "voice": "bm_daniel*0.5+bm_lewis*0.5",
+ "lang": "en-gb",
+ "speed": 1.02,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Group project board, week ten."
+  },
+  {
+   "id": "L2",
+   "say": "To do: literally everything."
+  },
+  {
+   "id": "L3",
+   "say": "Doing: arguing in the group chat."
+  },
+  {
+   "id": "L4",
+   "say": "Done: one slide. It's the title slide.",
+   "after": 0.4
+  },
+  {
+   "id": "L5",
+   "say": "The app slots revision in around the deadlines, so it stops living in to do.",
+   "after": 0.7
+  }
+ ]
+}

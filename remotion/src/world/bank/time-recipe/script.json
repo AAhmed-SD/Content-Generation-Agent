@@ -1,0 +1,38 @@
+{
+ "id": "bank/time-recipe",
+ "voice": "af_heart*0.7+af_bella*0.3",
+ "lang": "en-gb",
+ "speed": 1.02,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Recipe for one study block. Serves one tired student."
+  },
+  {
+   "id": "L2",
+   "say": "You'll need one thing to start."
+  },
+  {
+   "id": "L3",
+   "say": "A phone, in another room."
+  },
+  {
+   "id": "L4",
+   "say": "And a plan you didn't have to make.",
+   "after": 0.3
+  },
+  {
+   "id": "L5",
+   "say": "Method. Open the app. Do the next block. Stop.",
+   "after": 0.4
+  },
+  {
+   "id": "L6",
+   "say": "That's it. That's the whole recipe.",
+   "after": 0.7
+  }
+ ]
+}

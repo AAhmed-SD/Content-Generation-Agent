@@ -1,0 +1,303 @@
+{
+ "duration": 20.274,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Terms and conditions of making a revision timetable.",
+   "start": 0.15,
+   "end": 3.675,
+   "words": [
+    {
+     "text": "Terms",
+     "start": 0.15,
+     "end": 0.561
+    },
+    {
+     "text": "and",
+     "start": 0.561,
+     "end": 0.855
+    },
+    {
+     "text": "conditions",
+     "start": 0.855,
+     "end": 1.56
+    },
+    {
+     "text": "of",
+     "start": 1.56,
+     "end": 1.795
+    },
+    {
+     "text": "making",
+     "start": 1.795,
+     "end": 2.265
+    },
+    {
+     "text": "a",
+     "start": 2.265,
+     "end": 2.441
+    },
+    {
+     "text": "revision",
+     "start": 2.441,
+     "end": 3.029
+    },
+    {
+     "text": "timetable.",
+     "start": 3.029,
+     "end": 3.675
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "One. You'll spend longer colouring it in than using it.",
+   "start": 3.935,
+   "end": 6.965,
+   "words": [
+    {
+     "text": "One.",
+     "start": 3.935,
+     "end": 5.695
+    },
+    {
+     "text": "You'll",
+     "start": 5.865,
+     "end": 5.998
+    },
+    {
+     "text": "spend",
+     "start": 5.998,
+     "end": 6.13
+    },
+    {
+     "text": "longer",
+     "start": 6.13,
+     "end": 6.282
+    },
+    {
+     "text": "colouring",
+     "start": 6.282,
+     "end": 6.491
+    },
+    {
+     "text": "it",
+     "start": 6.491,
+     "end": 6.567
+    },
+    {
+     "text": "in",
+     "start": 6.567,
+     "end": 6.643
+    },
+    {
+     "text": "than",
+     "start": 6.643,
+     "end": 6.757
+    },
+    {
+     "text": "using",
+     "start": 6.757,
+     "end": 6.889
+    },
+    {
+     "text": "it.",
+     "start": 6.889,
+     "end": 6.965
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Two. It assumes you'll never be ill, tired, or busy.",
+   "start": 7.225,
+   "end": 10.25,
+   "words": [
+    {
+     "text": "Two.",
+     "start": 7.225,
+     "end": 7.555
+    },
+    {
+     "text": "It",
+     "start": 7.645,
+     "end": 7.795
+    },
+    {
+     "text": "assumes",
+     "start": 7.795,
+     "end": 8.133
+    },
+    {
+     "text": "you'll",
+     "start": 8.133,
+     "end": 8.395
+    },
+    {
+     "text": "never",
+     "start": 8.395,
+     "end": 8.658
+    },
+    {
+     "text": "be",
+     "start": 8.658,
+     "end": 8.808
+    },
+    {
+     "text": "ill,",
+     "start": 8.808,
+     "end": 8.995
+    },
+    {
+     "text": "tired,",
+     "start": 9.125,
+     "end": 9.485
+    },
+    {
+     "text": "or",
+     "start": 9.645,
+     "end": 9.887
+    },
+    {
+     "text": "busy.",
+     "start": 9.887,
+     "end": 10.25
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Three. It expires on Wednesday.",
+   "start": 10.51,
+   "end": 12.545,
+   "words": [
+    {
+     "text": "Three.",
+     "start": 10.51,
+     "end": 10.88
+    },
+    {
+     "text": "It",
+     "start": 10.97,
+     "end": 11.195
+    },
+    {
+     "text": "expires",
+     "start": 11.195,
+     "end": 11.701
+    },
+    {
+     "text": "on",
+     "start": 11.701,
+     "end": 11.926
+    },
+    {
+     "text": "Wednesday.",
+     "start": 11.926,
+     "end": 12.545
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "You agree. You always agree.",
+   "start": 12.845,
+   "end": 14.644,
+   "words": [
+    {
+     "text": "You",
+     "start": 12.845,
+     "end": 13.087
+    },
+    {
+     "text": "agree.",
+     "start": 13.087,
+     "end": 13.425
+    },
+    {
+     "text": "You",
+     "start": 13.575,
+     "end": 13.842
+    },
+    {
+     "text": "always",
+     "start": 13.842,
+     "end": 14.27
+    },
+    {
+     "text": "agree.",
+     "start": 14.27,
+     "end": 14.644
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Or skip the contract. The app's plan moves when your week does.",
+   "start": 15.044,
+   "end": 18.574,
+   "words": [
+    {
+     "text": "Or",
+     "start": 15.044,
+     "end": 15.216
+    },
+    {
+     "text": "skip",
+     "start": 15.216,
+     "end": 15.476
+    },
+    {
+     "text": "the",
+     "start": 15.476,
+     "end": 15.692
+    },
+    {
+     "text": "contract.",
+     "start": 15.692,
+     "end": 16.124
+    },
+    {
+     "text": "The",
+     "start": 16.584,
+     "end": 16.791
+    },
+    {
+     "text": "app's",
+     "start": 16.791,
+     "end": 17.04
+    },
+    {
+     "text": "plan",
+     "start": 17.04,
+     "end": 17.289
+    },
+    {
+     "text": "moves",
+     "start": 17.289,
+     "end": 17.579
+    },
+    {
+     "text": "when",
+     "start": 17.579,
+     "end": 17.828
+    },
+    {
+     "text": "your",
+     "start": 17.828,
+     "end": 18.077
+    },
+    {
+     "text": "week",
+     "start": 18.077,
+     "end": 18.325
+    },
+    {
+     "text": "does.",
+     "start": 18.325,
+     "end": 18.574
+    }
+   ]
+  }
+ ]
+}

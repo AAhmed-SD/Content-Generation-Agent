@@ -1,0 +1,288 @@
+{
+ "duration": 20.661,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Marking your own past paper, be like.",
+   "start": 0.15,
+   "end": 2.655,
+   "words": [
+    {
+     "text": "Marking",
+     "start": 0.15,
+     "end": 0.753
+    },
+    {
+     "text": "your",
+     "start": 0.753,
+     "end": 1.155
+    },
+    {
+     "text": "own",
+     "start": 1.155,
+     "end": 1.489
+    },
+    {
+     "text": "past",
+     "start": 1.489,
+     "end": 1.891
+    },
+    {
+     "text": "paper,",
+     "start": 1.891,
+     "end": 2.36
+    },
+    {
+     "text": "be",
+     "start": 2.44,
+     "end": 2.526
+    },
+    {
+     "text": "like.",
+     "start": 2.526,
+     "end": 2.655
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Question: explain why enzymes stop working at high temperatures.",
+   "start": 2.915,
+   "end": 6.811,
+   "words": [
+    {
+     "text": "Question:",
+     "start": 2.915,
+     "end": 5.115
+    },
+    {
+     "text": "explain",
+     "start": 5.215,
+     "end": 5.447
+    },
+    {
+     "text": "why",
+     "start": 5.447,
+     "end": 5.576
+    },
+    {
+     "text": "enzymes",
+     "start": 5.576,
+     "end": 5.807
+    },
+    {
+     "text": "stop",
+     "start": 5.807,
+     "end": 5.962
+    },
+    {
+     "text": "working",
+     "start": 5.962,
+     "end": 6.193
+    },
+    {
+     "text": "at",
+     "start": 6.193,
+     "end": 6.296
+    },
+    {
+     "text": "high",
+     "start": 6.296,
+     "end": 6.451
+    },
+    {
+     "text": "temperatures.",
+     "start": 6.451,
+     "end": 6.811
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Your answer: because it's too hot.",
+   "start": 7.111,
+   "end": 9.335,
+   "words": [
+    {
+     "text": "Your",
+     "start": 7.111,
+     "end": 7.934
+    },
+    {
+     "text": "answer:",
+     "start": 7.934,
+     "end": 9.031
+    },
+    {
+     "text": "because",
+     "start": 9.111,
+     "end": 9.195
+    },
+    {
+     "text": "it's",
+     "start": 9.195,
+     "end": 9.242
+    },
+    {
+     "text": "too",
+     "start": 9.242,
+     "end": 9.289
+    },
+    {
+     "text": "hot.",
+     "start": 9.289,
+     "end": 9.335
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Two ticks. Full marks. Generous.",
+   "start": 9.595,
+   "end": 11.76,
+   "words": [
+    {
+     "text": "Two",
+     "start": 9.595,
+     "end": 9.77
+    },
+    {
+     "text": "ticks.",
+     "start": 9.77,
+     "end": 10.015
+    },
+    {
+     "text": "Full",
+     "start": 10.075,
+     "end": 10.131
+    },
+    {
+     "text": "marks.",
+     "start": 10.131,
+     "end": 10.195
+    },
+    {
+     "text": "Generous.",
+     "start": 10.275,
+     "end": 11.76
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "The mark scheme wants the active site to change shape. Denatured.",
+   "start": 12.16,
+   "end": 15.804,
+   "words": [
+    {
+     "text": "The",
+     "start": 12.16,
+     "end": 12.364
+    },
+    {
+     "text": "mark",
+     "start": 12.364,
+     "end": 12.609
+    },
+    {
+     "text": "scheme",
+     "start": 12.609,
+     "end": 12.935
+    },
+    {
+     "text": "wants",
+     "start": 12.935,
+     "end": 13.22
+    },
+    {
+     "text": "the",
+     "start": 13.22,
+     "end": 13.424
+    },
+    {
+     "text": "active",
+     "start": 13.424,
+     "end": 13.75
+    },
+    {
+     "text": "site",
+     "start": 13.75,
+     "end": 13.995
+    },
+    {
+     "text": "to",
+     "start": 13.995,
+     "end": 14.158
+    },
+    {
+     "text": "change",
+     "start": 14.158,
+     "end": 14.484
+    },
+    {
+     "text": "shape.",
+     "start": 14.484,
+     "end": 14.77
+    },
+    {
+     "text": "Denatured.",
+     "start": 15.09,
+     "end": 15.804
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Mark yourself like an examiner, not like a friend.",
+   "start": 16.064,
+   "end": 18.961,
+   "words": [
+    {
+     "text": "Mark",
+     "start": 16.064,
+     "end": 16.189
+    },
+    {
+     "text": "yourself",
+     "start": 16.189,
+     "end": 16.397
+    },
+    {
+     "text": "like",
+     "start": 16.397,
+     "end": 16.522
+    },
+    {
+     "text": "an",
+     "start": 16.522,
+     "end": 16.606
+    },
+    {
+     "text": "examiner,",
+     "start": 16.606,
+     "end": 16.814
+    },
+    {
+     "text": "not",
+     "start": 16.894,
+     "end": 17.364
+    },
+    {
+     "text": "like",
+     "start": 17.364,
+     "end": 17.928
+    },
+    {
+     "text": "a",
+     "start": 17.928,
+     "end": 18.21
+    },
+    {
+     "text": "friend.",
+     "start": 18.21,
+     "end": 18.961
+    }
+   ]
+  }
+ ]
+}

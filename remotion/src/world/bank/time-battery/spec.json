@@ -1,0 +1,35 @@
+{
+ "id": "time-battery",
+ "format": "battery",
+ "label": "Your battery",
+ "steps": [
+  {
+   "day": "Mon",
+   "level": 0.95,
+   "note": "Big plans.",
+   "at": "L2"
+  },
+  {
+   "day": "Tue",
+   "level": 0.7,
+   "note": "Every start costs.",
+   "at": "L3"
+  },
+  {
+   "day": "Wed",
+   "level": 0.35,
+   "note": "Too many starts.",
+   "at": "L4"
+  },
+  {
+   "day": "Thu",
+   "level": 0.08,
+   "note": "Running on empty.",
+   "at": "L5"
+  }
+ ],
+ "final": {
+  "text": "Fewer starts.\nOne next block.",
+  "at": "L6"
+ }
+}

@@ -1,0 +1,286 @@
+{
+ "duration": 22.542,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Your uni inbox on a Sunday night.",
+   "start": 0.15,
+   "end": 2.766,
+   "words": [
+    {
+     "text": "Your",
+     "start": 0.15,
+     "end": 0.542
+    },
+    {
+     "text": "uni",
+     "start": 0.542,
+     "end": 0.87
+    },
+    {
+     "text": "inbox",
+     "start": 0.87,
+     "end": 1.327
+    },
+    {
+     "text": "on",
+     "start": 1.327,
+     "end": 1.589
+    },
+    {
+     "text": "a",
+     "start": 1.589,
+     "end": 1.785
+    },
+    {
+     "text": "Sunday",
+     "start": 1.785,
+     "end": 2.309
+    },
+    {
+     "text": "night.",
+     "start": 2.309,
+     "end": 2.766
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Rota updated.",
+   "start": 3.026,
+   "end": 4.646,
+   "words": [
+    {
+     "text": "Rota",
+     "start": 3.026,
+     "end": 3.674
+    },
+    {
+     "text": "updated.",
+     "start": 3.674,
+     "end": 4.646
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Reminder: coursework due Friday.",
+   "start": 4.906,
+   "end": 7.493,
+   "words": [
+    {
+     "text": "Reminder:",
+     "start": 4.906,
+     "end": 6.026
+    },
+    {
+     "text": "coursework",
+     "start": 6.116,
+     "end": 6.777
+    },
+    {
+     "text": "due",
+     "start": 6.777,
+     "end": 7.053
+    },
+    {
+     "text": "Friday.",
+     "start": 7.053,
+     "end": 7.493
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Teaching moved to nine a.m.",
+   "start": 7.753,
+   "end": 10.388,
+   "words": [
+    {
+     "text": "Teaching",
+     "start": 7.753,
+     "end": 8.603
+    },
+    {
+     "text": "moved",
+     "start": 8.603,
+     "end": 9.198
+    },
+    {
+     "text": "to",
+     "start": 9.198,
+     "end": 9.538
+    },
+    {
+     "text": "nine",
+     "start": 9.538,
+     "end": 10.048
+    },
+    {
+     "text": "a.m.",
+     "start": 10.048,
+     "end": 10.388
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Placement sign-off outstanding.",
+   "start": 10.648,
+   "end": 13.186,
+   "words": [
+    {
+     "text": "Placement",
+     "start": 10.648,
+     "end": 11.494
+    },
+    {
+     "text": "sign-off",
+     "start": 11.494,
+     "end": 12.186
+    },
+    {
+     "text": "outstanding.",
+     "start": 12.186,
+     "end": 13.186
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "You can't answer all of it tonight. So clear it.",
+   "start": 13.486,
+   "end": 16.604,
+   "words": [
+    {
+     "text": "You",
+     "start": 13.486,
+     "end": 13.666
+    },
+    {
+     "text": "can't",
+     "start": 13.666,
+     "end": 13.883
+    },
+    {
+     "text": "answer",
+     "start": 13.883,
+     "end": 14.172
+    },
+    {
+     "text": "all",
+     "start": 14.172,
+     "end": 14.352
+    },
+    {
+     "text": "of",
+     "start": 14.352,
+     "end": 14.497
+    },
+    {
+     "text": "it",
+     "start": 14.497,
+     "end": 14.641
+    },
+    {
+     "text": "tonight.",
+     "start": 14.641,
+     "end": 14.966
+    },
+    {
+     "text": "So",
+     "start": 15.136,
+     "end": 15.527
+    },
+    {
+     "text": "clear",
+     "start": 15.527,
+     "end": 16.212
+    },
+    {
+     "text": "it.",
+     "start": 16.212,
+     "end": 16.604
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "The one worth opening is the plan that's already moved around all of that.",
+   "start": 16.904,
+   "end": 20.842,
+   "words": [
+    {
+     "text": "The",
+     "start": 16.904,
+     "end": 17.13
+    },
+    {
+     "text": "one",
+     "start": 17.13,
+     "end": 17.357
+    },
+    {
+     "text": "worth",
+     "start": 17.357,
+     "end": 17.673
+    },
+    {
+     "text": "opening",
+     "start": 17.673,
+     "end": 18.081
+    },
+    {
+     "text": "is",
+     "start": 18.081,
+     "end": 18.262
+    },
+    {
+     "text": "the",
+     "start": 18.262,
+     "end": 18.488
+    },
+    {
+     "text": "plan",
+     "start": 18.488,
+     "end": 18.76
+    },
+    {
+     "text": "that's",
+     "start": 18.76,
+     "end": 19.077
+    },
+    {
+     "text": "already",
+     "start": 19.077,
+     "end": 19.484
+    },
+    {
+     "text": "moved",
+     "start": 19.484,
+     "end": 19.801
+    },
+    {
+     "text": "around",
+     "start": 19.801,
+     "end": 20.163
+    },
+    {
+     "text": "all",
+     "start": 20.163,
+     "end": 20.389
+    },
+    {
+     "text": "of",
+     "start": 20.389,
+     "end": 20.57
+    },
+    {
+     "text": "that.",
+     "start": 20.57,
+     "end": 20.842
+    }
+   ]
+  }
+ ]
+}

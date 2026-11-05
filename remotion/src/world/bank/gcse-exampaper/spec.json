@@ -1,0 +1,26 @@
+{
+ "id": "gcse-exampaper",
+ "format": "exampaper",
+ "paper": "Biology · Paper 1",
+ "number": "Q1",
+ "question": "Explain why enzymes stop working at high temperatures.",
+ "marks": "[two marks]",
+ "answer": {
+  "text": "because it's too hot",
+  "at": "L3:because"
+ },
+ "ticks": [
+  {
+   "kind": "tick",
+   "at": "L4"
+  },
+  {
+   "kind": "tick",
+   "at": "L4:full"
+  }
+ ],
+ "verdict": {
+  "text": "TOO GENEROUS",
+  "at": "L4:generous"
+ }
+}

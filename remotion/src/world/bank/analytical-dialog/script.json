@@ -1,0 +1,35 @@
+{
+ "id": "bank/analytical-dialog",
+ "voice": "bm_daniel*0.5+bm_lewis*0.5",
+ "lang": "en-gb",
+ "speed": 1.02,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Week ten of term. A summary."
+  },
+  {
+   "id": "L2",
+   "say": "Brain has stopped responding. Retry?",
+   "after": 0.9
+  },
+  {
+   "id": "L3",
+   "say": "You press retry. Three lab reports are still open.",
+   "after": 0.7
+  },
+  {
+   "id": "L4",
+   "say": "Close them? No. Later.",
+   "after": 0.4
+  },
+  {
+   "id": "L5",
+   "say": "The app puts it in your calendar one session at a time, so your brain only runs one thing.",
+   "after": 0.7
+  }
+ ]
+}

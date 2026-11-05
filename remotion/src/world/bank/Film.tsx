@@ -7,6 +7,7 @@ import { Mark } from "../posters/Posters";
 import { BlankCard, ChoiceCard, Countdown, Flashcard, quizCues } from "../kit/quiz";
 import { MythFact, Pov, ThreeThings, type FormatSpec } from "../formats/kit";
 import { Chat, Receipt, Search, TierList, Whiteboard, type FormatSpec2 } from "../formats/kit2";
+import { Battery, Departures, ErrorDialog, ExamPaper, Inbox, Kanban, LockScreen, Missing, Recipe, Satnav, Terms, Weather, type FormatSpec3 } from "../formats/kit3";
 
 /**
  * A film from data. The script is voiced into timing.json; spec.json places scenes on spoken words.
@@ -42,8 +43,8 @@ export type Spec = {
 };
 
 /** A bank film is either the scene template (no format) or one of the format templates. */
-export type AnySpec = Spec | ((FormatSpec | FormatSpec2) & { id: string });
-const isFormat = (spec: AnySpec): spec is (FormatSpec | FormatSpec2) & { id: string } => "format" in spec;
+export type AnySpec = Spec | ((FormatSpec | FormatSpec2 | FormatSpec3) & { id: string });
+const isFormat = (spec: AnySpec): spec is (FormatSpec | FormatSpec2 | FormatSpec3) & { id: string } => "format" in spec;
 
 type Timing = Parameters<typeof makeTiming>[0];
 
@@ -87,6 +88,33 @@ export const BankFilm: React.FC<{ spec: AnySpec; timing: Timing; vo: string }> =
       return <Receipt spec={spec} T={T} timing={timing} vo={vo} />;
     case "whiteboard":
       return <Whiteboard spec={spec} T={T} vo={vo} />;
+  }
+  const b = { T, timing, vo };
+  switch (spec.format) {
+    case "lockscreen":
+      return <LockScreen spec={spec} {...b} />;
+    case "inbox":
+      return <Inbox spec={spec} {...b} />;
+    case "exampaper":
+      return <ExamPaper spec={spec} {...b} />;
+    case "battery":
+      return <Battery spec={spec} {...b} />;
+    case "weather":
+      return <Weather spec={spec} {...b} />;
+    case "terms":
+      return <Terms spec={spec} {...b} />;
+    case "dialog":
+      return <ErrorDialog spec={spec} {...b} />;
+    case "satnav":
+      return <Satnav spec={spec} {...b} />;
+    case "departures":
+      return <Departures spec={spec} {...b} />;
+    case "recipe":
+      return <Recipe spec={spec} {...b} />;
+    case "missing":
+      return <Missing spec={spec} {...b} />;
+    case "kanban":
+      return <Kanban spec={spec} {...b} />;
   }
 };
 

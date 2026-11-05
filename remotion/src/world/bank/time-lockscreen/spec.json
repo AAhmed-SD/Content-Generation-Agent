@@ -1,0 +1,32 @@
+{
+ "id": "time-lockscreen",
+ "format": "lockscreen",
+ "time": "23:47",
+ "date": "Tuesday",
+ "notifs": [
+  {
+   "app": "Reminders",
+   "title": "Essay due tomorrow",
+   "body": "9:00",
+   "at": "L2"
+  },
+  {
+   "app": "Messages",
+   "title": "Group chat",
+   "body": "still going",
+   "at": "L3"
+  },
+  {
+   "app": "Screen Time",
+   "title": "Weekly report",
+   "body": "You don't want to know",
+   "at": "L4"
+  }
+ ],
+ "final": {
+  "app": "offload",
+  "title": "Next: essay plan",
+  "body": "One block. That's all for now.",
+  "at": "L6"
+ }
+}
