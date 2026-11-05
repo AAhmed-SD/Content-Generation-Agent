@@ -1,0 +1,54 @@
+{
+ "handle": "offload.gcsealevel",
+ "slides": [
+  {
+   "kind": "photo",
+   "props": {
+    "plate": "drawer-b",
+    "head": "What they\nkeep.",
+    "card": "The gaps\ncome back.",
+    "unseenTitle": "Blurt it, then check it.",
+    "unseen": "Offload shows you the gaps."
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "Step one",
+   "head": "Write down everything you remember.",
+   "body": "Book shut. No notes. Just you and a blank page."
+  },
+  {
+   "kind": "point",
+   "kicker": "Step two",
+   "head": "Check it against your notes.",
+   "body": "Mark what you got, and what you missed."
+  },
+  {
+   "kind": "point",
+   "kicker": "Step three",
+   "head": "Go back to the gaps.",
+   "body": "This is the bit most people skip.",
+   "stamp": "THE GAPS"
+  },
+  {
+   "kind": "list",
+   "title": "Offload does\nthe checking.",
+   "rows": [
+    {
+     "text": "Blurting from your own notes."
+    },
+    {
+     "text": "You write it all down, then it shows you the gaps."
+    },
+    {
+     "text": "Open it tomorrow, and it tells you what to do next."
+    }
+   ]
+  },
+  {
+   "kind": "end",
+   "lead": "Want to try it?",
+   "pill": "Search Offload"
+  }
+ ]
+}

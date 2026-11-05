@@ -1,0 +1,10 @@
+{
+ "template": "Poster",
+ "props": {
+  "layout": "drawer",
+  "head": "What people\nsee:",
+  "card": "You\nrevised.",
+  "unseenTitle": "What they don't see:",
+  "unseen": "The card came back right before you'd forget it."
+ }
+}

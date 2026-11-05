@@ -12,6 +12,14 @@ Monday runs three steps in `web/src/lib/pipeline.ts`.
 
 Claude writes the script afterwards, from the brand files and that brief. The reply is saved on the piece as `script`.
 
+## Signals
+
+`web/scripts/signals.py` reads every account in `web/research/watchlist.json` with yt-dlp, from public pages without a login. An account's usual is the median views of its latest thirty videos. A video at three times its usual or more is an outlier. The first eight seconds of each new outlier are transcribed with faster-whisper, so the stream holds the spoken hook. Outliers and one summary per run are appended to `web/data/signals.jsonl`, and a video is streamed once.
+
+The desk shows the stream at `/desk/signals`. It checks for new lines every twenty seconds, and Collect now starts a run. The weekly brief carries the strongest openings for each niche from the last seven days under Openings that worked elsewhere, with no numbers and no account names. The writer learns the shape and never copies the words.
+
+The watch list is TikTok first, because that is where the audience is. The collector reads public profile pages plainly: no login, no browser disguise, nothing that gets round a bot check. It does not read hashtag pages, because that needs a disguised browser. TikTok does not allow automated collection, so keep the list short and read it a few times a day at most. To follow what is viral beyond the list, add the accounts that show up on your own For You page, and check each one reads before relying on it. A `youtube` account still works.
+
 ## How a spec becomes a picture
 
 The piece carries `line`, `note`, `script.onScreen`, `script.narration`, and `script.beats`. Those words come from the brand files and the week’s brief. Render writes `web/data/renders/{id}.props.json` and starts `remotion/render-job.mjs`. A still is `OffloadPin`, one frame, in that account’s layout: clinical is the folder, analytical is the calculator, mental health is the circled day, GCSE and A-level is the file. A video is `OffloadCard`, 180 frames. A carousel is `OffloadCard`, 270 frames. The file lands in `web/data/renders`.

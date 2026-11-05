@@ -1,0 +1,39 @@
+{
+ "id": "bank/time-which-wrecks",
+ "voice": "af_heart*0.7+af_bella*0.3",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Which one wrecks your day the most?"
+  },
+  {
+   "id": "L2",
+   "say": "A, starting. B, switching between things. C, remembering what's next.",
+   "after": 0.8
+  },
+  {
+   "id": "L3",
+   "say": "Comment your letter. Whichever it is, it's too many starts, not too little effort.",
+   "after": 0.9
+  },
+  {
+   "id": "L4",
+   "say": "Offload holds the plan. Miss a day, and it moves the work, and tells you what moved.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "So you never start from zero.",
+   "after": 0.4
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "id": "bank/gcse-blurting",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Everyone's blurting right now. Most people skip the part that makes it work."
+  },
+  {
+   "id": "L2",
+   "say": "You write down everything you remember. Then you shut the book, and move on."
+  },
+  {
+   "id": "L3",
+   "say": "But the gaps are the whole point. Check what you missed, and go back to it."
+  },
+  {
+   "id": "L4",
+   "say": "Offload does blurting from your own notes. You write it all down, then it shows you the gaps."
+  },
+  {
+   "id": "L5",
+   "say": "And when you open it tomorrow, it tells you what to do next.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

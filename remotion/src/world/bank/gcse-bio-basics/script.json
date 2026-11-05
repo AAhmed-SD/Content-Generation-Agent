@@ -1,0 +1,42 @@
+{
+ "id": "bank/gcse-bio-basics",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "GCSE biology, the basics. Two questions loads of people get wrong."
+  },
+  {
+   "id": "L2",
+   "say": "Where are proteins made in a cell?",
+   "after": 1.6
+  },
+  {
+   "id": "L3",
+   "say": "Ribosomes. Not the nucleus. The nucleus holds the instructions."
+  },
+  {
+   "id": "L4",
+   "say": "Next. True or false: respiration makes energy.",
+   "after": 1.6
+  },
+  {
+   "id": "L5",
+   "say": "False. Respiration releases energy. Energy is never made."
+  },
+  {
+   "id": "L6",
+   "say": "Offload builds questions like these from your own notes. Get one wrong, and it comes back sooner.",
+   "after": 0.5
+  },
+  {
+   "id": "L7",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

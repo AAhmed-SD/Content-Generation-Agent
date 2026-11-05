@@ -1,0 +1,491 @@
+{
+ "duration": 39.06,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Computer science students. Two cards from the Test phase. Answer before they flip.",
+   "start": 0.15,
+   "end": 5.235,
+   "words": [
+    {
+     "text": "Computer",
+     "start": 0.15,
+     "end": 0.653
+    },
+    {
+     "text": "science",
+     "start": 0.653,
+     "end": 1.107
+    },
+    {
+     "text": "students.",
+     "start": 1.107,
+     "end": 1.61
+    },
+    {
+     "text": "Two",
+     "start": 1.9,
+     "end": 2.119
+    },
+    {
+     "text": "cards",
+     "start": 2.119,
+     "end": 2.427
+    },
+    {
+     "text": "from",
+     "start": 2.427,
+     "end": 2.69
+    },
+    {
+     "text": "the",
+     "start": 2.69,
+     "end": 2.909
+    },
+    {
+     "text": "Test",
+     "start": 2.909,
+     "end": 3.173
+    },
+    {
+     "text": "phase.",
+     "start": 3.173,
+     "end": 3.48
+    },
+    {
+     "text": "Answer",
+     "start": 3.87,
+     "end": 4.26
+    },
+    {
+     "text": "before",
+     "start": 4.26,
+     "end": 4.65
+    },
+    {
+     "text": "they",
+     "start": 4.65,
+     "end": 4.942
+    },
+    {
+     "text": "flip.",
+     "start": 4.942,
+     "end": 5.235
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "You want an infinite list that cycles through a, b and c. Which Haskell function?",
+   "start": 5.515,
+   "end": 10.658,
+   "words": [
+    {
+     "text": "You",
+     "start": 5.515,
+     "end": 5.623
+    },
+    {
+     "text": "want",
+     "start": 5.623,
+     "end": 5.752
+    },
+    {
+     "text": "an",
+     "start": 5.752,
+     "end": 5.839
+    },
+    {
+     "text": "infinite",
+     "start": 5.839,
+     "end": 6.054
+    },
+    {
+     "text": "list",
+     "start": 6.054,
+     "end": 6.184
+    },
+    {
+     "text": "that",
+     "start": 6.184,
+     "end": 6.313
+    },
+    {
+     "text": "cycles",
+     "start": 6.313,
+     "end": 6.486
+    },
+    {
+     "text": "through",
+     "start": 6.486,
+     "end": 6.68
+    },
+    {
+     "text": "a,",
+     "start": 6.68,
+     "end": 6.745
+    },
+    {
+     "text": "b",
+     "start": 6.895,
+     "end": 7.465
+    },
+    {
+     "text": "and",
+     "start": 7.465,
+     "end": 8.415
+    },
+    {
+     "text": "c.",
+     "start": 8.415,
+     "end": 8.985
+    },
+    {
+     "text": "Which",
+     "start": 9.425,
+     "end": 9.757
+    },
+    {
+     "text": "Haskell",
+     "start": 9.757,
+     "end": 10.184
+    },
+    {
+     "text": "function?",
+     "start": 10.184,
+     "end": 10.658
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Cycle. Not repeat. Repeat only repeats a single value.",
+   "start": 12.258,
+   "end": 16.149,
+   "words": [
+    {
+     "text": "Cycle.",
+     "start": 12.258,
+     "end": 13.548
+    },
+    {
+     "text": "Not",
+     "start": 13.868,
+     "end": 14.014
+    },
+    {
+     "text": "repeat.",
+     "start": 14.014,
+     "end": 14.248
+    },
+    {
+     "text": "Repeat",
+     "start": 14.348,
+     "end": 14.699
+    },
+    {
+     "text": "only",
+     "start": 14.699,
+     "end": 14.963
+    },
+    {
+     "text": "repeats",
+     "start": 14.963,
+     "end": 15.358
+    },
+    {
+     "text": "a",
+     "start": 15.358,
+     "end": 15.49
+    },
+    {
+     "text": "single",
+     "start": 15.49,
+     "end": 15.842
+    },
+    {
+     "text": "value.",
+     "start": 15.842,
+     "end": 16.149
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Next. Repeated data is causing insertion anomalies. What do you apply?",
+   "start": 16.429,
+   "end": 21.021,
+   "words": [
+    {
+     "text": "Next.",
+     "start": 16.429,
+     "end": 16.869
+    },
+    {
+     "text": "Repeated",
+     "start": 16.959,
+     "end": 17.504
+    },
+    {
+     "text": "data",
+     "start": 17.504,
+     "end": 17.831
+    },
+    {
+     "text": "is",
+     "start": 17.831,
+     "end": 18.049
+    },
+    {
+     "text": "causing",
+     "start": 18.049,
+     "end": 18.54
+    },
+    {
+     "text": "insertion",
+     "start": 18.54,
+     "end": 19.14
+    },
+    {
+     "text": "anomalies.",
+     "start": 19.14,
+     "end": 19.739
+    },
+    {
+     "text": "What",
+     "start": 20.119,
+     "end": 20.365
+    },
+    {
+     "text": "do",
+     "start": 20.365,
+     "end": 20.529
+    },
+    {
+     "text": "you",
+     "start": 20.529,
+     "end": 20.734
+    },
+    {
+     "text": "apply?",
+     "start": 20.734,
+     "end": 21.021
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Normalisation. Not an ER diagram. That models the structure, it doesn't fix it.",
+   "start": 22.621,
+   "end": 27.751,
+   "words": [
+    {
+     "text": "Normalisation.",
+     "start": 22.621,
+     "end": 23.641
+    },
+    {
+     "text": "Not",
+     "start": 23.871,
+     "end": 24.178
+    },
+    {
+     "text": "an",
+     "start": 24.178,
+     "end": 24.423
+    },
+    {
+     "text": "ER",
+     "start": 24.423,
+     "end": 24.669
+    },
+    {
+     "text": "diagram.",
+     "start": 24.669,
+     "end": 25.221
+    },
+    {
+     "text": "That",
+     "start": 25.561,
+     "end": 25.881
+    },
+    {
+     "text": "models",
+     "start": 25.881,
+     "end": 26.308
+    },
+    {
+     "text": "the",
+     "start": 26.308,
+     "end": 26.574
+    },
+    {
+     "text": "structure,",
+     "start": 26.574,
+     "end": 27.161
+    },
+    {
+     "text": "it",
+     "start": 27.261,
+     "end": 27.354
+    },
+    {
+     "text": "doesn't",
+     "start": 27.354,
+     "end": 27.541
+    },
+    {
+     "text": "fix",
+     "start": 27.541,
+     "end": 27.658
+    },
+    {
+     "text": "it.",
+     "start": 27.658,
+     "end": 27.751
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload built both from uploaded module notes. Get one wrong, and it comes back sooner.",
+   "start": 28.031,
+   "end": 33.447,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 28.031,
+     "end": 28.486
+    },
+    {
+     "text": "built",
+     "start": 28.486,
+     "end": 28.84
+    },
+    {
+     "text": "both",
+     "start": 28.84,
+     "end": 29.143
+    },
+    {
+     "text": "from",
+     "start": 29.143,
+     "end": 29.447
+    },
+    {
+     "text": "uploaded",
+     "start": 29.447,
+     "end": 29.952
+    },
+    {
+     "text": "module",
+     "start": 29.952,
+     "end": 30.357
+    },
+    {
+     "text": "notes.",
+     "start": 30.357,
+     "end": 30.711
+    },
+    {
+     "text": "Get",
+     "start": 31.131,
+     "end": 31.357
+    },
+    {
+     "text": "one",
+     "start": 31.357,
+     "end": 31.584
+    },
+    {
+     "text": "wrong,",
+     "start": 31.584,
+     "end": 31.901
+    },
+    {
+     "text": "and",
+     "start": 32.121,
+     "end": 32.342
+    },
+    {
+     "text": "it",
+     "start": 32.342,
+     "end": 32.519
+    },
+    {
+     "text": "comes",
+     "start": 32.519,
+     "end": 32.828
+    },
+    {
+     "text": "back",
+     "start": 32.828,
+     "end": 33.094
+    },
+    {
+     "text": "sooner.",
+     "start": 33.094,
+     "end": 33.447
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 33.947,
+   "end": 37.78,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 33.947,
+     "end": 35.597
+    },
+    {
+     "text": "A",
+     "start": 35.817,
+     "end": 35.917
+    },
+    {
+     "text": "study",
+     "start": 35.917,
+     "end": 36.15
+    },
+    {
+     "text": "system",
+     "start": 36.15,
+     "end": 36.416
+    },
+    {
+     "text": "that",
+     "start": 36.416,
+     "end": 36.616
+    },
+    {
+     "text": "adapts",
+     "start": 36.616,
+     "end": 36.882
+    },
+    {
+     "text": "when",
+     "start": 36.882,
+     "end": 37.081
+    },
+    {
+     "text": "real",
+     "start": 37.081,
+     "end": 37.281
+    },
+    {
+     "text": "life",
+     "start": 37.281,
+     "end": 37.48
+    },
+    {
+     "text": "happens.",
+     "start": 37.48,
+     "end": 37.78
+    }
+   ]
+  }
+ ]
+}

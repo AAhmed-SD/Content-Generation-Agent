@@ -17,6 +17,10 @@ The writer may use this page for this week only. A phrase that is not under Audi
 - ADHD Time Management Tips: Practical Strategies That Actually Work
 - Time Management Skills for ADHD Brains: Practical Advice - ADDitude
 
+## Openings that worked elsewhere
+These openings pulled far above their account's usual views this week. Learn the shape: the question, the claim, the contrast. Never copy the words, and never name the account.
+- “If you are a neurodivergent, you probably have special interests.”
+
 ## Virlo
 - skipped. No VIRLO_API_KEY. The $0.50 agent was not created.
 

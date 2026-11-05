@@ -1,0 +1,10 @@
+{
+ "template": "PhotoPoster",
+ "props": {
+  "plate": "drawer-b",
+  "head": "What they\nkeep.",
+  "card": "The gaps\ncome back.",
+  "unseenTitle": "Blurt it, then check it.",
+  "unseen": "Offload shows you the gaps."
+ }
+}

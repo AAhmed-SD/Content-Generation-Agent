@@ -1,0 +1,9 @@
+{
+ "template": "PhotoPoster",
+ "props": {
+  "plate": "envelope",
+  "title": "Confidential",
+  "sub": "Placement week. The plan moved.",
+  "stamp": "MOVED."
+ }
+}

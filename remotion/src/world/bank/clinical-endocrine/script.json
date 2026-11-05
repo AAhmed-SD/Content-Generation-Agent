@@ -1,0 +1,42 @@
+{
+ "id": "bank/clinical-endocrine",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Med students. Two endocrine cards from the Test phase. Answer before they flip."
+  },
+  {
+   "id": "L2",
+   "say": "Steroid hormones, or amino-acid derivatives. Which ones act over hours?",
+   "after": 1.6
+  },
+  {
+   "id": "L3",
+   "say": "Steroid hormones. They're lipid-soluble, and act over hours. Amino-acid derivatives act in seconds to minutes."
+  },
+  {
+   "id": "L4",
+   "say": "Next. How does the posterior pituitary release its hormones?",
+   "after": 1.6
+  },
+  {
+   "id": "L5",
+   "say": "Straight into the circulation, by axonal release. Trophic hormones like TSH come from the anterior."
+  },
+  {
+   "id": "L6",
+   "say": "Offload built both cards from uploaded lecture notes. Get one wrong, and it comes back sooner.",
+   "after": 0.5
+  },
+  {
+   "id": "L7",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

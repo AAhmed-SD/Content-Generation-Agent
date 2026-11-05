@@ -1,0 +1,355 @@
+{
+ "duration": 22.486,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Do you ever only start the night before it's due?",
+   "start": 0.15,
+   "end": 2.477,
+   "words": [
+    {
+     "text": "Do",
+     "start": 0.15,
+     "end": 0.311
+    },
+    {
+     "text": "you",
+     "start": 0.311,
+     "end": 0.511
+    },
+    {
+     "text": "ever",
+     "start": 0.511,
+     "end": 0.752
+    },
+    {
+     "text": "only",
+     "start": 0.752,
+     "end": 0.993
+    },
+    {
+     "text": "start",
+     "start": 0.993,
+     "end": 1.274
+    },
+    {
+     "text": "the",
+     "start": 1.274,
+     "end": 1.474
+    },
+    {
+     "text": "night",
+     "start": 1.474,
+     "end": 1.755
+    },
+    {
+     "text": "before",
+     "start": 1.755,
+     "end": 2.076
+    },
+    {
+     "text": "it's",
+     "start": 2.076,
+     "end": 2.277
+    },
+    {
+     "text": "due?",
+     "start": 2.277,
+     "end": 2.477
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "A, always. B, sometimes. C, never, and I'm lying.",
+   "start": 2.757,
+   "end": 6.151,
+   "words": [
+    {
+     "text": "A,",
+     "start": 2.757,
+     "end": 2.957
+    },
+    {
+     "text": "always.",
+     "start": 2.957,
+     "end": 3.489
+    },
+    {
+     "text": "B,",
+     "start": 3.489,
+     "end": 3.689
+    },
+    {
+     "text": "sometimes.",
+     "start": 3.689,
+     "end": 4.421
+    },
+    {
+     "text": "C,",
+     "start": 4.421,
+     "end": 4.62
+    },
+    {
+     "text": "never,",
+     "start": 4.62,
+     "end": 5.086
+    },
+    {
+     "text": "and",
+     "start": 5.086,
+     "end": 5.419
+    },
+    {
+     "text": "I'm",
+     "start": 5.419,
+     "end": 5.685
+    },
+    {
+     "text": "lying.",
+     "start": 5.685,
+     "end": 6.151
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Comment your letter. Starting is the hardest part, and a long list makes it harder.",
+   "start": 6.951,
+   "end": 11.705,
+   "words": [
+    {
+     "text": "Comment",
+     "start": 6.951,
+     "end": 7.319
+    },
+    {
+     "text": "your",
+     "start": 7.319,
+     "end": 7.564
+    },
+    {
+     "text": "letter.",
+     "start": 7.564,
+     "end": 7.891
+    },
+    {
+     "text": "Starting",
+     "start": 8.351,
+     "end": 8.807
+    },
+    {
+     "text": "is",
+     "start": 8.807,
+     "end": 8.989
+    },
+    {
+     "text": "the",
+     "start": 8.989,
+     "end": 9.217
+    },
+    {
+     "text": "hardest",
+     "start": 9.217,
+     "end": 9.627
+    },
+    {
+     "text": "part,",
+     "start": 9.627,
+     "end": 9.901
+    },
+    {
+     "text": "and",
+     "start": 10.121,
+     "end": 10.324
+    },
+    {
+     "text": "a",
+     "start": 10.324,
+     "end": 10.446
+    },
+    {
+     "text": "long",
+     "start": 10.446,
+     "end": 10.689
+    },
+    {
+     "text": "list",
+     "start": 10.689,
+     "end": 10.933
+    },
+    {
+     "text": "makes",
+     "start": 10.933,
+     "end": 11.217
+    },
+    {
+     "text": "it",
+     "start": 11.217,
+     "end": 11.38
+    },
+    {
+     "text": "harder.",
+     "start": 11.38,
+     "end": 11.705
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Offload holds the plan. Open it, and it tells you what to do today. Just the next block.",
+   "start": 11.985,
+   "end": 17.144,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 11.985,
+     "end": 12.405
+    },
+    {
+     "text": "holds",
+     "start": 12.405,
+     "end": 12.731
+    },
+    {
+     "text": "the",
+     "start": 12.731,
+     "end": 12.965
+    },
+    {
+     "text": "plan.",
+     "start": 12.965,
+     "end": 13.245
+    },
+    {
+     "text": "Open",
+     "start": 13.705,
+     "end": 14.935
+    },
+    {
+     "text": "it,",
+     "start": 14.935,
+     "end": 15.755
+    },
+    {
+     "text": "and",
+     "start": 16.105,
+     "end": 16.2
+    },
+    {
+     "text": "it",
+     "start": 16.2,
+     "end": 16.276
+    },
+    {
+     "text": "tells",
+     "start": 16.276,
+     "end": 16.409
+    },
+    {
+     "text": "you",
+     "start": 16.409,
+     "end": 16.505
+    },
+    {
+     "text": "what",
+     "start": 16.505,
+     "end": 16.619
+    },
+    {
+     "text": "to",
+     "start": 16.619,
+     "end": 16.695
+    },
+    {
+     "text": "do",
+     "start": 16.695,
+     "end": 16.771
+    },
+    {
+     "text": "today.",
+     "start": 16.771,
+     "end": 16.905
+    },
+    {
+     "text": "Just",
+     "start": 17.015,
+     "end": 17.047
+    },
+    {
+     "text": "the",
+     "start": 17.047,
+     "end": 17.074
+    },
+    {
+     "text": "next",
+     "start": 17.074,
+     "end": 17.107
+    },
+    {
+     "text": "block.",
+     "start": 17.107,
+     "end": 17.144
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 17.644,
+   "end": 21.206,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 17.644,
+     "end": 18.134
+    },
+    {
+     "text": "A",
+     "start": 18.514,
+     "end": 18.651
+    },
+    {
+     "text": "study",
+     "start": 18.651,
+     "end": 18.971
+    },
+    {
+     "text": "system",
+     "start": 18.971,
+     "end": 19.335
+    },
+    {
+     "text": "that",
+     "start": 19.335,
+     "end": 19.609
+    },
+    {
+     "text": "adapts",
+     "start": 19.609,
+     "end": 19.974
+    },
+    {
+     "text": "when",
+     "start": 19.974,
+     "end": 20.248
+    },
+    {
+     "text": "real",
+     "start": 20.248,
+     "end": 20.521
+    },
+    {
+     "text": "life",
+     "start": 20.521,
+     "end": 20.795
+    },
+    {
+     "text": "happens.",
+     "start": 20.795,
+     "end": 21.206
+    }
+   ]
+  }
+ ]
+}

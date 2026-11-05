@@ -1,0 +1,78 @@
+{
+ "id": "analytical-chatgpt-v2",
+ "end": {
+  "style": "corner"
+ },
+ "hi": {
+  "exam": "problem",
+  "explaining": "blue",
+  "go": "blue"
+ },
+ "scenes": [
+  {
+   "type": "doc",
+   "at": "L1@-0.05",
+   "title": "Problem sheet",
+   "sub": "Solved by a chatbot",
+   "rows": [
+    {
+     "label": "Question one",
+     "tick": "L1:sheet"
+    },
+    {
+     "label": "Question two",
+     "tick": "L1:sheet@0.12"
+    },
+    {
+     "label": "Question three",
+     "tick": "L1:sheet@0.24"
+    }
+   ],
+   "stamp": {
+    "text": "EXAM: YOU",
+    "at": "L1:exam"
+   }
+  },
+  {
+   "type": "choice",
+   "at": "L2",
+   "deck": "Night before",
+   "q": "What actually helps?",
+   "options": [
+    "Reading the worked solution",
+    "Explaining it to a blank page"
+   ],
+   "answer": 1,
+   "reveal": "L3@-0.15"
+  },
+  {
+   "type": "chart",
+   "at": "L3:explaining@-0.2",
+   "kind": "testing",
+   "xLabel": "Time",
+   "yLabel": "Remembered",
+   "source": "Roediger & Karpicke, 2006",
+   "sourceAt": "L3:effect"
+  },
+  {
+   "type": "doc",
+   "at": "L4@-0.1",
+   "title": "Explain it",
+   "sub": "From your module notes",
+   "rows": [
+    {
+     "label": "Explain the chain rule in your own words",
+     "inAt": "L4:prompt"
+    },
+    {
+     "label": "As if to someone who missed the lecture",
+     "inAt": "L4:own"
+    }
+   ]
+  },
+  {
+   "type": "none",
+   "at": "L5"
+  }
+ ]
+}

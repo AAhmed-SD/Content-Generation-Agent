@@ -1,0 +1,54 @@
+{
+ "id": "clinical-next-question-v2",
+ "end": {
+  "style": "corner"
+ },
+ "hi": {
+  "three": "problem",
+  "autonomic": "blue",
+  "flip": "problem",
+  "sooner": "blue"
+ },
+ "scenes": [
+  {
+   "type": "stack",
+   "at": "L1"
+  },
+  {
+   "type": "choice",
+   "at": "L2",
+   "deck": "Anatomy · Test",
+   "q": "The internal urethral sphincter is…",
+   "options": [
+    "Autonomic",
+    "Somatic"
+   ],
+   "answer": 0,
+   "reveal": "L3@-0.15"
+  },
+  {
+   "type": "doc",
+   "at": "L4@-0.1",
+   "title": "Your Test deck",
+   "sub": "Anatomy",
+   "rows": [
+    {
+     "label": "Internal sphincter",
+     "chip": "Wrong",
+     "chipTone": "red",
+     "inAt": "L4:wrong"
+    },
+    {
+     "label": "Comes back sooner",
+     "chip": "Due",
+     "chipTone": "ink",
+     "inAt": "L4:sooner"
+    }
+   ]
+  },
+  {
+   "type": "none",
+   "at": "L5"
+  }
+ ]
+}

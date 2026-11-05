@@ -1,0 +1,19 @@
+{
+ "template": "Poster",
+ "props": {
+  "layout": "circled",
+  "script": "The afternoon\ndisappeared.",
+  "labels": [
+   "Today",
+   "Next",
+   "Later"
+  ],
+  "items": [
+   "Essay",
+   "Plan",
+   "Reading"
+  ],
+  "under": "One block",
+  "body": "Open it, and it tells you\nwhat to do today. Just the next block."
+ }
+}

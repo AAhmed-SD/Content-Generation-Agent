@@ -1,0 +1,95 @@
+{
+ "id": "time-which-wrecks-v2",
+ "end": {
+  "style": "corner"
+ },
+ "hi": {
+  "lazy": "problem",
+  "starts": "problem"
+ },
+ "floods": [
+  {
+   "in": "L3:too@-0.15",
+   "out": "L4@-0.15",
+   "colour": "night",
+   "lines": [
+    {
+     "line": "L3",
+     "text": "too many starts,",
+     "size": 110
+    },
+    {
+     "line": "L3",
+     "text": "and nothing held the plan.",
+     "size": 80
+    }
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "type": "doc",
+   "at": "L1@-0.05",
+   "title": "School report",
+   "sub": "Every year",
+   "rows": [
+    {
+     "label": "Effort",
+     "chip": "Lazy",
+     "chipTone": "red",
+     "inAt": "L2:report"
+    },
+    {
+     "label": "Focus",
+     "chip": "Lazy",
+     "chipTone": "red",
+     "inAt": "L2:same"
+    },
+    {
+     "label": "Ability",
+     "chip": "Capable",
+     "chipTone": "grey",
+     "inAt": "L2:capable"
+    }
+   ],
+   "stamp": {
+    "text": "lazy",
+    "at": "L2:lazy",
+    "strikeAt": "L3:wasn't"
+   }
+  },
+  {
+   "type": "doc",
+   "at": "L4@-0.1",
+   "title": "Today",
+   "sub": "Just the next thing",
+   "rows": [
+    {
+     "label": "Essay plan",
+     "chip": "Next",
+     "chipTone": "ink",
+     "inAt": "L4:next"
+    },
+    {
+     "label": "Everything else",
+     "chip": "Later",
+     "chipTone": "grey",
+     "inAt": "L4:one"
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "at": "L5",
+   "deck": "Be honest",
+   "q": "Hardest part of your day?",
+   "options": [
+    "Starting",
+    "Switching",
+    "Remembering what's next"
+   ],
+   "reveal": "L5$@0.2",
+   "comment": "Comment yours"
+  }
+ ]
+}

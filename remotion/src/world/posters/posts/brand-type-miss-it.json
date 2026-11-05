@@ -1,0 +1,9 @@
+{
+ "template": "Poster",
+ "props": {
+  "layout": "type",
+  "top": "Miss it.\nMove it.",
+  "bottom": "Keep\ngoing.",
+  "foot": "The plan moves with you"
+ }
+}

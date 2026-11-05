@@ -1,0 +1,84 @@
+{
+ "id": "analytical-chatgpt",
+ "end": {
+  "lead": "Free trial",
+  "pill": "Link in bio"
+ },
+ "hi": {
+  "exam": "problem",
+  "testing": "blue",
+  "explain": "blue"
+ },
+ "pill": {
+  "at": "L4@-0.2",
+  "until": "L4:explain@-0.25",
+  "sub": "makes you explain"
+ },
+ "scenes": [
+  {
+   "type": "doc",
+   "at": "L1@-0.05",
+   "title": "Problem sheet",
+   "sub": "Solved by a chatbot",
+   "rows": [
+    {
+     "label": "Question one",
+     "tick": "L1:sheet"
+    },
+    {
+     "label": "Question two",
+     "tick": "L1:sheet@0.12"
+    },
+    {
+     "label": "Question three",
+     "tick": "L1:sheet@0.24"
+    }
+   ],
+   "stamp": {
+    "text": "EXAM: YOU",
+    "at": "L1:exam"
+   }
+  },
+  {
+   "type": "choice",
+   "at": "L2",
+   "deck": "Night before",
+   "q": "What actually helps?",
+   "options": [
+    "Reading the worked solution",
+    "Explaining it from a blank page"
+   ],
+   "answer": 1,
+   "reveal": "L3@-0.15"
+  },
+  {
+   "type": "chart",
+   "at": "L3:testing@-0.3",
+   "kind": "testing",
+   "xLabel": "Time",
+   "yLabel": "Remembered",
+   "source": "Roediger & Karpicke, 2006",
+   "sourceAt": "L3:effect"
+  },
+  {
+   "type": "doc",
+   "at": "L4:explain@-0.2",
+   "title": "What Offload makes you do",
+   "sub": "From your module notes",
+   "rows": [
+    {
+     "label": "Explain the method",
+     "tick": "L4:explain"
+    },
+    {
+     "label": "Exam-style questions",
+     "tick": "L4:questions"
+    },
+    {
+     "label": "On your own notes",
+     "tick": "L4:notes"
+    }
+   ]
+  }
+ ]
+}

@@ -5,9 +5,10 @@ import Link from "next/link";
 import { signOut } from "@/app/actions";
 import type { Person } from "@/lib/people";
 
-export type DeskStep = "research" | "scripts" | "yes" | "posts" | "numbers" | "layouts" | "editor" | "brand" | "week" | "loop";
+export type DeskStep = "research" | "scripts" | "yes" | "posts" | "numbers" | "layouts" | "editor" | "brand" | "week" | "loop" | "signals";
 
 const steps = [
+  { href: "/desk/signals", step: "signals", label: "Signals" },
   { href: "/desk/research", step: "research", label: "Research" },
   { href: "/desk/scripts", step: "scripts", label: "Scripts" },
   { href: "/desk", step: "yes", label: "Approval" },

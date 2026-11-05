@@ -1,0 +1,20 @@
+{
+ "template": "Poster",
+ "props": {
+  "layout": "folder",
+  "kicker": "Carousel 01 · Mocks",
+  "head": "Your mocks\nhave a date.",
+  "note": "Your plan\ncan move.",
+  "tabs": [
+   "Paper",
+   "Plan",
+   "Card"
+  ],
+  "rows": [
+   "The spec",
+   "The dates",
+   "The plan"
+  ],
+  "handle": "offload.gcsealevel"
+ }
+}

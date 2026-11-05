@@ -1,0 +1,91 @@
+{
+ "id": "clinical-placement-poll",
+ "end": {
+  "lead": "Free trial",
+  "pill": "Link in bio"
+ },
+ "hi": {
+  "winning": "problem",
+  "fight": "problem",
+  "moved": "blue"
+ },
+ "pill": {
+  "at": "L3:offload@-0.2",
+  "until": "L3:shifts@-0.25",
+  "sub": "plans around you"
+ },
+ "scenes": [
+  {
+   "type": "choice",
+   "at": "L1",
+   "deck": "Placement week",
+   "q": "What's winning this week?",
+   "options": [
+    "Placement",
+    "Revision"
+   ],
+   "reveal": "L2:comment@-0.1",
+   "comment": "Comment your letter"
+  },
+  {
+   "type": "week",
+   "at": "L3:shifts@-0.15",
+   "title": "Your week",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Shift",
+     "tone": "kraft",
+     "at": "L3:shifts@0.00"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "Shift",
+     "tone": "kraft",
+     "at": "L3:shifts@0.08"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Shift",
+     "tone": "kraft",
+     "at": "L3:shifts@0.16"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "Lecture",
+     "tone": "card",
+     "at": "L3:once"
+    },
+    {
+     "day": 2,
+     "slot": 1,
+     "label": "Study",
+     "at": "L3:google"
+    },
+    {
+     "day": 4,
+     "slot": 0,
+     "label": "Study",
+     "at": "L3:calendar"
+    }
+   ]
+  },
+  {
+   "type": "clip",
+   "at": "L4@-0.1",
+   "src": "rec/reschedule-a.mp4",
+   "len": 6.5
+  }
+ ]
+}

@@ -1,0 +1,396 @@
+{
+ "duration": 25.276,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Mock season. Be honest. Which one are you?",
+   "start": 0.15,
+   "end": 2.478,
+   "words": [
+    {
+     "text": "Mock",
+     "start": 0.15,
+     "end": 0.506
+    },
+    {
+     "text": "season.",
+     "start": 0.506,
+     "end": 0.98
+    },
+    {
+     "text": "Be",
+     "start": 1.04,
+     "end": 1.17
+    },
+    {
+     "text": "honest.",
+     "start": 1.17,
+     "end": 1.43
+    },
+    {
+     "text": "Which",
+     "start": 1.49,
+     "end": 1.804
+    },
+    {
+     "text": "one",
+     "start": 1.804,
+     "end": 2.029
+    },
+    {
+     "text": "are",
+     "start": 2.029,
+     "end": 2.253
+    },
+    {
+     "text": "you?",
+     "start": 2.253,
+     "end": 2.478
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "A. The timetable with seven colours you stopped using on day three.",
+   "start": 2.738,
+   "end": 6.442,
+   "words": [
+    {
+     "text": "A.",
+     "start": 2.738,
+     "end": 5.088
+    },
+    {
+     "text": "The",
+     "start": 5.178,
+     "end": 5.262
+    },
+    {
+     "text": "timetable",
+     "start": 5.262,
+     "end": 5.447
+    },
+    {
+     "text": "with",
+     "start": 5.447,
+     "end": 5.548
+    },
+    {
+     "text": "seven",
+     "start": 5.548,
+     "end": 5.666
+    },
+    {
+     "text": "colours",
+     "start": 5.666,
+     "end": 5.818
+    },
+    {
+     "text": "you",
+     "start": 5.818,
+     "end": 5.902
+    },
+    {
+     "text": "stopped",
+     "start": 5.902,
+     "end": 6.054
+    },
+    {
+     "text": "using",
+     "start": 6.054,
+     "end": 6.172
+    },
+    {
+     "text": "on",
+     "start": 6.172,
+     "end": 6.24
+    },
+    {
+     "text": "day",
+     "start": 6.24,
+     "end": 6.324
+    },
+    {
+     "text": "three.",
+     "start": 6.324,
+     "end": 6.442
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "B. I'll start after mocks.",
+   "start": 6.702,
+   "end": 8.498,
+   "words": [
+    {
+     "text": "B.",
+     "start": 6.702,
+     "end": 7.722
+    },
+    {
+     "text": "I'll",
+     "start": 7.792,
+     "end": 7.928
+    },
+    {
+     "text": "start",
+     "start": 7.928,
+     "end": 8.118
+    },
+    {
+     "text": "after",
+     "start": 8.118,
+     "end": 8.308
+    },
+    {
+     "text": "mocks.",
+     "start": 8.308,
+     "end": 8.498
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "C. You revise, but only the topics you already know.",
+   "start": 8.758,
+   "end": 11.93,
+   "words": [
+    {
+     "text": "C.",
+     "start": 8.758,
+     "end": 9.978
+    },
+    {
+     "text": "You",
+     "start": 10.048,
+     "end": 10.198
+    },
+    {
+     "text": "revise,",
+     "start": 10.198,
+     "end": 10.438
+    },
+    {
+     "text": "but",
+     "start": 10.508,
+     "end": 10.67
+    },
+    {
+     "text": "only",
+     "start": 10.67,
+     "end": 10.864
+    },
+    {
+     "text": "the",
+     "start": 10.864,
+     "end": 11.025
+    },
+    {
+     "text": "topics",
+     "start": 11.025,
+     "end": 11.284
+    },
+    {
+     "text": "you",
+     "start": 11.284,
+     "end": 11.445
+    },
+    {
+     "text": "already",
+     "start": 11.445,
+     "end": 11.736
+    },
+    {
+     "text": "know.",
+     "start": 11.736,
+     "end": 11.93
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "If you said A, the problem isn't you. Paper can't move.",
+   "start": 12.93,
+   "end": 16.173,
+   "words": [
+    {
+     "text": "If",
+     "start": 12.93,
+     "end": 13.336
+    },
+    {
+     "text": "you",
+     "start": 13.336,
+     "end": 13.845
+    },
+    {
+     "text": "said",
+     "start": 13.845,
+     "end": 14.455
+    },
+    {
+     "text": "A,",
+     "start": 14.455,
+     "end": 14.76
+    },
+    {
+     "text": "the",
+     "start": 14.99,
+     "end": 15.022
+    },
+    {
+     "text": "problem",
+     "start": 15.022,
+     "end": 15.079
+    },
+    {
+     "text": "isn't",
+     "start": 15.079,
+     "end": 15.118
+    },
+    {
+     "text": "you.",
+     "start": 15.118,
+     "end": 15.15
+    },
+    {
+     "text": "Paper",
+     "start": 15.22,
+     "end": 15.571
+    },
+    {
+     "text": "can't",
+     "start": 15.571,
+     "end": 15.872
+    },
+    {
+     "text": "move.",
+     "start": 15.872,
+     "end": 16.173
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "This one moves itself. Miss an evening, and the work slides into your free time.",
+   "start": 16.573,
+   "end": 20.919,
+   "words": [
+    {
+     "text": "This",
+     "start": 16.573,
+     "end": 16.843
+    },
+    {
+     "text": "one",
+     "start": 16.843,
+     "end": 17.068
+    },
+    {
+     "text": "moves",
+     "start": 17.068,
+     "end": 17.383
+    },
+    {
+     "text": "itself.",
+     "start": 17.383,
+     "end": 17.743
+    },
+    {
+     "text": "Miss",
+     "start": 18.073,
+     "end": 18.708
+    },
+    {
+     "text": "an",
+     "start": 18.708,
+     "end": 19.131
+    },
+    {
+     "text": "evening,",
+     "start": 19.131,
+     "end": 20.083
+    },
+    {
+     "text": "and",
+     "start": 20.193,
+     "end": 20.269
+    },
+    {
+     "text": "the",
+     "start": 20.269,
+     "end": 20.345
+    },
+    {
+     "text": "work",
+     "start": 20.345,
+     "end": 20.435
+    },
+    {
+     "text": "slides",
+     "start": 20.435,
+     "end": 20.556
+    },
+    {
+     "text": "into",
+     "start": 20.556,
+     "end": 20.647
+    },
+    {
+     "text": "your",
+     "start": 20.647,
+     "end": 20.737
+    },
+    {
+     "text": "free",
+     "start": 20.737,
+     "end": 20.828
+    },
+    {
+     "text": "time.",
+     "start": 20.828,
+     "end": 20.919
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Comment your letter. I'm guessing C.",
+   "start": 21.319,
+   "end": 23.476,
+   "words": [
+    {
+     "text": "Comment",
+     "start": 21.319,
+     "end": 21.682
+    },
+    {
+     "text": "your",
+     "start": 21.682,
+     "end": 21.925
+    },
+    {
+     "text": "letter.",
+     "start": 21.925,
+     "end": 22.249
+    },
+    {
+     "text": "I'm",
+     "start": 22.319,
+     "end": 22.591
+    },
+    {
+     "text": "guessing",
+     "start": 22.591,
+     "end": 23.272
+    },
+    {
+     "text": "C.",
+     "start": 23.272,
+     "end": 23.476
+    }
+   ]
+  }
+ ]
+}

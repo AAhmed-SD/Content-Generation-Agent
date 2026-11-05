@@ -1,0 +1,355 @@
+{
+ "duration": 24.453,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Final tip before your mocks. The one most people skip.",
+   "start": 0.15,
+   "end": 3.648,
+   "words": [
+    {
+     "text": "Final",
+     "start": 0.15,
+     "end": 0.523
+    },
+    {
+     "text": "tip",
+     "start": 0.523,
+     "end": 0.79
+    },
+    {
+     "text": "before",
+     "start": 0.79,
+     "end": 1.217
+    },
+    {
+     "text": "your",
+     "start": 1.217,
+     "end": 1.537
+    },
+    {
+     "text": "mocks.",
+     "start": 1.537,
+     "end": 1.91
+    },
+    {
+     "text": "The",
+     "start": 2.19,
+     "end": 2.433
+    },
+    {
+     "text": "one",
+     "start": 2.433,
+     "end": 2.676
+    },
+    {
+     "text": "most",
+     "start": 2.676,
+     "end": 2.967
+    },
+    {
+     "text": "people",
+     "start": 2.967,
+     "end": 3.356
+    },
+    {
+     "text": "skip.",
+     "start": 3.356,
+     "end": 3.648
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "The night before, do you reread your notes, or test yourself?",
+   "start": 3.928,
+   "end": 7.299,
+   "words": [
+    {
+     "text": "The",
+     "start": 3.928,
+     "end": 4.0
+    },
+    {
+     "text": "night",
+     "start": 4.0,
+     "end": 4.102
+    },
+    {
+     "text": "before,",
+     "start": 4.102,
+     "end": 4.218
+    },
+    {
+     "text": "do",
+     "start": 4.328,
+     "end": 4.56
+    },
+    {
+     "text": "you",
+     "start": 4.56,
+     "end": 4.85
+    },
+    {
+     "text": "reread",
+     "start": 4.85,
+     "end": 5.314
+    },
+    {
+     "text": "your",
+     "start": 5.314,
+     "end": 5.662
+    },
+    {
+     "text": "notes,",
+     "start": 5.662,
+     "end": 6.068
+    },
+    {
+     "text": "or",
+     "start": 6.278,
+     "end": 6.482
+    },
+    {
+     "text": "test",
+     "start": 6.482,
+     "end": 6.788
+    },
+    {
+     "text": "yourself?",
+     "start": 6.788,
+     "end": 7.299
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Test yourself. Rereading feels better on the day, but testing is what lasts.",
+   "start": 8.899,
+   "end": 13.454,
+   "words": [
+    {
+     "text": "Test",
+     "start": 8.899,
+     "end": 9.169
+    },
+    {
+     "text": "yourself.",
+     "start": 9.169,
+     "end": 9.619
+    },
+    {
+     "text": "Rereading",
+     "start": 9.979,
+     "end": 10.447
+    },
+    {
+     "text": "feels",
+     "start": 10.447,
+     "end": 10.744
+    },
+    {
+     "text": "better",
+     "start": 10.744,
+     "end": 11.084
+    },
+    {
+     "text": "on",
+     "start": 11.084,
+     "end": 11.254
+    },
+    {
+     "text": "the",
+     "start": 11.254,
+     "end": 11.467
+    },
+    {
+     "text": "day,",
+     "start": 11.467,
+     "end": 11.679
+    },
+    {
+     "text": "but",
+     "start": 11.869,
+     "end": 12.125
+    },
+    {
+     "text": "testing",
+     "start": 12.125,
+     "end": 12.585
+    },
+    {
+     "text": "is",
+     "start": 12.585,
+     "end": 12.789
+    },
+    {
+     "text": "what",
+     "start": 12.789,
+     "end": 13.096
+    },
+    {
+     "text": "lasts.",
+     "start": 13.096,
+     "end": 13.454
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Offload does blurting from your own notes. You write it all down, then it shows you the gaps.",
+   "start": 13.734,
+   "end": 18.841,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 13.734,
+     "end": 14.129
+    },
+    {
+     "text": "does",
+     "start": 14.129,
+     "end": 14.392
+    },
+    {
+     "text": "blurting",
+     "start": 14.392,
+     "end": 14.831
+    },
+    {
+     "text": "from",
+     "start": 14.831,
+     "end": 15.094
+    },
+    {
+     "text": "your",
+     "start": 15.094,
+     "end": 15.357
+    },
+    {
+     "text": "own",
+     "start": 15.357,
+     "end": 15.577
+    },
+    {
+     "text": "notes.",
+     "start": 15.577,
+     "end": 15.884
+    },
+    {
+     "text": "You",
+     "start": 16.264,
+     "end": 16.457
+    },
+    {
+     "text": "write",
+     "start": 16.457,
+     "end": 16.726
+    },
+    {
+     "text": "it",
+     "start": 16.726,
+     "end": 16.88
+    },
+    {
+     "text": "all",
+     "start": 16.88,
+     "end": 17.073
+    },
+    {
+     "text": "down,",
+     "start": 17.073,
+     "end": 17.304
+    },
+    {
+     "text": "then",
+     "start": 17.504,
+     "end": 17.747
+    },
+    {
+     "text": "it",
+     "start": 17.747,
+     "end": 17.909
+    },
+    {
+     "text": "shows",
+     "start": 17.909,
+     "end": 18.193
+    },
+    {
+     "text": "you",
+     "start": 18.193,
+     "end": 18.395
+    },
+    {
+     "text": "the",
+     "start": 18.395,
+     "end": 18.598
+    },
+    {
+     "text": "gaps.",
+     "start": 18.598,
+     "end": 18.841
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 19.341,
+   "end": 23.173,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 19.341,
+     "end": 20.991
+    },
+    {
+     "text": "A",
+     "start": 21.211,
+     "end": 21.31
+    },
+    {
+     "text": "study",
+     "start": 21.31,
+     "end": 21.543
+    },
+    {
+     "text": "system",
+     "start": 21.543,
+     "end": 21.809
+    },
+    {
+     "text": "that",
+     "start": 21.809,
+     "end": 22.009
+    },
+    {
+     "text": "adapts",
+     "start": 22.009,
+     "end": 22.275
+    },
+    {
+     "text": "when",
+     "start": 22.275,
+     "end": 22.474
+    },
+    {
+     "text": "real",
+     "start": 22.474,
+     "end": 22.674
+    },
+    {
+     "text": "life",
+     "start": 22.674,
+     "end": 22.873
+    },
+    {
+     "text": "happens.",
+     "start": 22.873,
+     "end": 23.173
+    }
+   ]
+  }
+ ]
+}

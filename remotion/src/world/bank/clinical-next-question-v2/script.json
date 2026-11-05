@@ -1,0 +1,35 @@
+{
+ "id": "bank/clinical-next-question-v2",
+ "voice": "bm_lewis",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Your next exam question. You've got three seconds."
+  },
+  {
+   "id": "L2",
+   "say": "The internal urethral sphincter. Autonomic, or somatic?",
+   "after": 1.6
+  },
+  {
+   "id": "L3",
+   "say": "Autonomic. Most of us flip them under pressure. The external one's the one you control.",
+   "after": 0.4
+  },
+  {
+   "id": "L4",
+   "say": "Get it wrong in the app, and that card comes back sooner.",
+   "after": 0.4
+  },
+  {
+   "id": "L5",
+   "say": "Part two? Comment a pair you always flip.",
+   "after": 0.6
+  }
+ ]
+}

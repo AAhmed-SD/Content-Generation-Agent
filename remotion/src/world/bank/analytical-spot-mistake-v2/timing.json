@@ -1,0 +1,383 @@
+{
+ "duration": 28.801,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Spot the mistake in this revision week. Take your time.",
+   "start": 0.15,
+   "end": 3.499,
+   "words": [
+    {
+     "text": "Spot",
+     "start": 0.15,
+     "end": 0.4
+    },
+    {
+     "text": "the",
+     "start": 0.4,
+     "end": 0.609
+    },
+    {
+     "text": "mistake",
+     "start": 0.609,
+     "end": 0.985
+    },
+    {
+     "text": "in",
+     "start": 0.985,
+     "end": 1.152
+    },
+    {
+     "text": "this",
+     "start": 1.152,
+     "end": 1.402
+    },
+    {
+     "text": "revision",
+     "start": 1.402,
+     "end": 1.82
+    },
+    {
+     "text": "week.",
+     "start": 1.82,
+     "end": 2.07
+    },
+    {
+     "text": "Take",
+     "start": 2.49,
+     "end": 2.826
+    },
+    {
+     "text": "your",
+     "start": 2.826,
+     "end": 3.162
+    },
+    {
+     "text": "time.",
+     "start": 3.162,
+     "end": 3.499
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Calculus. Calculus. Calculus. Linear algebra was last seen in October.",
+   "start": 3.759,
+   "end": 8.722,
+   "words": [
+    {
+     "text": "Calculus.",
+     "start": 3.759,
+     "end": 5.029
+    },
+    {
+     "text": "Calculus.",
+     "start": 5.309,
+     "end": 5.869
+    },
+    {
+     "text": "Calculus.",
+     "start": 6.219,
+     "end": 8.149
+    },
+    {
+     "text": "Linear",
+     "start": 8.249,
+     "end": 8.329
+    },
+    {
+     "text": "algebra",
+     "start": 8.329,
+     "end": 8.42
+    },
+    {
+     "text": "was",
+     "start": 8.42,
+     "end": 8.47
+    },
+    {
+     "text": "last",
+     "start": 8.47,
+     "end": 8.53
+    },
+    {
+     "text": "seen",
+     "start": 8.53,
+     "end": 8.591
+    },
+    {
+     "text": "in",
+     "start": 8.591,
+     "end": 8.631
+    },
+    {
+     "text": "October.",
+     "start": 8.631,
+     "end": 8.722
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "What's wrong? A, too much calculus. B, no rest day. C, the topic that disappeared.",
+   "start": 9.022,
+   "end": 13.979,
+   "words": [
+    {
+     "text": "What's",
+     "start": 9.022,
+     "end": 9.892
+    },
+    {
+     "text": "wrong?",
+     "start": 9.892,
+     "end": 10.762
+    },
+    {
+     "text": "A,",
+     "start": 11.072,
+     "end": 11.652
+    },
+    {
+     "text": "too",
+     "start": 11.732,
+     "end": 11.791
+    },
+    {
+     "text": "much",
+     "start": 11.791,
+     "end": 11.863
+    },
+    {
+     "text": "calculus.",
+     "start": 11.863,
+     "end": 11.982
+    },
+    {
+     "text": "B,",
+     "start": 12.252,
+     "end": 13.072
+    },
+    {
+     "text": "no",
+     "start": 13.132,
+     "end": 13.161
+    },
+    {
+     "text": "rest",
+     "start": 13.161,
+     "end": 13.205
+    },
+    {
+     "text": "day.",
+     "start": 13.205,
+     "end": 13.242
+    },
+    {
+     "text": "C,",
+     "start": 13.302,
+     "end": 13.522
+    },
+    {
+     "text": "the",
+     "start": 13.572,
+     "end": 13.637
+    },
+    {
+     "text": "topic",
+     "start": 13.637,
+     "end": 13.729
+    },
+    {
+     "text": "that",
+     "start": 13.729,
+     "end": 13.808
+    },
+    {
+     "text": "disappeared.",
+     "start": 13.808,
+     "end": 13.979
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "C. Linear algebra didn't go anywhere. You just stopped visiting.",
+   "start": 15.579,
+   "end": 19.388,
+   "words": [
+    {
+     "text": "C.",
+     "start": 15.579,
+     "end": 17.779
+    },
+    {
+     "text": "Linear",
+     "start": 18.119,
+     "end": 18.233
+    },
+    {
+     "text": "algebra",
+     "start": 18.233,
+     "end": 18.361
+    },
+    {
+     "text": "didn't",
+     "start": 18.361,
+     "end": 18.46
+    },
+    {
+     "text": "go",
+     "start": 18.46,
+     "end": 18.517
+    },
+    {
+     "text": "anywhere.",
+     "start": 18.517,
+     "end": 18.659
+    },
+    {
+     "text": "You",
+     "start": 18.749,
+     "end": 18.856
+    },
+    {
+     "text": "just",
+     "start": 18.856,
+     "end": 18.983
+    },
+    {
+     "text": "stopped",
+     "start": 18.983,
+     "end": 19.175
+    },
+    {
+     "text": "visiting.",
+     "start": 19.175,
+     "end": 19.388
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "The app brings old topics back before they fade, so October is still there in January.",
+   "start": 19.648,
+   "end": 24.693,
+   "words": [
+    {
+     "text": "The",
+     "start": 19.648,
+     "end": 19.871
+    },
+    {
+     "text": "app",
+     "start": 19.871,
+     "end": 20.095
+    },
+    {
+     "text": "brings",
+     "start": 20.095,
+     "end": 20.453
+    },
+    {
+     "text": "old",
+     "start": 20.453,
+     "end": 20.676
+    },
+    {
+     "text": "topics",
+     "start": 20.676,
+     "end": 21.034
+    },
+    {
+     "text": "back",
+     "start": 21.034,
+     "end": 21.303
+    },
+    {
+     "text": "before",
+     "start": 21.303,
+     "end": 21.661
+    },
+    {
+     "text": "they",
+     "start": 21.661,
+     "end": 21.929
+    },
+    {
+     "text": "fade,",
+     "start": 21.929,
+     "end": 22.198
+    },
+    {
+     "text": "so",
+     "start": 22.578,
+     "end": 22.77
+    },
+    {
+     "text": "October",
+     "start": 22.77,
+     "end": 23.203
+    },
+    {
+     "text": "is",
+     "start": 23.203,
+     "end": 23.395
+    },
+    {
+     "text": "still",
+     "start": 23.395,
+     "end": 23.731
+    },
+    {
+     "text": "there",
+     "start": 23.731,
+     "end": 24.068
+    },
+    {
+     "text": "in",
+     "start": 24.068,
+     "end": 24.26
+    },
+    {
+     "text": "January.",
+     "start": 24.26,
+     "end": 24.693
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Honestly, B's a problem too.",
+   "start": 25.093,
+   "end": 27.001,
+   "words": [
+    {
+     "text": "Honestly,",
+     "start": 25.093,
+     "end": 25.683
+    },
+    {
+     "text": "B's",
+     "start": 25.803,
+     "end": 26.031
+    },
+    {
+     "text": "a",
+     "start": 26.031,
+     "end": 26.202
+    },
+    {
+     "text": "problem",
+     "start": 26.202,
+     "end": 26.716
+    },
+    {
+     "text": "too.",
+     "start": 26.716,
+     "end": 27.001
+    }
+   ]
+  }
+ ]
+}

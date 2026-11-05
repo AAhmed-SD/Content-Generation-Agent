@@ -1,0 +1,18 @@
+{
+ "template": "PhotoPoster",
+ "props": {
+  "plate": "folder-red",
+  "tabs": [
+   "Notes",
+   "Plan",
+   "Test"
+  ],
+  "head": "Lab reports.\nProblem sheets.\nRevision.",
+  "rows": [
+   "The notes",
+   "The plan",
+   "The test"
+  ],
+  "note": "It all goes\nin the plan."
+ }
+}

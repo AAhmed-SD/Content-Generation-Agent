@@ -10,6 +10,11 @@ import { GCSE_DURATION_S, GcseMocks } from "./gcse-mocks/GcseMocks";
 import { ADHD_DURATION_S, AdhdPlan } from "./adhd-plan/AdhdPlan";
 import { CLINICAL_SHIFTS_DURATION_S, ClinicalShifts } from "./clinical-shifts/ClinicalShifts";
 import { CLINICAL_QUIZ_DURATION_S, ClinicalQuiz } from "./clinical-quiz/ClinicalQuiz";
+import { BANK } from "./bank";
+import { BankFilm, film } from "./bank/Film";
+import { Poster, posterDefaults, POSTER_H, POSTER_W } from "./posters/Posters";
+import { PhotoPoster, photoDefaults } from "./posters/PhotoPosters";
+import { CarouselSlide, slideDefaults } from "./posters/Carousel";
 import { LogoIntro } from "./kit/logo";
 import { SOFT_DURATION_S, SoftLaunch } from "./soft-launch/SoftLaunch";
 
@@ -28,6 +33,12 @@ export const WorldRoot: React.FC = () => (
     <Composition id="Dark-adhd-plan" component={AdhdPlan} durationInFrames={Math.ceil(ADHD_DURATION_S * 30)} fps={30} width={1080} height={1920} />
     <Composition id="Dark-clinical-shifts" component={ClinicalShifts} durationInFrames={Math.ceil(CLINICAL_SHIFTS_DURATION_S * 30)} fps={30} width={1080} height={1920} />
     <Composition id="Dark-clinical-quiz" component={ClinicalQuiz} durationInFrames={Math.ceil(CLINICAL_QUIZ_DURATION_S * 30)} fps={30} width={1080} height={1920} />
+    {BANK.map(({ id, spec, timing }) => (
+      <Composition key={id} id={`Bank-${id}`} component={BankFilm} defaultProps={{ spec, timing, vo: `world/bank/${id}/vo.wav` }} durationInFrames={Math.ceil(film(spec, timing).duration * 30)} fps={30} width={1080} height={1920} />
+    ))}
+    <Composition id="Poster" component={Poster} defaultProps={posterDefaults} durationInFrames={1} fps={30} width={POSTER_W} height={POSTER_H} />
+    <Composition id="Slide" component={CarouselSlide} defaultProps={slideDefaults} durationInFrames={1} fps={30} width={POSTER_W} height={POSTER_H} />
+    <Composition id="PhotoPoster" component={PhotoPoster} defaultProps={photoDefaults} durationInFrames={1} fps={30} width={POSTER_W} height={POSTER_H} />
     <Composition id="Soft-launch" component={SoftLaunch} durationInFrames={Math.ceil(SOFT_DURATION_S * 30)} fps={30} width={1080} height={1920} />
     <Composition id="Logo-intro" component={LogoIntro} durationInFrames={105} fps={30} width={1080} height={1920} />
     <Composition id="Glass-placement" component={Placement} durationInFrames={Math.ceil(PLACEMENT_DURATION_S * 30)} fps={30} width={1080} height={1920} />

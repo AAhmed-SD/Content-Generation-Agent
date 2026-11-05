@@ -1,0 +1,40 @@
+{
+ "id": "bank/analytical-three-things",
+ "voice": "bm_daniel",
+ "lang": "en-gb",
+ "speed": 1.1,
+ "gap": 0.25,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Three things to do this week if you've got January exams."
+  },
+  {
+   "id": "L2",
+   "say": "One. Close the solution and explain the method out loud. If you can't explain it, you can't use it.",
+   "after": 0.4
+  },
+  {
+   "id": "L3",
+   "say": "Two. Mix your topics. The exam won't tell you which method it wants.",
+   "after": 0.4
+  },
+  {
+   "id": "L4",
+   "say": "Three. Go back to the topic you did first. That's the one you've forgotten.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "Offload does number one for you. It makes you explain each method in your own words, from your own notes.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "Number three, honestly, is the one nobody does.",
+   "after": 1.2
+  }
+ ]
+}

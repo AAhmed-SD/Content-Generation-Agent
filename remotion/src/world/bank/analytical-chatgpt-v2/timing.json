@@ -1,0 +1,385 @@
+{
+ "duration": 26.817,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "ChatGPT can do your problem sheet. It can't come into the exam with you.",
+   "start": 0.15,
+   "end": 4.705,
+   "words": [
+    {
+     "text": "ChatGPT",
+     "start": 0.15,
+     "end": 0.69
+    },
+    {
+     "text": "can",
+     "start": 0.69,
+     "end": 0.99
+    },
+    {
+     "text": "do",
+     "start": 0.99,
+     "end": 1.23
+    },
+    {
+     "text": "your",
+     "start": 1.23,
+     "end": 1.59
+    },
+    {
+     "text": "problem",
+     "start": 1.59,
+     "end": 2.13
+    },
+    {
+     "text": "sheet.",
+     "start": 2.13,
+     "end": 2.55
+    },
+    {
+     "text": "It",
+     "start": 2.93,
+     "end": 3.091
+    },
+    {
+     "text": "can't",
+     "start": 3.091,
+     "end": 3.333
+    },
+    {
+     "text": "come",
+     "start": 3.333,
+     "end": 3.575
+    },
+    {
+     "text": "into",
+     "start": 3.575,
+     "end": 3.818
+    },
+    {
+     "text": "the",
+     "start": 3.818,
+     "end": 4.019
+    },
+    {
+     "text": "exam",
+     "start": 4.019,
+     "end": 4.261
+    },
+    {
+     "text": "with",
+     "start": 4.261,
+     "end": 4.503
+    },
+    {
+     "text": "you.",
+     "start": 4.503,
+     "end": 4.705
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "So which actually helps? A, reading the worked solution. B, explaining the method to a blank page.",
+   "start": 4.965,
+   "end": 10.646,
+   "words": [
+    {
+     "text": "So",
+     "start": 4.965,
+     "end": 5.128
+    },
+    {
+     "text": "which",
+     "start": 5.128,
+     "end": 5.413
+    },
+    {
+     "text": "actually",
+     "start": 5.413,
+     "end": 5.82
+    },
+    {
+     "text": "helps?",
+     "start": 5.82,
+     "end": 6.105
+    },
+    {
+     "text": "A,",
+     "start": 6.465,
+     "end": 7.235
+    },
+    {
+     "text": "reading",
+     "start": 7.325,
+     "end": 7.468
+    },
+    {
+     "text": "the",
+     "start": 7.468,
+     "end": 7.548
+    },
+    {
+     "text": "worked",
+     "start": 7.548,
+     "end": 7.676
+    },
+    {
+     "text": "solution.",
+     "start": 7.676,
+     "end": 7.835
+    },
+    {
+     "text": "B,",
+     "start": 8.205,
+     "end": 10.415
+    },
+    {
+     "text": "explaining",
+     "start": 10.495,
+     "end": 10.535
+    },
+    {
+     "text": "the",
+     "start": 10.535,
+     "end": 10.552
+    },
+    {
+     "text": "method",
+     "start": 10.552,
+     "end": 10.579
+    },
+    {
+     "text": "to",
+     "start": 10.579,
+     "end": 10.592
+    },
+    {
+     "text": "a",
+     "start": 10.592,
+     "end": 10.602
+    },
+    {
+     "text": "blank",
+     "start": 10.602,
+     "end": 10.626
+    },
+    {
+     "text": "page.",
+     "start": 10.626,
+     "end": 10.646
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "B. Reading it feels like learning. Explaining it is learning. That's the testing effect.",
+   "start": 12.246,
+   "end": 17.514,
+   "words": [
+    {
+     "text": "B.",
+     "start": 12.246,
+     "end": 14.126
+    },
+    {
+     "text": "Reading",
+     "start": 14.446,
+     "end": 14.791
+    },
+    {
+     "text": "it",
+     "start": 14.791,
+     "end": 14.944
+    },
+    {
+     "text": "feels",
+     "start": 14.944,
+     "end": 15.213
+    },
+    {
+     "text": "like",
+     "start": 15.213,
+     "end": 15.443
+    },
+    {
+     "text": "learning.",
+     "start": 15.443,
+     "end": 15.826
+    },
+    {
+     "text": "Explaining",
+     "start": 16.136,
+     "end": 16.592
+    },
+    {
+     "text": "it",
+     "start": 16.592,
+     "end": 16.744
+    },
+    {
+     "text": "is",
+     "start": 16.744,
+     "end": 16.896
+    },
+    {
+     "text": "learning.",
+     "start": 16.896,
+     "end": 17.276
+    },
+    {
+     "text": "That's",
+     "start": 17.416,
+     "end": 17.44
+    },
+    {
+     "text": "the",
+     "start": 17.44,
+     "end": 17.457
+    },
+    {
+     "text": "testing",
+     "start": 17.457,
+     "end": 17.487
+    },
+    {
+     "text": "effect.",
+     "start": 17.487,
+     "end": 17.514
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "The app gives you the prompt. You explain it in your own words.",
+   "start": 17.774,
+   "end": 21.11,
+   "words": [
+    {
+     "text": "The",
+     "start": 17.774,
+     "end": 17.95
+    },
+    {
+     "text": "app",
+     "start": 17.95,
+     "end": 18.126
+    },
+    {
+     "text": "gives",
+     "start": 18.126,
+     "end": 18.372
+    },
+    {
+     "text": "you",
+     "start": 18.372,
+     "end": 18.547
+    },
+    {
+     "text": "the",
+     "start": 18.547,
+     "end": 18.723
+    },
+    {
+     "text": "prompt.",
+     "start": 18.723,
+     "end": 19.004
+    },
+    {
+     "text": "You",
+     "start": 19.334,
+     "end": 19.556
+    },
+    {
+     "text": "explain",
+     "start": 19.556,
+     "end": 19.956
+    },
+    {
+     "text": "it",
+     "start": 19.956,
+     "end": 20.134
+    },
+    {
+     "text": "in",
+     "start": 20.134,
+     "end": 20.311
+    },
+    {
+     "text": "your",
+     "start": 20.311,
+     "end": 20.578
+    },
+    {
+     "text": "own",
+     "start": 20.578,
+     "end": 20.8
+    },
+    {
+     "text": "words.",
+     "start": 20.8,
+     "end": 21.11
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Try it now. Explain the chain rule out loud. Go.",
+   "start": 21.51,
+   "end": 24.817,
+   "words": [
+    {
+     "text": "Try",
+     "start": 21.51,
+     "end": 21.75
+    },
+    {
+     "text": "it",
+     "start": 21.75,
+     "end": 21.941
+    },
+    {
+     "text": "now.",
+     "start": 21.941,
+     "end": 22.18
+    },
+    {
+     "text": "Explain",
+     "start": 22.29,
+     "end": 22.707
+    },
+    {
+     "text": "the",
+     "start": 22.707,
+     "end": 22.939
+    },
+    {
+     "text": "chain",
+     "start": 22.939,
+     "end": 23.263
+    },
+    {
+     "text": "rule",
+     "start": 23.263,
+     "end": 23.541
+    },
+    {
+     "text": "out",
+     "start": 23.541,
+     "end": 23.773
+    },
+    {
+     "text": "loud.",
+     "start": 23.773,
+     "end": 24.05
+    },
+    {
+     "text": "Go.",
+     "start": 24.39,
+     "end": 24.817
+    }
+   ]
+  }
+ ]
+}

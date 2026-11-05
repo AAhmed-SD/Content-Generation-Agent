@@ -1,0 +1,131 @@
+{
+ "id": "time-zero-v2",
+ "end": {
+  "style": "corner"
+ },
+ "hi": {
+  "wrong": "problem",
+  "rebuild": "problem",
+  "moved": "blue",
+  "zero": "blue"
+ },
+ "scenes": [
+  {
+   "type": "week",
+   "at": "L1@-0.05",
+   "title": "Your plan",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Study",
+     "at": "L1@0.20"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "Study",
+     "at": "L1@0.30",
+     "outline": "L2:wrong@0.00"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "Study",
+     "at": "L1@0.40",
+     "outline": "L2:wrong@0.12"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Study",
+     "at": "L1@0.50"
+    },
+    {
+     "day": 4,
+     "slot": 0,
+     "label": "Study",
+     "at": "L1@0.60"
+    }
+   ]
+  },
+  {
+   "type": "doc",
+   "at": "L3",
+   "title": "What I wanted gone",
+   "sub": "When I built this",
+   "rows": [
+    {
+     "label": "Rebuilding the plan",
+     "chip": "Gone",
+     "chipTone": "red",
+     "strike": "L3:take"
+    },
+    {
+     "label": "Starting over",
+     "chip": "Gone",
+     "chipTone": "red",
+     "strike": "L3:rule"
+    }
+   ]
+  },
+  {
+   "type": "clip",
+   "at": "L4@-0.1",
+   "src": "rec/reschedule-a.mp4",
+   "len": 6.5
+  },
+  {
+   "type": "week",
+   "at": "L5",
+   "title": "Your plan",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Study",
+     "at": "L5:never"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "Study",
+     "at": "L5:start"
+    },
+    {
+     "day": 2,
+     "slot": 1,
+     "label": "Moved",
+     "tone": "kraft",
+     "at": "L5:from"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Study",
+     "at": "L5:zero"
+    },
+    {
+     "day": 4,
+     "slot": 0,
+     "label": "Study",
+     "at": "L5:zero@0.1"
+    }
+   ]
+  }
+ ]
+}

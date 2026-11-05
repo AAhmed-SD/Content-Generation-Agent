@@ -1,0 +1,73 @@
+{
+ "id": "analytical-haskell",
+ "end": {
+  "lead": "Free trial",
+  "pill": "Link in bio"
+ },
+ "hi": {
+  "test": "blue",
+  "flip": "blue",
+  "not": "problem",
+  "wrong": "problem",
+  "sooner": "blue",
+  "uploaded": "blue"
+ },
+ "pill": {
+  "at": "L6@-0.2",
+  "until": "L6:uploaded@-0.3",
+  "sub": "builds the test"
+ },
+ "scenes": [
+  {
+   "type": "stack",
+   "at": "L1"
+  },
+  {
+   "type": "quiz",
+   "at": "L2",
+   "deck": "Haskell · Test",
+   "q": "A programmer wants an infinite list that cycles through ['a','b','c']. Which function should they use?",
+   "a": "cycle ['a','b','c']",
+   "not": "repeat",
+   "flip": "L3@-0.18",
+   "strike": "L3:not",
+   "foot": "From uploaded module notes"
+  },
+  {
+   "type": "quiz",
+   "at": "L4",
+   "deck": "Databases · Test",
+   "q": "A table has repeated student data causing insertion anomalies. Which process should be applied to fix this?",
+   "a": "Normalisation.",
+   "not": "Creating an ER diagram",
+   "flip": "L5@-0.18",
+   "strike": "L5:not",
+   "foot": "From uploaded module notes"
+  },
+  {
+   "type": "doc",
+   "at": "L6:uploaded@-0.25",
+   "title": "Your Test deck",
+   "sub": "From uploaded module notes",
+   "rows": [
+    {
+     "label": "Haskell lists",
+     "chip": "Test",
+     "chipTone": "grey"
+    },
+    {
+     "label": "Normalisation",
+     "chip": "Test",
+     "chipTone": "grey",
+     "cross": "L6:wrong"
+    },
+    {
+     "label": "Comes back sooner",
+     "chip": "Due",
+     "chipTone": "ink",
+     "inAt": "L6:sooner"
+    }
+   ]
+  }
+ ]
+}

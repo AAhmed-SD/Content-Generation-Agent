@@ -1,0 +1,325 @@
+{
+ "duration": 22.605,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Placement week. Be honest. What's winning?",
+   "start": 0.15,
+   "end": 2.547,
+   "words": [
+    {
+     "text": "Placement",
+     "start": 0.15,
+     "end": 0.668
+    },
+    {
+     "text": "week.",
+     "start": 0.668,
+     "end": 0.95
+    },
+    {
+     "text": "Be",
+     "start": 1.08,
+     "end": 1.263
+    },
+    {
+     "text": "honest.",
+     "start": 1.263,
+     "end": 1.63
+    },
+    {
+     "text": "What's",
+     "start": 1.84,
+     "end": 2.149
+    },
+    {
+     "text": "winning?",
+     "start": 2.149,
+     "end": 2.547
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "A, placement. B, revision. Comment your letter.",
+   "start": 2.827,
+   "end": 6.002,
+   "words": [
+    {
+     "text": "A,",
+     "start": 2.827,
+     "end": 3.018
+    },
+    {
+     "text": "placement.",
+     "start": 3.018,
+     "end": 3.716
+    },
+    {
+     "text": "B,",
+     "start": 3.716,
+     "end": 3.907
+    },
+    {
+     "text": "revision.",
+     "start": 3.907,
+     "end": 4.542
+    },
+    {
+     "text": "Comment",
+     "start": 4.542,
+     "end": 5.113
+    },
+    {
+     "text": "your",
+     "start": 5.113,
+     "end": 5.494
+    },
+    {
+     "text": "letter.",
+     "start": 5.494,
+     "end": 6.002
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "It shouldn't be a fight. Offload plans around your shifts, once they're in your Google Calendar.",
+   "start": 7.002,
+   "end": 12.301,
+   "words": [
+    {
+     "text": "It",
+     "start": 7.002,
+     "end": 7.14
+    },
+    {
+     "text": "shouldn't",
+     "start": 7.14,
+     "end": 7.487
+    },
+    {
+     "text": "be",
+     "start": 7.487,
+     "end": 7.625
+    },
+    {
+     "text": "a",
+     "start": 7.625,
+     "end": 7.729
+    },
+    {
+     "text": "fight.",
+     "start": 7.729,
+     "end": 7.972
+    },
+    {
+     "text": "Offload",
+     "start": 8.392,
+     "end": 8.83
+    },
+    {
+     "text": "plans",
+     "start": 8.83,
+     "end": 9.171
+    },
+    {
+     "text": "around",
+     "start": 9.171,
+     "end": 9.56
+    },
+    {
+     "text": "your",
+     "start": 9.56,
+     "end": 9.852
+    },
+    {
+     "text": "shifts,",
+     "start": 9.852,
+     "end": 10.242
+    },
+    {
+     "text": "once",
+     "start": 10.472,
+     "end": 10.733
+    },
+    {
+     "text": "they're",
+     "start": 10.733,
+     "end": 11.082
+    },
+    {
+     "text": "in",
+     "start": 11.082,
+     "end": 11.256
+    },
+    {
+     "text": "your",
+     "start": 11.256,
+     "end": 11.517
+    },
+    {
+     "text": "Google",
+     "start": 11.517,
+     "end": 11.866
+    },
+    {
+     "text": "Calendar.",
+     "start": 11.866,
+     "end": 12.301
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Miss a day, and it moves the work into your free time, and tells you what moved.",
+   "start": 12.581,
+   "end": 16.993,
+   "words": [
+    {
+     "text": "Miss",
+     "start": 12.581,
+     "end": 12.851
+    },
+    {
+     "text": "a",
+     "start": 12.851,
+     "end": 12.986
+    },
+    {
+     "text": "day,",
+     "start": 12.986,
+     "end": 13.211
+    },
+    {
+     "text": "and",
+     "start": 13.341,
+     "end": 13.533
+    },
+    {
+     "text": "it",
+     "start": 13.533,
+     "end": 13.687
+    },
+    {
+     "text": "moves",
+     "start": 13.687,
+     "end": 13.956
+    },
+    {
+     "text": "the",
+     "start": 13.956,
+     "end": 14.148
+    },
+    {
+     "text": "work",
+     "start": 14.148,
+     "end": 14.379
+    },
+    {
+     "text": "into",
+     "start": 14.379,
+     "end": 14.609
+    },
+    {
+     "text": "your",
+     "start": 14.609,
+     "end": 14.84
+    },
+    {
+     "text": "free",
+     "start": 14.84,
+     "end": 15.07
+    },
+    {
+     "text": "time,",
+     "start": 15.07,
+     "end": 15.301
+    },
+    {
+     "text": "and",
+     "start": 15.621,
+     "end": 15.85
+    },
+    {
+     "text": "tells",
+     "start": 15.85,
+     "end": 16.17
+    },
+    {
+     "text": "you",
+     "start": 16.17,
+     "end": 16.398
+    },
+    {
+     "text": "what",
+     "start": 16.398,
+     "end": 16.673
+    },
+    {
+     "text": "moved.",
+     "start": 16.673,
+     "end": 16.993
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 17.493,
+   "end": 21.325,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 17.493,
+     "end": 19.143
+    },
+    {
+     "text": "A",
+     "start": 19.363,
+     "end": 19.462
+    },
+    {
+     "text": "study",
+     "start": 19.462,
+     "end": 19.695
+    },
+    {
+     "text": "system",
+     "start": 19.695,
+     "end": 19.961
+    },
+    {
+     "text": "that",
+     "start": 19.961,
+     "end": 20.161
+    },
+    {
+     "text": "adapts",
+     "start": 20.161,
+     "end": 20.427
+    },
+    {
+     "text": "when",
+     "start": 20.427,
+     "end": 20.626
+    },
+    {
+     "text": "real",
+     "start": 20.626,
+     "end": 20.826
+    },
+    {
+     "text": "life",
+     "start": 20.826,
+     "end": 21.025
+    },
+    {
+     "text": "happens.",
+     "start": 21.025,
+     "end": 21.325
+    }
+   ]
+  }
+ ]
+}

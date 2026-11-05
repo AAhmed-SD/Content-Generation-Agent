@@ -1,0 +1,34 @@
+{
+ "id": "bank/time-zero-v2",
+ "voice": "af_heart*0.7+af_bella*0.3",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "The worst bit of missing a day isn't the day."
+  },
+  {
+   "id": "L2",
+   "say": "It's waking up to a plan that's now wrong, and having to rebuild it.",
+   "after": 0.4
+  },
+  {
+   "id": "L3",
+   "say": "That's the bit I wanted to take away. When I built this, the rule was simple."
+  },
+  {
+   "id": "L4",
+   "say": "Miss a day, and the work moves into your free time. It tells you what moved. Nothing else changes.",
+   "after": 0.4
+  },
+  {
+   "id": "L5",
+   "say": "You never start from zero.",
+   "after": 1.0
+  }
+ ]
+}

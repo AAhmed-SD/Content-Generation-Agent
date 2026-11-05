@@ -1,0 +1,473 @@
+{
+ "duration": 27.905,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Everyone's blurting right now. Most people skip the part that makes it work.",
+   "start": 0.15,
+   "end": 4.449,
+   "words": [
+    {
+     "text": "Everyone's",
+     "start": 0.15,
+     "end": 0.687
+    },
+    {
+     "text": "blurting",
+     "start": 0.687,
+     "end": 1.175
+    },
+    {
+     "text": "right",
+     "start": 1.175,
+     "end": 1.516
+    },
+    {
+     "text": "now.",
+     "start": 1.516,
+     "end": 1.76
+    },
+    {
+     "text": "Most",
+     "start": 2.1,
+     "end": 2.361
+    },
+    {
+     "text": "people",
+     "start": 2.361,
+     "end": 2.709
+    },
+    {
+     "text": "skip",
+     "start": 2.709,
+     "end": 2.97
+    },
+    {
+     "text": "the",
+     "start": 2.97,
+     "end": 3.187
+    },
+    {
+     "text": "part",
+     "start": 3.187,
+     "end": 3.448
+    },
+    {
+     "text": "that",
+     "start": 3.448,
+     "end": 3.709
+    },
+    {
+     "text": "makes",
+     "start": 3.709,
+     "end": 4.014
+    },
+    {
+     "text": "it",
+     "start": 4.014,
+     "end": 4.188
+    },
+    {
+     "text": "work.",
+     "start": 4.188,
+     "end": 4.449
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "You write down everything you remember. Then you shut the book, and move on.",
+   "start": 4.729,
+   "end": 8.992,
+   "words": [
+    {
+     "text": "You",
+     "start": 4.729,
+     "end": 4.954
+    },
+    {
+     "text": "write",
+     "start": 4.954,
+     "end": 5.27
+    },
+    {
+     "text": "down",
+     "start": 5.27,
+     "end": 5.541
+    },
+    {
+     "text": "everything",
+     "start": 5.541,
+     "end": 6.082
+    },
+    {
+     "text": "you",
+     "start": 6.082,
+     "end": 6.307
+    },
+    {
+     "text": "remember.",
+     "start": 6.307,
+     "end": 6.759
+    },
+    {
+     "text": "Then",
+     "start": 7.149,
+     "end": 7.35
+    },
+    {
+     "text": "you",
+     "start": 7.35,
+     "end": 7.518
+    },
+    {
+     "text": "shut",
+     "start": 7.518,
+     "end": 7.719
+    },
+    {
+     "text": "the",
+     "start": 7.719,
+     "end": 7.887
+    },
+    {
+     "text": "book,",
+     "start": 7.887,
+     "end": 8.089
+    },
+    {
+     "text": "and",
+     "start": 8.259,
+     "end": 8.503
+    },
+    {
+     "text": "move",
+     "start": 8.503,
+     "end": 8.796
+    },
+    {
+     "text": "on.",
+     "start": 8.796,
+     "end": 8.992
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "But the gaps are the whole point. Check what you missed, and go back to it.",
+   "start": 9.272,
+   "end": 13.32,
+   "words": [
+    {
+     "text": "But",
+     "start": 9.272,
+     "end": 9.467
+    },
+    {
+     "text": "the",
+     "start": 9.467,
+     "end": 9.662
+    },
+    {
+     "text": "gaps",
+     "start": 9.662,
+     "end": 9.896
+    },
+    {
+     "text": "are",
+     "start": 9.896,
+     "end": 10.091
+    },
+    {
+     "text": "the",
+     "start": 10.091,
+     "end": 10.286
+    },
+    {
+     "text": "whole",
+     "start": 10.286,
+     "end": 10.559
+    },
+    {
+     "text": "point.",
+     "start": 10.559,
+     "end": 10.832
+    },
+    {
+     "text": "Check",
+     "start": 11.212,
+     "end": 11.473
+    },
+    {
+     "text": "what",
+     "start": 11.473,
+     "end": 11.697
+    },
+    {
+     "text": "you",
+     "start": 11.697,
+     "end": 11.884
+    },
+    {
+     "text": "missed,",
+     "start": 11.884,
+     "end": 12.182
+    },
+    {
+     "text": "and",
+     "start": 12.302,
+     "end": 12.523
+    },
+    {
+     "text": "go",
+     "start": 12.523,
+     "end": 12.7
+    },
+    {
+     "text": "back",
+     "start": 12.7,
+     "end": 12.966
+    },
+    {
+     "text": "to",
+     "start": 12.966,
+     "end": 13.143
+    },
+    {
+     "text": "it.",
+     "start": 13.143,
+     "end": 13.32
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Offload does blurting from your own notes. You write it all down, then it shows you the gaps.",
+   "start": 13.6,
+   "end": 18.707,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 13.6,
+     "end": 13.995
+    },
+    {
+     "text": "does",
+     "start": 13.995,
+     "end": 14.258
+    },
+    {
+     "text": "blurting",
+     "start": 14.258,
+     "end": 14.697
+    },
+    {
+     "text": "from",
+     "start": 14.697,
+     "end": 14.96
+    },
+    {
+     "text": "your",
+     "start": 14.96,
+     "end": 15.223
+    },
+    {
+     "text": "own",
+     "start": 15.223,
+     "end": 15.443
+    },
+    {
+     "text": "notes.",
+     "start": 15.443,
+     "end": 15.75
+    },
+    {
+     "text": "You",
+     "start": 16.13,
+     "end": 16.322
+    },
+    {
+     "text": "write",
+     "start": 16.322,
+     "end": 16.592
+    },
+    {
+     "text": "it",
+     "start": 16.592,
+     "end": 16.746
+    },
+    {
+     "text": "all",
+     "start": 16.746,
+     "end": 16.939
+    },
+    {
+     "text": "down,",
+     "start": 16.939,
+     "end": 17.17
+    },
+    {
+     "text": "then",
+     "start": 17.37,
+     "end": 17.613
+    },
+    {
+     "text": "it",
+     "start": 17.613,
+     "end": 17.775
+    },
+    {
+     "text": "shows",
+     "start": 17.775,
+     "end": 18.058
+    },
+    {
+     "text": "you",
+     "start": 18.058,
+     "end": 18.261
+    },
+    {
+     "text": "the",
+     "start": 18.261,
+     "end": 18.464
+    },
+    {
+     "text": "gaps.",
+     "start": 18.464,
+     "end": 18.707
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "And when you open it tomorrow, it tells you what to do next.",
+   "start": 18.987,
+   "end": 22.293,
+   "words": [
+    {
+     "text": "And",
+     "start": 18.987,
+     "end": 19.18
+    },
+    {
+     "text": "when",
+     "start": 19.18,
+     "end": 19.411
+    },
+    {
+     "text": "you",
+     "start": 19.411,
+     "end": 19.604
+    },
+    {
+     "text": "open",
+     "start": 19.604,
+     "end": 19.836
+    },
+    {
+     "text": "it",
+     "start": 19.836,
+     "end": 19.99
+    },
+    {
+     "text": "tomorrow,",
+     "start": 19.99,
+     "end": 20.377
+    },
+    {
+     "text": "it",
+     "start": 20.647,
+     "end": 20.829
+    },
+    {
+     "text": "tells",
+     "start": 20.829,
+     "end": 21.15
+    },
+    {
+     "text": "you",
+     "start": 21.15,
+     "end": 21.378
+    },
+    {
+     "text": "what",
+     "start": 21.378,
+     "end": 21.653
+    },
+    {
+     "text": "to",
+     "start": 21.653,
+     "end": 21.835
+    },
+    {
+     "text": "do",
+     "start": 21.835,
+     "end": 22.018
+    },
+    {
+     "text": "next.",
+     "start": 22.018,
+     "end": 22.293
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 22.793,
+   "end": 26.625,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 22.793,
+     "end": 24.443
+    },
+    {
+     "text": "A",
+     "start": 24.663,
+     "end": 24.763
+    },
+    {
+     "text": "study",
+     "start": 24.763,
+     "end": 24.995
+    },
+    {
+     "text": "system",
+     "start": 24.995,
+     "end": 25.261
+    },
+    {
+     "text": "that",
+     "start": 25.261,
+     "end": 25.461
+    },
+    {
+     "text": "adapts",
+     "start": 25.461,
+     "end": 25.727
+    },
+    {
+     "text": "when",
+     "start": 25.727,
+     "end": 25.927
+    },
+    {
+     "text": "real",
+     "start": 25.927,
+     "end": 26.126
+    },
+    {
+     "text": "life",
+     "start": 26.126,
+     "end": 26.326
+    },
+    {
+     "text": "happens.",
+     "start": 26.326,
+     "end": 26.625
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "id": "bank/time-which-wrecks-v2",
+ "voice": "af_heart*0.7+af_bella*0.3",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "My brother is one of the smartest people I know."
+  },
+  {
+   "id": "L2",
+   "say": "At school, every report said the same thing. Capable, but lazy.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "He wasn't lazy. Every day had too many starts, and nothing held the plan for him.",
+   "after": 0.4
+  },
+  {
+   "id": "L4",
+   "say": "So I built something that does. You open it, and it tells you the next thing. Just one.",
+   "after": 0.4
+  },
+  {
+   "id": "L5",
+   "say": "What's the hardest part of your day? Starting, switching, or remembering what's next?",
+   "after": 1.4
+  }
+ ]
+}

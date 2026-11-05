@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 const banned =
@@ -23,6 +23,27 @@ function brandRoot() {
 function metricNumber(value) {
   const parsed = Number(String(value ?? "").replace("%", ""));
   return Number.isFinite(parsed) && String(value ?? "").trim() ? parsed : null;
+}
+
+/** The strongest outlier hooks from the signal stream for one niche, newest week only, no numbers. */
+function outlierHooks(niche) {
+  const file = path.join(brandRoot(), "..", "web", "data", "signals.jsonl");
+  if (!existsSync(file)) return [];
+  const weekAgo = new Date(Date.now() - 7 * 24 * 3600 * 1000).toISOString();
+  return readFileSync(file, "utf8")
+    .split("\n")
+    .filter(Boolean)
+    .flatMap((line) => {
+      try {
+        return [JSON.parse(line)];
+      } catch {
+        return [];
+      }
+    })
+    .filter((e) => e.type === "outlier" && e.niche === niche && e.at >= weekAgo && (e.hook || e.title))
+    .sort((a, b) => b.ratio - a.ratio)
+    .slice(0, 6)
+    .map((e) => (e.hook || e.title).split(/(?<=[.?!])\s/)[0].slice(0, 160));
 }
 
 export function writeWeeklyBriefs({ week, themes, sources, pieces }) {
@@ -63,6 +84,13 @@ export function writeWeeklyBriefs({ week, themes, sources, pieces }) {
       "",
       "## Topics to avoid",
       ...(avoid.length ? avoid.map((theme) => `- ${theme.text}`) : ["- None filed."]),
+      "",
+      "## Openings that worked elsewhere",
+      "These openings pulled far above their account's usual views this week. Learn the shape: the question, the claim, the contrast. Never copy the words, and never name the account.",
+      ...(() => {
+        const hooks = outlierHooks(niche);
+        return hooks.length ? hooks.map((h) => `- “${h}”`) : ["- No outliers streamed for this niche this week."];
+      })(),
       "",
       "## Virlo",
       ...reports

@@ -1,0 +1,448 @@
+{
+ "duration": 29.146,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Your flashcard deck has hundreds of cards, and you only ever revise the easy ones.",
+   "start": 0.15,
+   "end": 5.478,
+   "words": [
+    {
+     "text": "Your",
+     "start": 0.15,
+     "end": 0.478
+    },
+    {
+     "text": "flashcard",
+     "start": 0.478,
+     "end": 1.08
+    },
+    {
+     "text": "deck",
+     "start": 1.08,
+     "end": 1.408
+    },
+    {
+     "text": "has",
+     "start": 1.408,
+     "end": 1.681
+    },
+    {
+     "text": "hundreds",
+     "start": 1.681,
+     "end": 2.228
+    },
+    {
+     "text": "of",
+     "start": 2.228,
+     "end": 2.447
+    },
+    {
+     "text": "cards,",
+     "start": 2.447,
+     "end": 2.83
+    },
+    {
+     "text": "and",
+     "start": 3.18,
+     "end": 3.424
+    },
+    {
+     "text": "you",
+     "start": 3.424,
+     "end": 3.669
+    },
+    {
+     "text": "only",
+     "start": 3.669,
+     "end": 3.962
+    },
+    {
+     "text": "ever",
+     "start": 3.962,
+     "end": 4.256
+    },
+    {
+     "text": "revise",
+     "start": 4.256,
+     "end": 4.647
+    },
+    {
+     "text": "the",
+     "start": 4.647,
+     "end": 4.891
+    },
+    {
+     "text": "easy",
+     "start": 4.891,
+     "end": 5.185
+    },
+    {
+     "text": "ones.",
+     "start": 5.185,
+     "end": 5.478
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "The hard ones sit at the bottom, until the exam.",
+   "start": 5.758,
+   "end": 8.69,
+   "words": [
+    {
+     "text": "The",
+     "start": 5.758,
+     "end": 5.967
+    },
+    {
+     "text": "hard",
+     "start": 5.967,
+     "end": 6.218
+    },
+    {
+     "text": "ones",
+     "start": 6.218,
+     "end": 6.469
+    },
+    {
+     "text": "sit",
+     "start": 6.469,
+     "end": 6.678
+    },
+    {
+     "text": "at",
+     "start": 6.678,
+     "end": 6.845
+    },
+    {
+     "text": "the",
+     "start": 6.845,
+     "end": 7.054
+    },
+    {
+     "text": "bottom,",
+     "start": 7.054,
+     "end": 7.388
+    },
+    {
+     "text": "until",
+     "start": 7.638,
+     "end": 8.047
+    },
+    {
+     "text": "the",
+     "start": 8.047,
+     "end": 8.339
+    },
+    {
+     "text": "exam.",
+     "start": 8.339,
+     "end": 8.69
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Spreading reviews out beats cramming them. It's called spacing, and the research on it goes back over a century.",
+   "start": 8.97,
+   "end": 15.358,
+   "words": [
+    {
+     "text": "Spreading",
+     "start": 8.97,
+     "end": 9.463
+    },
+    {
+     "text": "reviews",
+     "start": 9.463,
+     "end": 9.866
+    },
+    {
+     "text": "out",
+     "start": 9.866,
+     "end": 10.09
+    },
+    {
+     "text": "beats",
+     "start": 10.09,
+     "end": 10.403
+    },
+    {
+     "text": "cramming",
+     "start": 10.403,
+     "end": 10.851
+    },
+    {
+     "text": "them.",
+     "start": 10.851,
+     "end": 11.12
+    },
+    {
+     "text": "It's",
+     "start": 11.57,
+     "end": 11.827
+    },
+    {
+     "text": "called",
+     "start": 11.827,
+     "end": 12.238
+    },
+    {
+     "text": "spacing,",
+     "start": 12.238,
+     "end": 12.7
+    },
+    {
+     "text": "and",
+     "start": 13.02,
+     "end": 13.222
+    },
+    {
+     "text": "the",
+     "start": 13.222,
+     "end": 13.423
+    },
+    {
+     "text": "research",
+     "start": 13.423,
+     "end": 13.826
+    },
+    {
+     "text": "on",
+     "start": 13.826,
+     "end": 13.987
+    },
+    {
+     "text": "it",
+     "start": 13.987,
+     "end": 14.149
+    },
+    {
+     "text": "goes",
+     "start": 14.149,
+     "end": 14.391
+    },
+    {
+     "text": "back",
+     "start": 14.391,
+     "end": 14.632
+    },
+    {
+     "text": "over",
+     "start": 14.632,
+     "end": 14.874
+    },
+    {
+     "text": "a",
+     "start": 14.874,
+     "end": 14.995
+    },
+    {
+     "text": "century.",
+     "start": 14.995,
+     "end": 15.358
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Offload builds your flashcards from your notes, and brings each one back right before you'd forget it.",
+   "start": 15.638,
+   "end": 21.02,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 15.638,
+     "end": 16.041
+    },
+    {
+     "text": "builds",
+     "start": 16.041,
+     "end": 16.4
+    },
+    {
+     "text": "your",
+     "start": 16.4,
+     "end": 16.669
+    },
+    {
+     "text": "flashcards",
+     "start": 16.669,
+     "end": 17.207
+    },
+    {
+     "text": "from",
+     "start": 17.207,
+     "end": 17.475
+    },
+    {
+     "text": "your",
+     "start": 17.475,
+     "end": 17.744
+    },
+    {
+     "text": "notes,",
+     "start": 17.744,
+     "end": 18.058
+    },
+    {
+     "text": "and",
+     "start": 18.398,
+     "end": 18.606
+    },
+    {
+     "text": "brings",
+     "start": 18.606,
+     "end": 18.939
+    },
+    {
+     "text": "each",
+     "start": 18.939,
+     "end": 19.189
+    },
+    {
+     "text": "one",
+     "start": 19.189,
+     "end": 19.397
+    },
+    {
+     "text": "back",
+     "start": 19.397,
+     "end": 19.647
+    },
+    {
+     "text": "right",
+     "start": 19.647,
+     "end": 19.938
+    },
+    {
+     "text": "before",
+     "start": 19.938,
+     "end": 20.271
+    },
+    {
+     "text": "you'd",
+     "start": 20.271,
+     "end": 20.521
+    },
+    {
+     "text": "forget",
+     "start": 20.521,
+     "end": 20.854
+    },
+    {
+     "text": "it.",
+     "start": 20.854,
+     "end": 21.02
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Get one wrong, and it comes back sooner.",
+   "start": 21.3,
+   "end": 23.534,
+   "words": [
+    {
+     "text": "Get",
+     "start": 21.3,
+     "end": 21.527
+    },
+    {
+     "text": "one",
+     "start": 21.527,
+     "end": 21.753
+    },
+    {
+     "text": "wrong,",
+     "start": 21.753,
+     "end": 22.07
+    },
+    {
+     "text": "and",
+     "start": 22.21,
+     "end": 22.431
+    },
+    {
+     "text": "it",
+     "start": 22.431,
+     "end": 22.607
+    },
+    {
+     "text": "comes",
+     "start": 22.607,
+     "end": 22.916
+    },
+    {
+     "text": "back",
+     "start": 22.916,
+     "end": 23.181
+    },
+    {
+     "text": "sooner.",
+     "start": 23.181,
+     "end": 23.534
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 24.034,
+   "end": 27.866,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 24.034,
+     "end": 25.684
+    },
+    {
+     "text": "A",
+     "start": 25.904,
+     "end": 26.003
+    },
+    {
+     "text": "study",
+     "start": 26.003,
+     "end": 26.236
+    },
+    {
+     "text": "system",
+     "start": 26.236,
+     "end": 26.502
+    },
+    {
+     "text": "that",
+     "start": 26.502,
+     "end": 26.702
+    },
+    {
+     "text": "adapts",
+     "start": 26.702,
+     "end": 26.968
+    },
+    {
+     "text": "when",
+     "start": 26.968,
+     "end": 27.167
+    },
+    {
+     "text": "real",
+     "start": 27.167,
+     "end": 27.367
+    },
+    {
+     "text": "life",
+     "start": 27.367,
+     "end": 27.566
+    },
+    {
+     "text": "happens.",
+     "start": 27.566,
+     "end": 27.866
+    }
+   ]
+  }
+ ]
+}

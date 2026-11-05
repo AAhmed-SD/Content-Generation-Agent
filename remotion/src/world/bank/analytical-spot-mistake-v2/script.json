@@ -1,0 +1,39 @@
+{
+ "id": "bank/analytical-spot-mistake-v2",
+ "voice": "bm_daniel*0.5+bm_lewis*0.5",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Spot the mistake in this revision week. Take your time."
+  },
+  {
+   "id": "L2",
+   "say": "Calculus. Calculus. Calculus. Linear algebra was last seen in October.",
+   "after": 0.3
+  },
+  {
+   "id": "L3",
+   "say": "What's wrong? A, too much calculus. B, no rest day. C, the topic that disappeared.",
+   "after": 1.6
+  },
+  {
+   "id": "L4",
+   "say": "C. Linear algebra didn't go anywhere. You just stopped visiting."
+  },
+  {
+   "id": "L5",
+   "say": "The app brings old topics back before they fade, so October is still there in January.",
+   "after": 0.4
+  },
+  {
+   "id": "L6",
+   "say": "Honestly, B's a problem too.",
+   "after": 0.8
+  }
+ ]
+}

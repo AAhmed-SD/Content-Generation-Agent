@@ -27,6 +27,12 @@ Regenerate templates, assets, and this week’s briefs from the repo root:
 node scripts/generate-brand-docs.mjs
 ```
 
+Collect signals (outlier videos on the watch list) from the repo root:
+
+```
+tools/.venv/bin/python -I web/scripts/signals.py
+```
+
 Remotion studio, from `remotion/`:
 
 ```
@@ -45,4 +51,4 @@ Never hardcode colours. Use `tokens` in Remotion and the CSS variables `--paper`
 
 Never add a product claim that is not in `brand/product-facts.md`. Never name a pose or a prop that is not in `brand/assets.md`. Never put a number on a card that is not already in the week’s brief.
 
-The writer reads `brand.md`, the niche file, `safety.md`, `platforms.md`, `product-facts.md`, `templates.md`, `assets.md`, and `brand/briefs/{niche}-{week}.md`. It does not read raw research.
+The writer reads `brand.md`, the niche file, `safety.md`, `platforms.md`, `product-facts.md`, `templates.md`, `assets.md`, and `brand/briefs/{niche}-{week}.md`. It does not read raw research. A film script also follows `brand/scripting.md`: who narrates each account, the shape, and the endings.

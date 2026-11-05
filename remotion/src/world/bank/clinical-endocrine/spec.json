@@ -1,0 +1,70 @@
+{
+ "id": "clinical-endocrine",
+ "end": {
+  "lead": "Free trial",
+  "pill": "Link in bio"
+ },
+ "hi": {
+  "test": "blue",
+  "flip": "blue",
+  "hours": "problem",
+  "anterior": "problem",
+  "wrong": "problem",
+  "sooner": "blue",
+  "uploaded": "blue"
+ },
+ "pill": {
+  "at": "L6@-0.2",
+  "until": "L6:uploaded@-0.3",
+  "sub": "builds the test"
+ },
+ "scenes": [
+  {
+   "type": "stack",
+   "at": "L1"
+  },
+  {
+   "type": "quiz",
+   "at": "L2",
+   "deck": "Endocrinology · Test",
+   "q": "Compare the duration of action and solubility of steroid hormones versus amino-acid derivatives.",
+   "a": "Steroid hormones are lipid-soluble and act over hours; amino-acid derivatives act in seconds to minutes.",
+   "flip": "L3@-0.18"
+  },
+  {
+   "type": "quiz",
+   "at": "L4",
+   "deck": "Endocrinology · Test",
+   "q": "How does the posterior pituitary release its hormones compared to the anterior pituitary?",
+   "a": "Neurohormones, directly into the circulation via axonal release.",
+   "not": "Trophic hormones (TSH, ACTH)",
+   "flip": "L5@-0.18",
+   "strike": "L5:trophic"
+  },
+  {
+   "type": "doc",
+   "at": "L6:uploaded@-0.25",
+   "title": "Your Test deck",
+   "sub": "From uploaded lecture notes",
+   "rows": [
+    {
+     "label": "Steroid hormones",
+     "chip": "Test",
+     "chipTone": "grey"
+    },
+    {
+     "label": "Posterior pituitary",
+     "chip": "Test",
+     "chipTone": "grey",
+     "cross": "L6:wrong"
+    },
+    {
+     "label": "Comes back sooner",
+     "chip": "Due",
+     "chipTone": "ink",
+     "inAt": "L6:sooner"
+    }
+   ]
+  }
+ ]
+}

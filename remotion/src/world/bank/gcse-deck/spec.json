@@ -1,0 +1,113 @@
+{
+ "id": "gcse-deck",
+ "end": {
+  "lead": "Want to try it?",
+  "pill": "Search Offload"
+ },
+ "hi": {
+  "easy": "problem",
+  "spacing": "blue",
+  "back": "blue",
+  "wrong": "problem",
+  "sooner": "blue"
+ },
+ "pill": {
+  "at": "L4@-0.2",
+  "until": "L4:flashcards@-0.3",
+  "sub": "builds your cards"
+ },
+ "floods": [
+  {
+   "in": "L2:until@-0.12",
+   "out": "L3@-0.15",
+   "colour": "problem",
+   "lines": [
+    {
+     "line": "L2",
+     "text": "until"
+    },
+    {
+     "line": "L2",
+     "text": "the exam.",
+     "size": 170
+    }
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "type": "doc",
+   "at": "L1@-0.05",
+   "title": "Your deck",
+   "sub": "Hundreds of cards",
+   "rows": [
+    {
+     "label": "Photosynthesis",
+     "chip": "Easy",
+     "chipTone": "grey",
+     "inAt": "L1:revise"
+    },
+    {
+     "label": "Osmosis",
+     "chip": "Easy",
+     "chipTone": "grey",
+     "inAt": "L1:easy"
+    },
+    {
+     "label": "Moles",
+     "chip": "Skipped",
+     "chipTone": "red",
+     "inAt": "L2:hard"
+    },
+    {
+     "label": "Electrolysis",
+     "chip": "Skipped",
+     "chipTone": "red",
+     "inAt": "L2:bottom"
+    }
+   ]
+  },
+  {
+   "type": "chart",
+   "at": "L3",
+   "kind": "spacing",
+   "xLabel": "Weeks to the exam",
+   "yLabel": "Remembered",
+   "source": "Ebbinghaus, 1885 · Cepeda et al., 2006",
+   "sourceAt": "L3:century"
+  },
+  {
+   "type": "doc",
+   "at": "L4:flashcards@-0.2",
+   "title": "Your deck",
+   "sub": "From your notes",
+   "rows": [
+    {
+     "label": "Moles",
+     "chip": "Due",
+     "chipTone": "ink",
+     "inAt": "L4:back"
+    },
+    {
+     "label": "Osmosis",
+     "chip": "Due",
+     "chipTone": "ink",
+     "inAt": "L4:right"
+    },
+    {
+     "label": "Electrolysis",
+     "chip": "Due",
+     "chipTone": "ink",
+     "inAt": "L4:forget",
+     "cross": "L5:wrong"
+    },
+    {
+     "label": "Comes back sooner",
+     "chip": "Due",
+     "chipTone": "ink",
+     "inAt": "L5:sooner"
+    }
+   ]
+  }
+ ]
+}

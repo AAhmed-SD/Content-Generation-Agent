@@ -1,0 +1,36 @@
+{
+ "id": "bank/time-afternoon",
+ "voice": "af_heart*0.7+af_bella*0.3",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "You sat down to start at two. You looked up, and it was six."
+  },
+  {
+   "id": "L2",
+   "say": "The afternoon disappeared."
+  },
+  {
+   "id": "L3",
+   "say": "Not because you didn't care. A day with too many starts is hard to hold on your own."
+  },
+  {
+   "id": "L4",
+   "say": "Offload holds the plan. Open it, and it tells you what to do today. Just the next block."
+  },
+  {
+   "id": "L5",
+   "say": "And if today goes sideways, it moves the work, and tells you what moved.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

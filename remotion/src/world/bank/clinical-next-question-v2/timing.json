@@ -1,0 +1,295 @@
+{
+ "duration": 22.408,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Your next exam question. You've got three seconds.",
+   "start": 0.15,
+   "end": 3.267,
+   "words": [
+    {
+     "text": "Your",
+     "start": 0.15,
+     "end": 0.45
+    },
+    {
+     "text": "next",
+     "start": 0.45,
+     "end": 0.75
+    },
+    {
+     "text": "exam",
+     "start": 0.75,
+     "end": 1.05
+    },
+    {
+     "text": "question.",
+     "start": 1.05,
+     "end": 1.55
+    },
+    {
+     "text": "You've",
+     "start": 1.98,
+     "end": 2.302
+    },
+    {
+     "text": "got",
+     "start": 2.302,
+     "end": 2.531
+    },
+    {
+     "text": "three",
+     "start": 2.531,
+     "end": 2.853
+    },
+    {
+     "text": "seconds.",
+     "start": 2.853,
+     "end": 3.267
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "The internal urethral sphincter. Autonomic, or somatic?",
+   "start": 3.527,
+   "end": 7.293,
+   "words": [
+    {
+     "text": "The",
+     "start": 3.527,
+     "end": 3.77
+    },
+    {
+     "text": "internal",
+     "start": 3.77,
+     "end": 4.256
+    },
+    {
+     "text": "urethral",
+     "start": 4.256,
+     "end": 4.742
+    },
+    {
+     "text": "sphincter.",
+     "start": 4.742,
+     "end": 5.277
+    },
+    {
+     "text": "Autonomic,",
+     "start": 5.757,
+     "end": 6.227
+    },
+    {
+     "text": "or",
+     "start": 6.547,
+     "end": 6.776
+    },
+    {
+     "text": "somatic?",
+     "start": 6.776,
+     "end": 7.293
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Autonomic. Most of us flip them under pressure. The external one's the one you control.",
+   "start": 8.893,
+   "end": 14.218,
+   "words": [
+    {
+     "text": "Autonomic.",
+     "start": 8.893,
+     "end": 9.433
+    },
+    {
+     "text": "Most",
+     "start": 9.823,
+     "end": 10.058
+    },
+    {
+     "text": "of",
+     "start": 10.058,
+     "end": 10.214
+    },
+    {
+     "text": "us",
+     "start": 10.214,
+     "end": 10.37
+    },
+    {
+     "text": "flip",
+     "start": 10.37,
+     "end": 10.605
+    },
+    {
+     "text": "them",
+     "start": 10.605,
+     "end": 10.839
+    },
+    {
+     "text": "under",
+     "start": 10.839,
+     "end": 11.113
+    },
+    {
+     "text": "pressure.",
+     "start": 11.113,
+     "end": 11.503
+    },
+    {
+     "text": "The",
+     "start": 12.043,
+     "end": 12.285
+    },
+    {
+     "text": "external",
+     "start": 12.285,
+     "end": 12.768
+    },
+    {
+     "text": "one's",
+     "start": 12.768,
+     "end": 13.058
+    },
+    {
+     "text": "the",
+     "start": 13.058,
+     "end": 13.3
+    },
+    {
+     "text": "one",
+     "start": 13.3,
+     "end": 13.542
+    },
+    {
+     "text": "you",
+     "start": 13.542,
+     "end": 13.783
+    },
+    {
+     "text": "control.",
+     "start": 13.783,
+     "end": 14.218
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Get it wrong in the app, and that card comes back sooner.",
+   "start": 14.618,
+   "end": 17.763,
+   "words": [
+    {
+     "text": "Get",
+     "start": 14.618,
+     "end": 14.778
+    },
+    {
+     "text": "it",
+     "start": 14.778,
+     "end": 14.906
+    },
+    {
+     "text": "wrong",
+     "start": 14.906,
+     "end": 15.13
+    },
+    {
+     "text": "in",
+     "start": 15.13,
+     "end": 15.258
+    },
+    {
+     "text": "the",
+     "start": 15.258,
+     "end": 15.418
+    },
+    {
+     "text": "app,",
+     "start": 15.418,
+     "end": 15.578
+    },
+    {
+     "text": "and",
+     "start": 16.058,
+     "end": 16.283
+    },
+    {
+     "text": "that",
+     "start": 16.283,
+     "end": 16.552
+    },
+    {
+     "text": "card",
+     "start": 16.552,
+     "end": 16.821
+    },
+    {
+     "text": "comes",
+     "start": 16.821,
+     "end": 17.135
+    },
+    {
+     "text": "back",
+     "start": 17.135,
+     "end": 17.404
+    },
+    {
+     "text": "sooner.",
+     "start": 17.404,
+     "end": 17.763
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Part two? Comment a pair you always flip.",
+   "start": 18.163,
+   "end": 20.808,
+   "words": [
+    {
+     "text": "Part",
+     "start": 18.163,
+     "end": 18.474
+    },
+    {
+     "text": "two?",
+     "start": 18.474,
+     "end": 18.733
+    },
+    {
+     "text": "Comment",
+     "start": 19.103,
+     "end": 19.518
+    },
+    {
+     "text": "a",
+     "start": 19.518,
+     "end": 19.656
+    },
+    {
+     "text": "pair",
+     "start": 19.656,
+     "end": 19.932
+    },
+    {
+     "text": "you",
+     "start": 19.932,
+     "end": 20.163
+    },
+    {
+     "text": "always",
+     "start": 20.163,
+     "end": 20.531
+    },
+    {
+     "text": "flip.",
+     "start": 20.531,
+     "end": 20.808
+    }
+   ]
+  }
+ ]
+}

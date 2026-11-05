@@ -1,0 +1,8 @@
+{
+ "template": "PhotoPoster",
+ "props": {
+  "plate": "calendar",
+  "script": "Just the\nnext block.",
+  "inCircle": "Today"
+ }
+}

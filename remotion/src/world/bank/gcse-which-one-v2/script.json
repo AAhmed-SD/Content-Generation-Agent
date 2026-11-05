@@ -1,0 +1,43 @@
+{
+ "id": "bank/gcse-which-one-v2",
+ "voice": "bf_alice",
+ "lang": "en-gb",
+ "speed": 1.04,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Mock season. Be honest. Which one are you?"
+  },
+  {
+   "id": "L2",
+   "say": "A. The timetable with seven colours you stopped using on day three."
+  },
+  {
+   "id": "L3",
+   "say": "B. I'll start after mocks."
+  },
+  {
+   "id": "L4",
+   "say": "C. You revise, but only the topics you already know.",
+   "after": 1.0
+  },
+  {
+   "id": "L5",
+   "say": "If you said A, the problem isn't you. Paper can't move.",
+   "after": 0.4
+  },
+  {
+   "id": "L6",
+   "say": "This one moves itself. Miss an evening, and the work slides into your free time.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "Comment your letter. I'm guessing C.",
+   "after": 0.8
+  }
+ ]
+}

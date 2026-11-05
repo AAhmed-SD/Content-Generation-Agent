@@ -1,0 +1,388 @@
+{
+ "duration": 22.67,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "You took the evening off. Now you feel guilty about it.",
+   "start": 0.15,
+   "end": 3.064,
+   "words": [
+    {
+     "text": "You",
+     "start": 0.15,
+     "end": 0.335
+    },
+    {
+     "text": "took",
+     "start": 0.335,
+     "end": 0.557
+    },
+    {
+     "text": "the",
+     "start": 0.557,
+     "end": 0.742
+    },
+    {
+     "text": "evening",
+     "start": 0.742,
+     "end": 1.075
+    },
+    {
+     "text": "off.",
+     "start": 1.075,
+     "end": 1.26
+    },
+    {
+     "text": "Now",
+     "start": 1.58,
+     "end": 1.792
+    },
+    {
+     "text": "you",
+     "start": 1.792,
+     "end": 2.004
+    },
+    {
+     "text": "feel",
+     "start": 2.004,
+     "end": 2.258
+    },
+    {
+     "text": "guilty",
+     "start": 2.258,
+     "end": 2.597
+    },
+    {
+     "text": "about",
+     "start": 2.597,
+     "end": 2.894
+    },
+    {
+     "text": "it.",
+     "start": 2.894,
+     "end": 3.064
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "So tomorrow you try to do double, and it all falls apart again.",
+   "start": 3.344,
+   "end": 6.878,
+   "words": [
+    {
+     "text": "So",
+     "start": 3.344,
+     "end": 3.512
+    },
+    {
+     "text": "tomorrow",
+     "start": 3.512,
+     "end": 3.932
+    },
+    {
+     "text": "you",
+     "start": 3.932,
+     "end": 4.142
+    },
+    {
+     "text": "try",
+     "start": 4.142,
+     "end": 4.352
+    },
+    {
+     "text": "to",
+     "start": 4.352,
+     "end": 4.52
+    },
+    {
+     "text": "do",
+     "start": 4.52,
+     "end": 4.688
+    },
+    {
+     "text": "double,",
+     "start": 4.688,
+     "end": 5.024
+    },
+    {
+     "text": "and",
+     "start": 5.374,
+     "end": 5.589
+    },
+    {
+     "text": "it",
+     "start": 5.589,
+     "end": 5.761
+    },
+    {
+     "text": "all",
+     "start": 5.761,
+     "end": 5.976
+    },
+    {
+     "text": "falls",
+     "start": 5.976,
+     "end": 6.276
+    },
+    {
+     "text": "apart",
+     "start": 6.276,
+     "end": 6.577
+    },
+    {
+     "text": "again.",
+     "start": 6.577,
+     "end": 6.878
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Rest isn't the problem. A plan that can't move is.",
+   "start": 7.158,
+   "end": 10.151,
+   "words": [
+    {
+     "text": "Rest",
+     "start": 7.158,
+     "end": 7.421
+    },
+    {
+     "text": "isn't",
+     "start": 7.421,
+     "end": 7.684
+    },
+    {
+     "text": "the",
+     "start": 7.684,
+     "end": 7.903
+    },
+    {
+     "text": "problem.",
+     "start": 7.903,
+     "end": 8.298
+    },
+    {
+     "text": "A",
+     "start": 8.678,
+     "end": 8.821
+    },
+    {
+     "text": "plan",
+     "start": 8.821,
+     "end": 9.106
+    },
+    {
+     "text": "that",
+     "start": 9.106,
+     "end": 9.391
+    },
+    {
+     "text": "can't",
+     "start": 9.391,
+     "end": 9.676
+    },
+    {
+     "text": "move",
+     "start": 9.676,
+     "end": 9.961
+    },
+    {
+     "text": "is.",
+     "start": 9.961,
+     "end": 10.151
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Miss an evening, and Offload moves the work into your free time, and tells you what moved.",
+   "start": 10.431,
+   "end": 15.446,
+   "words": [
+    {
+     "text": "Miss",
+     "start": 10.431,
+     "end": 10.662
+    },
+    {
+     "text": "an",
+     "start": 10.662,
+     "end": 10.815
+    },
+    {
+     "text": "evening,",
+     "start": 10.815,
+     "end": 11.161
+    },
+    {
+     "text": "and",
+     "start": 11.471,
+     "end": 11.675
+    },
+    {
+     "text": "Offload",
+     "start": 11.675,
+     "end": 12.041
+    },
+    {
+     "text": "moves",
+     "start": 12.041,
+     "end": 12.326
+    },
+    {
+     "text": "the",
+     "start": 12.326,
+     "end": 12.53
+    },
+    {
+     "text": "work",
+     "start": 12.53,
+     "end": 12.774
+    },
+    {
+     "text": "into",
+     "start": 12.774,
+     "end": 13.018
+    },
+    {
+     "text": "your",
+     "start": 13.018,
+     "end": 13.263
+    },
+    {
+     "text": "free",
+     "start": 13.263,
+     "end": 13.507
+    },
+    {
+     "text": "time,",
+     "start": 13.507,
+     "end": 13.751
+    },
+    {
+     "text": "and",
+     "start": 14.151,
+     "end": 14.367
+    },
+    {
+     "text": "tells",
+     "start": 14.367,
+     "end": 14.669
+    },
+    {
+     "text": "you",
+     "start": 14.669,
+     "end": 14.885
+    },
+    {
+     "text": "what",
+     "start": 14.885,
+     "end": 15.144
+    },
+    {
+     "text": "moved.",
+     "start": 15.144,
+     "end": 15.446
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "So you never start from zero.",
+   "start": 15.726,
+   "end": 17.329,
+   "words": [
+    {
+     "text": "So",
+     "start": 15.726,
+     "end": 15.909
+    },
+    {
+     "text": "you",
+     "start": 15.909,
+     "end": 16.138
+    },
+    {
+     "text": "never",
+     "start": 16.138,
+     "end": 16.459
+    },
+    {
+     "text": "start",
+     "start": 16.459,
+     "end": 16.779
+    },
+    {
+     "text": "from",
+     "start": 16.779,
+     "end": 17.054
+    },
+    {
+     "text": "zero.",
+     "start": 17.054,
+     "end": 17.329
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 17.829,
+   "end": 21.39,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 17.829,
+     "end": 18.319
+    },
+    {
+     "text": "A",
+     "start": 18.699,
+     "end": 18.835
+    },
+    {
+     "text": "study",
+     "start": 18.835,
+     "end": 19.155
+    },
+    {
+     "text": "system",
+     "start": 19.155,
+     "end": 19.52
+    },
+    {
+     "text": "that",
+     "start": 19.52,
+     "end": 19.793
+    },
+    {
+     "text": "adapts",
+     "start": 19.793,
+     "end": 20.158
+    },
+    {
+     "text": "when",
+     "start": 20.158,
+     "end": 20.432
+    },
+    {
+     "text": "real",
+     "start": 20.432,
+     "end": 20.706
+    },
+    {
+     "text": "life",
+     "start": 20.706,
+     "end": 20.979
+    },
+    {
+     "text": "happens.",
+     "start": 20.979,
+     "end": 21.39
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "id": "bank/gcse-deck",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Your flashcard deck has hundreds of cards, and you only ever revise the easy ones."
+  },
+  {
+   "id": "L2",
+   "say": "The hard ones sit at the bottom, until the exam."
+  },
+  {
+   "id": "L3",
+   "say": "Spreading reviews out beats cramming them. It's called spacing, and the research on it goes back over a century."
+  },
+  {
+   "id": "L4",
+   "say": "Offload builds your flashcards from your notes, and brings each one back right before you'd forget it."
+  },
+  {
+   "id": "L5",
+   "say": "Get one wrong, and it comes back sooner.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

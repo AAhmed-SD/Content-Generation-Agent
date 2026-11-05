@@ -1,0 +1,92 @@
+{
+ "id": "time-afternoon",
+ "end": {
+  "lead": "Want to try it?",
+  "pill": "Search Offload"
+ },
+ "hi": {
+  "six": "problem",
+  "next": "blue",
+  "moved": "blue"
+ },
+ "pill": {
+  "at": "L4@-0.2",
+  "until": "L4:open@-0.25",
+  "sub": "holds the plan"
+ },
+ "floods": [
+  {
+   "in": "L2@-0.12",
+   "out": "L3@-0.15",
+   "colour": "night",
+   "lines": [
+    {
+     "line": "L2",
+     "text": "The afternoon"
+    },
+    {
+     "line": "L2",
+     "text": "disappeared.",
+     "size": 150
+    }
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "type": "doc",
+   "at": "L1@-0.05",
+   "title": "This afternoon",
+   "sub": "To start",
+   "rows": [
+    {
+     "label": "Essay plan",
+     "chip": "Start",
+     "chipTone": "grey",
+     "strike": "L1:six"
+    },
+    {
+     "label": "Reading",
+     "chip": "Start",
+     "chipTone": "grey",
+     "strike": "L1:six@0.12"
+    },
+    {
+     "label": "Problem sheet",
+     "chip": "Start",
+     "chipTone": "grey",
+     "strike": "L1:six@0.24"
+    }
+   ]
+  },
+  {
+   "type": "none",
+   "at": "L3"
+  },
+  {
+   "type": "doc",
+   "at": "L4:open@-0.15",
+   "title": "Today",
+   "sub": "Just the next block",
+   "rows": [
+    {
+     "label": "Essay plan",
+     "chip": "Next",
+     "chipTone": "ink",
+     "inAt": "L4:next"
+    },
+    {
+     "label": "Reading",
+     "chip": "Later",
+     "chipTone": "grey"
+    }
+   ]
+  },
+  {
+   "type": "clip",
+   "at": "L5@-0.1",
+   "src": "rec/reschedule-a.mp4",
+   "len": 6.5
+  }
+ ]
+}

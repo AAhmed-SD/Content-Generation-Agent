@@ -30,7 +30,9 @@
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
-    "dev:world": "remotion studio src/world/index.ts"
+    "dev:world": "remotion studio src/world/index.ts",
+    "bank": "node scripts/bank.mjs",
+    "stills": "node scripts/stills.mjs"
   },
   "allowScripts": {
     "esbuild": false

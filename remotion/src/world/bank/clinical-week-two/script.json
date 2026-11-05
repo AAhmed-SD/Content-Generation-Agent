@@ -1,0 +1,33 @@
+{
+ "id": "bank/clinical-week-two",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "You're eight weeks in, and you haven't touched anatomy since week two."
+  },
+  {
+   "id": "L2",
+   "say": "Be honest. Comment the last topic you actually revised.",
+   "after": 1.0
+  },
+  {
+   "id": "L3",
+   "say": "It's not you. Without review, memory fades fast. That's the forgetting curve."
+  },
+  {
+   "id": "L4",
+   "say": "Offload builds flashcards from your own lecture notes, and brings each one back right before you'd forget it.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

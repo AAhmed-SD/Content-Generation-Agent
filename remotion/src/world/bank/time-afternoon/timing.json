@@ -1,0 +1,438 @@
+{
+ "duration": 24.669,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "You sat down to start at two. You looked up, and it was six.",
+   "start": 0.15,
+   "end": 3.283,
+   "words": [
+    {
+     "text": "You",
+     "start": 0.15,
+     "end": 0.336
+    },
+    {
+     "text": "sat",
+     "start": 0.336,
+     "end": 0.522
+    },
+    {
+     "text": "down",
+     "start": 0.522,
+     "end": 0.746
+    },
+    {
+     "text": "to",
+     "start": 0.746,
+     "end": 0.894
+    },
+    {
+     "text": "start",
+     "start": 0.894,
+     "end": 1.155
+    },
+    {
+     "text": "at",
+     "start": 1.155,
+     "end": 1.304
+    },
+    {
+     "text": "two.",
+     "start": 1.304,
+     "end": 1.49
+    },
+    {
+     "text": "You",
+     "start": 1.86,
+     "end": 1.922
+    },
+    {
+     "text": "looked",
+     "start": 1.922,
+     "end": 2.021
+    },
+    {
+     "text": "up,",
+     "start": 2.021,
+     "end": 2.07
+    },
+    {
+     "text": "and",
+     "start": 2.16,
+     "end": 2.456
+    },
+    {
+     "text": "it",
+     "start": 2.456,
+     "end": 2.692
+    },
+    {
+     "text": "was",
+     "start": 2.692,
+     "end": 2.988
+    },
+    {
+     "text": "six.",
+     "start": 2.988,
+     "end": 3.283
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "The afternoon disappeared.",
+   "start": 3.563,
+   "end": 4.992,
+   "words": [
+    {
+     "text": "The",
+     "start": 3.563,
+     "end": 3.81
+    },
+    {
+     "text": "afternoon",
+     "start": 3.81,
+     "end": 4.352
+    },
+    {
+     "text": "disappeared.",
+     "start": 4.352,
+     "end": 4.992
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Not because you didn't care. A day with too many starts is hard to hold on your own.",
+   "start": 5.272,
+   "end": 9.726,
+   "words": [
+    {
+     "text": "Not",
+     "start": 5.272,
+     "end": 5.458
+    },
+    {
+     "text": "because",
+     "start": 5.458,
+     "end": 5.793
+    },
+    {
+     "text": "you",
+     "start": 5.793,
+     "end": 5.979
+    },
+    {
+     "text": "didn't",
+     "start": 5.979,
+     "end": 6.239
+    },
+    {
+     "text": "care.",
+     "start": 6.239,
+     "end": 6.462
+    },
+    {
+     "text": "A",
+     "start": 6.982,
+     "end": 7.103
+    },
+    {
+     "text": "day",
+     "start": 7.103,
+     "end": 7.305
+    },
+    {
+     "text": "with",
+     "start": 7.305,
+     "end": 7.547
+    },
+    {
+     "text": "too",
+     "start": 7.547,
+     "end": 7.749
+    },
+    {
+     "text": "many",
+     "start": 7.749,
+     "end": 7.991
+    },
+    {
+     "text": "starts",
+     "start": 7.991,
+     "end": 8.314
+    },
+    {
+     "text": "is",
+     "start": 8.314,
+     "end": 8.475
+    },
+    {
+     "text": "hard",
+     "start": 8.475,
+     "end": 8.717
+    },
+    {
+     "text": "to",
+     "start": 8.717,
+     "end": 8.879
+    },
+    {
+     "text": "hold",
+     "start": 8.879,
+     "end": 9.121
+    },
+    {
+     "text": "on",
+     "start": 9.121,
+     "end": 9.282
+    },
+    {
+     "text": "your",
+     "start": 9.282,
+     "end": 9.524
+    },
+    {
+     "text": "own.",
+     "start": 9.524,
+     "end": 9.726
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Offload holds the plan. Open it, and it tells you what to do today. Just the next block.",
+   "start": 10.006,
+   "end": 15.166,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 10.006,
+     "end": 10.426
+    },
+    {
+     "text": "holds",
+     "start": 10.426,
+     "end": 10.753
+    },
+    {
+     "text": "the",
+     "start": 10.753,
+     "end": 10.986
+    },
+    {
+     "text": "plan.",
+     "start": 10.986,
+     "end": 11.266
+    },
+    {
+     "text": "Open",
+     "start": 11.726,
+     "end": 12.956
+    },
+    {
+     "text": "it,",
+     "start": 12.956,
+     "end": 13.776
+    },
+    {
+     "text": "and",
+     "start": 14.126,
+     "end": 14.221
+    },
+    {
+     "text": "it",
+     "start": 14.221,
+     "end": 14.297
+    },
+    {
+     "text": "tells",
+     "start": 14.297,
+     "end": 14.431
+    },
+    {
+     "text": "you",
+     "start": 14.431,
+     "end": 14.526
+    },
+    {
+     "text": "what",
+     "start": 14.526,
+     "end": 14.64
+    },
+    {
+     "text": "to",
+     "start": 14.64,
+     "end": 14.716
+    },
+    {
+     "text": "do",
+     "start": 14.716,
+     "end": 14.793
+    },
+    {
+     "text": "today.",
+     "start": 14.793,
+     "end": 14.926
+    },
+    {
+     "text": "Just",
+     "start": 15.036,
+     "end": 15.068
+    },
+    {
+     "text": "the",
+     "start": 15.068,
+     "end": 15.095
+    },
+    {
+     "text": "next",
+     "start": 15.095,
+     "end": 15.128
+    },
+    {
+     "text": "block.",
+     "start": 15.128,
+     "end": 15.166
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "And if today goes sideways, it moves the work, and tells you what moved.",
+   "start": 15.446,
+   "end": 19.328,
+   "words": [
+    {
+     "text": "And",
+     "start": 15.446,
+     "end": 15.663
+    },
+    {
+     "text": "if",
+     "start": 15.663,
+     "end": 15.837
+    },
+    {
+     "text": "today",
+     "start": 15.837,
+     "end": 16.141
+    },
+    {
+     "text": "goes",
+     "start": 16.141,
+     "end": 16.401
+    },
+    {
+     "text": "sideways,",
+     "start": 16.401,
+     "end": 16.836
+    },
+    {
+     "text": "it",
+     "start": 17.136,
+     "end": 17.285
+    },
+    {
+     "text": "moves",
+     "start": 17.285,
+     "end": 17.546
+    },
+    {
+     "text": "the",
+     "start": 17.546,
+     "end": 17.732
+    },
+    {
+     "text": "work,",
+     "start": 17.732,
+     "end": 17.956
+    },
+    {
+     "text": "and",
+     "start": 18.136,
+     "end": 18.334
+    },
+    {
+     "text": "tells",
+     "start": 18.334,
+     "end": 18.612
+    },
+    {
+     "text": "you",
+     "start": 18.612,
+     "end": 18.811
+    },
+    {
+     "text": "what",
+     "start": 18.811,
+     "end": 19.05
+    },
+    {
+     "text": "moved.",
+     "start": 19.05,
+     "end": 19.328
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 19.828,
+   "end": 23.389,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 19.828,
+     "end": 20.318
+    },
+    {
+     "text": "A",
+     "start": 20.698,
+     "end": 20.835
+    },
+    {
+     "text": "study",
+     "start": 20.835,
+     "end": 21.154
+    },
+    {
+     "text": "system",
+     "start": 21.154,
+     "end": 21.519
+    },
+    {
+     "text": "that",
+     "start": 21.519,
+     "end": 21.792
+    },
+    {
+     "text": "adapts",
+     "start": 21.792,
+     "end": 22.157
+    },
+    {
+     "text": "when",
+     "start": 22.157,
+     "end": 22.431
+    },
+    {
+     "text": "real",
+     "start": 22.431,
+     "end": 22.705
+    },
+    {
+     "text": "life",
+     "start": 22.705,
+     "end": 22.978
+    },
+    {
+     "text": "happens.",
+     "start": 22.978,
+     "end": 23.389
+    }
+   ]
+  }
+ ]
+}

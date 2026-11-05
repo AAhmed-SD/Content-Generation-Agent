@@ -1,0 +1,99 @@
+{
+ "id": "clinical-week-two",
+ "end": {
+  "lead": "Free trial",
+  "pill": "Link in bio"
+ },
+ "hi": {
+  "anatomy": "problem",
+  "fades": "problem",
+  "back": "blue"
+ },
+ "pill": {
+  "at": "L4@-0.2",
+  "until": "L4:flashcards@-0.3",
+  "sub": "brings it back"
+ },
+ "floods": [
+  {
+   "in": "L2:comment@-0.12",
+   "out": "L3@-0.15",
+   "colour": "night",
+   "lines": [
+    {
+     "line": "L2",
+     "text": "Comment the last topic",
+     "size": 96
+    },
+    {
+     "line": "L2",
+     "text": "you actually revised.",
+     "size": 110
+    }
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "type": "doc",
+   "at": "L1@-0.05",
+   "title": "Anatomy",
+   "sub": "Last opened in week two",
+   "rows": [
+    {
+     "label": "Upper limb",
+     "chip": "Faded",
+     "chipTone": "red",
+     "inAt": "L1:anatomy"
+    },
+    {
+     "label": "Lower limb",
+     "chip": "Faded",
+     "chipTone": "red",
+     "inAt": "L1:since"
+    },
+    {
+     "label": "Thorax",
+     "chip": "Faded",
+     "chipTone": "red",
+     "inAt": "L1:two"
+    }
+   ]
+  },
+  {
+   "type": "chart",
+   "at": "L3",
+   "kind": "forget",
+   "xLabel": "Weeks",
+   "yLabel": "Remembered",
+   "source": "Ebbinghaus, 1885",
+   "sourceAt": "L3:curve"
+  },
+  {
+   "type": "doc",
+   "title": "Your deck",
+   "sub": "From your lecture notes",
+   "rows": [
+    {
+     "label": "Upper limb",
+     "chip": "Due",
+     "chipTone": "ink",
+     "inAt": "L4:back"
+    },
+    {
+     "label": "Lower limb",
+     "chip": "Due",
+     "chipTone": "ink",
+     "inAt": "L4:right"
+    },
+    {
+     "label": "Thorax",
+     "chip": "Due",
+     "chipTone": "ink",
+     "inAt": "L4:forget"
+    }
+   ],
+   "at": "L4:flashcards@-0.2"
+  }
+ ]
+}

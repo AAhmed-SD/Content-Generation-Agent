@@ -1,0 +1,11 @@
+{
+ "template": "Poster",
+ "props": {
+  "layout": "condensed",
+  "top": "One\nvideo",
+  "bottom": "became\nan hour.",
+  "phoneTitle": "Today",
+  "phoneNext": "Next: Biology, one block",
+  "body": "Happens to everyone. Open it, and it tells you what to do today."
+ }
+}

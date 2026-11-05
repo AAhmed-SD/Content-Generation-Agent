@@ -1,0 +1,33 @@
+{
+ "id": "bank/gcse-which-one",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Mocks are coming. Which one are you?"
+  },
+  {
+   "id": "L2",
+   "say": "A, colour-coded timetable, abandoned by Thursday. B, I'll start after mocks. C, revising, but only the easy topics.",
+   "after": 0.8
+  },
+  {
+   "id": "L3",
+   "say": "Comment your letter. Then here's the fix for all three."
+  },
+  {
+   "id": "L4",
+   "say": "Offload holds the plan, and moves the work when you miss a day. Get a card wrong, and it comes back sooner.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

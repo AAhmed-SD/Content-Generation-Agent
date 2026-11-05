@@ -1,0 +1,9 @@
+{
+ "template": "PhotoPoster",
+ "props": {
+  "plate": "envelope",
+  "title": "Confidential",
+  "sub": "Missed a day. Nothing wiped.",
+  "stamp": "KEPT."
+ }
+}

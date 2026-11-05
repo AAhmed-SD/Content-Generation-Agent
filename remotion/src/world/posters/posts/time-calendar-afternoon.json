@@ -1,0 +1,8 @@
+{
+ "template": "PhotoPoster",
+ "props": {
+  "plate": "calendar",
+  "script": "The afternoon\ndisappeared.",
+  "inCircle": "Next\nblock"
+ }
+}

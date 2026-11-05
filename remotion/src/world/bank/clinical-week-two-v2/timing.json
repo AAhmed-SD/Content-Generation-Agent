@@ -1,0 +1,365 @@
+{
+ "duration": 22.507,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Quick check. When did you last open anatomy?",
+   "start": 0.15,
+   "end": 2.82,
+   "words": [
+    {
+     "text": "Quick",
+     "start": 0.15,
+     "end": 0.405
+    },
+    {
+     "text": "check.",
+     "start": 0.405,
+     "end": 0.66
+    },
+    {
+     "text": "When",
+     "start": 1.05,
+     "end": 1.337
+    },
+    {
+     "text": "did",
+     "start": 1.337,
+     "end": 1.576
+    },
+    {
+     "text": "you",
+     "start": 1.576,
+     "end": 1.815
+    },
+    {
+     "text": "last",
+     "start": 1.815,
+     "end": 2.102
+    },
+    {
+     "text": "open",
+     "start": 2.102,
+     "end": 2.389
+    },
+    {
+     "text": "anatomy?",
+     "start": 2.389,
+     "end": 2.82
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "If the answer's the week you learnt it, same for most of us.",
+   "start": 3.08,
+   "end": 6.429,
+   "words": [
+    {
+     "text": "If",
+     "start": 3.08,
+     "end": 3.231
+    },
+    {
+     "text": "the",
+     "start": 3.231,
+     "end": 3.42
+    },
+    {
+     "text": "answer's",
+     "start": 3.42,
+     "end": 3.761
+    },
+    {
+     "text": "the",
+     "start": 3.761,
+     "end": 3.95
+    },
+    {
+     "text": "week",
+     "start": 3.95,
+     "end": 4.177
+    },
+    {
+     "text": "you",
+     "start": 4.177,
+     "end": 4.366
+    },
+    {
+     "text": "learnt",
+     "start": 4.366,
+     "end": 4.668
+    },
+    {
+     "text": "it,",
+     "start": 4.668,
+     "end": 4.82
+    },
+    {
+     "text": "same",
+     "start": 5.23,
+     "end": 5.518
+    },
+    {
+     "text": "for",
+     "start": 5.518,
+     "end": 5.758
+    },
+    {
+     "text": "most",
+     "start": 5.758,
+     "end": 6.046
+    },
+    {
+     "text": "of",
+     "start": 6.046,
+     "end": 6.237
+    },
+    {
+     "text": "us.",
+     "start": 6.237,
+     "end": 6.429
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Your brain drops what you don't come back to. That's the forgetting curve, and it is brutal.",
+   "start": 6.729,
+   "end": 11.851,
+   "words": [
+    {
+     "text": "Your",
+     "start": 6.729,
+     "end": 6.972
+    },
+    {
+     "text": "brain",
+     "start": 6.972,
+     "end": 7.254
+    },
+    {
+     "text": "drops",
+     "start": 7.254,
+     "end": 7.537
+    },
+    {
+     "text": "what",
+     "start": 7.537,
+     "end": 7.779
+    },
+    {
+     "text": "you",
+     "start": 7.779,
+     "end": 7.981
+    },
+    {
+     "text": "don't",
+     "start": 7.981,
+     "end": 8.223
+    },
+    {
+     "text": "come",
+     "start": 8.223,
+     "end": 8.466
+    },
+    {
+     "text": "back",
+     "start": 8.466,
+     "end": 8.708
+    },
+    {
+     "text": "to.",
+     "start": 8.708,
+     "end": 8.869
+    },
+    {
+     "text": "That's",
+     "start": 9.399,
+     "end": 9.664
+    },
+    {
+     "text": "the",
+     "start": 9.664,
+     "end": 9.852
+    },
+    {
+     "text": "forgetting",
+     "start": 9.852,
+     "end": 10.305
+    },
+    {
+     "text": "curve,",
+     "start": 10.305,
+     "end": 10.569
+    },
+    {
+     "text": "and",
+     "start": 10.949,
+     "end": 11.164
+    },
+    {
+     "text": "it",
+     "start": 11.164,
+     "end": 11.336
+    },
+    {
+     "text": "is",
+     "start": 11.336,
+     "end": 11.507
+    },
+    {
+     "text": "brutal.",
+     "start": 11.507,
+     "end": 11.851
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "So stop deciding what to revise. The app brings each card back right before it fades.",
+   "start": 12.111,
+   "end": 17.603,
+   "words": [
+    {
+     "text": "So",
+     "start": 12.111,
+     "end": 12.327
+    },
+    {
+     "text": "stop",
+     "start": 12.327,
+     "end": 12.65
+    },
+    {
+     "text": "deciding",
+     "start": 12.65,
+     "end": 13.19
+    },
+    {
+     "text": "what",
+     "start": 13.19,
+     "end": 13.513
+    },
+    {
+     "text": "to",
+     "start": 13.513,
+     "end": 13.729
+    },
+    {
+     "text": "revise.",
+     "start": 13.729,
+     "end": 14.161
+    },
+    {
+     "text": "The",
+     "start": 14.671,
+     "end": 14.907
+    },
+    {
+     "text": "app",
+     "start": 14.907,
+     "end": 15.144
+    },
+    {
+     "text": "brings",
+     "start": 15.144,
+     "end": 15.522
+    },
+    {
+     "text": "each",
+     "start": 15.522,
+     "end": 15.806
+    },
+    {
+     "text": "card",
+     "start": 15.806,
+     "end": 16.089
+    },
+    {
+     "text": "back",
+     "start": 16.089,
+     "end": 16.373
+    },
+    {
+     "text": "right",
+     "start": 16.373,
+     "end": 16.704
+    },
+    {
+     "text": "before",
+     "start": 16.704,
+     "end": 17.083
+    },
+    {
+     "text": "it",
+     "start": 17.083,
+     "end": 17.272
+    },
+    {
+     "text": "fades.",
+     "start": 17.272,
+     "end": 17.603
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Save this for the night before your next progress test.",
+   "start": 18.003,
+   "end": 20.907,
+   "words": [
+    {
+     "text": "Save",
+     "start": 18.003,
+     "end": 18.271
+    },
+    {
+     "text": "this",
+     "start": 18.271,
+     "end": 18.539
+    },
+    {
+     "text": "for",
+     "start": 18.539,
+     "end": 18.762
+    },
+    {
+     "text": "the",
+     "start": 18.762,
+     "end": 18.986
+    },
+    {
+     "text": "night",
+     "start": 18.986,
+     "end": 19.299
+    },
+    {
+     "text": "before",
+     "start": 19.299,
+     "end": 19.656
+    },
+    {
+     "text": "your",
+     "start": 19.656,
+     "end": 19.924
+    },
+    {
+     "text": "next",
+     "start": 19.924,
+     "end": 20.192
+    },
+    {
+     "text": "progress",
+     "start": 20.192,
+     "end": 20.639
+    },
+    {
+     "text": "test.",
+     "start": 20.639,
+     "end": 20.907
+    }
+   ]
+  }
+ ]
+}

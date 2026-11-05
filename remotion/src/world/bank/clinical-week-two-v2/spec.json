@@ -1,0 +1,75 @@
+{
+ "id": "clinical-week-two-v2",
+ "end": {
+  "style": "corner"
+ },
+ "hi": {
+  "anatomy": "problem",
+  "brutal": "problem",
+  "fades": "blue",
+  "save": "blue"
+ },
+ "scenes": [
+  {
+   "type": "doc",
+   "at": "L1@-0.05",
+   "title": "Anatomy",
+   "sub": "Last opened: ages ago",
+   "rows": [
+    {
+     "label": "Upper limb",
+     "chip": "Faded",
+     "chipTone": "red",
+     "inAt": "L2:answer's"
+    },
+    {
+     "label": "Lower limb",
+     "chip": "Faded",
+     "chipTone": "red",
+     "inAt": "L2:week"
+    },
+    {
+     "label": "Thorax",
+     "chip": "Faded",
+     "chipTone": "red",
+     "inAt": "L2:same"
+    }
+   ]
+  },
+  {
+   "type": "chart",
+   "at": "L3",
+   "kind": "forget",
+   "xLabel": "Weeks",
+   "yLabel": "Remembered",
+   "source": "Ebbinghaus, 1885",
+   "sourceAt": "L3:curve"
+  },
+  {
+   "type": "doc",
+   "at": "L4:app@-0.2",
+   "title": "Your deck",
+   "sub": "From your lecture notes",
+   "rows": [
+    {
+     "label": "Upper limb",
+     "chip": "Due",
+     "chipTone": "ink",
+     "inAt": "L4:back"
+    },
+    {
+     "label": "Lower limb",
+     "chip": "Due",
+     "chipTone": "ink",
+     "inAt": "L4:right"
+    },
+    {
+     "label": "Thorax",
+     "chip": "Due",
+     "chipTone": "ink",
+     "inAt": "L4:fades"
+    }
+   ]
+  }
+ ]
+}

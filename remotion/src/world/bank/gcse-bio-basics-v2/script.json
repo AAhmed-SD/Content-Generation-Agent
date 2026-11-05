@@ -1,0 +1,38 @@
+{
+ "id": "bank/gcse-bio-basics-v2",
+ "voice": "bf_alice",
+ "lang": "en-gb",
+ "speed": 1.04,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Two biology questions that trip people up every year."
+  },
+  {
+   "id": "L2",
+   "say": "Where are proteins made?",
+   "after": 1.6
+  },
+  {
+   "id": "L3",
+   "say": "Ribosomes. Not the nucleus. The nucleus just holds the instructions."
+  },
+  {
+   "id": "L4",
+   "say": "Respiration makes energy. True or false?",
+   "after": 1.6
+  },
+  {
+   "id": "L5",
+   "say": "False. It releases energy. Energy is never made, only moved around."
+  },
+  {
+   "id": "L6",
+   "say": "The app quizzes you like this, on your own notes. Got both? Part two's harder.",
+   "after": 0.6
+  }
+ ]
+}

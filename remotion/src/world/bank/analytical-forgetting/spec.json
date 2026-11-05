@@ -1,0 +1,118 @@
+{
+ "id": "analytical-forgetting",
+ "end": {
+  "lead": "Free trial",
+  "pill": "Link in bio"
+ },
+ "hi": {
+  "faded": "problem",
+  "spacing": "blue",
+  "back": "blue",
+  "foundations": "blue"
+ },
+ "pill": {
+  "at": "L4@-0.2",
+  "until": "L4:flashcards@-0.3",
+  "sub": "brings it back"
+ },
+ "floods": [
+  {
+   "in": "L1:you#2@-0.12",
+   "out": "L2@-0.15",
+   "colour": "problem",
+   "lines": [
+    {
+     "line": "L1",
+     "text": "You have a"
+    },
+    {
+     "line": "L1",
+     "text": "forgetting problem.",
+     "size": 140
+    }
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "type": "doc",
+   "at": "L1@-0.05",
+   "title": "Problem sheet",
+   "sub": "Year two",
+   "rows": [
+    {
+     "label": "Question one",
+     "chip": "?",
+     "chipTone": "red",
+     "inAt": "L1:maths"
+    },
+    {
+     "label": "Question two",
+     "chip": "?",
+     "chipTone": "red",
+     "inAt": "L1:problem"
+    }
+   ]
+  },
+  {
+   "type": "doc",
+   "at": "L2",
+   "title": "Year two lecture",
+   "sub": "Builds on year one",
+   "rows": [
+    {
+     "label": "Integration",
+     "chip": "Year one",
+     "chipTone": "grey",
+     "strike": "L2:faded"
+    },
+    {
+     "label": "Matrices",
+     "chip": "Year one",
+     "chipTone": "grey",
+     "strike": "L2:faded@0.12"
+    },
+    {
+     "label": "Today's topic",
+     "chip": "Now",
+     "chipTone": "ink"
+    }
+   ]
+  },
+  {
+   "type": "chart",
+   "at": "L3",
+   "kind": "spacing",
+   "xLabel": "Time",
+   "yLabel": "Memory",
+   "source": "Ebbinghaus, 1885 · Cepeda et al., 2006",
+   "sourceAt": "L3:spacing"
+  },
+  {
+   "type": "doc",
+   "at": "L4:flashcards@-0.2",
+   "title": "Your deck",
+   "sub": "From your module notes",
+   "rows": [
+    {
+     "label": "Integration by parts",
+     "chip": "Due",
+     "chipTone": "ink",
+     "inAt": "L4:back"
+    },
+    {
+     "label": "Eigenvalues",
+     "chip": "Due",
+     "chipTone": "ink",
+     "inAt": "L4:right"
+    },
+    {
+     "label": "Chain rule",
+     "chip": "Due",
+     "chipTone": "ink",
+     "inAt": "L4:forget"
+    }
+   ]
+  }
+ ]
+}

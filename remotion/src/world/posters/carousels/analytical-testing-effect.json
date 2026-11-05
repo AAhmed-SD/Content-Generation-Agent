@@ -1,0 +1,64 @@
+{
+ "handle": "offload.analytical",
+ "slides": [
+  {
+   "kind": "photo",
+   "props": {
+    "plate": "calculator",
+    "head": "You followed the\nworked example.",
+    "lcd": "Now do it alone."
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "The problem",
+   "head": "Recognising a method isn't the same as being able to use it.",
+   "body": "That's why you freeze on the problem sheet."
+  },
+  {
+   "kind": "science",
+   "technique": "The testing effect",
+   "body": "Rereading feels better on the day.\nTesting yourself is what lasts.",
+   "source": "Roediger & Karpicke, 2006",
+   "chart": "testing"
+  },
+  {
+   "kind": "card",
+   "side": "front",
+   "deck": "Haskell · Test",
+   "q": "A programmer wants an infinite list that cycles through ['a','b','c']. Which function should they use?",
+   "a": "cycle ['a','b','c']",
+   "not": "repeat",
+   "foot": "From uploaded module notes"
+  },
+  {
+   "kind": "card",
+   "side": "back",
+   "deck": "Haskell · Test",
+   "q": "A programmer wants an infinite list that cycles through ['a','b','c']. Which function should they use?",
+   "a": "cycle ['a','b','c']",
+   "not": "repeat",
+   "foot": "From uploaded module notes"
+  },
+  {
+   "kind": "list",
+   "title": "What Offload\nmakes you do.",
+   "rows": [
+    {
+     "text": "Explain the method in your own words."
+    },
+    {
+     "text": "Exam-style questions on your own module notes."
+    },
+    {
+     "text": "Get one wrong, and it comes back sooner."
+    }
+   ]
+  },
+  {
+   "kind": "end",
+   "lead": "Free trial",
+   "pill": "Link in bio"
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "id": "bank/clinical-zero",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Missed a few days of revision, and now it feels pointless to start again?"
+  },
+  {
+   "id": "L2",
+   "say": "So you make a brand new plan. From day one. Again."
+  },
+  {
+   "id": "L3",
+   "say": "Offload doesn't make you start over."
+  },
+  {
+   "id": "L4",
+   "say": "Miss a day, and it moves the work into your free time, and tells you what moved."
+  },
+  {
+   "id": "L5",
+   "say": "Come back after a bad week, and your calendar's already sorted.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

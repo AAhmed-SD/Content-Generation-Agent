@@ -1,0 +1,11 @@
+{
+ "template": "Poster",
+ "props": {
+  "layout": "envelope",
+  "title": "Confidential",
+  "sub": "The reading doesn't finish itself.",
+  "stamp": "FILED",
+  "tag": "Come back\nto the card.",
+  "handle": "offload.clinical"
+ }
+}

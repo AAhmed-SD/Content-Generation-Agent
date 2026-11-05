@@ -1,0 +1,45 @@
+{
+  "note": "TikTok accounts to watch for outliers, per niche. handle is the @name without the @. Each was checked: its captions match the creator. Add the accounts your audience actually watches, the ones on your own For You page, and check each one reads before relying on it. platform can also be youtube.",
+  "accounts": [
+    {
+      "niche": "clinical",
+      "platform": "tiktok",
+      "handle": "zerotofinals"
+    },
+    {
+      "niche": "clinical",
+      "platform": "tiktok",
+      "handle": "medschoolinsiders"
+    },
+    {
+      "niche": "analytical",
+      "platform": "tiktok",
+      "handle": "3blue1brown"
+    },
+    {
+      "niche": "analytical",
+      "platform": "tiktok",
+      "handle": "theorganicchemistrytutor"
+    },
+    {
+      "niche": "analytical",
+      "platform": "tiktok",
+      "handle": "aliabdaal"
+    },
+    {
+      "niche": "gcsealevel",
+      "platform": "tiktok",
+      "handle": "cognitoedu"
+    },
+    {
+      "niche": "gcsealevel",
+      "platform": "tiktok",
+      "handle": "mrbruff"
+    },
+    {
+      "niche": "mentalhealth",
+      "platform": "tiktok",
+      "handle": "howtoadhd"
+    }
+  ]
+}

@@ -1,0 +1,400 @@
+{
+ "duration": 29.739,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "ChatGPT will do your problem sheet. It won't sit your exam.",
+   "start": 0.15,
+   "end": 4.292,
+   "words": [
+    {
+     "text": "ChatGPT",
+     "start": 0.15,
+     "end": 0.661
+    },
+    {
+     "text": "will",
+     "start": 0.661,
+     "end": 1.002
+    },
+    {
+     "text": "do",
+     "start": 1.002,
+     "end": 1.23
+    },
+    {
+     "text": "your",
+     "start": 1.23,
+     "end": 1.571
+    },
+    {
+     "text": "problem",
+     "start": 1.571,
+     "end": 2.082
+    },
+    {
+     "text": "sheet.",
+     "start": 2.082,
+     "end": 2.48
+    },
+    {
+     "text": "It",
+     "start": 2.85,
+     "end": 3.064
+    },
+    {
+     "text": "won't",
+     "start": 3.064,
+     "end": 3.384
+    },
+    {
+     "text": "sit",
+     "start": 3.384,
+     "end": 3.651
+    },
+    {
+     "text": "your",
+     "start": 3.651,
+     "end": 3.972
+    },
+    {
+     "text": "exam.",
+     "start": 3.972,
+     "end": 4.292
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "So the night before, what actually helps? A, reading the worked solution. B, explaining the method from a blank page.",
+   "start": 4.572,
+   "end": 11.325,
+   "words": [
+    {
+     "text": "So",
+     "start": 4.572,
+     "end": 4.901
+    },
+    {
+     "text": "the",
+     "start": 4.901,
+     "end": 5.311
+    },
+    {
+     "text": "night",
+     "start": 5.311,
+     "end": 5.886
+    },
+    {
+     "text": "before,",
+     "start": 5.886,
+     "end": 6.542
+    },
+    {
+     "text": "what",
+     "start": 6.922,
+     "end": 7.123
+    },
+    {
+     "text": "actually",
+     "start": 7.123,
+     "end": 7.458
+    },
+    {
+     "text": "helps?",
+     "start": 7.458,
+     "end": 7.692
+    },
+    {
+     "text": "A,",
+     "start": 7.772,
+     "end": 8.372
+    },
+    {
+     "text": "reading",
+     "start": 8.742,
+     "end": 8.827
+    },
+    {
+     "text": "the",
+     "start": 8.827,
+     "end": 8.874
+    },
+    {
+     "text": "worked",
+     "start": 8.874,
+     "end": 8.949
+    },
+    {
+     "text": "solution.",
+     "start": 8.949,
+     "end": 9.042
+    },
+    {
+     "text": "B,",
+     "start": 9.172,
+     "end": 10.672
+    },
+    {
+     "text": "explaining",
+     "start": 10.752,
+     "end": 10.899
+    },
+    {
+     "text": "the",
+     "start": 10.899,
+     "end": 10.96
+    },
+    {
+     "text": "method",
+     "start": 10.96,
+     "end": 11.057
+    },
+    {
+     "text": "from",
+     "start": 11.057,
+     "end": 11.13
+    },
+    {
+     "text": "a",
+     "start": 11.13,
+     "end": 11.167
+    },
+    {
+     "text": "blank",
+     "start": 11.167,
+     "end": 11.252
+    },
+    {
+     "text": "page.",
+     "start": 11.252,
+     "end": 11.325
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "B. Testing yourself beats rereading. It's called the testing effect.",
+   "start": 12.925,
+   "end": 17.027,
+   "words": [
+    {
+     "text": "B.",
+     "start": 12.925,
+     "end": 15.045
+    },
+    {
+     "text": "Testing",
+     "start": 15.385,
+     "end": 15.718
+    },
+    {
+     "text": "yourself",
+     "start": 15.718,
+     "end": 16.089
+    },
+    {
+     "text": "beats",
+     "start": 16.089,
+     "end": 16.348
+    },
+    {
+     "text": "rereading.",
+     "start": 16.348,
+     "end": 16.755
+    },
+    {
+     "text": "It's",
+     "start": 16.885,
+     "end": 16.906
+    },
+    {
+     "text": "called",
+     "start": 16.906,
+     "end": 16.938
+    },
+    {
+     "text": "the",
+     "start": 16.938,
+     "end": 16.958
+    },
+    {
+     "text": "testing",
+     "start": 16.958,
+     "end": 16.995
+    },
+    {
+     "text": "effect.",
+     "start": 16.995,
+     "end": 17.027
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Offload makes you explain the method in your own words, then gives you exam-style questions on your own module notes.",
+   "start": 17.307,
+   "end": 24.127,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 17.307,
+     "end": 17.696
+    },
+    {
+     "text": "makes",
+     "start": 17.696,
+     "end": 17.999
+    },
+    {
+     "text": "you",
+     "start": 17.999,
+     "end": 18.215
+    },
+    {
+     "text": "explain",
+     "start": 18.215,
+     "end": 18.604
+    },
+    {
+     "text": "the",
+     "start": 18.604,
+     "end": 18.82
+    },
+    {
+     "text": "method",
+     "start": 18.82,
+     "end": 19.166
+    },
+    {
+     "text": "in",
+     "start": 19.166,
+     "end": 19.339
+    },
+    {
+     "text": "your",
+     "start": 19.339,
+     "end": 19.599
+    },
+    {
+     "text": "own",
+     "start": 19.599,
+     "end": 19.815
+    },
+    {
+     "text": "words,",
+     "start": 19.815,
+     "end": 20.117
+    },
+    {
+     "text": "then",
+     "start": 20.547,
+     "end": 20.854
+    },
+    {
+     "text": "gives",
+     "start": 20.854,
+     "end": 21.212
+    },
+    {
+     "text": "you",
+     "start": 21.212,
+     "end": 21.468
+    },
+    {
+     "text": "exam-style",
+     "start": 21.468,
+     "end": 22.03
+    },
+    {
+     "text": "questions",
+     "start": 22.03,
+     "end": 22.593
+    },
+    {
+     "text": "on",
+     "start": 22.593,
+     "end": 22.797
+    },
+    {
+     "text": "your",
+     "start": 22.797,
+     "end": 23.104
+    },
+    {
+     "text": "own",
+     "start": 23.104,
+     "end": 23.36
+    },
+    {
+     "text": "module",
+     "start": 23.36,
+     "end": 23.769
+    },
+    {
+     "text": "notes.",
+     "start": 23.769,
+     "end": 24.127
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 24.627,
+   "end": 28.459,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 24.627,
+     "end": 26.277
+    },
+    {
+     "text": "A",
+     "start": 26.497,
+     "end": 26.596
+    },
+    {
+     "text": "study",
+     "start": 26.596,
+     "end": 26.829
+    },
+    {
+     "text": "system",
+     "start": 26.829,
+     "end": 27.095
+    },
+    {
+     "text": "that",
+     "start": 27.095,
+     "end": 27.295
+    },
+    {
+     "text": "adapts",
+     "start": 27.295,
+     "end": 27.561
+    },
+    {
+     "text": "when",
+     "start": 27.561,
+     "end": 27.76
+    },
+    {
+     "text": "real",
+     "start": 27.76,
+     "end": 27.96
+    },
+    {
+     "text": "life",
+     "start": 27.96,
+     "end": 28.159
+    },
+    {
+     "text": "happens.",
+     "start": 28.159,
+     "end": 28.459
+    }
+   ]
+  }
+ ]
+}

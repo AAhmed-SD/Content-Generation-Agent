@@ -1,0 +1,144 @@
+{
+ "id": "gcse-blurting",
+ "end": {
+  "lead": "Want to try it?",
+  "pill": "Search Offload"
+ },
+ "hi": {
+  "skip": "problem",
+  "gaps": "blue",
+  "missed": "problem",
+  "next": "blue"
+ },
+ "pill": {
+  "at": "L4@-0.2",
+  "until": "L4:you@-0.25",
+  "sub": "shows you the gaps"
+ },
+ "floods": [
+  {
+   "in": "L2:then@-0.12",
+   "out": "L3@-0.15",
+   "colour": "problem",
+   "lines": [
+    {
+     "line": "L2",
+     "text": "Then you shut the book,"
+    },
+    {
+     "line": "L2",
+     "text": "and move on.",
+     "size": 170
+    }
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "type": "doc",
+   "at": "L1@-0.05",
+   "title": "Blurt: Cell biology",
+   "sub": "From memory",
+   "rows": [
+    {
+     "label": "Nucleus",
+     "chip": "Wrote it",
+     "chipTone": "grey",
+     "inAt": "L1:blurting"
+    },
+    {
+     "label": "Mitochondria",
+     "chip": "Wrote it",
+     "chipTone": "grey",
+     "inAt": "L1:most"
+    },
+    {
+     "label": "Cell membrane",
+     "chip": "Wrote it",
+     "chipTone": "grey",
+     "inAt": "L1:skip"
+    }
+   ]
+  },
+  {
+   "type": "doc",
+   "at": "L3",
+   "title": "Check against your notes",
+   "sub": "Cell biology",
+   "rows": [
+    {
+     "label": "Nucleus",
+     "tick": "L3:check"
+    },
+    {
+     "label": "Mitochondria",
+     "tick": "L3:check@0.15"
+    },
+    {
+     "label": "Ribosomes",
+     "tag": {
+      "text": "Gap",
+      "at": "L3:missed"
+     }
+    },
+    {
+     "label": "Cell wall",
+     "tag": {
+      "text": "Gap",
+      "at": "L3:missed@0.15"
+     }
+    }
+   ]
+  },
+  {
+   "type": "doc",
+   "at": "L4:you@-0.15",
+   "title": "Your blurt",
+   "sub": "Cell biology",
+   "rows": [
+    {
+     "label": "Nucleus",
+     "tick": "L4:down"
+    },
+    {
+     "label": "Mitochondria",
+     "tick": "L4:down@0.15"
+    },
+    {
+     "label": "Ribosomes",
+     "tag": {
+      "text": "Gap",
+      "at": "L4:gaps"
+     }
+    },
+    {
+     "label": "Cell wall",
+     "tag": {
+      "text": "Gap",
+      "at": "L4:gaps@0.15"
+     }
+    }
+   ]
+  },
+  {
+   "type": "doc",
+   "at": "L5",
+   "title": "Today",
+   "sub": "What to do next",
+   "rows": [
+    {
+     "label": "Ribosomes",
+     "chip": "Next",
+     "chipTone": "ink",
+     "inAt": "L5:tells"
+    },
+    {
+     "label": "Cell wall",
+     "chip": "Then",
+     "chipTone": "grey",
+     "inAt": "L5:next"
+    }
+   ]
+  }
+ ]
+}

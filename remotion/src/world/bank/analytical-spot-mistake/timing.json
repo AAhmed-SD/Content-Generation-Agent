@@ -1,0 +1,418 @@
+{
+ "duration": 31.312,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Spot the mistake in this revision week.",
+   "start": 0.15,
+   "end": 2.672,
+   "words": [
+    {
+     "text": "Spot",
+     "start": 0.15,
+     "end": 0.479
+    },
+    {
+     "text": "the",
+     "start": 0.479,
+     "end": 0.753
+    },
+    {
+     "text": "mistake",
+     "start": 0.753,
+     "end": 1.246
+    },
+    {
+     "text": "in",
+     "start": 1.246,
+     "end": 1.466
+    },
+    {
+     "text": "this",
+     "start": 1.466,
+     "end": 1.795
+    },
+    {
+     "text": "revision",
+     "start": 1.795,
+     "end": 2.343
+    },
+    {
+     "text": "week.",
+     "start": 2.343,
+     "end": 2.672
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Calculus, calculus, calculus. Linear algebra hasn't come back since October.",
+   "start": 2.952,
+   "end": 8.245,
+   "words": [
+    {
+     "text": "Calculus,",
+     "start": 2.952,
+     "end": 3.642
+    },
+    {
+     "text": "calculus,",
+     "start": 3.742,
+     "end": 4.412
+    },
+    {
+     "text": "calculus.",
+     "start": 4.612,
+     "end": 5.302
+    },
+    {
+     "text": "Linear",
+     "start": 5.702,
+     "end": 6.093
+    },
+    {
+     "text": "algebra",
+     "start": 6.093,
+     "end": 6.533
+    },
+    {
+     "text": "hasn't",
+     "start": 6.533,
+     "end": 6.875
+    },
+    {
+     "text": "come",
+     "start": 6.875,
+     "end": 7.169
+    },
+    {
+     "text": "back",
+     "start": 7.169,
+     "end": 7.462
+    },
+    {
+     "text": "since",
+     "start": 7.462,
+     "end": 7.804
+    },
+    {
+     "text": "October.",
+     "start": 7.804,
+     "end": 8.245
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "So what's wrong? A, too much calculus. B, no rest day. C, the topic that never comes back.",
+   "start": 8.545,
+   "end": 14.214,
+   "words": [
+    {
+     "text": "So",
+     "start": 8.545,
+     "end": 8.725
+    },
+    {
+     "text": "what's",
+     "start": 8.725,
+     "end": 9.04
+    },
+    {
+     "text": "wrong?",
+     "start": 9.04,
+     "end": 9.355
+    },
+    {
+     "text": "A,",
+     "start": 9.475,
+     "end": 10.635
+    },
+    {
+     "text": "too",
+     "start": 10.975,
+     "end": 11.125
+    },
+    {
+     "text": "much",
+     "start": 11.125,
+     "end": 11.305
+    },
+    {
+     "text": "calculus.",
+     "start": 11.305,
+     "end": 11.605
+    },
+    {
+     "text": "B,",
+     "start": 11.675,
+     "end": 11.955
+    },
+    {
+     "text": "no",
+     "start": 12.205,
+     "end": 12.41
+    },
+    {
+     "text": "rest",
+     "start": 12.41,
+     "end": 12.718
+    },
+    {
+     "text": "day.",
+     "start": 12.718,
+     "end": 12.975
+    },
+    {
+     "text": "C,",
+     "start": 13.065,
+     "end": 13.735
+    },
+    {
+     "text": "the",
+     "start": 13.815,
+     "end": 13.867
+    },
+    {
+     "text": "topic",
+     "start": 13.867,
+     "end": 13.941
+    },
+    {
+     "text": "that",
+     "start": 13.941,
+     "end": 14.004
+    },
+    {
+     "text": "never",
+     "start": 14.004,
+     "end": 14.077
+    },
+    {
+     "text": "comes",
+     "start": 14.077,
+     "end": 14.151
+    },
+    {
+     "text": "back.",
+     "start": 14.151,
+     "end": 14.214
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "C. A topic that never comes back fades long before January.",
+   "start": 15.814,
+   "end": 19.832,
+   "words": [
+    {
+     "text": "C.",
+     "start": 15.814,
+     "end": 17.764
+    },
+    {
+     "text": "A",
+     "start": 18.104,
+     "end": 18.182
+    },
+    {
+     "text": "topic",
+     "start": 18.182,
+     "end": 18.366
+    },
+    {
+     "text": "that",
+     "start": 18.366,
+     "end": 18.523
+    },
+    {
+     "text": "never",
+     "start": 18.523,
+     "end": 18.706
+    },
+    {
+     "text": "comes",
+     "start": 18.706,
+     "end": 18.89
+    },
+    {
+     "text": "back",
+     "start": 18.89,
+     "end": 19.047
+    },
+    {
+     "text": "fades",
+     "start": 19.047,
+     "end": 19.23
+    },
+    {
+     "text": "long",
+     "start": 19.23,
+     "end": 19.387
+    },
+    {
+     "text": "before",
+     "start": 19.387,
+     "end": 19.597
+    },
+    {
+     "text": "January.",
+     "start": 19.597,
+     "end": 19.832
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Offload brings each flashcard back right before you'd forget it, so the old topics keep coming back.",
+   "start": 20.112,
+   "end": 25.7,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 20.112,
+     "end": 20.502
+    },
+    {
+     "text": "brings",
+     "start": 20.502,
+     "end": 20.848
+    },
+    {
+     "text": "each",
+     "start": 20.848,
+     "end": 21.108
+    },
+    {
+     "text": "flashcard",
+     "start": 21.108,
+     "end": 21.584
+    },
+    {
+     "text": "back",
+     "start": 21.584,
+     "end": 21.844
+    },
+    {
+     "text": "right",
+     "start": 21.844,
+     "end": 22.147
+    },
+    {
+     "text": "before",
+     "start": 22.147,
+     "end": 22.493
+    },
+    {
+     "text": "you'd",
+     "start": 22.493,
+     "end": 22.753
+    },
+    {
+     "text": "forget",
+     "start": 22.753,
+     "end": 23.099
+    },
+    {
+     "text": "it,",
+     "start": 23.099,
+     "end": 23.272
+    },
+    {
+     "text": "so",
+     "start": 23.682,
+     "end": 23.875
+    },
+    {
+     "text": "the",
+     "start": 23.875,
+     "end": 24.115
+    },
+    {
+     "text": "old",
+     "start": 24.115,
+     "end": 24.355
+    },
+    {
+     "text": "topics",
+     "start": 24.355,
+     "end": 24.739
+    },
+    {
+     "text": "keep",
+     "start": 24.739,
+     "end": 25.027
+    },
+    {
+     "text": "coming",
+     "start": 25.027,
+     "end": 25.411
+    },
+    {
+     "text": "back.",
+     "start": 25.411,
+     "end": 25.7
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 26.2,
+   "end": 30.032,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 26.2,
+     "end": 27.85
+    },
+    {
+     "text": "A",
+     "start": 28.07,
+     "end": 28.169
+    },
+    {
+     "text": "study",
+     "start": 28.169,
+     "end": 28.402
+    },
+    {
+     "text": "system",
+     "start": 28.402,
+     "end": 28.668
+    },
+    {
+     "text": "that",
+     "start": 28.668,
+     "end": 28.868
+    },
+    {
+     "text": "adapts",
+     "start": 28.868,
+     "end": 29.134
+    },
+    {
+     "text": "when",
+     "start": 29.134,
+     "end": 29.333
+    },
+    {
+     "text": "real",
+     "start": 29.333,
+     "end": 29.533
+    },
+    {
+     "text": "life",
+     "start": 29.533,
+     "end": 29.733
+    },
+    {
+     "text": "happens.",
+     "start": 29.733,
+     "end": 30.032
+    }
+   ]
+  }
+ ]
+}

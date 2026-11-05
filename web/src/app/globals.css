@@ -1489,3 +1489,20 @@ input[type="file"] {
     text-align: left;
   }
 }
+
+.signals {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.quiet-link {
+  width: fit-content;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  padding: 10px 14px;
+  cursor: pointer;
+}

@@ -1,0 +1,75 @@
+{
+ "id": "gcse-final-tips",
+ "end": {
+  "lead": "Want to try it?",
+  "pill": "Search Offload"
+ },
+ "hi": {
+  "skip": "problem",
+  "test": "blue",
+  "lasts": "blue",
+  "gaps": "blue"
+ },
+ "pill": {
+  "at": "L4@-0.2",
+  "until": "L4:you@-0.25",
+  "sub": "shows you the gaps"
+ },
+ "scenes": [
+  {
+   "type": "stack",
+   "at": "L1"
+  },
+  {
+   "type": "choice",
+   "at": "L2",
+   "deck": "Mock prep",
+   "q": "The night before, do you…",
+   "options": [
+    "Reread my notes",
+    "Test myself"
+   ],
+   "answer": 1,
+   "reveal": "L3@-0.15"
+  },
+  {
+   "type": "chart",
+   "at": "L3:but@-0.2",
+   "kind": "testing",
+   "xLabel": "Time",
+   "yLabel": "Remembered",
+   "source": "Roediger & Karpicke, 2006",
+   "sourceAt": "L3:lasts"
+  },
+  {
+   "type": "doc",
+   "at": "L4:you@-0.15",
+   "title": "Your blurt",
+   "sub": "Cell biology",
+   "rows": [
+    {
+     "label": "Nucleus",
+     "tick": "L4:down"
+    },
+    {
+     "label": "Mitochondria",
+     "tick": "L4:down@0.15"
+    },
+    {
+     "label": "Ribosomes",
+     "tag": {
+      "text": "Gap",
+      "at": "L4:gaps"
+     }
+    },
+    {
+     "label": "Cell wall",
+     "tag": {
+      "text": "Gap",
+      "at": "L4:gaps@0.15"
+     }
+    }
+   ]
+  }
+ ]
+}

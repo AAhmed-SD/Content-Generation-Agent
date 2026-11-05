@@ -1,0 +1,14 @@
+{
+ "template": "Poster",
+ "props": {
+  "layout": "keycaps",
+  "keys": [
+   "Upload",
+   "Plan",
+   "Study",
+   "Miss",
+   "Move"
+  ],
+  "line": "A study system that adapts\nwhen real life happens."
+ }
+}

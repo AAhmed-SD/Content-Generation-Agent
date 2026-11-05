@@ -1,0 +1,119 @@
+{
+ "id": "analytical-spot-mistake-v2",
+ "end": {
+  "style": "corner"
+ },
+ "hi": {
+  "mistake": "problem",
+  "october": "problem",
+  "visiting": "problem",
+  "january": "blue"
+ },
+ "scenes": [
+  {
+   "type": "week",
+   "at": "L1@-0.05",
+   "title": "Your week",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Calculus",
+     "at": "L2@0.00"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "Calculus",
+     "at": "L2@0.25"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "Calculus",
+     "at": "L2@0.50"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Calculus",
+     "at": "L2@0.75"
+    },
+    {
+     "day": 4,
+     "slot": 0,
+     "label": "Calculus",
+     "at": "L2@1.00"
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "at": "L3",
+   "deck": "Spot the mistake",
+   "q": "What's wrong with this week?",
+   "options": [
+    "Too much calculus",
+    "No rest day",
+    "The topic that disappeared"
+   ],
+   "answer": 2,
+   "reveal": "L4@-0.15"
+  },
+  {
+   "type": "week",
+   "at": "L5@-0.1",
+   "title": "Your week",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Calculus",
+     "at": "L5:app"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "Lin. algebra",
+     "at": "L5:old"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "Calculus",
+     "at": "L5:back"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Lin. algebra",
+     "at": "L5:fade"
+    },
+    {
+     "day": 4,
+     "slot": 0,
+     "label": "Statistics",
+     "at": "L5:january"
+    }
+   ]
+  },
+  {
+   "type": "none",
+   "at": "L6"
+  }
+ ]
+}

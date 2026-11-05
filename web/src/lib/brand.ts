@@ -7,6 +7,7 @@ export const brandDocs = [
   { slug: "brand", file: "brand.md", title: "Brand", group: "System" },
   { slug: "product-facts", file: "product-facts.md", title: "Product facts", group: "System" },
   { slug: "hooks", file: "hooks.md", title: "Hooks", group: "System" },
+  { slug: "scripting", file: "scripting.md", title: "Scripting", group: "System" },
   { slug: "safety", file: "safety.md", title: "Safety", group: "System" },
   { slug: "platforms", file: "platforms.md", title: "Platforms", group: "System" },
   { slug: "templates", file: "templates.md", title: "Templates", group: "Generated" },
@@ -51,6 +52,7 @@ export function readBrandFile(file: string) {
 const editableFiles = new Set([
   "brand.md",
   "product-facts.md",
+  "scripting.md",
   "posts/hook.md",
   "posts/payoff.md",
   "posts/still.md",

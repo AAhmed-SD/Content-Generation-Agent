@@ -1,0 +1,167 @@
+{
+ "id": "clinical-zero",
+ "end": {
+  "lead": "Free trial",
+  "pill": "Link in bio"
+ },
+ "hi": {
+  "pointless": "problem",
+  "again": "problem",
+  "sorted": "blue",
+  "moved": "blue"
+ },
+ "pill": {
+  "at": "L3@-0.2",
+  "until": "L4@-0.25",
+  "sub": "never starts over"
+ },
+ "floods": [
+  {
+   "in": "L2:from@-0.14",
+   "out": "L3@-0.25",
+   "colour": "problem",
+   "lines": [
+    {
+     "line": "L2",
+     "text": "From day one."
+    },
+    {
+     "line": "L2",
+     "text": "Again."
+    }
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "type": "week",
+   "at": "L1@-0.05",
+   "title": "Your revision plan",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Renal",
+     "at": "L1@0.10",
+     "outline": "L1:days@0.00"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "Pharm",
+     "at": "L1@0.18",
+     "outline": "L1:days@0.08"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "Anatomy",
+     "at": "L1@0.26",
+     "outline": "L1:days@0.16"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Cardio",
+     "at": "L1@0.34"
+    },
+    {
+     "day": 4,
+     "slot": 0,
+     "label": "Resp",
+     "at": "L1@0.42"
+    }
+   ]
+  },
+  {
+   "type": "doc",
+   "at": "L2",
+   "title": "Revision plan",
+   "sub": "Made again",
+   "rows": [
+    {
+     "label": "Renal",
+     "chip": "Mon",
+     "chipTone": "grey"
+    },
+    {
+     "label": "Pharm",
+     "chip": "Tue",
+     "chipTone": "grey"
+    },
+    {
+     "label": "Anatomy",
+     "chip": "Wed",
+     "chipTone": "grey"
+    }
+   ],
+   "stamp": {
+    "text": "again",
+    "at": "L2:new"
+   }
+  },
+  {
+   "type": "clip",
+   "at": "L4@-0.1",
+   "src": "rec/reschedule-a.mp4",
+   "len": 6.5
+  },
+  {
+   "type": "week",
+   "at": "L5",
+   "title": "Your week",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Renal",
+     "at": "L5:back"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "Pharm",
+     "at": "L5:back@0.1"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "Lecture",
+     "at": "L5:bad"
+    },
+    {
+     "day": 2,
+     "slot": 1,
+     "label": "Anatomy",
+     "at": "L5:calendar's"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Cardio",
+     "at": "L5:already"
+    },
+    {
+     "day": 4,
+     "slot": 0,
+     "label": "Review",
+     "at": "L5:sorted"
+    }
+   ]
+  }
+ ]
+}

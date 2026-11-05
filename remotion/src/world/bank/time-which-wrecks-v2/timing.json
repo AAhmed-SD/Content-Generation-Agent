@@ -1,0 +1,385 @@
+{
+ "duration": 24.319,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "My brother is one of the smartest people I know.",
+   "start": 0.15,
+   "end": 2.659,
+   "words": [
+    {
+     "text": "My",
+     "start": 0.15,
+     "end": 0.323
+    },
+    {
+     "text": "brother",
+     "start": 0.323,
+     "end": 0.712
+    },
+    {
+     "text": "is",
+     "start": 0.712,
+     "end": 0.885
+    },
+    {
+     "text": "one",
+     "start": 0.885,
+     "end": 1.102
+    },
+    {
+     "text": "of",
+     "start": 1.102,
+     "end": 1.275
+    },
+    {
+     "text": "the",
+     "start": 1.275,
+     "end": 1.491
+    },
+    {
+     "text": "smartest",
+     "start": 1.491,
+     "end": 1.924
+    },
+    {
+     "text": "people",
+     "start": 1.924,
+     "end": 2.27
+    },
+    {
+     "text": "I",
+     "start": 2.27,
+     "end": 2.4
+    },
+    {
+     "text": "know.",
+     "start": 2.4,
+     "end": 2.659
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "At school, every report said the same thing. Capable, but lazy.",
+   "start": 2.919,
+   "end": 6.718,
+   "words": [
+    {
+     "text": "At",
+     "start": 2.919,
+     "end": 3.519
+    },
+    {
+     "text": "school,",
+     "start": 3.519,
+     "end": 4.719
+    },
+    {
+     "text": "every",
+     "start": 4.779,
+     "end": 4.824
+    },
+    {
+     "text": "report",
+     "start": 4.824,
+     "end": 4.875
+    },
+    {
+     "text": "said",
+     "start": 4.875,
+     "end": 4.914
+    },
+    {
+     "text": "the",
+     "start": 4.914,
+     "end": 4.946
+    },
+    {
+     "text": "same",
+     "start": 4.946,
+     "end": 4.984
+    },
+    {
+     "text": "thing.",
+     "start": 4.984,
+     "end": 5.029
+    },
+    {
+     "text": "Capable,",
+     "start": 5.439,
+     "end": 5.969
+    },
+    {
+     "text": "but",
+     "start": 6.039,
+     "end": 6.348
+    },
+    {
+     "text": "lazy.",
+     "start": 6.348,
+     "end": 6.718
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "He wasn't lazy. Every day had too many starts, and nothing held the plan for him.",
+   "start": 7.218,
+   "end": 11.838,
+   "words": [
+    {
+     "text": "He",
+     "start": 7.218,
+     "end": 7.423
+    },
+    {
+     "text": "wasn't",
+     "start": 7.423,
+     "end": 7.781
+    },
+    {
+     "text": "lazy.",
+     "start": 7.781,
+     "end": 8.088
+    },
+    {
+     "text": "Every",
+     "start": 8.578,
+     "end": 8.893
+    },
+    {
+     "text": "day",
+     "start": 8.893,
+     "end": 9.118
+    },
+    {
+     "text": "had",
+     "start": 9.118,
+     "end": 9.343
+    },
+    {
+     "text": "too",
+     "start": 9.343,
+     "end": 9.568
+    },
+    {
+     "text": "many",
+     "start": 9.568,
+     "end": 9.838
+    },
+    {
+     "text": "starts,",
+     "start": 9.838,
+     "end": 10.198
+    },
+    {
+     "text": "and",
+     "start": 10.308,
+     "end": 10.495
+    },
+    {
+     "text": "nothing",
+     "start": 10.495,
+     "end": 10.831
+    },
+    {
+     "text": "held",
+     "start": 10.831,
+     "end": 11.054
+    },
+    {
+     "text": "the",
+     "start": 11.054,
+     "end": 11.241
+    },
+    {
+     "text": "plan",
+     "start": 11.241,
+     "end": 11.465
+    },
+    {
+     "text": "for",
+     "start": 11.465,
+     "end": 11.652
+    },
+    {
+     "text": "him.",
+     "start": 11.652,
+     "end": 11.838
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "So I built something that does. You open it, and it tells you the next thing. Just one.",
+   "start": 12.238,
+   "end": 16.96,
+   "words": [
+    {
+     "text": "So",
+     "start": 12.238,
+     "end": 12.395
+    },
+    {
+     "text": "I",
+     "start": 12.395,
+     "end": 12.513
+    },
+    {
+     "text": "built",
+     "start": 12.513,
+     "end": 12.787
+    },
+    {
+     "text": "something",
+     "start": 12.787,
+     "end": 13.218
+    },
+    {
+     "text": "that",
+     "start": 13.218,
+     "end": 13.453
+    },
+    {
+     "text": "does.",
+     "start": 13.453,
+     "end": 13.688
+    },
+    {
+     "text": "You",
+     "start": 14.138,
+     "end": 14.368
+    },
+    {
+     "text": "open",
+     "start": 14.368,
+     "end": 14.644
+    },
+    {
+     "text": "it,",
+     "start": 14.644,
+     "end": 14.828
+    },
+    {
+     "text": "and",
+     "start": 14.938,
+     "end": 15.099
+    },
+    {
+     "text": "it",
+     "start": 15.099,
+     "end": 15.227
+    },
+    {
+     "text": "tells",
+     "start": 15.227,
+     "end": 15.451
+    },
+    {
+     "text": "you",
+     "start": 15.451,
+     "end": 15.611
+    },
+    {
+     "text": "the",
+     "start": 15.611,
+     "end": 15.772
+    },
+    {
+     "text": "next",
+     "start": 15.772,
+     "end": 15.964
+    },
+    {
+     "text": "thing.",
+     "start": 15.964,
+     "end": 16.188
+    },
+    {
+     "text": "Just",
+     "start": 16.348,
+     "end": 16.682
+    },
+    {
+     "text": "one.",
+     "start": 16.682,
+     "end": 16.96
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "What's the hardest part of your day? Starting, switching, or remembering what's next?",
+   "start": 17.36,
+   "end": 21.919,
+   "words": [
+    {
+     "text": "What's",
+     "start": 17.36,
+     "end": 17.587
+    },
+    {
+     "text": "the",
+     "start": 17.587,
+     "end": 17.749
+    },
+    {
+     "text": "hardest",
+     "start": 17.749,
+     "end": 18.04
+    },
+    {
+     "text": "part",
+     "start": 18.04,
+     "end": 18.234
+    },
+    {
+     "text": "of",
+     "start": 18.234,
+     "end": 18.364
+    },
+    {
+     "text": "your",
+     "start": 18.364,
+     "end": 18.558
+    },
+    {
+     "text": "day?",
+     "start": 18.558,
+     "end": 18.72
+    },
+    {
+     "text": "Starting,",
+     "start": 19.19,
+     "end": 19.81
+    },
+    {
+     "text": "switching,",
+     "start": 19.98,
+     "end": 21.58
+    },
+    {
+     "text": "or",
+     "start": 21.68,
+     "end": 21.712
+    },
+    {
+     "text": "remembering",
+     "start": 21.712,
+     "end": 21.816
+    },
+    {
+     "text": "what's",
+     "start": 21.816,
+     "end": 21.871
+    },
+    {
+     "text": "next?",
+     "start": 21.871,
+     "end": 21.919
+    }
+   ]
+  }
+ ]
+}

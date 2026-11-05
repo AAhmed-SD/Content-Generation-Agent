@@ -1,0 +1,42 @@
+{
+ "id": "bank/analytical-haskell",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Computer science students. Two cards from the Test phase. Answer before they flip."
+  },
+  {
+   "id": "L2",
+   "say": "You want an infinite list that cycles through a, b and c. Which Haskell function?",
+   "after": 1.6
+  },
+  {
+   "id": "L3",
+   "say": "Cycle. Not repeat. Repeat only repeats a single value."
+  },
+  {
+   "id": "L4",
+   "say": "Next. Repeated data is causing insertion anomalies. What do you apply?",
+   "after": 1.6
+  },
+  {
+   "id": "L5",
+   "say": "Normalisation. Not an ER diagram. That models the structure, it doesn't fix it."
+  },
+  {
+   "id": "L6",
+   "say": "Offload built both from uploaded module notes. Get one wrong, and it comes back sooner.",
+   "after": 0.5
+  },
+  {
+   "id": "L7",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

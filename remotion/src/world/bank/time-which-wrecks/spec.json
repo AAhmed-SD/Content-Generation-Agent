@@ -1,0 +1,97 @@
+{
+ "id": "time-which-wrecks",
+ "end": {
+  "lead": "Want to try it?",
+  "pill": "Search Offload"
+ },
+ "hi": {
+  "wrecks": "problem",
+  "moved": "blue",
+  "zero": "blue"
+ },
+ "pill": {
+  "at": "L4@-0.2",
+  "until": "L4:miss@-0.25",
+  "sub": "holds the plan"
+ },
+ "floods": [
+  {
+   "in": "L3:whichever@-0.12",
+   "out": "L4@-0.25",
+   "colour": "night",
+   "lines": [
+    {
+     "line": "L3",
+     "text": "too many starts,",
+     "size": 110
+    },
+    {
+     "line": "L3",
+     "text": "not too little effort.",
+     "size": 90,
+     "red": true
+    }
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "type": "choice",
+   "at": "L1",
+   "deck": "Be honest",
+   "q": "Which one wrecks your day the most?",
+   "options": [
+    "Starting",
+    "Switching between things",
+    "Remembering what's next"
+   ],
+   "reveal": "L3:comment@-0.1",
+   "comment": "Comment your letter"
+  },
+  {
+   "type": "clip",
+   "at": "L4:miss@-0.2",
+   "src": "rec/reschedule-a.mp4",
+   "len": 6.5
+  },
+  {
+   "type": "week",
+   "at": "L5",
+   "title": "Your week",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Study",
+     "at": "L5:never"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "Rest",
+     "tone": "kraft",
+     "at": "L5:start"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "Study",
+     "at": "L5:from"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Study",
+     "at": "L5:zero"
+    }
+   ]
+  }
+ ]
+}

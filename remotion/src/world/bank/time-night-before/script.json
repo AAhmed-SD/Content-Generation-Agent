@@ -1,0 +1,33 @@
+{
+ "id": "bank/time-night-before",
+ "voice": "af_heart*0.7+af_bella*0.3",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Do you ever only start the night before it's due?"
+  },
+  {
+   "id": "L2",
+   "say": "A, always. B, sometimes. C, never, and I'm lying.",
+   "after": 0.8
+  },
+  {
+   "id": "L3",
+   "say": "Comment your letter. Starting is the hardest part, and a long list makes it harder."
+  },
+  {
+   "id": "L4",
+   "say": "Offload holds the plan. Open it, and it tells you what to do today. Just the next block.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

@@ -1,0 +1,380 @@
+{
+ "duration": 26.887,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Mocks are coming. Which one are you?",
+   "start": 0.15,
+   "end": 2.25,
+   "words": [
+    {
+     "text": "Mocks",
+     "start": 0.15,
+     "end": 0.462
+    },
+    {
+     "text": "are",
+     "start": 0.462,
+     "end": 0.684
+    },
+    {
+     "text": "coming.",
+     "start": 0.684,
+     "end": 1.04
+    },
+    {
+     "text": "Which",
+     "start": 1.22,
+     "end": 1.548
+    },
+    {
+     "text": "one",
+     "start": 1.548,
+     "end": 1.782
+    },
+    {
+     "text": "are",
+     "start": 1.782,
+     "end": 2.016
+    },
+    {
+     "text": "you?",
+     "start": 2.016,
+     "end": 2.25
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "A, colour-coded timetable, abandoned by Thursday. B, I'll start after mocks. C, revising, but only the easy topics.",
+   "start": 2.53,
+   "end": 10.738,
+   "words": [
+    {
+     "text": "A,",
+     "start": 2.53,
+     "end": 4.08
+    },
+    {
+     "text": "colour-coded",
+     "start": 4.22,
+     "end": 4.604
+    },
+    {
+     "text": "timetable,",
+     "start": 4.604,
+     "end": 4.93
+    },
+    {
+     "text": "abandoned",
+     "start": 5.03,
+     "end": 5.245
+    },
+    {
+     "text": "by",
+     "start": 5.245,
+     "end": 5.324
+    },
+    {
+     "text": "Thursday.",
+     "start": 5.324,
+     "end": 5.52
+    },
+    {
+     "text": "B,",
+     "start": 5.97,
+     "end": 6.21
+    },
+    {
+     "text": "I'll",
+     "start": 6.33,
+     "end": 6.561
+    },
+    {
+     "text": "start",
+     "start": 6.561,
+     "end": 6.884
+    },
+    {
+     "text": "after",
+     "start": 6.884,
+     "end": 7.207
+    },
+    {
+     "text": "mocks.",
+     "start": 7.207,
+     "end": 7.53
+    },
+    {
+     "text": "C,",
+     "start": 7.91,
+     "end": 9.1
+    },
+    {
+     "text": "revising,",
+     "start": 9.24,
+     "end": 10.42
+    },
+    {
+     "text": "but",
+     "start": 10.51,
+     "end": 10.548
+    },
+    {
+     "text": "only",
+     "start": 10.548,
+     "end": 10.593
+    },
+    {
+     "text": "the",
+     "start": 10.593,
+     "end": 10.631
+    },
+    {
+     "text": "easy",
+     "start": 10.631,
+     "end": 10.677
+    },
+    {
+     "text": "topics.",
+     "start": 10.677,
+     "end": 10.738
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Comment your letter. Then here's the fix for all three.",
+   "start": 11.538,
+   "end": 14.729,
+   "words": [
+    {
+     "text": "Comment",
+     "start": 11.538,
+     "end": 11.952
+    },
+    {
+     "text": "your",
+     "start": 11.952,
+     "end": 12.229
+    },
+    {
+     "text": "letter.",
+     "start": 12.229,
+     "end": 12.598
+    },
+    {
+     "text": "Then",
+     "start": 12.888,
+     "end": 13.164
+    },
+    {
+     "text": "here's",
+     "start": 13.164,
+     "end": 13.486
+    },
+    {
+     "text": "the",
+     "start": 13.486,
+     "end": 13.716
+    },
+    {
+     "text": "fix",
+     "start": 13.716,
+     "end": 13.946
+    },
+    {
+     "text": "for",
+     "start": 13.946,
+     "end": 14.176
+    },
+    {
+     "text": "all",
+     "start": 14.176,
+     "end": 14.407
+    },
+    {
+     "text": "three.",
+     "start": 14.407,
+     "end": 14.729
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Offload holds the plan, and moves the work when you miss a day. Get a card wrong, and it comes back sooner.",
+   "start": 15.009,
+   "end": 21.275,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 15.009,
+     "end": 15.452
+    },
+    {
+     "text": "holds",
+     "start": 15.452,
+     "end": 15.797
+    },
+    {
+     "text": "the",
+     "start": 15.797,
+     "end": 16.043
+    },
+    {
+     "text": "plan,",
+     "start": 16.043,
+     "end": 16.339
+    },
+    {
+     "text": "and",
+     "start": 16.539,
+     "end": 16.719
+    },
+    {
+     "text": "moves",
+     "start": 16.719,
+     "end": 16.971
+    },
+    {
+     "text": "the",
+     "start": 16.971,
+     "end": 17.151
+    },
+    {
+     "text": "work",
+     "start": 17.151,
+     "end": 17.368
+    },
+    {
+     "text": "when",
+     "start": 17.368,
+     "end": 17.584
+    },
+    {
+     "text": "you",
+     "start": 17.584,
+     "end": 17.764
+    },
+    {
+     "text": "miss",
+     "start": 17.764,
+     "end": 17.98
+    },
+    {
+     "text": "a",
+     "start": 17.98,
+     "end": 18.089
+    },
+    {
+     "text": "day.",
+     "start": 18.089,
+     "end": 18.269
+    },
+    {
+     "text": "Get",
+     "start": 18.809,
+     "end": 19.045
+    },
+    {
+     "text": "a",
+     "start": 19.045,
+     "end": 19.186
+    },
+    {
+     "text": "card",
+     "start": 19.186,
+     "end": 19.469
+    },
+    {
+     "text": "wrong,",
+     "start": 19.469,
+     "end": 19.799
+    },
+    {
+     "text": "and",
+     "start": 20.029,
+     "end": 20.236
+    },
+    {
+     "text": "it",
+     "start": 20.236,
+     "end": 20.403
+    },
+    {
+     "text": "comes",
+     "start": 20.403,
+     "end": 20.693
+    },
+    {
+     "text": "back",
+     "start": 20.693,
+     "end": 20.943
+    },
+    {
+     "text": "sooner.",
+     "start": 20.943,
+     "end": 21.275
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 21.775,
+   "end": 25.607,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 21.775,
+     "end": 23.425
+    },
+    {
+     "text": "A",
+     "start": 23.645,
+     "end": 23.745
+    },
+    {
+     "text": "study",
+     "start": 23.745,
+     "end": 23.977
+    },
+    {
+     "text": "system",
+     "start": 23.977,
+     "end": 24.244
+    },
+    {
+     "text": "that",
+     "start": 24.244,
+     "end": 24.443
+    },
+    {
+     "text": "adapts",
+     "start": 24.443,
+     "end": 24.709
+    },
+    {
+     "text": "when",
+     "start": 24.709,
+     "end": 24.909
+    },
+    {
+     "text": "real",
+     "start": 24.909,
+     "end": 25.108
+    },
+    {
+     "text": "life",
+     "start": 25.108,
+     "end": 25.308
+    },
+    {
+     "text": "happens.",
+     "start": 25.308,
+     "end": 25.607
+    }
+   ]
+  }
+ ]
+}

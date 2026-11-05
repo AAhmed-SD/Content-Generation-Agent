@@ -1,0 +1,51 @@
+{
+ "handle": "offload.mentalhealth",
+ "slides": [
+  {
+   "kind": "photo",
+   "props": {
+    "plate": "calendar",
+    "script": "The afternoon\ndisappeared.",
+    "inCircle": "Next\nblock"
+   }
+  },
+  {
+   "kind": "point",
+   "kicker": "It happens",
+   "head": "You sat down to start. You looked up, and it was evening.",
+   "body": "Not because you didn't care."
+  },
+  {
+   "kind": "point",
+   "kicker": "Why",
+   "head": "A day with too many starts is hard to hold on your own.",
+   "note": "Too many starts.\nNot too little effort."
+  },
+  {
+   "kind": "point",
+   "kicker": "Try this",
+   "head": "Make it one block.",
+   "body": "Not the whole week. Just the next thing."
+  },
+  {
+   "kind": "list",
+   "title": "Offload holds\nthe plan.",
+   "rows": [
+    {
+     "text": "Open it, and it tells you what to do today."
+    },
+    {
+     "text": "Miss a day, and it moves the work, and tells you what moved."
+    },
+    {
+     "text": "So you never start from zero."
+    }
+   ]
+  },
+  {
+   "kind": "end",
+   "lead": "Want to try it?",
+   "pill": "Search Offload"
+  }
+ ]
+}

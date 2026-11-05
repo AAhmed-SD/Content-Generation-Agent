@@ -1,0 +1,33 @@
+{
+ "id": "bank/clinical-placement-poll",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Placement week. Be honest. What's winning?"
+  },
+  {
+   "id": "L2",
+   "say": "A, placement. B, revision. Comment your letter.",
+   "after": 1.0
+  },
+  {
+   "id": "L3",
+   "say": "It shouldn't be a fight. Offload plans around your shifts, once they're in your Google Calendar."
+  },
+  {
+   "id": "L4",
+   "say": "Miss a day, and it moves the work into your free time, and tells you what moved.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

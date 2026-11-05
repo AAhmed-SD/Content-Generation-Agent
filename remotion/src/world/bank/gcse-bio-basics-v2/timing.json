@@ -1,0 +1,328 @@
+{
+ "duration": 26.036,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Two biology questions that trip people up every year.",
+   "start": 0.15,
+   "end": 3.443,
+   "words": [
+    {
+     "text": "Two",
+     "start": 0.15,
+     "end": 0.416
+    },
+    {
+     "text": "biology",
+     "start": 0.416,
+     "end": 0.894
+    },
+    {
+     "text": "questions",
+     "start": 0.894,
+     "end": 1.478
+    },
+    {
+     "text": "that",
+     "start": 1.478,
+     "end": 1.797
+    },
+    {
+     "text": "trip",
+     "start": 1.797,
+     "end": 2.115
+    },
+    {
+     "text": "people",
+     "start": 2.115,
+     "end": 2.54
+    },
+    {
+     "text": "up",
+     "start": 2.54,
+     "end": 2.753
+    },
+    {
+     "text": "every",
+     "start": 2.753,
+     "end": 3.125
+    },
+    {
+     "text": "year.",
+     "start": 3.125,
+     "end": 3.443
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Where are proteins made?",
+   "start": 3.703,
+   "end": 5.349,
+   "words": [
+    {
+     "text": "Where",
+     "start": 3.703,
+     "end": 4.115
+    },
+    {
+     "text": "are",
+     "start": 4.115,
+     "end": 4.409
+    },
+    {
+     "text": "proteins",
+     "start": 4.409,
+     "end": 4.997
+    },
+    {
+     "text": "made?",
+     "start": 4.997,
+     "end": 5.349
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Ribosomes. Not the nucleus. The nucleus just holds the instructions.",
+   "start": 6.949,
+   "end": 11.193,
+   "words": [
+    {
+     "text": "Ribosomes.",
+     "start": 6.949,
+     "end": 7.889
+    },
+    {
+     "text": "Not",
+     "start": 7.979,
+     "end": 8.156
+    },
+    {
+     "text": "the",
+     "start": 8.156,
+     "end": 8.332
+    },
+    {
+     "text": "nucleus.",
+     "start": 8.332,
+     "end": 8.649
+    },
+    {
+     "text": "The",
+     "start": 8.919,
+     "end": 9.166
+    },
+    {
+     "text": "nucleus",
+     "start": 9.166,
+     "end": 9.611
+    },
+    {
+     "text": "just",
+     "start": 9.611,
+     "end": 9.908
+    },
+    {
+     "text": "holds",
+     "start": 9.908,
+     "end": 10.254
+    },
+    {
+     "text": "the",
+     "start": 10.254,
+     "end": 10.501
+    },
+    {
+     "text": "instructions.",
+     "start": 10.501,
+     "end": 11.193
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Respiration makes energy. True or false?",
+   "start": 11.453,
+   "end": 14.13,
+   "words": [
+    {
+     "text": "Respiration",
+     "start": 11.453,
+     "end": 12.39
+    },
+    {
+     "text": "makes",
+     "start": 12.39,
+     "end": 12.895
+    },
+    {
+     "text": "energy.",
+     "start": 12.895,
+     "end": 13.473
+    },
+    {
+     "text": "True",
+     "start": 13.593,
+     "end": 13.782
+    },
+    {
+     "text": "or",
+     "start": 13.782,
+     "end": 13.909
+    },
+    {
+     "text": "false?",
+     "start": 13.909,
+     "end": 14.13
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "False. It releases energy. Energy is never made, only moved around.",
+   "start": 15.73,
+   "end": 20.103,
+   "words": [
+    {
+     "text": "False.",
+     "start": 15.73,
+     "end": 16.78
+    },
+    {
+     "text": "It",
+     "start": 16.87,
+     "end": 16.955
+    },
+    {
+     "text": "releases",
+     "start": 16.955,
+     "end": 17.169
+    },
+    {
+     "text": "energy.",
+     "start": 17.169,
+     "end": 17.34
+    },
+    {
+     "text": "Energy",
+     "start": 17.62,
+     "end": 17.997
+    },
+    {
+     "text": "is",
+     "start": 17.997,
+     "end": 18.186
+    },
+    {
+     "text": "never",
+     "start": 18.186,
+     "end": 18.516
+    },
+    {
+     "text": "made,",
+     "start": 18.516,
+     "end": 18.8
+    },
+    {
+     "text": "only",
+     "start": 18.89,
+     "end": 19.236
+    },
+    {
+     "text": "moved",
+     "start": 19.236,
+     "end": 19.641
+    },
+    {
+     "text": "around.",
+     "start": 19.641,
+     "end": 20.103
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "The app quizzes you like this, on your own notes. Got both? Part two's harder.",
+   "start": 20.363,
+   "end": 24.436,
+   "words": [
+    {
+     "text": "The",
+     "start": 20.363,
+     "end": 20.404
+    },
+    {
+     "text": "app",
+     "start": 20.404,
+     "end": 20.444
+    },
+    {
+     "text": "quizzes",
+     "start": 20.444,
+     "end": 20.517
+    },
+    {
+     "text": "you",
+     "start": 20.517,
+     "end": 20.557
+    },
+    {
+     "text": "like",
+     "start": 20.557,
+     "end": 20.605
+    },
+    {
+     "text": "this,",
+     "start": 20.605,
+     "end": 20.653
+    },
+    {
+     "text": "on",
+     "start": 20.784,
+     "end": 21.114
+    },
+    {
+     "text": "your",
+     "start": 21.114,
+     "end": 21.611
+    },
+    {
+     "text": "own",
+     "start": 21.611,
+     "end": 22.024
+    },
+    {
+     "text": "notes.",
+     "start": 22.024,
+     "end": 22.603
+    },
+    {
+     "text": "Got",
+     "start": 22.753,
+     "end": 22.972
+    },
+    {
+     "text": "both?",
+     "start": 22.972,
+     "end": 23.233
+    },
+    {
+     "text": "Part",
+     "start": 23.403,
+     "end": 23.713
+    },
+    {
+     "text": "two's",
+     "start": 23.713,
+     "end": 24.023
+    },
+    {
+     "text": "harder.",
+     "start": 24.023,
+     "end": 24.436
+    }
+   ]
+  }
+ ]
+}

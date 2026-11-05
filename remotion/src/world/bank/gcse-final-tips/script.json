@@ -1,0 +1,33 @@
+{
+ "id": "bank/gcse-final-tips",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Final tip before your mocks. The one most people skip."
+  },
+  {
+   "id": "L2",
+   "say": "The night before, do you reread your notes, or test yourself?",
+   "after": 1.6
+  },
+  {
+   "id": "L3",
+   "say": "Test yourself. Rereading feels better on the day, but testing is what lasts."
+  },
+  {
+   "id": "L4",
+   "say": "Offload does blurting from your own notes. You write it all down, then it shows you the gaps.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

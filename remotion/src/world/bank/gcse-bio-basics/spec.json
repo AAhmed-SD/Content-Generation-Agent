@@ -1,0 +1,75 @@
+{
+ "id": "gcse-bio-basics",
+ "end": {
+  "lead": "Want to try it?",
+  "pill": "Search Offload"
+ },
+ "hi": {
+  "basics": "blue",
+  "ribosomes": "blue",
+  "releases": "blue",
+  "wrong": "problem",
+  "sooner": "blue"
+ },
+ "pill": {
+  "at": "L6@-0.2",
+  "until": "L6:questions@0.2",
+  "sub": "builds the questions"
+ },
+ "scenes": [
+  {
+   "type": "stack",
+   "at": "L1"
+  },
+  {
+   "type": "choice",
+   "at": "L2",
+   "deck": "Biology · Test",
+   "q": "Where are proteins made in a cell?",
+   "options": [
+    "The nucleus",
+    "Ribosomes",
+    "Mitochondria"
+   ],
+   "answer": 1,
+   "reveal": "L3@-0.15"
+  },
+  {
+   "type": "choice",
+   "at": "L4",
+   "deck": "Biology · Test",
+   "q": "True or false: respiration makes energy.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer": 1,
+   "reveal": "L5@-0.15"
+  },
+  {
+   "type": "doc",
+   "title": "Your Test deck",
+   "sub": "From your notes",
+   "rows": [
+    {
+     "label": "Protein synthesis",
+     "chip": "Test",
+     "chipTone": "grey"
+    },
+    {
+     "label": "Respiration",
+     "chip": "Test",
+     "chipTone": "grey",
+     "cross": "L6:wrong"
+    },
+    {
+     "label": "Comes back sooner",
+     "chip": "Due",
+     "chipTone": "ink",
+     "inAt": "L6:sooner"
+    }
+   ],
+   "at": "L6:questions@0.25"
+  }
+ ]
+}

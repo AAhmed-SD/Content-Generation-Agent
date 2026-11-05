@@ -1,0 +1,80 @@
+{
+ "id": "clinical-next-question",
+ "end": {
+  "lead": "Free trial",
+  "pill": "Link in bio"
+ },
+ "hi": {
+  "autonomic": "blue",
+  "trap": "problem",
+  "wrong": "problem",
+  "sooner": "blue"
+ },
+ "pill": {
+  "at": "L4:offload@-0.2",
+  "until": "L4:card@-0.25",
+  "sub": "builds the test"
+ },
+ "floods": [
+  {
+   "in": "L3:that's@-0.12",
+   "out": "L4@-0.15",
+   "colour": "problem",
+   "lines": [
+    {
+     "line": "L3",
+     "text": "That's the"
+    },
+    {
+     "line": "L3",
+     "text": "trap."
+    }
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "type": "stack",
+   "at": "L1"
+  },
+  {
+   "type": "choice",
+   "at": "L2",
+   "deck": "Anatomy · Test",
+   "q": "The internal urethral sphincter is…",
+   "options": [
+    "Autonomic",
+    "Somatic"
+   ],
+   "answer": 0,
+   "reveal": "L3@-0.15",
+   "comment": "Comment if you got it"
+  },
+  {
+   "type": "doc",
+   "title": "Your Test deck",
+   "sub": "From your lecture notes",
+   "rows": [
+    {
+     "label": "Internal sphincter",
+     "chip": "Test",
+     "chipTone": "grey",
+     "cross": "L4:card"
+    },
+    {
+     "label": "Comes back sooner",
+     "chip": "Due",
+     "chipTone": "ink",
+     "inAt": "L4:sooner"
+    },
+    {
+     "label": "Built from your notes",
+     "chip": "Source",
+     "chipTone": "grey",
+     "inAt": "L4:notes"
+    }
+   ],
+   "at": "L4:card@-0.2"
+  }
+ ]
+}

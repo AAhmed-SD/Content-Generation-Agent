@@ -1,0 +1,34 @@
+{
+ "id": "bank/analytical-chatgpt-v2",
+ "voice": "bm_daniel*0.5+bm_lewis*0.5",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "ChatGPT can do your problem sheet. It can't come into the exam with you."
+  },
+  {
+   "id": "L2",
+   "say": "So which actually helps? A, reading the worked solution. B, explaining the method to a blank page.",
+   "after": 1.6
+  },
+  {
+   "id": "L3",
+   "say": "B. Reading it feels like learning. Explaining it is learning. That's the testing effect."
+  },
+  {
+   "id": "L4",
+   "say": "The app gives you the prompt. You explain it in your own words.",
+   "after": 0.4
+  },
+  {
+   "id": "L5",
+   "say": "Try it now. Explain the chain rule out loud. Go.",
+   "after": 1.0
+  }
+ ]
+}

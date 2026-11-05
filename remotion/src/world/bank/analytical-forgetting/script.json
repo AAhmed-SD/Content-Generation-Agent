@@ -1,0 +1,36 @@
+{
+ "id": "bank/analytical-forgetting",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "You don't have a maths problem. You have a forgetting problem."
+  },
+  {
+   "id": "L2",
+   "say": "Second year makes no sense, because first year's methods have faded."
+  },
+  {
+   "id": "L3",
+   "say": "Memory fades fast after you learn something. Reviewing it just before it fades makes it last. It's called spacing."
+  },
+  {
+   "id": "L4",
+   "say": "Offload builds flashcards from your own module notes, and brings each one back right before you'd forget it."
+  },
+  {
+   "id": "L5",
+   "say": "So the foundations keep coming back, not just this week's topic.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

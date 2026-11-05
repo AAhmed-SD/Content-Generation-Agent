@@ -1,0 +1,398 @@
+{
+ "duration": 24.599,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Missed a few days of revision, and now it feels pointless to start again?",
+   "start": 0.15,
+   "end": 4.305,
+   "words": [
+    {
+     "text": "Missed",
+     "start": 0.15,
+     "end": 0.481
+    },
+    {
+     "text": "a",
+     "start": 0.481,
+     "end": 0.605
+    },
+    {
+     "text": "few",
+     "start": 0.605,
+     "end": 0.812
+    },
+    {
+     "text": "days",
+     "start": 0.812,
+     "end": 1.061
+    },
+    {
+     "text": "of",
+     "start": 1.061,
+     "end": 1.226
+    },
+    {
+     "text": "revision,",
+     "start": 1.226,
+     "end": 1.64
+    },
+    {
+     "text": "and",
+     "start": 1.96,
+     "end": 2.195
+    },
+    {
+     "text": "now",
+     "start": 2.195,
+     "end": 2.429
+    },
+    {
+     "text": "it",
+     "start": 2.429,
+     "end": 2.617
+    },
+    {
+     "text": "feels",
+     "start": 2.617,
+     "end": 2.945
+    },
+    {
+     "text": "pointless",
+     "start": 2.945,
+     "end": 3.461
+    },
+    {
+     "text": "to",
+     "start": 3.461,
+     "end": 3.649
+    },
+    {
+     "text": "start",
+     "start": 3.649,
+     "end": 3.977
+    },
+    {
+     "text": "again?",
+     "start": 3.977,
+     "end": 4.305
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "So you make a brand new plan. From day one. Again.",
+   "start": 4.585,
+   "end": 7.965,
+   "words": [
+    {
+     "text": "So",
+     "start": 4.585,
+     "end": 4.754
+    },
+    {
+     "text": "you",
+     "start": 4.754,
+     "end": 4.965
+    },
+    {
+     "text": "make",
+     "start": 4.965,
+     "end": 5.219
+    },
+    {
+     "text": "a",
+     "start": 5.219,
+     "end": 5.345
+    },
+    {
+     "text": "brand",
+     "start": 5.345,
+     "end": 5.641
+    },
+    {
+     "text": "new",
+     "start": 5.641,
+     "end": 5.852
+    },
+    {
+     "text": "plan.",
+     "start": 5.852,
+     "end": 6.105
+    },
+    {
+     "text": "From",
+     "start": 6.335,
+     "end": 6.605
+    },
+    {
+     "text": "day",
+     "start": 6.605,
+     "end": 6.83
+    },
+    {
+     "text": "one.",
+     "start": 6.83,
+     "end": 7.055
+    },
+    {
+     "text": "Again.",
+     "start": 7.425,
+     "end": 7.965
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Offload doesn't make you start over.",
+   "start": 8.245,
+   "end": 10.349,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 8.245,
+     "end": 8.707
+    },
+    {
+     "text": "doesn't",
+     "start": 8.707,
+     "end": 9.117
+    },
+    {
+     "text": "make",
+     "start": 9.117,
+     "end": 9.425
+    },
+    {
+     "text": "you",
+     "start": 9.425,
+     "end": 9.682
+    },
+    {
+     "text": "start",
+     "start": 9.682,
+     "end": 10.041
+    },
+    {
+     "text": "over.",
+     "start": 10.041,
+     "end": 10.349
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Miss a day, and it moves the work into your free time, and tells you what moved.",
+   "start": 10.629,
+   "end": 15.041,
+   "words": [
+    {
+     "text": "Miss",
+     "start": 10.629,
+     "end": 10.899
+    },
+    {
+     "text": "a",
+     "start": 10.899,
+     "end": 11.034
+    },
+    {
+     "text": "day,",
+     "start": 11.034,
+     "end": 11.259
+    },
+    {
+     "text": "and",
+     "start": 11.389,
+     "end": 11.581
+    },
+    {
+     "text": "it",
+     "start": 11.581,
+     "end": 11.735
+    },
+    {
+     "text": "moves",
+     "start": 11.735,
+     "end": 12.004
+    },
+    {
+     "text": "the",
+     "start": 12.004,
+     "end": 12.196
+    },
+    {
+     "text": "work",
+     "start": 12.196,
+     "end": 12.427
+    },
+    {
+     "text": "into",
+     "start": 12.427,
+     "end": 12.657
+    },
+    {
+     "text": "your",
+     "start": 12.657,
+     "end": 12.888
+    },
+    {
+     "text": "free",
+     "start": 12.888,
+     "end": 13.118
+    },
+    {
+     "text": "time,",
+     "start": 13.118,
+     "end": 13.349
+    },
+    {
+     "text": "and",
+     "start": 13.669,
+     "end": 13.898
+    },
+    {
+     "text": "tells",
+     "start": 13.898,
+     "end": 14.218
+    },
+    {
+     "text": "you",
+     "start": 14.218,
+     "end": 14.446
+    },
+    {
+     "text": "what",
+     "start": 14.446,
+     "end": 14.72
+    },
+    {
+     "text": "moved.",
+     "start": 14.72,
+     "end": 15.041
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Come back after a bad week, and your calendar's already sorted.",
+   "start": 15.321,
+   "end": 18.987,
+   "words": [
+    {
+     "text": "Come",
+     "start": 15.321,
+     "end": 15.582
+    },
+    {
+     "text": "back",
+     "start": 15.582,
+     "end": 15.844
+    },
+    {
+     "text": "after",
+     "start": 15.844,
+     "end": 16.15
+    },
+    {
+     "text": "a",
+     "start": 16.15,
+     "end": 16.281
+    },
+    {
+     "text": "bad",
+     "start": 16.281,
+     "end": 16.499
+    },
+    {
+     "text": "week,",
+     "start": 16.499,
+     "end": 16.761
+    },
+    {
+     "text": "and",
+     "start": 17.091,
+     "end": 17.334
+    },
+    {
+     "text": "your",
+     "start": 17.334,
+     "end": 17.625
+    },
+    {
+     "text": "calendar's",
+     "start": 17.625,
+     "end": 18.16
+    },
+    {
+     "text": "already",
+     "start": 18.16,
+     "end": 18.598
+    },
+    {
+     "text": "sorted.",
+     "start": 18.598,
+     "end": 18.987
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 19.487,
+   "end": 23.319,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 19.487,
+     "end": 21.137
+    },
+    {
+     "text": "A",
+     "start": 21.357,
+     "end": 21.457
+    },
+    {
+     "text": "study",
+     "start": 21.457,
+     "end": 21.689
+    },
+    {
+     "text": "system",
+     "start": 21.689,
+     "end": 21.955
+    },
+    {
+     "text": "that",
+     "start": 21.955,
+     "end": 22.155
+    },
+    {
+     "text": "adapts",
+     "start": 22.155,
+     "end": 22.421
+    },
+    {
+     "text": "when",
+     "start": 22.421,
+     "end": 22.621
+    },
+    {
+     "text": "real",
+     "start": 22.621,
+     "end": 22.82
+    },
+    {
+     "text": "life",
+     "start": 22.82,
+     "end": 23.02
+    },
+    {
+     "text": "happens.",
+     "start": 23.02,
+     "end": 23.319
+    }
+   ]
+  }
+ ]
+}

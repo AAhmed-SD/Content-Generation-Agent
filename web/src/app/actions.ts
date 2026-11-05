@@ -363,3 +363,11 @@ export async function saveLoopLesson(formData: FormData) {
   revalidatePath("/desk/loop");
   redirect("/desk/loop");
 }
+
+export async function collectSignals() {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const { startRun } = await import("@/lib/signals");
+  startRun();
+  revalidatePath("/desk/signals");
+}

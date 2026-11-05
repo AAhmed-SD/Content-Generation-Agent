@@ -1,0 +1,373 @@
+{
+ "duration": 24.391,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Which one wrecks your day the most?",
+   "start": 0.15,
+   "end": 1.735,
+   "words": [
+    {
+     "text": "Which",
+     "start": 0.15,
+     "end": 0.414
+    },
+    {
+     "text": "one",
+     "start": 0.414,
+     "end": 0.603
+    },
+    {
+     "text": "wrecks",
+     "start": 0.603,
+     "end": 0.905
+    },
+    {
+     "text": "your",
+     "start": 0.905,
+     "end": 1.131
+    },
+    {
+     "text": "day",
+     "start": 1.131,
+     "end": 1.32
+    },
+    {
+     "text": "the",
+     "start": 1.32,
+     "end": 1.509
+    },
+    {
+     "text": "most?",
+     "start": 1.509,
+     "end": 1.735
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "A, starting. B, switching between things. C, remembering what's next.",
+   "start": 2.015,
+   "end": 6.238,
+   "words": [
+    {
+     "text": "A,",
+     "start": 2.015,
+     "end": 2.189
+    },
+    {
+     "text": "starting.",
+     "start": 2.189,
+     "end": 2.767
+    },
+    {
+     "text": "B,",
+     "start": 2.767,
+     "end": 2.941
+    },
+    {
+     "text": "switching",
+     "start": 2.941,
+     "end": 3.577
+    },
+    {
+     "text": "between",
+     "start": 3.577,
+     "end": 4.098
+    },
+    {
+     "text": "things.",
+     "start": 4.098,
+     "end": 4.561
+    },
+    {
+     "text": "C,",
+     "start": 4.561,
+     "end": 4.734
+    },
+    {
+     "text": "remembering",
+     "start": 4.734,
+     "end": 5.486
+    },
+    {
+     "text": "what's",
+     "start": 5.486,
+     "end": 5.891
+    },
+    {
+     "text": "next.",
+     "start": 5.891,
+     "end": 6.238
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Comment your letter. Whichever it is, it's too many starts, not too little effort.",
+   "start": 7.038,
+   "end": 11.282,
+   "words": [
+    {
+     "text": "Comment",
+     "start": 7.038,
+     "end": 7.398
+    },
+    {
+     "text": "your",
+     "start": 7.398,
+     "end": 7.638
+    },
+    {
+     "text": "letter.",
+     "start": 7.638,
+     "end": 7.958
+    },
+    {
+     "text": "Whichever",
+     "start": 8.388,
+     "end": 9.564
+    },
+    {
+     "text": "it",
+     "start": 9.564,
+     "end": 9.991
+    },
+    {
+     "text": "is,",
+     "start": 9.991,
+     "end": 10.418
+    },
+    {
+     "text": "it's",
+     "start": 10.488,
+     "end": 10.582
+    },
+    {
+     "text": "too",
+     "start": 10.582,
+     "end": 10.676
+    },
+    {
+     "text": "many",
+     "start": 10.676,
+     "end": 10.788
+    },
+    {
+     "text": "starts,",
+     "start": 10.788,
+     "end": 10.938
+    },
+    {
+     "text": "not",
+     "start": 11.028,
+     "end": 11.077
+    },
+    {
+     "text": "too",
+     "start": 11.077,
+     "end": 11.126
+    },
+    {
+     "text": "little",
+     "start": 11.126,
+     "end": 11.204
+    },
+    {
+     "text": "effort.",
+     "start": 11.204,
+     "end": 11.282
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Offload holds the plan. Miss a day, and it moves the work, and tells you what moved.",
+   "start": 12.182,
+   "end": 17.048,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 12.182,
+     "end": 12.605
+    },
+    {
+     "text": "holds",
+     "start": 12.605,
+     "end": 12.935
+    },
+    {
+     "text": "the",
+     "start": 12.935,
+     "end": 13.17
+    },
+    {
+     "text": "plan.",
+     "start": 13.17,
+     "end": 13.452
+    },
+    {
+     "text": "Miss",
+     "start": 13.962,
+     "end": 14.245
+    },
+    {
+     "text": "a",
+     "start": 14.245,
+     "end": 14.386
+    },
+    {
+     "text": "day,",
+     "start": 14.386,
+     "end": 14.622
+    },
+    {
+     "text": "and",
+     "start": 14.772,
+     "end": 14.944
+    },
+    {
+     "text": "it",
+     "start": 14.944,
+     "end": 15.082
+    },
+    {
+     "text": "moves",
+     "start": 15.082,
+     "end": 15.323
+    },
+    {
+     "text": "the",
+     "start": 15.323,
+     "end": 15.495
+    },
+    {
+     "text": "work,",
+     "start": 15.495,
+     "end": 15.702
+    },
+    {
+     "text": "and",
+     "start": 15.802,
+     "end": 16.01
+    },
+    {
+     "text": "tells",
+     "start": 16.01,
+     "end": 16.3
+    },
+    {
+     "text": "you",
+     "start": 16.3,
+     "end": 16.508
+    },
+    {
+     "text": "what",
+     "start": 16.508,
+     "end": 16.757
+    },
+    {
+     "text": "moved.",
+     "start": 16.757,
+     "end": 17.048
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "So you never start from zero.",
+   "start": 17.548,
+   "end": 19.15,
+   "words": [
+    {
+     "text": "So",
+     "start": 17.548,
+     "end": 17.731
+    },
+    {
+     "text": "you",
+     "start": 17.731,
+     "end": 17.96
+    },
+    {
+     "text": "never",
+     "start": 17.96,
+     "end": 18.28
+    },
+    {
+     "text": "start",
+     "start": 18.28,
+     "end": 18.6
+    },
+    {
+     "text": "from",
+     "start": 18.6,
+     "end": 18.875
+    },
+    {
+     "text": "zero.",
+     "start": 18.875,
+     "end": 19.15
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 19.55,
+   "end": 23.111,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 19.55,
+     "end": 20.04
+    },
+    {
+     "text": "A",
+     "start": 20.42,
+     "end": 20.557
+    },
+    {
+     "text": "study",
+     "start": 20.557,
+     "end": 20.876
+    },
+    {
+     "text": "system",
+     "start": 20.876,
+     "end": 21.241
+    },
+    {
+     "text": "that",
+     "start": 21.241,
+     "end": 21.515
+    },
+    {
+     "text": "adapts",
+     "start": 21.515,
+     "end": 21.879
+    },
+    {
+     "text": "when",
+     "start": 21.879,
+     "end": 22.153
+    },
+    {
+     "text": "real",
+     "start": 22.153,
+     "end": 22.427
+    },
+    {
+     "text": "life",
+     "start": 22.427,
+     "end": 22.7
+    },
+    {
+     "text": "happens.",
+     "start": 22.7,
+     "end": 23.111
+    }
+   ]
+  }
+ ]
+}

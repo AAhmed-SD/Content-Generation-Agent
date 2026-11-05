@@ -1,0 +1,453 @@
+{
+ "duration": 30.843,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "You don't have a maths problem. You have a forgetting problem.",
+   "start": 0.15,
+   "end": 3.311,
+   "words": [
+    {
+     "text": "You",
+     "start": 0.15,
+     "end": 0.35
+    },
+    {
+     "text": "don't",
+     "start": 0.35,
+     "end": 0.59
+    },
+    {
+     "text": "have",
+     "start": 0.59,
+     "end": 0.83
+    },
+    {
+     "text": "a",
+     "start": 0.83,
+     "end": 0.95
+    },
+    {
+     "text": "maths",
+     "start": 0.95,
+     "end": 1.23
+    },
+    {
+     "text": "problem.",
+     "start": 1.23,
+     "end": 1.59
+    },
+    {
+     "text": "You",
+     "start": 1.9,
+     "end": 2.102
+    },
+    {
+     "text": "have",
+     "start": 2.102,
+     "end": 2.344
+    },
+    {
+     "text": "a",
+     "start": 2.344,
+     "end": 2.465
+    },
+    {
+     "text": "forgetting",
+     "start": 2.465,
+     "end": 2.948
+    },
+    {
+     "text": "problem.",
+     "start": 2.948,
+     "end": 3.311
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Second year makes no sense, because first year's methods have faded.",
+   "start": 3.591,
+   "end": 7.569,
+   "words": [
+    {
+     "text": "Second",
+     "start": 3.591,
+     "end": 3.996
+    },
+    {
+     "text": "year",
+     "start": 3.996,
+     "end": 4.3
+    },
+    {
+     "text": "makes",
+     "start": 4.3,
+     "end": 4.654
+    },
+    {
+     "text": "no",
+     "start": 4.654,
+     "end": 4.857
+    },
+    {
+     "text": "sense,",
+     "start": 4.857,
+     "end": 5.211
+    },
+    {
+     "text": "because",
+     "start": 5.521,
+     "end": 5.931
+    },
+    {
+     "text": "first",
+     "start": 5.931,
+     "end": 6.249
+    },
+    {
+     "text": "year's",
+     "start": 6.249,
+     "end": 6.568
+    },
+    {
+     "text": "methods",
+     "start": 6.568,
+     "end": 6.977
+    },
+    {
+     "text": "have",
+     "start": 6.977,
+     "end": 7.25
+    },
+    {
+     "text": "faded.",
+     "start": 7.25,
+     "end": 7.569
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Memory fades fast after you learn something. Reviewing it just before it fades makes it last. It's called spacing.",
+   "start": 7.849,
+   "end": 14.956,
+   "words": [
+    {
+     "text": "Memory",
+     "start": 7.849,
+     "end": 8.23
+    },
+    {
+     "text": "fades",
+     "start": 8.23,
+     "end": 8.564
+    },
+    {
+     "text": "fast",
+     "start": 8.564,
+     "end": 8.85
+    },
+    {
+     "text": "after",
+     "start": 8.85,
+     "end": 9.183
+    },
+    {
+     "text": "you",
+     "start": 9.183,
+     "end": 9.421
+    },
+    {
+     "text": "learn",
+     "start": 9.421,
+     "end": 9.755
+    },
+    {
+     "text": "something.",
+     "start": 9.755,
+     "end": 10.279
+    },
+    {
+     "text": "Reviewing",
+     "start": 10.649,
+     "end": 11.172
+    },
+    {
+     "text": "it",
+     "start": 11.172,
+     "end": 11.362
+    },
+    {
+     "text": "just",
+     "start": 11.362,
+     "end": 11.647
+    },
+    {
+     "text": "before",
+     "start": 11.647,
+     "end": 12.028
+    },
+    {
+     "text": "it",
+     "start": 12.028,
+     "end": 12.218
+    },
+    {
+     "text": "fades",
+     "start": 12.218,
+     "end": 12.551
+    },
+    {
+     "text": "makes",
+     "start": 12.551,
+     "end": 12.883
+    },
+    {
+     "text": "it",
+     "start": 12.883,
+     "end": 13.074
+    },
+    {
+     "text": "last.",
+     "start": 13.074,
+     "end": 13.359
+    },
+    {
+     "text": "It's",
+     "start": 13.749,
+     "end": 14.023
+    },
+    {
+     "text": "called",
+     "start": 14.023,
+     "end": 14.462
+    },
+    {
+     "text": "spacing.",
+     "start": 14.462,
+     "end": 14.956
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Offload builds flashcards from your own module notes, and brings each one back right before you'd forget it.",
+   "start": 15.236,
+   "end": 21.254,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 15.236,
+     "end": 15.67
+    },
+    {
+     "text": "builds",
+     "start": 15.67,
+     "end": 16.055
+    },
+    {
+     "text": "flashcards",
+     "start": 16.055,
+     "end": 16.633
+    },
+    {
+     "text": "from",
+     "start": 16.633,
+     "end": 16.923
+    },
+    {
+     "text": "your",
+     "start": 16.923,
+     "end": 17.212
+    },
+    {
+     "text": "own",
+     "start": 17.212,
+     "end": 17.453
+    },
+    {
+     "text": "module",
+     "start": 17.453,
+     "end": 17.838
+    },
+    {
+     "text": "notes,",
+     "start": 17.838,
+     "end": 18.176
+    },
+    {
+     "text": "and",
+     "start": 18.546,
+     "end": 18.761
+    },
+    {
+     "text": "brings",
+     "start": 18.761,
+     "end": 19.105
+    },
+    {
+     "text": "each",
+     "start": 19.105,
+     "end": 19.363
+    },
+    {
+     "text": "one",
+     "start": 19.363,
+     "end": 19.577
+    },
+    {
+     "text": "back",
+     "start": 19.577,
+     "end": 19.835
+    },
+    {
+     "text": "right",
+     "start": 19.835,
+     "end": 20.136
+    },
+    {
+     "text": "before",
+     "start": 20.136,
+     "end": 20.48
+    },
+    {
+     "text": "you'd",
+     "start": 20.48,
+     "end": 20.738
+    },
+    {
+     "text": "forget",
+     "start": 20.738,
+     "end": 21.082
+    },
+    {
+     "text": "it.",
+     "start": 21.082,
+     "end": 21.254
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "So the foundations keep coming back, not just this week's topic.",
+   "start": 21.534,
+   "end": 25.231,
+   "words": [
+    {
+     "text": "So",
+     "start": 21.534,
+     "end": 21.703
+    },
+    {
+     "text": "the",
+     "start": 21.703,
+     "end": 21.913
+    },
+    {
+     "text": "foundations",
+     "start": 21.913,
+     "end": 22.461
+    },
+    {
+     "text": "keep",
+     "start": 22.461,
+     "end": 22.714
+    },
+    {
+     "text": "coming",
+     "start": 22.714,
+     "end": 23.051
+    },
+    {
+     "text": "back,",
+     "start": 23.051,
+     "end": 23.304
+    },
+    {
+     "text": "not",
+     "start": 23.684,
+     "end": 23.934
+    },
+    {
+     "text": "just",
+     "start": 23.934,
+     "end": 24.233
+    },
+    {
+     "text": "this",
+     "start": 24.233,
+     "end": 24.532
+    },
+    {
+     "text": "week's",
+     "start": 24.532,
+     "end": 24.882
+    },
+    {
+     "text": "topic.",
+     "start": 24.882,
+     "end": 25.231
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 25.731,
+   "end": 29.563,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 25.731,
+     "end": 27.381
+    },
+    {
+     "text": "A",
+     "start": 27.601,
+     "end": 27.701
+    },
+    {
+     "text": "study",
+     "start": 27.701,
+     "end": 27.933
+    },
+    {
+     "text": "system",
+     "start": 27.933,
+     "end": 28.199
+    },
+    {
+     "text": "that",
+     "start": 28.199,
+     "end": 28.399
+    },
+    {
+     "text": "adapts",
+     "start": 28.399,
+     "end": 28.665
+    },
+    {
+     "text": "when",
+     "start": 28.665,
+     "end": 28.865
+    },
+    {
+     "text": "real",
+     "start": 28.865,
+     "end": 29.064
+    },
+    {
+     "text": "life",
+     "start": 29.064,
+     "end": 29.264
+    },
+    {
+     "text": "happens.",
+     "start": 29.264,
+     "end": 29.563
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "gcse-myth-fact",
+ "format": "myth-fact",
+ "rounds": [
+  {
+   "myth": "Rereading your notes the night before your mocks is revision.",
+   "fact": "Familiar isn't the same as remembered.",
+   "mythAt": "L1",
+   "factAt": "L2"
+  },
+  {
+   "myth": "If you can blurt it, you know it.",
+   "fact": "Blurting is half of it. The other half is checking what you missed.",
+   "mythAt": "L3",
+   "factAt": "L4"
+  }
+ ],
+ "reveal": {
+  "at": "L5",
+  "head": "Blurt it. Then see\nthe gaps.",
+  "title": "Your blurt · Cell biology",
+  "rows": [
+   {
+    "text": "Nucleus holds the DNA"
+   },
+   {
+    "text": "Mitochondria: respiration"
+   },
+   {
+    "text": "Ribosomes",
+    "gap": "L5:then@0.2"
+   },
+   {
+    "text": "Cell wall",
+    "gap": "L5:then@0.3"
+   }
+  ]
+ },
+ "loop": {
+  "at": "L6",
+  "myth": "Rereading is revision?",
+  "fact": "Comment which."
+ }
+}

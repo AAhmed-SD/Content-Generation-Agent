@@ -1,0 +1,8 @@
+{
+ "template": "PhotoPoster",
+ "props": {
+  "plate": "calculator",
+  "head": "The problem sheet\nis still open.",
+  "lcd": "Keep the method."
+ }
+}

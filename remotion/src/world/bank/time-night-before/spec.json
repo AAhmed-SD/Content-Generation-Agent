@@ -1,0 +1,83 @@
+{
+ "id": "time-night-before",
+ "end": {
+  "lead": "Want to try it?",
+  "pill": "Search Offload"
+ },
+ "hi": {
+  "starting": "problem",
+  "harder": "problem",
+  "next": "blue"
+ },
+ "pill": {
+  "at": "L4@-0.2",
+  "until": "L4:open@-0.25",
+  "sub": "holds the plan"
+ },
+ "scenes": [
+  {
+   "type": "choice",
+   "at": "L1",
+   "deck": "Be honest",
+   "q": "Do you only start the night before?",
+   "options": [
+    "Always",
+    "Sometimes",
+    "Never (lying)"
+   ],
+   "reveal": "L3:comment@-0.1",
+   "comment": "Comment your letter"
+  },
+  {
+   "type": "doc",
+   "at": "L3:starting@-0.15",
+   "title": "To start",
+   "sub": "All of it, today",
+   "rows": [
+    {
+     "label": "Essay plan",
+     "chip": "Start",
+     "chipTone": "red",
+     "inAt": "L3:starting"
+    },
+    {
+     "label": "Reading",
+     "chip": "Start",
+     "chipTone": "red",
+     "inAt": "L3:hardest"
+    },
+    {
+     "label": "Problem sheet",
+     "chip": "Start",
+     "chipTone": "red",
+     "inAt": "L3:long"
+    },
+    {
+     "label": "Revision",
+     "chip": "Start",
+     "chipTone": "red",
+     "inAt": "L3:harder"
+    }
+   ]
+  },
+  {
+   "type": "doc",
+   "at": "L4:open@-0.15",
+   "title": "Today",
+   "sub": "Just the next block",
+   "rows": [
+    {
+     "label": "Essay plan",
+     "chip": "Next",
+     "chipTone": "ink",
+     "inAt": "L4:next"
+    },
+    {
+     "label": "Reading",
+     "chip": "Later",
+     "chipTone": "grey"
+    }
+   ]
+  }
+ ]
+}

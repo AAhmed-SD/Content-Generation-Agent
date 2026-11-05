@@ -16,3 +16,4 @@ web/public/mediapipe/
 web/public/models/
 __pycache__/
 *.pyc
+web/data/*.jsonl

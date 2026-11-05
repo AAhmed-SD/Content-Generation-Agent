@@ -1,0 +1,10 @@
+{
+ "template": "Poster",
+ "props": {
+  "layout": "grid",
+  "first": "Missed",
+  "arrow": "a day",
+  "last": "It moved.",
+  "body": "The work goes into your free time,\nand it tells you what moved."
+ }
+}

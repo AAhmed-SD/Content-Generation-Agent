@@ -1,0 +1,8 @@
+{
+ "template": "PhotoPoster",
+ "props": {
+  "plate": "calculator",
+  "head": "You followed the\nworked example.",
+  "lcd": "Now do it alone."
+ }
+}

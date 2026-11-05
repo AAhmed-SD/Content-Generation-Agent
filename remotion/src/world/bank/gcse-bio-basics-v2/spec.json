@@ -1,0 +1,64 @@
+{
+ "id": "gcse-bio-basics-v2",
+ "end": {
+  "style": "corner"
+ },
+ "hi": {
+  "ribosomes": "blue",
+  "releases": "blue",
+  "harder": "problem"
+ },
+ "scenes": [
+  {
+   "type": "stack",
+   "at": "L1"
+  },
+  {
+   "type": "choice",
+   "at": "L2",
+   "deck": "Biology · Test",
+   "q": "Where are proteins made?",
+   "options": [
+    "The nucleus",
+    "Ribosomes",
+    "Mitochondria"
+   ],
+   "answer": 1,
+   "reveal": "L3@-0.15"
+  },
+  {
+   "type": "choice",
+   "at": "L4",
+   "deck": "Biology · Test",
+   "q": "Respiration makes energy.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer": 1,
+   "reveal": "L5@-0.15"
+  },
+  {
+   "type": "doc",
+   "at": "L6@-0.1",
+   "title": "Your Test deck",
+   "sub": "From your notes",
+   "rows": [
+    {
+     "label": "Protein synthesis",
+     "tick": "L6:quizzes"
+    },
+    {
+     "label": "Respiration",
+     "tick": "L6:notes"
+    },
+    {
+     "label": "Part two",
+     "chip": "Next",
+     "chipTone": "ink",
+     "inAt": "L6:harder"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "id": "bank/time-rest",
+ "voice": "af_heart*0.7+af_bella*0.3",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "You took the evening off. Now you feel guilty about it."
+  },
+  {
+   "id": "L2",
+   "say": "So tomorrow you try to do double, and it all falls apart again."
+  },
+  {
+   "id": "L3",
+   "say": "Rest isn't the problem. A plan that can't move is."
+  },
+  {
+   "id": "L4",
+   "say": "Miss an evening, and Offload moves the work into your free time, and tells you what moved."
+  },
+  {
+   "id": "L5",
+   "say": "So you never start from zero.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

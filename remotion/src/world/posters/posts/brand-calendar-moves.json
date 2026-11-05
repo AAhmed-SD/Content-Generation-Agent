@@ -1,0 +1,21 @@
+{
+ "template": "Poster",
+ "props": {
+  "layout": "calendar",
+  "days": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu"
+  ],
+  "hot": 1,
+  "first": "Miss a day,",
+  "second": "it moves.",
+  "folders": [
+   "Study",
+   "Review",
+   "Catch up"
+  ],
+  "foot": "tells you\nwhat moved"
+ }
+}

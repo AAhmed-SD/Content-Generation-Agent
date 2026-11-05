@@ -1,0 +1,35 @@
+{
+ "id": "analytical-three-things",
+ "format": "three-things",
+ "title": {
+  "big": "Three\nthings",
+  "sub": "this week, if you've got",
+  "accent": "January exams."
+ },
+ "tips": [
+  {
+   "at": "L2",
+   "head": "Explain it\nout loud."
+  },
+  {
+   "at": "L3",
+   "head": "Mix your\ntopics."
+  },
+  {
+   "at": "L4",
+   "head": "Go back to\nthe first one."
+  }
+ ],
+ "reveal": {
+  "at": "L5",
+  "head": "Offload does",
+  "accent": "number one",
+  "tail": "for you.",
+  "kicker": "Explain it · from your notes",
+  "text": "Explain integration by parts in your own words, as if to someone who missed the lecture."
+ },
+ "punch": {
+  "line": "L6",
+  "text": "nobody does"
+ }
+}

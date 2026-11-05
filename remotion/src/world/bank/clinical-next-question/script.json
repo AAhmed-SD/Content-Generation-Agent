@@ -1,0 +1,34 @@
+{
+ "id": "bank/clinical-next-question",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Med students. Your next exam question. Answer before it flips."
+  },
+  {
+   "id": "L2",
+   "say": "The internal urethral sphincter. Autonomic, or somatic?",
+   "after": 1.6
+  },
+  {
+   "id": "L3",
+   "say": "Autonomic. The external one is the somatic one. That's the trap.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "Get it wrong in Offload, and the card comes back sooner, built from your own lecture notes.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}

@@ -1,0 +1,501 @@
+{
+ "duration": 42.858,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Med students. Two endocrine cards from the Test phase. Answer before they flip.",
+   "start": 0.15,
+   "end": 5.151,
+   "words": [
+    {
+     "text": "Med",
+     "start": 0.15,
+     "end": 0.427
+    },
+    {
+     "text": "students.",
+     "start": 0.427,
+     "end": 0.98
+    },
+    {
+     "text": "Two",
+     "start": 1.21,
+     "end": 1.443
+    },
+    {
+     "text": "endocrine",
+     "start": 1.443,
+     "end": 1.956
+    },
+    {
+     "text": "cards",
+     "start": 1.956,
+     "end": 2.282
+    },
+    {
+     "text": "from",
+     "start": 2.282,
+     "end": 2.561
+    },
+    {
+     "text": "the",
+     "start": 2.561,
+     "end": 2.794
+    },
+    {
+     "text": "Test",
+     "start": 2.794,
+     "end": 3.074
+    },
+    {
+     "text": "phase.",
+     "start": 3.074,
+     "end": 3.4
+    },
+    {
+     "text": "Answer",
+     "start": 3.82,
+     "end": 4.2
+    },
+    {
+     "text": "before",
+     "start": 4.2,
+     "end": 4.58
+    },
+    {
+     "text": "they",
+     "start": 4.58,
+     "end": 4.865
+    },
+    {
+     "text": "flip.",
+     "start": 4.865,
+     "end": 5.151
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Steroid hormones, or amino-acid derivatives. Which ones act over hours?",
+   "start": 5.431,
+   "end": 10.134,
+   "words": [
+    {
+     "text": "Steroid",
+     "start": 5.431,
+     "end": 5.933
+    },
+    {
+     "text": "hormones,",
+     "start": 5.933,
+     "end": 6.491
+    },
+    {
+     "text": "or",
+     "start": 6.651,
+     "end": 6.881
+    },
+    {
+     "text": "amino-acid",
+     "start": 6.881,
+     "end": 7.513
+    },
+    {
+     "text": "derivatives.",
+     "start": 7.513,
+     "end": 8.261
+    },
+    {
+     "text": "Which",
+     "start": 8.661,
+     "end": 8.993
+    },
+    {
+     "text": "ones",
+     "start": 8.993,
+     "end": 9.279
+    },
+    {
+     "text": "act",
+     "start": 9.279,
+     "end": 9.516
+    },
+    {
+     "text": "over",
+     "start": 9.516,
+     "end": 9.802
+    },
+    {
+     "text": "hours?",
+     "start": 9.802,
+     "end": 10.134
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Steroid hormones. They're lipid-soluble, and act over hours. Amino-acid derivatives act in seconds to minutes.",
+   "start": 11.734,
+   "end": 18.955,
+   "words": [
+    {
+     "text": "Steroid",
+     "start": 11.734,
+     "end": 12.274
+    },
+    {
+     "text": "hormones.",
+     "start": 12.274,
+     "end": 12.874
+    },
+    {
+     "text": "They're",
+     "start": 13.234,
+     "end": 13.612
+    },
+    {
+     "text": "lipid-soluble,",
+     "start": 13.612,
+     "end": 14.274
+    },
+    {
+     "text": "and",
+     "start": 14.474,
+     "end": 14.703
+    },
+    {
+     "text": "act",
+     "start": 14.703,
+     "end": 14.931
+    },
+    {
+     "text": "over",
+     "start": 14.931,
+     "end": 15.205
+    },
+    {
+     "text": "hours.",
+     "start": 15.205,
+     "end": 15.524
+    },
+    {
+     "text": "Amino-acid",
+     "start": 15.914,
+     "end": 16.522
+    },
+    {
+     "text": "derivatives",
+     "start": 16.522,
+     "end": 17.241
+    },
+    {
+     "text": "act",
+     "start": 17.241,
+     "end": 17.518
+    },
+    {
+     "text": "in",
+     "start": 17.518,
+     "end": 17.739
+    },
+    {
+     "text": "seconds",
+     "start": 17.739,
+     "end": 18.236
+    },
+    {
+     "text": "to",
+     "start": 18.236,
+     "end": 18.458
+    },
+    {
+     "text": "minutes.",
+     "start": 18.458,
+     "end": 18.955
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Next. How does the posterior pituitary release its hormones?",
+   "start": 19.235,
+   "end": 22.887,
+   "words": [
+    {
+     "text": "Next.",
+     "start": 19.235,
+     "end": 19.615
+    },
+    {
+     "text": "How",
+     "start": 19.805,
+     "end": 20.054
+    },
+    {
+     "text": "does",
+     "start": 20.054,
+     "end": 20.352
+    },
+    {
+     "text": "the",
+     "start": 20.352,
+     "end": 20.6
+    },
+    {
+     "text": "posterior",
+     "start": 20.6,
+     "end": 21.147
+    },
+    {
+     "text": "pituitary",
+     "start": 21.147,
+     "end": 21.694
+    },
+    {
+     "text": "release",
+     "start": 21.694,
+     "end": 22.141
+    },
+    {
+     "text": "its",
+     "start": 22.141,
+     "end": 22.39
+    },
+    {
+     "text": "hormones?",
+     "start": 22.39,
+     "end": 22.887
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Straight into the circulation, by axonal release. Trophic hormones like TSH come from the anterior.",
+   "start": 24.487,
+   "end": 31.209,
+   "words": [
+    {
+     "text": "Straight",
+     "start": 24.487,
+     "end": 24.908
+    },
+    {
+     "text": "into",
+     "start": 24.908,
+     "end": 25.16
+    },
+    {
+     "text": "the",
+     "start": 25.16,
+     "end": 25.37
+    },
+    {
+     "text": "circulation,",
+     "start": 25.37,
+     "end": 25.917
+    },
+    {
+     "text": "by",
+     "start": 26.187,
+     "end": 26.415
+    },
+    {
+     "text": "axonal",
+     "start": 26.415,
+     "end": 26.873
+    },
+    {
+     "text": "release.",
+     "start": 26.873,
+     "end": 27.387
+    },
+    {
+     "text": "Trophic",
+     "start": 27.857,
+     "end": 28.386
+    },
+    {
+     "text": "hormones",
+     "start": 28.386,
+     "end": 28.974
+    },
+    {
+     "text": "like",
+     "start": 28.974,
+     "end": 29.327
+    },
+    {
+     "text": "TSH",
+     "start": 29.327,
+     "end": 29.621
+    },
+    {
+     "text": "come",
+     "start": 29.621,
+     "end": 29.974
+    },
+    {
+     "text": "from",
+     "start": 29.974,
+     "end": 30.327
+    },
+    {
+     "text": "the",
+     "start": 30.327,
+     "end": 30.621
+    },
+    {
+     "text": "anterior.",
+     "start": 30.621,
+     "end": 31.209
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload built both cards from uploaded lecture notes. Get one wrong, and it comes back sooner.",
+   "start": 31.489,
+   "end": 37.246,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 31.489,
+     "end": 31.935
+    },
+    {
+     "text": "built",
+     "start": 31.935,
+     "end": 32.281
+    },
+    {
+     "text": "both",
+     "start": 32.281,
+     "end": 32.578
+    },
+    {
+     "text": "cards",
+     "start": 32.578,
+     "end": 32.925
+    },
+    {
+     "text": "from",
+     "start": 32.925,
+     "end": 33.222
+    },
+    {
+     "text": "uploaded",
+     "start": 33.222,
+     "end": 33.717
+    },
+    {
+     "text": "lecture",
+     "start": 33.717,
+     "end": 34.162
+    },
+    {
+     "text": "notes.",
+     "start": 34.162,
+     "end": 34.509
+    },
+    {
+     "text": "Get",
+     "start": 34.959,
+     "end": 35.18
+    },
+    {
+     "text": "one",
+     "start": 35.18,
+     "end": 35.4
+    },
+    {
+     "text": "wrong,",
+     "start": 35.4,
+     "end": 35.709
+    },
+    {
+     "text": "and",
+     "start": 35.929,
+     "end": 36.148
+    },
+    {
+     "text": "it",
+     "start": 36.148,
+     "end": 36.324
+    },
+    {
+     "text": "comes",
+     "start": 36.324,
+     "end": 36.631
+    },
+    {
+     "text": "back",
+     "start": 36.631,
+     "end": 36.894
+    },
+    {
+     "text": "sooner.",
+     "start": 36.894,
+     "end": 37.246
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Offload. A study system that adapts when real life happens.",
+   "start": 37.746,
+   "end": 41.578,
+   "words": [
+    {
+     "text": "Offload.",
+     "start": 37.746,
+     "end": 39.396
+    },
+    {
+     "text": "A",
+     "start": 39.616,
+     "end": 39.715
+    },
+    {
+     "text": "study",
+     "start": 39.715,
+     "end": 39.948
+    },
+    {
+     "text": "system",
+     "start": 39.948,
+     "end": 40.214
+    },
+    {
+     "text": "that",
+     "start": 40.214,
+     "end": 40.414
+    },
+    {
+     "text": "adapts",
+     "start": 40.414,
+     "end": 40.68
+    },
+    {
+     "text": "when",
+     "start": 40.68,
+     "end": 40.879
+    },
+    {
+     "text": "real",
+     "start": 40.879,
+     "end": 41.079
+    },
+    {
+     "text": "life",
+     "start": 41.079,
+     "end": 41.278
+    },
+    {
+     "text": "happens.",
+     "start": 41.278,
+     "end": 41.578
+    }
+   ]
+  }
+ ]
+}

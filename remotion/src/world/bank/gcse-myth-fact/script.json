@@ -1,0 +1,41 @@
+{
+ "id": "bank/gcse-myth-fact",
+ "voice": "bf_emma*0.6+bf_isabella*0.4",
+ "lang": "en-gb",
+ "speed": 1.05,
+ "gap": 0.25,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Myth. Rereading your notes the night before your mocks is revision.",
+   "after": 0.5
+  },
+  {
+   "id": "L2",
+   "say": "Fact. Rereading feels good because it's familiar. Familiar isn't the same as remembered.",
+   "after": 0.6
+  },
+  {
+   "id": "L3",
+   "say": "Myth. If you can blurt it, you know it.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "Fact. Blurting is only half of it. The other half is checking what you missed.",
+   "after": 0.6
+  },
+  {
+   "id": "L5",
+   "say": "Offload does blurting from your own notes, then shows you the gaps.",
+   "after": 1.4
+  },
+  {
+   "id": "L6",
+   "say": "So. Myth or fact: rereading is revision?",
+   "after": 0.8
+  }
+ ]
+}

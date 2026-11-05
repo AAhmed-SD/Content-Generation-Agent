@@ -1,0 +1,16 @@
+{
+ "template": "PhotoPoster",
+ "props": {
+  "plate": "folder-polaroid",
+  "kicker": "Carousel 01",
+  "handle": "offload.gcsealevel",
+  "head": "Your mocks\nhave a date.",
+  "rows": [
+   "The spec",
+   "The dates",
+   "The plan"
+  ],
+  "foot": "One plan. It moves.",
+  "photo": "Your plan\ncan move."
+ }
+}

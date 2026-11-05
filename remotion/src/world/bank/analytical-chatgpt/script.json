@@ -1,0 +1,33 @@
+{
+ "id": "bank/analytical-chatgpt",
+ "voice": "bm_george*0.6+bm_fable*0.4",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.28,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "ChatGPT will do your problem sheet. It won't sit your exam."
+  },
+  {
+   "id": "L2",
+   "say": "So the night before, what actually helps? A, reading the worked solution. B, explaining the method from a blank page.",
+   "after": 1.6
+  },
+  {
+   "id": "L3",
+   "say": "B. Testing yourself beats rereading. It's called the testing effect."
+  },
+  {
+   "id": "L4",
+   "say": "Offload makes you explain the method in your own words, then gives you exam-style questions on your own module notes.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "Offload. A study system that adapts when real life happens."
+  }
+ ]
+}
