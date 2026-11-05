@@ -1,0 +1,315 @@
+{
+ "duration": 20.843,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Why you blank on the ward round, when you knew it last night.",
+   "start": 0.15,
+   "end": 3.705,
+   "words": [
+    {
+     "text": "Why",
+     "start": 0.15,
+     "end": 0.355
+    },
+    {
+     "text": "you",
+     "start": 0.355,
+     "end": 0.56
+    },
+    {
+     "text": "blank",
+     "start": 0.56,
+     "end": 0.847
+    },
+    {
+     "text": "on",
+     "start": 0.847,
+     "end": 1.012
+    },
+    {
+     "text": "the",
+     "start": 1.012,
+     "end": 1.217
+    },
+    {
+     "text": "ward",
+     "start": 1.217,
+     "end": 1.463
+    },
+    {
+     "text": "round,",
+     "start": 1.463,
+     "end": 1.75
+    },
+    {
+     "text": "when",
+     "start": 1.95,
+     "end": 2.26
+    },
+    {
+     "text": "you",
+     "start": 2.26,
+     "end": 2.518
+    },
+    {
+     "text": "knew",
+     "start": 2.518,
+     "end": 2.827
+    },
+    {
+     "text": "it",
+     "start": 2.827,
+     "end": 3.034
+    },
+    {
+     "text": "last",
+     "start": 3.034,
+     "end": 3.344
+    },
+    {
+     "text": "night.",
+     "start": 3.344,
+     "end": 3.705
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Last night, you reread it. That's recognition.",
+   "start": 3.965,
+   "end": 7.08,
+   "words": [
+    {
+     "text": "Last",
+     "start": 3.965,
+     "end": 4.21
+    },
+    {
+     "text": "night,",
+     "start": 4.21,
+     "end": 4.495
+    },
+    {
+     "text": "you",
+     "start": 4.595,
+     "end": 4.786
+    },
+    {
+     "text": "reread",
+     "start": 4.786,
+     "end": 5.092
+    },
+    {
+     "text": "it.",
+     "start": 5.092,
+     "end": 5.245
+    },
+    {
+     "text": "That's",
+     "start": 5.435,
+     "end": 6.011
+    },
+    {
+     "text": "recognition.",
+     "start": 6.011,
+     "end": 7.08
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "On the ward, you have to pull it out cold. That's recall.",
+   "start": 7.38,
+   "end": 10.891,
+   "words": [
+    {
+     "text": "On",
+     "start": 7.38,
+     "end": 7.735
+    },
+    {
+     "text": "the",
+     "start": 7.735,
+     "end": 8.178
+    },
+    {
+     "text": "ward,",
+     "start": 8.178,
+     "end": 8.71
+    },
+    {
+     "text": "you",
+     "start": 8.83,
+     "end": 8.886
+    },
+    {
+     "text": "have",
+     "start": 8.886,
+     "end": 8.952
+    },
+    {
+     "text": "to",
+     "start": 8.952,
+     "end": 8.997
+    },
+    {
+     "text": "pull",
+     "start": 8.997,
+     "end": 9.063
+    },
+    {
+     "text": "it",
+     "start": 9.063,
+     "end": 9.108
+    },
+    {
+     "text": "out",
+     "start": 9.108,
+     "end": 9.163
+    },
+    {
+     "text": "cold.",
+     "start": 9.163,
+     "end": 9.23
+    },
+    {
+     "text": "That's",
+     "start": 9.55,
+     "end": 10.176
+    },
+    {
+     "text": "recall.",
+     "start": 10.176,
+     "end": 10.891
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "You practised the wrong one.",
+   "start": 11.191,
+   "end": 13.266,
+   "words": [
+    {
+     "text": "You",
+     "start": 11.191,
+     "end": 11.505
+    },
+    {
+     "text": "practised",
+     "start": 11.505,
+     "end": 12.197
+    },
+    {
+     "text": "the",
+     "start": 12.197,
+     "end": 12.511
+    },
+    {
+     "text": "wrong",
+     "start": 12.511,
+     "end": 12.951
+    },
+    {
+     "text": "one.",
+     "start": 12.951,
+     "end": 13.266
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "So practise recall. The app quizzes you on your own lecture notes, before the ward round does.",
+   "start": 13.766,
+   "end": 19.043,
+   "words": [
+    {
+     "text": "So",
+     "start": 13.766,
+     "end": 13.967
+    },
+    {
+     "text": "practise",
+     "start": 13.967,
+     "end": 14.472
+    },
+    {
+     "text": "recall.",
+     "start": 14.472,
+     "end": 14.876
+    },
+    {
+     "text": "The",
+     "start": 15.256,
+     "end": 15.431
+    },
+    {
+     "text": "app",
+     "start": 15.431,
+     "end": 15.607
+    },
+    {
+     "text": "quizzes",
+     "start": 15.607,
+     "end": 15.922
+    },
+    {
+     "text": "you",
+     "start": 15.922,
+     "end": 16.098
+    },
+    {
+     "text": "on",
+     "start": 16.098,
+     "end": 16.238
+    },
+    {
+     "text": "your",
+     "start": 16.238,
+     "end": 16.449
+    },
+    {
+     "text": "own",
+     "start": 16.449,
+     "end": 16.624
+    },
+    {
+     "text": "lecture",
+     "start": 16.624,
+     "end": 16.94
+    },
+    {
+     "text": "notes,",
+     "start": 16.94,
+     "end": 17.186
+    },
+    {
+     "text": "before",
+     "start": 17.306,
+     "end": 17.74
+    },
+    {
+     "text": "the",
+     "start": 17.74,
+     "end": 18.012
+    },
+    {
+     "text": "ward",
+     "start": 18.012,
+     "end": 18.337
+    },
+    {
+     "text": "round",
+     "start": 18.337,
+     "end": 18.717
+    },
+    {
+     "text": "does.",
+     "start": 18.717,
+     "end": 19.043
+    }
+   ]
+  }
+ ]
+}

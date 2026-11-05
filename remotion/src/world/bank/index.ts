@@ -14,6 +14,8 @@ import s_analytical_spot_mistake_v2 from "./analytical-spot-mistake-v2/spec.json
 import t_analytical_spot_mistake_v2 from "./analytical-spot-mistake-v2/timing.json";
 import s_analytical_three_things from "./analytical-three-things/spec.json";
 import t_analytical_three_things from "./analytical-three-things/timing.json";
+import s_analytical_tier_list from "./analytical-tier-list/spec.json";
+import t_analytical_tier_list from "./analytical-tier-list/timing.json";
 import s_clinical_endocrine from "./clinical-endocrine/spec.json";
 import t_clinical_endocrine from "./clinical-endocrine/timing.json";
 import s_clinical_next_question from "./clinical-next-question/spec.json";
@@ -22,10 +24,14 @@ import s_clinical_next_question_v2 from "./clinical-next-question-v2/spec.json";
 import t_clinical_next_question_v2 from "./clinical-next-question-v2/timing.json";
 import s_clinical_placement_poll from "./clinical-placement-poll/spec.json";
 import t_clinical_placement_poll from "./clinical-placement-poll/timing.json";
+import s_clinical_receipt from "./clinical-receipt/spec.json";
+import t_clinical_receipt from "./clinical-receipt/timing.json";
 import s_clinical_week_two from "./clinical-week-two/spec.json";
 import t_clinical_week_two from "./clinical-week-two/timing.json";
 import s_clinical_week_two_v2 from "./clinical-week-two-v2/spec.json";
 import t_clinical_week_two_v2 from "./clinical-week-two-v2/timing.json";
+import s_clinical_whiteboard from "./clinical-whiteboard/spec.json";
+import t_clinical_whiteboard from "./clinical-whiteboard/timing.json";
 import s_clinical_zero from "./clinical-zero/spec.json";
 import t_clinical_zero from "./clinical-zero/timing.json";
 import s_gcse_bio_basics from "./gcse-bio-basics/spec.json";
@@ -34,6 +40,8 @@ import s_gcse_bio_basics_v2 from "./gcse-bio-basics-v2/spec.json";
 import t_gcse_bio_basics_v2 from "./gcse-bio-basics-v2/timing.json";
 import s_gcse_blurting from "./gcse-blurting/spec.json";
 import t_gcse_blurting from "./gcse-blurting/timing.json";
+import s_gcse_chat from "./gcse-chat/spec.json";
+import t_gcse_chat from "./gcse-chat/timing.json";
 import s_gcse_deck from "./gcse-deck/spec.json";
 import t_gcse_deck from "./gcse-deck/timing.json";
 import s_gcse_final_tips from "./gcse-final-tips/spec.json";
@@ -52,6 +60,8 @@ import s_time_pov from "./time-pov/spec.json";
 import t_time_pov from "./time-pov/timing.json";
 import s_time_rest from "./time-rest/spec.json";
 import t_time_rest from "./time-rest/timing.json";
+import s_time_search from "./time-search/spec.json";
+import t_time_search from "./time-search/timing.json";
 import s_time_which_wrecks from "./time-which-wrecks/spec.json";
 import t_time_which_wrecks from "./time-which-wrecks/timing.json";
 import s_time_which_wrecks_v2 from "./time-which-wrecks-v2/spec.json";
@@ -67,16 +77,20 @@ export const BANK = [
   { id: "analytical-spot-mistake", spec: s_analytical_spot_mistake as AnySpec, timing: t_analytical_spot_mistake },
   { id: "analytical-spot-mistake-v2", spec: s_analytical_spot_mistake_v2 as AnySpec, timing: t_analytical_spot_mistake_v2 },
   { id: "analytical-three-things", spec: s_analytical_three_things as AnySpec, timing: t_analytical_three_things },
+  { id: "analytical-tier-list", spec: s_analytical_tier_list as AnySpec, timing: t_analytical_tier_list },
   { id: "clinical-endocrine", spec: s_clinical_endocrine as AnySpec, timing: t_clinical_endocrine },
   { id: "clinical-next-question", spec: s_clinical_next_question as AnySpec, timing: t_clinical_next_question },
   { id: "clinical-next-question-v2", spec: s_clinical_next_question_v2 as AnySpec, timing: t_clinical_next_question_v2 },
   { id: "clinical-placement-poll", spec: s_clinical_placement_poll as AnySpec, timing: t_clinical_placement_poll },
+  { id: "clinical-receipt", spec: s_clinical_receipt as AnySpec, timing: t_clinical_receipt },
   { id: "clinical-week-two", spec: s_clinical_week_two as AnySpec, timing: t_clinical_week_two },
   { id: "clinical-week-two-v2", spec: s_clinical_week_two_v2 as AnySpec, timing: t_clinical_week_two_v2 },
+  { id: "clinical-whiteboard", spec: s_clinical_whiteboard as AnySpec, timing: t_clinical_whiteboard },
   { id: "clinical-zero", spec: s_clinical_zero as AnySpec, timing: t_clinical_zero },
   { id: "gcse-bio-basics", spec: s_gcse_bio_basics as AnySpec, timing: t_gcse_bio_basics },
   { id: "gcse-bio-basics-v2", spec: s_gcse_bio_basics_v2 as AnySpec, timing: t_gcse_bio_basics_v2 },
   { id: "gcse-blurting", spec: s_gcse_blurting as AnySpec, timing: t_gcse_blurting },
+  { id: "gcse-chat", spec: s_gcse_chat as AnySpec, timing: t_gcse_chat },
   { id: "gcse-deck", spec: s_gcse_deck as AnySpec, timing: t_gcse_deck },
   { id: "gcse-final-tips", spec: s_gcse_final_tips as AnySpec, timing: t_gcse_final_tips },
   { id: "gcse-myth-fact", spec: s_gcse_myth_fact as AnySpec, timing: t_gcse_myth_fact },
@@ -86,6 +100,7 @@ export const BANK = [
   { id: "time-night-before", spec: s_time_night_before as AnySpec, timing: t_time_night_before },
   { id: "time-pov", spec: s_time_pov as AnySpec, timing: t_time_pov },
   { id: "time-rest", spec: s_time_rest as AnySpec, timing: t_time_rest },
+  { id: "time-search", spec: s_time_search as AnySpec, timing: t_time_search },
   { id: "time-which-wrecks", spec: s_time_which_wrecks as AnySpec, timing: t_time_which_wrecks },
   { id: "time-which-wrecks-v2", spec: s_time_which_wrecks_v2 as AnySpec, timing: t_time_which_wrecks_v2 },
   { id: "time-zero-v2", spec: s_time_zero_v2 as AnySpec, timing: t_time_zero_v2 },

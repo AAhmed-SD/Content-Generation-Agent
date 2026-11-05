@@ -1,0 +1,41 @@
+{
+ "id": "analytical-tier-list",
+ "format": "tier-list",
+ "title": "Every way to\nrevise maths, ranked",
+ "items": [
+  {
+   "text": "Rereading the solution",
+   "tier": "F",
+   "at": "L2:tier"
+  },
+  {
+   "text": "Lecture at double speed",
+   "tier": "C",
+   "at": "L3:c"
+  },
+  {
+   "text": "Ten of the same question",
+   "tier": "B",
+   "at": "L4:b"
+  },
+  {
+   "text": "Mixing topics",
+   "tier": "A",
+   "at": "L5:a"
+  },
+  {
+   "text": "Explaining it out loud",
+   "tier": "S",
+   "at": "L6:s"
+  },
+  {
+   "text": "Spaced flashcards",
+   "tier": "S",
+   "at": "L7:s"
+  }
+ ],
+ "verdict": {
+  "at": "L8:both",
+  "text": "Both S tiers, done for you, on your own notes."
+ }
+}

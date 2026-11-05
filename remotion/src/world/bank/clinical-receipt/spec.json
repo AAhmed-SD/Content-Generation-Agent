@@ -1,0 +1,41 @@
+{
+ "id": "clinical-receipt",
+ "format": "receipt",
+ "shop": "SUNDAY REVISION",
+ "sub": "Session receipt",
+ "items": [
+  {
+   "label": "Colour-coding",
+   "value": "Afternoon",
+   "at": "L2"
+  },
+  {
+   "label": "Making it nice",
+   "value": "Evening",
+   "at": "L3"
+  },
+  {
+   "label": "Revision",
+   "value": "Not yet",
+   "at": "L4"
+  },
+  {
+   "label": "Lasted until",
+   "value": "Wed",
+   "at": "L5"
+  }
+ ],
+ "total": {
+  "label": "TOTAL",
+  "value": "A Sunday",
+  "at": "L6"
+ },
+ "stamp": {
+  "text": "GONE",
+  "at": "L6:gone"
+ },
+ "footer": {
+  "text": "Next week: skip the timetable.",
+  "at": "L7"
+ }
+}

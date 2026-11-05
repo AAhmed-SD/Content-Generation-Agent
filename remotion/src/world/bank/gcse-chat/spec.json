@@ -1,0 +1,58 @@
+{
+ "id": "gcse-chat",
+ "format": "chat",
+ "duration": 16.5,
+ "header": {
+  "name": "Mum",
+  "sub": "mobile"
+ },
+ "messages": [
+  {
+   "at": 1.0,
+   "from": "them",
+   "text": "have you revised"
+  },
+  {
+   "at": 2.4,
+   "from": "me",
+   "text": "yes"
+  },
+  {
+   "at": 3.6,
+   "from": "them",
+   "text": "what did you revise"
+  },
+  {
+   "at": 5.0,
+   "from": "me",
+   "text": "the timetable"
+  },
+  {
+   "at": 6.4,
+   "from": "them",
+   "text": "you made a timetable"
+  },
+  {
+   "at": 7.6,
+   "from": "me",
+   "text": "it has seven colours"
+  },
+  {
+   "at": 9.0,
+   "from": "them",
+   "text": "and the revising?"
+  },
+  {
+   "at": 10.4,
+   "from": "me",
+   "text": "starts tomorrow"
+  }
+ ],
+ "notification": {
+  "at": 12.0,
+  "app": "offload",
+  "title": "Today: Biology, cells",
+  "body": "One block. Then you're done."
+ },
+ "caption": "it already made the plan."
+}

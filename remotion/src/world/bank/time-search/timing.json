@@ -1,0 +1,300 @@
+{
+ "duration": 17.512,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Be honest. You've typed one of these.",
+   "start": 0.15,
+   "end": 2.091,
+   "words": [
+    {
+     "text": "Be",
+     "start": 0.15,
+     "end": 0.343
+    },
+    {
+     "text": "honest.",
+     "start": 0.343,
+     "end": 0.73
+    },
+    {
+     "text": "You've",
+     "start": 0.93,
+     "end": 1.201
+    },
+    {
+     "text": "typed",
+     "start": 1.201,
+     "end": 1.472
+    },
+    {
+     "text": "one",
+     "start": 1.472,
+     "end": 1.665
+    },
+    {
+     "text": "of",
+     "start": 1.665,
+     "end": 1.82
+    },
+    {
+     "text": "these.",
+     "start": 1.82,
+     "end": 2.091
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "How to start when everything feels urgent.",
+   "start": 2.351,
+   "end": 4.571,
+   "words": [
+    {
+     "text": "How",
+     "start": 2.351,
+     "end": 2.577
+    },
+    {
+     "text": "to",
+     "start": 2.577,
+     "end": 2.759
+    },
+    {
+     "text": "start",
+     "start": 2.759,
+     "end": 3.076
+    },
+    {
+     "text": "when",
+     "start": 3.076,
+     "end": 3.347
+    },
+    {
+     "text": "everything",
+     "start": 3.347,
+     "end": 3.891
+    },
+    {
+     "text": "feels",
+     "start": 3.891,
+     "end": 4.208
+    },
+    {
+     "text": "urgent.",
+     "start": 4.208,
+     "end": 4.571
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "My brother's problem was never ability. It was starting.",
+   "start": 4.971,
+   "end": 8.255,
+   "words": [
+    {
+     "text": "My",
+     "start": 4.971,
+     "end": 5.157
+    },
+    {
+     "text": "brother's",
+     "start": 5.157,
+     "end": 5.623
+    },
+    {
+     "text": "problem",
+     "start": 5.623,
+     "end": 6.042
+    },
+    {
+     "text": "was",
+     "start": 6.042,
+     "end": 6.275
+    },
+    {
+     "text": "never",
+     "start": 6.275,
+     "end": 6.601
+    },
+    {
+     "text": "ability.",
+     "start": 6.601,
+     "end": 7.021
+    },
+    {
+     "text": "It",
+     "start": 7.431,
+     "end": 7.604
+    },
+    {
+     "text": "was",
+     "start": 7.604,
+     "end": 7.821
+    },
+    {
+     "text": "starting.",
+     "start": 7.821,
+     "end": 8.255
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "The answer is boring. Pick the next thing. Just one.",
+   "start": 8.655,
+   "end": 11.633,
+   "words": [
+    {
+     "text": "The",
+     "start": 8.655,
+     "end": 8.883
+    },
+    {
+     "text": "answer",
+     "start": 8.883,
+     "end": 9.248
+    },
+    {
+     "text": "is",
+     "start": 9.248,
+     "end": 9.43
+    },
+    {
+     "text": "boring.",
+     "start": 9.43,
+     "end": 9.795
+    },
+    {
+     "text": "Pick",
+     "start": 10.135,
+     "end": 10.335
+    },
+    {
+     "text": "the",
+     "start": 10.335,
+     "end": 10.501
+    },
+    {
+     "text": "next",
+     "start": 10.501,
+     "end": 10.701
+    },
+    {
+     "text": "thing.",
+     "start": 10.701,
+     "end": 10.935
+    },
+    {
+     "text": "Just",
+     "start": 11.005,
+     "end": 11.348
+    },
+    {
+     "text": "one.",
+     "start": 11.348,
+     "end": 11.633
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "That's why I built the app to hand you the next block, so you don't have to pick.",
+   "start": 11.893,
+   "end": 15.712,
+   "words": [
+    {
+     "text": "That's",
+     "start": 11.893,
+     "end": 12.142
+    },
+    {
+     "text": "why",
+     "start": 12.142,
+     "end": 12.32
+    },
+    {
+     "text": "I",
+     "start": 12.32,
+     "end": 12.426
+    },
+    {
+     "text": "built",
+     "start": 12.426,
+     "end": 12.675
+    },
+    {
+     "text": "the",
+     "start": 12.675,
+     "end": 12.853
+    },
+    {
+     "text": "app",
+     "start": 12.853,
+     "end": 13.031
+    },
+    {
+     "text": "to",
+     "start": 13.031,
+     "end": 13.173
+    },
+    {
+     "text": "hand",
+     "start": 13.173,
+     "end": 13.386
+    },
+    {
+     "text": "you",
+     "start": 13.386,
+     "end": 13.564
+    },
+    {
+     "text": "the",
+     "start": 13.564,
+     "end": 13.741
+    },
+    {
+     "text": "next",
+     "start": 13.741,
+     "end": 13.955
+    },
+    {
+     "text": "block,",
+     "start": 13.955,
+     "end": 14.203
+    },
+    {
+     "text": "so",
+     "start": 14.553,
+     "end": 14.703
+    },
+    {
+     "text": "you",
+     "start": 14.703,
+     "end": 14.89
+    },
+    {
+     "text": "don't",
+     "start": 14.89,
+     "end": 15.114
+    },
+    {
+     "text": "have",
+     "start": 15.114,
+     "end": 15.339
+    },
+    {
+     "text": "to",
+     "start": 15.339,
+     "end": 15.488
+    },
+    {
+     "text": "pick.",
+     "start": 15.488,
+     "end": 15.712
+    }
+   ]
+  }
+ ]
+}

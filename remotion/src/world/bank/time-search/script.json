@@ -1,0 +1,34 @@
+{
+ "id": "bank/time-search",
+ "voice": "af_heart*0.7+af_bella*0.3",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Be honest. You've typed one of these."
+  },
+  {
+   "id": "L2",
+   "say": "How to start when everything feels urgent.",
+   "after": 0.4
+  },
+  {
+   "id": "L3",
+   "say": "My brother's problem was never ability. It was starting.",
+   "after": 0.4
+  },
+  {
+   "id": "L4",
+   "say": "The answer is boring. Pick the next thing. Just one."
+  },
+  {
+   "id": "L5",
+   "say": "That's why I built the app to hand you the next block, so you don't have to pick.",
+   "after": 0.8
+  }
+ ]
+}

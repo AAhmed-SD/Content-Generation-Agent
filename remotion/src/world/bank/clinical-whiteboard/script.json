@@ -1,0 +1,35 @@
+{
+ "id": "bank/clinical-whiteboard",
+ "voice": "bm_fable",
+ "lang": "en-gb",
+ "speed": 1.0,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Why you blank on the ward round, when you knew it last night."
+  },
+  {
+   "id": "L2",
+   "say": "Last night, you reread it. That's recognition.",
+   "after": 0.3
+  },
+  {
+   "id": "L3",
+   "say": "On the ward, you have to pull it out cold. That's recall.",
+   "after": 0.3
+  },
+  {
+   "id": "L4",
+   "say": "You practised the wrong one.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "So practise recall. The app quizzes you on your own lecture notes, before the ward round does.",
+   "after": 0.8
+  }
+ ]
+}

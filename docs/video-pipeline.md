@@ -72,7 +72,7 @@ End cards: clinical and analytical say Free trial and Link in bio. GCSE and A-le
 
 ## Formats and variety
 
-The scene template gives every film the same skeleton, so a feed of only those repeats. Three format templates, in `remotion/src/world/formats/kit.tsx`, each fix their own structure, look and pace. A format film lives in the bank like any other: `src/world/bank/<id>/script.json` for the words and `spec.json` with `"format"` and its text. The words are new for each film; only the shape is fixed.
+The scene template gives every film the same skeleton, so a feed of only those repeats. Eight format templates, in `remotion/src/world/formats/kit.tsx` and `kit2.tsx`, each fix their own structure, look and pace. A format film lives in the bank like any other: `src/world/bank/<id>/script.json` for the words and `spec.json` with `"format"` and its text. The words are new for each film; only the shape is fixed.
 
 | `format` | Shape | Spec fields | Voice | Ending |
 | --- | --- | --- | --- | --- |
@@ -80,7 +80,13 @@ The scene template gives every film the same skeleton, so a feed of only those r
 | `three-things` | A title card, then one hard cut per tip: a giant numeral and a colour (ink, blue, kraft). Then the product as one prompt card. | `title` (big, sub, accent), `tips` (`at`, head, optional `bg`), `reveal` (`at`, head, accent, tail, kicker, text), optional `punch` (line, spoken words) | Any; the example uses `bm_daniel` at 1.1 | Punchline in red, corner mark |
 | `pov` | Text on a phone, no voice: a list fills, messages arrive, a cut to the app's Today screen. | `duration`, `title`, `list` (title, items with `at` in seconds), `messages` (`at`, text, `from`: them, me or aside), `cut` (`at`, title), `app` (`at`, heading, next, later, note) | None: no script.json. Add a trending sound when posting. | The app screen, corner mark |
 
-Examples: `bank/gcse-myth-fact`, `bank/analytical-three-things`, `bank/time-pov`. Voice and render them like any bank film. A photo-story format was tried and dropped: the photo plates work as stills and carousel covers, not as a slideshow.
+| `tier-list` | Paper. A title, then S, A, B, C and F rows in brand colours; each item flies into its row on its word. An optional verdict bar. | `title`, `items` (text, tier, `at`), optional `verdict` (`at`, text) | Any | The verdict, corner mark |
+| `chat` | A full-screen message thread with typing dots, no voice. The app arrives as a notification, never as a person vouching for it. | `duration`, `header` (name, sub), `messages` (`at` in seconds, `from`: them or me, text), `notification` (`at`, app, title, body), optional `caption` | None: add a trending sound when posting | The notification and caption |
+| `search` | Paper. A search bar types a query, suggestions drop in, one is picked, then an answer card. No search engine's name or logo. | `query` (text, `at`), `suggestions` (text, `at`), `pick` (index, `at`), `result` (`at`, head, body) | Any | The answer card, corner mark |
+| `receipt` | A thermal receipt printing line by line on a kraft desk, totalled and stamped. | `shop`, `sub`, `items` (label, value, `at`), `total` (label, value, `at`), optional `stamp` and `footer` (text, `at`) | Any | The stamp and footer |
+| `whiteboard` | A whiteboard: a title written in marker and underlined, lines written one by one, a strike, a circle, a sticky note. | `title` (text, `at`), up to four `lines` (text, `at`, colour), optional `strike`, `circle` (line, `at`), `arrow`, `sticky` (text, `at`) | Any | The sticky note |
+
+Examples: `bank/analytical-tier-list`, `bank/gcse-chat`, `bank/time-search`, `bank/clinical-receipt`, `bank/clinical-whiteboard`, `bank/gcse-myth-fact`, `bank/analytical-three-things`, `bank/time-pov`. Voice and render them like any bank film. A photo-story format was tried and dropped: the photo plates work as stills and carousel covers, not as a slideshow.
 
 Rules for a week of films, per account:
 

@@ -1,0 +1,45 @@
+{
+ "id": "bank/analytical-tier-list",
+ "voice": "bm_daniel*0.5+bm_lewis*0.5",
+ "lang": "en-gb",
+ "speed": 1.03,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Ranking every way to revise maths. Don't come for me."
+  },
+  {
+   "id": "L2",
+   "say": "Rereading the worked solution. F tier. You're watching, not doing."
+  },
+  {
+   "id": "L3",
+   "say": "Watching the lecture back at double speed. C."
+  },
+  {
+   "id": "L4",
+   "say": "Ten of the same question in a row. B. Feels great. Won't last."
+  },
+  {
+   "id": "L5",
+   "say": "Mixing your topics. A."
+  },
+  {
+   "id": "L6",
+   "say": "Explaining it out loud, from a blank page. S tier."
+  },
+  {
+   "id": "L7",
+   "say": "Spaced flashcards on the methods. Also S.",
+   "after": 0.4
+  },
+  {
+   "id": "L8",
+   "say": "The app does both S tiers, on your own notes. Which one would you move?",
+   "after": 0.9
+  }
+ ]
+}

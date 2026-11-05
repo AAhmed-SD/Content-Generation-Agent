@@ -1,0 +1,42 @@
+{
+ "id": "bank/clinical-receipt",
+ "voice": "bm_lewis",
+ "lang": "en-gb",
+ "speed": 1.02,
+ "gap": 0.26,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Here's the receipt for your Sunday revision session."
+  },
+  {
+   "id": "L2",
+   "say": "Colour-coding the timetable. Most of the afternoon."
+  },
+  {
+   "id": "L3",
+   "say": "Making it look nice. The rest of the afternoon."
+  },
+  {
+   "id": "L4",
+   "say": "Actual revision. Not yet."
+  },
+  {
+   "id": "L5",
+   "say": "The timetable survived until Wednesday.",
+   "after": 0.3
+  },
+  {
+   "id": "L6",
+   "say": "Total. One Sunday, gone.",
+   "after": 0.5
+  },
+  {
+   "id": "L7",
+   "say": "Next Sunday, skip the timetable. The app builds the plan from your notes and your calendar.",
+   "after": 0.7
+  }
+ ]
+}

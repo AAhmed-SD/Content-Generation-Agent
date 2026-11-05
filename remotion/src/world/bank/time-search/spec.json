@@ -1,0 +1,35 @@
+{
+ "id": "time-search",
+ "format": "search",
+ "query": {
+  "text": "how to start when",
+  "at": "L1:typed"
+ },
+ "suggestions": [
+  {
+   "text": "how to start when you can't focus",
+   "at": "L2@0.1"
+  },
+  {
+   "text": "how to start when you're overwhelmed",
+   "at": "L2@0.5"
+  },
+  {
+   "text": "how to start when it's too late",
+   "at": "L2@0.9"
+  },
+  {
+   "text": "how to start when everything feels urgent",
+   "at": "L2@1.3"
+  }
+ ],
+ "pick": {
+  "index": 3,
+  "at": "L2:urgent"
+ },
+ "result": {
+  "at": "L4",
+  "head": "Pick the next thing.\nJust one.",
+  "body": "That's the whole trick. The app hands you the next block, so you don't have to choose."
+ }
+}

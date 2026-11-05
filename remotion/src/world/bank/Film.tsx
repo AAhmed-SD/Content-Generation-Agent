@@ -6,6 +6,7 @@ import { LogoEnd, logoCues } from "../kit/logo";
 import { Mark } from "../posters/Posters";
 import { BlankCard, ChoiceCard, Countdown, Flashcard, quizCues } from "../kit/quiz";
 import { MythFact, Pov, ThreeThings, type FormatSpec } from "../formats/kit";
+import { Chat, Receipt, Search, TierList, Whiteboard, type FormatSpec2 } from "../formats/kit2";
 
 /**
  * A film from data. The script is voiced into timing.json; spec.json places scenes on spoken words.
@@ -41,15 +42,15 @@ export type Spec = {
 };
 
 /** A bank film is either the scene template (no format) or one of the format templates. */
-export type AnySpec = Spec | (FormatSpec & { id: string });
-const isFormat = (spec: AnySpec): spec is FormatSpec & { id: string } => "format" in spec;
+export type AnySpec = Spec | ((FormatSpec | FormatSpec2) & { id: string });
+const isFormat = (spec: AnySpec): spec is (FormatSpec | FormatSpec2) & { id: string } => "format" in spec;
 
 type Timing = Parameters<typeof makeTiming>[0];
 
 const REF = /^(L\d+)(\$?)(?::([^#@]+))?(?:#(\d+))?(?:@([+-]?\d*\.?\d+))?$/;
 
 export const film = (spec: AnySpec, timing: Timing) => {
-  if (isFormat(spec) && spec.format === "pov") return { T: () => 0, kw: () => [], end: spec.duration, duration: spec.duration };
+  if (isFormat(spec) && (spec.format === "pov" || spec.format === "chat")) return { T: () => 0, kw: () => [], end: spec.duration, duration: spec.duration };
   const { ls, le, at, kw, duration } = makeTiming(timing);
   const T = (ref: Ref): number => {
     const m = REF.exec(ref);
@@ -71,9 +72,22 @@ const lineOf = (ref: Ref) => /^L\d+/.exec(ref)![0];
 export const BankFilm: React.FC<{ spec: AnySpec; timing: Timing; vo: string }> = ({ spec, timing, vo }) => {
   if (!isFormat(spec)) return <SceneFilm spec={spec} timing={timing} vo={vo} />;
   if (spec.format === "pov") return <Pov spec={spec} />;
+  if (spec.format === "chat") return <Chat spec={spec} />;
   const { T, kw } = film(spec, timing);
-  if (spec.format === "myth-fact") return <MythFact spec={spec} T={T} vo={vo} />;
-  return <ThreeThings spec={spec} T={T} kw={kw} timing={timing} vo={vo} />;
+  switch (spec.format) {
+    case "myth-fact":
+      return <MythFact spec={spec} T={T} vo={vo} />;
+    case "three-things":
+      return <ThreeThings spec={spec} T={T} kw={kw} timing={timing} vo={vo} />;
+    case "tier-list":
+      return <TierList spec={spec} T={T} timing={timing} vo={vo} />;
+    case "search":
+      return <Search spec={spec} T={T} timing={timing} vo={vo} />;
+    case "receipt":
+      return <Receipt spec={spec} T={T} timing={timing} vo={vo} />;
+    case "whiteboard":
+      return <Whiteboard spec={spec} T={T} vo={vo} />;
+  }
 };
 
 const SceneFilm: React.FC<{ spec: Spec; timing: Timing; vo: string }> = ({ spec, timing, vo }) => {

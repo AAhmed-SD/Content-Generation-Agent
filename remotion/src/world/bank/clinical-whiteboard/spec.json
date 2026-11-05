@@ -1,0 +1,40 @@
+{
+ "id": "clinical-whiteboard",
+ "format": "whiteboard",
+ "title": {
+  "text": "Why you blank on\nthe ward round",
+  "at": "L1"
+ },
+ "lines": [
+  {
+   "text": "Last night: reread",
+   "at": "L2"
+  },
+  {
+   "text": "= recognition",
+   "at": "L2:recognition"
+  },
+  {
+   "text": "Ward round: pull it out",
+   "at": "L3",
+   "colour": "mark"
+  },
+  {
+   "text": "= recall",
+   "at": "L3:recall",
+   "colour": "mark"
+  }
+ ],
+ "strike": {
+  "line": 1,
+  "at": "L4:wrong"
+ },
+ "circle": {
+  "line": 3,
+  "at": "L4"
+ },
+ "sticky": {
+  "text": "Practise recall.\nIt quizzes you on\nyour own notes.",
+  "at": "L5:app"
+ }
+}

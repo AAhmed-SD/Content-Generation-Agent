@@ -1,0 +1,326 @@
+{
+ "duration": 24.779,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Here's the receipt for your Sunday revision session.",
+   "start": 0.15,
+   "end": 3.047,
+   "words": [
+    {
+     "text": "Here's",
+     "start": 0.15,
+     "end": 0.494
+    },
+    {
+     "text": "the",
+     "start": 0.494,
+     "end": 0.739
+    },
+    {
+     "text": "receipt",
+     "start": 0.739,
+     "end": 1.181
+    },
+    {
+     "text": "for",
+     "start": 1.181,
+     "end": 1.427
+    },
+    {
+     "text": "your",
+     "start": 1.427,
+     "end": 1.721
+    },
+    {
+     "text": "Sunday",
+     "start": 1.721,
+     "end": 2.114
+    },
+    {
+     "text": "revision",
+     "start": 2.114,
+     "end": 2.605
+    },
+    {
+     "text": "session.",
+     "start": 2.605,
+     "end": 3.047
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Colour-coding the timetable. Most of the afternoon.",
+   "start": 3.307,
+   "end": 6.538,
+   "words": [
+    {
+     "text": "Colour-coding",
+     "start": 3.307,
+     "end": 4.026
+    },
+    {
+     "text": "the",
+     "start": 4.026,
+     "end": 4.282
+    },
+    {
+     "text": "timetable.",
+     "start": 4.282,
+     "end": 4.847
+    },
+    {
+     "text": "Most",
+     "start": 5.307,
+     "end": 5.591
+    },
+    {
+     "text": "of",
+     "start": 5.591,
+     "end": 5.78
+    },
+    {
+     "text": "the",
+     "start": 5.78,
+     "end": 6.017
+    },
+    {
+     "text": "afternoon.",
+     "start": 6.017,
+     "end": 6.538
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Making it look nice. The rest of the afternoon.",
+   "start": 6.798,
+   "end": 9.706,
+   "words": [
+    {
+     "text": "Making",
+     "start": 6.798,
+     "end": 7.161
+    },
+    {
+     "text": "it",
+     "start": 7.161,
+     "end": 7.343
+    },
+    {
+     "text": "look",
+     "start": 7.343,
+     "end": 7.615
+    },
+    {
+     "text": "nice.",
+     "start": 7.615,
+     "end": 7.888
+    },
+    {
+     "text": "The",
+     "start": 8.288,
+     "end": 8.517
+    },
+    {
+     "text": "rest",
+     "start": 8.517,
+     "end": 8.791
+    },
+    {
+     "text": "of",
+     "start": 8.791,
+     "end": 8.974
+    },
+    {
+     "text": "the",
+     "start": 8.974,
+     "end": 9.203
+    },
+    {
+     "text": "afternoon.",
+     "start": 9.203,
+     "end": 9.706
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Actual revision. Not yet.",
+   "start": 9.966,
+   "end": 11.917,
+   "words": [
+    {
+     "text": "Actual",
+     "start": 9.966,
+     "end": 10.379
+    },
+    {
+     "text": "revision.",
+     "start": 10.379,
+     "end": 10.896
+    },
+    {
+     "text": "Not",
+     "start": 11.226,
+     "end": 11.571
+    },
+    {
+     "text": "yet.",
+     "start": 11.571,
+     "end": 11.917
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "The timetable survived until Wednesday.",
+   "start": 12.177,
+   "end": 14.743,
+   "words": [
+    {
+     "text": "The",
+     "start": 12.177,
+     "end": 12.468
+    },
+    {
+     "text": "timetable",
+     "start": 12.468,
+     "end": 13.11
+    },
+    {
+     "text": "survived",
+     "start": 13.11,
+     "end": 13.693
+    },
+    {
+     "text": "until",
+     "start": 13.693,
+     "end": 14.102
+    },
+    {
+     "text": "Wednesday.",
+     "start": 14.102,
+     "end": 14.743
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Total. One Sunday, gone.",
+   "start": 15.043,
+   "end": 16.929,
+   "words": [
+    {
+     "text": "Total.",
+     "start": 15.043,
+     "end": 15.453
+    },
+    {
+     "text": "One",
+     "start": 15.663,
+     "end": 15.963
+    },
+    {
+     "text": "Sunday,",
+     "start": 15.963,
+     "end": 16.443
+    },
+    {
+     "text": "gone.",
+     "start": 16.563,
+     "end": 16.929
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Next Sunday, skip the timetable. The app builds the plan from your notes and your calendar.",
+   "start": 17.429,
+   "end": 23.079,
+   "words": [
+    {
+     "text": "Next",
+     "start": 17.429,
+     "end": 18.29
+    },
+    {
+     "text": "Sunday,",
+     "start": 18.29,
+     "end": 19.439
+    },
+    {
+     "text": "skip",
+     "start": 19.979,
+     "end": 20.524
+    },
+    {
+     "text": "the",
+     "start": 20.524,
+     "end": 20.979
+    },
+    {
+     "text": "timetable.",
+     "start": 20.979,
+     "end": 21.979
+    },
+    {
+     "text": "The",
+     "start": 22.219,
+     "end": 22.281
+    },
+    {
+     "text": "app",
+     "start": 22.281,
+     "end": 22.343
+    },
+    {
+     "text": "builds",
+     "start": 22.343,
+     "end": 22.443
+    },
+    {
+     "text": "the",
+     "start": 22.443,
+     "end": 22.505
+    },
+    {
+     "text": "plan",
+     "start": 22.505,
+     "end": 22.58
+    },
+    {
+     "text": "from",
+     "start": 22.58,
+     "end": 22.655
+    },
+    {
+     "text": "your",
+     "start": 22.655,
+     "end": 22.73
+    },
+    {
+     "text": "notes",
+     "start": 22.73,
+     "end": 22.817
+    },
+    {
+     "text": "and",
+     "start": 22.817,
+     "end": 22.879
+    },
+    {
+     "text": "your",
+     "start": 22.879,
+     "end": 22.954
+    },
+    {
+     "text": "calendar.",
+     "start": 22.954,
+     "end": 23.079
+    }
+   ]
+  }
+ ]
+}
