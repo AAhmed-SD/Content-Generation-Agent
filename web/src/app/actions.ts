@@ -120,6 +120,8 @@ export async function runResearch() {
   if (!person) redirect("/");
   const research = await gatherResearch();
   compileBriefs(research);
+  const { syncToDb } = await import("@/lib/db");
+  await syncToDb();
   revalidatePath("/desk/research");
   redirect("/desk/research");
 }
@@ -368,7 +370,7 @@ export async function collectSignals() {
   const person = await readSession();
   if (!person) redirect("/");
   const { startRun } = await import("@/lib/signals");
-  startRun();
+  await startRun();
   revalidatePath("/desk/signals");
 }
 
@@ -376,9 +378,9 @@ export async function collectInspiration() {
   const person = await readSession();
   if (!person) redirect("/");
   const { startInspirationRun } = await import("@/lib/library");
-  startInspirationRun();
+  await startInspirationRun();
   const { startRun } = await import("@/lib/signals");
-  startRun(["--niche", "motion", "--ratio", "2"]);
+  await startRun(["--niche", "motion", "--ratio", "2"]);
   revalidatePath("/desk/inspiration");
 }
 
@@ -388,7 +390,7 @@ export async function keepInspiration(formData: FormData) {
   const { keepPulled } = await import("@/lib/library");
   const url = String(formData.get("url") ?? "");
   if (!/^https:\/\//.test(url)) return;
-  keepPulled({
+  await keepPulled({
     source: String(formData.get("source") ?? "").slice(0, 80),
     name: String(formData.get("name") ?? "").slice(0, 160),
     url,
@@ -415,7 +417,7 @@ export async function addIdeaAction(formData: FormData) {
   const pitch = String(formData.get("pitch") ?? "").trim().slice(0, 800);
   if (!title) return;
   const { addIdea } = await import("@/lib/library");
-  addIdea({ title, pitch, kind: String(formData.get("kind") ?? "Idea").slice(0, 40), niche: String(formData.get("niche") ?? "all").slice(0, 20), by: person.name });
+  await addIdea({ title, pitch, kind: String(formData.get("kind") ?? "Idea").slice(0, 40), niche: String(formData.get("niche") ?? "all").slice(0, 20), by: person.name });
   revalidatePath("/desk/ideas");
 }
 
@@ -423,7 +425,7 @@ export async function rejectIdeaAction(formData: FormData) {
   const person = await readSession();
   if (!person) redirect("/");
   const { rejectIdea } = await import("@/lib/library");
-  rejectIdea(String(formData.get("id") ?? ""));
+  await rejectIdea(String(formData.get("id") ?? ""));
   revalidatePath("/desk/ideas");
 }
 
@@ -437,11 +439,11 @@ export async function rejectAction(formData: FormData) {
   if (kind === "film" && lib.rejectFilm(value)) await lib.reindex();
   if (kind === "still" && lib.rejectStill(value)) await lib.startCatalogueRun();
   if (kind === "format") {
-    lib.rejectFormat(value);
+    await lib.rejectFormat(value);
     await lib.startCatalogueRun();
   }
-  if (kind === "pulled") lib.rejectPulled(value, String(formData.get("name") ?? ""));
-  if (kind === "inspiration") lib.rejectInspiration(value);
+  if (kind === "pulled") await lib.rejectPulled(value, String(formData.get("name") ?? ""));
+  if (kind === "inspiration") await lib.rejectInspiration(value);
   revalidatePath("/desk/library");
   revalidatePath("/desk/inspiration");
 }
@@ -452,7 +454,7 @@ export async function setIdeaStatusAction(formData: FormData) {
   const { IDEA_STATUS, setIdeaStatus } = await import("@/lib/library");
   const status = String(formData.get("status") ?? "");
   if (!(IDEA_STATUS as readonly string[]).includes(status)) return;
-  setIdeaStatus(String(formData.get("id") ?? ""), status as (typeof IDEA_STATUS)[number]);
+  await setIdeaStatus(String(formData.get("id") ?? ""), status as (typeof IDEA_STATUS)[number]);
   revalidatePath("/desk/ideas");
 }
 
@@ -461,7 +463,7 @@ export async function linkedinStatus(formData: FormData) {
   if (!person) redirect("/");
   const { STATUS, setStatus } = await import("@/lib/linkedin");
   const status = String(formData.get("status") ?? "");
-  if ((STATUS as readonly string[]).includes(status)) setStatus(String(formData.get("id") ?? ""), status as (typeof STATUS)[number]);
+  if ((STATUS as readonly string[]).includes(status)) await setStatus(String(formData.get("id") ?? ""), status as (typeof STATUS)[number]);
   revalidatePath("/desk/linkedin");
 }
 
@@ -469,7 +471,7 @@ export async function linkedinReject(formData: FormData) {
   const person = await readSession();
   if (!person) redirect("/");
   const { removePost } = await import("@/lib/linkedin");
-  removePost(String(formData.get("id") ?? ""));
+  await removePost(String(formData.get("id") ?? ""));
   revalidatePath("/desk/linkedin");
 }
 
@@ -495,7 +497,7 @@ export async function saveStoryboard(formData: FormData) {
     .filter(Boolean)
     .slice(0, 12)
     .map((l) => l.slice(0, 200));
-  setFrames(String(formData.get("id") ?? ""), frames);
+  await setFrames(String(formData.get("id") ?? ""), frames);
   revalidatePath("/desk/ideas");
   revalidatePath("/desk/home");
 }
@@ -504,12 +506,77 @@ export async function suggestIdeas() {
   const person = await readSession();
   if (!person) redirect("/");
   const { spawn } = await import("node:child_process");
-  const root = path.join(process.cwd(), "..");
+  const { isLocal, queueJob } = await import("@/lib/db");
+  if (!isLocal()) {
+    await queueJob("suggest-ideas");
+    revalidatePath("/desk/ideas");
+    return;
+  }
   await new Promise<void>((resolve) => {
-    const child = spawn(process.execPath, [path.join(root, "scripts", "suggest-ideas.mjs")], { cwd: root, stdio: "ignore" });
+    const child = spawn(process.execPath, [path.join(process.cwd(), "scripts", "suggest-ideas.mjs")], { cwd: process.cwd(), stdio: "ignore" });
     child.on("exit", () => resolve());
     child.on("error", () => resolve());
   });
   revalidatePath("/desk/ideas");
   revalidatePath("/desk/home");
+}
+
+export async function proposeVideos(formData: FormData) {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const { propose } = await import("@/lib/proposals");
+  const niche = String(formData.get("niche") ?? "");
+  try {
+    await propose({ count: Math.min(12, Math.max(1, Number(formData.get("count")) || 8)), niche: niche || undefined, by: person.name });
+  } catch (error) {
+    redirect(`/desk/hooks?error=${encodeURIComponent(publicClaudeError(error instanceof Error ? error.message : "Proposing failed."))}`);
+  }
+  revalidatePath("/desk/hooks");
+}
+
+export async function decideProposal(formData: FormData) {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const { decide } = await import("@/lib/proposals");
+  const decision = String(formData.get("decision")) === "accepted" ? "accepted" : "rejected";
+  const id = String(formData.get("id") ?? "");
+  await decide(id, decision, person.name, String(formData.get("reason") ?? ""));
+  if (decision === "accepted") {
+    // the content agent makes the film on the Mac: script, checks, voice, render, then Approval
+    const { ensureWorker, queueJob } = await import("@/lib/db");
+    await queueJob("make-film", { content_id: id });
+    await ensureWorker();
+  }
+  revalidatePath("/desk/hooks");
+  revalidatePath("/desk");
+}
+
+export type ChatResult = { ok: true; reply: string; revised: boolean } | { ok: false; error: string };
+export async function chatProposal(id: string, text: string): Promise<ChatResult> {
+  const person = await readSession();
+  if (!person) return { ok: false, error: "Sign in again." };
+  if (!text.trim()) return { ok: false, error: "Write a message first." };
+  const { chat } = await import("@/lib/proposals");
+  try {
+    const out = await chat(id, text.trim(), person.name);
+    if (out.revised) revalidatePath("/desk/hooks");
+    return { ok: true, reply: out.reply, revised: out.revised };
+  } catch (error) {
+    return { ok: false, error: publicClaudeError(error instanceof Error ? error.message : "The desk could not answer.") };
+  }
+}
+
+export async function filmAction(formData: FormData) {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const { approveFilm, remakeFilm, retryFilm } = await import("@/lib/films");
+  const id = String(formData.get("id") ?? "");
+  const what = String(formData.get("what") ?? "");
+  if (what === "approve") await approveFilm(id, person.name);
+  if (what === "remake") {
+    const note = String(formData.get("note") ?? "").trim();
+    if (note) await remakeFilm(id, note, person.name);
+  }
+  if (what === "retry") await retryFilm(id);
+  revalidatePath("/desk");
 }

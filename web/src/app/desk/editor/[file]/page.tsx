@@ -4,6 +4,9 @@ import { Studio } from "@/components/studio";
 import { boardPath } from "@/lib/picture-text";
 import { readSession } from "@/lib/session";
 
+/** Reads the signed-in session at request time, so this page may block on the server. */
+export const instant = false;
+
 export default async function EditorFilePage({ params }: { params: Promise<{ file: string }> }) {
   const person = await readSession();
   if (!person) redirect("/");

@@ -8,11 +8,14 @@ import { readResearch } from "@/lib/pipeline";
 import { outliers } from "@/lib/signals";
 import { readSession } from "@/lib/session";
 
+/** Reads the signed-in session at request time, so this page may block on the server. */
+export const instant = false;
+
 export default async function ResearchPage() {
   const person = await readSession();
   if (!person) redirect("/");
   const research = readResearch();
-  const signals = outliers();
+  const signals = (await outliers());
 
   return (
     <DeskFrame person={person} current="research">

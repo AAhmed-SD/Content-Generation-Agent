@@ -1,0 +1,453 @@
+{
+ "duration": 36.114,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Four o'clock: start revising. Delayed.",
+   "start": 0.15,
+   "end": 3.224,
+   "words": [
+    {
+     "text": "Four",
+     "start": 0.15,
+     "end": 0.506
+    },
+    {
+     "text": "o'clock:",
+     "start": 0.506,
+     "end": 0.98
+    },
+    {
+     "text": "start",
+     "start": 1.13,
+     "end": 1.604
+    },
+    {
+     "text": "revising.",
+     "start": 1.604,
+     "end": 2.28
+    },
+    {
+     "text": "Delayed.",
+     "start": 2.55,
+     "end": 3.224
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Half four. Also delayed.",
+   "start": 3.724,
+   "end": 5.649,
+   "words": [
+    {
+     "text": "Half",
+     "start": 3.724,
+     "end": 4.094
+    },
+    {
+     "text": "four.",
+     "start": 4.094,
+     "end": 4.464
+    },
+    {
+     "text": "Also",
+     "start": 4.624,
+     "end": 5.034
+    },
+    {
+     "text": "delayed.",
+     "start": 5.034,
+     "end": 5.649
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "After tea. Delayed.",
+   "start": 6.149,
+   "end": 7.931,
+   "words": [
+    {
+     "text": "After",
+     "start": 6.149,
+     "end": 6.644
+    },
+    {
+     "text": "tea.",
+     "start": 6.644,
+     "end": 6.999
+    },
+    {
+     "text": "Delayed.",
+     "start": 7.169,
+     "end": 7.931
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "After this episode. Delayed.",
+   "start": 8.431,
+   "end": 10.765,
+   "words": [
+    {
+     "text": "After",
+     "start": 8.431,
+     "end": 8.858
+    },
+    {
+     "text": "this",
+     "start": 8.858,
+     "end": 9.223
+    },
+    {
+     "text": "episode.",
+     "start": 9.223,
+     "end": 9.771
+    },
+    {
+     "text": "Delayed.",
+     "start": 10.041,
+     "end": 10.765
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "By nine, the afternoon has gone.",
+   "start": 11.365,
+   "end": 13.792,
+   "words": [
+    {
+     "text": "By",
+     "start": 11.365,
+     "end": 11.649
+    },
+    {
+     "text": "nine,",
+     "start": 11.649,
+     "end": 12.075
+    },
+    {
+     "text": "the",
+     "start": 12.265,
+     "end": 12.548
+    },
+    {
+     "text": "afternoon",
+     "start": 12.548,
+     "end": 13.17
+    },
+    {
+     "text": "has",
+     "start": 13.17,
+     "end": 13.453
+    },
+    {
+     "text": "gone.",
+     "start": 13.453,
+     "end": 13.792
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Most of us don't need a bigger plan.",
+   "start": 14.392,
+   "end": 16.932,
+   "words": [
+    {
+     "text": "Most",
+     "start": 14.392,
+     "end": 14.746
+    },
+    {
+     "text": "of",
+     "start": 14.746,
+     "end": 14.983
+    },
+    {
+     "text": "us",
+     "start": 14.983,
+     "end": 15.219
+    },
+    {
+     "text": "don't",
+     "start": 15.219,
+     "end": 15.573
+    },
+    {
+     "text": "need",
+     "start": 15.573,
+     "end": 15.928
+    },
+    {
+     "text": "a",
+     "start": 15.928,
+     "end": 16.105
+    },
+    {
+     "text": "bigger",
+     "start": 16.105,
+     "end": 16.578
+    },
+    {
+     "text": "plan.",
+     "start": 16.578,
+     "end": 16.932
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Just one small next block.",
+   "start": 17.332,
+   "end": 19.29,
+   "words": [
+    {
+     "text": "Just",
+     "start": 17.332,
+     "end": 17.711
+    },
+    {
+     "text": "one",
+     "start": 17.711,
+     "end": 18.027
+    },
+    {
+     "text": "small",
+     "start": 18.027,
+     "end": 18.469
+    },
+    {
+     "text": "next",
+     "start": 18.469,
+     "end": 18.848
+    },
+    {
+     "text": "block.",
+     "start": 18.848,
+     "end": 19.29
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "Offload plans your blocks from your notes and exam dates.",
+   "start": 19.99,
+   "end": 23.953,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 19.99,
+     "end": 20.522
+    },
+    {
+     "text": "plans",
+     "start": 20.522,
+     "end": 20.936
+    },
+    {
+     "text": "your",
+     "start": 20.936,
+     "end": 21.291
+    },
+    {
+     "text": "blocks",
+     "start": 21.291,
+     "end": 21.764
+    },
+    {
+     "text": "from",
+     "start": 21.764,
+     "end": 22.119
+    },
+    {
+     "text": "your",
+     "start": 22.119,
+     "end": 22.474
+    },
+    {
+     "text": "notes",
+     "start": 22.474,
+     "end": 22.888
+    },
+    {
+     "text": "and",
+     "start": 22.888,
+     "end": 23.184
+    },
+    {
+     "text": "exam",
+     "start": 23.184,
+     "end": 23.539
+    },
+    {
+     "text": "dates.",
+     "start": 23.539,
+     "end": 23.953
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "It moves them when one slips.",
+   "start": 24.453,
+   "end": 26.651,
+   "words": [
+    {
+     "text": "It",
+     "start": 24.453,
+     "end": 24.705
+    },
+    {
+     "text": "moves",
+     "start": 24.705,
+     "end": 25.144
+    },
+    {
+     "text": "them",
+     "start": 25.144,
+     "end": 25.521
+    },
+    {
+     "text": "when",
+     "start": 25.521,
+     "end": 25.898
+    },
+    {
+     "text": "one",
+     "start": 25.898,
+     "end": 26.212
+    },
+    {
+     "text": "slips.",
+     "start": 26.212,
+     "end": 26.651
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "say": "It tests you as you go, and brings topics back.",
+   "start": 27.151,
+   "end": 30.383,
+   "words": [
+    {
+     "text": "It",
+     "start": 27.151,
+     "end": 27.354
+    },
+    {
+     "text": "tests",
+     "start": 27.354,
+     "end": 27.709
+    },
+    {
+     "text": "you",
+     "start": 27.709,
+     "end": 27.962
+    },
+    {
+     "text": "as",
+     "start": 27.962,
+     "end": 28.165
+    },
+    {
+     "text": "you",
+     "start": 28.165,
+     "end": 28.418
+    },
+    {
+     "text": "go,",
+     "start": 28.418,
+     "end": 28.621
+    },
+    {
+     "text": "and",
+     "start": 28.901,
+     "end": 29.176
+    },
+    {
+     "text": "brings",
+     "start": 29.176,
+     "end": 29.615
+    },
+    {
+     "text": "topics",
+     "start": 29.615,
+     "end": 30.054
+    },
+    {
+     "text": "back.",
+     "start": 30.054,
+     "end": 30.383
+    }
+   ]
+  },
+  {
+   "id": "L11",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 30.883,
+   "end": 34.114,
+   "words": [
+    {
+     "text": "You",
+     "start": 30.883,
+     "end": 31.136
+    },
+    {
+     "text": "just",
+     "start": 31.136,
+     "end": 31.438
+    },
+    {
+     "text": "click",
+     "start": 31.438,
+     "end": 31.792
+    },
+    {
+     "text": "the",
+     "start": 31.792,
+     "end": 32.044
+    },
+    {
+     "text": "link",
+     "start": 32.044,
+     "end": 32.347
+    },
+    {
+     "text": "in",
+     "start": 32.347,
+     "end": 32.549
+    },
+    {
+     "text": "your",
+     "start": 32.549,
+     "end": 32.852
+    },
+    {
+     "text": "calendar",
+     "start": 32.852,
+     "end": 33.356
+    },
+    {
+     "text": "and",
+     "start": 33.356,
+     "end": 33.609
+    },
+    {
+     "text": "show",
+     "start": 33.609,
+     "end": 33.912
+    },
+    {
+     "text": "up.",
+     "start": 33.912,
+     "end": 34.113
+    }
+   ]
+  }
+ ]
+}

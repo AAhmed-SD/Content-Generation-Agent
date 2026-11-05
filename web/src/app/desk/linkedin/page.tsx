@@ -7,6 +7,9 @@ import { LeaveForm } from "@/components/reject-button";
 import { ACCOUNTS, readPosts } from "@/lib/linkedin";
 import { readSession } from "@/lib/session";
 
+/** Reads the signed-in session at request time, so this page may block on the server. */
+export const instant = false;
+
 const NEXT: Record<string, { status: string; label: string } | null> = {
   draft: { status: "approved", label: "Approve" },
   approved: { status: "posted", label: "Mark posted" },
@@ -16,7 +19,7 @@ const NEXT: Record<string, { status: string; label: string } | null> = {
 export default async function LinkedInPage({ searchParams }: { searchParams: Promise<{ error?: string }> }) {
   const person = await readSession();
   if (!person) redirect("/");
-  const { posts } = readPosts();
+  const { posts } = (await readPosts());
   const { error } = await searchParams;
 
   return (

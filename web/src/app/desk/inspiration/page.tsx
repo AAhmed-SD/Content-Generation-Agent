@@ -8,21 +8,24 @@ import { readInspiration, readPulled, readRejected } from "@/lib/library";
 import { outliers } from "@/lib/signals";
 import { readSession } from "@/lib/session";
 
+/** Reads the signed-in session at request time, so this page may block on the server. */
+export const instant = false;
+
 const NICHES: Record<string, string> = { clinical: "Clinical", analytical: "Analytical", gcsealevel: "GCSE and A-level", mentalhealth: "Time" };
 
 export default async function InspirationPage({ searchParams }: { searchParams: Promise<{ source?: string; account?: string }> }) {
   const person = await readSession();
   if (!person) redirect("/");
-  const rejected = new Set(readRejected().inspiration);
-  const { run, items: all } = readInspiration();
-  const motion = outliers().filter((o) => o.niche === "motion" && !rejected.has(o.url)).sort((a, b) => b.ratio - a.ratio);
-  const kept = new Set(readPulled().items.map((p) => p.url));
+  const rejected = new Set((await readRejected()).inspiration);
+  const { run, items: all } = (await readInspiration());
+  const motion = (await outliers()).filter((o) => o.niche === "motion" && !rejected.has(o.url)).sort((a, b) => b.ratio - a.ratio);
+  const kept = new Set((await readPulled()).items.map((p) => p.url));
   const items = all.filter((i) => !rejected.has(i.url) && i.image);
   const sources = [...new Set(items.map((i) => i.source))].sort((a, b) => Number(b === "Abduzeedo") - Number(a === "Abduzeedo"));
   const query = await searchParams;
   const source = query.source ?? "Abduzeedo";
   const account = query.account && NICHES[query.account] ? query.account : "all";
-  const content = outliers()
+  const content = (await outliers())
     .filter((o) => o.niche !== "motion" && !rejected.has(o.url) && (account === "all" || o.niche === account))
     .sort((a, b) => b.ratio - a.ratio)
     .slice(0, 16);

@@ -1,0 +1,65 @@
+{
+ "id": "time-now-boarding-just-one-block",
+ "format": "departures",
+ "title": "Now boarding: just one block",
+ "rows": [
+  {
+   "time": "16:00",
+   "dest": "Start revision",
+   "status": "Delayed",
+   "tone": "bad",
+   "at": "L1:delayed"
+  },
+  {
+   "time": "16:30",
+   "dest": "Start revision",
+   "status": "Delayed",
+   "tone": "bad",
+   "at": "L2:delayed"
+  },
+  {
+   "time": "18:00",
+   "dest": "After tea",
+   "status": "Delayed",
+   "tone": "bad",
+   "at": "L3:delayed"
+  },
+  {
+   "time": "19:30",
+   "dest": "After this episode",
+   "status": "Delayed",
+   "tone": "bad",
+   "at": "L4:delayed"
+  },
+  {
+   "time": "21:00",
+   "dest": "The afternoon",
+   "status": "Gone",
+   "tone": "bad",
+   "at": "L5:gone"
+  },
+  {
+   "time": "Next",
+   "dest": "One small block",
+   "status": "25 min",
+   "at": "L7:block"
+  },
+  {
+   "time": "Next",
+   "dest": "One small block",
+   "status": "Moved",
+   "at": "L9:moves"
+  },
+  {
+   "time": "Next",
+   "dest": "One small block",
+   "status": "On time",
+   "tone": "ok",
+   "at": "L11:calendar"
+  }
+ ],
+ "final": {
+  "text": "Now boarding:\njust the one.",
+  "at": "L11:show"
+ }
+}

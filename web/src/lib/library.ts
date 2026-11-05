@@ -1,14 +1,12 @@
 import { existsSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from "node:fs";
 import { spawn } from "node:child_process";
 import path from "node:path";
+import { db, isLocal, queueJob, syncToDb } from "@/lib/db";
 
-/** Library, Inspiration and Ideas. The catalogue is built by scripts/library.mjs; the rest are small JSON files. */
+/** Library, Inspiration and Ideas. The catalogue is built by scripts/library.mjs; ideas, inspiration, pulled and rejected live in Supabase. */
 const web = process.cwd();
 const root = path.join(web, "..");
 const catalogueFile = path.join(web, "data", "library.json");
-const pulledFile = path.join(web, "research", "pulled.json");
-const ideasFile = path.join(web, "research", "ideas.json");
-const inspirationFile = path.join(web, "data", "inspiration.jsonl");
 export const outDir = path.join(root, "remotion", "out");
 
 const readJson = <T,>(file: string, fallback: T): T => {
@@ -29,101 +27,111 @@ export type Catalogue = {
   carousels: { name: string; slides: string[] }[];
   references: { name: string; file: string; line: string }[];
 };
-export const readCatalogue = () => readJson<Catalogue | null>(catalogueFile, null);
+/** The catalogue: the latest copy uploaded by scripts/sync-to-db.mjs (so Vercel can read it), else the local file. */
+export async function readCatalogue(): Promise<Catalogue | null> {
+  try {
+    const [row] = await db()`select detail from runs where kind = 'catalogue' order by at desc limit 1`;
+    if (row) return row.detail as Catalogue;
+  } catch {}
+  return readJson<Catalogue | null>(catalogueFile, null);
+}
 
 export type Pulled = { source: string; name: string; url: string; fit: string; status: string; image?: string };
-export const readPulled = () => readJson<{ note: string; items: Pulled[] }>(pulledFile, { note: "", items: [] });
-export function keepPulled(item: Pulled) {
-  const data = readPulled();
-  if (data.items.some((x) => x.url && x.url === item.url)) return;
-  data.items.unshift(item);
-  writeFileSync(pulledFile, JSON.stringify(data, null, 2) + "\n");
+export async function readPulled(): Promise<{ note: string; items: Pulled[] }> {
+  const rows = await db()`select source, name, coalesce(url, '') as url, coalesce(fit, '') as fit, status, image from pulled order by created_at desc`;
+  return { note: "Things pulled from outside that fit Offload. Keep adds to this list.", items: rows.map((r) => ({ source: r.source ?? "", name: r.name, url: r.url, fit: r.fit, status: r.status, image: r.image ?? undefined })) };
+}
+export async function keepPulled(item: Pulled) {
+  const sql = db();
+  const [seen] = await sql`select 1 from pulled where url = ${item.url} limit 1`;
+  if (seen && item.url) return;
+  await sql`insert into pulled (source, name, url, image, fit, status) values (${item.source}, ${item.name}, ${item.url}, ${item.image ?? null}, ${item.fit}, ${item.status})`;
 }
 
 export const IDEA_STATUS = ["new", "accepted", "building", "made"] as const;
 export type IdeaStatus = (typeof IDEA_STATUS)[number];
 export type Idea = { id: string; title: string; kind: string; niche: string; pitch: string; status: IdeaStatus; by: string; at: string; frames?: string[] };
-export const readIdeas = () => readJson<{ note: string; ideas: Idea[] }>(ideasFile, { note: "", ideas: [] });
-function writeIdeas(data: { note: string; ideas: Idea[] }) {
-  writeFileSync(ideasFile, JSON.stringify(data, null, 2) + "\n");
+export async function readIdeas(): Promise<{ note: string; ideas: Idea[] }> {
+  const rows = await db()`select id, title, coalesce(kind, '') as kind, coalesce(niche, 'all') as niche, coalesce(pitch, '') as pitch, status, frames, coalesce(by, '') as by, coalesce(to_char(at, 'YYYY-MM-DD'), '') as at from ideas order by created_at desc`;
+  return { note: "", ideas: rows.map((r) => ({ id: r.id, title: r.title, kind: r.kind, niche: r.niche, pitch: r.pitch, status: r.status, by: r.by, at: r.at, frames: (r.frames as string[]) ?? [] })) };
 }
-export function addIdea(idea: Omit<Idea, "id" | "status" | "at">) {
-  const data = readIdeas();
-  const next = Math.max(0, ...data.ideas.map((i) => Number(i.id.slice(1)) || 0)) + 1;
-  data.ideas.unshift({ ...idea, id: `i${next}`, status: "new", at: new Date().toISOString().slice(0, 10) });
-  writeIdeas(data);
+export async function addIdea(idea: Omit<Idea, "id" | "status" | "at">) {
+  const sql = db();
+  await sql`insert into ideas (id, title, kind, niche, pitch, status, frames, by, at)
+    values (${"i" + Date.now().toString(36)}, ${idea.title}, ${idea.kind}, ${idea.niche}, ${idea.pitch}, 'new', ${sql.json(idea.frames ?? [])}, ${idea.by}, current_date)`;
 }
-export function setFrames(id: string, frames: string[]) {
-  const data = readIdeas();
-  const idea = data.ideas.find((i) => i.id === id);
-  if (!idea) return;
-  idea.frames = frames;
-  writeIdeas(data);
+export async function setFrames(id: string, frames: string[]) {
+  const sql = db();
+  await sql`update ideas set frames = ${sql.json(frames)} where id = ${id}`;
 }
-export function rejectIdea(id: string) {
-  const data = readIdeas();
-  data.ideas = data.ideas.filter((i) => i.id !== id);
-  writeIdeas(data);
+export async function rejectIdea(id: string) {
+  await db()`delete from ideas where id = ${id}`;
 }
-export function setIdeaStatus(id: string, status: IdeaStatus) {
-  const data = readIdeas();
-  const idea = data.ideas.find((i) => i.id === id);
-  if (!idea) return;
-  idea.status = status;
-  writeIdeas(data);
+export async function setIdeaStatus(id: string, status: IdeaStatus) {
+  await db()`update ideas set status = ${status} where id = ${id}`;
 }
 
 export type InspirationItem = { type: "item"; at: string; source: string; title: string; url: string; published: string; summary: string; image: string };
 export type InspirationRun = { type: "run"; at: string; feeds: number; new: number; failed: { source: string; error: string }[] };
-export function readInspiration() {
-  if (!existsSync(inspirationFile)) return { items: [] as InspirationItem[], run: undefined as InspirationRun | undefined };
-  const rows = readFileSync(inspirationFile, "utf8")
-    .split("\n")
-    .filter(Boolean)
-    .flatMap((line) => {
-      try {
-        return [JSON.parse(line) as InspirationItem | InspirationRun];
-      } catch {
-        return [];
-      }
-    });
-  const items = rows.filter((r): r is InspirationItem => r.type === "item").sort((a, b) => (b.published || b.at).localeCompare(a.published || a.at));
-  return { items, run: rows.filter((r): r is InspirationRun => r.type === "run").at(-1) };
+export async function readInspiration(): Promise<{ items: InspirationItem[]; run: InspirationRun | undefined }> {
+  const sql = db();
+  const rows = await sql`select url, coalesce(source, '') as source, coalesce(title, '') as title, coalesce(image, '') as image, coalesce(summary, '') as summary,
+    coalesce(to_char(published_at at time zone 'utc', 'YYYY-MM-DD"T"HH24:MI:SS"Z"'), '') as published, to_char(collected_at at time zone 'utc', 'YYYY-MM-DD"T"HH24:MI:SS"Z"') as at
+    from inspiration_items order by coalesce(published_at, collected_at) desc limit 400`;
+  const [run] = await sql`select at, detail from runs where kind = 'inspiration' order by at desc limit 1`;
+  return {
+    items: rows.map((r) => ({ type: "item" as const, at: r.at, source: r.source, title: r.title, url: r.url, published: r.published, summary: r.summary, image: r.image })),
+    run: run ? { type: "run", at: new Date(run.at).toISOString(), ...(run.detail as { feeds: number; new: number; failed: { source: string; error: string }[] }) } : undefined,
+  };
 }
 
 let busy = false;
 /** Read the feeds, then rebuild the catalogue. Both are quick; one at a time. */
-export function startInspirationRun() {
+export async function startInspirationRun() {
+  if (!isLocal()) {
+    await queueJob("inspiration");
+    return true;
+  }
   if (busy) return false;
   busy = true;
   const child = spawn("python3", ["-I", path.join(web, "scripts", "inspiration.py")], { cwd: root, stdio: "ignore" });
-  child.on("exit", () => (busy = false));
+  child.on("exit", () => {
+    busy = false;
+    void syncToDb();
+  });
   child.on("error", () => (busy = false));
   return true;
 }
-export function startCatalogueRun() {
+export async function startCatalogueRun() {
+  if (!isLocal()) {
+    await queueJob("catalogue");
+    return;
+  }
   const child = spawn(process.execPath, [path.join(root, "scripts", "library.mjs")], { cwd: root, stdio: "ignore" });
-  return new Promise<void>((resolve) => {
+  await new Promise<void>((resolve) => {
     child.on("exit", () => resolve());
     child.on("error", () => resolve());
   });
+  await syncToDb();
 }
 
-/** Rejected things. Films and stills move to remotion/rejected/ (gitignored); the rest are hidden by a list. */
-const rejectedFile = path.join(web, "research", "rejected.json");
+/** Rejected things. Films and stills move to remotion/rejected/ (gitignored, on the Mac); the rest are hidden by a list. */
 type Rejected = { note: string; formats: string[]; inspiration: string[] };
-export const readRejected = () => readJson<Rejected>(rejectedFile, { note: "Hidden from the desk and the library. Remove a line to bring it back.", formats: [], inspiration: [] });
-function addRejected(key: "formats" | "inspiration", value: string) {
-  const data = readRejected();
-  if (!data[key].includes(value)) data[key].push(value);
-  writeFileSync(rejectedFile, JSON.stringify(data, null, 2) + "\n");
+export async function readRejected(): Promise<Rejected> {
+  const rows = await db()`select kind, value from rejected`;
+  return {
+    note: "Hidden from the desk and the library.",
+    formats: rows.filter((r) => r.kind === "format").map((r) => r.value),
+    inspiration: rows.filter((r) => r.kind === "inspiration").map((r) => r.value),
+  };
 }
-export const rejectFormat = (id: string) => addRejected("formats", id);
+const addRejected = async (kind: "format" | "inspiration", value: string) => {
+  await db()`insert into rejected (kind, value) values (${kind}, ${value}) on conflict do nothing`;
+};
+export const rejectFormat = (id: string) => addRejected("format", id);
 export const rejectInspiration = (url: string) => addRejected("inspiration", url);
-export function rejectPulled(url: string, name: string) {
-  const data = readPulled();
-  data.items = data.items.filter((x) => !(x.url === url && x.name === name));
-  writeFileSync(pulledFile, JSON.stringify(data, null, 2) + "\n");
+export async function rejectPulled(url: string, name: string) {
+  await db()`delete from pulled where coalesce(url, '') = ${url} and name = ${name}`;
 }
 
 const remotion = path.join(root, "remotion");

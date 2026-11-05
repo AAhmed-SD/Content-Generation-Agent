@@ -40,7 +40,7 @@ Each turn of the loop is the same five steps. The first turn starts from the out
 
 | Step | What happens | Who or what | Built? |
 | --- | --- | --- | --- |
-| 1. Inputs | For videos: what is going viral in each niche (Virlo) and outlier videos on our watch list (Signals). For carousels: what students are searching for (Research). From turn two: how our own posts did, per platform and per opener. | Virlo, `signals.py`, `pipeline.ts`, the Numbers page | Signals and Research yes. Virlo is on trial; its key goes in `web/.env.local`. |
+| 1. Inputs | For videos: what is going viral in each niche (Virlo) and outlier videos on our watch list (Signals). For carousels: what students are searching for (Research). From turn two: how our own posts did, per platform and per opener. | Virlo, `signals.py`, `pipeline.ts`, the Numbers page | Signals and Research yes. Virlo is deferred: launch runs on the free Signals collector (14 UK accounts). Add Virlo after a few weeks of our own numbers, with a balance cap; confirm its API pricing first (the pricing page lists the API under Enterprise). |
 | 2. Build | The hook (two openers, A and B), the script, and the video idea: format, hook style, scenes. Picked from `docs/library.md` and written to the brand files and the week's brief. | Claude | Yes, per film. Not yet a daily batch. |
 | 3. Approve | A person watches the render and approves it or rejects it on the desk. Nothing posts without a stamp. | Hadiqa, Laiba | Yes |
 | 4. Post | Approved films are scheduled to the 19 accounts. | Blotato Creator | Not connected yet. Until then, post by hand. |
@@ -115,3 +115,27 @@ Order: 1. Container and server with files on disk, live behind HTTPS. 2. Replace
 ## What is not built
 
 No Postgres. No hosted desk. No pose library. YouTube Analytics and a Meta app are not connected. Nothing posts, spends, or sends on its own. The trial sentence in `brand/platforms.md` is still unset.
+
+## Claude API cost (decided 2026-11-05)
+
+All desk calls go through `web/src/lib/claude-stream.ts`.
+
+- **Two models.** Opus 5.5 (`heavy`) for proposals and scripts, where quality decides the output. Sonnet 5.5 (`light`, half the price) for proposal chat and LinkedIn. Override with `ANTHROPIC_MODEL_HEAVY` and `ANTHROPIC_MODEL_LIGHT`.
+- **Prompt caching.** The brand rules, all four account files and the format list (`stableContext()` in `web/src/lib/proposals.ts`) are sent as one cached system block. That block must stay byte-identical between calls, so never put dates, names or week-specific data in it. Signals, research, ideas, rejections and the proposal itself go in the message, after the cache. Chat uses the 1-hour cache and proposal batches the 5-minute one.
+  - Measured on 2026-11-05: the first chat call cost $0.090, which includes writing about 18,000 tokens to the cache. The next call cost $0.019.
+- **Structured outputs.** Every call that returns data uses `output_config.format` (`claudeJson`), never free-text JSON. Opus 5.5 and Sonnet 5.5 refuse forced `tool_choice`.
+- **Spend is logged.** Each call's tokens and cost go to `marketing.runs` (kind `claude`), and the Numbers page shows them by task. At launch volume, expect about $35–45 a month.
+
+## The content agent (built 2026-11-05)
+
+Accepting a proposal on **Hooks** queues a `make-film` job in `marketing.jobs` and starts the Mac worker (`web/scripts/worker.mjs`). The worker runs one job at a time and stops itself after 10 idle minutes; `--forever` keeps it running for launchd. It writes a log to `web/data/worker.log`.
+
+`web/scripts/agent.mjs` makes the film:
+
+1. **Write it.** Opus, with the brand files cached, writes `script.json` and `spec.json`. It copies the newest bank film in the same format and follows that format's TypeScript type from the kit files.
+2. **Check it.** The spec must match the example's shape. Every time ref must land on a spoken word. Line ids must run L1, L2, and so on. No retired theme. No number that isn't in the proposal. On a failed check, Claude gets the errors back, with up to two retries.
+3. **Make it.** Write `remotion/src/world/bank/<id>/`, voice it with `remotion/scripts/bank.mjs` (bm_george), render to `remotion/out/bank/offload-<id>.mp4`, and set the content row to `rendered`.
+
+The film then shows under **Films** on the Approval page (`/desk`), with a player and its lines. **Approve** adds a stamp (clinical and time need both people). **Send back** takes a note and the agent remakes the film. Accepting a proposal is not a stamp; each new cut starts with no stamps.
+
+Measured on 2026-11-05: about 4 minutes from Accept to a rendered 40-second film.

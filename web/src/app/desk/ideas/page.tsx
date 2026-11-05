@@ -7,6 +7,9 @@ import { LeaveForm } from "@/components/reject-button";
 import { IDEA_STATUS, readIdeas } from "@/lib/library";
 import { readSession } from "@/lib/session";
 
+/** Reads the signed-in session at request time, so this page may block on the server. */
+export const instant = false;
+
 const LABEL: Record<string, string> = { new: "New", accepted: "Accepted", building: "Building", made: "Made" };
 const NICHES: Record<string, string> = { all: "All accounts", clinical: "Clinical", analytical: "Analytical", gcsealevel: "GCSE and A-level", mentalhealth: "Time" };
 const KINDS = ["Film format", "Series", "Engagement", "Launch", "Product", "LinkedIn", "Rule", "Idea"];
@@ -14,7 +17,7 @@ const KINDS = ["Film format", "Series", "Engagement", "Launch", "Product", "Link
 export default async function IdeasPage() {
   const person = await readSession();
   if (!person) redirect("/");
-  const { ideas } = readIdeas();
+  const { ideas } = (await readIdeas());
 
   return (
     <DeskFrame person={person} current="ideas">

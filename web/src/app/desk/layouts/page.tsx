@@ -12,6 +12,9 @@ import { downloadNote } from "@/lib/references";
 import { editPath } from "@/lib/picture-text";
 import { readSession } from "@/lib/session";
 
+/** Reads the signed-in session at request time, so this page may block on the server. */
+export const instant = false;
+
 function boardPins() {
   const dir = path.join(process.cwd(), "public", "board");
   try {

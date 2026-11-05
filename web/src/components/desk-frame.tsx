@@ -33,10 +33,10 @@ const sections: Section[] = [
     links: [
       { href: "/desk/signals", key: "signals", label: "Signals", n: 1 },
       { href: "/desk/research", key: "research", label: "Research", n: 2 },
-      { href: "/desk/scripts", key: "scripts", label: "Scripts", n: 3 },
+      { href: "/desk/hooks", key: "scripts", label: "Hooks", n: 3 },
       { href: "/desk", key: "yes", label: "Approval", n: 4 },
       { href: "/desk/posts", key: "posts", label: "Posts", n: 5 },
-      { href: "/desk/loop", key: "numbers", label: "Numbers", n: 6 },
+      { href: "/desk/data", key: "numbers", label: "Numbers", n: 6 },
     ],
   },
   {

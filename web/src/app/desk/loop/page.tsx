@@ -7,6 +7,9 @@ import { loopPicture, type Bar, type Move } from "@/lib/loop";
 import { WEEK } from "@/lib/pipeline";
 import { readSession } from "@/lib/session";
 
+/** Reads the signed-in session at request time, so this page may block on the server. */
+export const instant = false;
+
 const checks = ["Post", "1 hour", "24 hours", "72 hours", "7 days", "Monday note"];
 
 export default async function LoopPage({ searchParams }: { searchParams: Promise<{ csv?: string }> }) {

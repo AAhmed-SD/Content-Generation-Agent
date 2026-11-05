@@ -24,8 +24,6 @@ import s_analytical_terms from "./analytical-terms/spec.json";
 import t_analytical_terms from "./analytical-terms/timing.json";
 import s_analytical_three_things from "./analytical-three-things/spec.json";
 import t_analytical_three_things from "./analytical-three-things/timing.json";
-import s_analytical_tier_list from "./analytical-tier-list/spec.json";
-import t_analytical_tier_list from "./analytical-tier-list/timing.json";
 import s_clinical_blockfall from "./clinical-blockfall/spec.json";
 import t_clinical_blockfall from "./clinical-blockfall/timing.json";
 import s_clinical_departures from "./clinical-departures/spec.json";
@@ -92,6 +90,8 @@ import s_time_lockscreen from "./time-lockscreen/spec.json";
 import t_time_lockscreen from "./time-lockscreen/timing.json";
 import s_time_night_before from "./time-night-before/spec.json";
 import t_time_night_before from "./time-night-before/timing.json";
+import s_time_now_boarding_just_one_block from "./time-now-boarding-just-one-block/spec.json";
+import t_time_now_boarding_just_one_block from "./time-now-boarding-just-one-block/timing.json";
 import s_time_pov from "./time-pov/spec.json";
 import t_time_pov from "./time-pov/timing.json";
 import s_time_recipe from "./time-recipe/spec.json";
@@ -122,7 +122,6 @@ export const BANK = [
   { id: "analytical-spot-mistake-v2", spec: s_analytical_spot_mistake_v2 as AnySpec, timing: t_analytical_spot_mistake_v2 },
   { id: "analytical-terms", spec: s_analytical_terms as AnySpec, timing: t_analytical_terms },
   { id: "analytical-three-things", spec: s_analytical_three_things as AnySpec, timing: t_analytical_three_things },
-  { id: "analytical-tier-list", spec: s_analytical_tier_list as AnySpec, timing: t_analytical_tier_list },
   { id: "clinical-blockfall", spec: s_clinical_blockfall as AnySpec, timing: t_clinical_blockfall },
   { id: "clinical-departures", spec: s_clinical_departures as AnySpec, timing: t_clinical_departures },
   { id: "clinical-endocrine", spec: s_clinical_endocrine as AnySpec, timing: t_clinical_endocrine },
@@ -156,6 +155,7 @@ export const BANK = [
   { id: "time-jail-notes", spec: s_time_jail_notes as AnySpec, timing: t_time_jail_notes },
   { id: "time-lockscreen", spec: s_time_lockscreen as AnySpec, timing: t_time_lockscreen },
   { id: "time-night-before", spec: s_time_night_before as AnySpec, timing: t_time_night_before },
+  { id: "time-now-boarding-just-one-block", spec: s_time_now_boarding_just_one_block as AnySpec, timing: t_time_now_boarding_just_one_block },
   { id: "time-pov", spec: s_time_pov as AnySpec, timing: t_time_pov },
   { id: "time-recipe", spec: s_time_recipe as AnySpec, timing: t_time_recipe },
   { id: "time-rest", spec: s_time_rest as AnySpec, timing: t_time_rest },

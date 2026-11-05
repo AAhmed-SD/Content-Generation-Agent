@@ -6,6 +6,9 @@ import { lastRun, outliers } from "@/lib/signals";
 import { readSession } from "@/lib/session";
 import { LiveSignals } from "./live";
 
+/** Reads the signed-in session at request time, so this page may block on the server. */
+export const instant = false;
+
 export default async function SignalsPage() {
   const person = await readSession();
   if (!person) redirect("/");
@@ -19,7 +22,7 @@ export default async function SignalsPage() {
       <form action={collectSignals} className="phase-actions">
         <PendingButton idle="Collect now" pending="Starting" />
       </form>
-      <LiveSignals initial={outliers()} initialRun={lastRun() ?? null} />
+      <LiveSignals initial={(await outliers())} initialRun={(await lastRun()) ?? null} />
     </DeskFrame>
   );
 }

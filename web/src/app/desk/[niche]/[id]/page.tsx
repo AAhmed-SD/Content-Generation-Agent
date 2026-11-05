@@ -9,6 +9,9 @@ import { layoutFor } from "@/lib/pin-layouts";
 import { personName, type PersonId } from "@/lib/people";
 import { readSession } from "@/lib/session";
 
+/** Reads the signed-in session at request time, so this page may block on the server. */
+export const instant = false;
+
 export default async function PiecePage({
   params,
   searchParams,

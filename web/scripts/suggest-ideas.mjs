@@ -1,30 +1,35 @@
 #!/usr/bin/env node
 /**
  * Suggest three new ideas for the desk's Ideas page, each with a storyboard, from what is working now.
+ * Reads signals, kept inspiration and existing ideas from Supabase; writes the new ideas there.
  *
- *   node scripts/suggest-ideas.mjs            (from the repo root)
+ *   node scripts/suggest-ideas.mjs            (from web/)
  *   node scripts/suggest-ideas.mjs --weekly   (only if the last suggestion is a week old; for the schedule)
  *
  * Reads: the UK signal hooks, kept inspiration, the retired themes and the hook styles. Never raw account names in the pitch.
  * Needs ANTHROPIC_API_KEY in web/.env.local.
  */
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
+import postgres from "postgres";
 
-const root = process.cwd();
-const ideasFile = path.join(root, "web", "research", "ideas.json");
+const root = path.join(process.cwd(), "..");
 const env = Object.fromEntries(
-  (existsSync(path.join(root, "web", ".env.local")) ? readFileSync(path.join(root, "web", ".env.local"), "utf8") : "")
+  (existsSync(".env.local") ? readFileSync(".env.local", "utf8") : "")
     .split("\n")
     .map((l) => l.match(/^\s*([A-Z_]+)\s*=\s*"?(.*?)"?\s*$/))
     .filter(Boolean)
     .map((m) => [m[1], m[2]]),
 );
 const key = process.env.ANTHROPIC_API_KEY || env.ANTHROPIC_API_KEY;
-const data = JSON.parse(readFileSync(ideasFile, "utf8"));
-const last = data.ideas.filter((i) => i.by === "Claude (weekly)").map((i) => i.at).sort().at(-1);
+const get = (k) => process.env[k] || env[k];
+const sql = postgres({ host: get("MARKETING_DB_HOST"), port: Number(get("MARKETING_DB_PORT") || 6543), database: "postgres", username: get("MARKETING_DB_USER"), password: get("MARKETING_DB_PASSWORD"), ssl: "require", prepare: false, max: 1, connection: { search_path: "marketing" } });
+const data = { ideas: await sql`select id, title, to_char(at, 'YYYY-MM-DD') as at, by from ideas` };
+const [lastRow] = await sql`select to_char(max(at), 'YYYY-MM-DD') as at from ideas where by = 'Claude (weekly)'`;
+const last = lastRow?.at;
 if (process.argv.includes("--weekly") && last && Date.now() - Date.parse(last) < 6.5 * 864e5) {
   console.log(`ideas: last suggested ${last}, not due`);
+  await sql.end();
   process.exit(0);
 }
 if (!key) {
@@ -32,22 +37,10 @@ if (!key) {
   process.exit(1);
 }
 const read = (f) => (existsSync(f) ? readFileSync(f, "utf8") : "");
-const signals = read(path.join(root, "web", "data", "signals.jsonl"))
-  .split("\n")
-  .filter(Boolean)
-  .map((l) => {
-    try {
-      return JSON.parse(l);
-    } catch {
-      return null;
-    }
-  })
-  .filter((s) => s && s.type === "outlier" && s.niche !== "motion")
-  .sort((a, b) => b.ratio - a.ratio)
-  .slice(0, 25)
-  .map((s) => `- [${s.niche}] ${s.ratio}x: ${(s.hook || s.title).slice(0, 140)}`)
+const signals = (await sql`select niche, ratio, coalesce(nullif(hook, ''), title) as text from signals where niche <> 'motion' order by ratio desc limit 25`)
+  .map((s) => `- [${s.niche}] ${s.ratio}x: ${String(s.text).slice(0, 140)}`)
   .join("\n");
-const pulled = JSON.parse(read(path.join(root, "web", "research", "pulled.json")) || '{"items":[]}').items.slice(0, 15).map((p) => `- ${p.name}: ${p.fit}`).join("\n");
+const pulled = (await sql`select name, fit from pulled order by created_at desc limit 15`).map((p) => `- ${p.name}: ${p.fit}`).join("\n");
 const existing = data.ideas.map((i) => `- ${i.title}`).join("\n");
 const scripting = read(path.join(root, "brand", "scripting.md"));
 const hooks = read(path.join(root, "brand", "hook-styles.md"));
@@ -81,11 +74,14 @@ if (!res.ok) {
 }
 const text = (json.content || []).filter((b) => b.type === "text").map((b) => b.text).join("");
 const items = JSON.parse(text.match(/\[[\s\S]*\]/)?.[0] || "[]");
-let n = Math.max(0, ...data.ideas.map((i) => Number(String(i.id).slice(1)) || 0));
 const today = new Date().toISOString().slice(0, 10);
-for (const it of items.slice(0, 3)) {
+let added = 0;
+for (const [k, it] of items.slice(0, 3).entries()) {
   if (!it.title || !Array.isArray(it.frames)) continue;
-  data.ideas.unshift({ id: `i${++n}`, title: String(it.title).slice(0, 140), kind: it.kind || "Idea", niche: it.niche || "all", pitch: String(it.pitch || "").slice(0, 800), status: "new", by: "Claude (weekly)", at: today, frames: it.frames.slice(0, 8).map((f) => String(f).slice(0, 200)) });
+  await sql`insert into ideas (id, title, kind, niche, pitch, status, frames, by, at)
+    values (${"i" + Date.now().toString(36) + k}, ${String(it.title).slice(0, 140)}, ${it.kind || "Idea"}, ${it.niche || "all"}, ${String(it.pitch || "").slice(0, 800)}, 'new',
+      ${sql.json(it.frames.slice(0, 8).map((f) => String(f).slice(0, 200)))}, 'Claude (weekly)', ${today})`;
+  added++;
 }
-writeFileSync(ideasFile, JSON.stringify(data, null, 2) + "\n");
-console.log(`ideas: added ${Math.min(3, items.length)}`);
+console.log(`ideas: added ${added}`);
+await sql.end();

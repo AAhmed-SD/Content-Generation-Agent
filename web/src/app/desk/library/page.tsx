@@ -7,6 +7,9 @@ import { RejectButton } from "@/components/reject-button";
 import { readCatalogue, readPulled } from "@/lib/library";
 import { readSession } from "@/lib/session";
 
+/** Reads the signed-in session at request time, so this page may block on the server. */
+export const instant = false;
+
 const TABS = [
   { id: "templates", label: "Templates" },
   { id: "films", label: "Films" },
@@ -22,8 +25,8 @@ export default async function LibraryPage({ searchParams }: { searchParams: Prom
   const query = await searchParams;
   const tab = TABS.some((t) => t.id === query.tab) ? query.tab : "templates";
   const niche = query.niche && NICHES[query.niche] ? query.niche : "all";
-  const lib = readCatalogue();
-  const pulled = readPulled();
+  const lib = (await readCatalogue());
+  const pulled = (await readPulled());
 
   return (
     <DeskFrame person={person} current="library">

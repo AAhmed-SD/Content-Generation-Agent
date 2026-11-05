@@ -6,6 +6,9 @@ import { isReady, niches, readDesk } from "@/lib/desk";
 import { WEEK } from "@/lib/pipeline";
 import { readSession } from "@/lib/session";
 
+/** Reads the signed-in session at request time, so this page may block on the server. */
+export const instant = false;
+
 export default async function PostsPage() {
   const person = await readSession();
   if (!person) redirect("/");

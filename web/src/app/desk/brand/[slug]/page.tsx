@@ -7,6 +7,9 @@ import { PendingButton } from "@/components/pending-button";
 import { brandDoc, brandFileEditable, readBrandFile } from "@/lib/brand";
 import { readSession } from "@/lib/session";
 
+/** Reads the signed-in session at request time, so this page may block on the server. */
+export const instant = false;
+
 const savedNote: Record<string, string> = {
   "1": "Saved. The next script reads this file.",
   empty: "Write something, or upload a markdown file.",

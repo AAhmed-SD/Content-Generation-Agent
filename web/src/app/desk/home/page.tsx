@@ -3,13 +3,17 @@ import { redirect } from "next/navigation";
 import { DeskFrame } from "@/components/desk-frame";
 import { HomeIntro } from "@/components/home-intro";
 import { Storyboard } from "@/components/storyboard";
-import { isReady, needsScript, readDesk } from "@/lib/desk";
+import { isReady, readDesk } from "@/lib/desk";
 import { readCatalogue, readIdeas, readInspiration, readRejected } from "@/lib/library";
 import { readPosts } from "@/lib/linkedin";
 import { loopPicture } from "@/lib/loop";
 import { readResearch } from "@/lib/pipeline";
 import { outliers } from "@/lib/signals";
+import { proposalCounts } from "@/lib/proposals";
 import { readSession } from "@/lib/session";
+
+/** Reads the signed-in session at request time, so this page may block on the server. */
+export const instant = false;
 
 const hour = () => new Date().getHours();
 
@@ -19,20 +23,20 @@ export default async function HomePage() {
   const first = person.name.split(" ")[0];
   const pieces = readDesk();
   const weekAgo = new Date(Date.now() - 7 * 864e5).toISOString();
-  const signals = outliers().filter((o) => o.niche !== "motion" && o.at >= weekAgo);
+  const signals = (await outliers()).filter((o) => o.niche !== "motion" && o.at >= weekAgo);
   const research = readResearch();
   const numbers = loopPicture();
-  const ideas = readIdeas().ideas.filter((i) => i.status !== "made").slice(0, 3);
-  const rejected = new Set(readRejected().inspiration);
-  const insp = readInspiration().items.filter((i) => i.image && !rejected.has(i.url)).sort((a, b) => Number(b.source === "Abduzeedo") - Number(a.source === "Abduzeedo")).slice(0, 6);
-  const motion = outliers().filter((o) => o.niche === "motion").length;
-  const films = readCatalogue()?.films.filter((f) => f.thumb).length ?? 0;
-  const li = readPosts().posts;
+  const ideas = (await readIdeas()).ideas.filter((i) => i.status !== "made").slice(0, 3);
+  const rejected = new Set((await readRejected()).inspiration);
+  const insp = (await readInspiration()).items.filter((i) => i.image && !rejected.has(i.url)).sort((a, b) => Number(b.source === "Abduzeedo") - Number(a.source === "Abduzeedo")).slice(0, 6);
+  const motion = (await outliers()).filter((o) => o.niche === "motion").length;
+  const films = (await readCatalogue())?.films.filter((f) => f.thumb).length ?? 0;
+  const li = (await readPosts()).posts;
 
   const loop = [
     { href: "/desk/signals", n: 1, label: "Signals", value: signals.length, note: "UK videos above usual, this week" },
     { href: "/desk/research", n: 2, label: "Research", value: research?.themes.length ?? 0, note: research ? "things students are looking up" : "not run this week" },
-    { href: "/desk/scripts", n: 3, label: "Scripts", value: pieces.filter((p) => needsScript(p)).length, note: "pieces waiting for a script" },
+    { href: "/desk/hooks", n: 3, label: "Hooks", value: (await proposalCounts()).proposed ?? 0, note: "video proposals waiting" },
     { href: "/desk", n: 4, label: "Approval", value: pieces.filter((p) => !isReady(p)).length, note: "waiting for a stamp" },
     { href: "/desk/posts", n: 5, label: "Posts", value: pieces.filter((p) => isReady(p)).length, note: "ready to post" },
     { href: "/desk/loop", n: 6, label: "Numbers", value: numbers.rows.length, note: numbers.checkpoint ? `rows at ${numbers.checkpoint}` : "nothing back yet" },

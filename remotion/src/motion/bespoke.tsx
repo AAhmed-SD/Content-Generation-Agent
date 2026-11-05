@@ -63,7 +63,7 @@ export const VOWords: React.FC<{
               filter: `blur(${(1 - age) * 6}px)`,
               transform: `translateY(${(1 - age) * 22}px)`,
               ...look,
-              opacity: (look.opacity ?? 1) * age,
+              opacity: Number(look.opacity ?? 1) * age,
             }}
           >
             {word.text}

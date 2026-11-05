@@ -1,0 +1,66 @@
+{
+ "id": "bank/time-now-boarding-just-one-block",
+ "voice": "bm_george",
+ "lang": "en-gb",
+ "speed": 0.94,
+ "gap": 0.42,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Four o'clock: start revising. Delayed.",
+   "after": 0.5
+  },
+  {
+   "id": "L2",
+   "say": "Half four. Also delayed.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "After tea. Delayed.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "After this episode. Delayed.",
+   "after": 0.6
+  },
+  {
+   "id": "L5",
+   "say": "By nine, the afternoon has gone.",
+   "after": 0.6
+  },
+  {
+   "id": "L6",
+   "say": "Most of us don't need a bigger plan.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "Just one small next block.",
+   "after": 0.7
+  },
+  {
+   "id": "L8",
+   "say": "Offload plans your blocks from your notes and exam dates.",
+   "after": 0.5
+  },
+  {
+   "id": "L9",
+   "say": "It moves them when one slips.",
+   "after": 0.5
+  },
+  {
+   "id": "L10",
+   "say": "It tests you as you go, and brings topics back.",
+   "after": 0.5
+  },
+  {
+   "id": "L11",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1
+  }
+ ]
+}

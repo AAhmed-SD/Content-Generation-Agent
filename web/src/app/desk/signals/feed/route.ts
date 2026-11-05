@@ -6,5 +6,5 @@ import { readSession } from "@/lib/session";
 export async function GET(request: Request) {
   if (!(await readSession())) return NextResponse.json({ error: "Sign in" }, { status: 401 });
   const since = new URL(request.url).searchParams.get("since") ?? undefined;
-  return NextResponse.json({ outliers: outliers(since), lastRun: lastRun() ?? null, running: isRunning() });
+  return NextResponse.json({ outliers: (await outliers(since)), lastRun: (await lastRun()) ?? null, running: isRunning() });
 }

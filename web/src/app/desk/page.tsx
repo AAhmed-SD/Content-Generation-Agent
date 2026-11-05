@@ -5,14 +5,20 @@ import { DeskFrame } from "@/components/desk-frame";
 import { PendingButton } from "@/components/pending-button";
 import { PieceMedia } from "@/components/piece-media";
 import { RenderWatch } from "@/components/render-watch";
+import { FilmQueue } from "@/components/film-queue";
+import { listFilms } from "@/lib/films";
 import { canStamp, isReady, needsScript, niches, readDesk, type NicheId, type Piece } from "@/lib/desk";
 import { personName, type PersonId } from "@/lib/people";
 import { readSession } from "@/lib/session";
+
+/** Reads the signed-in session at request time, so this page may block on the server. */
+export const instant = false;
 
 export default async function DeskPage() {
   const person = await readSession();
   if (!person) redirect("/");
   const pieces = readDesk();
+  const films = await listFilms();
 
   const yes = pieces.filter((piece) => canStamp(piece, person.id) && piece.script.source === "claude");
   const post = pieces.filter((piece) => isReady(piece) && !piece.liveUrl);
@@ -29,7 +35,8 @@ export default async function DeskPage() {
       <p className="file-no">3 · Approval</p>
       <h2 className="page-title">Approve it, then post.</h2>
       <p className="split">Your name is on the cards you can stamp. Medicine and time still need both of you.</p>
-      {visible === 0 ? <p className="split">Nothing is waiting on you. Layouts and numbers are in the sidebar.</p> : null}
+      <FilmQueue films={films} me={person.name} />
+      {visible === 0 ? <p className="split">No older cards are waiting on you.</p> : null}
       {niches.map((niche) => (
         <Audience
           key={niche.id}

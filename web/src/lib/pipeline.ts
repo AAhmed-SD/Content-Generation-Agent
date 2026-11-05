@@ -153,11 +153,6 @@ function takeThemes(niche: NicheId, source: Theme["source"], titles: string[]) {
   return themes;
 }
 
-const researchHeaders = {
-  Accept: "application/json, application/atom+xml, text/html",
-  "User-Agent": "offload-desk/0.1 (theme research; no profiles)",
-};
-
 function decodeXml(value: string) {
   return value
     .replaceAll("&amp;", "&")
@@ -168,23 +163,37 @@ function decodeXml(value: string) {
     .replaceAll("&gt;", ">");
 }
 
-async function redditTitles(niche: NicheId) {
-  const errors: string[] = [];
-  const jsonUrl = `https://www.reddit.com/search.json?q=${encodeURIComponent(searches[niche])}&limit=8&sort=relevance`;
-  try {
-    const response = await fetch(jsonUrl, { headers: researchHeaders, signal: AbortSignal.timeout(8000) });
-    if (!response.ok) throw new Error(`search ${response.status}`);
-    const json = (await response.json()) as { data?: { children?: { data?: { title?: string } }[] } };
-    return (json.data?.children ?? []).map((child) => child.data?.title ?? "");
-  } catch (error) {
-    errors.push(error instanceof Error ? error.message : "search failed");
-  }
+/**
+ * Reddit, through its official API (app-only OAuth). Reddit blocks anonymous readers, so this needs a free "script"
+ * app from reddit.com/prefs/apps: REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET in .env.local.
+ */
+let redditToken: { value: string; until: number } | null = null;
+async function redditAuth(id: string, secret: string) {
+  if (redditToken && redditToken.until > Date.now() + 60_000) return redditToken.value;
+  const response = await fetch("https://www.reddit.com/api/v1/access_token", {
+    method: "POST",
+    headers: {
+      authorization: `Basic ${Buffer.from(`${id}:${secret}`).toString("base64")}`,
+      "content-type": "application/x-www-form-urlencoded",
+      "user-agent": "offload-desk/1.0 (research)",
+    },
+    body: "grant_type=client_credentials",
+    signal: AbortSignal.timeout(8000),
+  });
+  if (!response.ok) throw new Error(`Reddit sign-in returned ${response.status}`);
+  const json = (await response.json()) as { access_token?: string; expires_in?: number };
+  if (!json.access_token) throw new Error("Reddit gave no token");
+  redditToken = { value: json.access_token, until: Date.now() + (json.expires_in ?? 3600) * 1000 };
+  return redditToken.value;
+}
 
-  const rssUrl = `https://www.reddit.com/r/${subs[niche]}/hot.rss?limit=12`;
-  const response = await fetch(rssUrl, { headers: researchHeaders, signal: AbortSignal.timeout(8000) });
-  if (!response.ok) throw new Error(`Reddit ${errors.join(", ")}; feed ${response.status}`);
-  const xml = await response.text();
-  return [...xml.matchAll(/<title>([\s\S]*?)<\/title>/g)].slice(1).map((match) => decodeXml(match[1]));
+async function redditTitles(niche: NicheId, id: string, secret: string) {
+  const token = await redditAuth(id, secret);
+  const url = `https://oauth.reddit.com/r/${subs[niche]}/search?q=${encodeURIComponent(searches[niche])}&restrict_sr=1&sort=relevance&t=month&limit=12`;
+  const response = await fetch(url, { headers: { authorization: `Bearer ${token}`, "user-agent": "offload-desk/1.0 (research)" }, signal: AbortSignal.timeout(8000) });
+  if (!response.ok) throw new Error(`Reddit returned ${response.status}`);
+  const json = (await response.json()) as { data?: { children?: { data?: { title?: string } }[] } };
+  return (json.data?.children ?? []).map((child) => child.data?.title ?? "");
 }
 
 async function webTitles(query: string) {
@@ -245,9 +254,20 @@ export async function gatherResearch() {
   const youtubeKey = process.env.YOUTUBE_API_KEY;
   const virloKey = process.env.VIRLO_API_KEY;
 
+  const redditId = process.env.REDDIT_CLIENT_ID?.trim();
+  const redditSecret = process.env.REDDIT_CLIENT_SECRET?.trim();
+
   for (const niche of niches) {
+    if (!redditId || !redditSecret) {
+      sources.push({
+        niche: niche.id,
+        name: "Reddit",
+        status: "skipped",
+        detail: "Reddit blocks anonymous readers. Add REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET (a free app at reddit.com/prefs/apps).",
+      });
+    } else
       try {
-        const titles = await redditTitles(niche.id);
+        const titles = await redditTitles(niche.id, redditId, redditSecret);
         const found = takeThemes(niche.id, "reddit", titles);
         themes.push(...found);
         sources.push({
