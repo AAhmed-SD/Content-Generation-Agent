@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { addIdeaAction, rejectIdeaAction, saveStoryboard, setIdeaStatusAction } from "@/app/actions";
+import { addIdeaAction, rejectIdeaAction, saveStoryboard, setIdeaStatusAction, suggestIdeas } from "@/app/actions";
 import { Storyboard } from "@/components/storyboard";
 import { DeskFrame } from "@/components/desk-frame";
 import { PendingButton } from "@/components/pending-button";
@@ -22,6 +22,10 @@ export default async function IdeasPage() {
       <h2 className="page-title">What Offload could make next.</h2>
       <p className="split">Formats, series and launch ideas that fit the brand. Accept the ones worth making and reject the rest; a rejected idea is deleted. Move an accepted one to Building when someone starts it, and to Made when it is in the Library.</p>
 
+      <form action={suggestIdeas} className="phase-actions">
+        <PendingButton idle="Suggest three ideas" pending="Thinking" />
+        <span className="insp-note">Claude suggests three new ideas with storyboards from what is working on UK TikTok. It also runs by itself once a week.</span>
+      </form>
       <form action={addIdeaAction} className="phase-block lib-add">
         <h3>Add an idea</h3>
         <input name="title" placeholder="The idea, in one line" aria-label="Title" required />

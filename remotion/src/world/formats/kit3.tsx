@@ -61,7 +61,7 @@ export const LockScreen: React.FC<{ spec: LockSpec } & Base> = ({ spec, T, timin
   const fl = flooded(T, spec.flood).map(({ item, a }) => ({ ...item, a, flood: true }));
   const ns = [...spec.notifs.map((n) => ({ ...n, a: T(n.at), flood: false })), ...fl].sort((x, y) => x.a - y.a);
   const f = T(spec.final.at);
-  const cues: Cue[] = [...ns.map((n) => ({ t: n.a, s: "ding", v: n.flood ? 0.12 : 0.22 })), { t: f, s: "sparkle", v: 0.28 }];
+  const cues: Cue[] = [...ns.map((n) => ({ t: n.a, s: "msg_ping", v: n.flood ? 0.12 : 0.26 })), { t: f, s: "msg_ping", v: 0.34 }, { t: f, s: "sparkle", v: 0.16 }];
   const clear = sp(f - 0.2);
   const shown = ns.filter((n) => t >= n.a && t < f + 0.6);
   const gap = shown.length <= 4 ? 200 : Math.max(46, 820 / (shown.length - 1));
@@ -97,7 +97,7 @@ export const Inbox: React.FC<{ spec: InboxSpec } & Base> = ({ spec, T, timing, v
   const unread = es.filter((e) => t >= e.a).length;
   const rush = fl.length ? shake(t, fl[0].a, fl[fl.length - 1].a + 0.5, 8) : "none";
   const f = T(spec.final.at);
-  const cues: Cue[] = [...es.map((e) => ({ t: e.a, s: "pop", v: e.preview ? 0.22 : 0.12 })), ...(spec.clear ? [{ t: clear, s: "swish", v: 0.3 }] : []), { t: f, s: "ding", v: 0.26 }];
+  const cues: Cue[] = [...es.map((e) => ({ t: e.a, s: "pop", v: e.preview ? 0.22 : 0.12 })), ...(spec.clear ? [{ t: clear, s: "swish", v: 0.3 }] : []), { t: f, s: "msg_ping", v: 0.32 }];
   const Row: React.FC<{ e: { from: string; subject: string; preview?: string }; bold?: boolean; hi?: boolean }> = ({ e, bold, hi }) => (
     <div style={{ padding: "30px 40px", borderBottom: `2px solid ${tokens.rule}`, background: hi ? alpha(tokens.mark, 0.08) : tokens.white, display: "flex", gap: 22 }}>
       <div style={{ flex: "none", width: 18, height: 18, borderRadius: 9, marginTop: 14, background: bold ? tokens.mark : "transparent" }} />

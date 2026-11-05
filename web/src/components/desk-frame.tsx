@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, type ReactNode } from "react";
+import { useSyncExternalStore, type ReactNode } from "react";
 import Link from "next/link";
 import { signOut } from "@/app/actions";
 import type { Person } from "@/lib/people";
@@ -82,20 +82,38 @@ const PanelIcon = ({ open }: { open: boolean }) => (
   </svg>
 );
 
-/** Remembered on this browser: whether the sidebar is open, and which sections are folded. */
+/**
+ * Remembered on this browser: whether the sidebar is open, and which sections are folded.
+ * Read synchronously on every client render, so moving between pages never re-opens the sidebar for a frame.
+ */
+const listeners = new Set<() => void>();
+const subscribe = (fn: () => void) => {
+  listeners.add(fn);
+  return () => listeners.delete(fn);
+};
 function useStored<T>(key: string, initial: T) {
-  const [value, setValue] = useState<T>(initial);
-  useEffect(() => {
+  const raw = useSyncExternalStore(
+    subscribe,
+    () => {
+      try {
+        return localStorage.getItem(key);
+      } catch {
+        return null;
+      }
+    },
+    () => null,
+  );
+  let value = initial;
+  if (raw !== null) {
     try {
-      const raw = localStorage.getItem(key);
-      if (raw !== null) setValue(JSON.parse(raw) as T);
+      value = JSON.parse(raw) as T;
     } catch {}
-  }, [key]);
+  }
   const set = (next: T) => {
-    setValue(next);
     try {
       localStorage.setItem(key, JSON.stringify(next));
     } catch {}
+    listeners.forEach((fn) => fn());
   };
   return [value, set] as const;
 }

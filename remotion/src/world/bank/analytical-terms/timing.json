@@ -1,5 +1,5 @@
 {
- "duration": 33.544,
+ "duration": 34.279,
  "lines": [
   {
    "id": "L1",
@@ -51,382 +51,397 @@
   },
   {
    "id": "L2",
-   "say": "Clause one. You'll spend longer colouring it than using it.",
+   "say": "Clause one. It was written for a week with no surprises.",
    "start": 4.513,
-   "end": 8.167,
+   "end": 8.474,
    "words": [
     {
      "text": "Clause",
      "start": 4.513,
-     "end": 5.024
+     "end": 5.012
     },
     {
      "text": "one.",
-     "start": 5.024,
-     "end": 5.343
+     "start": 5.012,
+     "end": 5.323
     },
     {
-     "text": "You'll",
-     "start": 5.633,
-     "end": 5.962
+     "text": "It",
+     "start": 5.603,
+     "end": 5.82
     },
     {
-     "text": "spend",
-     "start": 5.962,
-     "end": 6.29
+     "text": "was",
+     "start": 5.82,
+     "end": 6.091
     },
     {
-     "text": "longer",
-     "start": 6.29,
-     "end": 6.665
+     "text": "written",
+     "start": 6.091,
+     "end": 6.578
     },
     {
-     "text": "colouring",
-     "start": 6.665,
-     "end": 7.182
+     "text": "for",
+     "start": 6.578,
+     "end": 6.849
     },
     {
-     "text": "it",
-     "start": 7.182,
-     "end": 7.369
+     "text": "a",
+     "start": 6.849,
+     "end": 7.012
     },
     {
-     "text": "than",
-     "start": 7.369,
-     "end": 7.651
+     "text": "week",
+     "start": 7.012,
+     "end": 7.337
     },
     {
-     "text": "using",
-     "start": 7.651,
-     "end": 7.979
+     "text": "with",
+     "start": 7.337,
+     "end": 7.662
     },
     {
-     "text": "it.",
-     "start": 7.979,
-     "end": 8.167
+     "text": "no",
+     "start": 7.662,
+     "end": 7.878
+    },
+    {
+     "text": "surprises.",
+     "start": 7.878,
+     "end": 8.474
     }
    ]
   },
   {
    "id": "L3",
-   "say": "Clause two. It assumes you'll never be ill, or tired.",
-   "start": 8.667,
-   "end": 12.351,
+   "say": "Clause two. One late night, and the whole thing's out of date.",
+   "start": 8.974,
+   "end": 13.086,
    "words": [
     {
      "text": "Clause",
-     "start": 8.667,
-     "end": 9.141
+     "start": 8.974,
+     "end": 9.534
     },
     {
      "text": "two.",
-     "start": 9.141,
-     "end": 9.437
+     "start": 9.534,
+     "end": 9.884
     },
     {
-     "text": "It",
-     "start": 9.687,
-     "end": 9.875
+     "text": "One",
+     "start": 10.104,
+     "end": 10.36
     },
     {
-     "text": "assumes",
-     "start": 9.875,
-     "end": 10.297
+     "text": "late",
+     "start": 10.36,
+     "end": 10.667
     },
     {
-     "text": "you'll",
-     "start": 10.297,
-     "end": 10.626
+     "text": "night,",
+     "start": 10.667,
+     "end": 11.024
     },
     {
-     "text": "never",
-     "start": 10.626,
-     "end": 10.954
+     "text": "and",
+     "start": 11.344,
+     "end": 11.562
     },
     {
-     "text": "be",
-     "start": 10.954,
-     "end": 11.142
+     "text": "the",
+     "start": 11.562,
+     "end": 11.78
     },
     {
-     "text": "ill,",
-     "start": 11.142,
-     "end": 11.377
+     "text": "whole",
+     "start": 11.78,
+     "end": 12.085
     },
     {
-     "text": "or",
-     "start": 11.547,
-     "end": 11.839
+     "text": "thing's",
+     "start": 12.085,
+     "end": 12.433
     },
     {
-     "text": "tired.",
-     "start": 11.839,
-     "end": 12.351
+     "text": "out",
+     "start": 12.433,
+     "end": 12.651
+    },
+    {
+     "text": "of",
+     "start": 12.651,
+     "end": 12.825
+    },
+    {
+     "text": "date.",
+     "start": 12.825,
+     "end": 13.086
     }
    ]
   },
   {
    "id": "L4",
    "say": "Clause three. It expires on Wednesday.",
-   "start": 12.851,
-   "end": 15.724,
+   "start": 13.586,
+   "end": 16.459,
    "words": [
     {
      "text": "Clause",
-     "start": 12.851,
-     "end": 13.331
+     "start": 13.586,
+     "end": 14.066
     },
     {
      "text": "three.",
-     "start": 13.331,
-     "end": 13.751
+     "start": 14.066,
+     "end": 14.486
     },
     {
      "text": "It",
-     "start": 14.021,
-     "end": 14.265
+     "start": 14.756,
+     "end": 14.999
     },
     {
      "text": "expires",
-     "start": 14.265,
-     "end": 14.812
+     "start": 14.999,
+     "end": 15.547
     },
     {
      "text": "on",
-     "start": 14.812,
-     "end": 15.055
+     "start": 15.547,
+     "end": 15.79
     },
     {
      "text": "Wednesday.",
-     "start": 15.055,
-     "end": 15.724
+     "start": 15.79,
+     "end": 16.459
     }
    ]
   },
   {
    "id": "L5",
    "say": "You agree. You always agree.",
-   "start": 16.324,
-   "end": 18.378,
+   "start": 17.059,
+   "end": 19.113,
    "words": [
     {
      "text": "You",
-     "start": 16.324,
-     "end": 16.603
+     "start": 17.059,
+     "end": 17.338
     },
     {
      "text": "agree.",
-     "start": 16.603,
-     "end": 16.994
+     "start": 17.338,
+     "end": 17.729
     },
     {
      "text": "You",
-     "start": 17.184,
-     "end": 17.483
+     "start": 17.919,
+     "end": 18.217
     },
     {
      "text": "always",
-     "start": 17.483,
-     "end": 17.96
+     "start": 18.217,
+     "end": 18.695
     },
     {
      "text": "agree.",
-     "start": 17.96,
-     "end": 18.378
+     "start": 18.695,
+     "end": 19.113
     }
    ]
   },
   {
    "id": "L6",
    "say": "Or skip the contract. Offload builds your plan from your notes and exam dates.",
-   "start": 18.978,
-   "end": 24.561,
+   "start": 19.713,
+   "end": 25.295,
    "words": [
     {
      "text": "Or",
-     "start": 18.978,
-     "end": 19.202
+     "start": 19.713,
+     "end": 19.937
     },
     {
      "text": "skip",
-     "start": 19.202,
-     "end": 19.538
+     "start": 19.937,
+     "end": 20.273
     },
     {
      "text": "the",
-     "start": 19.538,
-     "end": 19.818
+     "start": 20.273,
+     "end": 20.553
     },
     {
      "text": "contract.",
-     "start": 19.818,
-     "end": 20.378
+     "start": 20.553,
+     "end": 21.113
     },
     {
      "text": "Offload",
-     "start": 20.828,
-     "end": 21.337
+     "start": 21.563,
+     "end": 22.072
     },
     {
      "text": "builds",
-     "start": 21.337,
-     "end": 21.789
+     "start": 22.072,
+     "end": 22.524
     },
     {
      "text": "your",
-     "start": 21.789,
-     "end": 22.129
+     "start": 22.524,
+     "end": 22.864
     },
     {
      "text": "plan",
-     "start": 22.129,
-     "end": 22.468
+     "start": 22.864,
+     "end": 23.203
     },
     {
      "text": "from",
-     "start": 22.468,
-     "end": 22.807
+     "start": 23.203,
+     "end": 23.542
     },
     {
      "text": "your",
-     "start": 22.807,
-     "end": 23.147
+     "start": 23.542,
+     "end": 23.882
     },
     {
      "text": "notes",
-     "start": 23.147,
-     "end": 23.543
+     "start": 23.882,
+     "end": 24.277
     },
     {
      "text": "and",
-     "start": 23.543,
-     "end": 23.825
+     "start": 24.277,
+     "end": 24.56
     },
     {
      "text": "exam",
-     "start": 23.825,
-     "end": 24.165
+     "start": 24.56,
+     "end": 24.9
     },
     {
      "text": "dates.",
-     "start": 24.165,
-     "end": 24.561
+     "start": 24.9,
+     "end": 25.295
     }
    ]
   },
   {
    "id": "L7",
    "say": "It moves when your week does, and tests you as you go.",
-   "start": 24.961,
-   "end": 28.562,
+   "start": 25.695,
+   "end": 29.296,
    "words": [
     {
      "text": "It",
-     "start": 24.961,
-     "end": 25.146
+     "start": 25.695,
+     "end": 25.881
     },
     {
      "text": "moves",
-     "start": 25.146,
-     "end": 25.47
+     "start": 25.881,
+     "end": 26.205
     },
     {
      "text": "when",
-     "start": 25.47,
-     "end": 25.748
+     "start": 26.205,
+     "end": 26.482
     },
     {
      "text": "your",
-     "start": 25.748,
-     "end": 26.025
+     "start": 26.482,
+     "end": 26.76
     },
     {
      "text": "week",
-     "start": 26.025,
-     "end": 26.303
+     "start": 26.76,
+     "end": 27.038
     },
     {
      "text": "does,",
-     "start": 26.303,
-     "end": 26.581
+     "start": 27.038,
+     "end": 27.316
     },
     {
      "text": "and",
-     "start": 26.911,
-     "end": 27.186
+     "start": 27.645,
+     "end": 27.921
     },
     {
      "text": "tests",
-     "start": 27.186,
-     "end": 27.571
+     "start": 27.921,
+     "end": 28.306
     },
     {
      "text": "you",
-     "start": 27.571,
-     "end": 27.846
+     "start": 28.306,
+     "end": 28.581
     },
     {
      "text": "as",
-     "start": 27.846,
-     "end": 28.066
+     "start": 28.581,
+     "end": 28.801
     },
     {
      "text": "you",
-     "start": 28.066,
-     "end": 28.341
+     "start": 28.801,
+     "end": 29.076
     },
     {
      "text": "go.",
-     "start": 28.341,
-     "end": 28.562
+     "start": 29.076,
+     "end": 29.296
     }
    ]
   },
   {
    "id": "L8",
    "say": "You just click the link in your calendar.",
-   "start": 28.962,
-   "end": 31.644,
+   "start": 29.696,
+   "end": 32.379,
    "words": [
     {
      "text": "You",
-     "start": 28.962,
-     "end": 29.235
+     "start": 29.696,
+     "end": 29.97
     },
     {
      "text": "just",
-     "start": 29.235,
-     "end": 29.564
+     "start": 29.97,
+     "end": 30.299
     },
     {
      "text": "click",
-     "start": 29.564,
-     "end": 29.947
+     "start": 30.299,
+     "end": 30.682
     },
     {
      "text": "the",
-     "start": 29.947,
-     "end": 30.221
+     "start": 30.682,
+     "end": 30.956
     },
     {
      "text": "link",
-     "start": 30.221,
-     "end": 30.549
+     "start": 30.956,
+     "end": 31.284
     },
     {
      "text": "in",
-     "start": 30.549,
-     "end": 30.768
+     "start": 31.284,
+     "end": 31.503
     },
     {
      "text": "your",
-     "start": 30.768,
-     "end": 31.097
+     "start": 31.503,
+     "end": 31.832
     },
     {
      "text": "calendar.",
-     "start": 31.097,
-     "end": 31.644
+     "start": 31.832,
+     "end": 32.379
     }
    ]
   }

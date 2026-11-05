@@ -9,12 +9,12 @@
  "lines": [
   {
    "id": "L1",
-   "say": "Myth: rereading your notes the night before is revision.",
+   "say": "Myth: if you understood it in class, you'll remember it in the exam.",
    "after": 0.5
   },
   {
    "id": "L2",
-   "say": "Fact: rereading feels good because it's familiar. Familiar isn't remembered.",
+   "say": "Fact: understanding it today isn't remembering it in three weeks.",
    "after": 0.6
   },
   {
@@ -39,7 +39,7 @@
   },
   {
    "id": "L7",
-   "say": "So. Myth or fact: rereading is revision?",
+   "say": "So. Myth or fact: understanding it is knowing it?",
    "after": 0.8
   }
  ]

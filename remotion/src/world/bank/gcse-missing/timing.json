@@ -1,5 +1,5 @@
 {
- "duration": 26.046,
+ "duration": 27.27,
  "lines": [
   {
    "id": "L1",
@@ -59,266 +59,291 @@
   },
   {
    "id": "L3",
-   "say": "Seven colours. Never used.",
+   "say": "Features: nine hours a day, planned on a Sunday.",
    "start": 5.548,
-   "end": 7.755,
+   "end": 8.98,
    "words": [
     {
-     "text": "Seven",
+     "text": "Features:",
      "start": 5.548,
-     "end": 5.973
+     "end": 6.128
     },
     {
-     "text": "colours.",
-     "start": 5.973,
-     "end": 6.518
+     "text": "nine",
+     "start": 6.248,
+     "end": 6.594
     },
     {
-     "text": "Never",
-     "start": 6.758,
-     "end": 7.295
+     "text": "hours",
+     "start": 6.594,
+     "end": 6.997
     },
     {
-     "text": "used.",
-     "start": 7.295,
-     "end": 7.755
+     "text": "a",
+     "start": 6.997,
+     "end": 7.17
+    },
+    {
+     "text": "day,",
+     "start": 7.17,
+     "end": 7.458
+    },
+    {
+     "text": "planned",
+     "start": 7.758,
+     "end": 8.216
+    },
+    {
+     "text": "on",
+     "start": 8.216,
+     "end": 8.42
+    },
+    {
+     "text": "a",
+     "start": 8.42,
+     "end": 8.572
+    },
+    {
+     "text": "Sunday.",
+     "start": 8.572,
+     "end": 8.98
     }
    ]
   },
   {
    "id": "L4",
    "say": "Answers to: I'll start tomorrow.",
-   "start": 8.255,
-   "end": 10.709,
+   "start": 9.48,
+   "end": 11.934,
    "words": [
     {
      "text": "Answers",
-     "start": 8.255,
-     "end": 8.871
+     "start": 9.48,
+     "end": 10.096
     },
     {
      "text": "to:",
-     "start": 8.871,
-     "end": 9.145
+     "start": 10.096,
+     "end": 10.37
     },
     {
      "text": "I'll",
-     "start": 9.375,
-     "end": 9.678
+     "start": 10.6,
+     "end": 10.903
     },
     {
      "text": "start",
-     "start": 9.678,
-     "end": 10.103
+     "start": 10.903,
+     "end": 11.327
     },
     {
      "text": "tomorrow.",
-     "start": 10.103,
-     "end": 10.709
+     "start": 11.327,
+     "end": 11.934
     }
    ]
   },
   {
    "id": "L5",
    "say": "If found, don't bother. Offload makes the plan from your spec and your exam dates.",
-   "start": 11.309,
-   "end": 16.785,
+   "start": 12.534,
+   "end": 18.01,
    "words": [
     {
      "text": "If",
-     "start": 11.309,
-     "end": 11.789
+     "start": 12.534,
+     "end": 13.014
     },
     {
      "text": "found,",
-     "start": 11.789,
-     "end": 12.629
+     "start": 13.014,
+     "end": 13.854
     },
     {
      "text": "don't",
-     "start": 13.079,
-     "end": 13.902
+     "start": 14.304,
+     "end": 15.127
     },
     {
      "text": "bother.",
-     "start": 13.902,
-     "end": 14.999
+     "start": 15.127,
+     "end": 16.224
     },
     {
      "text": "Offload",
-     "start": 15.429,
-     "end": 15.606
+     "start": 16.654,
+     "end": 16.831
     },
     {
      "text": "makes",
-     "start": 15.606,
-     "end": 15.744
+     "start": 16.831,
+     "end": 16.968
     },
     {
      "text": "the",
-     "start": 15.744,
-     "end": 15.842
+     "start": 16.968,
+     "end": 17.067
     },
     {
      "text": "plan",
-     "start": 15.842,
-     "end": 15.96
+     "start": 17.067,
+     "end": 17.185
     },
     {
      "text": "from",
-     "start": 15.96,
-     "end": 16.078
+     "start": 17.185,
+     "end": 17.302
     },
     {
      "text": "your",
-     "start": 16.078,
-     "end": 16.196
+     "start": 17.302,
+     "end": 17.42
     },
     {
      "text": "spec",
-     "start": 16.196,
-     "end": 16.314
+     "start": 17.42,
+     "end": 17.538
     },
     {
      "text": "and",
-     "start": 16.314,
-     "end": 16.412
+     "start": 17.538,
+     "end": 17.637
     },
     {
      "text": "your",
-     "start": 16.412,
-     "end": 16.53
+     "start": 17.637,
+     "end": 17.755
     },
     {
      "text": "exam",
-     "start": 16.53,
-     "end": 16.648
+     "start": 17.755,
+     "end": 17.872
     },
     {
      "text": "dates.",
-     "start": 16.648,
-     "end": 16.785
+     "start": 17.872,
+     "end": 18.01
     }
    ]
   },
   {
    "id": "L6",
    "say": "It moves when you miss an evening, and tests you as you go.",
-   "start": 17.185,
-   "end": 21.063,
+   "start": 18.41,
+   "end": 22.288,
    "words": [
     {
      "text": "It",
-     "start": 17.185,
-     "end": 17.361
+     "start": 18.41,
+     "end": 18.586
     },
     {
      "text": "moves",
-     "start": 17.361,
-     "end": 17.668
+     "start": 18.586,
+     "end": 18.893
     },
     {
      "text": "when",
-     "start": 17.668,
-     "end": 17.932
+     "start": 18.893,
+     "end": 19.156
     },
     {
      "text": "you",
-     "start": 17.932,
-     "end": 18.151
+     "start": 19.156,
+     "end": 19.376
     },
     {
      "text": "miss",
-     "start": 18.151,
-     "end": 18.415
+     "start": 19.376,
+     "end": 19.639
     },
     {
      "text": "an",
-     "start": 18.415,
-     "end": 18.59
+     "start": 19.639,
+     "end": 19.815
     },
     {
      "text": "evening,",
-     "start": 18.59,
-     "end": 18.985
+     "start": 19.815,
+     "end": 20.21
     },
     {
      "text": "and",
-     "start": 19.305,
-     "end": 19.598
+     "start": 20.53,
+     "end": 20.823
     },
     {
      "text": "tests",
-     "start": 19.598,
-     "end": 20.008
+     "start": 20.823,
+     "end": 21.233
     },
     {
      "text": "you",
-     "start": 20.008,
-     "end": 20.301
+     "start": 21.233,
+     "end": 21.526
     },
     {
      "text": "as",
-     "start": 20.301,
-     "end": 20.536
+     "start": 21.526,
+     "end": 21.76
     },
     {
      "text": "you",
-     "start": 20.536,
-     "end": 20.829
+     "start": 21.76,
+     "end": 22.053
     },
     {
      "text": "go.",
-     "start": 20.829,
-     "end": 21.063
+     "start": 22.053,
+     "end": 22.288
     }
    ]
   },
   {
    "id": "L7",
    "say": "You just click the link in your calendar.",
-   "start": 21.463,
-   "end": 24.146,
+   "start": 22.688,
+   "end": 25.37,
    "words": [
     {
      "text": "You",
-     "start": 21.463,
-     "end": 21.737
+     "start": 22.688,
+     "end": 22.961
     },
     {
      "text": "just",
-     "start": 21.737,
-     "end": 22.065
+     "start": 22.961,
+     "end": 23.29
     },
     {
      "text": "click",
-     "start": 22.065,
-     "end": 22.449
+     "start": 23.29,
+     "end": 23.673
     },
     {
      "text": "the",
-     "start": 22.449,
-     "end": 22.722
+     "start": 23.673,
+     "end": 23.947
     },
     {
      "text": "link",
-     "start": 22.722,
-     "end": 23.051
+     "start": 23.947,
+     "end": 24.275
     },
     {
      "text": "in",
-     "start": 23.051,
-     "end": 23.27
+     "start": 24.275,
+     "end": 24.494
     },
     {
      "text": "your",
-     "start": 23.27,
-     "end": 23.598
+     "start": 24.494,
+     "end": 24.823
     },
     {
      "text": "calendar.",
-     "start": 23.598,
-     "end": 24.146
+     "start": 24.823,
+     "end": 25.37
     }
    ]
   }

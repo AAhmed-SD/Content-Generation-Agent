@@ -1,5 +1,5 @@
 {
- "duration": 28.865,
+ "duration": 30.416,
  "lines": [
   {
    "id": "L1",
@@ -76,324 +76,354 @@
   },
   {
    "id": "L2",
-   "say": "Last night, you reread it. That's recognition.",
+   "say": "Last night, you looked over it, and it all made sense. That's recognition.",
    "start": 4.404,
-   "end": 7.506,
+   "end": 9.057,
    "words": [
     {
      "text": "Last",
      "start": 4.404,
-     "end": 4.671
+     "end": 4.676
     },
     {
      "text": "night,",
-     "start": 4.671,
-     "end": 4.984
+     "start": 4.676,
+     "end": 4.994
     },
     {
      "text": "you",
-     "start": 5.084,
-     "end": 5.339
+     "start": 5.074,
+     "end": 5.254
     },
     {
-     "text": "reread",
-     "start": 5.339,
-     "end": 5.749
+     "text": "looked",
+     "start": 5.254,
+     "end": 5.543
     },
     {
-     "text": "it.",
-     "start": 5.749,
-     "end": 5.954
+     "text": "over",
+     "start": 5.543,
+     "end": 5.759
+    },
+    {
+     "text": "it,",
+     "start": 5.759,
+     "end": 5.904
+    },
+    {
+     "text": "and",
+     "start": 6.174,
+     "end": 6.407
+    },
+    {
+     "text": "it",
+     "start": 6.407,
+     "end": 6.594
+    },
+    {
+     "text": "all",
+     "start": 6.594,
+     "end": 6.827
+    },
+    {
+     "text": "made",
+     "start": 6.827,
+     "end": 7.107
+    },
+    {
+     "text": "sense.",
+     "start": 7.107,
+     "end": 7.434
     },
     {
      "text": "That's",
-     "start": 6.284,
-     "end": 6.711
+     "start": 7.854,
+     "end": 8.275
     },
     {
      "text": "recognition.",
-     "start": 6.711,
-     "end": 7.506
+     "start": 8.275,
+     "end": 9.057
     }
    ]
   },
   {
    "id": "L3",
    "say": "On the ward, you pull it out cold. That's recall.",
-   "start": 8.006,
-   "end": 11.411,
+   "start": 9.557,
+   "end": 12.962,
    "words": [
     {
      "text": "On",
-     "start": 8.006,
-     "end": 8.382
+     "start": 9.557,
+     "end": 9.933
     },
     {
      "text": "the",
-     "start": 8.382,
-     "end": 8.852
+     "start": 9.933,
+     "end": 10.403
     },
     {
      "text": "ward,",
-     "start": 8.852,
-     "end": 9.416
+     "start": 10.403,
+     "end": 10.967
     },
     {
      "text": "you",
-     "start": 9.526,
-     "end": 9.634
+     "start": 11.077,
+     "end": 11.185
     },
     {
      "text": "pull",
-     "start": 9.634,
-     "end": 9.763
+     "start": 11.185,
+     "end": 11.314
     },
     {
      "text": "it",
-     "start": 9.763,
-     "end": 9.849
+     "start": 11.314,
+     "end": 11.4
     },
     {
      "text": "out",
-     "start": 9.849,
-     "end": 9.957
+     "start": 11.4,
+     "end": 11.508
     },
     {
      "text": "cold.",
-     "start": 9.957,
-     "end": 10.086
+     "start": 11.508,
+     "end": 11.637
     },
     {
      "text": "That's",
-     "start": 10.456,
-     "end": 10.902
+     "start": 12.007,
+     "end": 12.452
     },
     {
      "text": "recall.",
-     "start": 10.902,
-     "end": 11.411
+     "start": 12.452,
+     "end": 12.962
     }
    ]
   },
   {
    "id": "L4",
    "say": "You practised the wrong one.",
-   "start": 11.911,
-   "end": 13.789,
+   "start": 13.462,
+   "end": 15.34,
    "words": [
     {
      "text": "You",
-     "start": 11.911,
-     "end": 12.195
+     "start": 13.462,
+     "end": 13.746
     },
     {
      "text": "practised",
-     "start": 12.195,
-     "end": 12.821
+     "start": 13.746,
+     "end": 14.372
     },
     {
      "text": "the",
-     "start": 12.821,
-     "end": 13.106
+     "start": 14.372,
+     "end": 14.657
     },
     {
      "text": "wrong",
-     "start": 13.106,
-     "end": 13.504
+     "start": 14.657,
+     "end": 15.055
     },
     {
      "text": "one.",
-     "start": 13.504,
-     "end": 13.789
+     "start": 15.055,
+     "end": 15.34
     }
    ]
   },
   {
    "id": "L5",
    "say": "So practise recall. Offload quizzes you on your own lecture notes.",
-   "start": 14.489,
-   "end": 19.031,
+   "start": 16.04,
+   "end": 20.582,
    "words": [
     {
      "text": "So",
-     "start": 14.489,
-     "end": 14.733
+     "start": 16.04,
+     "end": 16.284
     },
     {
      "text": "practise",
-     "start": 14.733,
-     "end": 15.342
+     "start": 16.284,
+     "end": 16.893
     },
     {
      "text": "recall.",
-     "start": 15.342,
-     "end": 15.829
+     "start": 16.893,
+     "end": 17.38
     },
     {
      "text": "Offload",
-     "start": 16.229,
-     "end": 16.696
+     "start": 17.78,
+     "end": 18.247
     },
     {
      "text": "quizzes",
-     "start": 16.696,
-     "end": 17.163
+     "start": 18.247,
+     "end": 18.714
     },
     {
      "text": "you",
-     "start": 17.163,
-     "end": 17.423
+     "start": 18.714,
+     "end": 18.973
     },
     {
      "text": "on",
-     "start": 17.423,
-     "end": 17.63
+     "start": 18.973,
+     "end": 19.181
     },
     {
      "text": "your",
-     "start": 17.63,
-     "end": 17.941
+     "start": 19.181,
+     "end": 19.492
     },
     {
      "text": "own",
-     "start": 17.941,
-     "end": 18.201
+     "start": 19.492,
+     "end": 19.752
     },
     {
      "text": "lecture",
-     "start": 18.201,
-     "end": 18.668
+     "start": 19.752,
+     "end": 20.219
     },
     {
      "text": "notes.",
-     "start": 18.668,
-     "end": 19.031
+     "start": 20.219,
+     "end": 20.582
     }
    ]
   },
   {
    "id": "L6",
    "say": "It plans when, and brings each topic back before you forget.",
-   "start": 19.431,
-   "end": 23.335,
+   "start": 20.982,
+   "end": 24.886,
    "words": [
     {
      "text": "It",
-     "start": 19.431,
-     "end": 19.674
+     "start": 20.982,
+     "end": 21.224
     },
     {
      "text": "plans",
-     "start": 19.674,
-     "end": 20.098
+     "start": 21.224,
+     "end": 21.649
     },
     {
      "text": "when,",
-     "start": 20.098,
-     "end": 20.461
+     "start": 21.649,
+     "end": 22.012
     },
     {
      "text": "and",
-     "start": 20.781,
-     "end": 21.022
+     "start": 22.332,
+     "end": 22.573
     },
     {
      "text": "brings",
-     "start": 21.022,
-     "end": 21.408
+     "start": 22.573,
+     "end": 22.958
     },
     {
      "text": "each",
-     "start": 21.408,
-     "end": 21.697
+     "start": 22.958,
+     "end": 23.248
     },
     {
      "text": "topic",
-     "start": 21.697,
-     "end": 22.034
+     "start": 23.248,
+     "end": 23.585
     },
     {
      "text": "back",
-     "start": 22.034,
-     "end": 22.323
+     "start": 23.585,
+     "end": 23.874
     },
     {
      "text": "before",
-     "start": 22.323,
-     "end": 22.708
+     "start": 23.874,
+     "end": 24.259
     },
     {
      "text": "you",
-     "start": 22.708,
-     "end": 22.949
+     "start": 24.259,
+     "end": 24.5
     },
     {
      "text": "forget.",
-     "start": 22.949,
-     "end": 23.335
+     "start": 24.5,
+     "end": 24.886
     }
    ]
   },
   {
    "id": "L7",
    "say": "You just click the link in your calendar and show up.",
-   "start": 23.735,
-   "end": 26.965,
+   "start": 25.286,
+   "end": 28.516,
    "words": [
     {
      "text": "You",
-     "start": 23.735,
-     "end": 23.987
+     "start": 25.286,
+     "end": 25.538
     },
     {
      "text": "just",
-     "start": 23.987,
-     "end": 24.29
+     "start": 25.538,
+     "end": 25.841
     },
     {
      "text": "click",
-     "start": 24.29,
-     "end": 24.643
+     "start": 25.841,
+     "end": 26.194
     },
     {
      "text": "the",
-     "start": 24.643,
-     "end": 24.896
+     "start": 26.194,
+     "end": 26.446
     },
     {
      "text": "link",
-     "start": 24.896,
-     "end": 25.198
+     "start": 26.446,
+     "end": 26.749
     },
     {
      "text": "in",
-     "start": 25.198,
-     "end": 25.4
+     "start": 26.749,
+     "end": 26.951
     },
     {
      "text": "your",
-     "start": 25.4,
-     "end": 25.703
+     "start": 26.951,
+     "end": 27.254
     },
     {
      "text": "calendar",
-     "start": 25.703,
-     "end": 26.208
+     "start": 27.254,
+     "end": 27.759
     },
     {
      "text": "and",
-     "start": 26.208,
-     "end": 26.46
+     "start": 27.759,
+     "end": 28.011
     },
     {
      "text": "show",
-     "start": 26.46,
-     "end": 26.763
+     "start": 28.011,
+     "end": 28.314
     },
     {
      "text": "up.",
-     "start": 26.763,
-     "end": 26.965
+     "start": 28.314,
+     "end": 28.516
     }
    ]
   }

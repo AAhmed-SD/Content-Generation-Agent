@@ -3,8 +3,8 @@
  "format": "myth-fact",
  "rounds": [
   {
-   "myth": "Rereading your notes the night before your mocks is revision.",
-   "fact": "Familiar isn't the same as remembered.",
+   "myth": "If you understood it in class, you'll remember it in the exam.",
+   "fact": "Understanding today isn't remembering in three weeks.",
    "mythAt": "L1",
    "factAt": "L2"
   },
@@ -18,7 +18,7 @@
  "reveal": {
   "at": "L5",
   "head": "Blurt it. Then see\nthe gaps.",
-  "title": "Your blurt \u00b7 Cell biology",
+  "title": "Your blurt · Cell biology",
   "rows": [
    {
     "text": "Nucleus holds the DNA"
@@ -38,7 +38,7 @@
  },
  "loop": {
   "at": "L7",
-  "myth": "Rereading is revision?",
+  "myth": "Understanding it is knowing it?",
   "fact": "Comment which."
  }
 }

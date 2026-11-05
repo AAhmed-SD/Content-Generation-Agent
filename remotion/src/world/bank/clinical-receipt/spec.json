@@ -5,12 +5,12 @@
  "sub": "Session receipt",
  "items": [
   {
-   "label": "Colour-coding",
+   "label": "Planning the week",
    "value": "Afternoon",
    "at": "L2"
   },
   {
-   "label": "Making it nice",
+   "label": "Finding an app",
    "value": "Evening",
    "at": "L3"
   },
@@ -35,7 +35,7 @@
   "at": "L6:gone"
  },
  "footer": {
-  "text": "Next week: skip the timetable.",
+  "text": "Next week: skip the planning.",
   "at": "L7"
  }
 }

@@ -8,7 +8,7 @@ Scripts sound the same when every film opens the same way. Pick a style for each
 | --- | --- | --- | --- |
 | **Call-out** | Names a habit the viewer knows they have | "This is for the person with nine tabs of the same worked example open." | All |
 | **Accusation** | Puts the habit on trial, with evidence | "The case against your revision. Exhibit A." | All |
-| **Joke** | A setup and a turn, with the turn first if possible | "Expectation: two hours of biology. Reality: colour-coding the timetable." | All |
+| **Joke** | A setup and a turn, with the turn first if possible | "Expectation: two hours of biology. Reality: twenty minutes, then the fridge." | All |
 | **Confession** | The narrator admits it first, then turns it on the viewer | "I spent a whole Sunday making a timetable. It lasted until Wednesday." | All, in the narrator's voice: a habit most students share, never a personal claim |
 | **Hot take** | A claim people will argue with | "Highlighting is decoration, not revision." | Analytical, GCSE, clinical |
 | **Quiz** | A question to answer before the reveal | "Your next exam question. Three seconds." | Clinical, GCSE, analytical |
@@ -21,7 +21,7 @@ Scripts sound the same when every film opens the same way. Pick a style for each
 
 A call-out, an accusation or a joke is aimed at a **habit**, never at a person.
 
-- Call out what people do: rereading, colour-coding, the night-before start. Never call out who people are: their intelligence, their body, their background, a condition.
+- Call out what people do: the night-before start, double-speed lectures, "I'll start after this episode". (Colour-coding and rereading are retired: see `scripting.md`.) Never call out who people are: their intelligence, their body, their background, a condition.
 - Never a real, named person. Never a commenter. Never another creator or another brand.
 - The viewer is in on it. The narrator has done it too, or "most of us" have.
 - No grades, no "you'll fail", no fear about exams or futures. The joke is the habit, not the stakes.

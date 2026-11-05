@@ -43,13 +43,16 @@ export type FormatSpec = MythSpec | ThreeSpec | PovSpec;
 const BG = { ink: tokens.ink, mark: tokens.mark, kraft: tokens.kraft };
 const FG = { ink: tokens.white, mark: tokens.white, kraft: tokens.ink };
 
+/** Sounds that ring longer than the usual 1.6 s window. */
+const LONG: Record<string, number> = { siren: 3.3, cell_slam: 1.9, riser_long: 3.2 };
+
 export const Sound: React.FC<{ vo?: string; cues: Cue[] }> = ({ vo, cues }) => {
   const { fps } = useK();
   return (
     <>
       {vo ? <Audio src={staticFile(vo)} /> : null}
       {cues.map((q, i) => (
-        <Sequence key={i} from={Math.max(0, Math.round(q.t * fps))} durationInFrames={Math.round(1.6 * fps)} layout="none">
+        <Sequence key={i} from={Math.max(0, Math.round(q.t * fps))} durationInFrames={Math.round((LONG[q.s] ?? 1.6) * fps)} layout="none">
           <Audio src={staticFile(`sfx/${q.s}.wav`)} volume={q.v} />
         </Sequence>
       ))}
@@ -176,7 +179,7 @@ export const ThreeThings: React.FC<{ spec: ThreeSpec; T: T; kw: KW; timing: Timi
 export const Pov: React.FC<{ spec: PovSpec }> = ({ spec }) => {
   const { t, sp } = useK();
   const { cut, app } = spec;
-  const cues: Cue[] = [...spec.list.items.map((l) => ({ t: l.at, s: "key", v: 0.22 })), ...spec.messages.map((m) => ({ t: m.at, s: m.from === "them" ? "ding" : "pop", v: 0.24 })), { t: cut.at, s: "whoosh", v: 0.26 }, { t: app.at, s: "sparkle", v: 0.22 }];
+  const cues: Cue[] = [...spec.list.items.map((l) => ({ t: l.at, s: "key", v: 0.22 })), ...spec.messages.map((m) => ({ t: m.at, s: m.from === "them" ? "msg_ping" : "msg_send", v: m.from === "them" ? 0.28 : 0.22 })), { t: cut.at, s: "whoosh", v: 0.26 }, { t: app.at, s: "sparkle", v: 0.22 }];
   const phone = (children: React.ReactNode, bg: string) => (
     <div style={{ position: "absolute", left: 150, top: 330, width: 780, height: 1420, borderRadius: 90, background: tokens.night, padding: 22, boxShadow: soft(1.6) }}>
       <div style={{ position: "relative", width: "100%", height: "100%", borderRadius: 72, background: bg, overflow: "hidden", padding: "110px 56px" }}>{children}</div>

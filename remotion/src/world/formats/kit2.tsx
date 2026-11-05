@@ -74,7 +74,7 @@ export const TierList: React.FC<{ spec: TierSpec; T: T; timing: Timing; vo: stri
 
 export const Chat: React.FC<{ spec: ChatSpec }> = ({ spec }) => {
   const { t, sp } = useK();
-  const cues: Cue[] = [...spec.messages.map((m) => ({ t: m.at, s: m.from === "them" ? "pop" : "click", v: 0.26 })), { t: spec.notification.at, s: "ding", v: 0.3 }];
+  const cues: Cue[] = [...spec.messages.map((m) => ({ t: m.at, s: m.from === "them" ? "msg_ping" : "msg_send", v: m.from === "them" ? 0.3 : 0.24 })), { t: spec.notification.at, s: "msg_ping", v: 0.36 }];
   const shown = spec.messages.filter((m) => t >= m.at);
   const next = spec.messages.find((m) => t < m.at && m.at - t < 0.9 && m.from === "them");
   const lineH = 150;

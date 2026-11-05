@@ -249,14 +249,12 @@ export const Jail: React.FC<{ spec: JailSpec } & Base> = ({ spec, T, timing, vo 
   const rel = T(spec.release.at);
   const pts = spec.release.points.map((p) => ({ ...p, a: T(p.at) }));
   const cues: Cue[] = [
-    { t: siren, s: "riser", v: 0.3 },
-    { t: sus + 0.35, s: "click", v: 0.5 },
-    { t: sus + 0.35, s: "impact", v: 0.25 },
-    { t: side + 0.45, s: "click", v: 0.5 },
-    { t: side + 0.45, s: "impact", v: 0.25 },
+    { t: siren, s: "siren", v: 0.34 },
+    { t: sus + 0.35, s: "shutter", v: 0.55 },
+    { t: side + 0.45, s: "shutter", v: 0.55 },
     ...ch.map((c) => ({ t: c.a, s: "stamp", v: 0.3 })),
-    { t: sen, s: "w_slam", v: 0.5 },
-    { t: sen + 0.05, s: "boom", v: 0.3 },
+    { t: sen, s: "cell_slam", v: 0.55 },
+    { t: sen + 0.1, s: "siren", v: 0.14 },
     { t: rel, s: "iris", v: 0.3 },
     ...pts.map((p) => ({ t: p.a, s: "tick", v: 0.3 })),
   ];

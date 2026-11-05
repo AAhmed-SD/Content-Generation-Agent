@@ -41,6 +41,13 @@ Viewers must follow it on the first listen.
 - British English and UK terms: revise, placement, finals, mocks, sixth form.
 - Write for the ear. Read it aloud. If you run out of breath, cut it.
 
+**Retired themes (2026-11-05).** These were used in too many films. Do not use them again, not as a hook, a joke, an example or a background detail:
+
+- Colour-coding, colouring in, or making a timetable look nice.
+- Rereading, rereading notes, or rereading worked solutions.
+
+Pick a different everyday habit instead. Some that are still fresh: watching a lecture back at double speed, saving TikToks "for later", the fridge, the group chat, "I'll do a big session on Sunday", ten tabs open, starting with the easiest topic, the night bus home from a shift, the problem sheet started at 11pm. When one of these has been used in three films, retire it here too.
+
 Never use: "game-changer", "unlock", "level up", "hack", "journey", "seamless", "AI-powered", "study smarter not harder", "in today's video", "let's dive in", "it's that simple".
 
 ## The product line

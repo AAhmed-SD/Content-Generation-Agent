@@ -2,6 +2,60 @@
   "note": "Ideas for Offload's picture and content. status: new, accepted, building, made. Reject deletes. Add from the desk's Ideas page.",
   "ideas": [
     {
+      "id": "i17",
+      "title": "Which 'quick thing' gets you?",
+      "kind": "Engagement",
+      "niche": "mentalhealth",
+      "pitch": "A warm choice film for the time account: three 'just one quick thing' habits that sit between us and starting, and the viewer comments their letter. A marquee of everyday starting habits scrolls behind the hook like a news ticker, using the Marquee piece kept from Inspiration.",
+      "status": "new",
+      "by": "Claude (weekly)",
+      "at": "2026-11-05",
+      "frames": [
+        "Voice: \"Everyone has a 'quick thing' before they start.\" Screen: a marquee scrolls behind the line: the fridge, saving TikToks for later, one more episode, the group chat.",
+        "Voice: \"A. The fridge. Twice.\" Screen: a fridge door opening, closing, opening again.",
+        "Voice: \"B. Saving a video 'for later'.\" Screen: a saved folder whose count ticks up and keeps going.",
+        "Voice: \"C. 'I'll do a big session on Sunday.'\" Screen: Sunday on a calendar, slowly piling up with sticky notes until they spill over.",
+        "Voice: \"Offload plans the session for you. It moves it when the day goes sideways. You just click the link and show up.\"",
+        "Voice: \"Comment your letter.\" Screen: A, B and C held, the marquee still drifting behind."
+      ]
+    },
+    {
+      "id": "i16",
+      "title": "Placement revision spots, ranked",
+      "kind": "Film format",
+      "niche": "clinical",
+      "pitch": "This borrows the countdown shape that works in clinical right now, but with no invented data: five real places we try to revise during a placement week, ranked from worst to best. Each spot is a collage-animated cutout scene, the Artful Being collage style kept from Inspiration, so the countdown feels handmade rather than like a stats slide.",
+      "status": "new",
+      "by": "Claude (weekly)",
+      "at": "2026-11-05",
+      "frames": [
+        "Voice: \"Where we actually revise on placement. Ranked.\" Screen: a collage cutout of a lanyard and a rota, number five sliding in.",
+        "Voice: \"Five. The canteen queue.\" Screen: a cutout tray with flashcards wedged under a sandwich.",
+        "Voice: \"Four. The group chat, which is not revising.\" Screen: a phone collage with message bubbles flooding upward and a red count climbing.",
+        "Voice: \"Two. The night bus home from a shift.\" Screen: a bus window collage at night with a lecture playing at double speed.",
+        "Voice: \"Number one is the one nobody plans for.\" Pause. Screen: a blank calendar slot, lit. \"Fifteen minutes, already booked.\"",
+        "Voice: \"Offload plans revision around your rota. It brings topics back before they fade. You just show up.\" End card with the tagline on screen, not spoken."
+      ]
+    },
+    {
+      "id": "i15",
+      "title": "The ten-tab puzzle, part one",
+      "kind": "Series",
+      "niche": "analytical",
+      "pitch": "A deadpan probability puzzle built on a real habit: ten tabs open in a ring, and you jump at random to a neighbouring tab every minute. We pose it cleanly, never solve it, and let the comments argue until part two.",
+      "status": "new",
+      "by": "Claude (weekly)",
+      "at": "2026-11-05",
+      "frames": [
+        "Voice: \"Ten tabs open. Here's your puzzle.\" Screen: ten browser tabs arranged in a circle, a cursor on tab one.",
+        "Voice: \"Every minute, you click a neighbour. Left or right, fifty-fifty.\" Screen: the cursor hops around the ring, each visited tab ticking grey.",
+        "Voice: \"Eventually you've visited every tab.\" Screen: tabs grey out one by one until one is left lit. Quick cut every two seconds.",
+        "Voice: \"Which tab is most likely to be the last one?\" Screen: \"Tab two? Tab six? Something else?\"",
+        "Voice: \"Offload picks your next topic for you. It tests you as you go. You just show up.\" Screen: one tab, one calendar link.",
+        "Voice: \"Part two?\" Screen: the ring held, all ten tabs lit, question mark in the centre."
+      ]
+    },
+    {
       "id": "i1",
       "title": "Launch countdown: the calendar fills",
       "kind": "Launch",

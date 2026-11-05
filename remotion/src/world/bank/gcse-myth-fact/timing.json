@@ -1,449 +1,479 @@
 {
- "duration": 34.073,
+ "duration": 34.11,
  "lines": [
   {
    "id": "L1",
-   "say": "Myth: rereading your notes the night before is revision.",
+   "say": "Myth: if you understood it in class, you'll remember it in the exam.",
    "start": 0.15,
-   "end": 3.801,
+   "end": 4.434,
    "words": [
     {
      "text": "Myth:",
      "start": 0.15,
-     "end": 2.73
+     "end": 0.39
     },
     {
-     "text": "rereading",
-     "start": 2.93,
-     "end": 3.095
+     "text": "if",
+     "start": 0.62,
+     "end": 0.784
     },
     {
-     "text": "your",
-     "start": 3.095,
-     "end": 3.185
+     "text": "you",
+     "start": 0.784,
+     "end": 0.99
     },
     {
-     "text": "notes",
-     "start": 3.185,
-     "end": 3.29
+     "text": "understood",
+     "start": 0.99,
+     "end": 1.483
+    },
+    {
+     "text": "it",
+     "start": 1.483,
+     "end": 1.648
+    },
+    {
+     "text": "in",
+     "start": 1.648,
+     "end": 1.812
+    },
+    {
+     "text": "class,",
+     "start": 1.812,
+     "end": 2.1
+    },
+    {
+     "text": "you'll",
+     "start": 2.45,
+     "end": 2.836
+    },
+    {
+     "text": "remember",
+     "start": 2.836,
+     "end": 3.387
+    },
+    {
+     "text": "it",
+     "start": 3.387,
+     "end": 3.607
+    },
+    {
+     "text": "in",
+     "start": 3.607,
+     "end": 3.828
     },
     {
      "text": "the",
-     "start": 3.29,
-     "end": 3.365
+     "start": 3.828,
+     "end": 4.103
     },
     {
-     "text": "night",
-     "start": 3.365,
-     "end": 3.47
-    },
-    {
-     "text": "before",
-     "start": 3.47,
-     "end": 3.59
-    },
-    {
-     "text": "is",
-     "start": 3.59,
-     "end": 3.651
-    },
-    {
-     "text": "revision.",
-     "start": 3.651,
-     "end": 3.801
+     "text": "exam.",
+     "start": 4.103,
+     "end": 4.434
     }
    ]
   },
   {
    "id": "L2",
-   "say": "Fact: rereading feels good because it's familiar. Familiar isn't remembered.",
-   "start": 4.301,
-   "end": 9.615,
+   "say": "Fact: understanding it today isn't remembering it in three weeks.",
+   "start": 4.934,
+   "end": 9.414,
    "words": [
     {
      "text": "Fact:",
-     "start": 4.301,
-     "end": 7.261
+     "start": 4.934,
+     "end": 6.854
     },
     {
-     "text": "rereading",
-     "start": 7.691,
-     "end": 7.83
+     "text": "understanding",
+     "start": 7.154,
+     "end": 7.66
     },
     {
-     "text": "feels",
-     "start": 7.83,
-     "end": 7.919
+     "text": "it",
+     "start": 7.66,
+     "end": 7.795
     },
     {
-     "text": "good",
-     "start": 7.919,
-     "end": 7.996
-    },
-    {
-     "text": "because",
-     "start": 7.996,
-     "end": 8.11
-    },
-    {
-     "text": "it's",
-     "start": 8.11,
-     "end": 8.174
-    },
-    {
-     "text": "familiar.",
-     "start": 8.174,
-     "end": 8.301
-    },
-    {
-     "text": "Familiar",
-     "start": 8.611,
-     "end": 8.969
+     "text": "today",
+     "start": 7.795,
+     "end": 8.031
     },
     {
      "text": "isn't",
-     "start": 8.969,
-     "end": 9.184
+     "start": 8.031,
+     "end": 8.233
     },
     {
-     "text": "remembered.",
-     "start": 9.184,
-     "end": 9.615
+     "text": "remembering",
+     "start": 8.233,
+     "end": 8.672
+    },
+    {
+     "text": "it",
+     "start": 8.672,
+     "end": 8.806
+    },
+    {
+     "text": "in",
+     "start": 8.806,
+     "end": 8.941
+    },
+    {
+     "text": "three",
+     "start": 8.941,
+     "end": 9.178
+    },
+    {
+     "text": "weeks.",
+     "start": 9.178,
+     "end": 9.414
     }
    ]
   },
   {
    "id": "L3",
    "say": "Myth: if you can blurt it, you know it.",
-   "start": 10.215,
-   "end": 12.644,
+   "start": 10.014,
+   "end": 12.443,
    "words": [
     {
      "text": "Myth:",
-     "start": 10.215,
-     "end": 10.615
+     "start": 10.014,
+     "end": 10.414
     },
     {
      "text": "if",
-     "start": 10.705,
-     "end": 10.865
+     "start": 10.504,
+     "end": 10.664
     },
     {
      "text": "you",
-     "start": 10.865,
-     "end": 11.065
+     "start": 10.664,
+     "end": 10.864
     },
     {
      "text": "can",
-     "start": 11.065,
-     "end": 11.265
+     "start": 10.864,
+     "end": 11.064
     },
     {
      "text": "blurt",
-     "start": 11.265,
-     "end": 11.545
+     "start": 11.064,
+     "end": 11.344
     },
     {
      "text": "it,",
-     "start": 11.545,
-     "end": 11.705
+     "start": 11.344,
+     "end": 11.504
     },
     {
      "text": "you",
-     "start": 11.915,
-     "end": 12.158
+     "start": 11.714,
+     "end": 11.957
     },
     {
      "text": "know",
-     "start": 12.158,
-     "end": 12.45
+     "start": 11.957,
+     "end": 12.249
     },
     {
      "text": "it.",
-     "start": 12.45,
-     "end": 12.644
+     "start": 12.249,
+     "end": 12.443
     }
    ]
   },
   {
    "id": "L4",
    "say": "Fact: blurting is half of it. The other half is checking what you missed.",
-   "start": 13.144,
-   "end": 17.648,
+   "start": 12.943,
+   "end": 17.447,
    "words": [
     {
      "text": "Fact:",
-     "start": 13.144,
-     "end": 13.564
+     "start": 12.943,
+     "end": 13.363
     },
     {
      "text": "blurting",
-     "start": 13.734,
-     "end": 14.17
+     "start": 13.533,
+     "end": 13.969
     },
     {
      "text": "is",
-     "start": 14.17,
-     "end": 14.344
+     "start": 13.969,
+     "end": 14.143
     },
     {
      "text": "half",
-     "start": 14.344,
-     "end": 14.606
+     "start": 14.143,
+     "end": 14.405
     },
     {
      "text": "of",
-     "start": 14.606,
-     "end": 14.78
+     "start": 14.405,
+     "end": 14.579
     },
     {
      "text": "it.",
-     "start": 14.78,
-     "end": 14.954
+     "start": 14.579,
+     "end": 14.753
     },
     {
      "text": "The",
-     "start": 15.354,
-     "end": 15.579
+     "start": 15.153,
+     "end": 15.378
     },
     {
      "text": "other",
-     "start": 15.579,
-     "end": 15.894
+     "start": 15.378,
+     "end": 15.693
     },
     {
      "text": "half",
-     "start": 15.894,
-     "end": 16.164
+     "start": 15.693,
+     "end": 15.963
     },
     {
      "text": "is",
-     "start": 16.164,
-     "end": 16.344
+     "start": 15.963,
+     "end": 16.143
     },
     {
      "text": "checking",
-     "start": 16.344,
-     "end": 16.794
+     "start": 16.143,
+     "end": 16.593
     },
     {
      "text": "what",
-     "start": 16.794,
-     "end": 17.063
+     "start": 16.593,
+     "end": 16.862
     },
     {
      "text": "you",
-     "start": 17.063,
-     "end": 17.288
+     "start": 16.862,
+     "end": 17.087
     },
     {
      "text": "missed.",
-     "start": 17.288,
-     "end": 17.648
+     "start": 17.087,
+     "end": 17.447
     }
    ]
   },
   {
    "id": "L5",
    "say": "Offload does the other half for you: you blurt, then it shows you what you missed.",
-   "start": 18.248,
-   "end": 22.991,
+   "start": 18.047,
+   "end": 22.79,
    "words": [
     {
      "text": "Offload",
-     "start": 18.248,
-     "end": 18.631
+     "start": 18.047,
+     "end": 18.43
     },
     {
      "text": "does",
-     "start": 18.631,
-     "end": 18.887
+     "start": 18.43,
+     "end": 18.686
     },
     {
      "text": "the",
-     "start": 18.887,
-     "end": 19.099
+     "start": 18.686,
+     "end": 18.898
     },
     {
      "text": "other",
-     "start": 19.099,
-     "end": 19.397
+     "start": 18.898,
+     "end": 19.196
     },
     {
      "text": "half",
-     "start": 19.397,
-     "end": 19.653
+     "start": 19.196,
+     "end": 19.452
     },
     {
      "text": "for",
-     "start": 19.653,
-     "end": 19.865
+     "start": 19.452,
+     "end": 19.664
     },
     {
      "text": "you:",
-     "start": 19.865,
-     "end": 20.078
+     "start": 19.664,
+     "end": 19.877
     },
     {
      "text": "you",
-     "start": 20.398,
-     "end": 20.632
+     "start": 20.197,
+     "end": 20.431
     },
     {
      "text": "blurt,",
-     "start": 20.632,
-     "end": 20.958
+     "start": 20.431,
+     "end": 20.757
     },
     {
      "text": "then",
-     "start": 21.288,
-     "end": 21.537
+     "start": 21.087,
+     "end": 21.336
     },
     {
      "text": "it",
-     "start": 21.537,
-     "end": 21.704
+     "start": 21.336,
+     "end": 21.502
     },
     {
      "text": "shows",
-     "start": 21.704,
-     "end": 21.994
+     "start": 21.502,
+     "end": 21.793
     },
     {
      "text": "you",
-     "start": 21.994,
-     "end": 22.202
+     "start": 21.793,
+     "end": 22.001
     },
     {
      "text": "what",
-     "start": 22.202,
-     "end": 22.451
+     "start": 22.001,
+     "end": 22.25
     },
     {
      "text": "you",
-     "start": 22.451,
-     "end": 22.659
+     "start": 22.25,
+     "end": 22.458
     },
     {
      "text": "missed.",
-     "start": 22.659,
-     "end": 22.991
+     "start": 22.458,
+     "end": 22.79
     }
    ]
   },
   {
    "id": "L6",
    "say": "It plans your revision too. You just click the link in your calendar.",
-   "start": 23.591,
-   "end": 28.119,
+   "start": 23.39,
+   "end": 27.918,
    "words": [
     {
      "text": "It",
-     "start": 23.591,
-     "end": 23.824
+     "start": 23.39,
+     "end": 23.622
     },
     {
      "text": "plans",
-     "start": 23.824,
-     "end": 24.23
+     "start": 23.622,
+     "end": 24.029
     },
     {
      "text": "your",
-     "start": 24.23,
-     "end": 24.579
+     "start": 24.029,
+     "end": 24.378
     },
     {
      "text": "revision",
-     "start": 24.579,
-     "end": 25.16
+     "start": 24.378,
+     "end": 24.959
     },
     {
      "text": "too.",
-     "start": 25.16,
-     "end": 25.451
+     "start": 24.959,
+     "end": 25.25
     },
     {
      "text": "You",
-     "start": 25.831,
-     "end": 26.064
+     "start": 25.63,
+     "end": 25.863
     },
     {
      "text": "just",
-     "start": 26.064,
-     "end": 26.345
+     "start": 25.863,
+     "end": 26.144
     },
     {
      "text": "click",
-     "start": 26.345,
-     "end": 26.672
+     "start": 26.144,
+     "end": 26.471
     },
     {
      "text": "the",
-     "start": 26.672,
-     "end": 26.905
+     "start": 26.471,
+     "end": 26.704
     },
     {
      "text": "link",
-     "start": 26.905,
-     "end": 27.185
+     "start": 26.704,
+     "end": 26.984
     },
     {
      "text": "in",
-     "start": 27.185,
-     "end": 27.372
+     "start": 26.984,
+     "end": 27.171
     },
     {
      "text": "your",
-     "start": 27.372,
-     "end": 27.652
+     "start": 27.171,
+     "end": 27.451
     },
     {
      "text": "calendar.",
-     "start": 27.652,
-     "end": 28.119
+     "start": 27.451,
+     "end": 27.918
     }
    ]
   },
   {
    "id": "L7",
-   "say": "So. Myth or fact: rereading is revision?",
-   "start": 29.119,
-   "end": 32.273,
+   "say": "So. Myth or fact: understanding it is knowing it?",
+   "start": 28.918,
+   "end": 32.31,
    "words": [
     {
      "text": "So.",
-     "start": 29.119,
-     "end": 30.299
+     "start": 28.918,
+     "end": 30.118
     },
     {
      "text": "Myth",
-     "start": 30.409,
-     "end": 30.428
+     "start": 30.228,
+     "end": 30.239
     },
     {
      "text": "or",
-     "start": 30.428,
-     "end": 30.44
+     "start": 30.239,
+     "end": 30.247
     },
     {
      "text": "fact:",
-     "start": 30.44,
-     "end": 30.459
+     "start": 30.247,
+     "end": 30.258
     },
     {
-     "text": "rereading",
-     "start": 30.769,
-     "end": 31.431
+     "text": "understanding",
+     "start": 30.568,
+     "end": 31.294
+    },
+    {
+     "text": "it",
+     "start": 31.294,
+     "end": 31.488
     },
     {
      "text": "is",
-     "start": 31.431,
-     "end": 31.671
+     "start": 31.488,
+     "end": 31.681
     },
     {
-     "text": "revision?",
-     "start": 31.671,
-     "end": 32.273
+     "text": "knowing",
+     "start": 31.681,
+     "end": 32.117
+    },
+    {
+     "text": "it?",
+     "start": 32.117,
+     "end": 32.31
     }
    ]
   }

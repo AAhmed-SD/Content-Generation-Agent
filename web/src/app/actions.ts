@@ -499,3 +499,17 @@ export async function saveStoryboard(formData: FormData) {
   revalidatePath("/desk/ideas");
   revalidatePath("/desk/home");
 }
+
+export async function suggestIdeas() {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const { spawn } = await import("node:child_process");
+  const root = path.join(process.cwd(), "..");
+  await new Promise<void>((resolve) => {
+    const child = spawn(process.execPath, [path.join(root, "scripts", "suggest-ideas.mjs")], { cwd: root, stdio: "ignore" });
+    child.on("exit", () => resolve());
+    child.on("error", () => resolve());
+  });
+  revalidatePath("/desk/ideas");
+  revalidatePath("/desk/home");
+}

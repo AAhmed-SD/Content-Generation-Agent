@@ -8,7 +8,9 @@ import { readInspiration, readPulled, readRejected } from "@/lib/library";
 import { outliers } from "@/lib/signals";
 import { readSession } from "@/lib/session";
 
-export default async function InspirationPage({ searchParams }: { searchParams: Promise<{ source?: string }> }) {
+const NICHES: Record<string, string> = { clinical: "Clinical", analytical: "Analytical", gcsealevel: "GCSE and A-level", mentalhealth: "Time" };
+
+export default async function InspirationPage({ searchParams }: { searchParams: Promise<{ source?: string; account?: string }> }) {
   const person = await readSession();
   if (!person) redirect("/");
   const rejected = new Set(readRejected().inspiration);
@@ -17,7 +19,13 @@ export default async function InspirationPage({ searchParams }: { searchParams: 
   const kept = new Set(readPulled().items.map((p) => p.url));
   const items = all.filter((i) => !rejected.has(i.url) && i.image);
   const sources = [...new Set(items.map((i) => i.source))].sort((a, b) => Number(b === "Abduzeedo") - Number(a === "Abduzeedo"));
-  const source = (await searchParams).source ?? "Abduzeedo";
+  const query = await searchParams;
+  const source = query.source ?? "Abduzeedo";
+  const account = query.account && NICHES[query.account] ? query.account : "all";
+  const content = outliers()
+    .filter((o) => o.niche !== "motion" && !rejected.has(o.url) && (account === "all" || o.niche === account))
+    .sort((a, b) => b.ratio - a.ratio)
+    .slice(0, 16);
   const shown = (source === "all" ? items : items.filter((i) => i.source === source)).slice(0, 80);
 
   const Keep = ({ url, name, src, image }: { url: string; name: string; src: string; image?: string }) =>
@@ -39,7 +47,7 @@ export default async function InspirationPage({ searchParams }: { searchParams: 
         <div>
           <h2 className="page-title">Inspiration.</h2>
           <p className="split">
-            Motion, ads and interface craft. Keep what could become an Offload template: it goes to the Library. Take the idea, never the work.
+            Content that is working for UK students, plus motion, ads and interface craft. Keep what could become an Offload template: it goes to the Library. Take the idea, never the work.
             {run ? ` Last read ${new Date(run.at).toLocaleString("en-GB")}.` : ""}
           </p>
         </div>
@@ -48,9 +56,38 @@ export default async function InspirationPage({ searchParams }: { searchParams: 
         </form>
       </div>
 
+      <section className="insp-strip-wrap" aria-label="Content on UK TikTok">
+        <div className="home-row">
+          <h3 className="insp-h">Content working on UK TikTok</h3>
+          <span className="insp-note">UK accounts on our qualifications, at two times their usual views or more. Virlo will feed this once it is connected.</span>
+        </div>
+        <nav className="lib-tabs" aria-label="Accounts">
+          {["all", ...Object.keys(NICHES)].map((n) => (
+            <Link key={n} href={`/desk/inspiration?account=${n}&source=${encodeURIComponent(source)}`} className={account === n ? "pack-link" : "quiet-link"} scroll={false}>
+              {n === "all" ? "All accounts" : NICHES[n]}
+            </Link>
+          ))}
+        </nav>
+        <ul className="insp-strip">
+          {content.map((o) => (
+            <li key={o.id} className="lib-card insp-tiktok">
+              <iframe src={`https://www.tiktok.com/embed/v2/${o.id}`} title={`@${o.account}`} className="tiktok-embed" allow="encrypted-media; fullscreen" loading="lazy" />
+              <div className="insp-tiktok-meta">
+                <strong>@{o.account}</strong>
+                <span>{o.ratio}× usual</span>
+              </div>
+              <div className="lib-actions">
+                <Keep url={o.url} name={`@${o.account}: ${(o.hook || o.title).slice(0, 80)}`} src="TikTok content" />
+                <RejectButton kind="inspiration" value={o.url} />
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+
       {motion.length ? (
-        <section className="insp-strip-wrap" aria-label="On TikTok">
-          <h3 className="insp-h">On TikTok, above usual</h3>
+        <section className="insp-strip-wrap" aria-label="Motion on TikTok">
+          <h3 className="insp-h">Motion design on TikTok</h3>
           <ul className="insp-strip">
             {motion.slice(0, 16).map((o) => (
               <li key={o.id} className="lib-card insp-tiktok">

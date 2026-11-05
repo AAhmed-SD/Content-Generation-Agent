@@ -14,12 +14,12 @@
   },
   {
    "id": "L2",
-   "say": "Colour-coding the timetable. Most of the afternoon.",
+   "say": "Planning the perfect week. Most of the afternoon.",
    "after": 0.5
   },
   {
    "id": "L3",
-   "say": "Making it look nice. The rest of the afternoon.",
+   "say": "Finding the right app for it. The rest of the afternoon.",
    "after": 0.5
   },
   {
@@ -29,7 +29,7 @@
   },
   {
    "id": "L5",
-   "say": "The timetable lasted until Wednesday.",
+   "say": "The plan lasted until Wednesday.",
    "after": 0.5
   },
   {
