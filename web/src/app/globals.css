@@ -3842,3 +3842,22 @@ input[type="file"] {
   font: inherit;
   color: var(--ink);
 }
+
+.date-custom > summary {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+  list-style: none;
+}
+.date-custom > summary::-webkit-details-marker {
+  display: none;
+}
+.date-custom > summary.is-on {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--white);
+}

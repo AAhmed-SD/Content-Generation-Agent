@@ -1,6 +1,6 @@
 import { AbsoluteFill } from "remotion";
 import { tokens } from "../../tokens";
-import { alpha, DocCard, Flood, INTER, makeTiming, SilentContext, POP, S0, ScreenClip, Shell, track, useK, WeekStrip, type Block, type Cam, type Cue, type Row } from "../kit/dark";
+import { DocCard, Flood, INTER, makeTiming, SilentContext, POP, S0, ScreenClip, Shell, track, useK, WeekStrip, type Block, type Cam, type Cue, type Row } from "../kit/dark";
 import { Kinetic, type Fx } from "../kinetic";
 import { Chart, forget, PillOrbit, pillCues, phraseStarts, Source, Type } from "../kit/talk";
 import { LogoEnd, logoCues } from "../kit/logo";
@@ -105,18 +105,33 @@ export const BankFilm: React.FC<{ spec: AnySpec; timing: Timing; vo: string }> =
 
 /**
  * TikTok, Reels and Shorts lay their tabs over the top, buttons down the right and the caption over the bottom.
- * Every film is drawn at 74% inside the area those leave clear, and the space around it is a soft, blurred, silent
- * copy of the film itself, so the edges match its colours and there are never bars. (Decided 2026-11-07.)
+ * The film stays full-screen: its content is drawn a little smaller (88%) and nudged left and down, so the words and
+ * animation sit in the middle, clear of the buttons, tabs and caption. The edges fade into a soft, silent copy of the
+ * film's own colours, so there is no border, no card and no bar. (Decided 2026-11-07, after the card version.)
  */
-// 74% of the frame: about 160px clear at the top (tabs), 210px on the right (like, comment, share, the sound disc)
-// and 340px at the bottom (username, caption, sound line); measured against TikTok, the tightest of the three.
-const SAFE = { scale: 0.74, left: 70, top: 160 };
+const SAFE = { scale: 0.88, left: 30, top: 125 };
+const FEATHER = "linear-gradient(to right, transparent, black 5%, black 95%, transparent), linear-gradient(to bottom, transparent, black 4%, black 96%, transparent)";
 const SafeArea: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <AbsoluteFill style={{ overflow: "hidden" }}>
     <SilentContext.Provider value={true}>
-      <AbsoluteFill style={{ filter: "blur(36px) saturate(1.1)", transform: "scale(1.12)", opacity: 0.9 }}>{children}</AbsoluteFill>
+      <AbsoluteFill style={{ filter: "blur(60px)", transform: "scale(1.2)" }}>{children}</AbsoluteFill>
     </SilentContext.Provider>
-    <div style={{ position: "absolute", left: SAFE.left, top: SAFE.top, width: 1080, height: 1920, transform: `scale(${SAFE.scale})`, transformOrigin: "0 0", overflow: "hidden", borderRadius: 34, boxShadow: `0 24px 60px ${alpha(tokens.night, 0.22)}` }}>
+    <div
+      style={{
+        position: "absolute",
+        left: SAFE.left,
+        top: SAFE.top,
+        width: 1080,
+        height: 1920,
+        transform: `scale(${SAFE.scale})`,
+        transformOrigin: "0 0",
+        overflow: "hidden",
+        maskImage: FEATHER,
+        WebkitMaskImage: FEATHER,
+        maskComposite: "intersect",
+        WebkitMaskComposite: "source-in",
+      }}
+    >
       {children}
     </div>
   </AbsoluteFill>

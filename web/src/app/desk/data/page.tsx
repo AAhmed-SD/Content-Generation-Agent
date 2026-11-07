@@ -72,6 +72,8 @@ export default async function DataPage({ searchParams }: { searchParams: Promise
             </Link>
           ))}
         </nav>
+        <details className="date-custom" open={Boolean(from)}>
+          <summary className={from ? "is-on" : undefined}>{from ? `Custom: ${rangeLabel}` : "Custom"}</summary>
         <form method="get" action="/desk/data" className="date-pick" aria-label="Choose dates">
           {niche ? <input type="hidden" name="niche" value={niche} /> : null}
           {platform ? <input type="hidden" name="platform" value={platform} /> : null}
@@ -91,6 +93,7 @@ export default async function DataPage({ searchParams }: { searchParams: Promise
             </Link>
           ) : null}
         </form>
+        </details>
       </div>
 
 
