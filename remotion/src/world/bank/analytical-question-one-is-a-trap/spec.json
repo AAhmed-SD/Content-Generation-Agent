@@ -1,0 +1,307 @@
+{
+ "id": "analytical-question-one-is-a-trap",
+ "end": {
+  "style": "corner"
+ },
+ "hi": {
+  "wrong": "problem",
+  "october": "problem",
+  "reminding": "problem",
+  "rebuild": "problem",
+  "moved": "blue",
+  "zero": "blue",
+  "blank": "problem",
+  "gaps": "problem",
+  "spec": "blue",
+  "sooner": "blue",
+  "show": "blue",
+  "avoidance": "problem",
+  "exam": "problem",
+  "uncomfortable": "blue",
+  "moves": "blue",
+  "tests": "blue"
+ },
+ "scenes": [
+  {
+   "type": "week",
+   "at": "L1@-0.05",
+   "title": "Question one first? Avoidance.",
+   "days": [
+    "Q1",
+    "Q2",
+    "…",
+    "Q5"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Q1",
+     "at": "L1:one",
+     "outline": "L1:avoidance"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L2",
+   "title": "Problem sheet",
+   "days": [
+    "Q1",
+    "Q2",
+    "…",
+    "Q5"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "✓",
+     "tone": "ok",
+     "at": "L2:done"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "✓",
+     "tone": "ok",
+     "at": "L3:two"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L4",
+   "title": "Q5: untouched",
+   "days": [
+    "Q1",
+    "Q2",
+    "…",
+    "Q5"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "✓",
+     "tone": "ok",
+     "at": "L4"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "✓",
+     "tone": "ok",
+     "at": "L4"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Blank",
+     "at": "L4:blank",
+     "outline": "L5:exam"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L6",
+   "title": "Start here",
+   "days": [
+    "Q1",
+    "Q2",
+    "…",
+    "Q5"
+   ],
+   "blocks": [
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Start here",
+     "tone": "ok",
+     "at": "L6:start",
+     "outline": "L6:uncomfortable"
+    },
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Keeps",
+     "tone": "kraft",
+     "at": "L7:easy"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "Keeps",
+     "tone": "kraft",
+     "at": "L7:keep"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L8@-0.05",
+   "title": "Your week",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Lecture",
+     "tone": "kraft",
+     "at": "L8:plans"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "Problem sheet",
+     "at": "L8:notes"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "Shift",
+     "tone": "kraft",
+     "at": "L8:exam"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Study",
+     "at": "L8:dates"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L9",
+   "title": "Missed Tuesday",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Lecture",
+     "tone": "kraft",
+     "at": "L9"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "Shift",
+     "tone": "kraft",
+     "at": "L9"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Study",
+     "at": "L9"
+    },
+    {
+     "day": 4,
+     "slot": 0,
+     "label": "Problem sheet",
+     "tone": "ok",
+     "at": "L9:moves",
+     "outline": "L9:session"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L10",
+   "title": "Tested as you go",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Test",
+     "at": "L10:tests"
+    },
+    {
+     "day": 4,
+     "slot": 0,
+     "label": "Q5 again",
+     "tone": "ok",
+     "at": "L10:back"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L11",
+   "title": "Friday, 7pm",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 4,
+     "slot": 0,
+     "label": "Session open",
+     "tone": "ok",
+     "at": "L11:click",
+     "outline": "L11:click@0.2"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L11:show",
+   "title": "Hard one first. Done.",
+   "days": [
+    "Q1",
+    "Q2",
+    "…",
+    "Q5"
+   ],
+   "blocks": [
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "✓",
+     "tone": "ok",
+     "at": "L11:show"
+    },
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "✓",
+     "tone": "ok",
+     "at": "L11:show@0.1"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "✓",
+     "tone": "ok",
+     "at": "L11:show@0.2"
+    }
+   ]
+  }
+ ]
+}

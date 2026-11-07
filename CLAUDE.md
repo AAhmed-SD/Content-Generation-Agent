@@ -4,7 +4,7 @@ Two people, four niches, one paper card. Claude writes a script from the brand f
 
 ## Map
 
-- `brand/` is what the model may say. `templates.md`, `assets.md`, and `brand/briefs/` are generated. Do not edit those by hand. `brand/motion.md` is the picture. `brand/sound.md` is the cue list. The script writer does not read either one.
+- `brand/` is what the model may say. `templates.md`, `assets.md`, `shapes.md`, `lessons.md` and `brand/briefs/` are generated. Do not edit those by hand. `brand/motion.md` is the picture. `brand/sound.md` is the cue list. The script writer does not read either one.
 - `web/` is the Offload Marketing desk. It opens on `/desk/home`: an overview of the loop (data in to data out), ideas, inspiration and numbers, after the logo intro (`web/public/intro/offload-intro.mp4`, rendered from the `Desk-intro` composition). The sidebar has four folding sections: Content generation loop, Brand (one tabbed page), Make (Library, Layouts, Inspiration, Ideas, LinkedIn) and Accounts. LinkedIn posts live in `web/research/linkedin.json`, and their voices in `brand/linkedin.md`. Pieces live in `web/data/desk.json`. Week research lives in `web/data/research.json` and `web/data/briefs.json`.
 - `remotion/` is the picture. The schema is `remotion/src/template-schema.mjs`.
 - `remotion/src/world/` is the dark kit: the launch films, one folder per film. `docs/video-pipeline.md` is how to make one. Colours are `remotion/src/tokens.ts` and the variables in `web/src/app/globals.css`.
@@ -59,4 +59,4 @@ Never hardcode colours. Use `tokens` in Remotion and the CSS variables `--paper`
 
 Never add a product claim that is not in `brand/product-facts.md`. Never name a pose or a prop that is not in `brand/assets.md`. Never put a number on a card that is not already in the week’s brief.
 
-The writer reads `brand.md`, the niche file, `safety.md`, `platforms.md`, `product-facts.md`, `templates.md`, `assets.md`, and `brand/briefs/{niche}-{week}.md`. It does not read raw research. A film script also follows `brand/scripting.md` (who narrates each account, the shape, and the endings) and `brand/hook-styles.md` (which opening, rotated, and the rules for call-outs and jokes).
+The writer reads `brand.md`, the niche file, `safety.md`, `platforms.md`, `product-facts.md`, `templates.md`, `assets.md`, and `brand/briefs/{niche}-{week}.md`. It does not read raw research. A film script also follows `brand/pillars.md` (what films are about: knowing what you actually know leads, about half), `brand/scripting.md` (who narrates each account, the shape, and the endings) and `brand/hook-styles.md` (which opening, rotated, and the rules for call-outs and jokes).

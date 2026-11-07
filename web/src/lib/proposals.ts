@@ -1,3 +1,4 @@
+import { ourNumbers } from "../../scripts/our-numbers.mjs";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { claudeJson } from "@/lib/claude-stream";
@@ -11,12 +12,16 @@ import { readCatalogue } from "@/lib/library";
 
 export const NICHES = ["clinical", "analytical", "gcsealevel", "mentalhealth"] as const;
 export type Niche = (typeof NICHES)[number];
-export type Frame = { voice: string; screen: string };
+/** What a storyboard frame shows. Each one is drawn on the Hooks page, so it must be one of these. */
+export const VISUALS = ["text", "curve", "curves", "bars", "notes", "flashcards", "question", "paper", "phone", "calendar", "chat", "list", "poster", "board", "chaos", "clock", "receipt", "stamp", "end"] as const;
+export type Visual = (typeof VISUALS)[number];
+export type Frame = { voice: string; screen: string; text?: string; visual?: Visual; ground?: "dark" | "paper" | "blue"; motion?: string };
 export type Proposal = {
   id: string;
   niche: Niche;
   format: string;
   hookStyle: string;
+  pillar: string;
   theme: string;
   title: string;
   openers: string[];
@@ -24,12 +29,18 @@ export type Proposal = {
   storyboard: Frame[];
   reasoning: string;
   status: string;
+  mediaUrl: string | null;
   rejections: { by: string; reason: string; at: string }[];
   createdAt: string;
+  /** the script lead behind it */
+  truth: string | null;
+  shape: string | null;
+  pattern: string | null;
 };
 export type Message = { id: string; role: "person" | "desk"; author: string; text: string; revised: boolean; at: string };
 
-const RETIRED = /colou?r(-| )?cod|colou?ring (it )?in|re-?read/i;
+// retired themes (brand/scripting.md): colour-coding, rereading, and the paused delay jokes
+const RETIRED = /colou?r(-| )?cod|colou?ring (it )?in|re-?read|start(ing)? later|getting ready to start|afternoon disappeared|\bdelayed\b/i;
 const brand = (f: string) => {
   try {
     return readFileSync(path.join(process.cwd(), "..", f), "utf8");
@@ -43,6 +54,7 @@ const toProposal = (r: Record<string, unknown>): Proposal => ({
   niche: r.niche as Niche,
   format: (r.format as string) ?? "",
   hookStyle: (r.hook_style as string) ?? "",
+  pillar: (r.pillar as string) ?? "",
   theme: (r.theme as string) ?? "",
   title: (r.title as string) ?? "",
   openers: (r.openers as string[]) ?? [],
@@ -50,18 +62,37 @@ const toProposal = (r: Record<string, unknown>): Proposal => ({
   storyboard: (r.storyboard as Frame[]) ?? [],
   reasoning: (r.reasoning as string) ?? "",
   status: r.status as string,
+  mediaUrl: (r.media_url as string) ?? null,
   rejections: (r.rejections as Proposal["rejections"]) ?? [],
   createdAt: new Date(r.created_at as string).toISOString(),
+  truth: (r.truth_text as string) ?? null,
+  shape: (r.shape_name as string) ?? null,
+  pattern: (r.pattern_text as string) ?? null,
 });
 
 export async function listProposals(status: "proposed" | "accepted" | "rejected", niche?: string) {
-  const rows = await db()`select * from content where kind = 'film' and status = ${status}
-    and (${niche ?? null}::text is null or niche = ${niche ?? null}) order by created_at desc limit 120`;
+  // accepted means everything past the proposal: being made, rendered, approved, posted
+  const rows = await db()`select c.*, t.text as truth_text, s.name as shape_name, h.pattern as pattern_text
+    from content c left join truths t on t.id = c.truth_id left join shapes s on s.id = c.shape left join hook_patterns h on h.id = c.hook_pattern_id
+    where c.kind = 'film'
+    and (case when ${status} = 'accepted' then c.status not in ('proposed','rejected') else c.status = ${status} end)
+    and (${niche ?? null}::text is null or c.niche = ${niche ?? null}) order by c.created_at desc limit 120`;
   return rows.map(toProposal);
 }
 
+/** Films per account per day (docs/architecture.md, Launch volume). */
+export const FILMS_PER_DAY = 3;
+
+/** Films started today (accepted, in the making, or further on), per account. London day. */
+export async function startedToday() {
+  const rows = await db()`select niche, count(*) as n from content where kind = 'film' and status not in ('proposed','rejected')
+    and updated_at >= (date_trunc('day', now() at time zone 'Europe/London') at time zone 'Europe/London') group by niche`;
+  return Object.fromEntries(rows.map((r) => [r.niche, Number(r.n)])) as Record<string, number>;
+}
+
 export async function proposalCounts() {
-  const rows = await db()`select status, count(*) as n from content where kind = 'film' and status in ('proposed','accepted','rejected') group by status`;
+  const rows = await db()`select case when status in ('proposed','rejected') then status else 'accepted' end as status, count(*) as n
+    from content where kind = 'film' group by 1`;
   return Object.fromEntries(rows.map((r) => [r.status, Number(r.n)])) as Record<string, number>;
 }
 
@@ -79,16 +110,22 @@ export async function messagesFor(ids: string[]) {
  */
 async function stableContext() {
   const cat = await readCatalogue();
+  // sorted, so the cached block stays byte-identical between calls
+  const shapes = await db()`select id, name, purpose, formats from shapes where status = 'live' order by id`;
   const formats = (cat?.formats ?? []).map((f) => `- ${f.id} (${f.name}): ${f.shape} Suits: ${f.styles.join(", ")}.`).join("\n");
   return [
     "You are the producer on the Offload Marketing desk. Offload is a UK study app with four TikTok-first accounts: offload.clinical (medicine, dentistry, nursing, radiography), offload.analytical (maths, economics, computer science), offload.gcsealevel (GCSE and A-level, many under 18), offload.mentalhealth (the time account: students who struggle to start). You make short vertical videos. Follow the brand files exactly: one natural male narrator, the three-beat Offload explainer, the retired themes (never colour-coding or rereading), safety rules, and claims only from product-facts.",
+    "--- brand/pillars.md (what films are about, and the mix) ---\n" + brand("brand/pillars.md"),
     "--- brand/brand.md ---\n" + brand("brand/brand.md"),
     "--- brand/scripting.md ---\n" + brand("brand/scripting.md"),
     "--- brand/hook-styles.md ---\n" + brand("brand/hook-styles.md"),
     "--- brand/safety.md ---\n" + brand("brand/safety.md"),
     "--- brand/product-facts.md (claims allowed) ---\n" + brand("brand/product-facts.md").slice(0, 24000),
     ...NICHES.map((n) => `--- brand/niches/${n}.md ---\n${brand(`brand/niches/${n}.md`)}`),
+    ...NICHES.map((n) => `--- brand/niches/${n}-dossier.md (who they really are) ---\n${brand(`brand/niches/${n}-dossier.md`)}`),
     "--- Formats you may use (the format id must be one of these) ---\n" + formats,
+    "--- brand/lessons.md (what we have learnt from our own films; this outranks the general rules where they differ) ---\n" + (brand("brand/lessons.md") || "(no lessons yet)"),
+    "--- Script shapes (pick one per film by id; the writer follows its beats) ---\n" + shapes.map((x) => `- ${x.id} (${x.name}): ${x.purpose} Formats: ${x.formats.join(", ")}.`).join("\n"),
   ].join("\n\n");
 }
 
@@ -102,10 +139,33 @@ async function liveInputs(niche?: string) {
   const ideas = await sql`select title, pitch from ideas where status in ('accepted','building') order by created_at desc limit 10`;
   const rejected = await sql`select niche, coalesce(openers->>0, title) as hook, rejections from content where status = 'rejected' order by updated_at desc limit 15`;
   const recent = await sql`select niche, coalesce(openers->>0, title) as hook from content where kind = 'film' order by created_at desc limit 40`;
+  const ours = await ourNumbers(sql, niches);
+  // looks we kept: pieces pulled from Layouts and Inspiration, and recent inspiration not rejected
+  const pulled = await sql`select name, fit from pulled where coalesce(status, '') <> 'rejected' order by created_at desc limit 12`;
+  const kept = await sql`select title, summary from inspiration_items i where not exists (select 1 from rejected r where r.kind = 'inspiration' and r.value = i.url)
+    order by collected_at desc limit 12`;
+  const formats = await sql`select title, hook from virlo_items where kind = 'format' and collected_at > now() - interval '21 days' order by score desc nulls last limit 8`;
+  // the script lead: fresh truths in season (never one used in the last 60 days) and the live trend hook patterns
+  const month = Number(new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/London", month: "numeric" }).format(new Date()));
+  const truths = await sql`select id, niche, category, text from (
+      select t.*, row_number() over (partition by niche order by uses, random()) as k from truths t
+      where niche = any(${niches}) and status <> 'retired' and (cardinality(months) = 0 or ${month} = any(months))
+        and not exists (select 1 from content c where c.truth_id = t.id and c.created_at > now() - interval '60 days')
+    ) x where k <= ${niche ? 60 : 30} order by niche, id`;
+  const patterns = await sql`select id, niche, pattern, why from (
+      select h.*, row_number() over (partition by niche order by uses, random()) as k from hook_patterns h where niche = any(${niches}) and status = 'live'
+    ) x where k <= ${niche ? 20 : 12} order by niche, id`;
   return [
+    "--- Truths to build from (each film opens on exactly one; cite its id) ---\n" + (truths.map((t) => `- #${t.id} [${t.niche} · ${t.category}] ${t.text}`).join("\n") || "(the truth bank is empty)"),
+    "--- Hook patterns trending now (hook A follows one; cite its id) ---\n" + (patterns.map((h) => `- #${h.id} [${h.niche}] ${h.pattern} (${h.why})`).join("\n") || "(none yet)"),
+    "--- How our own posts did (this outranks everything below once groups have 3 or more posts; numbers are for choosing, never for the film) ---\n" +
+      (ours || "Nothing back yet. Use the signals and research below."),
     "--- Working on UK TikTok now (shape only, never copy words or name accounts) ---\n" + signals.map((s) => `- [${s.niche}] ${s.ratio}x: ${String(s.text).slice(0, 160)}`).join("\n"),
     "--- What students are looking up this week ---\n" + research.map((r) => `- [${r.niche}] ${r.text}`).join("\n"),
     "--- Accepted ideas ---\n" + ideas.map((i) => `- ${i.title}: ${i.pitch}`).join("\n"),
+    "--- Looks we have kept from Layouts and Inspiration (use them for the look and the format; never copy) ---\n" +
+      [...pulled.map((p) => `- ${p.name}: ${String(p.fit ?? "").slice(0, 160)}`), ...kept.map((k) => `- ${k.title}${k.summary ? `: ${String(k.summary).slice(0, 140)}` : ""}`)].join("\n"),
+    "--- Formats creators are copying right now (Virlo; the mechanic, never the content) ---\n" + (formats.map((f) => `- ${f.title}: ${String(f.hook ?? "").slice(0, 180)}`).join("\n") || "(none yet)"),
     "--- Rejected before, with reasons (learn from these) ---\n" + rejected.map((r) => `- [${r.niche}] ${r.hook} — ${((r.rejections as { reason: string }[]) ?? []).map((x) => x.reason).filter(Boolean).join("; ") || "no reason given"}`).join("\n"),
     "--- Recent hooks (do not repeat) ---\n" + recent.map((r) => `- [${r.niche}] ${r.hook}`).join("\n"),
   ].join("\n\n");
@@ -116,24 +176,51 @@ const PROPOSAL_SCHEMA = {
   type: "object",
   properties: {
     niche: { type: "string", enum: ["clinical", "analytical", "gcsealevel", "mentalhealth"] },
+    pillar: { type: "string", enum: ["know-what-you-know", "methods", "life-around-study", "starting"], description: "The content pillar from pillars.md" },
     format: { type: "string", description: "A format id from the list" },
     hook_style: { type: "string", description: "One style from hook-styles.md" },
-    theme: { type: "string", description: "The idea in one line" },
+    truth_id: { type: "integer", description: "The id of the truth this film opens on, from the list for this account" },
+    shape: { type: "string", description: "The id of the script shape it follows" },
+    hook_pattern_id: { type: "integer", description: "The id of the trending hook pattern hook A follows, or 0 if none fits" },
+    theme: { type: "string", description: "The takeaway: the one sentence a viewer should be able to repeat after one watch" },
     title: { type: "string", description: "Short working title" },
     openers: { type: "array", items: { type: "string" }, description: "Exactly two: hook A and hook B, two different first spoken lines" },
     look: { type: "string", description: "The visual look in one line: setting, colours, motion" },
     storyboard: {
       type: "array",
       description: "4 to 7 frames, from the hook to the Offload end card",
-      items: { type: "object", properties: { voice: { type: "string" }, screen: { type: "string" } }, required: ["voice", "screen"], additionalProperties: false },
+      items: {
+        type: "object",
+        properties: {
+          voice: { type: "string", description: "What the narrator says" },
+          screen: { type: "string", description: "What we see, in one sentence" },
+          text: { type: "string", description: "The words on screen in this frame, at most eight; empty if none" },
+          visual: {
+            type: "string",
+            enum: [...VISUALS],
+            description:
+              "The main picture, so the desk can sketch it: text (big words only), curve (forgetting curve), curves (cram vs spaced), bars, notes (handwritten notes or a blurt list), flashcards, question (exam-style question with options), paper (exam paper with ticks), phone (an app screen), calendar (a week with blocks), chat (message bubbles), list (ticks and crosses), poster, board (evidence board), chaos (things piling up or flying in), clock, receipt, stamp, end (the Offload end card)",
+          },
+          ground: { type: "string", enum: ["dark", "paper", "blue"], description: "Background: dark (science and launch-film look), paper (object formats), blue" },
+          motion: { type: "string", description: "The movement in two to four words, e.g. 'cards flip', 'curve drops', 'screen shakes'" },
+        },
+        required: ["voice", "screen", "text", "visual", "ground", "motion"],
+        additionalProperties: false,
+      },
     },
-    reasoning: { type: "string", description: "Why this should work: which signal, research or idea it answers" },
+    reasoning: { type: "string", description: "Why this should work: which of our own results, signal, research or idea it answers" },
   },
-  required: ["niche", "format", "hook_style", "theme", "title", "openers", "look", "storyboard", "reasoning"],
+  required: ["niche", "pillar", "truth_id", "shape", "hook_pattern_id", "format", "hook_style", "theme", "title", "openers", "look", "storyboard", "reasoning"],
   additionalProperties: false,
 };
 
-const SHAPE = `{"niche": "clinical|analytical|gcsealevel|mentalhealth", "format": "<a format id from the list>", "hook_style": "<one style from hook-styles.md>", "theme": "<the idea in one line>", "title": "<short working title>", "openers": ["<hook A: the first spoken line>", "<hook B: a different opener for the same film>"], "look": "<the visual look in one line: setting, colours, motion>", "storyboard": [{"voice": "<what the narrator says>", "screen": "<what we see>"}], "reasoning": "<why this should work: which signal, research or idea it answers>"}`;
+function frameOf(f: Frame): Frame {
+  const visual = (VISUALS as readonly string[]).includes(String(f.visual)) ? f.visual : undefined;
+  const ground = ["dark", "paper", "blue"].includes(String(f.ground)) ? f.ground : undefined;
+  return { voice: String(f.voice ?? "").slice(0, 300), screen: String(f.screen ?? "").slice(0, 300), text: String(f.text ?? "").slice(0, 80), visual, ground, motion: String(f.motion ?? "").slice(0, 40) };
+}
+
+const SHAPE = `{"niche": "clinical|analytical|gcsealevel|mentalhealth", "format": "<a format id from the list>", "hook_style": "<one style from hook-styles.md>", "theme": "<the idea in one line>", "title": "<short working title>", "openers": ["<hook A: the first spoken line>", "<hook B: a different opener for the same film>"], "look": "<the visual look in one line: setting, colours, motion>", "storyboard": [{"voice": "<what the narrator says>", "screen": "<what we see>", "text": "<on-screen words, max 8>", "visual": "<one of the visual kinds>", "ground": "dark|paper|blue", "motion": "<2-4 words>"}], "reasoning": "<why this should work: which of our own results, signal, research or idea it answers>"}`;
 
 function valid(p: Record<string, unknown>, formats: Set<string>) {
   const text = JSON.stringify(p);
@@ -153,7 +240,7 @@ function valid(p: Record<string, unknown>, formats: Set<string>) {
 export async function propose({ count = 8, niche, by }: { count?: number; niche?: string; by: string }) {
   const cat = await readCatalogue();
   const formats = new Set((cat?.formats ?? []).map((f) => f.id));
-  const ask = `${await liveInputs(niche)}\n\nPropose ${count} new videos${niche ? ` for ${niche}` : ", spread across all four accounts"}. Each needs a hook with two openers (A and B), a theme, a hook style, a format from the list, the look, and a storyboard of 4 to 7 frames that runs from the hook to the Offload end card.`;
+  const ask = `${await liveInputs(niche)}\n\nPropose ${count} new videos${niche ? ` for ${niche}` : ", spread across all four accounts"}. Each opens on one truth from the list for its account (cite truth_id; never two films on one truth), follows one script shape (cite shape; vary them), and hook A follows one trending hook pattern for its account where one fits (cite hook_pattern_id). Each needs a hook with two openers (A and B), the takeaway as the theme, a hook style, a format from the list, the look, and a storyboard of 4 to 7 frames that runs from the hook to the Offload end card. Follow the pillar mix in pillars.md: at least three from pillar 1 (know what you actually know), at least two science explainers in the science format (graphs and method demos: forgetting curve, spacing, testing effect, blurting, Feynman, applied questions), at most one from pillar 4 (starting), none of the paused delay jokes, and a mix of looks. Where our own posts show a format, hook style or pillar doing well on a platform, make more like it; drop what keeps doing badly. Keep about a fifth of the batch for new things, so we keep learning.`;
   const out = await claudeJson<{ proposals: Record<string, unknown>[] }>({
     task: "proposals",
     tier: "heavy",
@@ -162,29 +249,58 @@ export async function propose({ count = 8, niche, by }: { count?: number; niche?
     system: "Propose videos. Vary hook styles and formats; never repeat a recent hook.",
     messages: [{ role: "user", content: ask }],
     schema: { type: "object", properties: { proposals: { type: "array", items: PROPOSAL_SCHEMA } }, required: ["proposals"], additionalProperties: false },
-    maxTokens: 24000,
+    maxTokens: 40000,
   });
-  const items = (out.proposals ?? []).filter((p) => valid(p, formats));
+  let starting = 0;
+  const items = (out.proposals ?? []).filter((p) => valid(p, formats) && (p.pillar !== "starting" || starting++ < 1));
   const sql = db();
+  const used = new Set<number>();
   for (const p of items) {
-    await sql`insert into content (kind, niche, format, title, hook, hook_style, theme, look, openers, storyboard, reasoning, status, created_by)
-      values ('film', ${String(p.niche)}, ${String(p.format)}, ${String(p.title ?? p.theme).slice(0, 140)}, ${String((p.openers as string[])[0]).slice(0, 300)},
+    // keep only lead ids that exist and belong to this account
+    const [truth] = await sql`select id from truths where id = ${Number(p.truth_id) || 0} and niche = ${String(p.niche)}`;
+    const truthId = truth && !used.has(truth.id) ? Number(truth.id) : null;
+    if (truthId) used.add(truthId);
+    const [shape] = await sql`select id from shapes where id = ${String(p.shape ?? "")}`;
+    const [pattern] = await sql`select id from hook_patterns where id = ${Number(p.hook_pattern_id) || 0} and niche = ${String(p.niche)}`;
+    if (truthId) await sql`update truths set uses = uses + 1, status = 'used' where id = ${truthId}`;
+    if (shape) await sql`update shapes set uses = uses + 1 where id = ${shape.id}`;
+    if (pattern) await sql`update hook_patterns set uses = uses + 1 where id = ${pattern.id}`;
+    await sql`insert into content (kind, niche, pillar, truth_id, shape, hook_pattern_id, format, title, hook, hook_style, theme, look, openers, storyboard, reasoning, status, created_by)
+      values ('film', ${String(p.niche)}, ${String(p.pillar ?? "") || null}, ${truthId}, ${shape?.id ?? null}, ${pattern ? Number(pattern.id) : null}, ${String(p.format)}, ${String(p.title ?? p.theme).slice(0, 140)}, ${String((p.openers as string[])[0]).slice(0, 300)},
         ${String(p.hook_style ?? "")}, ${String(p.theme).slice(0, 400)}, ${String(p.look ?? "").slice(0, 400)},
         ${sql.json((p.openers as string[]).slice(0, 2).map((o) => String(o).slice(0, 300)))},
-        ${sql.json((p.storyboard as Frame[]).slice(0, 8).map((f) => ({ voice: String(f.voice ?? "").slice(0, 300), screen: String(f.screen ?? "").slice(0, 300) })))},
+        ${sql.json((p.storyboard as Frame[]).slice(0, 8).map((f) => frameOf(f)))},
         ${String(p.reasoning ?? "").slice(0, 800)}, 'proposed', ${by})`;
   }
   return items.length;
 }
 
-export async function decide(id: string, decision: "accepted" | "rejected", by: string, reason = "") {
+/**
+ * Accept, reject or put back a proposal. Decisions can be changed: a rejected film that was already made goes straight
+ * back to Approval, and a film rejected while it is being made is left alone by the agent. Returns true when the film
+ * still has to be made.
+ */
+export async function decide(id: string, decision: "accepted" | "rejected" | "proposed", by: string, reason = "") {
   const sql = db();
+  const [row] = await sql`select status, media_url from content where id = ${id}`;
+  if (!row) return false;
   if (decision === "rejected") {
+    if (row.status === "scheduled" || row.status === "posted") return false; // already out: take it down on the platform instead
     await sql`update content set status = 'rejected', updated_at = now(),
       rejections = rejections || ${sql.json([{ by, reason: reason.slice(0, 400), at: new Date().toISOString() }])} where id = ${id}`;
-  } else {
-    await sql`update content set status = 'accepted', updated_at = now() where id = ${id}`; // accepting the idea is not a stamp on the film
+    return false;
   }
+  if (decision === "proposed") {
+    await sql`update content set status = 'proposed', updated_at = now() where id = ${id}`;
+    return false;
+  }
+  // accepting the idea is not a stamp on the film; a film that already exists goes back to Approval without stamps
+  if (row.media_url) {
+    await sql`update content set status = 'rendered', stamps = '{}', updated_at = now() where id = ${id}`;
+    return false;
+  }
+  await sql`update content set status = 'accepted', updated_at = now() where id = ${id}`;
+  return true;
 }
 
 /** A message from a person about one proposal. The desk answers, and rewrites the proposal if asked to. */
@@ -197,7 +313,7 @@ export async function chat(id: string, text: string, by: string) {
   const p = toProposal(row);
   const cat = await readCatalogue();
   const formats = new Set((cat?.formats ?? []).map((f) => f.id));
-  const current = JSON.stringify({ niche: p.niche, format: p.format, hook_style: p.hookStyle, theme: p.theme, title: p.title, openers: p.openers, look: p.look, storyboard: p.storyboard, reasoning: p.reasoning });
+  const current = JSON.stringify({ niche: p.niche, pillar: p.pillar, format: p.format, hook_style: p.hookStyle, theme: p.theme, title: p.title, openers: p.openers, look: p.look, storyboard: p.storyboard, reasoning: p.reasoning });
   const messages = history.map((m) => ({ role: (m.role === "person" ? "user" : "assistant") as "user" | "assistant", content: m.text }));
   messages[messages.length - 1].content =
     `${await liveInputs(p.niche)}\n\nThe proposal now:\n${current}\n\n${by} says: ${messages[messages.length - 1].content}\n\n(Set changed to true and fill revision with the whole revised proposal only if ${by} asked for a change; otherwise set changed to false and repeat the current proposal in revision.)`;
@@ -215,10 +331,10 @@ export async function chat(id: string, text: string, by: string) {
   let revised = false;
   if (out.revision && valid({ ...out.revision, niche: out.revision.niche ?? p.niche }, formats)) {
     const r = out.revision;
-    await sql`update content set format = ${String(r.format ?? p.format)}, hook_style = ${String(r.hook_style ?? p.hookStyle)}, theme = ${String(r.theme ?? p.theme).slice(0, 400)},
+    await sql`update content set pillar = ${String(r.pillar ?? p.pillar) || null}, format = ${String(r.format ?? p.format)}, hook_style = ${String(r.hook_style ?? p.hookStyle)}, theme = ${String(r.theme ?? p.theme).slice(0, 400)},
       title = ${String(r.title ?? p.title).slice(0, 140)}, hook = ${String((r.openers as string[])[0]).slice(0, 300)}, look = ${String(r.look ?? p.look).slice(0, 400)},
       openers = ${sql.json((r.openers as string[]).slice(0, 2).map((o) => String(o).slice(0, 300)))},
-      storyboard = ${sql.json((r.storyboard as Frame[]).slice(0, 8).map((f) => ({ voice: String(f.voice ?? "").slice(0, 300), screen: String(f.screen ?? "").slice(0, 300) })))},
+      storyboard = ${sql.json((r.storyboard as Frame[]).slice(0, 8).map((f) => frameOf(f)))},
       reasoning = ${String(r.reasoning ?? p.reasoning).slice(0, 800)}, updated_at = now() where id = ${id}`;
     revised = true;
   }

@@ -19,6 +19,7 @@ const given = [
   ["safety.md", "Safety. No diagnosis, no treatment, no patient, no grade."],
   ["platforms.md", "Platforms. The trial sentence is unset. Do not invent one. No link. No price."],
   ["goals.md", "Goals. One job for the film."],
+  ["pillars.md", "Content pillars. What films are about and in what mix: knowing what you actually know leads."],
   ["scripting.md", "Scripting. Who narrates each account, the shape, the words, the endings."],
   ["hook-styles.md", "Hook styles. Pick one, not the last one this account used. Sharp styles aim at habits, never people."],
   ["niches/clinical.md", "offload.clinical"],

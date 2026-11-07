@@ -7,7 +7,7 @@ The same week, every week. One topic a day becomes four pieces: a hook, a payoff
 1. Monday research reads public titles and keeps themes. Names, numbers, and banned words stay out of the brief.
 2. The brief is the only page the writer may use, plus the brand file for that niche.
 3. Claude, inside Cursor, writes the on-screen line, the narration, and three beats.
-4. The lead stamps it. Clinical and mental health wait for the second stamp.
+4. Hadiqa or Laiba approves it. One approval is enough.
 5. Remotion builds the picture on this Mac from the saved script.
 6. The pack is downloaded. A person posts it and pastes the live URL.
 7. Numbers come back at 1 hour, 24 hours, 72 hours, and 7 days.

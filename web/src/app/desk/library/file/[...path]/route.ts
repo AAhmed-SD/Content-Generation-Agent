@@ -12,7 +12,13 @@ export async function GET(request: Request, { params }: { params: Promise<{ path
   const parts = (await params).path.map(decodeURIComponent);
   const file = path.resolve(outDir, ...parts);
   const type = TYPES[path.extname(file).toLowerCase()];
-  if (!file.startsWith(outDir + path.sep) || !type || !existsSync(file)) return new Response("Not found", { status: 404 });
+  if (!file.startsWith(outDir + path.sep) || !type) return new Response("Not found", { status: 404 });
+  // hosted, the files are not on this machine: send the stored copy (Supabase Storage, bucket "renders")
+  if (!existsSync(file)) {
+    const base = process.env.SUPABASE_URL;
+    if (!base) return new Response("Not found", { status: 404 });
+    return Response.redirect(`${base.replace(/\/$/, "")}/storage/v1/object/public/renders/${parts.map(encodeURIComponent).join("/")}`, 302);
+  }
   const size = statSync(file).size;
   const range = /bytes=(\d*)-(\d*)/.exec(request.headers.get("range") ?? "");
   if (range) {

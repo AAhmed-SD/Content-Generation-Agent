@@ -3,14 +3,15 @@ import { redirect } from "next/navigation";
 import { DeskFrame } from "@/components/desk-frame";
 import { HomeIntro } from "@/components/home-intro";
 import { Storyboard } from "@/components/storyboard";
-import { isReady, readDesk } from "@/lib/desk";
 import { readCatalogue, readIdeas, readInspiration, readRejected } from "@/lib/library";
 import { readPosts } from "@/lib/linkedin";
-import { loopPicture } from "@/lib/loop";
+import { loopCounts, NICHES, postingPlan } from "@/lib/posting";
+import { PostingPlan } from "@/components/posting-plan";
 import { readResearch } from "@/lib/pipeline";
 import { outliers } from "@/lib/signals";
 import { proposalCounts } from "@/lib/proposals";
 import { readSession } from "@/lib/session";
+import { VIRLO_WARN, claudeToday, virloState } from "@/lib/spend";
 
 /** Reads the signed-in session at request time, so this page may block on the server. */
 export const instant = false;
@@ -21,11 +22,11 @@ export default async function HomePage() {
   const person = await readSession();
   if (!person) redirect("/");
   const first = person.name.split(" ")[0];
-  const pieces = readDesk();
   const weekAgo = new Date(Date.now() - 7 * 864e5).toISOString();
   const signals = (await outliers()).filter((o) => o.niche !== "motion" && o.at >= weekAgo);
   const research = readResearch();
-  const numbers = loopPicture();
+  const [counts, virlo, budget, plan] = await Promise.all([loopCounts(), virloState(), claudeToday(), postingPlan(2)]);
+  const bars = counts.views.filter((v) => v.views > 0).map((v) => ({ label: NICHES[v.niche]?.label ?? v.niche, value: v.views, display: v.views.toLocaleString("en-GB") }));
   const ideas = (await readIdeas()).ideas.filter((i) => i.status !== "made").slice(0, 3);
   const rejected = new Set((await readRejected()).inspiration);
   const insp = (await readInspiration()).items.filter((i) => i.image && !rejected.has(i.url)).sort((a, b) => Number(b.source === "Abduzeedo") - Number(a.source === "Abduzeedo")).slice(0, 6);
@@ -37,9 +38,9 @@ export default async function HomePage() {
     { href: "/desk/signals", n: 1, label: "Signals", value: signals.length, note: "UK videos above usual, this week" },
     { href: "/desk/research", n: 2, label: "Research", value: research?.themes.length ?? 0, note: research ? "things students are looking up" : "not run this week" },
     { href: "/desk/hooks", n: 3, label: "Hooks", value: (await proposalCounts()).proposed ?? 0, note: "video proposals waiting" },
-    { href: "/desk", n: 4, label: "Approval", value: pieces.filter((p) => !isReady(p)).length, note: "waiting for a stamp" },
-    { href: "/desk/posts", n: 5, label: "Posts", value: pieces.filter((p) => isReady(p)).length, note: "ready to post" },
-    { href: "/desk/loop", n: 6, label: "Numbers", value: numbers.rows.length, note: numbers.checkpoint ? `rows at ${numbers.checkpoint}` : "nothing back yet" },
+    { href: "/desk", n: 4, label: "Approval", value: counts.waiting, note: "films waiting for a stamp" },
+    { href: "/desk#to-post", n: 5, label: "Posts", value: counts.ready, note: counts.queued || counts.live ? `approved to post · ${counts.queued} queued · ${counts.live} live` : "approved, ready to post" },
+    { href: "/desk/loop", n: 6, label: "Numbers", value: counts.live, note: counts.snapshots ? `posts with numbers back (${counts.snapshots} readings)` : "nothing back yet" },
   ];
 
   return (
@@ -54,6 +55,18 @@ export default async function HomePage() {
         </p>
       </header>
 
+      {budget.left <= 0 ? (
+        <p className="error">
+          Today&apos;s Claude budget for running the desk is used up ({budget.spent.toFixed(2)} of {budget.cap.toFixed(2)} dollars). The agent carries on tomorrow. <Link href="/desk/settings">Settings</Link>
+        </p>
+      ) : null}
+      {virlo.credits !== null && virlo.credits < VIRLO_WARN ? (
+        <p className="error">
+          Virlo credits are low ({virlo.credits}). {virlo.autoTopUp?.enabled ? `Auto top-up will charge about ${Math.round(virlo.autoTopUp.amount)} dollars soon.` : "Trend pulls stop when they run out."}{" "}
+          <Link href="/desk/settings">Settings</Link>
+        </p>
+      ) : null}
+      <PostingPlan plan={plan} />
       <section aria-labelledby="home-loop">
         <h3 id="home-loop" className="home-h">
           The loop, from data in to data out
@@ -98,10 +111,10 @@ export default async function HomePage() {
             </h3>
             <Link href="/desk/loop">Numbers</Link>
           </div>
-          {numbers.views.length ? (
+          {bars.length ? (
             <ul className="home-bars">
-              {numbers.views.map((b) => {
-                const max = Math.max(...numbers.views.map((x) => x.value));
+              {bars.map((b) => {
+                const max = Math.max(...bars.map((x) => x.value));
                 return (
                   <li key={b.label}>
                     <span>{b.label}</span>
@@ -114,7 +127,7 @@ export default async function HomePage() {
               })}
             </ul>
           ) : (
-            <p className="split">No numbers back yet. After the first posts, import the CSV on the Numbers page, or connect Blotato.</p>
+            <p className="split">No numbers back yet. After the first posts, Blotato brings them back every 20 minutes.</p>
           )}
         </section>
       </div>

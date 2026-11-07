@@ -17,7 +17,7 @@ const readJson = <T,>(file: string, fallback: T): T => {
   }
 };
 
-export type Format = { id: string; name: string; kit: string; voice: boolean; shape: string; styles: string[]; examples: string[]; thumb: string | null; video: string | null; fields: string[] };
+export type Format = { id: string; name: string; kit: string; voice: boolean; shape: string; styles: string[]; examples: string[]; thumb: string | null; video: string | null; strip?: string[]; fields: string[] };
 export type Film = { id: string; niche: string; format: string; voice: string | null; hook: string; video: string | null; thumb: string | null };
 export type Catalogue = {
   at: string;

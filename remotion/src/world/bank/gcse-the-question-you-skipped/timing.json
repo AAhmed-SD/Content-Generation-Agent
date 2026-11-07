@@ -1,0 +1,497 @@
+{
+ "duration": 32.786,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "This is for the person who skips the last question on the past paper.",
+   "start": 0.15,
+   "end": 4.103,
+   "words": [
+    {
+     "text": "This",
+     "start": 0.15,
+     "end": 0.436
+    },
+    {
+     "text": "is",
+     "start": 0.436,
+     "end": 0.626
+    },
+    {
+     "text": "for",
+     "start": 0.626,
+     "end": 0.864
+    },
+    {
+     "text": "the",
+     "start": 0.864,
+     "end": 1.103
+    },
+    {
+     "text": "person",
+     "start": 1.103,
+     "end": 1.484
+    },
+    {
+     "text": "who",
+     "start": 1.484,
+     "end": 1.722
+    },
+    {
+     "text": "skips",
+     "start": 1.722,
+     "end": 2.055
+    },
+    {
+     "text": "the",
+     "start": 2.055,
+     "end": 2.293
+    },
+    {
+     "text": "last",
+     "start": 2.293,
+     "end": 2.579
+    },
+    {
+     "text": "question",
+     "start": 2.579,
+     "end": 3.055
+    },
+    {
+     "text": "on",
+     "start": 3.055,
+     "end": 3.246
+    },
+    {
+     "text": "the",
+     "start": 3.246,
+     "end": 3.484
+    },
+    {
+     "text": "past",
+     "start": 3.484,
+     "end": 3.77
+    },
+    {
+     "text": "paper.",
+     "start": 3.77,
+     "end": 4.103
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Skipping it felt fine. Everyone does this.",
+   "start": 4.603,
+   "end": 7.31,
+   "words": [
+    {
+     "text": "Skipping",
+     "start": 4.603,
+     "end": 5.126
+    },
+    {
+     "text": "it",
+     "start": 5.126,
+     "end": 5.336
+    },
+    {
+     "text": "felt",
+     "start": 5.336,
+     "end": 5.649
+    },
+    {
+     "text": "fine.",
+     "start": 5.649,
+     "end": 5.963
+    },
+    {
+     "text": "Everyone",
+     "start": 6.173,
+     "end": 6.69
+    },
+    {
+     "text": "does",
+     "start": 6.69,
+     "end": 7.0
+    },
+    {
+     "text": "this.",
+     "start": 7.0,
+     "end": 7.31
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "But knowing a topic isn't scoring on it.",
+   "start": 7.81,
+   "end": 10.238,
+   "words": [
+    {
+     "text": "But",
+     "start": 7.81,
+     "end": 8.068
+    },
+    {
+     "text": "knowing",
+     "start": 8.068,
+     "end": 8.533
+    },
+    {
+     "text": "a",
+     "start": 8.533,
+     "end": 8.688
+    },
+    {
+     "text": "topic",
+     "start": 8.688,
+     "end": 9.05
+    },
+    {
+     "text": "isn't",
+     "start": 9.05,
+     "end": 9.36
+    },
+    {
+     "text": "scoring",
+     "start": 9.36,
+     "end": 9.825
+    },
+    {
+     "text": "on",
+     "start": 9.825,
+     "end": 10.031
+    },
+    {
+     "text": "it.",
+     "start": 10.031,
+     "end": 10.238
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Most of us practise the questions we can already do.",
+   "start": 10.738,
+   "end": 13.907,
+   "words": [
+    {
+     "text": "Most",
+     "start": 10.738,
+     "end": 11.045
+    },
+    {
+     "text": "of",
+     "start": 11.045,
+     "end": 11.249
+    },
+    {
+     "text": "us",
+     "start": 11.249,
+     "end": 11.453
+    },
+    {
+     "text": "practise",
+     "start": 11.453,
+     "end": 11.965
+    },
+    {
+     "text": "the",
+     "start": 11.965,
+     "end": 12.22
+    },
+    {
+     "text": "questions",
+     "start": 12.22,
+     "end": 12.783
+    },
+    {
+     "text": "we",
+     "start": 12.783,
+     "end": 12.987
+    },
+    {
+     "text": "can",
+     "start": 12.987,
+     "end": 13.243
+    },
+    {
+     "text": "already",
+     "start": 13.243,
+     "end": 13.703
+    },
+    {
+     "text": "do.",
+     "start": 13.703,
+     "end": 13.907
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "That blank box is the actual revision.",
+   "start": 14.407,
+   "end": 16.847,
+   "words": [
+    {
+     "text": "That",
+     "start": 14.407,
+     "end": 14.733
+    },
+    {
+     "text": "blank",
+     "start": 14.733,
+     "end": 15.112
+    },
+    {
+     "text": "box",
+     "start": 15.112,
+     "end": 15.383
+    },
+    {
+     "text": "is",
+     "start": 15.383,
+     "end": 15.6
+    },
+    {
+     "text": "the",
+     "start": 15.6,
+     "end": 15.871
+    },
+    {
+     "text": "actual",
+     "start": 15.871,
+     "end": 16.305
+    },
+    {
+     "text": "revision.",
+     "start": 16.305,
+     "end": 16.847
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload builds the plan from your notes and exam dates.",
+   "start": 17.547,
+   "end": 20.8,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 17.547,
+     "end": 17.997
+    },
+    {
+     "text": "builds",
+     "start": 17.997,
+     "end": 18.398
+    },
+    {
+     "text": "the",
+     "start": 18.398,
+     "end": 18.648
+    },
+    {
+     "text": "plan",
+     "start": 18.648,
+     "end": 18.948
+    },
+    {
+     "text": "from",
+     "start": 18.948,
+     "end": 19.249
+    },
+    {
+     "text": "your",
+     "start": 19.249,
+     "end": 19.549
+    },
+    {
+     "text": "notes",
+     "start": 19.549,
+     "end": 19.899
+    },
+    {
+     "text": "and",
+     "start": 19.899,
+     "end": 20.149
+    },
+    {
+     "text": "exam",
+     "start": 20.149,
+     "end": 20.45
+    },
+    {
+     "text": "dates.",
+     "start": 20.45,
+     "end": 20.8
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "It tests you with exam-style questions, and brings weak ones back.",
+   "start": 21.3,
+   "end": 25.148,
+   "words": [
+    {
+     "text": "It",
+     "start": 21.3,
+     "end": 21.497
+    },
+    {
+     "text": "tests",
+     "start": 21.497,
+     "end": 21.842
+    },
+    {
+     "text": "you",
+     "start": 21.842,
+     "end": 22.089
+    },
+    {
+     "text": "with",
+     "start": 22.089,
+     "end": 22.385
+    },
+    {
+     "text": "exam-style",
+     "start": 22.385,
+     "end": 22.927
+    },
+    {
+     "text": "questions,",
+     "start": 22.927,
+     "end": 23.47
+    },
+    {
+     "text": "and",
+     "start": 23.77,
+     "end": 23.992
+    },
+    {
+     "text": "brings",
+     "start": 23.992,
+     "end": 24.348
+    },
+    {
+     "text": "weak",
+     "start": 24.348,
+     "end": 24.615
+    },
+    {
+     "text": "ones",
+     "start": 24.615,
+     "end": 24.882
+    },
+    {
+     "text": "back.",
+     "start": 24.882,
+     "end": 25.148
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 25.648,
+   "end": 28.473,
+   "words": [
+    {
+     "text": "You",
+     "start": 25.648,
+     "end": 25.869
+    },
+    {
+     "text": "just",
+     "start": 25.869,
+     "end": 26.134
+    },
+    {
+     "text": "click",
+     "start": 26.134,
+     "end": 26.443
+    },
+    {
+     "text": "the",
+     "start": 26.443,
+     "end": 26.664
+    },
+    {
+     "text": "link",
+     "start": 26.664,
+     "end": 26.928
+    },
+    {
+     "text": "in",
+     "start": 26.928,
+     "end": 27.105
+    },
+    {
+     "text": "your",
+     "start": 27.105,
+     "end": 27.37
+    },
+    {
+     "text": "calendar",
+     "start": 27.37,
+     "end": 27.811
+    },
+    {
+     "text": "and",
+     "start": 27.811,
+     "end": 28.032
+    },
+    {
+     "text": "show",
+     "start": 28.032,
+     "end": 28.297
+    },
+    {
+     "text": "up.",
+     "start": 28.297,
+     "end": 28.473
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "Tag the one who skips it.",
+   "start": 29.073,
+   "end": 30.786,
+   "words": [
+    {
+     "text": "Tag",
+     "start": 29.073,
+     "end": 29.35
+    },
+    {
+     "text": "the",
+     "start": 29.35,
+     "end": 29.626
+    },
+    {
+     "text": "one",
+     "start": 29.626,
+     "end": 29.902
+    },
+    {
+     "text": "who",
+     "start": 29.902,
+     "end": 30.178
+    },
+    {
+     "text": "skips",
+     "start": 30.178,
+     "end": 30.565
+    },
+    {
+     "text": "it.",
+     "start": 30.565,
+     "end": 30.786
+    }
+   ]
+  }
+ ]
+}

@@ -29,6 +29,10 @@ export function publicClaudeError(message: string) {
 export async function askClaude(prompt: string) {
   const key = process.env.ANTHROPIC_API_KEY?.trim();
   if (!key) throw new Error("ANTHROPIC_API_KEY is empty.");
+  // never past today's cap (Settings)
+  const { db } = await import("@/lib/db");
+  const { checkBudget } = await import("../../scripts/budget.mjs");
+  await checkBudget(db(), 0.1);
   const response = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: {

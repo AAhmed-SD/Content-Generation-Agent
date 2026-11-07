@@ -4,7 +4,7 @@ import { alpha, INTER, POP, soft, useK, type Cue } from "../kit/dark";
 import { Type } from "../kit/talk";
 import { SCRIPT, SERIF } from "../../story/fonts";
 import { Br, DISPLAY, grain, Mark } from "../posters/Posters";
-import { glass, Wallpaper } from "../kit/glass";
+import { glass } from "../kit/glass";
 import { Sound } from "./kit";
 
 /**
@@ -16,11 +16,23 @@ type T = (ref: Ref) => number;
 type Timing = { duration: number; lines: { id: string; start: number; end: number; words: { text: string; start: number; end: number }[] }[] };
 type Base = { timing: Timing; T: T; vo: string };
 
+/**
+ * The Tetris calendar. The week must look as full as the script says: if the voice says "busy", "packed" or "your
+ * only free day", fill the other days (lectures, placement, shifts, a job, family) so that day really is the only gap;
+ * a busy week has 12 to 20 blocks. Rows run 0 (morning) to 9 (late evening).
+ */
 export type BlockfallSpec = {
   format: "blockfall";
   title: string;
   blocks: { day: number; start: number; len: number; label: string; kind: "fixed" | "shift" | "study"; at: Ref; miss?: Ref; moveTo?: { day: number; start: number; at: Ref } }[];
   done?: { text: string; at: Ref };
+  /**
+   * The chaos beat: rebuilding the week by hand. From `at` to `until` every block lifts and gets dragged about:
+   * blocks wobble, slide into the wrong days and overlap, ghost copies are dragged across the week, and a red count
+   * ticks up ("Moved by hand: 7"). At `until` it all snaps back. Use it whenever the voice talks about fixing the plan
+   * by hand, so the screen never sits still while the words describe chaos. `count` is the counter's label.
+   */
+  chaos?: { at: Ref; until: Ref; count?: string };
 };
 export type EvidenceSpec = { format: "evidence"; title: string; subject: string; exhibits: { label: string; text: string; at: Ref }[]; verdict: { text: string; at: Ref }; sentence?: { text: string; at: Ref } };
 export type SplitSpec = { format: "split"; top: string; bottom: string; pairs: { expect: string; reality: string; at: Ref; realityAt: Ref }[]; final: { text: string; at: Ref } };
@@ -53,20 +65,27 @@ export const Blockfall: React.FC<{ spec: BlockfallSpec } & Base> = ({ spec, T, t
   const { t, sp } = useK();
   const blocks = spec.blocks.map((b) => ({ ...b, a: T(b.at), m: b.miss ? T(b.miss) : 1e9, mv: b.moveTo ? T(b.moveTo.at) : 1e9 }));
   const done = spec.done ? T(spec.done.at) : 1e9;
-  const cues: Cue[] = [...blocks.map((b) => ({ t: b.a + 0.32, s: b.kind === "study" ? "pop" : "thud", v: 0.24 })), ...blocks.filter((b) => b.miss).map((b) => ({ t: b.m, s: "shatter", v: 0.26 })), ...blocks.filter((b) => b.moveTo).map((b) => ({ t: b.mv + 0.32, s: "thud", v: 0.26 })), ...(spec.done ? [{ t: done, s: "sparkle", v: 0.3 }] : [])];
-  const fill = (kind: string) => (kind === "study" ? tokens.mark : kind === "shift" ? tokens.kraft : tokens.white);
+  const c0 = spec.chaos ? T(spec.chaos.at) : 1e9;
+  const c1 = spec.chaos ? T(spec.chaos.until) : -1;
+  const inChaos = t >= c0 && t < c1;
+  // how far into the chaos (ramps up over the first second) and how settled after it (springs back)
+  const rage = inChaos ? Math.min(1, (t - c0) / 1) : 0;
+  const settle = t >= c1 ? sp(c1, { damping: 12, stiffness: 160 }) : 0;
+  const moves = inChaos ? Math.floor((t - c0) / 0.55) + 1 : 0;
+  const chaosCues: Cue[] = spec.chaos ? Array.from({ length: Math.max(0, Math.floor((c1 - c0) / 0.55)) }, (_, n) => ({ t: c0 + n * 0.55, s: `key_${(n % 4) + 1}`, v: 0.1 })) : [];
+  const cues: Cue[] = [...chaosCues, ...blocks.map((b) => ({ t: b.a + 0.32, s: b.kind === "study" ? "pop" : "thud", v: 0.24 })), ...blocks.filter((b) => b.miss).map((b) => ({ t: b.m, s: "shatter", v: 0.26 })), ...blocks.filter((b) => b.moveTo).map((b) => ({ t: b.mv + 0.32, s: "thud", v: 0.26 })), ...(spec.done ? [{ t: done, s: "sparkle", v: 0.3 }] : [])];
+  const fill = (kind: string) => (kind === "study" ? tokens.mark : kind === "shift" ? alpha(tokens.ink, 0.16) : tokens.white);
   const ink = (kind: string) => (kind === "study" ? tokens.white : tokens.ink);
+  // the paper look, as in the Hooks storyboard: flat cards on paper, ink type, hairlines, no glass or glow
   const fall = (a: number) => {
     const k = sp(a, { damping: 11, stiffness: 140, mass: 0.7 });
     return { k, dy: (1 - k) * -1300 };
   };
-  const glow = t >= done ? 0.5 + 0.5 * Math.sin((t - done) * 6) : 0;
   return (
     <AbsoluteFill>
-      <Wallpaper dark />
-      <div style={{ position: "absolute", left: GX - 20, top: GY - 110, width: 1080 - (GX - 20) * 2, height: ROWS * RH + 140, borderRadius: 40, ...glass(true, 24) }} />
-      {DAYS.map((d, i) => <div key={d} style={{ position: "absolute", left: GX + i * CW, top: GY - 80, width: CW, textAlign: "center", fontFamily: INTER, fontWeight: 750, fontSize: 32, color: alpha(tokens.white, 0.85) }}>{d}</div>)}
-      {Array.from({ length: ROWS + 1 }, (_, r) => <div key={r} style={{ position: "absolute", left: GX, top: GY + r * RH, width: CW * 7, height: 1.5, background: alpha(tokens.white, 0.09) }} />)}
+      <AbsoluteFill style={{ background: tokens.paper }} />
+      {DAYS.map((d, i) => <div key={d} style={{ position: "absolute", left: GX + i * CW, top: GY - 80, width: CW, textAlign: "center", fontFamily: INTER, fontWeight: 750, fontSize: 32, color: tokens.quiet }}>{d}</div>)}
+      {DAYS.map((d, i) => <div key={`col-${d}`} style={{ position: "absolute", left: GX + i * CW + 4, top: GY, width: CW - 8, height: ROWS * RH, borderRadius: 22, border: `2.5px solid ${tokens.line}` }} />)}
       {blocks.map((b, i) => {
         if (t < b.a - 0.05) return null;
         const moved = t >= b.mv;
@@ -75,16 +94,39 @@ export const Blockfall: React.FC<{ spec: BlockfallSpec } & Base> = ({ spec, T, t
         const start = moved ? b.moveTo!.start : b.start;
         const broken = t >= b.m && !moved;
         const crack = broken ? Math.min(1, (t - b.m) / 0.4) : 0;
+        // the chaos beat: each block is dragged somewhere else every half second, overlapping its neighbours,
+        // then springs home when it ends
+        const hop = Math.floor((t - c0) / 0.55);
+        const seed = (n: number) => Math.sin((i + 1) * 12.9898 + n * 78.233) * 0.5 + 0.5;
+        const drag = inChaos && !broken ? rage : t >= c1 && t < c1 + 1.2 && !broken ? 1 - settle : 0;
+        const hopAt = inChaos ? hop : Math.floor((c1 - c0) / 0.55);
+        // dragged blocks stay inside the calendar
+        const cdx = Math.max(-day * CW, Math.min((6 - day) * CW, drag * (seed(hopAt) - 0.5) * CW * 2.4));
+        const cdy = Math.max(-start * RH, Math.min((ROWS - start - b.len) * RH, drag * (seed(hopAt + 7) - 0.5) * RH * 3.2));
+        const crot = drag * (seed(hopAt + 3) - 0.5) * 16;
         return (
-          <div key={i} style={{ position: "absolute", left: GX + day * CW + 6, top: GY + start * RH + 6 + dy, width: CW - 12, height: b.len * RH - 12, borderRadius: 18, background: broken ? alpha(tokens.problem, 0.85) : fill(b.kind), color: broken ? tokens.white : ink(b.kind), boxShadow: b.kind === "study" ? `0 0 ${30 + glow * 30}px ${alpha(tokens.mark, 0.5)}` : soft(0.4), padding: "12px 10px", fontFamily: INTER, fontWeight: 750, fontSize: 24, lineHeight: 1.1, transform: `rotate(${broken ? (i % 2 ? 1 : -1) * crack * 8 : 0}deg) scale(${broken ? 1 - crack * 0.15 : 1})`, opacity: (broken ? 1 - crack * 0.85 : 1) * Math.min(1, k * 3) }}>{b.label}</div>
+          <div key={i} style={{ position: "absolute", left: GX + day * CW + 6 + cdx, top: GY + start * RH + 6 + dy + cdy, zIndex: drag ? 2 : 1, boxShadow: drag ? `0 ${12 * drag}px ${28 * drag}px ${alpha(tokens.ink, 0.18)}` : "none", rotate: `${crot}deg`, width: CW - 12, height: b.len * RH - 12, borderRadius: 18, background: broken ? alpha(tokens.problem, 0.85) : fill(b.kind), color: broken ? tokens.white : ink(b.kind), border: b.kind === "fixed" && !broken ? `2.5px solid ${tokens.line}` : "none", boxSizing: "border-box", padding: "10px 8px", fontFamily: INTER, fontWeight: 750, fontSize: b.label.length > 12 ? 17 : b.label.length > 8 ? 19 : 22, lineHeight: 1.08, overflowWrap: "anywhere", hyphens: "auto", overflow: "hidden", transform: `rotate(${broken ? (i % 2 ? 1 : -1) * crack * 8 : 0}deg) scale(${broken ? 1 - crack * 0.15 : 1})`, opacity: (broken ? 1 - crack * 0.85 : 1) * Math.min(1, k * 3) }}>{b.label}</div>
         );
       })}
-      {spec.done && t >= done ? (
-        <div style={{ position: "absolute", left: 90, right: 90, bottom: 150, padding: "30px 36px", borderRadius: 34, ...glass(false), fontFamily: INTER, fontWeight: 800, fontSize: 48, color: tokens.ink, textAlign: "center", transform: `scale(${0.9 + 0.1 * sp(done, POP)})` }}>{spec.done.text}</div>
+      {inChaos ? (
+        <>
+          {/* ghost copies being dragged across the week */}
+          {[0, 1, 2].map((g) => {
+            const p = ((t - c0) / 1.6 + g / 3) % 1;
+            const row = 1 + ((g * 3 + Math.floor((t - c0) / 1.6)) % 7);
+            return <div key={`ghost-${g}`} style={{ position: "absolute", left: GX + p * CW * 6 + 6, top: GY + row * RH + 6, width: CW - 12, height: RH * 1.6, borderRadius: 18, border: `3px dashed ${tokens.mark}`, background: alpha(tokens.mark, 0.12), opacity: rage * (1 - Math.abs(p - 0.5) * 1.2), zIndex: 3 }} />;
+          })}
+          <div style={{ position: "absolute", right: 70, top: 395, padding: "10px 20px", borderRadius: 999, background: tokens.problem, color: tokens.white, fontFamily: INTER, fontWeight: 800, fontSize: 30, fontVariantNumeric: "tabular-nums", transform: `scale(${1 + 0.08 * Math.max(0, 1 - ((t - c0) % 0.55) / 0.2)})`, zIndex: 4 }}>
+            {spec.chaos?.count ?? "Moved by hand"}: {moves}
+          </div>
+        </>
       ) : null}
-      <div style={{ position: "absolute", left: 70, top: 300, fontFamily: INTER, fontWeight: 800, fontSize: 58, color: tokens.white, letterSpacing: "-0.03em" }}>{spec.title}</div>
-      <Type timing={timing} hook={0} y={110} colour={tokens.white} floor={290} />
-      <Corner colour={tokens.white} />
+      {spec.done && t >= done ? (
+        <div style={{ position: "absolute", left: 90, right: 90, bottom: 150, padding: "30px 36px", borderRadius: 34, background: tokens.white, border: `2.5px solid ${tokens.line}`, fontFamily: INTER, fontWeight: 800, fontSize: 48, color: tokens.ink, textAlign: "center", transform: `scale(${0.9 + 0.1 * sp(done, POP)})` }}>{spec.done.text}</div>
+      ) : null}
+      <div style={{ position: "absolute", left: 70, top: 300, fontFamily: INTER, fontWeight: 800, fontSize: 58, color: tokens.ink, letterSpacing: "-0.03em" }}>{spec.title}</div>
+      <Type timing={timing} hook={0} y={110} colour={tokens.ink} floor={290} />
+      <Corner colour={tokens.ink} />
       <Sound vo={vo} cues={cues} />
     </AbsoluteFill>
   );

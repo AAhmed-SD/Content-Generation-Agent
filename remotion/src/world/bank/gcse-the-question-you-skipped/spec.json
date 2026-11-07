@@ -1,0 +1,30 @@
+{
+ "id": "gcse-the-question-you-skipped",
+ "format": "exampaper",
+ "paper": "Past paper · Biology",
+ "number": "Last Q",
+ "question": "Explain how the structure of an artery suits its function.",
+ "marks": "[unanswered]",
+ "answer": {
+  "text": "",
+  "at": "L1:skips"
+ },
+ "ticks": [
+  {
+   "kind": "tick",
+   "at": "L2:skipping"
+  },
+  {
+   "kind": "tick",
+   "at": "L2:everyone"
+  },
+  {
+   "kind": "cross",
+   "at": "L3:scoring"
+  }
+ ],
+ "verdict": {
+  "text": "SKIPPED ≠ SAFE",
+  "at": "L9:tag"
+ }
+}

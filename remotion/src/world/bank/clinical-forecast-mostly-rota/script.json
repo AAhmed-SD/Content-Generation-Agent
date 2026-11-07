@@ -1,0 +1,66 @@
+{
+ "id": "bank/clinical-forecast-mostly-rota",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Your placement week's forecast: mostly rota.",
+   "after": 0.5
+  },
+  {
+   "id": "L2",
+   "say": "Monday. Campus day. Sunny.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "Tuesday to Thursday. Long days. Heavy.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "Thursday, a shift overruns.",
+   "after": 0.4
+  },
+  {
+   "id": "L5",
+   "say": "Revision washed out.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "Friday's sign-off. Also somehow your evening.",
+   "after": 0.7
+  },
+  {
+   "id": "L7",
+   "say": "Offload plans revision around your rota.",
+   "after": 0.4
+  },
+  {
+   "id": "L8",
+   "say": "When a shift runs late, it moves it.",
+   "after": 0.5
+  },
+  {
+   "id": "L9",
+   "say": "It tests you as you go.",
+   "after": 0.4
+  },
+  {
+   "id": "L10",
+   "say": "And brings topics back before they fade.",
+   "after": 0.5
+  },
+  {
+   "id": "L11",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1
+  }
+ ]
+}

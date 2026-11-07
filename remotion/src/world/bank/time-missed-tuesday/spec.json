@@ -1,0 +1,105 @@
+{
+ "id": "time-missed-tuesday",
+ "format": "lockscreen",
+ "time": "16:32",
+ "date": "Tuesday",
+ "notifs": [
+  {
+   "app": "Calendar",
+   "title": "Tuesday's session",
+   "body": "Missed",
+   "at": "L1:Tuesday"
+  },
+  {
+   "app": "Calendar",
+   "title": "Wednesday",
+   "body": "Double booked",
+   "at": "L2:Wednesday"
+  },
+  {
+   "app": "Reminders",
+   "title": "reminder: due Friday",
+   "body": "Problem sheet",
+   "at": "L2:days"
+  },
+  {
+   "app": "Planner",
+   "title": "Start again?",
+   "body": "Your plan is out of date",
+   "at": "L3:goes"
+  }
+ ],
+ "flood": {
+  "at": "L2$",
+  "every": 0.13,
+  "items": [
+   {
+    "app": "Messages",
+    "title": "Group chat",
+    "body": "New messages"
+   },
+   {
+    "app": "Tasks",
+    "title": "Overdue",
+    "body": "3 overdue tasks"
+   },
+   {
+    "app": "Reminders",
+    "title": "reminder: due Friday",
+    "body": "Still not started"
+   },
+   {
+    "app": "Calendar",
+    "title": "Shift",
+    "body": "Wednesday, 18:00"
+   },
+   {
+    "app": "Messages",
+    "title": "Group chat",
+    "body": "Still going"
+   },
+   {
+    "app": "Mail",
+    "title": "Seminar notes",
+    "body": "Unread"
+   },
+   {
+    "app": "Tasks",
+    "title": "Overdue",
+    "body": "Tuesday's revision"
+   },
+   {
+    "app": "Calendar",
+    "title": "Wednesday",
+    "body": "No free time"
+   },
+   {
+    "app": "Messages",
+    "title": "Group chat",
+    "body": "Did anyone do it?"
+   },
+   {
+    "app": "Reminders",
+    "title": "Laundry",
+    "body": "Overdue"
+   },
+   {
+    "app": "Planner",
+    "title": "Start again?",
+    "body": "Rebuild your plan"
+   },
+   {
+    "app": "Mail",
+    "title": "Lecture recording",
+    "body": "Now available"
+   }
+  ]
+ },
+ "final": {
+  "app": "offload",
+  "title": "Tuesday's session moved to a free slot.",
+  "body": "The rest of your plan is the same.",
+  "at": "L4$",
+  "tone": "ok"
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "id": "bank/time-off-your-head-onto-the-board",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Watch everything you're tracking in your head move out.",
+   "after": 0.5
+  },
+  {
+   "id": "L2",
+   "say": "What you got wrong. What's due. When.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "Most of us try to keep the record ourselves.",
+   "after": 0.6
+  },
+  {
+   "id": "L4",
+   "say": "Keeping track is a job too.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "So let something else hold it.",
+   "after": 0.7
+  },
+  {
+   "id": "L6",
+   "say": "Offload builds the plan from your notes and exam dates.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "It tests you, and brings back what you missed.",
+   "after": 0.4
+  },
+  {
+   "id": "L8",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1
+  }
+ ]
+}

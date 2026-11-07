@@ -1,0 +1,71 @@
+{
+ "id": "bank/clinical-the-case-against-christmas-revis",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "The case against 'I'll revise over Christmas.'",
+   "after": 0.5
+  },
+  {
+   "id": "L2",
+   "say": "Exhibit A. The plan was made in November.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "Exhibit B. Christmas was already booked.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "Exhibit C. The reading list, still open on Boxing Day.",
+   "after": 0.6
+  },
+  {
+   "id": "L5",
+   "say": "The verdict? Guilty.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "One plan, two weeks, no room for real life.",
+   "after": 0.6
+  },
+  {
+   "id": "L7",
+   "say": "The sentence: plan around Christmas, not over it.",
+   "after": 0.7
+  },
+  {
+   "id": "L8",
+   "say": "Offload builds your plan from your notes and exam dates.",
+   "after": 0.4
+  },
+  {
+   "id": "L9",
+   "say": "It fits around what's already in your calendar.",
+   "after": 0.5
+  },
+  {
+   "id": "L10",
+   "say": "It tests you as you go.",
+   "after": 0.4
+  },
+  {
+   "id": "L11",
+   "say": "And brings topics back before they fade.",
+   "after": 0.5
+  },
+  {
+   "id": "L12",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1
+  }
+ ]
+}

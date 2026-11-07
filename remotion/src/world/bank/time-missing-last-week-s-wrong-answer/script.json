@@ -1,0 +1,66 @@
+{
+ "id": "bank/time-missing-last-week-s-wrong-answer",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "This is for anyone keeping their whole revision record in their head.",
+   "after": 0.5
+  },
+  {
+   "id": "L2",
+   "say": "Missing: last week's wrong answer.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "Last seen: once.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "Most of us lose track. Quietly.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "Keeping track is a job too.",
+   "after": 0.4
+  },
+  {
+   "id": "L6",
+   "say": "Nobody's head holds it all.",
+   "after": 0.5
+  },
+  {
+   "id": "L7",
+   "say": "So hand it over.",
+   "after": 0.7
+  },
+  {
+   "id": "L8",
+   "say": "Offload builds the plan from your notes and dates.",
+   "after": 0.5
+  },
+  {
+   "id": "L9",
+   "say": "It keeps every attempt, and brings the misses back.",
+   "after": 0.5
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 0.5
+  },
+  {
+   "id": "L11",
+   "say": "Found.",
+   "after": 1
+  }
+ ]
+}

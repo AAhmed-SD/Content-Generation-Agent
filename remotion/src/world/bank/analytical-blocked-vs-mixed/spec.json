@@ -1,0 +1,167 @@
+{
+ "id": "analytical-blocked-vs-mixed",
+ "format": "science",
+ "title": "Blocked vs mixed",
+ "beats": [
+  {
+   "kind": "steps",
+   "at": "L1",
+   "curve": "cram-vs-spaced",
+   "xLabel": "Time",
+   "yLabel": "Exam performance",
+   "labels": {
+    "a": "Session A: blocked",
+    "b": "Session B: mixed"
+   },
+   "title": "Which one wins?",
+   "steps": [
+    {
+     "text": "Session A: same problem type",
+     "at": "L2:same"
+    },
+    {
+     "text": "Session B: shuffled",
+     "at": "L3:mixed"
+    }
+   ],
+   "topic": "Two sessions",
+   "recalled": [
+    {
+     "text": "Session A",
+     "at": "L2:a"
+    }
+   ],
+   "checkAt": "L3:b",
+   "missed": [
+    {
+     "text": "Session B",
+     "at": "L3:mixed"
+    }
+   ]
+  },
+  {
+   "kind": "steps",
+   "at": "L4",
+   "curve": "cram-vs-spaced",
+   "xLabel": "Time",
+   "yLabel": "Later test",
+   "labels": {
+    "a": "Blocked: feels good during",
+    "b": "Mixed: wins later"
+   },
+   "title": "Feels vs works",
+   "steps": [
+    {
+     "text": "Feels good during: A",
+     "at": "L4:feels"
+    },
+    {
+     "text": "Later test: B",
+     "at": "L5:later",
+     "tone": "ok"
+    }
+   ],
+   "topic": "Blocked vs mixed",
+   "recalled": [
+    {
+     "text": "A feels easier",
+     "at": "L4:better"
+    }
+   ],
+   "checkAt": "L5:wins",
+   "missed": [
+    {
+     "text": "B wins the later test",
+     "at": "L5:counts",
+     "tone": "ok"
+    }
+   ]
+  },
+  {
+   "kind": "steps",
+   "at": "L6",
+   "curve": "cram-vs-spaced",
+   "xLabel": "Time",
+   "yLabel": "Picking the method",
+   "labels": {
+    "a": "Blocked",
+    "b": "Mixed"
+   },
+   "title": "The exam",
+   "steps": [
+    {
+     "text": "No label on the question",
+     "at": "L6:never"
+    },
+    {
+     "text": "You choose the method",
+     "at": "L7:pick",
+     "tone": "ok"
+    }
+   ],
+   "topic": "The exam",
+   "recalled": [
+    {
+     "text": "You know the methods",
+     "at": "L6:method"
+    }
+   ],
+   "checkAt": "L7:mixed",
+   "missed": [
+    {
+     "text": "Picking one is the skill",
+     "at": "L7:yourself"
+    }
+   ]
+  },
+  {
+   "kind": "steps",
+   "at": "L8",
+   "curve": "spaced",
+   "xLabel": "Time",
+   "yLabel": "Memory",
+   "labels": {
+    "a": "No review",
+    "b": "Brought back before it fades"
+   },
+   "title": "With Offload",
+   "steps": [
+    {
+     "text": "Plans from your notes and deadlines",
+     "at": "L8:builds",
+     "tone": "ok"
+    },
+    {
+     "text": "Brings old topics back before they fade",
+     "at": "L9:brings",
+     "tone": "ok"
+    },
+    {
+     "text": "One click in your calendar",
+     "at": "L10:click",
+     "tone": "ok"
+    }
+   ],
+   "topic": "With Offload",
+   "recalled": [
+    {
+     "text": "Your plan, built for you",
+     "at": "L8:plan",
+     "tone": "ok"
+    }
+   ],
+   "checkAt": "L9:tests",
+   "missed": [
+    {
+     "text": "Old topics back before they fade",
+     "at": "L9:fade",
+     "tone": "ok"
+    }
+   ]
+  }
+ ],
+ "source": {
+  "text": "Rohrer & Taylor, 2007 (interleaving)",
+  "at": "L5:later"
+ }
+}

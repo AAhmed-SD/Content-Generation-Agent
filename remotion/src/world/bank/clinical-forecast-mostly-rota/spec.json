@@ -1,0 +1,55 @@
+{
+ "id": "clinical-forecast-mostly-rota",
+ "format": "weather",
+ "title": "Forecast: mostly rota",
+ "days": [
+  {
+   "day": "Mon",
+   "sky": "sun",
+   "label": "Campus day",
+   "at": "L2"
+  },
+  {
+   "day": "Tue",
+   "sky": "rain",
+   "label": "07:30–20:00",
+   "at": "L3:Tuesday"
+  },
+  {
+   "day": "Wed",
+   "sky": "rain",
+   "label": "07:30–20:00",
+   "at": "L3:long"
+  },
+  {
+   "day": "Thu",
+   "sky": "storm",
+   "label": "Shift overran. Revision washed out",
+   "at": "L4"
+  },
+  {
+   "day": "Fri",
+   "sky": "storm",
+   "label": "PAD sign-off",
+   "at": "L6"
+  },
+  {
+   "day": "Sat",
+   "sky": "sun",
+   "label": "Revision moved here",
+   "ok": true,
+   "at": "L8:moves"
+  },
+  {
+   "day": "Sun",
+   "sky": "sun",
+   "label": "Calm",
+   "ok": true,
+   "at": "L10"
+  }
+ ],
+ "final": {
+  "text": "Still raining Thursday.\nRevision isn't standing in it.",
+  "at": "L11"
+ }
+}

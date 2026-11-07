@@ -1,0 +1,310 @@
+{
+ "id": "clinical-what-did-you-miss-in-october",
+ "end": {
+  "style": "corner"
+ },
+ "hi": {
+  "wrong": "problem",
+  "october": "problem",
+  "reminding": "problem",
+  "rebuild": "problem",
+  "moved": "blue",
+  "zero": "blue",
+  "sooner": "blue",
+  "show": "blue"
+ },
+ "scenes": [
+  {
+   "type": "week",
+   "at": "L1@-0.05",
+   "title": "Your cardiology deck",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Card",
+     "at": "L1@0.20"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "Card",
+     "at": "L1@0.30"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "Face down",
+     "at": "L1@0.40",
+     "outline": "L1:wrong"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Card",
+     "at": "L1@0.50"
+    },
+    {
+     "day": 4,
+     "slot": 0,
+     "label": "Card",
+     "at": "L1@0.60"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L2",
+   "title": "No record. Just a feeling.",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "?",
+     "at": "L2:answer"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "?",
+     "at": "L2:answer@0.1"
+    },
+    {
+     "day": 4,
+     "slot": 0,
+     "label": "?",
+     "at": "L2:answer@0.2"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L3",
+   "title": "That card",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Card",
+     "at": "L3"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "Card",
+     "at": "L3"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "Still wrong",
+     "at": "L3:wrong",
+     "outline": "L4:reminding"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Card",
+     "at": "L3"
+    },
+    {
+     "day": 4,
+     "slot": 0,
+     "label": "Card",
+     "at": "L3"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L5@-0.05",
+   "title": "Your plan",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Placement",
+     "tone": "kraft",
+     "at": "L5:plan"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "Placement",
+     "tone": "kraft",
+     "at": "L5:plan@0.1"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "Study",
+     "at": "L5:notes"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Study",
+     "at": "L5:exam"
+    },
+    {
+     "day": 4,
+     "slot": 0,
+     "label": "Study",
+     "at": "L5:dates"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L6",
+   "title": "Attempt history",
+   "days": [
+    "Oct",
+    "Nov",
+    "Dec",
+    "Jan",
+    "Feb"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Wrong",
+     "at": "L6:scores",
+     "outline": "L6:scores@0.1"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "Try kept",
+     "at": "L6:every"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "Try kept",
+     "tone": "ok",
+     "at": "L6:try"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L7",
+   "title": "Your plan",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Placement",
+     "tone": "kraft",
+     "at": "L7"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "Placement",
+     "tone": "kraft",
+     "at": "L7"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "Study",
+     "at": "L7"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Study",
+     "at": "L7"
+    },
+    {
+     "day": 3,
+     "slot": 1,
+     "label": "Weak card",
+     "tone": "ok",
+     "at": "L7:back",
+     "outline": "L7:sooner"
+    },
+    {
+     "day": 4,
+     "slot": 0,
+     "label": "Study",
+     "at": "L7"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L8",
+   "title": "Thursday, 7pm",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Placement",
+     "tone": "kraft",
+     "at": "L8"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "Placement",
+     "tone": "kraft",
+     "at": "L8"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Session open",
+     "tone": "ok",
+     "at": "L8:click",
+     "outline": "L8:show"
+    }
+   ]
+  }
+ ]
+}

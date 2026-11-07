@@ -1,0 +1,24 @@
+{
+ "id": "analytical-i-understood-it-in-the-lecture",
+ "format": "split",
+ "top": "EXPECTATION",
+ "bottom": "REALITY",
+ "pairs": [
+  {
+   "expect": "Week three lecture. Nodding along.",
+   "reality": "Blank A4. Pen hovering",
+   "at": "L1",
+   "realityAt": "L2:reality"
+  },
+  {
+   "expect": "I'll know it when I see it.",
+   "reality": "The first line won't come",
+   "at": "L3",
+   "realityAt": "L4:reality"
+  }
+ ],
+ "final": {
+  "text": "Following\nisn't\nstarting.",
+  "at": "L5:following"
+ }
+}

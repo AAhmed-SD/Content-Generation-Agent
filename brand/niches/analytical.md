@@ -12,7 +12,7 @@ A student should recognise the unfinished set and save the card. The post never 
 
 ## Audience
 
-Students in maths, economics, and computer science.
+Students on engineering, physics, maths and other analysis-based degrees (statistics, data science, computer science, economics and similar), plus A-level maths, further maths and physics students heading there (decided 2026-11-07). Neurodivergent students are the time account's audience, not this one's.
 
 ## Pains
 

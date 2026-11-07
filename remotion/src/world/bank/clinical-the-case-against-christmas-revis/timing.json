@@ -1,0 +1,566 @@
+{
+ "duration": 39.412,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "The case against 'I'll revise over Christmas.'",
+   "start": 0.15,
+   "end": 2.962,
+   "words": [
+    {
+     "text": "The",
+     "start": 0.15,
+     "end": 0.431
+    },
+    {
+     "text": "case",
+     "start": 0.431,
+     "end": 0.769
+    },
+    {
+     "text": "against",
+     "start": 0.769,
+     "end": 1.275
+    },
+    {
+     "text": "'I'll",
+     "start": 1.275,
+     "end": 1.556
+    },
+    {
+     "text": "revise",
+     "start": 1.556,
+     "end": 2.006
+    },
+    {
+     "text": "over",
+     "start": 2.006,
+     "end": 2.343
+    },
+    {
+     "text": "Christmas.'",
+     "start": 2.343,
+     "end": 2.962
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Exhibit A. The plan was made in November.",
+   "start": 3.462,
+   "end": 6.157,
+   "words": [
+    {
+     "text": "Exhibit",
+     "start": 3.462,
+     "end": 4.069
+    },
+    {
+     "text": "A.",
+     "start": 4.069,
+     "end": 4.272
+    },
+    {
+     "text": "The",
+     "start": 4.472,
+     "end": 4.706
+    },
+    {
+     "text": "plan",
+     "start": 4.706,
+     "end": 4.987
+    },
+    {
+     "text": "was",
+     "start": 4.987,
+     "end": 5.221
+    },
+    {
+     "text": "made",
+     "start": 5.221,
+     "end": 5.501
+    },
+    {
+     "text": "in",
+     "start": 5.501,
+     "end": 5.689
+    },
+    {
+     "text": "November.",
+     "start": 5.689,
+     "end": 6.157
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Exhibit B. Christmas was already booked.",
+   "start": 6.657,
+   "end": 9.204,
+   "words": [
+    {
+     "text": "Exhibit",
+     "start": 6.657,
+     "end": 7.302
+    },
+    {
+     "text": "B.",
+     "start": 7.302,
+     "end": 7.517
+    },
+    {
+     "text": "Christmas",
+     "start": 7.657,
+     "end": 8.173
+    },
+    {
+     "text": "was",
+     "start": 8.173,
+     "end": 8.407
+    },
+    {
+     "text": "already",
+     "start": 8.407,
+     "end": 8.829
+    },
+    {
+     "text": "booked.",
+     "start": 8.829,
+     "end": 9.205
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Exhibit C. The reading list, still open on Boxing Day.",
+   "start": 9.704,
+   "end": 13.153,
+   "words": [
+    {
+     "text": "Exhibit",
+     "start": 9.704,
+     "end": 10.304
+    },
+    {
+     "text": "C.",
+     "start": 10.304,
+     "end": 10.504
+    },
+    {
+     "text": "The",
+     "start": 10.675,
+     "end": 10.852
+    },
+    {
+     "text": "reading",
+     "start": 10.852,
+     "end": 11.171
+    },
+    {
+     "text": "list,",
+     "start": 11.171,
+     "end": 11.384
+    },
+    {
+     "text": "still",
+     "start": 11.575,
+     "end": 11.943
+    },
+    {
+     "text": "open",
+     "start": 11.943,
+     "end": 12.258
+    },
+    {
+     "text": "on",
+     "start": 12.258,
+     "end": 12.469
+    },
+    {
+     "text": "Boxing",
+     "start": 12.469,
+     "end": 12.89
+    },
+    {
+     "text": "Day.",
+     "start": 12.89,
+     "end": 13.153
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "The verdict? Guilty.",
+   "start": 13.753,
+   "end": 15.537,
+   "words": [
+    {
+     "text": "The",
+     "start": 13.753,
+     "end": 14.003
+    },
+    {
+     "text": "verdict?",
+     "start": 14.003,
+     "end": 14.453
+    },
+    {
+     "text": "Guilty.",
+     "start": 14.593,
+     "end": 15.537
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "One plan, two weeks, no room for real life.",
+   "start": 16.037,
+   "end": 19.004,
+   "words": [
+    {
+     "text": "One",
+     "start": 16.037,
+     "end": 16.542
+    },
+    {
+     "text": "plan,",
+     "start": 16.542,
+     "end": 17.147
+    },
+    {
+     "text": "two",
+     "start": 17.227,
+     "end": 17.298
+    },
+    {
+     "text": "weeks,",
+     "start": 17.298,
+     "end": 17.397
+    },
+    {
+     "text": "no",
+     "start": 17.577,
+     "end": 17.789
+    },
+    {
+     "text": "room",
+     "start": 17.789,
+     "end": 18.106
+    },
+    {
+     "text": "for",
+     "start": 18.106,
+     "end": 18.37
+    },
+    {
+     "text": "real",
+     "start": 18.37,
+     "end": 18.687
+    },
+    {
+     "text": "life.",
+     "start": 18.687,
+     "end": 19.004
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "The sentence: plan around Christmas, not over it.",
+   "start": 19.604,
+   "end": 22.519,
+   "words": [
+    {
+     "text": "The",
+     "start": 19.604,
+     "end": 19.848
+    },
+    {
+     "text": "sentence:",
+     "start": 19.848,
+     "end": 20.334
+    },
+    {
+     "text": "plan",
+     "start": 20.534,
+     "end": 20.806
+    },
+    {
+     "text": "around",
+     "start": 20.806,
+     "end": 21.167
+    },
+    {
+     "text": "Christmas,",
+     "start": 21.167,
+     "end": 21.664
+    },
+    {
+     "text": "not",
+     "start": 21.764,
+     "end": 22.016
+    },
+    {
+     "text": "over",
+     "start": 22.016,
+     "end": 22.318
+    },
+    {
+     "text": "it.",
+     "start": 22.318,
+     "end": 22.519
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "Offload builds your plan from your notes and exam dates.",
+   "start": 23.219,
+   "end": 26.363,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 23.219,
+     "end": 23.647
+    },
+    {
+     "text": "builds",
+     "start": 23.647,
+     "end": 24.029
+    },
+    {
+     "text": "your",
+     "start": 24.029,
+     "end": 24.314
+    },
+    {
+     "text": "plan",
+     "start": 24.314,
+     "end": 24.6
+    },
+    {
+     "text": "from",
+     "start": 24.6,
+     "end": 24.886
+    },
+    {
+     "text": "your",
+     "start": 24.886,
+     "end": 25.172
+    },
+    {
+     "text": "notes",
+     "start": 25.172,
+     "end": 25.505
+    },
+    {
+     "text": "and",
+     "start": 25.505,
+     "end": 25.743
+    },
+    {
+     "text": "exam",
+     "start": 25.743,
+     "end": 26.029
+    },
+    {
+     "text": "dates.",
+     "start": 26.029,
+     "end": 26.363
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "It fits around what's already in your calendar.",
+   "start": 26.763,
+   "end": 29.262,
+   "words": [
+    {
+     "text": "It",
+     "start": 26.763,
+     "end": 26.948
+    },
+    {
+     "text": "fits",
+     "start": 26.948,
+     "end": 27.225
+    },
+    {
+     "text": "around",
+     "start": 27.225,
+     "end": 27.596
+    },
+    {
+     "text": "what's",
+     "start": 27.596,
+     "end": 27.92
+    },
+    {
+     "text": "already",
+     "start": 27.92,
+     "end": 28.336
+    },
+    {
+     "text": "in",
+     "start": 28.336,
+     "end": 28.521
+    },
+    {
+     "text": "your",
+     "start": 28.521,
+     "end": 28.799
+    },
+    {
+     "text": "calendar.",
+     "start": 28.799,
+     "end": 29.262
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "say": "It tests you as you go.",
+   "start": 29.762,
+   "end": 31.407,
+   "words": [
+    {
+     "text": "It",
+     "start": 29.762,
+     "end": 29.989
+    },
+    {
+     "text": "tests",
+     "start": 29.989,
+     "end": 30.386
+    },
+    {
+     "text": "you",
+     "start": 30.386,
+     "end": 30.67
+    },
+    {
+     "text": "as",
+     "start": 30.67,
+     "end": 30.897
+    },
+    {
+     "text": "you",
+     "start": 30.897,
+     "end": 31.18
+    },
+    {
+     "text": "go.",
+     "start": 31.18,
+     "end": 31.407
+    }
+   ]
+  },
+  {
+   "id": "L11",
+   "say": "And brings topics back before they fade.",
+   "start": 31.807,
+   "end": 34.087,
+   "words": [
+    {
+     "text": "And",
+     "start": 31.807,
+     "end": 32.05
+    },
+    {
+     "text": "brings",
+     "start": 32.05,
+     "end": 32.438
+    },
+    {
+     "text": "topics",
+     "start": 32.438,
+     "end": 32.826
+    },
+    {
+     "text": "back",
+     "start": 32.826,
+     "end": 33.117
+    },
+    {
+     "text": "before",
+     "start": 33.117,
+     "end": 33.505
+    },
+    {
+     "text": "they",
+     "start": 33.505,
+     "end": 33.796
+    },
+    {
+     "text": "fade.",
+     "start": 33.796,
+     "end": 34.087
+    }
+   ]
+  },
+  {
+   "id": "L12",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 34.587,
+   "end": 37.412,
+   "words": [
+    {
+     "text": "You",
+     "start": 34.587,
+     "end": 34.808
+    },
+    {
+     "text": "just",
+     "start": 34.808,
+     "end": 35.072
+    },
+    {
+     "text": "click",
+     "start": 35.072,
+     "end": 35.381
+    },
+    {
+     "text": "the",
+     "start": 35.381,
+     "end": 35.602
+    },
+    {
+     "text": "link",
+     "start": 35.602,
+     "end": 35.867
+    },
+    {
+     "text": "in",
+     "start": 35.867,
+     "end": 36.043
+    },
+    {
+     "text": "your",
+     "start": 36.043,
+     "end": 36.308
+    },
+    {
+     "text": "calendar",
+     "start": 36.308,
+     "end": 36.75
+    },
+    {
+     "text": "and",
+     "start": 36.75,
+     "end": 36.97
+    },
+    {
+     "text": "show",
+     "start": 36.97,
+     "end": 37.235
+    },
+    {
+     "text": "up.",
+     "start": 37.235,
+     "end": 37.412
+    }
+   ]
+  }
+ ]
+}

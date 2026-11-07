@@ -1,0 +1,477 @@
+{
+ "duration": 30.91,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Error: method not found. You followed it on Tuesday.",
+   "start": 0.15,
+   "end": 3.418,
+   "words": [
+    {
+     "text": "Error:",
+     "start": 0.15,
+     "end": 1.11
+    },
+    {
+     "text": "method",
+     "start": 1.18,
+     "end": 1.372
+    },
+    {
+     "text": "not",
+     "start": 1.372,
+     "end": 1.492
+    },
+    {
+     "text": "found.",
+     "start": 1.492,
+     "end": 1.66
+    },
+    {
+     "text": "You",
+     "start": 1.96,
+     "end": 2.188
+    },
+    {
+     "text": "followed",
+     "start": 2.188,
+     "end": 2.643
+    },
+    {
+     "text": "it",
+     "start": 2.643,
+     "end": 2.826
+    },
+    {
+     "text": "on",
+     "start": 2.826,
+     "end": 3.008
+    },
+    {
+     "text": "Tuesday.",
+     "start": 3.008,
+     "end": 3.418
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "With the model solution open beside you.",
+   "start": 3.918,
+   "end": 6.433,
+   "words": [
+    {
+     "text": "With",
+     "start": 3.918,
+     "end": 4.239
+    },
+    {
+     "text": "the",
+     "start": 4.239,
+     "end": 4.507
+    },
+    {
+     "text": "model",
+     "start": 4.507,
+     "end": 4.881
+    },
+    {
+     "text": "solution",
+     "start": 4.881,
+     "end": 5.416
+    },
+    {
+     "text": "open",
+     "start": 5.416,
+     "end": 5.738
+    },
+    {
+     "text": "beside",
+     "start": 5.738,
+     "end": 6.166
+    },
+    {
+     "text": "you.",
+     "start": 6.166,
+     "end": 6.433
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Today it's just Q3 and a blank page.",
+   "start": 6.933,
+   "end": 9.61,
+   "words": [
+    {
+     "text": "Today",
+     "start": 6.933,
+     "end": 7.369
+    },
+    {
+     "text": "it's",
+     "start": 7.369,
+     "end": 7.68
+    },
+    {
+     "text": "just",
+     "start": 7.68,
+     "end": 8.054
+    },
+    {
+     "text": "Q3",
+     "start": 8.054,
+     "end": 8.303
+    },
+    {
+     "text": "and",
+     "start": 8.303,
+     "end": 8.614
+    },
+    {
+     "text": "a",
+     "start": 8.614,
+     "end": 8.801
+    },
+    {
+     "text": "blank",
+     "start": 8.801,
+     "end": 9.236
+    },
+    {
+     "text": "page.",
+     "start": 9.236,
+     "end": 9.61
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "And you can't find the first step.",
+   "start": 10.11,
+   "end": 11.915,
+   "words": [
+    {
+     "text": "And",
+     "start": 10.11,
+     "end": 10.335
+    },
+    {
+     "text": "you",
+     "start": 10.335,
+     "end": 10.561
+    },
+    {
+     "text": "can't",
+     "start": 10.561,
+     "end": 10.832
+    },
+    {
+     "text": "find",
+     "start": 10.832,
+     "end": 11.103
+    },
+    {
+     "text": "the",
+     "start": 11.103,
+     "end": 11.328
+    },
+    {
+     "text": "first",
+     "start": 11.328,
+     "end": 11.644
+    },
+    {
+     "text": "step.",
+     "start": 11.644,
+     "end": 11.915
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Following a method isn't the same as knowing it.",
+   "start": 12.515,
+   "end": 15.278,
+   "words": [
+    {
+     "text": "Following",
+     "start": 12.515,
+     "end": 13.058
+    },
+    {
+     "text": "a",
+     "start": 13.058,
+     "end": 13.206
+    },
+    {
+     "text": "method",
+     "start": 13.206,
+     "end": 13.6
+    },
+    {
+     "text": "isn't",
+     "start": 13.6,
+     "end": 13.897
+    },
+    {
+     "text": "the",
+     "start": 13.897,
+     "end": 14.143
+    },
+    {
+     "text": "same",
+     "start": 14.143,
+     "end": 14.439
+    },
+    {
+     "text": "as",
+     "start": 14.439,
+     "end": 14.637
+    },
+    {
+     "text": "knowing",
+     "start": 14.637,
+     "end": 15.081
+    },
+    {
+     "text": "it.",
+     "start": 15.081,
+     "end": 15.278
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "The honest test is starting from blank.",
+   "start": 15.778,
+   "end": 18.199,
+   "words": [
+    {
+     "text": "The",
+     "start": 15.778,
+     "end": 16.041
+    },
+    {
+     "text": "honest",
+     "start": 16.041,
+     "end": 16.462
+    },
+    {
+     "text": "test",
+     "start": 16.462,
+     "end": 16.778
+    },
+    {
+     "text": "is",
+     "start": 16.778,
+     "end": 16.988
+    },
+    {
+     "text": "starting",
+     "start": 16.988,
+     "end": 17.515
+    },
+    {
+     "text": "from",
+     "start": 17.515,
+     "end": 17.83
+    },
+    {
+     "text": "blank.",
+     "start": 17.83,
+     "end": 18.199
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Offload builds the plan from your notes and exam dates.",
+   "start": 18.899,
+   "end": 22.151,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 18.899,
+     "end": 19.349
+    },
+    {
+     "text": "builds",
+     "start": 19.349,
+     "end": 19.749
+    },
+    {
+     "text": "the",
+     "start": 19.749,
+     "end": 20.0
+    },
+    {
+     "text": "plan",
+     "start": 20.0,
+     "end": 20.3
+    },
+    {
+     "text": "from",
+     "start": 20.3,
+     "end": 20.6
+    },
+    {
+     "text": "your",
+     "start": 20.6,
+     "end": 20.9
+    },
+    {
+     "text": "notes",
+     "start": 20.9,
+     "end": 21.251
+    },
+    {
+     "text": "and",
+     "start": 21.251,
+     "end": 21.501
+    },
+    {
+     "text": "exam",
+     "start": 21.501,
+     "end": 21.801
+    },
+    {
+     "text": "dates.",
+     "start": 21.801,
+     "end": 22.151
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "It tests you as you go, and brings back what you missed.",
+   "start": 22.651,
+   "end": 25.585,
+   "words": [
+    {
+     "text": "It",
+     "start": 22.651,
+     "end": 22.815
+    },
+    {
+     "text": "tests",
+     "start": 22.815,
+     "end": 23.103
+    },
+    {
+     "text": "you",
+     "start": 23.103,
+     "end": 23.308
+    },
+    {
+     "text": "as",
+     "start": 23.308,
+     "end": 23.472
+    },
+    {
+     "text": "you",
+     "start": 23.472,
+     "end": 23.677
+    },
+    {
+     "text": "go,",
+     "start": 23.677,
+     "end": 23.841
+    },
+    {
+     "text": "and",
+     "start": 24.041,
+     "end": 24.244
+    },
+    {
+     "text": "brings",
+     "start": 24.244,
+     "end": 24.569
+    },
+    {
+     "text": "back",
+     "start": 24.569,
+     "end": 24.813
+    },
+    {
+     "text": "what",
+     "start": 24.813,
+     "end": 25.057
+    },
+    {
+     "text": "you",
+     "start": 25.057,
+     "end": 25.26
+    },
+    {
+     "text": "missed.",
+     "start": 25.26,
+     "end": 25.585
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 26.085,
+   "end": 28.91,
+   "words": [
+    {
+     "text": "You",
+     "start": 26.085,
+     "end": 26.305
+    },
+    {
+     "text": "just",
+     "start": 26.305,
+     "end": 26.57
+    },
+    {
+     "text": "click",
+     "start": 26.57,
+     "end": 26.879
+    },
+    {
+     "text": "the",
+     "start": 26.879,
+     "end": 27.1
+    },
+    {
+     "text": "link",
+     "start": 27.1,
+     "end": 27.365
+    },
+    {
+     "text": "in",
+     "start": 27.365,
+     "end": 27.541
+    },
+    {
+     "text": "your",
+     "start": 27.541,
+     "end": 27.806
+    },
+    {
+     "text": "calendar",
+     "start": 27.806,
+     "end": 28.248
+    },
+    {
+     "text": "and",
+     "start": 28.248,
+     "end": 28.468
+    },
+    {
+     "text": "show",
+     "start": 28.468,
+     "end": 28.733
+    },
+    {
+     "text": "up.",
+     "start": 28.733,
+     "end": 28.91
+    }
+   ]
+  }
+ ]
+}

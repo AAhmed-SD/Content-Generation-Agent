@@ -28,31 +28,38 @@ One card renders at a time. When that process finishes, it starts the next card 
 
 ## Approval and the pack
 
-Hadiqa leads clinical and analytical. Laiba leads mental health and GCSE and A-level. Clinical and mental health need a second stamp. The pack route opens when the stamps are complete. Publishing is manual. The live URL is pasted back onto the piece.
+Hadiqa leads clinical and analytical. Laiba leads mental health and GCSE and A-level. One approval from either admin is enough (2026-11-07). Publishing is manual. The live URL is pasted back onto the piece.
 
 ## The loop
 
 Today, numbers arrive as a CSV, or typed on the card, into `web/data/loop.json` and the piece’s checkpoints: 1 hour, 24 hours, 72 hours, 7 days. The next brief can name a winner only from those stored numbers. An empty checkpoint is not a zero.
 
-### The loop from launch (decided 2026-11-05, partly built)
+### The loop from launch (decided 2026-11-05, updated 2026-11-06)
 
-Each turn of the loop is the same five steps. The first turn starts from the outside world only. From the second turn on, our own post numbers feed the top as well.
+People only approve or reject. Everything else is the agent's job.
 
-| Step | What happens | Who or what | Built? |
-| --- | --- | --- | --- |
-| 1. Inputs | For videos: what is going viral in each niche (Virlo) and outlier videos on our watch list (Signals). For carousels: what students are searching for (Research). From turn two: how our own posts did, per platform and per opener. | Virlo, `signals.py`, `pipeline.ts`, the Numbers page | Signals and Research yes. Virlo is deferred: launch runs on the free Signals collector (14 UK accounts). Add Virlo after a few weeks of our own numbers, with a balance cap; confirm its API pricing first (the pricing page lists the API under Enterprise). |
-| 2. Build | The hook (two openers, A and B), the script, and the video idea: format, hook style, scenes. Picked from `docs/library.md` and written to the brand files and the week's brief. | Claude | Yes, per film. Not yet a daily batch. |
-| 3. Approve | A person watches the render and approves it or rejects it on the desk. Nothing posts without a stamp. | Hadiqa, Laiba | Yes |
-| 4. Post | Approved films are scheduled to the 19 accounts. | Blotato Creator | Not connected yet. Until then, post by hand. |
-| 5. Data back | Views, watch time, shares and follows per post, per platform, per opener, saved to `web/data/loop.json`. They become step 1 of the next turn. | Platform analytics, then the Numbers page | CSV import yes. Automatic pull not yet. Confirm what Blotato's analytics return before relying on them; the platforms' own analytics are the fallback. |
+1. **Find.** Crawl TikTok and YouTube Shorts for what is rising in each niche: outlier videos, hooks and formats (Signals, later Virlo). Research adds what students search for, for carousels. From the second turn on, our own numbers come in too, and they outrank the rest.
+2. **Make.** The agent proposes films (two openers, format, storyboard) on Hooks, then writes, voices and renders the accepted ones, to the brand files and the week's brief.
+3. **Approve.** A person watches the render and approves or rejects it. A rejection carries a reason the agent learns from. Nothing posts without a stamp.
+4. **Post.** Blotato posts each approved film to its niche's four platforms, with a caption per platform, at the time our numbers say works best on that platform.
+5. **Learn.** Views, watch time, shares and follows come back per post, platform and opener, and feed step 1.
 
-What each input is for (the Research page shows them in two halves, with a divider):
-- **Research (web)** feeds carousels. It is the guides and questions students are already searching for. Carousels are free, data-backed and useful without Offload (`brand/posts/carousel.md`).
-- **Virlo** shows what is moving across a whole niche on TikTok.
-- **Signals** watches a short list of named accounts. It is free, and it is the check on Virlo.
-- **Our own numbers** say which hook styles and formats work for us. They outrank the other three once there are a few weeks of them.
+| Step | Built? |
+| --- | --- |
+| 1. Find | TikTok yes: 30 UK accounts on the watch list. YouTube Shorts works in the collector but the list has no YouTube accounts yet. Virlo deferred. |
+| 2. Make | Yes. Today a person accepts the proposal and then approves the render: two decisions per film. |
+| 3. Approve | Yes. One approval from either admin is enough (2026-11-07). |
+| 4. Post | Posting through Blotato yes, from the Approval page (needs `BLOTATO_API_KEY`). Picking the best time is not built: a person presses Post or picks a time. |
+| 5. Learn | Yes, once the key is in. Blotato numbers every 20 minutes into `metrics`. `web/scripts/our-numbers.mjs` scores each post against its own account's usual on that platform, and the proposals and the film writer read it: best and worst posts, and format, hook style, pillar and opener A vs B, per platform, with groups under three posts marked as hints. About a fifth of each batch stays for new things. LinkedIn stays manual. |
 
-The writer never sees raw research or account names. It reads the brief, which carries shapes and themes only.
+The writer never sees raw research or account names, only the brief's shapes and themes.
+
+## Daily posting rules (decided 2026-11-07)
+
+- **Films:** each account posts at most 3 different films a day (London time), at least 4 hours apart. The same film goes to TikTok, Instagram, Facebook and YouTube at the same time. Approving a film schedules it at the account's next free best slot (`nextBestSlot` in `web/src/lib/posting.ts`); a hand-picked time that breaks the rule is refused with the reason.
+- **Carousels:** one a day per account on Instagram, TikTok and Facebook. `web/scripts/carousel.mjs` writes it (Sonnet), renders the slides at 1080x1350 (4:5) with `remotion/scripts/stills.mjs`, and pads a 1080x1920 (9:16) copy for TikTok with each slide's own background. The refresh makes one per account per day; approving schedules it around midday, an hour clear of the films.
+- **Tracking:** Home and Approval show the posting plan for today and tomorrow against these targets, red where a target is missed or two films are too close. Times shown are Blotato's, read back after posting and every 20 minutes.
+- **Spend:** a daily Claude cap (Settings, default $4) covers running costs; one-off build work is shown but does not count.
 
 ## Outreach (decided 2026-11-05)
 
@@ -74,11 +81,11 @@ When the Kokoro model is present under `tools/`, the desk can write a wav next t
 
 ## Launch volume (planned, not built)
 
-Decided on 2026-11-04. Nothing in this section runs yet.
+Decided on 2026-11-04; raised to three videos a day on 2026-11-06, because Blotato Creator is a flat fee whatever the volume. Posting runs through Blotato from the Approval page; the A/B opener split below is not built yet.
 
-Each niche posts two videos a day to TikTok, Instagram, Facebook, and YouTube Shorts, and two carousels a day to TikTok, Instagram, and Facebook. Three LinkedIn accounts post twice a day each: the founder, the outreach officer, and the Offload brand.
+Each niche posts three videos a day to TikTok, Instagram, Facebook, and YouTube Shorts, and two carousels a day to TikTok, Instagram, and Facebook. Three LinkedIn accounts post twice a day each: the founder, the outreach officer, and the Offload brand.
 
-A video is written once and cross-posted. It is not written four times. That is eight video scripts a day across the four niches. The time saved goes into hooks, not into more files.
+A video is written once and cross-posted. It is not written four times. That is twelve video scripts a day across the four niches, about 360 films and 2,340 posts a month with carousels and LinkedIn. Blotato Creator holds 1,000 scheduled posts at once, so schedule no more than about ten days ahead. The time saved goes into hooks, not into more files.
 
 - **One master, two openers.** Each video script carries a body and two hook openers, A and B. The body is the same in both renders. Only the first seconds change.
 - **The split.** On odd days A goes to TikTok and Shorts, and B goes to Instagram and Facebook. On even days the pairs swap.
@@ -134,8 +141,12 @@ Accepting a proposal on **Hooks** queues a `make-film` job in `marketing.jobs` a
 
 1. **Write it.** Opus, with the brand files cached, writes `script.json` and `spec.json`. It copies the newest bank film in the same format and follows that format's TypeScript type from the kit files.
 2. **Check it.** The spec must match the example's shape. Every time ref must land on a spoken word. Line ids must run L1, L2, and so on. No retired theme. No number that isn't in the proposal. On a failed check, Claude gets the errors back, with up to two retries.
-3. **Make it.** Write `remotion/src/world/bank/<id>/`, voice it with `remotion/scripts/bank.mjs` (bm_george), render to `remotion/out/bank/offload-<id>.mp4`, and set the content row to `rendered`.
+3. **Make it.** Write `remotion/src/world/bank/<id>/`, voice it with `remotion/scripts/bank.mjs` (the house voice, `bm_fable*0.65+bm_george*0.35`), render to `remotion/out/bank/offload-<id>.mp4`, and set the content row to `rendered`.
 
-The film then shows under **Films** on the Approval page (`/desk`), with a player and its lines. **Approve** adds a stamp (clinical and time need both people). **Send back** takes a note and the agent remakes the film. Accepting a proposal is not a stamp; each new cut starts with no stamps.
+The film then shows under **Films** on the Approval page (`/desk`), with a player and its lines. **Approve** approves it: Hadiqa and Laiba are both admins, and one approval is enough (2026-11-07). **Send back** takes a note and the agent remakes the film. Accepting a proposal is not a stamp; each new cut starts with no stamps.
+
+Decisions on **Hooks** can be changed. **Accepted** lists every film past the proposal, with where it is (being made, ready to approve, approved, scheduled, posted); "Change my mind" rejects it, unless it is already scheduled or posted. **Rejected** has "Accept after all" (a film that was already made goes straight back to Approval, without stamps) and "Back to Proposed". The agent leaves a film alone if it is rejected while being made.
+
+**A new template every day.** `node web/scripts/suggest-ideas.mjs --template` (from `web/`) adds one new film template to **Ideas** (kind Film format), checked against the formats in `docs/library.md`, once per London day. `scripts/refresh.sh` runs it; the refresh only runs on its own once `scripts/launchd/education.offload.desk-refresh.plist` is loaded.
 
 Measured on 2026-11-05: about 4 minutes from Accept to a rendered 40-second film.

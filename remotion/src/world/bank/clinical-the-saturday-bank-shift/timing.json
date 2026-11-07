@@ -1,0 +1,691 @@
+{
+ "duration": 48.873,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Well, I guess that's Sunday's plan then.",
+   "start": 0.15,
+   "end": 2.282,
+   "words": [
+    {
+     "text": "Well,",
+     "start": 0.15,
+     "end": 1.48
+    },
+    {
+     "text": "I",
+     "start": 1.56,
+     "end": 1.617
+    },
+    {
+     "text": "guess",
+     "start": 1.617,
+     "end": 1.75
+    },
+    {
+     "text": "that's",
+     "start": 1.75,
+     "end": 1.883
+    },
+    {
+     "text": "Sunday's",
+     "start": 1.883,
+     "end": 2.054
+    },
+    {
+     "text": "plan",
+     "start": 2.054,
+     "end": 2.168
+    },
+    {
+     "text": "then.",
+     "start": 2.168,
+     "end": 2.282
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "A Saturday bank shift just came in.",
+   "start": 2.682,
+   "end": 4.937,
+   "words": [
+    {
+     "text": "A",
+     "start": 2.682,
+     "end": 2.843
+    },
+    {
+     "text": "Saturday",
+     "start": 2.843,
+     "end": 3.38
+    },
+    {
+     "text": "bank",
+     "start": 3.38,
+     "end": 3.702
+    },
+    {
+     "text": "shift",
+     "start": 3.702,
+     "end": 4.078
+    },
+    {
+     "text": "just",
+     "start": 4.078,
+     "end": 4.4
+    },
+    {
+     "text": "came",
+     "start": 4.4,
+     "end": 4.722
+    },
+    {
+     "text": "in.",
+     "start": 4.722,
+     "end": 4.937
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Saturday was your only free day.",
+   "start": 5.437,
+   "end": 7.458,
+   "words": [
+    {
+     "text": "Saturday",
+     "start": 5.437,
+     "end": 5.969
+    },
+    {
+     "text": "was",
+     "start": 5.969,
+     "end": 6.235
+    },
+    {
+     "text": "your",
+     "start": 6.235,
+     "end": 6.554
+    },
+    {
+     "text": "only",
+     "start": 6.554,
+     "end": 6.873
+    },
+    {
+     "text": "free",
+     "start": 6.873,
+     "end": 7.192
+    },
+    {
+     "text": "day.",
+     "start": 7.192,
+     "end": 7.458
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "It runs on into Sunday morning.",
+   "start": 7.858,
+   "end": 9.964,
+   "words": [
+    {
+     "text": "It",
+     "start": 7.858,
+     "end": 8.086
+    },
+    {
+     "text": "runs",
+     "start": 8.086,
+     "end": 8.427
+    },
+    {
+     "text": "on",
+     "start": 8.427,
+     "end": 8.655
+    },
+    {
+     "text": "into",
+     "start": 8.655,
+     "end": 8.997
+    },
+    {
+     "text": "Sunday",
+     "start": 8.997,
+     "end": 9.452
+    },
+    {
+     "text": "morning.",
+     "start": 9.452,
+     "end": 9.964
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Sunday's plan thought you'd be home.",
+   "start": 10.364,
+   "end": 12.493,
+   "words": [
+    {
+     "text": "Sunday's",
+     "start": 10.364,
+     "end": 10.843
+    },
+    {
+     "text": "plan",
+     "start": 10.843,
+     "end": 11.163
+    },
+    {
+     "text": "thought",
+     "start": 11.163,
+     "end": 11.642
+    },
+    {
+     "text": "you'd",
+     "start": 11.642,
+     "end": 11.961
+    },
+    {
+     "text": "be",
+     "start": 11.961,
+     "end": 12.174
+    },
+    {
+     "text": "home.",
+     "start": 12.174,
+     "end": 12.493
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Pharmacology. Your weakest topic.",
+   "start": 12.893,
+   "end": 15.212,
+   "words": [
+    {
+     "text": "Pharmacology.",
+     "start": 12.893,
+     "end": 13.843
+    },
+    {
+     "text": "Your",
+     "start": 13.973,
+     "end": 14.311
+    },
+    {
+     "text": "weakest",
+     "start": 14.311,
+     "end": 14.818
+    },
+    {
+     "text": "topic.",
+     "start": 14.818,
+     "end": 15.212
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Christmas money, though. Worth it.",
+   "start": 15.712,
+   "end": 17.721,
+   "words": [
+    {
+     "text": "Christmas",
+     "start": 15.712,
+     "end": 16.384
+    },
+    {
+     "text": "money,",
+     "start": 16.384,
+     "end": 16.812
+    },
+    {
+     "text": "though.",
+     "start": 16.962,
+     "end": 17.432
+    },
+    {
+     "text": "Worth",
+     "start": 17.502,
+     "end": 17.641
+    },
+    {
+     "text": "it.",
+     "start": 17.641,
+     "end": 17.721
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "So you rebuild the week by hand.",
+   "start": 18.221,
+   "end": 20.206,
+   "words": [
+    {
+     "text": "So",
+     "start": 18.221,
+     "end": 18.424
+    },
+    {
+     "text": "you",
+     "start": 18.424,
+     "end": 18.679
+    },
+    {
+     "text": "rebuild",
+     "start": 18.679,
+     "end": 19.137
+    },
+    {
+     "text": "the",
+     "start": 19.137,
+     "end": 19.392
+    },
+    {
+     "text": "week",
+     "start": 19.392,
+     "end": 19.697
+    },
+    {
+     "text": "by",
+     "start": 19.697,
+     "end": 19.901
+    },
+    {
+     "text": "hand.",
+     "start": 19.901,
+     "end": 20.206
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "Every block lifted and shuffled.",
+   "start": 20.606,
+   "end": 22.726,
+   "words": [
+    {
+     "text": "Every",
+     "start": 20.606,
+     "end": 21.007
+    },
+    {
+     "text": "block",
+     "start": 21.007,
+     "end": 21.408
+    },
+    {
+     "text": "lifted",
+     "start": 21.408,
+     "end": 21.867
+    },
+    {
+     "text": "and",
+     "start": 21.867,
+     "end": 22.153
+    },
+    {
+     "text": "shuffled.",
+     "start": 22.153,
+     "end": 22.726
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "say": "An evening gone. Still no pharmacology.",
+   "start": 23.126,
+   "end": 25.638,
+   "words": [
+    {
+     "text": "An",
+     "start": 23.126,
+     "end": 23.311
+    },
+    {
+     "text": "evening",
+     "start": 23.311,
+     "end": 23.728
+    },
+    {
+     "text": "gone.",
+     "start": 23.728,
+     "end": 24.006
+    },
+    {
+     "text": "Still",
+     "start": 24.146,
+     "end": 24.563
+    },
+    {
+     "text": "no",
+     "start": 24.563,
+     "end": 24.802
+    },
+    {
+     "text": "pharmacology.",
+     "start": 24.802,
+     "end": 25.638
+    }
+   ]
+  },
+  {
+   "id": "L11",
+   "say": "Tip: rehome your weakest topic first.",
+   "start": 26.138,
+   "end": 28.626,
+   "words": [
+    {
+     "text": "Tip:",
+     "start": 26.138,
+     "end": 27.978
+    },
+    {
+     "text": "rehome",
+     "start": 28.098,
+     "end": 28.212
+    },
+    {
+     "text": "your",
+     "start": 28.212,
+     "end": 28.297
+    },
+    {
+     "text": "weakest",
+     "start": 28.297,
+     "end": 28.426
+    },
+    {
+     "text": "topic",
+     "start": 28.426,
+     "end": 28.526
+    },
+    {
+     "text": "first.",
+     "start": 28.526,
+     "end": 28.626
+    }
+   ]
+  },
+  {
+   "id": "L12",
+   "say": "Give it a fresh evening, never after a shift.",
+   "start": 29.026,
+   "end": 31.717,
+   "words": [
+    {
+     "text": "Give",
+     "start": 29.026,
+     "end": 29.518
+    },
+    {
+     "text": "it",
+     "start": 29.518,
+     "end": 29.846
+    },
+    {
+     "text": "a",
+     "start": 29.846,
+     "end": 30.093
+    },
+    {
+     "text": "fresh",
+     "start": 30.093,
+     "end": 30.667
+    },
+    {
+     "text": "evening,",
+     "start": 30.667,
+     "end": 31.406
+    },
+    {
+     "text": "never",
+     "start": 31.586,
+     "end": 31.624
+    },
+    {
+     "text": "after",
+     "start": 31.624,
+     "end": 31.662
+    },
+    {
+     "text": "a",
+     "start": 31.662,
+     "end": 31.679
+    },
+    {
+     "text": "shift.",
+     "start": 31.679,
+     "end": 31.717
+    }
+   ]
+  },
+  {
+   "id": "L13",
+   "say": "Add the shift to Google Calendar. Offload plans round it.",
+   "start": 32.417,
+   "end": 35.876,
+   "words": [
+    {
+     "text": "Add",
+     "start": 32.417,
+     "end": 32.625
+    },
+    {
+     "text": "the",
+     "start": 32.625,
+     "end": 32.833
+    },
+    {
+     "text": "shift",
+     "start": 32.833,
+     "end": 33.123
+    },
+    {
+     "text": "to",
+     "start": 33.123,
+     "end": 33.29
+    },
+    {
+     "text": "Google",
+     "start": 33.29,
+     "end": 33.622
+    },
+    {
+     "text": "Calendar.",
+     "start": 33.622,
+     "end": 34.037
+    },
+    {
+     "text": "Offload",
+     "start": 34.387,
+     "end": 34.884
+    },
+    {
+     "text": "plans",
+     "start": 34.884,
+     "end": 35.27
+    },
+    {
+     "text": "round",
+     "start": 35.27,
+     "end": 35.656
+    },
+    {
+     "text": "it.",
+     "start": 35.656,
+     "end": 35.876
+    }
+   ]
+  },
+  {
+   "id": "L14",
+   "say": "Tuesday evening. Clear head.",
+   "start": 36.476,
+   "end": 38.616,
+   "words": [
+    {
+     "text": "Tuesday",
+     "start": 36.476,
+     "end": 37.001
+    },
+    {
+     "text": "evening.",
+     "start": 37.001,
+     "end": 37.526
+    },
+    {
+     "text": "Clear",
+     "start": 37.726,
+     "end": 38.206
+    },
+    {
+     "text": "head.",
+     "start": 38.206,
+     "end": 38.616
+    }
+   ]
+  },
+  {
+   "id": "L15",
+   "say": "It tells you what moved.",
+   "start": 39.116,
+   "end": 40.727,
+   "words": [
+    {
+     "text": "It",
+     "start": 39.116,
+     "end": 39.338
+    },
+    {
+     "text": "tells",
+     "start": 39.338,
+     "end": 39.727
+    },
+    {
+     "text": "you",
+     "start": 39.727,
+     "end": 40.005
+    },
+    {
+     "text": "what",
+     "start": 40.005,
+     "end": 40.338
+    },
+    {
+     "text": "moved.",
+     "start": 40.338,
+     "end": 40.727
+    }
+   ]
+  },
+  {
+   "id": "L16",
+   "say": "You click the link in your calendar and start.",
+   "start": 41.127,
+   "end": 43.674,
+   "words": [
+    {
+     "text": "You",
+     "start": 41.127,
+     "end": 41.358
+    },
+    {
+     "text": "click",
+     "start": 41.358,
+     "end": 41.682
+    },
+    {
+     "text": "the",
+     "start": 41.682,
+     "end": 41.914
+    },
+    {
+     "text": "link",
+     "start": 41.914,
+     "end": 42.192
+    },
+    {
+     "text": "in",
+     "start": 42.192,
+     "end": 42.377
+    },
+    {
+     "text": "your",
+     "start": 42.377,
+     "end": 42.655
+    },
+    {
+     "text": "calendar",
+     "start": 42.655,
+     "end": 43.118
+    },
+    {
+     "text": "and",
+     "start": 43.118,
+     "end": 43.35
+    },
+    {
+     "text": "start.",
+     "start": 43.35,
+     "end": 43.674
+    }
+   ]
+  },
+  {
+   "id": "L17",
+   "say": "Take the shift. The plan moves, not you.",
+   "start": 44.374,
+   "end": 46.773,
+   "words": [
+    {
+     "text": "Take",
+     "start": 44.374,
+     "end": 44.594
+    },
+    {
+     "text": "the",
+     "start": 44.594,
+     "end": 44.777
+    },
+    {
+     "text": "shift.",
+     "start": 44.777,
+     "end": 45.034
+    },
+    {
+     "text": "The",
+     "start": 45.174,
+     "end": 45.18
+    },
+    {
+     "text": "plan",
+     "start": 45.18,
+     "end": 45.186
+    },
+    {
+     "text": "moves,",
+     "start": 45.186,
+     "end": 45.194
+    },
+    {
+     "text": "not",
+     "start": 45.334,
+     "end": 46.054
+    },
+    {
+     "text": "you.",
+     "start": 46.054,
+     "end": 46.773
+    }
+   ]
+  }
+ ]
+}

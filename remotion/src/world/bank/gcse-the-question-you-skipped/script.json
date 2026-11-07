@@ -1,0 +1,56 @@
+{
+ "id": "bank/gcse-the-question-you-skipped",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "This is for the person who skips the last question on the past paper.",
+   "after": 0.5
+  },
+  {
+   "id": "L2",
+   "say": "Skipping it felt fine. Everyone does this.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "But knowing a topic isn't scoring on it.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "Most of us practise the questions we can already do.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "That blank box is the actual revision.",
+   "after": 0.7
+  },
+  {
+   "id": "L6",
+   "say": "Offload builds the plan from your notes and exam dates.",
+   "after": 0.5
+  },
+  {
+   "id": "L7",
+   "say": "It tests you with exam-style questions, and brings weak ones back.",
+   "after": 0.5
+  },
+  {
+   "id": "L8",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 0.6
+  },
+  {
+   "id": "L9",
+   "say": "Tag the one who skips it.",
+   "after": 1
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "id": "gcse-receipt-things-i-already-knew",
+ "format": "receipt",
+ "shop": "REVISION",
+ "sub": "One evening",
+ "items": [
+  {
+   "label": "Favourite topic",
+   "value": "×3",
+   "at": "L3"
+  },
+  {
+   "label": "The easy flashcards",
+   "value": "×40",
+   "at": "L4"
+  },
+  {
+   "label": "Past-paper question I skipped",
+   "value": "×0",
+   "at": "L6"
+  },
+  {
+   "label": "Topic from the mock",
+   "value": "×0",
+   "at": "L7"
+  }
+ ],
+ "total": {
+  "label": "TOTAL",
+  "value": "Mostly things you already knew",
+  "at": "L8"
+ },
+ "stamp": {
+  "text": "PAID IN FULL",
+  "at": "L9:useful"
+ },
+ "footer": {
+  "text": "Next time: weak topic first.",
+  "at": "L10"
+ }
+}

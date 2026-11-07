@@ -1,0 +1,34 @@
+{
+ "id": "gcse-name-your-three-weakest",
+ "format": "exampaper",
+ "paper": "Revision check · Any subject",
+ "number": "Q1",
+ "question": "Name your three weakest topics.",
+ "marks": "(3 marks)",
+ "answer": {
+  "text": "the hard one? / maybe that one / all of them",
+  "at": "L2:guess"
+ },
+ "ticks": [
+  {
+   "kind": "cross",
+   "at": "L3:feels"
+  },
+  {
+   "kind": "cross",
+   "at": "L4:evidence"
+  },
+  {
+   "kind": "tick",
+   "at": "L5:honest"
+  },
+  {
+   "kind": "tick",
+   "at": "L9:sooner"
+  }
+ ],
+ "verdict": {
+  "text": "CHECKED",
+  "at": "L10:show"
+ }
+}

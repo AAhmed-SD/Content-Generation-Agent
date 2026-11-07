@@ -1,0 +1,463 @@
+{
+ "duration": 33.696,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Expectation: I understood it in the lecture.",
+   "start": 0.15,
+   "end": 2.788,
+   "words": [
+    {
+     "text": "Expectation:",
+     "start": 0.15,
+     "end": 1.08
+    },
+    {
+     "text": "I",
+     "start": 1.24,
+     "end": 1.365
+    },
+    {
+     "text": "understood",
+     "start": 1.365,
+     "end": 1.867
+    },
+    {
+     "text": "it",
+     "start": 1.867,
+     "end": 2.035
+    },
+    {
+     "text": "in",
+     "start": 2.035,
+     "end": 2.202
+    },
+    {
+     "text": "the",
+     "start": 2.202,
+     "end": 2.411
+    },
+    {
+     "text": "lecture.",
+     "start": 2.411,
+     "end": 2.788
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Reality: a blank page and a hovering pen.",
+   "start": 3.188,
+   "end": 6.049,
+   "words": [
+    {
+     "text": "Reality:",
+     "start": 3.188,
+     "end": 4.918
+    },
+    {
+     "text": "a",
+     "start": 5.068,
+     "end": 5.143
+    },
+    {
+     "text": "blank",
+     "start": 5.143,
+     "end": 5.32
+    },
+    {
+     "text": "page",
+     "start": 5.32,
+     "end": 5.471
+    },
+    {
+     "text": "and",
+     "start": 5.471,
+     "end": 5.596
+    },
+    {
+     "text": "a",
+     "start": 5.596,
+     "end": 5.672
+    },
+    {
+     "text": "hovering",
+     "start": 5.672,
+     "end": 5.924
+    },
+    {
+     "text": "pen.",
+     "start": 5.924,
+     "end": 6.049
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Expectation: I'll recognise it in the exam.",
+   "start": 6.549,
+   "end": 9.511,
+   "words": [
+    {
+     "text": "Expectation:",
+     "start": 6.549,
+     "end": 7.459
+    },
+    {
+     "text": "I'll",
+     "start": 7.659,
+     "end": 7.924
+    },
+    {
+     "text": "recognise",
+     "start": 7.924,
+     "end": 8.506
+    },
+    {
+     "text": "it",
+     "start": 8.506,
+     "end": 8.717
+    },
+    {
+     "text": "in",
+     "start": 8.717,
+     "end": 8.929
+    },
+    {
+     "text": "the",
+     "start": 8.929,
+     "end": 9.193
+    },
+    {
+     "text": "exam.",
+     "start": 9.193,
+     "end": 9.511
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Reality: the first line won't come.",
+   "start": 9.911,
+   "end": 12.187,
+   "words": [
+    {
+     "text": "Reality:",
+     "start": 9.911,
+     "end": 11.611
+    },
+    {
+     "text": "the",
+     "start": 11.721,
+     "end": 11.799
+    },
+    {
+     "text": "first",
+     "start": 11.799,
+     "end": 11.907
+    },
+    {
+     "text": "line",
+     "start": 11.907,
+     "end": 12.001
+    },
+    {
+     "text": "won't",
+     "start": 12.001,
+     "end": 12.094
+    },
+    {
+     "text": "come.",
+     "start": 12.094,
+     "end": 12.187
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Following isn't starting.",
+   "start": 12.787,
+   "end": 14.434,
+   "words": [
+    {
+     "text": "Following",
+     "start": 12.787,
+     "end": 13.458
+    },
+    {
+     "text": "isn't",
+     "start": 13.458,
+     "end": 13.824
+    },
+    {
+     "text": "starting.",
+     "start": 13.824,
+     "end": 14.434
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "So close everything.",
+   "start": 15.034,
+   "end": 16.701,
+   "words": [
+    {
+     "text": "So",
+     "start": 15.034,
+     "end": 15.324
+    },
+    {
+     "text": "close",
+     "start": 15.324,
+     "end": 15.831
+    },
+    {
+     "text": "everything.",
+     "start": 15.831,
+     "end": 16.701
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Write the method from blank.",
+   "start": 17.101,
+   "end": 18.86,
+   "words": [
+    {
+     "text": "Write",
+     "start": 17.101,
+     "end": 17.474
+    },
+    {
+     "text": "the",
+     "start": 17.474,
+     "end": 17.74
+    },
+    {
+     "text": "method",
+     "start": 17.74,
+     "end": 18.167
+    },
+    {
+     "text": "from",
+     "start": 18.167,
+     "end": 18.487
+    },
+    {
+     "text": "blank.",
+     "start": 18.487,
+     "end": 18.86
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "Then check the gaps.",
+   "start": 19.26,
+   "end": 20.94,
+   "words": [
+    {
+     "text": "Then",
+     "start": 19.26,
+     "end": 19.68
+    },
+    {
+     "text": "check",
+     "start": 19.68,
+     "end": 20.17
+    },
+    {
+     "text": "the",
+     "start": 20.17,
+     "end": 20.52
+    },
+    {
+     "text": "gaps.",
+     "start": 20.52,
+     "end": 20.94
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "Offload plans that practice from your notes and exam dates.",
+   "start": 21.64,
+   "end": 25.21,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 21.64,
+     "end": 22.106
+    },
+    {
+     "text": "plans",
+     "start": 22.106,
+     "end": 22.468
+    },
+    {
+     "text": "that",
+     "start": 22.468,
+     "end": 22.778
+    },
+    {
+     "text": "practice",
+     "start": 22.778,
+     "end": 23.295
+    },
+    {
+     "text": "from",
+     "start": 23.295,
+     "end": 23.606
+    },
+    {
+     "text": "your",
+     "start": 23.606,
+     "end": 23.916
+    },
+    {
+     "text": "notes",
+     "start": 23.916,
+     "end": 24.278
+    },
+    {
+     "text": "and",
+     "start": 24.278,
+     "end": 24.537
+    },
+    {
+     "text": "exam",
+     "start": 24.537,
+     "end": 24.847
+    },
+    {
+     "text": "dates.",
+     "start": 24.847,
+     "end": 25.21
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "say": "It tests you from blank, and brings the gaps back.",
+   "start": 25.61,
+   "end": 28.371,
+   "words": [
+    {
+     "text": "It",
+     "start": 25.61,
+     "end": 25.758
+    },
+    {
+     "text": "tests",
+     "start": 25.758,
+     "end": 26.019
+    },
+    {
+     "text": "you",
+     "start": 26.019,
+     "end": 26.205
+    },
+    {
+     "text": "from",
+     "start": 26.205,
+     "end": 26.429
+    },
+    {
+     "text": "blank,",
+     "start": 26.429,
+     "end": 26.69
+    },
+    {
+     "text": "and",
+     "start": 26.94,
+     "end": 27.178
+    },
+    {
+     "text": "brings",
+     "start": 27.178,
+     "end": 27.56
+    },
+    {
+     "text": "the",
+     "start": 27.56,
+     "end": 27.798
+    },
+    {
+     "text": "gaps",
+     "start": 27.798,
+     "end": 28.085
+    },
+    {
+     "text": "back.",
+     "start": 28.085,
+     "end": 28.371
+    }
+   ]
+  },
+  {
+   "id": "L11",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 28.871,
+   "end": 31.696,
+   "words": [
+    {
+     "text": "You",
+     "start": 28.871,
+     "end": 29.092
+    },
+    {
+     "text": "just",
+     "start": 29.092,
+     "end": 29.357
+    },
+    {
+     "text": "click",
+     "start": 29.357,
+     "end": 29.665
+    },
+    {
+     "text": "the",
+     "start": 29.665,
+     "end": 29.886
+    },
+    {
+     "text": "link",
+     "start": 29.886,
+     "end": 30.151
+    },
+    {
+     "text": "in",
+     "start": 30.151,
+     "end": 30.328
+    },
+    {
+     "text": "your",
+     "start": 30.328,
+     "end": 30.592
+    },
+    {
+     "text": "calendar",
+     "start": 30.592,
+     "end": 31.034
+    },
+    {
+     "text": "and",
+     "start": 31.034,
+     "end": 31.254
+    },
+    {
+     "text": "show",
+     "start": 31.254,
+     "end": 31.519
+    },
+    {
+     "text": "up.",
+     "start": 31.519,
+     "end": 31.696
+    }
+   ]
+  }
+ ]
+}

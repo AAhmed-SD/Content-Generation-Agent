@@ -1,0 +1,51 @@
+{
+ "id": "bank/clinical-what-did-you-miss-in-october",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Quick one. What did you get wrong in October?",
+   "after": 0.6
+  },
+  {
+   "id": "L2",
+   "say": "Most of us can't answer that.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "That card's still wrong.",
+   "after": 0.4
+  },
+  {
+   "id": "L4",
+   "say": "It just stopped reminding you.",
+   "after": 0.7
+  },
+  {
+   "id": "L5",
+   "say": "Offload builds your plan from your notes and exam dates.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "It scores every try.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "And brings the weak ones back sooner.",
+   "after": 0.5
+  },
+  {
+   "id": "L8",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1
+  }
+ ]
+}

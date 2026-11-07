@@ -21,7 +21,9 @@ export type DeskStep =
   | "library"
   | "inspiration"
   | "ideas"
-  | "linkedin";
+  | "linkedin"
+  | "blotato"
+  | "settings";
 
 type NavLink = { href: string; key: string; label: string; n?: number };
 type Section = { id: string; label: string; links: NavLink[] };
@@ -35,7 +37,7 @@ const sections: Section[] = [
       { href: "/desk/research", key: "research", label: "Research", n: 2 },
       { href: "/desk/hooks", key: "scripts", label: "Hooks", n: 3 },
       { href: "/desk", key: "yes", label: "Approval", n: 4 },
-      { href: "/desk/posts", key: "posts", label: "Posts", n: 5 },
+      { href: "/desk#to-post", key: "posts", label: "Posts", n: 5 },
       { href: "/desk/data", key: "numbers", label: "Numbers", n: 6 },
     ],
   },
@@ -59,6 +61,8 @@ const sections: Section[] = [
     id: "accounts",
     label: "Accounts",
     links: [
+      { href: "/desk/accounts", key: "blotato", label: "Blotato links" },
+      { href: "/desk/settings", key: "settings", label: "Settings" },
       { href: "/desk/brand/clinical", key: "clinical", label: "offload.clinical" },
       { href: "/desk/brand/analytical", key: "analytical", label: "offload.analytical" },
       { href: "/desk/brand/mentalhealth", key: "mentalhealth", label: "offload.mentalhealth" },
@@ -142,7 +146,10 @@ export function DeskFrame({
                 offload <span>marketing desk</span>
               </>
             ) : (
-              "o"
+              // the Offload dot, on a transparent ground
+              <svg className="side-dot" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" fill="var(--mark)" />
+              </svg>
             )}
           </Link>
           <button type="button" className="side-fold" onClick={() => setOpen(!open)} aria-expanded={open} aria-label={open ? "Hide the sidebar" : "Show the sidebar"} title={open ? "Hide the sidebar" : "Show the sidebar"}>

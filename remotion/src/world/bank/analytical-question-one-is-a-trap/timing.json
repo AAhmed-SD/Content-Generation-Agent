@@ -1,0 +1,488 @@
+{
+ "duration": 32.992,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Hot take: doing question one first is avoidance.",
+   "start": 0.15,
+   "end": 3.229,
+   "words": [
+    {
+     "text": "Hot",
+     "start": 0.15,
+     "end": 1.023
+    },
+    {
+     "text": "take:",
+     "start": 1.023,
+     "end": 2.07
+    },
+    {
+     "text": "doing",
+     "start": 2.32,
+     "end": 2.465
+    },
+    {
+     "text": "question",
+     "start": 2.465,
+     "end": 2.671
+    },
+    {
+     "text": "one",
+     "start": 2.671,
+     "end": 2.775
+    },
+    {
+     "text": "first",
+     "start": 2.775,
+     "end": 2.919
+    },
+    {
+     "text": "is",
+     "start": 2.919,
+     "end": 3.002
+    },
+    {
+     "text": "avoidance.",
+     "start": 3.002,
+     "end": 3.229
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Question one. Done. Felt great.",
+   "start": 3.829,
+   "end": 6.183,
+   "words": [
+    {
+     "text": "Question",
+     "start": 3.829,
+     "end": 4.383
+    },
+    {
+     "text": "one.",
+     "start": 4.383,
+     "end": 4.659
+    },
+    {
+     "text": "Done.",
+     "start": 4.749,
+     "end": 5.129
+    },
+    {
+     "text": "Felt",
+     "start": 5.309,
+     "end": 5.712
+    },
+    {
+     "text": "great.",
+     "start": 5.712,
+     "end": 6.183
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Question two. Also easy.",
+   "start": 6.683,
+   "end": 8.608,
+   "words": [
+    {
+     "text": "Question",
+     "start": 6.683,
+     "end": 7.263
+    },
+    {
+     "text": "two.",
+     "start": 7.263,
+     "end": 7.553
+    },
+    {
+     "text": "Also",
+     "start": 7.673,
+     "end": 8.14
+    },
+    {
+     "text": "easy.",
+     "start": 8.14,
+     "end": 8.608
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "The hard one? Still blank.",
+   "start": 9.108,
+   "end": 10.915,
+   "words": [
+    {
+     "text": "The",
+     "start": 9.108,
+     "end": 9.589
+    },
+    {
+     "text": "hard",
+     "start": 9.589,
+     "end": 10.167
+    },
+    {
+     "text": "one?",
+     "start": 10.167,
+     "end": 10.648
+    },
+    {
+     "text": "Still",
+     "start": 10.758,
+     "end": 10.837
+    },
+    {
+     "text": "blank.",
+     "start": 10.837,
+     "end": 10.915
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "And it's the one that looks like the exam.",
+   "start": 11.415,
+   "end": 13.459,
+   "words": [
+    {
+     "text": "And",
+     "start": 11.415,
+     "end": 11.62
+    },
+    {
+     "text": "it's",
+     "start": 11.62,
+     "end": 11.824
+    },
+    {
+     "text": "the",
+     "start": 11.824,
+     "end": 12.028
+    },
+    {
+     "text": "one",
+     "start": 12.028,
+     "end": 12.233
+    },
+    {
+     "text": "that",
+     "start": 12.233,
+     "end": 12.478
+    },
+    {
+     "text": "looks",
+     "start": 12.478,
+     "end": 12.764
+    },
+    {
+     "text": "like",
+     "start": 12.764,
+     "end": 13.009
+    },
+    {
+     "text": "the",
+     "start": 13.009,
+     "end": 13.214
+    },
+    {
+     "text": "exam.",
+     "start": 13.214,
+     "end": 13.459
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Start where it's uncomfortable.",
+   "start": 14.059,
+   "end": 15.807,
+   "words": [
+    {
+     "text": "Start",
+     "start": 14.059,
+     "end": 14.419
+    },
+    {
+     "text": "where",
+     "start": 14.419,
+     "end": 14.779
+    },
+    {
+     "text": "it's",
+     "start": 14.779,
+     "end": 15.036
+    },
+    {
+     "text": "uncomfortable.",
+     "start": 15.036,
+     "end": 15.807
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "The easy ones keep.",
+   "start": 16.207,
+   "end": 17.744,
+   "words": [
+    {
+     "text": "The",
+     "start": 16.207,
+     "end": 16.541
+    },
+    {
+     "text": "easy",
+     "start": 16.541,
+     "end": 16.942
+    },
+    {
+     "text": "ones",
+     "start": 16.942,
+     "end": 17.343
+    },
+    {
+     "text": "keep.",
+     "start": 17.343,
+     "end": 17.744
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "Offload plans your week from your notes and exam dates.",
+   "start": 18.444,
+   "end": 21.738,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 18.444,
+     "end": 18.9
+    },
+    {
+     "text": "plans",
+     "start": 18.9,
+     "end": 19.255
+    },
+    {
+     "text": "your",
+     "start": 19.255,
+     "end": 19.559
+    },
+    {
+     "text": "week",
+     "start": 19.559,
+     "end": 19.863
+    },
+    {
+     "text": "from",
+     "start": 19.863,
+     "end": 20.167
+    },
+    {
+     "text": "your",
+     "start": 20.167,
+     "end": 20.471
+    },
+    {
+     "text": "notes",
+     "start": 20.471,
+     "end": 20.826
+    },
+    {
+     "text": "and",
+     "start": 20.826,
+     "end": 21.079
+    },
+    {
+     "text": "exam",
+     "start": 21.079,
+     "end": 21.383
+    },
+    {
+     "text": "dates.",
+     "start": 21.383,
+     "end": 21.738
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "It moves the plan when you miss a session.",
+   "start": 22.238,
+   "end": 24.476,
+   "words": [
+    {
+     "text": "It",
+     "start": 22.238,
+     "end": 22.414
+    },
+    {
+     "text": "moves",
+     "start": 22.414,
+     "end": 22.721
+    },
+    {
+     "text": "the",
+     "start": 22.721,
+     "end": 22.94
+    },
+    {
+     "text": "plan",
+     "start": 22.94,
+     "end": 23.204
+    },
+    {
+     "text": "when",
+     "start": 23.204,
+     "end": 23.467
+    },
+    {
+     "text": "you",
+     "start": 23.467,
+     "end": 23.686
+    },
+    {
+     "text": "miss",
+     "start": 23.686,
+     "end": 23.95
+    },
+    {
+     "text": "a",
+     "start": 23.95,
+     "end": 24.081
+    },
+    {
+     "text": "session.",
+     "start": 24.081,
+     "end": 24.476
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "say": "It tests you as you go, and brings topics back.",
+   "start": 24.976,
+   "end": 27.667,
+   "words": [
+    {
+     "text": "It",
+     "start": 24.976,
+     "end": 25.142
+    },
+    {
+     "text": "tests",
+     "start": 25.142,
+     "end": 25.431
+    },
+    {
+     "text": "you",
+     "start": 25.431,
+     "end": 25.638
+    },
+    {
+     "text": "as",
+     "start": 25.638,
+     "end": 25.804
+    },
+    {
+     "text": "you",
+     "start": 25.804,
+     "end": 26.011
+    },
+    {
+     "text": "go,",
+     "start": 26.011,
+     "end": 26.176
+    },
+    {
+     "text": "and",
+     "start": 26.346,
+     "end": 26.591
+    },
+    {
+     "text": "brings",
+     "start": 26.591,
+     "end": 26.982
+    },
+    {
+     "text": "topics",
+     "start": 26.982,
+     "end": 27.374
+    },
+    {
+     "text": "back.",
+     "start": 27.374,
+     "end": 27.667
+    }
+   ]
+  },
+  {
+   "id": "L11",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 28.167,
+   "end": 30.992,
+   "words": [
+    {
+     "text": "You",
+     "start": 28.167,
+     "end": 28.388
+    },
+    {
+     "text": "just",
+     "start": 28.388,
+     "end": 28.653
+    },
+    {
+     "text": "click",
+     "start": 28.653,
+     "end": 28.962
+    },
+    {
+     "text": "the",
+     "start": 28.962,
+     "end": 29.182
+    },
+    {
+     "text": "link",
+     "start": 29.182,
+     "end": 29.447
+    },
+    {
+     "text": "in",
+     "start": 29.447,
+     "end": 29.624
+    },
+    {
+     "text": "your",
+     "start": 29.624,
+     "end": 29.889
+    },
+    {
+     "text": "calendar",
+     "start": 29.889,
+     "end": 30.33
+    },
+    {
+     "text": "and",
+     "start": 30.33,
+     "end": 30.551
+    },
+    {
+     "text": "show",
+     "start": 30.551,
+     "end": 30.816
+    },
+    {
+     "text": "up.",
+     "start": 30.816,
+     "end": 30.992
+    }
+   ]
+  }
+ ]
+}

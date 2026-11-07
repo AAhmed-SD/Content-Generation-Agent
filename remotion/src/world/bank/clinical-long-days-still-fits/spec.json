@@ -1,0 +1,97 @@
+{
+ "id": "clinical-long-days-still-fits",
+ "format": "blockfall",
+ "title": "Long days, still fits",
+ "blocks": [
+  {
+   "day": 0,
+   "start": 0,
+   "len": 5,
+   "label": "Long day 07:30–20:00",
+   "kind": "shift",
+   "at": "L2:shifts"
+  },
+  {
+   "day": 1,
+   "start": 0,
+   "len": 5,
+   "label": "Long day 07:30–20:00",
+   "kind": "shift",
+   "at": "L2:go"
+  },
+  {
+   "day": 3,
+   "start": 0,
+   "len": 5,
+   "label": "Long day 07:30–20:00",
+   "kind": "shift",
+   "at": "L2:first"
+  },
+  {
+   "day": 2,
+   "start": 0,
+   "len": 2,
+   "label": "Campus",
+   "kind": "fixed",
+   "at": "L3:move"
+  },
+  {
+   "day": 2,
+   "start": 3,
+   "len": 2,
+   "label": "Study",
+   "kind": "study",
+   "at": "L4:revision"
+  },
+  {
+   "day": 4,
+   "start": 1,
+   "len": 2,
+   "label": "Study",
+   "kind": "study",
+   "at": "L4:drops"
+  },
+  {
+   "day": 3,
+   "start": 6,
+   "len": 2,
+   "label": "Study",
+   "kind": "study",
+   "at": "L4:left",
+   "miss": "L5:late",
+   "moveTo": {
+    "day": 5,
+    "start": 0,
+    "at": "L7:moves"
+   }
+  },
+  {
+   "day": 4,
+   "start": 5,
+   "len": 1,
+   "label": "Review",
+   "kind": "study",
+   "at": "L8:tests"
+  },
+  {
+   "day": 2,
+   "start": 6,
+   "len": 1,
+   "label": "Review",
+   "kind": "study",
+   "at": "L9:brings"
+  },
+  {
+   "day": 6,
+   "start": 2,
+   "len": 2,
+   "label": "Review",
+   "kind": "study",
+   "at": "L9:fade"
+  }
+ ],
+ "done": {
+  "text": "Moved, not lost. Nothing overlaps.",
+  "at": "L10:show"
+ }
+}

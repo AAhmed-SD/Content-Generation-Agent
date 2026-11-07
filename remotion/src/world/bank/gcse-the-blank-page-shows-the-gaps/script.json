@@ -1,0 +1,61 @@
+{
+ "id": "bank/gcse-the-blank-page-shows-the-gaps",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Watch a blank page show you what you don't know.",
+   "after": 0.6
+  },
+  {
+   "id": "L2",
+   "say": "Pick one topic. Write everything you remember.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "No book open. Memory only.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "Then check it against the spec.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "The gaps are your revision.",
+   "after": 0.4
+  },
+  {
+   "id": "L6",
+   "say": "Not what you wrote.",
+   "after": 0.7
+  },
+  {
+   "id": "L7",
+   "say": "Offload builds the plan from your notes and exam dates.",
+   "after": 0.5
+  },
+  {
+   "id": "L8",
+   "say": "It tests you with blurting, Feynman and flashcards.",
+   "after": 0.4
+  },
+  {
+   "id": "L9",
+   "say": "Plus exam-style questions. And brings the gaps back sooner.",
+   "after": 0.5
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1
+  }
+ ]
+}

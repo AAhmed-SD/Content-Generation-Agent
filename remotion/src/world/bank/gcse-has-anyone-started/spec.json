@@ -1,0 +1,83 @@
+{
+ "id": "gcse-has-anyone-started",
+ "format": "chat",
+ "duration": 26,
+ "header": {
+  "name": "📚 year 11 😭",
+  "sub": "group chat"
+ },
+ "messages": [
+  {
+   "at": 2.8,
+   "from": "them",
+   "text": "has anyone started revising for mocks"
+  },
+  {
+   "at": 4,
+   "from": "them",
+   "text": "no"
+  },
+  {
+   "at": 4.8,
+   "from": "them",
+   "text": "define started"
+  },
+  {
+   "at": 5.6,
+   "from": "them",
+   "text": "i made a list"
+  },
+  {
+   "at": 6.6,
+   "from": "them",
+   "text": "i saved loads of revision tiktoks for later"
+  },
+  {
+   "at": 8.6,
+   "from": "them",
+   "text": "like which subject even first"
+  },
+  {
+   "at": 12.8,
+   "from": "me",
+   "text": "ok actually started"
+  },
+  {
+   "at": 14.2,
+   "from": "them",
+   "text": "wait how"
+  },
+  {
+   "at": 15.6,
+   "from": "me",
+   "text": "offload made my plan from my notes and mock dates"
+  },
+  {
+   "at": 17.4,
+   "from": "me",
+   "text": "and it moves it when an evening goes wrong"
+  },
+  {
+   "at": 19.2,
+   "from": "me",
+   "text": "it tests me as i go and brings topics back before i forget"
+  },
+  {
+   "at": 21.4,
+   "from": "me",
+   "text": "i just click the link in my calendar and show up"
+  },
+  {
+   "at": 23.2,
+   "from": "them",
+   "text": "ok trying it"
+  }
+ ],
+ "notification": {
+  "at": 10.4,
+  "app": "offload",
+  "title": "Tonight's session is ready",
+  "body": "Your plan's in your calendar."
+ },
+ "caption": "POV: someone asks the group chat 'has anyone started revising?' Tag the friend who said 'define started'."
+}

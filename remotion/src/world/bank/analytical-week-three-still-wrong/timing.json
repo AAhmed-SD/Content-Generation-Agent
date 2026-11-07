@@ -1,0 +1,450 @@
+{
+ "duration": 30.264,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "This is for whoever got eigenvectors wrong and moved on.",
+   "start": 0.15,
+   "end": 3.448,
+   "words": [
+    {
+     "text": "This",
+     "start": 0.15,
+     "end": 0.45
+    },
+    {
+     "text": "is",
+     "start": 0.45,
+     "end": 0.65
+    },
+    {
+     "text": "for",
+     "start": 0.65,
+     "end": 0.9
+    },
+    {
+     "text": "whoever",
+     "start": 0.9,
+     "end": 1.349
+    },
+    {
+     "text": "got",
+     "start": 1.349,
+     "end": 1.599
+    },
+    {
+     "text": "eigenvectors",
+     "start": 1.599,
+     "end": 2.299
+    },
+    {
+     "text": "wrong",
+     "start": 2.299,
+     "end": 2.648
+    },
+    {
+     "text": "and",
+     "start": 2.648,
+     "end": 2.898
+    },
+    {
+     "text": "moved",
+     "start": 2.898,
+     "end": 3.248
+    },
+    {
+     "text": "on.",
+     "start": 3.248,
+     "end": 3.448
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Linear Algebra, week three.",
+   "start": 3.948,
+   "end": 5.941,
+   "words": [
+    {
+     "text": "Linear",
+     "start": 3.948,
+     "end": 4.447
+    },
+    {
+     "text": "Algebra,",
+     "start": 4.447,
+     "end": 5.008
+    },
+    {
+     "text": "week",
+     "start": 5.148,
+     "end": 5.514
+    },
+    {
+     "text": "three.",
+     "start": 5.514,
+     "end": 5.941
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "And it'll be on the exam.",
+   "start": 6.441,
+   "end": 8.116,
+   "words": [
+    {
+     "text": "And",
+     "start": 6.441,
+     "end": 6.72
+    },
+    {
+     "text": "it'll",
+     "start": 6.72,
+     "end": 7.055
+    },
+    {
+     "text": "be",
+     "start": 7.055,
+     "end": 7.279
+    },
+    {
+     "text": "on",
+     "start": 7.279,
+     "end": 7.502
+    },
+    {
+     "text": "the",
+     "start": 7.502,
+     "end": 7.781
+    },
+    {
+     "text": "exam.",
+     "start": 7.781,
+     "end": 8.116
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "You meant to come back to it.",
+   "start": 8.616,
+   "end": 10.262,
+   "words": [
+    {
+     "text": "You",
+     "start": 8.616,
+     "end": 8.845
+    },
+    {
+     "text": "meant",
+     "start": 8.845,
+     "end": 9.165
+    },
+    {
+     "text": "to",
+     "start": 9.165,
+     "end": 9.348
+    },
+    {
+     "text": "come",
+     "start": 9.348,
+     "end": 9.622
+    },
+    {
+     "text": "back",
+     "start": 9.622,
+     "end": 9.897
+    },
+    {
+     "text": "to",
+     "start": 9.897,
+     "end": 10.079
+    },
+    {
+     "text": "it.",
+     "start": 10.079,
+     "end": 10.262
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "The sheet got marked. You filed it.",
+   "start": 10.762,
+   "end": 12.936,
+   "words": [
+    {
+     "text": "The",
+     "start": 10.762,
+     "end": 10.988
+    },
+    {
+     "text": "sheet",
+     "start": 10.988,
+     "end": 11.305
+    },
+    {
+     "text": "got",
+     "start": 11.305,
+     "end": 11.531
+    },
+    {
+     "text": "marked.",
+     "start": 11.531,
+     "end": 11.892
+    },
+    {
+     "text": "You",
+     "start": 12.032,
+     "end": 12.315
+    },
+    {
+     "text": "filed",
+     "start": 12.315,
+     "end": 12.71
+    },
+    {
+     "text": "it.",
+     "start": 12.71,
+     "end": 12.936
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Are they still wrong? Probably.",
+   "start": 13.436,
+   "end": 15.306,
+   "words": [
+    {
+     "text": "Are",
+     "start": 13.436,
+     "end": 13.638
+    },
+    {
+     "text": "they",
+     "start": 13.638,
+     "end": 13.88
+    },
+    {
+     "text": "still",
+     "start": 13.88,
+     "end": 14.163
+    },
+    {
+     "text": "wrong?",
+     "start": 14.163,
+     "end": 14.446
+    },
+    {
+     "text": "Probably.",
+     "start": 14.636,
+     "end": 15.306
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Wrong answers don't send reminders.",
+   "start": 15.806,
+   "end": 18.022,
+   "words": [
+    {
+     "text": "Wrong",
+     "start": 15.806,
+     "end": 16.203
+    },
+    {
+     "text": "answers",
+     "start": 16.203,
+     "end": 16.715
+    },
+    {
+     "text": "don't",
+     "start": 16.715,
+     "end": 17.056
+    },
+    {
+     "text": "send",
+     "start": 17.056,
+     "end": 17.397
+    },
+    {
+     "text": "reminders.",
+     "start": 17.397,
+     "end": 18.022
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "Offload builds the plan from your notes and exam dates.",
+   "start": 18.722,
+   "end": 21.975,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 18.722,
+     "end": 19.172
+    },
+    {
+     "text": "builds",
+     "start": 19.172,
+     "end": 19.573
+    },
+    {
+     "text": "the",
+     "start": 19.573,
+     "end": 19.823
+    },
+    {
+     "text": "plan",
+     "start": 19.823,
+     "end": 20.123
+    },
+    {
+     "text": "from",
+     "start": 20.123,
+     "end": 20.423
+    },
+    {
+     "text": "your",
+     "start": 20.423,
+     "end": 20.724
+    },
+    {
+     "text": "notes",
+     "start": 20.724,
+     "end": 21.074
+    },
+    {
+     "text": "and",
+     "start": 21.074,
+     "end": 21.324
+    },
+    {
+     "text": "exam",
+     "start": 21.324,
+     "end": 21.624
+    },
+    {
+     "text": "dates.",
+     "start": 21.624,
+     "end": 21.975
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "It tests you, and brings misses back sooner.",
+   "start": 22.475,
+   "end": 24.939,
+   "words": [
+    {
+     "text": "It",
+     "start": 22.475,
+     "end": 22.655
+    },
+    {
+     "text": "tests",
+     "start": 22.655,
+     "end": 22.97
+    },
+    {
+     "text": "you,",
+     "start": 22.97,
+     "end": 23.195
+    },
+    {
+     "text": "and",
+     "start": 23.305,
+     "end": 23.538
+    },
+    {
+     "text": "brings",
+     "start": 23.538,
+     "end": 23.912
+    },
+    {
+     "text": "misses",
+     "start": 23.912,
+     "end": 24.285
+    },
+    {
+     "text": "back",
+     "start": 24.285,
+     "end": 24.565
+    },
+    {
+     "text": "sooner.",
+     "start": 24.565,
+     "end": 24.939
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 25.439,
+   "end": 28.264,
+   "words": [
+    {
+     "text": "You",
+     "start": 25.439,
+     "end": 25.66
+    },
+    {
+     "text": "just",
+     "start": 25.66,
+     "end": 25.924
+    },
+    {
+     "text": "click",
+     "start": 25.924,
+     "end": 26.233
+    },
+    {
+     "text": "the",
+     "start": 26.233,
+     "end": 26.454
+    },
+    {
+     "text": "link",
+     "start": 26.454,
+     "end": 26.719
+    },
+    {
+     "text": "in",
+     "start": 26.719,
+     "end": 26.896
+    },
+    {
+     "text": "your",
+     "start": 26.896,
+     "end": 27.16
+    },
+    {
+     "text": "calendar",
+     "start": 27.16,
+     "end": 27.602
+    },
+    {
+     "text": "and",
+     "start": 27.602,
+     "end": 27.822
+    },
+    {
+     "text": "show",
+     "start": 27.822,
+     "end": 28.087
+    },
+    {
+     "text": "up.",
+     "start": 28.087,
+     "end": 28.264
+    }
+   ]
+  }
+ ]
+}

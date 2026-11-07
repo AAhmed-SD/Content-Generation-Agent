@@ -1,0 +1,35 @@
+{
+ "id": "analytical-week-three-still-wrong",
+ "format": "search",
+ "query": {
+  "text": "eigenvectors wrong week 3 linear algebra",
+  "at": "L1:eigenvectors"
+ },
+ "suggestions": [
+  {
+   "text": "eigenvectors week 3 linear algebra on the exam",
+   "at": "L3:exam"
+  },
+  {
+   "text": "eigenvectors week 3 where's that sheet",
+   "at": "L4:meant"
+  },
+  {
+   "text": "eigenvectors week 3 did I ever fix it",
+   "at": "L4:back"
+  },
+  {
+   "text": "eigenvectors week 3 still wrong",
+   "at": "L5:marked"
+  }
+ ],
+ "pick": {
+  "index": 3,
+  "at": "L5:filed"
+ },
+ "result": {
+  "at": "L6:probably",
+  "head": "Probably.\nNothing told you.",
+  "body": "The sheet went in a folder. The eigenvectors went with it. They'll still be on the exam."
+ }
+}

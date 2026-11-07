@@ -43,9 +43,10 @@ const formats = [
   { id: "recipe", name: "Recipe card", kit: "formats/kit3.tsx", voice: true, shape: "What you need, then the method.", styles: ["satisfying", "hot take"] },
   { id: "missing", name: "Missing poster", kit: "formats/kit3.tsx", voice: true, shape: "A missing poster taped to a wall.", styles: ["joke", "call-out"] },
   { id: "kanban", name: "Kanban board", kit: "formats/kit3.tsx", voice: true, shape: "To do, doing, done; cards move.", styles: ["satisfying"] },
-  { id: "blockfall", name: "Tetris calendar", kit: "formats/kit4.tsx", voice: true, shape: "A glass week. Blocks fall and lock; a missed one cracks red and re-drops into a free slot. Everything fits.", styles: ["satisfying"] },
+  { id: "blockfall", name: "Tetris calendar", kit: "formats/kit4.tsx", voice: true, shape: "A paper week. Grey shifts, blue study blocks fall and lock; a missed one cracks red and re-drops into a free slot. Everything fits.", styles: ["satisfying"] },
   { id: "evidence", name: "Evidence board", kit: "formats/kit4.tsx", voice: true, shape: "Exhibits pinned and strung on kraft, a GUILTY stamp, the sentence.", styles: ["accusation", "call-out"] },
   { id: "split", name: "Expectation vs reality", kit: "formats/kit4.tsx", voice: true, shape: "Expectation over reality, pair by pair, then one line.", styles: ["joke"] },
+  { id: "science", name: "The science, shown", kit: "formats/kit5.tsx", voice: true, shape: "Dark explainer of one learning method or finding: forgetting and spacing curves, bars comparing methods (relative, study named), a blurt sheet that shows the gaps, the Feynman loop, an applied exam-style question, method steps.", styles: ["myth", "hot take", "quiz", "satisfying"] },
   { id: "jail", name: "Study police (jail series)", kit: "formats/kit4.tsx", voice: true, shape: "An app type is booked: front and side mugshots with flashes, a charge sheet, cell bars slam down, then Offload's three beats tick in. Suspects are archetypes (the flashcard app, the pretty planner), never a named brand.", styles: ["accusation", "joke"] },
   { id: "wrapped", name: "Wrapped", kit: "formats/kit4.tsx", voice: true, shape: "Full-bleed colour cards with a circular wipe and a progress bar: a week, wrapped.", styles: ["story", "confession", "satisfying"] },
 ];
@@ -69,6 +70,22 @@ function thumb(video, name) {
   const at = Math.max(0.5, duration(video) * 0.45).toFixed(2);
   const r = spawnSync("ffmpeg", ["-v", "error", "-y", "-ss", at, "-i", video, "-frames:v", "1", "-vf", "scale=360:-2", "-q:v", "4", dest]);
   return r.status === 0 ? `/library/${name}.jpg` : null;
+}
+
+/** Five stills across a format's example film, for the Hooks page storyboards. */
+function strip(videoRel, format) {
+  if (!videoRel) return [];
+  const video = path.join(out, videoRel);
+  if (!existsSync(video)) return [];
+  const dir = path.join(thumbs, "strip");
+  mkdirSync(dir, { recursive: true });
+  const d = duration(video);
+  return [0.06, 0.26, 0.46, 0.66, 0.84].map((k, n) => {
+    const dest = path.join(dir, `${format}-${n + 1}.jpg`);
+    if (!(existsSync(dest) && statSync(dest).mtimeMs >= statSync(video).mtimeMs))
+      spawnSync("ffmpeg", ["-v", "error", "-y", "-ss", (d * k).toFixed(2), "-i", video, "-frames:v", "1", "-vf", "scale=200:-2", "-q:v", "5", dest]);
+    return existsSync(dest) ? `/library/strip/${format}-${n + 1}.jpg` : null;
+  }).filter(Boolean);
 }
 
 const films = readdirSync(bank, { withFileTypes: true })
@@ -119,7 +136,8 @@ const references = existsSync(refs)
 const rejected = read(path.join(root, "web", "research", "rejected.json")) ?? { formats: [] };
 const catalogue = formats.filter((f) => !rejected.formats.includes(f.id)).map((f) => {
   const examples = films.filter((x) => x.format === f.id);
-  return { ...f, examples: examples.map((x) => x.id), thumb: examples.find((x) => x.thumb)?.thumb ?? null, video: examples.find((x) => x.video)?.video ?? null, fields: examples[0]?.fields ?? [] };
+  const video = examples.find((x) => x.video)?.video ?? null;
+  return { ...f, examples: examples.map((x) => x.id), thumb: examples.find((x) => x.thumb)?.thumb ?? null, video, strip: strip(video, f.id), fields: examples[0]?.fields ?? [] };
 });
 
 const at = new Date().toISOString();

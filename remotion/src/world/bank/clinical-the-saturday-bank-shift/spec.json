@@ -1,0 +1,226 @@
+{
+ "id": "clinical-the-saturday-bank-shift",
+ "format": "blockfall",
+ "title": "The Saturday bank shift",
+ "blocks": [
+  {
+   "day": 0,
+   "start": 0,
+   "len": 4,
+   "label": "Placement",
+   "kind": "fixed",
+   "at": "L1:well",
+   "miss": "L8",
+   "moveTo": {
+    "day": 0,
+    "start": 0,
+    "at": "L10$"
+   }
+  },
+  {
+   "day": 0,
+   "start": 4,
+   "len": 2,
+   "label": "Study: cardiology",
+   "kind": "study",
+   "at": "L1:well",
+   "miss": "L8",
+   "moveTo": {
+    "day": 0,
+    "start": 4,
+    "at": "L10$"
+   }
+  },
+  {
+   "day": 0,
+   "start": 6,
+   "len": 1,
+   "label": "Gym",
+   "kind": "fixed",
+   "at": "L1:well",
+   "miss": "L8",
+   "moveTo": {
+    "day": 0,
+    "start": 6,
+    "at": "L10$"
+   }
+  },
+  {
+   "day": 1,
+   "start": 0,
+   "len": 3,
+   "label": "Lectures",
+   "kind": "fixed",
+   "at": "L1:guess",
+   "miss": "L8",
+   "moveTo": {
+    "day": 1,
+    "start": 0,
+    "at": "L10$"
+   }
+  },
+  {
+   "day": 1,
+   "start": 3,
+   "len": 1,
+   "label": "Clinical skills",
+   "kind": "fixed",
+   "at": "L1:guess",
+   "miss": "L8",
+   "moveTo": {
+    "day": 1,
+    "start": 3,
+    "at": "L10$"
+   }
+  },
+  {
+   "day": 2,
+   "start": 0,
+   "len": 4,
+   "label": "Placement",
+   "kind": "fixed",
+   "at": "L1:that's",
+   "miss": "L8",
+   "moveTo": {
+    "day": 2,
+    "start": 0,
+    "at": "L10$"
+   }
+  },
+  {
+   "day": 2,
+   "start": 4,
+   "len": 3,
+   "label": "Bar shift",
+   "kind": "shift",
+   "at": "L1:that's",
+   "miss": "L8",
+   "moveTo": {
+    "day": 2,
+    "start": 4,
+    "at": "L10$"
+   }
+  },
+  {
+   "day": 3,
+   "start": 0,
+   "len": 3,
+   "label": "Lectures",
+   "kind": "fixed",
+   "at": "L1:sunday's",
+   "miss": "L8",
+   "moveTo": {
+    "day": 3,
+    "start": 0,
+    "at": "L10$"
+   }
+  },
+  {
+   "day": 3,
+   "start": 3,
+   "len": 2,
+   "label": "Study: renal",
+   "kind": "study",
+   "at": "L1:sunday's",
+   "miss": "L8",
+   "moveTo": {
+    "day": 3,
+    "start": 3,
+    "at": "L10$"
+   }
+  },
+  {
+   "day": 4,
+   "start": 0,
+   "len": 4,
+   "label": "Placement",
+   "kind": "fixed",
+   "at": "L1:plan",
+   "miss": "L8",
+   "moveTo": {
+    "day": 4,
+    "start": 0,
+    "at": "L10$"
+   }
+  },
+  {
+   "day": 4,
+   "start": 4,
+   "len": 3,
+   "label": "Bar shift",
+   "kind": "shift",
+   "at": "L1:plan",
+   "miss": "L8",
+   "moveTo": {
+    "day": 4,
+    "start": 4,
+    "at": "L10$"
+   }
+  },
+  {
+   "day": 6,
+   "start": 0,
+   "len": 2,
+   "label": "Study: pharmacology",
+   "kind": "study",
+   "at": "L1:then",
+   "miss": "L6:pharmacology",
+   "moveTo": {
+    "day": 1,
+    "start": 4,
+    "at": "L13$"
+   }
+  },
+  {
+   "day": 6,
+   "start": 2,
+   "len": 5,
+   "label": "Home: family",
+   "kind": "fixed",
+   "at": "L1:then",
+   "miss": "L8",
+   "moveTo": {
+    "day": 6,
+    "start": 2,
+    "at": "L10$"
+   }
+  },
+  {
+   "day": 5,
+   "start": 3,
+   "len": 4,
+   "label": "Bank shift",
+   "kind": "shift",
+   "at": "L2:shift",
+   "miss": "L8",
+   "moveTo": {
+    "day": 5,
+    "start": 3,
+    "at": "L10$"
+   }
+  },
+  {
+   "day": 6,
+   "start": 0,
+   "len": 2,
+   "label": "Bank shift (ends)",
+   "kind": "shift",
+   "at": "L4:sunday",
+   "miss": "L8",
+   "moveTo": {
+    "day": 6,
+    "start": 0,
+    "at": "L10$"
+   }
+  }
+ ],
+ "chaos": {
+  "at": "L8",
+  "until": "L10$",
+  "count": "Moved by hand"
+ },
+ "done": {
+  "text": "Moved: pharmacology → Tue",
+  "at": "L15"
+ }
+}

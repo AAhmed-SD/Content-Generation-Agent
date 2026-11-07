@@ -1,6 +1,6 @@
 import { AbsoluteFill } from "remotion";
 import { tokens } from "../../tokens";
-import { DocCard, Flood, INTER, makeTiming, POP, S0, ScreenClip, Shell, track, useK, WeekStrip, type Block, type Cam, type Cue, type Row } from "../kit/dark";
+import { alpha, DocCard, Flood, INTER, makeTiming, SilentContext, POP, S0, ScreenClip, Shell, track, useK, WeekStrip, type Block, type Cam, type Cue, type Row } from "../kit/dark";
 import { Kinetic, type Fx } from "../kinetic";
 import { Chart, forget, PillOrbit, pillCues, phraseStarts, Source, Type } from "../kit/talk";
 import { LogoEnd, logoCues } from "../kit/logo";
@@ -9,6 +9,7 @@ import { BlankCard, ChoiceCard, Countdown, Flashcard, quizCues } from "../kit/qu
 import { MythFact, Pov, Sound, ThreeThings, type FormatSpec } from "../formats/kit";
 import { Chat, Receipt, Search, TierList, Whiteboard, type FormatSpec2 } from "../formats/kit2";
 import { Blockfall, Evidence, Jail, Split, Wrapped, type FormatSpec4 } from "../formats/kit4";
+import { Science, type ScienceSpec } from "../formats/kit5";
 import { Battery, Departures, ErrorDialog, ExamPaper, Inbox, Kanban, LockScreen, Missing, Recipe, Satnav, Terms, Weather, type FormatSpec3 } from "../formats/kit3";
 
 /**
@@ -45,8 +46,8 @@ export type Spec = {
 };
 
 /** A bank film is either the scene template (no format) or one of the format templates. */
-export type AnySpec = Spec | ((FormatSpec | FormatSpec2 | FormatSpec3 | FormatSpec4) & { id: string });
-const isFormat = (spec: AnySpec): spec is (FormatSpec | FormatSpec2 | FormatSpec3 | FormatSpec4) & { id: string } => "format" in spec;
+export type AnySpec = Spec | ((FormatSpec | FormatSpec2 | FormatSpec3 | FormatSpec4 | ScienceSpec) & { id: string });
+const isFormat = (spec: AnySpec): spec is (FormatSpec | FormatSpec2 | FormatSpec3 | FormatSpec4 | ScienceSpec) & { id: string } => "format" in spec;
 
 type Timing = Parameters<typeof makeTiming>[0];
 
@@ -85,17 +86,41 @@ const STAGE_Y = 1120;
 const lineOf = (ref: Ref) => /^L\d+/.exec(ref)![0];
 
 export const BankFilm: React.FC<{ spec: AnySpec; timing: Timing; vo: string }> = ({ spec, timing, vo }) => {
-  if (!isFormat(spec)) return <SceneFilm spec={spec} timing={timing} vo={vo} />;
+  if (!isFormat(spec))
+    return (
+      <SafeArea>
+        <SceneFilm spec={spec} timing={timing} vo={vo} />
+      </SafeArea>
+    );
   const { end } = film(spec, timing);
   const words = endWords(spec);
   return (
-    <AbsoluteFill>
+    <SafeArea>
       <FormatBody spec={spec} timing={timing} vo={vo} />
       <LogoEnd at={end} lead={words.lead} pill={words.pill} />
       <Sound cues={logoCues(end)} />
-    </AbsoluteFill>
+    </SafeArea>
   );
 };
+
+/**
+ * TikTok, Reels and Shorts lay their tabs over the top, buttons down the right and the caption over the bottom.
+ * Every film is drawn at 74% inside the area those leave clear, and the space around it is a soft, blurred, silent
+ * copy of the film itself, so the edges match its colours and there are never bars. (Decided 2026-11-07.)
+ */
+// 74% of the frame: about 160px clear at the top (tabs), 210px on the right (like, comment, share, the sound disc)
+// and 340px at the bottom (username, caption, sound line); measured against TikTok, the tightest of the three.
+const SAFE = { scale: 0.74, left: 70, top: 160 };
+const SafeArea: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <AbsoluteFill style={{ overflow: "hidden" }}>
+    <SilentContext.Provider value={true}>
+      <AbsoluteFill style={{ filter: "blur(36px) saturate(1.1)", transform: "scale(1.12)", opacity: 0.9 }}>{children}</AbsoluteFill>
+    </SilentContext.Provider>
+    <div style={{ position: "absolute", left: SAFE.left, top: SAFE.top, width: 1080, height: 1920, transform: `scale(${SAFE.scale})`, transformOrigin: "0 0", overflow: "hidden", borderRadius: 34, boxShadow: `0 24px 60px ${alpha(tokens.night, 0.22)}` }}>
+      {children}
+    </div>
+  </AbsoluteFill>
+);
 
 const FormatBody: React.FC<{ spec: Extract<AnySpec, { format: string }>; timing: Timing; vo: string }> = ({ spec, timing, vo }) => {
   if (spec.format === "pov") return <Pov spec={spec} />;
@@ -151,6 +176,8 @@ const FormatBody: React.FC<{ spec: Extract<AnySpec, { format: string }>; timing:
       return <Wrapped spec={spec} {...b} />;
     case "jail":
       return <Jail spec={spec} {...b} />;
+    case "science":
+      return <Science spec={spec} {...b} />;
   }
 };
 

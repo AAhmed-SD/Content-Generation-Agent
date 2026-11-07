@@ -1,0 +1,460 @@
+{
+ "duration": 32.133,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Watch a blank page show you what you don't know.",
+   "start": 0.15,
+   "end": 2.828,
+   "words": [
+    {
+     "text": "Watch",
+     "start": 0.15,
+     "end": 0.479
+    },
+    {
+     "text": "a",
+     "start": 0.479,
+     "end": 0.62
+    },
+    {
+     "text": "blank",
+     "start": 0.62,
+     "end": 0.949
+    },
+    {
+     "text": "page",
+     "start": 0.949,
+     "end": 1.231
+    },
+    {
+     "text": "show",
+     "start": 1.231,
+     "end": 1.513
+    },
+    {
+     "text": "you",
+     "start": 1.513,
+     "end": 1.748
+    },
+    {
+     "text": "what",
+     "start": 1.748,
+     "end": 2.029
+    },
+    {
+     "text": "you",
+     "start": 2.029,
+     "end": 2.264
+    },
+    {
+     "text": "don't",
+     "start": 2.264,
+     "end": 2.546
+    },
+    {
+     "text": "know.",
+     "start": 2.546,
+     "end": 2.828
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Pick one topic. Write everything you remember.",
+   "start": 3.428,
+   "end": 6.288,
+   "words": [
+    {
+     "text": "Pick",
+     "start": 3.428,
+     "end": 3.745
+    },
+    {
+     "text": "one",
+     "start": 3.745,
+     "end": 4.009
+    },
+    {
+     "text": "topic.",
+     "start": 4.009,
+     "end": 4.378
+    },
+    {
+     "text": "Write",
+     "start": 4.748,
+     "end": 5.065
+    },
+    {
+     "text": "everything",
+     "start": 5.065,
+     "end": 5.609
+    },
+    {
+     "text": "you",
+     "start": 5.609,
+     "end": 5.835
+    },
+    {
+     "text": "remember.",
+     "start": 5.835,
+     "end": 6.288
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "No book open. Memory only.",
+   "start": 6.788,
+   "end": 8.982,
+   "words": [
+    {
+     "text": "No",
+     "start": 6.788,
+     "end": 7.01
+    },
+    {
+     "text": "book",
+     "start": 7.01,
+     "end": 7.344
+    },
+    {
+     "text": "open.",
+     "start": 7.344,
+     "end": 7.678
+    },
+    {
+     "text": "Memory",
+     "start": 7.858,
+     "end": 8.5
+    },
+    {
+     "text": "only.",
+     "start": 8.5,
+     "end": 8.982
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Then check it against the spec.",
+   "start": 9.482,
+   "end": 11.393,
+   "words": [
+    {
+     "text": "Then",
+     "start": 9.482,
+     "end": 9.792
+    },
+    {
+     "text": "check",
+     "start": 9.792,
+     "end": 10.153
+    },
+    {
+     "text": "it",
+     "start": 10.153,
+     "end": 10.36
+    },
+    {
+     "text": "against",
+     "start": 10.36,
+     "end": 10.825
+    },
+    {
+     "text": "the",
+     "start": 10.825,
+     "end": 11.083
+    },
+    {
+     "text": "spec.",
+     "start": 11.083,
+     "end": 11.393
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "The gaps are your revision.",
+   "start": 11.893,
+   "end": 13.593,
+   "words": [
+    {
+     "text": "The",
+     "start": 11.893,
+     "end": 12.159
+    },
+    {
+     "text": "gaps",
+     "start": 12.159,
+     "end": 12.478
+    },
+    {
+     "text": "are",
+     "start": 12.478,
+     "end": 12.743
+    },
+    {
+     "text": "your",
+     "start": 12.743,
+     "end": 13.062
+    },
+    {
+     "text": "revision.",
+     "start": 13.062,
+     "end": 13.593
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Not what you wrote.",
+   "start": 13.993,
+   "end": 15.43,
+   "words": [
+    {
+     "text": "Not",
+     "start": 13.993,
+     "end": 14.305
+    },
+    {
+     "text": "what",
+     "start": 14.305,
+     "end": 14.68
+    },
+    {
+     "text": "you",
+     "start": 14.68,
+     "end": 14.993
+    },
+    {
+     "text": "wrote.",
+     "start": 14.993,
+     "end": 15.43
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Offload builds the plan from your notes and exam dates.",
+   "start": 16.13,
+   "end": 19.383,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 16.13,
+     "end": 16.58
+    },
+    {
+     "text": "builds",
+     "start": 16.58,
+     "end": 16.981
+    },
+    {
+     "text": "the",
+     "start": 16.981,
+     "end": 17.231
+    },
+    {
+     "text": "plan",
+     "start": 17.231,
+     "end": 17.531
+    },
+    {
+     "text": "from",
+     "start": 17.531,
+     "end": 17.831
+    },
+    {
+     "text": "your",
+     "start": 17.831,
+     "end": 18.132
+    },
+    {
+     "text": "notes",
+     "start": 18.132,
+     "end": 18.482
+    },
+    {
+     "text": "and",
+     "start": 18.482,
+     "end": 18.732
+    },
+    {
+     "text": "exam",
+     "start": 18.732,
+     "end": 19.032
+    },
+    {
+     "text": "dates.",
+     "start": 19.032,
+     "end": 19.383
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "It tests you with blurting, Feynman and flashcards.",
+   "start": 19.883,
+   "end": 22.837,
+   "words": [
+    {
+     "text": "It",
+     "start": 19.883,
+     "end": 20.04
+    },
+    {
+     "text": "tests",
+     "start": 20.04,
+     "end": 20.316
+    },
+    {
+     "text": "you",
+     "start": 20.316,
+     "end": 20.513
+    },
+    {
+     "text": "with",
+     "start": 20.513,
+     "end": 20.749
+    },
+    {
+     "text": "blurting,",
+     "start": 20.749,
+     "end": 21.143
+    },
+    {
+     "text": "Feynman",
+     "start": 21.393,
+     "end": 21.893
+    },
+    {
+     "text": "and",
+     "start": 21.893,
+     "end": 22.17
+    },
+    {
+     "text": "flashcards.",
+     "start": 22.17,
+     "end": 22.837
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "Plus exam-style questions. And brings the gaps back sooner.",
+   "start": 23.237,
+   "end": 26.808,
+   "words": [
+    {
+     "text": "Plus",
+     "start": 23.237,
+     "end": 23.588
+    },
+    {
+     "text": "exam-style",
+     "start": 23.588,
+     "end": 24.233
+    },
+    {
+     "text": "questions.",
+     "start": 24.233,
+     "end": 24.877
+    },
+    {
+     "text": "And",
+     "start": 25.177,
+     "end": 25.392
+    },
+    {
+     "text": "brings",
+     "start": 25.392,
+     "end": 25.735
+    },
+    {
+     "text": "the",
+     "start": 25.735,
+     "end": 25.95
+    },
+    {
+     "text": "gaps",
+     "start": 25.95,
+     "end": 26.207
+    },
+    {
+     "text": "back",
+     "start": 26.207,
+     "end": 26.465
+    },
+    {
+     "text": "sooner.",
+     "start": 26.465,
+     "end": 26.808
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 27.308,
+   "end": 30.133,
+   "words": [
+    {
+     "text": "You",
+     "start": 27.308,
+     "end": 27.529
+    },
+    {
+     "text": "just",
+     "start": 27.529,
+     "end": 27.794
+    },
+    {
+     "text": "click",
+     "start": 27.794,
+     "end": 28.103
+    },
+    {
+     "text": "the",
+     "start": 28.103,
+     "end": 28.324
+    },
+    {
+     "text": "link",
+     "start": 28.324,
+     "end": 28.588
+    },
+    {
+     "text": "in",
+     "start": 28.588,
+     "end": 28.765
+    },
+    {
+     "text": "your",
+     "start": 28.765,
+     "end": 29.03
+    },
+    {
+     "text": "calendar",
+     "start": 29.03,
+     "end": 29.471
+    },
+    {
+     "text": "and",
+     "start": 29.471,
+     "end": 29.692
+    },
+    {
+     "text": "show",
+     "start": 29.692,
+     "end": 29.957
+    },
+    {
+     "text": "up.",
+     "start": 29.957,
+     "end": 30.133
+    }
+   ]
+  }
+ ]
+}

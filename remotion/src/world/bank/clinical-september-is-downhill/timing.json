@@ -1,0 +1,417 @@
+{
+ "duration": 28.034,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Myth: what you learnt in September is still there.",
+   "start": 0.15,
+   "end": 2.841,
+   "words": [
+    {
+     "text": "Myth:",
+     "start": 0.15,
+     "end": 0.39
+    },
+    {
+     "text": "what",
+     "start": 0.63,
+     "end": 0.885
+    },
+    {
+     "text": "you",
+     "start": 0.885,
+     "end": 1.098
+    },
+    {
+     "text": "learnt",
+     "start": 1.098,
+     "end": 1.438
+    },
+    {
+     "text": "in",
+     "start": 1.438,
+     "end": 1.608
+    },
+    {
+     "text": "September",
+     "start": 1.608,
+     "end": 2.075
+    },
+    {
+     "text": "is",
+     "start": 2.075,
+     "end": 2.245
+    },
+    {
+     "text": "still",
+     "start": 2.245,
+     "end": 2.543
+    },
+    {
+     "text": "there.",
+     "start": 2.543,
+     "end": 2.841
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Without review, memory drops fast.",
+   "start": 3.441,
+   "end": 5.638,
+   "words": [
+    {
+     "text": "Without",
+     "start": 3.441,
+     "end": 4.505
+    },
+    {
+     "text": "review,",
+     "start": 4.505,
+     "end": 5.451
+    },
+    {
+     "text": "memory",
+     "start": 5.511,
+     "end": 5.559
+    },
+    {
+     "text": "drops",
+     "start": 5.559,
+     "end": 5.602
+    },
+    {
+     "text": "fast.",
+     "start": 5.602,
+     "end": 5.638
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Then it levels off.",
+   "start": 6.038,
+   "end": 7.405,
+   "words": [
+    {
+     "text": "Then",
+     "start": 6.038,
+     "end": 6.395
+    },
+    {
+     "text": "it",
+     "start": 6.395,
+     "end": 6.633
+    },
+    {
+     "text": "levels",
+     "start": 6.633,
+     "end": 7.108
+    },
+    {
+     "text": "off.",
+     "start": 7.108,
+     "end": 7.405
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Each review at the right time flattens the curve.",
+   "start": 8.005,
+   "end": 10.769,
+   "words": [
+    {
+     "text": "Each",
+     "start": 8.005,
+     "end": 8.291
+    },
+    {
+     "text": "review",
+     "start": 8.291,
+     "end": 8.672
+    },
+    {
+     "text": "at",
+     "start": 8.672,
+     "end": 8.863
+    },
+    {
+     "text": "the",
+     "start": 8.863,
+     "end": 9.101
+    },
+    {
+     "text": "right",
+     "start": 9.101,
+     "end": 9.434
+    },
+    {
+     "text": "time",
+     "start": 9.434,
+     "end": 9.72
+    },
+    {
+     "text": "flattens",
+     "start": 9.72,
+     "end": 10.197
+    },
+    {
+     "text": "the",
+     "start": 10.197,
+     "end": 10.435
+    },
+    {
+     "text": "curve.",
+     "start": 10.435,
+     "end": 10.769
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Finals don't test what you learnt.",
+   "start": 11.369,
+   "end": 13.536,
+   "words": [
+    {
+     "text": "Finals",
+     "start": 11.369,
+     "end": 11.813
+    },
+    {
+     "text": "don't",
+     "start": 11.813,
+     "end": 12.147
+    },
+    {
+     "text": "test",
+     "start": 12.147,
+     "end": 12.48
+    },
+    {
+     "text": "what",
+     "start": 12.48,
+     "end": 12.814
+    },
+    {
+     "text": "you",
+     "start": 12.814,
+     "end": 13.091
+    },
+    {
+     "text": "learnt.",
+     "start": 13.091,
+     "end": 13.536
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "They test what's left.",
+   "start": 13.936,
+   "end": 15.59,
+   "words": [
+    {
+     "text": "They",
+     "start": 13.936,
+     "end": 14.333
+    },
+    {
+     "text": "test",
+     "start": 14.333,
+     "end": 14.73
+    },
+    {
+     "text": "what's",
+     "start": 14.73,
+     "end": 15.193
+    },
+    {
+     "text": "left.",
+     "start": 15.193,
+     "end": 15.59
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Offload builds your plan from your notes and exam dates.",
+   "start": 16.29,
+   "end": 19.434,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 16.29,
+     "end": 16.719
+    },
+    {
+     "text": "builds",
+     "start": 16.719,
+     "end": 17.1
+    },
+    {
+     "text": "your",
+     "start": 17.1,
+     "end": 17.386
+    },
+    {
+     "text": "plan",
+     "start": 17.386,
+     "end": 17.672
+    },
+    {
+     "text": "from",
+     "start": 17.672,
+     "end": 17.957
+    },
+    {
+     "text": "your",
+     "start": 17.957,
+     "end": 18.243
+    },
+    {
+     "text": "notes",
+     "start": 18.243,
+     "end": 18.577
+    },
+    {
+     "text": "and",
+     "start": 18.577,
+     "end": 18.815
+    },
+    {
+     "text": "exam",
+     "start": 18.815,
+     "end": 19.101
+    },
+    {
+     "text": "dates.",
+     "start": 19.101,
+     "end": 19.434
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "It tests you, and brings topics back before they fade.",
+   "start": 19.834,
+   "end": 22.809,
+   "words": [
+    {
+     "text": "It",
+     "start": 19.834,
+     "end": 20.306
+    },
+    {
+     "text": "tests",
+     "start": 20.306,
+     "end": 21.133
+    },
+    {
+     "text": "you,",
+     "start": 21.133,
+     "end": 21.724
+    },
+    {
+     "text": "and",
+     "start": 21.884,
+     "end": 21.982
+    },
+    {
+     "text": "brings",
+     "start": 21.982,
+     "end": 22.14
+    },
+    {
+     "text": "topics",
+     "start": 22.14,
+     "end": 22.298
+    },
+    {
+     "text": "back",
+     "start": 22.298,
+     "end": 22.416
+    },
+    {
+     "text": "before",
+     "start": 22.416,
+     "end": 22.573
+    },
+    {
+     "text": "they",
+     "start": 22.573,
+     "end": 22.691
+    },
+    {
+     "text": "fade.",
+     "start": 22.691,
+     "end": 22.809
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 23.209,
+   "end": 26.034,
+   "words": [
+    {
+     "text": "You",
+     "start": 23.209,
+     "end": 23.43
+    },
+    {
+     "text": "just",
+     "start": 23.43,
+     "end": 23.695
+    },
+    {
+     "text": "click",
+     "start": 23.695,
+     "end": 24.004
+    },
+    {
+     "text": "the",
+     "start": 24.004,
+     "end": 24.225
+    },
+    {
+     "text": "link",
+     "start": 24.225,
+     "end": 24.489
+    },
+    {
+     "text": "in",
+     "start": 24.489,
+     "end": 24.666
+    },
+    {
+     "text": "your",
+     "start": 24.666,
+     "end": 24.931
+    },
+    {
+     "text": "calendar",
+     "start": 24.931,
+     "end": 25.372
+    },
+    {
+     "text": "and",
+     "start": 25.372,
+     "end": 25.593
+    },
+    {
+     "text": "show",
+     "start": 25.593,
+     "end": 25.858
+    },
+    {
+     "text": "up.",
+     "start": 25.858,
+     "end": 26.034
+    }
+   ]
+  }
+ ]
+}

@@ -15,6 +15,7 @@ import { BankFilm, film } from "./bank/Film";
 import { Poster, posterDefaults, POSTER_H, POSTER_W } from "./posters/Posters";
 import { PhotoPoster, photoDefaults } from "./posters/PhotoPosters";
 import { CarouselSlide, slideDefaults } from "./posters/Carousel";
+import { Profile, profileDefaults } from "./posters/Profile";
 import { DeskIntro, LogoIntro } from "./kit/logo";
 import { SOFT_DURATION_S, SoftLaunch } from "./soft-launch/SoftLaunch";
 
@@ -38,6 +39,7 @@ export const WorldRoot: React.FC = () => (
     ))}
     <Composition id="Desk-intro" component={DeskIntro} durationInFrames={Math.ceil(4.2 * 30)} fps={30} width={1920} height={1080} />
     <Composition id="Poster" component={Poster} defaultProps={posterDefaults} durationInFrames={1} fps={30} width={POSTER_W} height={POSTER_H} />
+    <Composition id="Profile" component={Profile} defaultProps={profileDefaults} durationInFrames={1} fps={30} width={1080} height={1080} />
     <Composition id="Slide" component={CarouselSlide} defaultProps={slideDefaults} durationInFrames={1} fps={30} width={POSTER_W} height={POSTER_H} />
     <Composition id="PhotoPoster" component={PhotoPoster} defaultProps={photoDefaults} durationInFrames={1} fps={30} width={POSTER_W} height={POSTER_H} />
     <Composition id="Soft-launch" component={SoftLaunch} durationInFrames={Math.ceil(SOFT_DURATION_S * 30)} fps={30} width={1080} height={1920} />

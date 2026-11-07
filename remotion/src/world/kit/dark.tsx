@@ -1,4 +1,9 @@
-import { Audio } from "@remotion/media";
+import { Audio as MediaAudio } from "@remotion/media";
+import { createContext, useContext } from "react";
+
+/** Inside a silent copy (the blurred safe-area background), no sound plays, so nothing is heard twice. */
+export const SilentContext = createContext(false);
+export const Audio: React.FC<React.ComponentProps<typeof MediaAudio>> = (props) => (useContext(SilentContext) ? null : <MediaAudio {...props} />);
 import { loadFont } from "@remotion/fonts";
 import {
   AbsoluteFill,

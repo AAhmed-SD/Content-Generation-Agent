@@ -1,6 +1,6 @@
 # Platforms
 
-The pack builds these captions in code. Lengths are the cuts in `fillCaptions`. No caption contains a link or a price.
+No caption contains a link or a price. The agent writes the captions (see Captions below).
 
 ## Trial CTA
 
@@ -12,21 +12,37 @@ One video goes to TikTok, Instagram, Facebook, and YouTube Shorts. It is not rew
 
 Every platform gets the clean master. No platform's watermark appears on another platform. No music is named in a script.
 
+## Captions (rewritten 2026-11-07)
+
+The agent writes one caption per platform for every film (`content.captions`), from the film's script and the captions on the top Virlo videos in the account's niche. A person can edit them on the Post form. Shared rules: no link, no price, no number that is not in the film, no claim outside `product-facts.md`, no other brand or creator named, British English. The caption adds to the film; it does not repeat the voice-over.
+
 ## TikTok
 
-`{line} {note}`, cut at 220 characters. The search keyword is the account name already printed on the card. No hashtag is added.
+TikTok is searched like a search engine, so the caption carries the words a student would type.
+
+- Line 1: the hook, reworded as a statement or question with the search words in it ("medical school revision", "GCSE maths", "ADHD studying").
+- Line 2: one line that makes them comment or save: a question to answer ("which one are you?") or "save this for mock week".
+- 3 to 5 hashtags, specific before broad: the subject or exam, the audience, then one broad study tag. Never #fyp or #viral.
+- Under 300 characters.
 
 ## Instagram
 
-Three lines: the line, the note, then `#offload`. That is the only hashtag.
+- Line 1: the hook, short. Instagram cuts after about 125 characters, so it must land before the cut.
+- 2 or 3 short lines that add one useful thing the film did not say.
+- A save or share prompt: "Save this for the night before" or "Send this to your study group".
+- 3 to 5 niche hashtags at the end, always including #offload.
 
-## YouTube
+## YouTube Shorts
 
-`{niche label}: {line} {note}`, cut at 200 characters. The account name leads.
+- Title: under 70 characters, the search phrase first, plain words, no clickbait the film does not pay off.
+- Description: one or two lines on what the viewer will get, then 2 or 3 hashtags including #shorts.
 
 ## Facebook
 
-`{line} {note} Filed under {account name}.`
+Facebook's audience is older: parents, mature students and staff as well as students.
+
+- One or two conversational lines that set up the film, then a question that invites a comment.
+- At most 2 hashtags.
 
 ## First comment
 

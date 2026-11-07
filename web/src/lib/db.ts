@@ -22,8 +22,10 @@ function connect() {
     prepare: false, // the transaction pooler does not keep prepared statements
     max: process.env.VERCEL ? 1 : 5,
     idle_timeout: 20,
+    max_lifetime: 60 * 5, // recycle connections, so a socket the pooler dropped is not reused for long
     connect_timeout: 10,
-    connection: { search_path: "marketing" },
+    // a query that hangs fails after 30 s instead of holding the page for minutes
+    connection: { search_path: "marketing", statement_timeout: 30_000, idle_in_transaction_session_timeout: 30_000 },
   });
 }
 
@@ -34,7 +36,7 @@ export function db() {
 }
 
 /** True when this process can run local tools (the Mac), false on Vercel. */
-export const isLocal = () => !process.env.VERCEL;
+export const isLocal = () => !process.env.VERCEL && !process.env.RENDER && !process.env.HOSTED;
 
 /** Queue work for the Mac worker (voice, render, collectors, agent). */
 export async function queueJob(kind: string, payload: Record<string, unknown> = {}) {

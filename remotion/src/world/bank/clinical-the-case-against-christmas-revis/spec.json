@@ -1,0 +1,31 @@
+{
+ "id": "clinical-the-case-against-christmas-revis",
+ "format": "evidence",
+ "title": "THE CROWN v. THE CHRISTMAS PLAN",
+ "subject": "'I'll revise over Christmas'",
+ "exhibits": [
+  {
+   "label": "EXHIBIT A",
+   "text": "Sticky note: 'Christmas = catch up on everything.'",
+   "at": "L2"
+  },
+  {
+   "label": "EXHIBIT B",
+   "text": "The train home. Family dinner. A shift. The group chat's plans.",
+   "at": "L3"
+  },
+  {
+   "label": "EXHIBIT C",
+   "text": "A reading list, ticked at the very top only.",
+   "at": "L4"
+  }
+ ],
+ "verdict": {
+  "text": "GUILTY",
+  "at": "L5:guilty"
+ },
+ "sentence": {
+  "text": "Sentence: plan around\nChristmas, not over it.",
+  "at": "L7"
+ }
+}

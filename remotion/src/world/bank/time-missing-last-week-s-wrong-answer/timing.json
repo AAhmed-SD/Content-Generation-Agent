@@ -1,0 +1,448 @@
+{
+ "duration": 31.827,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "This is for anyone keeping their whole revision record in their head.",
+   "start": 0.15,
+   "end": 4.198,
+   "words": [
+    {
+     "text": "This",
+     "start": 0.15,
+     "end": 0.45
+    },
+    {
+     "text": "is",
+     "start": 0.45,
+     "end": 0.65
+    },
+    {
+     "text": "for",
+     "start": 0.65,
+     "end": 0.9
+    },
+    {
+     "text": "anyone",
+     "start": 0.9,
+     "end": 1.299
+    },
+    {
+     "text": "keeping",
+     "start": 1.299,
+     "end": 1.749
+    },
+    {
+     "text": "their",
+     "start": 1.749,
+     "end": 2.099
+    },
+    {
+     "text": "whole",
+     "start": 2.099,
+     "end": 2.449
+    },
+    {
+     "text": "revision",
+     "start": 2.449,
+     "end": 2.948
+    },
+    {
+     "text": "record",
+     "start": 2.948,
+     "end": 3.348
+    },
+    {
+     "text": "in",
+     "start": 3.348,
+     "end": 3.548
+    },
+    {
+     "text": "their",
+     "start": 3.548,
+     "end": 3.898
+    },
+    {
+     "text": "head.",
+     "start": 3.898,
+     "end": 4.198
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Missing: last week's wrong answer.",
+   "start": 4.698,
+   "end": 6.774,
+   "words": [
+    {
+     "text": "Missing:",
+     "start": 4.698,
+     "end": 5.168
+    },
+    {
+     "text": "last",
+     "start": 5.238,
+     "end": 5.567
+    },
+    {
+     "text": "week's",
+     "start": 5.567,
+     "end": 5.951
+    },
+    {
+     "text": "wrong",
+     "start": 5.951,
+     "end": 6.335
+    },
+    {
+     "text": "answer.",
+     "start": 6.335,
+     "end": 6.774
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Last seen: once.",
+   "start": 7.274,
+   "end": 8.758,
+   "words": [
+    {
+     "text": "Last",
+     "start": 7.274,
+     "end": 7.769
+    },
+    {
+     "text": "seen:",
+     "start": 7.769,
+     "end": 8.263
+    },
+    {
+     "text": "once.",
+     "start": 8.263,
+     "end": 8.758
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Most of us lose track. Quietly.",
+   "start": 9.258,
+   "end": 11.569,
+   "words": [
+    {
+     "text": "Most",
+     "start": 9.258,
+     "end": 9.56
+    },
+    {
+     "text": "of",
+     "start": 9.56,
+     "end": 9.761
+    },
+    {
+     "text": "us",
+     "start": 9.761,
+     "end": 9.963
+    },
+    {
+     "text": "lose",
+     "start": 9.963,
+     "end": 10.265
+    },
+    {
+     "text": "track.",
+     "start": 10.265,
+     "end": 10.618
+    },
+    {
+     "text": "Quietly.",
+     "start": 10.898,
+     "end": 11.569
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Keeping track is a job too.",
+   "start": 12.069,
+   "end": 14.035,
+   "words": [
+    {
+     "text": "Keeping",
+     "start": 12.069,
+     "end": 12.605
+    },
+    {
+     "text": "track",
+     "start": 12.605,
+     "end": 13.022
+    },
+    {
+     "text": "is",
+     "start": 13.022,
+     "end": 13.261
+    },
+    {
+     "text": "a",
+     "start": 13.261,
+     "end": 13.439
+    },
+    {
+     "text": "job",
+     "start": 13.439,
+     "end": 13.737
+    },
+    {
+     "text": "too.",
+     "start": 13.737,
+     "end": 14.035
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Nobody's head holds it all.",
+   "start": 14.435,
+   "end": 16.231,
+   "words": [
+    {
+     "text": "Nobody's",
+     "start": 14.435,
+     "end": 14.957
+    },
+    {
+     "text": "head",
+     "start": 14.957,
+     "end": 15.304
+    },
+    {
+     "text": "holds",
+     "start": 15.304,
+     "end": 15.71
+    },
+    {
+     "text": "it",
+     "start": 15.71,
+     "end": 15.942
+    },
+    {
+     "text": "all.",
+     "start": 15.942,
+     "end": 16.231
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "So hand it over.",
+   "start": 16.731,
+   "end": 18.098,
+   "words": [
+    {
+     "text": "So",
+     "start": 16.731,
+     "end": 17.005
+    },
+    {
+     "text": "hand",
+     "start": 17.005,
+     "end": 17.415
+    },
+    {
+     "text": "it",
+     "start": 17.415,
+     "end": 17.688
+    },
+    {
+     "text": "over.",
+     "start": 17.688,
+     "end": 18.098
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "Offload builds the plan from your notes and dates.",
+   "start": 18.798,
+   "end": 21.526,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 18.798,
+     "end": 19.214
+    },
+    {
+     "text": "builds",
+     "start": 19.214,
+     "end": 19.584
+    },
+    {
+     "text": "the",
+     "start": 19.584,
+     "end": 19.815
+    },
+    {
+     "text": "plan",
+     "start": 19.815,
+     "end": 20.092
+    },
+    {
+     "text": "from",
+     "start": 20.092,
+     "end": 20.37
+    },
+    {
+     "text": "your",
+     "start": 20.37,
+     "end": 20.647
+    },
+    {
+     "text": "notes",
+     "start": 20.647,
+     "end": 20.971
+    },
+    {
+     "text": "and",
+     "start": 20.971,
+     "end": 21.202
+    },
+    {
+     "text": "dates.",
+     "start": 21.202,
+     "end": 21.526
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "It keeps every attempt, and brings the misses back.",
+   "start": 22.026,
+   "end": 25.037,
+   "words": [
+    {
+     "text": "It",
+     "start": 22.026,
+     "end": 22.22
+    },
+    {
+     "text": "keeps",
+     "start": 22.22,
+     "end": 22.559
+    },
+    {
+     "text": "every",
+     "start": 22.559,
+     "end": 22.899
+    },
+    {
+     "text": "attempt,",
+     "start": 22.899,
+     "end": 23.336
+    },
+    {
+     "text": "and",
+     "start": 23.586,
+     "end": 23.812
+    },
+    {
+     "text": "brings",
+     "start": 23.812,
+     "end": 24.175
+    },
+    {
+     "text": "the",
+     "start": 24.175,
+     "end": 24.402
+    },
+    {
+     "text": "misses",
+     "start": 24.402,
+     "end": 24.765
+    },
+    {
+     "text": "back.",
+     "start": 24.765,
+     "end": 25.037
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 25.537,
+   "end": 28.362,
+   "words": [
+    {
+     "text": "You",
+     "start": 25.537,
+     "end": 25.758
+    },
+    {
+     "text": "just",
+     "start": 25.758,
+     "end": 26.023
+    },
+    {
+     "text": "click",
+     "start": 26.023,
+     "end": 26.332
+    },
+    {
+     "text": "the",
+     "start": 26.332,
+     "end": 26.552
+    },
+    {
+     "text": "link",
+     "start": 26.552,
+     "end": 26.817
+    },
+    {
+     "text": "in",
+     "start": 26.817,
+     "end": 26.994
+    },
+    {
+     "text": "your",
+     "start": 26.994,
+     "end": 27.259
+    },
+    {
+     "text": "calendar",
+     "start": 27.259,
+     "end": 27.7
+    },
+    {
+     "text": "and",
+     "start": 27.7,
+     "end": 27.921
+    },
+    {
+     "text": "show",
+     "start": 27.921,
+     "end": 28.185
+    },
+    {
+     "text": "up.",
+     "start": 28.185,
+     "end": 28.362
+    }
+   ]
+  },
+  {
+   "id": "L11",
+   "say": "Found.",
+   "start": 28.862,
+   "end": 29.827,
+   "words": [
+    {
+     "text": "Found.",
+     "start": 28.862,
+     "end": 29.827
+    }
+   ]
+  }
+ ]
+}

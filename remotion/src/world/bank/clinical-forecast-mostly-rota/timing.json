@@ -1,0 +1,428 @@
+{
+ "duration": 32.938,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Your placement week's forecast: mostly rota.",
+   "start": 0.15,
+   "end": 3.064,
+   "words": [
+    {
+     "text": "Your",
+     "start": 0.15,
+     "end": 0.445
+    },
+    {
+     "text": "placement",
+     "start": 0.445,
+     "end": 0.985
+    },
+    {
+     "text": "week's",
+     "start": 0.985,
+     "end": 1.329
+    },
+    {
+     "text": "forecast:",
+     "start": 1.329,
+     "end": 1.82
+    },
+    {
+     "text": "mostly",
+     "start": 2.05,
+     "end": 2.63
+    },
+    {
+     "text": "rota.",
+     "start": 2.63,
+     "end": 3.064
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Monday. Campus day. Sunny.",
+   "start": 3.564,
+   "end": 5.518,
+   "words": [
+    {
+     "text": "Monday.",
+     "start": 3.564,
+     "end": 4.054
+    },
+    {
+     "text": "Campus",
+     "start": 4.124,
+     "end": 4.598
+    },
+    {
+     "text": "day.",
+     "start": 4.598,
+     "end": 4.894
+    },
+    {
+     "text": "Sunny.",
+     "start": 5.004,
+     "end": 5.518
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Tuesday to Thursday. Long days. Heavy.",
+   "start": 6.018,
+   "end": 8.832,
+   "words": [
+    {
+     "text": "Tuesday",
+     "start": 6.018,
+     "end": 6.492
+    },
+    {
+     "text": "to",
+     "start": 6.492,
+     "end": 6.702
+    },
+    {
+     "text": "Thursday.",
+     "start": 6.702,
+     "end": 7.228
+    },
+    {
+     "text": "Long",
+     "start": 7.418,
+     "end": 7.813
+    },
+    {
+     "text": "days.",
+     "start": 7.813,
+     "end": 8.208
+    },
+    {
+     "text": "Heavy.",
+     "start": 8.388,
+     "end": 8.832
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Thursday, a shift overruns.",
+   "start": 9.332,
+   "end": 11.341,
+   "words": [
+    {
+     "text": "Thursday,",
+     "start": 9.332,
+     "end": 10.462
+    },
+    {
+     "text": "a",
+     "start": 10.532,
+     "end": 10.653
+    },
+    {
+     "text": "shift",
+     "start": 10.653,
+     "end": 10.937
+    },
+    {
+     "text": "overruns.",
+     "start": 10.937,
+     "end": 11.341
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Revision washed out.",
+   "start": 11.741,
+   "end": 13.263,
+   "words": [
+    {
+     "text": "Revision",
+     "start": 11.741,
+     "end": 12.403
+    },
+    {
+     "text": "washed",
+     "start": 12.403,
+     "end": 12.932
+    },
+    {
+     "text": "out.",
+     "start": 12.932,
+     "end": 13.263
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Friday's sign-off. Also somehow your evening.",
+   "start": 13.763,
+   "end": 16.687,
+   "words": [
+    {
+     "text": "Friday's",
+     "start": 13.763,
+     "end": 14.263
+    },
+    {
+     "text": "sign-off.",
+     "start": 14.263,
+     "end": 14.763
+    },
+    {
+     "text": "Also",
+     "start": 15.133,
+     "end": 15.443
+    },
+    {
+     "text": "somehow",
+     "start": 15.443,
+     "end": 15.91
+    },
+    {
+     "text": "your",
+     "start": 15.91,
+     "end": 16.22
+    },
+    {
+     "text": "evening.",
+     "start": 16.22,
+     "end": 16.687
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Offload plans revision around your rota.",
+   "start": 17.387,
+   "end": 20.125,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 17.387,
+     "end": 17.922
+    },
+    {
+     "text": "plans",
+     "start": 17.922,
+     "end": 18.339
+    },
+    {
+     "text": "revision",
+     "start": 18.339,
+     "end": 18.934
+    },
+    {
+     "text": "around",
+     "start": 18.934,
+     "end": 19.411
+    },
+    {
+     "text": "your",
+     "start": 19.411,
+     "end": 19.768
+    },
+    {
+     "text": "rota.",
+     "start": 19.768,
+     "end": 20.125
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "When a shift runs late, it moves it.",
+   "start": 20.525,
+   "end": 22.788,
+   "words": [
+    {
+     "text": "When",
+     "start": 20.525,
+     "end": 20.784
+    },
+    {
+     "text": "a",
+     "start": 20.784,
+     "end": 20.914
+    },
+    {
+     "text": "shift",
+     "start": 20.914,
+     "end": 21.216
+    },
+    {
+     "text": "runs",
+     "start": 21.216,
+     "end": 21.476
+    },
+    {
+     "text": "late,",
+     "start": 21.476,
+     "end": 21.735
+    },
+    {
+     "text": "it",
+     "start": 21.935,
+     "end": 22.162
+    },
+    {
+     "text": "moves",
+     "start": 22.162,
+     "end": 22.56
+    },
+    {
+     "text": "it.",
+     "start": 22.56,
+     "end": 22.788
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "It tests you as you go.",
+   "start": 23.288,
+   "end": 24.933,
+   "words": [
+    {
+     "text": "It",
+     "start": 23.288,
+     "end": 23.515
+    },
+    {
+     "text": "tests",
+     "start": 23.515,
+     "end": 23.912
+    },
+    {
+     "text": "you",
+     "start": 23.912,
+     "end": 24.195
+    },
+    {
+     "text": "as",
+     "start": 24.195,
+     "end": 24.422
+    },
+    {
+     "text": "you",
+     "start": 24.422,
+     "end": 24.706
+    },
+    {
+     "text": "go.",
+     "start": 24.706,
+     "end": 24.933
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "say": "And brings topics back before they fade.",
+   "start": 25.333,
+   "end": 27.613,
+   "words": [
+    {
+     "text": "And",
+     "start": 25.333,
+     "end": 25.575
+    },
+    {
+     "text": "brings",
+     "start": 25.575,
+     "end": 25.963
+    },
+    {
+     "text": "topics",
+     "start": 25.963,
+     "end": 26.352
+    },
+    {
+     "text": "back",
+     "start": 26.352,
+     "end": 26.643
+    },
+    {
+     "text": "before",
+     "start": 26.643,
+     "end": 27.031
+    },
+    {
+     "text": "they",
+     "start": 27.031,
+     "end": 27.322
+    },
+    {
+     "text": "fade.",
+     "start": 27.322,
+     "end": 27.613
+    }
+   ]
+  },
+  {
+   "id": "L11",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 28.113,
+   "end": 30.937,
+   "words": [
+    {
+     "text": "You",
+     "start": 28.113,
+     "end": 28.333
+    },
+    {
+     "text": "just",
+     "start": 28.333,
+     "end": 28.598
+    },
+    {
+     "text": "click",
+     "start": 28.598,
+     "end": 28.907
+    },
+    {
+     "text": "the",
+     "start": 28.907,
+     "end": 29.128
+    },
+    {
+     "text": "link",
+     "start": 29.128,
+     "end": 29.393
+    },
+    {
+     "text": "in",
+     "start": 29.393,
+     "end": 29.569
+    },
+    {
+     "text": "your",
+     "start": 29.569,
+     "end": 29.834
+    },
+    {
+     "text": "calendar",
+     "start": 29.834,
+     "end": 30.275
+    },
+    {
+     "text": "and",
+     "start": 30.275,
+     "end": 30.496
+    },
+    {
+     "text": "show",
+     "start": 30.496,
+     "end": 30.761
+    },
+    {
+     "text": "up.",
+     "start": 30.761,
+     "end": 30.938
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "id": "gcse-science-blurting",
+ "format": "science",
+ "title": "How blurting actually works",
+ "beats": [
+  {
+   "kind": "blurt",
+   "at": "L2",
+   "topic": "Cell biology",
+   "recalled": [
+    {
+     "text": "Nucleus",
+     "at": "L3:nucleus"
+    },
+    {
+     "text": "Mitochondria",
+     "at": "L3:mitochondria"
+    },
+    {
+     "text": "Cell membrane",
+     "at": "L3:membrane"
+    }
+   ],
+   "checkAt": "L4:check",
+   "missed": [
+    {
+     "text": "Ribosomes",
+     "at": "L5:ribosomes"
+    },
+    {
+     "text": "Cell wall",
+     "at": "L5:wall"
+    }
+   ]
+  },
+  {
+   "kind": "bars",
+   "at": "L7",
+   "title": "A week later, what's still there",
+   "bars": [
+    {
+     "label": "Going over notes",
+     "height": 0.42,
+     "at": "L7:going",
+     "tone": "weak"
+    },
+    {
+     "label": "Testing yourself",
+     "height": 0.78,
+     "at": "L7:testing",
+     "tone": "good"
+    }
+   ]
+  },
+  {
+   "kind": "curve",
+   "at": "L8",
+   "curve": "spaced",
+   "xLabel": "Time",
+   "yLabel": "Memory",
+   "labels": {
+    "a": "Tested once",
+    "b": "Tests spaced out"
+   }
+  },
+  {
+   "kind": "steps",
+   "at": "L9",
+   "title": "With Offload",
+   "steps": [
+    {
+     "text": "Plans the tests from your notes",
+     "at": "L9:plans"
+    },
+    {
+     "text": "Brings back what you missed",
+     "at": "L10:brings"
+    },
+    {
+     "text": "One click in your calendar",
+     "at": "L11:click"
+    }
+   ]
+  }
+ ],
+ "source": {
+  "text": "Roediger & Karpicke, 2006 (testing) \u00b7 Cepeda et al., 2006 (spacing)",
+  "at": "L7:testing"
+ }
+}

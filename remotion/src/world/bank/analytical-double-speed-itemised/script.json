@@ -1,0 +1,71 @@
+{
+ "id": "bank/analytical-double-speed-itemised",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "The receipt for one lecture at double speed.",
+   "after": 0.5
+  },
+  {
+   "id": "L2",
+   "say": "Lecture: watched.",
+   "after": 0.4
+  },
+  {
+   "id": "L3",
+   "say": "Method: nodded along.",
+   "after": 0.4
+  },
+  {
+   "id": "L4",
+   "say": "Feeling: very productive.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "Problem sheet: still open.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "Doing it from blank: not included.",
+   "after": 0.6
+  },
+  {
+   "id": "L7",
+   "say": "Double speed. Half the method.",
+   "after": 0.7
+  },
+  {
+   "id": "L8",
+   "say": "Offload plans your revision from your notes and deadlines.",
+   "after": 0.5
+  },
+  {
+   "id": "L9",
+   "say": "And moves it when the week fills up.",
+   "after": 0.5
+  },
+  {
+   "id": "L10",
+   "say": "It tests you from blank.",
+   "after": 0.4
+  },
+  {
+   "id": "L11",
+   "say": "And brings methods back before they fade.",
+   "after": 0.5
+  },
+  {
+   "id": "L12",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1
+  }
+ ]
+}

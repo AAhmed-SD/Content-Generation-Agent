@@ -18,7 +18,7 @@ def trim(a, rate, th=0.01):
 
 def voice_of(k, spec):
     """A voice name, or a blend like "af_heart*0.7+af_bella*0.3"."""
-    v = spec.get("voice", "bm_george")
+    v = spec.get("voice", "bm_fable*0.65+bm_george*0.35")
     if "+" not in v and "*" not in v:
         return v
     style = None

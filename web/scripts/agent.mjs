@@ -12,6 +12,9 @@ import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import postgres from "postgres";
+import { ourNumbers } from "./our-numbers.mjs";
+import { checkBudget } from "./budget.mjs";
+import { storageReady, store } from "./storage.mjs";
 
 const web = process.cwd();
 const root = path.join(web, "..");
@@ -27,9 +30,10 @@ const env = Object.fromEntries(
 const get = (k) => process.env[k] || env[k];
 const sql = postgres({ host: get("MARKETING_DB_HOST"), port: Number(get("MARKETING_DB_PORT") || 6543), database: "postgres", username: get("MARKETING_DB_USER"), password: get("MARKETING_DB_PASSWORD"), ssl: "require", prepare: false, max: 1, connection: { search_path: "marketing" } });
 
-const VOICE = { voice: "bm_george", lang: "en-gb", speed: 0.94, gap: 0.42, takes: "line", master: true };
+const VOICE = { voice: "bm_fable*0.65+bm_george*0.35", lang: "en-gb", speed: 0.98, gap: 0.38, takes: "line", master: true };
 const SILENT = new Set(["pov", "chat"]); // no narrator: timing comes from spec.duration
-const RETIRED = /colou?r(-| )?cod|colou?ring (it )?in|re-?read/i;
+// retired themes (brand/scripting.md): colour-coding, rereading, and the paused delay jokes
+const RETIRED = /colou?r(-| )?cod|colou?ring (it )?in|re-?read|start(ing)? later|getting ready to start|afternoon disappeared|\bdelayed\b/i;
 const PREFIX = { clinical: "clinical", analytical: "analytical", gcsealevel: "gcse", mentalhealth: "time" };
 const read = (f) => (fs.existsSync(f) ? fs.readFileSync(f, "utf8") : "");
 const brand = (f) => read(path.join(root, f));
@@ -38,7 +42,7 @@ const brand = (f) => read(path.join(root, f));
 
 /** The `export type ...` statement for a format, from the kit files (or the scene Spec in Film.tsx). */
 function formatType(format) {
-  const files = ["kit.tsx", "kit2.tsx", "kit3.tsx", "kit4.tsx"].map((f) => path.join(remotion, "src", "world", "formats", f));
+  const files = ["kit.tsx", "kit2.tsx", "kit3.tsx", "kit4.tsx", "kit5.tsx"].map((f) => path.join(remotion, "src", "world", "formats", f));
   const film = path.join(remotion, "src", "world", "bank", "Film.tsx");
   const grab = (src, start) => {
     const lines = src.split("\n");
@@ -140,8 +144,10 @@ function check(draft, ex, format) {
 // ---------- Claude ----------
 
 const PRICE = { "claude-opus-5-5": [4, 20, 5, 0.2], "claude-sonnet-5-5": [2, 10, 2.5, 0.1] };
-async function claude({ stable, system, messages, schema, maxTokens = 16000 }) {
-  const model = get("ANTHROPIC_MODEL_HEAVY") || get("ANTHROPIC_MODEL") || "claude-opus-5-5";
+async function claude({ stable, system, messages, schema, maxTokens = 16000, light = false, task = "agent-script" }) {
+  await checkBudget(sql, 0.05);
+  // light: Sonnet, half the price, for reviewing and captions; heavy: Opus, for writing
+  const model = light ? get("ANTHROPIC_MODEL_LIGHT") || "claude-sonnet-5-5" : get("ANTHROPIC_MODEL_HEAVY") || get("ANTHROPIC_MODEL") || "claude-opus-5-5";
   const res = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: { "content-type": "application/json", "x-api-key": get("ANTHROPIC_API_KEY"), "anthropic-version": "2023-06-01" },
@@ -152,15 +158,20 @@ async function claude({ stable, system, messages, schema, maxTokens = 16000 }) {
       system: [{ type: "text", text: stable, cache_control: { type: "ephemeral" } }, { type: "text", text: system }],
       messages,
       output_config: { format: { type: "json_schema", schema } },
-    }),
+    }, (_k, v) => (typeof v === "string" ? v.toWellFormed() : v)),
   });
   const json = await res.json();
   if (!res.ok) throw new Error(json.error?.message || `Claude returned ${res.status}`);
   const u = json.usage ?? {};
   const p = PRICE[model];
   const usd = p ? ((u.input_tokens ?? 0) * p[0] + (u.output_tokens ?? 0) * p[1] + (u.cache_creation_input_tokens ?? 0) * p[2] + (u.cache_read_input_tokens ?? 0) * p[3]) / 1e6 : null;
-  await sql`insert into runs (kind, detail) values ('claude', ${sql.json({ task: "agent-script", model, input: u.input_tokens ?? 0, output: u.output_tokens ?? 0, write5m: u.cache_creation_input_tokens ?? 0, write1h: 0, read: u.cache_read_input_tokens ?? 0, usd: usd && Math.round(usd * 10000) / 10000 })})`;
+  await sql`insert into runs (kind, detail) values ('claude', ${sql.json({ task, model, input: u.input_tokens ?? 0, output: u.output_tokens ?? 0, write5m: u.cache_creation_input_tokens ?? 0, write1h: 0, read: u.cache_read_input_tokens ?? 0, usd: usd && Math.round(usd * 10000) / 10000 })})`;
   if (json.stop_reason === "refusal") throw new Error("Claude declined to write this film.");
+  // cut off (thinking used the room): once, with double the room, rather than failing the whole film
+  if (json.stop_reason === "max_tokens") {
+    if (maxTokens >= 48000) throw new Error(`Claude ran out of room (${task}).`);
+    return claude({ stable, system, messages, schema, maxTokens: maxTokens * 2, light, task });
+  }
   const text = (json.content ?? []).filter((b) => b.type === "text").map((b) => b.text).join("");
   return JSON.parse(text);
 }
@@ -186,7 +197,7 @@ async function setStatus(id, status, extra = {}) {
   await sql`update content set status = ${status}, updated_at = now(),
     bank_id = coalesce(${extra.bank_id ?? null}, bank_id), media_url = coalesce(${extra.media_url ?? null}, media_url),
     script = coalesce(${extra.script ? sql.json(extra.script) : null}, script), spec = coalesce(${extra.spec ? sql.json(extra.spec) : null}, spec)
-    where id = ${id}`;
+    where id = ${id} and status <> 'rejected'`; // rejected while it was being made: leave it rejected
 }
 
 function slug(row) {
@@ -196,26 +207,166 @@ function slug(row) {
   return id;
 }
 
-export async function makeFilm(contentId, note = "") {
+// ---------- the script editor ----------
+
+const REVIEW = {
+  type: "object",
+  properties: {
+    cold: {
+      type: "object",
+      description: "What a first-time viewer, who has never heard of Offload, takes from one watch",
+      properties: { about: { type: "string" }, do: { type: "string" }, offload: { type: "string" } },
+      required: ["about", "do", "offload"],
+      additionalProperties: false,
+    },
+    scores: {
+      type: "object",
+      description: "1 (bad) to 5 (excellent)",
+      properties: {
+        hook: { type: "integer", description: "Clear and stopping in under two seconds; matches the hook pattern" },
+        truth: { type: "integer", description: "Opens on the truth and stays specific to this audience; within the first two lines it says out loud that this is about studying (revision, homework, coursework, an exam) and assumes nothing; on the time account it names the condition and explains the executive function behind the struggle" },
+        one_idea: { type: "integer", description: "One idea, one takeaway, no 'and also'" },
+        clarity: { type: "integer", description: "Every line a complete, concrete thought; no riddles; follows on one listen; and the picture shows what the words say (a 'packed week' or 'only free day' looks packed, chaos looks chaotic). Read the spec to judge it." },
+        shape: { type: "integer", description: "Follows the shape's beats; something changes every 2-3 seconds" },
+        useful: { type: "integer", description: "The viewer gets something useful before the product" },
+        explain: { type: "integer", description: "Offload explained in plain, shown beats that answer this film's truth; only real claims" },
+        ending: { type: "integer", description: "A clean ending that fits the style" },
+      },
+      required: ["hook", "truth", "one_idea", "clarity", "shape", "useful", "explain", "ending"],
+      additionalProperties: false,
+    },
+    contradictions: {
+      type: "array",
+      items: { type: "string" },
+      description:
+        "Go through every line and check each claim against the spec, element by element: words like only, every, all, none, empty, busy, free, first, last; counts; days, times and subjects. List each place the screen contradicts the voice (e.g. the voice says 'your only free day' or 'your only study session' while the spec already shows other free days or other study blocks). Quote the line and name the spec element. Only list a contradiction a first-time viewer would notice on one watch (a wrong count, a false 'only', a day or subject that does not match, chaos over a calm screen); ignore wording nuances such as 'first days' against 'day one', and put style points in fixes instead. Empty if the picture backs up the words.",
+    },
+    fixes: { type: "array", items: { type: "string" }, description: "Specific line-level fixes, quoting the line, most important first; empty if none" },
+    verdict: { type: "string", enum: ["ship", "rewrite"] },
+  },
+  required: ["cold", "scores", "contradictions", "fixes", "verdict"],
+  additionalProperties: false,
+};
+
+/** Read the script as a first-time viewer would, score it, and say ship or rewrite. Ship needs 32/40, no score under 3, and no contradiction between the voice and the picture. */
+export async function review({ row, lead, draft }) {
+  const stable = [
+    "You are the script editor for Offload's short films. You are strict and specific. You read each script twice: first as a first-time viewer on a phone who has never heard of Offload and half-listens once, then as an editor against the house rules. You never rewrite the script yourself; you send precise notes.",
+    "--- brand/scripting.md ---\n" + brand("brand/scripting.md"),
+    "--- brand/hook-styles.md ---\n" + brand("brand/hook-styles.md"),
+    "--- brand/safety.md ---\n" + brand("brand/safety.md"),
+    "--- brand/product-facts.md (claims allowed) ---\n" + brand("brand/product-facts.md").slice(0, 24000),
+  ].join("\n\n");
+  const v = await claude({
+    light: true,
+    task: "script-editor",
+    stable,
+    system: "Review the script.",
+    schema: REVIEW,
+    maxTokens: 16000,
+    messages: [
+      {
+        role: "user",
+        content: [
+          `Account: ${row.niche}. Format: ${row.format}. Hook style: ${row.hook_style}.`,
+          lead.truth ? `The truth it must open on: ${lead.truth.text}` : "",
+          lead.shape ? `The shape (${lead.shape.id}, ${lead.shape.name}): ${lead.shape.beats.map((b) => `${b.at}: ${b.job}`).join(" | ")}` : "",
+          lead.pattern ? `The hook pattern: ${lead.pattern.pattern}` : "",
+          `The takeaway the film intends: ${row.theme}`,
+          `The script, line by line (seconds of pause after each):\n${draft.lines.map((l) => `${l.id} (${l.after}s): ${l.say}`).join("\n")}`,
+          `On screen (from the spec): ${JSON.stringify(draft.spec).slice(0, 6000)}`,
+        ]
+          .filter(Boolean)
+          .join("\n\n"),
+      },
+    ],
+  });
+  const total = Object.values(v.scores).reduce((a, b) => a + b, 0);
+  const contradictions = v.contradictions ?? [];
+  const ok = total >= 32 && Object.values(v.scores).every((x) => x >= 3) && contradictions.length === 0;
+  // contradictions lead the notes, so the writer fixes them first
+  return { ...v, contradictions, fixes: [...contradictions.map((c) => `Contradiction: ${c}`), ...(v.fixes ?? [])], total, verdict: ok ? "ship" : "rewrite" };
+}
+
+// ---------- captions ----------
+
+const CAPTIONS = {
+  type: "object",
+  properties: {
+    tiktok: { type: "string" },
+    instagram: { type: "string" },
+    youtube_title: { type: "string" },
+    youtube: { type: "string", description: "The YouTube Shorts description" },
+    facebook: { type: "string" },
+  },
+  required: ["tiktok", "instagram", "youtube_title", "youtube", "facebook"],
+  additionalProperties: false,
+};
+
+/** One caption per platform, from the film and the captions on this niche's top Virlo videos (brand/platforms.md). */
+export async function writeCaptions(row, lines) {
+  const top = await sql`select hook, views from virlo_items where kind = 'video' and niche = ${row.niche} and coalesce(hook, '') <> ''
+    order by score desc nulls last limit 12`;
+  const caps = await claude({
+    light: true,
+    task: "captions",
+    stable: ["You write social captions for Offload's short films. Follow brand/platforms.md exactly.", "--- brand/platforms.md ---\n" + brand("brand/platforms.md"), "--- brand/safety.md ---\n" + brand("brand/safety.md"), "--- brand/product-facts.md (claims allowed) ---\n" + brand("brand/product-facts.md").slice(0, 16000)].join("\n\n"),
+    system: "Write the captions. The trial call to action is not written yet: leave it out entirely, with no placeholder, no brackets and no 'link in bio'.",
+    schema: CAPTIONS,
+    maxTokens: 12000,
+    messages: [
+      {
+        role: "user",
+        content: `Account: ${row.niche}. Takeaway: ${row.theme}.\nThe film's voice-over:\n${lines.map((l) => l.say).join("\n")}\n\nCaptions on the top videos in this niche right now (learn what makes them work: the search words, the comment and save prompts, the hashtags; never copy them, never name anyone):\n${top.map((t) => `- (${t.views ?? "?"} views) ${String(t.hook).slice(0, 220)}`).join("\n") || "(none yet)"}`,
+      },
+    ],
+  });
+  await sql`update content set captions = ${sql.json(caps)} where id = ${row.id}`;
+  return caps;
+}
+
+export async function makeFilm(contentId, note = "", { renderOnly = false } = {}) {
   const [row] = await sql`select * from content where id = ${contentId}`;
   if (!row) throw new Error(`No content ${contentId}`);
+  if (row.status === "rejected" || row.status === "proposed") return { id: contentId, skipped: `it was ${row.status} before it was made` };
+  // "Render anyway" on a held film: no writing, just voice and render what is there
+  if (renderOnly && row.spec) return renderFilm(row, { lines: row.script?.lines ?? [], spec: Object.fromEntries(Object.entries(row.spec).filter(([k]) => k !== "id")), notes: "" }, SILENT.has(row.format || "scene"));
   const format = row.format || "scene";
   const ex = example(format);
   const type = formatType(format);
   const silent = SILENT.has(format);
   const stable = [
     "You write finished short vertical films for Offload, a UK study app, as data for a Remotion template. Follow the brand files exactly: one natural male narrator, the pacing rules, the three-beat Offload explainer, the retired themes, safety rules, and claims only from product-facts. Never put a number on screen or in a line that is not already in the proposal (durations, percentages, counts, prices); clock times and days are fine. Set a positive tone (\"ok\") on rows that show the good outcome.",
+    "--- brand/pillars.md ---\n" + brand("brand/pillars.md"),
     "--- brand/scripting.md ---\n" + brand("brand/scripting.md"),
     "--- brand/hook-styles.md ---\n" + brand("brand/hook-styles.md"),
+    "--- brand/lessons.md (what we have learnt from our own films; follow it) ---\n" + (brand("brand/lessons.md") || "(no lessons yet)"),
     "--- brand/safety.md ---\n" + brand("brand/safety.md"),
     "--- brand/product-facts.md (claims allowed) ---\n" + brand("brand/product-facts.md").slice(0, 24000),
     `--- How time refs work ---\nEvery "at" in a voiced spec is a ref to a spoken word: "L2" (start of line 2), "L2$" (end of line 2), "L2:word" (when that word is said), "L2:word#2" (its second time), "L2:word@-0.2" (0.2 s before it). The word must appear in that line's text exactly (case and punctuation ignored). Silent formats (pov, chat) use seconds instead.`,
   ].join("\n\n");
+  const ours = await ourNumbers(sql, [row.niche], { top: 4 });
+  // the script lead: the truth it opens on, the shape it follows, the trend hook pattern
+  const [truth] = row.truth_id ? await sql`select * from truths where id = ${row.truth_id}` : [];
+  const [shape] = row.shape ? await sql`select * from shapes where id = ${row.shape}` : [];
+  const [pattern] = row.hook_pattern_id ? await sql`select * from hook_patterns where id = ${row.hook_pattern_id}` : [];
+  const lead = { truth, shape, pattern };
   const ask = [
     `Write the film for this accepted proposal.`,
-    `Proposal: ${JSON.stringify({ account: row.niche, format, hook_style: row.hook_style, theme: row.theme, title: row.title, openers: row.openers, look: row.look, storyboard: row.storyboard })}`,
+    `Proposal: ${JSON.stringify({ account: row.niche, pillar: row.pillar, format, hook_style: row.hook_style, theme: row.theme, title: row.title, openers: row.openers, look: row.look, storyboard: row.storyboard })}`,
+    truth ? `The truth this film opens on and stays on (the viewer must recognise it as theirs): ${truth.text}${truth.offload && truth.offload !== "none" ? `\nHow Offload answers it: ${truth.offload}` : ""}` : "",
+    shape ? `Follow this shape, beat by beat (${shape.id}, ${shape.name}: ${shape.purpose}):\n${shape.beats.map((b) => `- ${b.at}: ${b.job}. Voice: ${b.voice}. Screen: ${b.screen}`).join("\n")}` : "",
+    pattern ? `Hook A follows this trend pattern: ${pattern.pattern} (${pattern.why})` : "",
+    `Every claim in a line must be true of the picture you build: if a line says "only", "every", "empty" or "busy", or names a count, a day, a time or a subject, the spec must show exactly that. Say what is specifically lost or changed (for example "Saturday was the only slot for pharmacology"), not a general claim the screen contradicts.`,
+    `Before writing, fix the takeaway in one sentence (the proposal's theme: ${row.theme}). Every line serves it. Follow "Explaining Offload" and "Delivery" in scripting.md.`,
     `Use hook A as line 1. ${silent ? "This format has no narrator: leave lines empty and time everything in seconds." : "Keep every line under about ten words where possible, with after pauses of 0.4 to 1.0 seconds, and end on the three-beat Offload explainer."}`,
     note ? `The person asked for this change: ${note}` : "",
+    // a remake edits the current cut instead of starting over, so good work is kept
+    note && row.script?.lines?.length && row.spec
+      ? `This is a remake. Here is the current film. Change only what the person asked for and anything that change forces; keep every other line, block and timing as it is.\nCurrent lines:\n${JSON.stringify(row.script.lines, null, 1)}\nCurrent spec:\n${JSON.stringify(Object.fromEntries(Object.entries(row.spec).filter(([k]) => k !== "id")), null, 1)}`
+      : "",
+    `Plan the picture before the words: decide what is on screen in each beat (which blocks, cards or rows, and what changes), then write lines that describe that picture and nothing else.`,
+    ours ? `How this account's own posts have done (for choices of pacing, opener and look only; never put these numbers in the film):\n${ours}` : "",
     `The format's TypeScript type:\n${type}\n\nAn existing film in this format to copy the shape of (spec.json):\n${JSON.stringify(ex?.spec ?? {}, null, 1)}`,
     ex?.script ? `Its script.json lines:\n${JSON.stringify(ex.script.lines, null, 1)}` : "",
     `Put the spec in spec_json as a JSON string. Do not include an "id" field.`,
@@ -226,25 +377,50 @@ export async function makeFilm(contentId, note = "") {
   const messages = [{ role: "user", content: ask }];
   let draft;
   let errs = [];
-  for (let attempt = 0; attempt < 3; attempt++) {
-    const out = await claude({ stable, system: "Write the film as data.", messages, schema: SCHEMA });
-    let spec;
-    try {
-      spec = JSON.parse(out.spec_json);
-    } catch {
-      spec = null;
+  let verdict = null;
+  // write, check, then the editor reads it cold; a script under the bar gets one rewrite (cost control: two passes)
+  const PASSES = 2;
+  for (let pass = 0; pass < PASSES; pass++) {
+    for (let attempt = 0; attempt < 2; attempt++) {
+      const out = await claude({ stable, system: "Write the film as data.", messages, schema: SCHEMA });
+      let spec;
+      try {
+        spec = JSON.parse(out.spec_json);
+      } catch {
+        spec = null;
+      }
+      draft = { lines: out.lines ?? [], spec, notes: out.notes, raw: out };
+      errs = spec ? check(draft, ex, format) : ["spec_json is not valid JSON"];
+      if (!errs.length) break;
+      messages.push({ role: "assistant", content: JSON.stringify(out) }, { role: "user", content: `Fix these problems and return the whole film again:\n- ${errs.join("\n- ")}` });
     }
-    draft = { lines: out.lines ?? [], spec, notes: out.notes };
-    errs = spec ? check(draft, ex, format) : ["spec_json is not valid JSON"];
-    if (!errs.length) break;
-    messages.push({ role: "assistant", content: JSON.stringify(out) }, { role: "user", content: `Fix these problems and return the whole film again:\n- ${errs.join("\n- ")}` });
+    if (errs.length) break;
+    if (silent) break;
+    verdict = await review({ row, lead, draft });
+    await sql`update content set review = ${sql.json({ ...verdict, pass: pass + 1, at: new Date().toISOString() })} where id = ${contentId}`;
+    if (verdict.verdict === "ship" || pass === PASSES - 1) break;
+    messages.push(
+      { role: "assistant", content: JSON.stringify(draft.raw) },
+      { role: "user", content: `The script editor read this cold and sent it back (score ${verdict.total}/40). Rewrite the whole film to fix every note, keeping the same truth, shape and takeaway:\n- ${verdict.fixes.join("\n- ")}\n\nWhat a first-time viewer took from it: about: ${verdict.cold.about}; do: ${verdict.cold.do}; Offload: ${verdict.cold.offload}` },
+    );
   }
   if (errs.length) {
-    await sql`update content set status = 'accepted', updated_at = now() where id = ${contentId}`;
+    await sql`update content set status = 'accepted', updated_at = now() where id = ${contentId} and status <> 'rejected'`;
     throw new Error(`The film did not pass its checks: ${errs.slice(0, 5).join("; ")}`);
   }
 
-  // write the film
+  // still under the bar after its rewrite: hold it for a person instead of spending a render on it
+  if (verdict && verdict.verdict !== "ship") {
+    await sql`update content set status = 'held', updated_at = now(), script = ${silent ? null : sql.json({ lines: draft.lines })}, spec = ${sql.json(draft.spec)}
+      where id = ${contentId} and status <> 'rejected'`;
+    return { id: row.bank_id ?? contentId, held: true, notes: `Held at ${verdict.total}/40` };
+  }
+  return renderFilm(row, draft, silent);
+}
+
+/** Write the film's files, voice it, render it, write its captions. */
+async function renderFilm(row, draft, silent) {
+  const contentId = row.id;
   const id = row.bank_id && fs.existsSync(path.join(bank, row.bank_id)) ? row.bank_id : slug(row);
   fs.mkdirSync(path.join(bank, id), { recursive: true });
   const spec = { id, ...draft.spec };
@@ -264,6 +440,9 @@ export async function makeFilm(contentId, note = "") {
   const render = spawnSync("npx", ["remotion", "render", "src/world/index.ts", `Bank-${id}`, out, "--log=error"], { cwd: remotion, encoding: "utf8" });
   if (render.status !== 0 || !fs.existsSync(path.join(remotion, out))) throw new Error(`Rendering failed: ${(render.stderr || render.stdout).slice(-600)}`);
   await setStatus(contentId, "rendered", { media_url: `bank/offload-${id}.mp4` });
+  // a copy in storage, so the hosted desk can play it
+  if (storageReady(get)) await store(get, path.join(remotion, out), `bank/offload-${id}.mp4`).catch((e) => console.error(`storage: ${e.message}`));
+  await writeCaptions(row, draft.lines).catch((e) => console.error(`captions: ${e.message}`));
   await sql`update content set stamps = '{}' where id = ${contentId}`; // a new cut needs fresh stamps
   return { id, notes: draft.notes };
 }
@@ -278,8 +457,8 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve("scripts/a
     process.exit(1);
   }
   try {
-    const r = await makeFilm(id, note);
-    console.log("made", r.id, r.notes ? `— ${r.notes}` : "");
+    const r = await makeFilm(id, note, { renderOnly: process.argv.includes("--render") });
+    console.log(r.held ? "held" : "made", r.id, r.notes ? `— ${r.notes}` : "");
   } catch (e) {
     console.error("failed:", e.message);
     process.exitCode = 1;
@@ -288,4 +467,4 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve("scripts/a
   }
 }
 
-export { sql, formatType, example, check };
+export { sql, get, formatType, example, check };

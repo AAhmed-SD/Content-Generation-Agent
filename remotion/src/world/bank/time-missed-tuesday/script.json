@@ -1,0 +1,56 @@
+{
+ "id": "bank/time-missed-tuesday",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "POV: it's dark at half four and you missed Tuesday.",
+   "after": 0.5
+  },
+  {
+   "id": "L2",
+   "say": "Now Wednesday has two days in it.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "Usually, that's when the whole plan goes.",
+   "after": 0.6
+  },
+  {
+   "id": "L4",
+   "say": "Not this time.",
+   "after": 0.6
+  },
+  {
+   "id": "L5",
+   "say": "Tuesday happened. The plan just stepped round it.",
+   "after": 0.7
+  },
+  {
+   "id": "L6",
+   "say": "Offload plans from your notes and exam dates.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "When a day goes wrong, it moves the plan.",
+   "after": 0.4
+  },
+  {
+   "id": "L8",
+   "say": "It tests you, and brings topics back before you forget.",
+   "after": 0.5
+  },
+  {
+   "id": "L9",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1
+  }
+ ]
+}

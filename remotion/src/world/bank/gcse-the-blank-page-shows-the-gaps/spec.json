@@ -1,0 +1,309 @@
+{
+ "id": "gcse-the-blank-page-shows-the-gaps",
+ "end": {
+  "style": "corner"
+ },
+ "hi": {
+  "wrong": "problem",
+  "october": "problem",
+  "reminding": "problem",
+  "rebuild": "problem",
+  "moved": "blue",
+  "zero": "blue",
+  "blank": "problem",
+  "gaps": "problem",
+  "spec": "blue",
+  "sooner": "blue",
+  "show": "blue",
+  "avoidance": "problem",
+  "exam": "problem",
+  "uncomfortable": "blue",
+  "moves": "blue",
+  "tests": "blue"
+ },
+ "scenes": [
+  {
+   "type": "week",
+   "at": "L1@-0.05",
+   "title": "Photosynthesis. Blank page.",
+   "days": [
+    "Equation",
+    "Factors",
+    "Glucose",
+    "Light"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Blank",
+     "at": "L1:blank",
+     "outline": "L1:know"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L2",
+   "title": "Memory only",
+   "days": [
+    "Equation",
+    "Factors",
+    "Glucose",
+    "Light"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Written",
+     "tone": "kraft",
+     "at": "L2:write",
+     "outline": "L2:remember"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "Written",
+     "tone": "kraft",
+     "at": "L2:remember",
+     "outline": "L3:memory"
+    },
+    {
+     "day": 2,
+     "slot": 1,
+     "label": "More",
+     "tone": "kraft",
+     "at": "L3:memory",
+     "outline": "L3:only"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L4",
+   "title": "Now check it",
+   "days": [
+    "Equation",
+    "Factors",
+    "Glucose",
+    "Light"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "✓",
+     "tone": "ok",
+     "at": "L4:check",
+     "outline": "L4:spec"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "✓",
+     "tone": "ok",
+     "at": "L4:spec",
+     "outline": "L4:spec@0.2"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L5",
+   "title": "The gaps are your revision",
+   "days": [
+    "Equation",
+    "Factors",
+    "Glucose",
+    "Light"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "✓",
+     "tone": "ok",
+     "at": "L5",
+     "outline": "L5:your"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "✓",
+     "tone": "ok",
+     "at": "L5",
+     "outline": "L5:your@0.1"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "Gap",
+     "at": "L5:gaps",
+     "outline": "L5:revision"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Gap",
+     "at": "L5:gaps@0.2",
+     "outline": "L6:wrote"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L7@-0.05",
+   "title": "Your week",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "School",
+     "tone": "kraft",
+     "at": "L7:plan",
+     "outline": "L7:notes"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "Photosynthesis",
+     "at": "L7:notes",
+     "outline": "L7:exam"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Biology mock",
+     "tone": "kraft",
+     "at": "L7:dates",
+     "outline": "L7$"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L8",
+   "title": "Tested as you go",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "Blurt",
+     "at": "L8:blurting",
+     "outline": "L8:feynman"
+    },
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "Feynman",
+     "at": "L8:feynman",
+     "outline": "L8:flashcards"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "Flashcards",
+     "at": "L8:flashcards",
+     "outline": "L8$"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "Exam-style",
+     "at": "L9:questions",
+     "outline": "L9:gaps"
+    },
+    {
+     "day": 4,
+     "slot": 0,
+     "label": "Gaps again",
+     "tone": "ok",
+     "at": "L9:sooner",
+     "outline": "L9$"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L10",
+   "title": "Friday, 5pm",
+   "days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "blocks": [
+    {
+     "day": 4,
+     "slot": 0,
+     "label": "Session open",
+     "tone": "ok",
+     "at": "L10:click",
+     "outline": "L10:click@0.2"
+    }
+   ]
+  },
+  {
+   "type": "week",
+   "at": "L10:show",
+   "title": "Photosynthesis. No gaps.",
+   "days": [
+    "Equation",
+    "Factors",
+    "Glucose",
+    "Light"
+   ],
+   "blocks": [
+    {
+     "day": 1,
+     "slot": 0,
+     "label": "✓",
+     "tone": "ok",
+     "at": "L10:show",
+     "outline": "L10:show@0.3"
+    },
+    {
+     "day": 3,
+     "slot": 0,
+     "label": "✓",
+     "tone": "ok",
+     "at": "L10:show@0.1",
+     "outline": "L10:show@0.4"
+    },
+    {
+     "day": 0,
+     "slot": 0,
+     "label": "✓",
+     "tone": "ok",
+     "at": "L10:show@0.2",
+     "outline": "L10:show@0.5"
+    },
+    {
+     "day": 2,
+     "slot": 0,
+     "label": "✓",
+     "tone": "ok",
+     "at": "L10:show@0.3",
+     "outline": "L10:show@0.6"
+    }
+   ]
+  }
+ ]
+}

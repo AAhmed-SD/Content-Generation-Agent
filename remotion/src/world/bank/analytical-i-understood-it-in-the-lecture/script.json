@@ -1,0 +1,66 @@
+{
+ "id": "bank/analytical-i-understood-it-in-the-lecture",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Expectation: I understood it in the lecture.",
+   "after": 0.4
+  },
+  {
+   "id": "L2",
+   "say": "Reality: a blank page and a hovering pen.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "Expectation: I'll recognise it in the exam.",
+   "after": 0.4
+  },
+  {
+   "id": "L4",
+   "say": "Reality: the first line won't come.",
+   "after": 0.6
+  },
+  {
+   "id": "L5",
+   "say": "Following isn't starting.",
+   "after": 0.6
+  },
+  {
+   "id": "L6",
+   "say": "So close everything.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "Write the method from blank.",
+   "after": 0.4
+  },
+  {
+   "id": "L8",
+   "say": "Then check the gaps.",
+   "after": 0.7
+  },
+  {
+   "id": "L9",
+   "say": "Offload plans that practice from your notes and exam dates.",
+   "after": 0.4
+  },
+  {
+   "id": "L10",
+   "say": "It tests you from blank, and brings the gaps back.",
+   "after": 0.5
+  },
+  {
+   "id": "L11",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "id": "bank/gcse-science-blurting",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Blurting works. But only half of it.",
+   "after": 0.6
+  },
+  {
+   "id": "L2",
+   "say": "Close your notes. Write everything you remember about cells.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "Nucleus. Mitochondria. Cell membrane.",
+   "after": 0.6
+  },
+  {
+   "id": "L4",
+   "say": "Feels like a lot. Now check it against your notes.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "Ribosomes. Cell wall. Gone.",
+   "after": 0.7
+  },
+  {
+   "id": "L6",
+   "say": "The gaps are the point. That's what you revise next.",
+   "after": 0.7
+  },
+  {
+   "id": "L7",
+   "say": "Testing yourself beats going over your notes, even when it feels harder.",
+   "after": 0.6
+  },
+  {
+   "id": "L8",
+   "say": "And spacing the tests out stops it fading.",
+   "after": 0.6
+  },
+  {
+   "id": "L9",
+   "say": "Offload plans those tests from your notes and exam dates.",
+   "after": 0.4
+  },
+  {
+   "id": "L10",
+   "say": "It brings back what you missed, before you forget it.",
+   "after": 0.4
+  },
+  {
+   "id": "L11",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1.0
+  }
+ ]
+}

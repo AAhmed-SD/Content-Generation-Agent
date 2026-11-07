@@ -1,0 +1,38 @@
+{
+ "id": "gcse-the-sunday-session-myth",
+ "format": "myth-fact",
+ "rounds": [
+  {
+   "myth": "Sunday: do ALL of it.",
+   "fact": "Little and often, with testing, beats one long cram.",
+   "mythAt": "L1",
+   "factAt": "L4"
+  }
+ ],
+ "reveal": {
+  "at": "L5",
+  "head": "Test yourself.\nThen fill the gaps.",
+  "title": "Your blurt · Photosynthesis",
+  "rows": [
+   {
+    "text": "Happens in the chloroplasts"
+   },
+   {
+    "text": "Chlorophyll absorbs light energy"
+   },
+   {
+    "text": "Carbon dioxide + water → glucose + oxygen",
+    "gap": "L5:memory"
+   },
+   {
+    "text": "Limiting factors: light, temperature",
+    "gap": "L5$"
+   }
+  ]
+ },
+ "loop": {
+  "at": "L10",
+  "myth": "Still saving it all for Sunday?",
+  "fact": "Little and often."
+ }
+}

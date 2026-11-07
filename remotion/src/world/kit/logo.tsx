@@ -109,8 +109,9 @@ export const LogoSting: React.FC<{
   const brush = (id: string) => (
     <mask id={id} maskUnits="userSpaceOnUse" x={-50} y={-50} width={logo.w + 100} height={logo.h + 100}>
       <g filter={`url(#${id}-rough)`}>
-        <path d="M128 72 C 220 58, 330 84, 500 64" stroke="white" strokeWidth={56} strokeLinecap="round" fill="none" pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - paint} />
-        <path d="M128 108 C 240 120, 350 96, 500 112" stroke="white" strokeWidth={56} strokeLinecap="round" fill="none" pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - paint2} />
+        {/* The gap is longer than the path, so no zero-length dash (and its round cap) sits at the far end before the stroke gets there. */}
+        {paint > 0 && <path d="M128 72 C 220 58, 330 84, 500 64" stroke="white" strokeWidth={56} strokeLinecap="round" fill="none" pathLength={1} strokeDasharray="1 2" strokeDashoffset={1 - paint} />}
+        {paint2 > 0 && <path d="M128 108 C 240 120, 350 96, 500 112" stroke="white" strokeWidth={56} strokeLinecap="round" fill="none" pathLength={1} strokeDasharray="1 2" strokeDashoffset={1 - paint2} />}
       </g>
     </mask>
   );

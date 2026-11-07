@@ -3,6 +3,7 @@ import { loadFont as loadAnton } from "@remotion/google-fonts/Anton";
 import { loadFont as loadLcd } from "@remotion/google-fonts/VT323";
 import { tokens } from "../../tokens";
 import { alpha } from "../kit/dark";
+import logo from "../logo.json";
 import { SANS, SCRIPT, SERIF } from "../../story/fonts";
 
 /**
@@ -30,9 +31,23 @@ export const Br: React.FC<{ text: string }> = ({ text }) => (
     ))}
   </>
 );
-export const Mark: React.FC<{ size?: number; colour?: string; dot?: boolean }> = ({ size = 64, colour = tokens.mark, dot = true }) => (
-  <span style={{ fontFamily: SCRIPT, fontWeight: 700, fontSize: size, color: colour, letterSpacing: "-0.01em" }}>offload{dot ? "." : ""}</span>
-);
+// the real logo, traced from the logo file: the dot, then the wordmark (decided 2026-11-07; it used to be typed in a script font)
+const LD = logo.dot;
+const LX0 = LD.cx - LD.r - 4;
+const LY0 = Math.min(LD.cy - LD.r, logo.bbox[2]) - 4;
+const LW = logo.bbox[1] - LX0 + 4;
+const LH = Math.max(LD.cy + LD.r, logo.bbox[3]) - LY0 + 4;
+/** The Offload logo. `size` is roughly the old type size, so existing layouts keep their scale. */
+export const Mark: React.FC<{ size?: number; colour?: string; dot?: boolean }> = ({ size = 64, colour = tokens.ink, dot = true }) => {
+  const h = size * 0.62;
+  const dotColour = colour === tokens.white || colour === tokens.mark ? colour : tokens.mark;
+  return (
+    <svg width={(h * LW) / LH} height={h} viewBox={`${LX0} ${LY0} ${LW} ${LH}`} style={{ display: "inline-block", verticalAlign: "middle", overflow: "visible" }}>
+      {dot ? <circle cx={LD.cx} cy={LD.cy} r={LD.r} fill={dotColour} /> : null}
+      <path d={logo.text} fill={colour} fillRule="evenodd" />
+    </svg>
+  );
+};
 export const Handle: React.FC<{ text: string; colour?: string; top?: number }> = ({ text, colour = tokens.quiet, top = 48 }) => (
   <div style={{ position: "absolute", left: 0, right: 0, top, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: 22, letterSpacing: "0.18em", textTransform: "uppercase", color: colour }}>{text}</div>
 );

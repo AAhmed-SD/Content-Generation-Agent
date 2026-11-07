@@ -47,6 +47,9 @@ export type CallArgs = {
 export async function claudeText(args: CallArgs) {
   const key = process.env.ANTHROPIC_API_KEY?.trim();
   if (!key) throw new Error("ANTHROPIC_API_KEY is empty.");
+  // never past today's cap (Settings)
+  const { checkBudget } = await import("../../scripts/budget.mjs");
+  await checkBudget(db(), args.tier === "heavy" ? 0.3 : 0.05);
   const m = model(args.tier);
   const system = [
     ...(args.stable ? [{ type: "text", text: args.stable, cache_control: args.cacheTtl === "1h" ? { type: "ephemeral", ttl: "1h" } : { type: "ephemeral" } }] : []),
@@ -63,7 +66,7 @@ export async function claudeText(args: CallArgs) {
       system,
       messages: args.messages,
       ...(args.schema ? { output_config: { format: { type: "json_schema", schema: args.schema } } } : {}),
-    }),
+    }, (_k, v) => (typeof v === "string" ? v.toWellFormed() : v)),
   });
   if (!response.ok || !response.body) {
     const body = await response.text().catch(() => "");

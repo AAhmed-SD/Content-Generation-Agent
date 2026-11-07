@@ -1,0 +1,568 @@
+{
+ "duration": 39.488,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Blurting works. But only half of it.",
+   "start": 0.15,
+   "end": 2.464,
+   "words": [
+    {
+     "text": "Blurting",
+     "start": 0.15,
+     "end": 0.674
+    },
+    {
+     "text": "works.",
+     "start": 0.674,
+     "end": 1.04
+    },
+    {
+     "text": "But",
+     "start": 1.18,
+     "end": 1.437
+    },
+    {
+     "text": "only",
+     "start": 1.437,
+     "end": 1.745
+    },
+    {
+     "text": "half",
+     "start": 1.745,
+     "end": 2.053
+    },
+    {
+     "text": "of",
+     "start": 2.053,
+     "end": 2.259
+    },
+    {
+     "text": "it.",
+     "start": 2.259,
+     "end": 2.464
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Close your notes. Write everything you remember about cells.",
+   "start": 3.064,
+   "end": 6.285,
+   "words": [
+    {
+     "text": "Close",
+     "start": 3.064,
+     "end": 3.379
+    },
+    {
+     "text": "your",
+     "start": 3.379,
+     "end": 3.649
+    },
+    {
+     "text": "notes.",
+     "start": 3.649,
+     "end": 3.964
+    },
+    {
+     "text": "Write",
+     "start": 4.194,
+     "end": 4.499
+    },
+    {
+     "text": "everything",
+     "start": 4.499,
+     "end": 5.022
+    },
+    {
+     "text": "you",
+     "start": 5.022,
+     "end": 5.24
+    },
+    {
+     "text": "remember",
+     "start": 5.24,
+     "end": 5.675
+    },
+    {
+     "text": "about",
+     "start": 5.675,
+     "end": 5.98
+    },
+    {
+     "text": "cells.",
+     "start": 5.98,
+     "end": 6.285
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Nucleus. Mitochondria. Cell membrane.",
+   "start": 6.785,
+   "end": 9.507,
+   "words": [
+    {
+     "text": "Nucleus.",
+     "start": 6.785,
+     "end": 7.375
+    },
+    {
+     "text": "Mitochondria.",
+     "start": 7.445,
+     "end": 8.325
+    },
+    {
+     "text": "Cell",
+     "start": 8.555,
+     "end": 8.912
+    },
+    {
+     "text": "membrane.",
+     "start": 8.912,
+     "end": 9.507
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Feels like a lot. Now check it against your notes.",
+   "start": 10.107,
+   "end": 12.96,
+   "words": [
+    {
+     "text": "Feels",
+     "start": 10.107,
+     "end": 10.45
+    },
+    {
+     "text": "like",
+     "start": 10.45,
+     "end": 10.744
+    },
+    {
+     "text": "a",
+     "start": 10.744,
+     "end": 10.891
+    },
+    {
+     "text": "lot.",
+     "start": 10.891,
+     "end": 11.137
+    },
+    {
+     "text": "Now",
+     "start": 11.357,
+     "end": 11.568
+    },
+    {
+     "text": "check",
+     "start": 11.568,
+     "end": 11.863
+    },
+    {
+     "text": "it",
+     "start": 11.863,
+     "end": 12.032
+    },
+    {
+     "text": "against",
+     "start": 12.032,
+     "end": 12.412
+    },
+    {
+     "text": "your",
+     "start": 12.412,
+     "end": 12.665
+    },
+    {
+     "text": "notes.",
+     "start": 12.665,
+     "end": 12.96
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Ribosomes. Cell wall. Gone.",
+   "start": 13.46,
+   "end": 15.611,
+   "words": [
+    {
+     "text": "Ribosomes.",
+     "start": 13.46,
+     "end": 14.19
+    },
+    {
+     "text": "Cell",
+     "start": 14.25,
+     "end": 14.575
+    },
+    {
+     "text": "wall.",
+     "start": 14.575,
+     "end": 14.9
+    },
+    {
+     "text": "Gone.",
+     "start": 15.13,
+     "end": 15.611
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "The gaps are the point. That's what you revise next.",
+   "start": 16.311,
+   "end": 19.278,
+   "words": [
+    {
+     "text": "The",
+     "start": 16.311,
+     "end": 16.517
+    },
+    {
+     "text": "gaps",
+     "start": 16.517,
+     "end": 16.763
+    },
+    {
+     "text": "are",
+     "start": 16.763,
+     "end": 16.969
+    },
+    {
+     "text": "the",
+     "start": 16.969,
+     "end": 17.174
+    },
+    {
+     "text": "point.",
+     "start": 17.174,
+     "end": 17.462
+    },
+    {
+     "text": "That's",
+     "start": 17.741,
+     "end": 18.078
+    },
+    {
+     "text": "what",
+     "start": 18.078,
+     "end": 18.366
+    },
+    {
+     "text": "you",
+     "start": 18.366,
+     "end": 18.606
+    },
+    {
+     "text": "revise",
+     "start": 18.606,
+     "end": 18.99
+    },
+    {
+     "text": "next.",
+     "start": 18.99,
+     "end": 19.278
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "Testing yourself beats going over your notes, even when it feels harder.",
+   "start": 19.978,
+   "end": 23.824,
+   "words": [
+    {
+     "text": "Testing",
+     "start": 19.978,
+     "end": 20.378
+    },
+    {
+     "text": "yourself",
+     "start": 20.378,
+     "end": 20.822
+    },
+    {
+     "text": "beats",
+     "start": 20.822,
+     "end": 21.133
+    },
+    {
+     "text": "going",
+     "start": 21.133,
+     "end": 21.444
+    },
+    {
+     "text": "over",
+     "start": 21.444,
+     "end": 21.711
+    },
+    {
+     "text": "your",
+     "start": 21.711,
+     "end": 21.977
+    },
+    {
+     "text": "notes,",
+     "start": 21.977,
+     "end": 22.288
+    },
+    {
+     "text": "even",
+     "start": 22.538,
+     "end": 22.787
+    },
+    {
+     "text": "when",
+     "start": 22.787,
+     "end": 23.036
+    },
+    {
+     "text": "it",
+     "start": 23.036,
+     "end": 23.202
+    },
+    {
+     "text": "feels",
+     "start": 23.202,
+     "end": 23.492
+    },
+    {
+     "text": "harder.",
+     "start": 23.492,
+     "end": 23.824
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "And spacing the tests out stops it fading.",
+   "start": 24.424,
+   "end": 26.986,
+   "words": [
+    {
+     "text": "And",
+     "start": 24.424,
+     "end": 24.68
+    },
+    {
+     "text": "spacing",
+     "start": 24.68,
+     "end": 25.141
+    },
+    {
+     "text": "the",
+     "start": 25.141,
+     "end": 25.397
+    },
+    {
+     "text": "tests",
+     "start": 25.397,
+     "end": 25.756
+    },
+    {
+     "text": "out",
+     "start": 25.756,
+     "end": 26.012
+    },
+    {
+     "text": "stops",
+     "start": 26.012,
+     "end": 26.371
+    },
+    {
+     "text": "it",
+     "start": 26.371,
+     "end": 26.576
+    },
+    {
+     "text": "fading.",
+     "start": 26.576,
+     "end": 26.986
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "Offload plans those tests from your notes and exam dates.",
+   "start": 27.586,
+   "end": 31.146,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 27.586,
+     "end": 28.064
+    },
+    {
+     "text": "plans",
+     "start": 28.064,
+     "end": 28.436
+    },
+    {
+     "text": "those",
+     "start": 28.436,
+     "end": 28.808
+    },
+    {
+     "text": "tests",
+     "start": 28.808,
+     "end": 29.18
+    },
+    {
+     "text": "from",
+     "start": 29.18,
+     "end": 29.499
+    },
+    {
+     "text": "your",
+     "start": 29.499,
+     "end": 29.817
+    },
+    {
+     "text": "notes",
+     "start": 29.817,
+     "end": 30.189
+    },
+    {
+     "text": "and",
+     "start": 30.189,
+     "end": 30.455
+    },
+    {
+     "text": "exam",
+     "start": 30.455,
+     "end": 30.774
+    },
+    {
+     "text": "dates.",
+     "start": 30.774,
+     "end": 31.146
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "say": "It brings back what you missed, before you forget it.",
+   "start": 31.546,
+   "end": 34.264,
+   "words": [
+    {
+     "text": "It",
+     "start": 31.546,
+     "end": 31.701
+    },
+    {
+     "text": "brings",
+     "start": 31.701,
+     "end": 32.013
+    },
+    {
+     "text": "back",
+     "start": 32.013,
+     "end": 32.246
+    },
+    {
+     "text": "what",
+     "start": 32.246,
+     "end": 32.48
+    },
+    {
+     "text": "you",
+     "start": 32.48,
+     "end": 32.674
+    },
+    {
+     "text": "missed,",
+     "start": 32.674,
+     "end": 32.986
+    },
+    {
+     "text": "before",
+     "start": 33.226,
+     "end": 33.558
+    },
+    {
+     "text": "you",
+     "start": 33.558,
+     "end": 33.765
+    },
+    {
+     "text": "forget",
+     "start": 33.765,
+     "end": 34.098
+    },
+    {
+     "text": "it.",
+     "start": 34.098,
+     "end": 34.264
+    }
+   ]
+  },
+  {
+   "id": "L11",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 34.664,
+   "end": 37.488,
+   "words": [
+    {
+     "text": "You",
+     "start": 34.664,
+     "end": 34.884
+    },
+    {
+     "text": "just",
+     "start": 34.884,
+     "end": 35.149
+    },
+    {
+     "text": "click",
+     "start": 35.149,
+     "end": 35.458
+    },
+    {
+     "text": "the",
+     "start": 35.458,
+     "end": 35.679
+    },
+    {
+     "text": "link",
+     "start": 35.679,
+     "end": 35.944
+    },
+    {
+     "text": "in",
+     "start": 35.944,
+     "end": 36.12
+    },
+    {
+     "text": "your",
+     "start": 36.12,
+     "end": 36.385
+    },
+    {
+     "text": "calendar",
+     "start": 36.385,
+     "end": 36.826
+    },
+    {
+     "text": "and",
+     "start": 36.826,
+     "end": 37.047
+    },
+    {
+     "text": "show",
+     "start": 37.047,
+     "end": 37.312
+    },
+    {
+     "text": "up.",
+     "start": 37.312,
+     "end": 37.488
+    }
+   ]
+  }
+ ]
+}

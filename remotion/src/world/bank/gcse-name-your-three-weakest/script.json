@@ -1,0 +1,61 @@
+{
+ "id": "bank/gcse-name-your-three-weakest",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Name your three weakest topics. Three seconds.",
+   "after": 0.6
+  },
+  {
+   "id": "L2",
+   "say": "Be honest. Was that a guess?",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "Everyone does this. It feels like you know.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "But a feeling isn't evidence.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "Your mock is the first honest answer.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "The questions you skipped? That's your list.",
+   "after": 0.7
+  },
+  {
+   "id": "L7",
+   "say": "Offload builds your plan from your notes and exam dates.",
+   "after": 0.5
+  },
+  {
+   "id": "L8",
+   "say": "It tests you as you go, and keeps every attempt.",
+   "after": 0.5
+  },
+  {
+   "id": "L9",
+   "say": "Weak topics come back sooner.",
+   "after": 0.5
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1
+  }
+ ]
+}

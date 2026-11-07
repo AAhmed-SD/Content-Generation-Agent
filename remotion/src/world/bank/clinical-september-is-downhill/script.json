@@ -1,0 +1,56 @@
+{
+ "id": "bank/clinical-september-is-downhill",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Myth: what you learnt in September is still there.",
+   "after": 0.6
+  },
+  {
+   "id": "L2",
+   "say": "Without review, memory drops fast.",
+   "after": 0.4
+  },
+  {
+   "id": "L3",
+   "say": "Then it levels off.",
+   "after": 0.6
+  },
+  {
+   "id": "L4",
+   "say": "Each review at the right time flattens the curve.",
+   "after": 0.6
+  },
+  {
+   "id": "L5",
+   "say": "Finals don't test what you learnt.",
+   "after": 0.4
+  },
+  {
+   "id": "L6",
+   "say": "They test what's left.",
+   "after": 0.7
+  },
+  {
+   "id": "L7",
+   "say": "Offload builds your plan from your notes and exam dates.",
+   "after": 0.4
+  },
+  {
+   "id": "L8",
+   "say": "It tests you, and brings topics back before they fade.",
+   "after": 0.4
+  },
+  {
+   "id": "L9",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1
+  }
+ ]
+}

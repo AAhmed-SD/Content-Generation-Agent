@@ -1,0 +1,112 @@
+{
+ "id": "analytical-error-method-not-found",
+ "format": "dialog",
+ "dialogs": [
+  {
+   "title": "Q3",
+   "message": "Method not found. Last seen: Tuesday.",
+   "buttons": [
+    "Cancel",
+    "Retry"
+   ],
+   "press": 1,
+   "at": "L1:error"
+  },
+  {
+   "title": "Tuesday",
+   "message": "Model solution open. Every step visible.",
+   "buttons": [
+    "OK"
+   ],
+   "press": 0,
+   "at": "L2:solution"
+  },
+  {
+   "title": "Q3",
+   "message": "Model solution closed. Page blank.",
+   "buttons": [
+    "Cancel",
+    "Begin"
+   ],
+   "press": 1,
+   "at": "L3:blank"
+  },
+  {
+   "title": "Memory",
+   "message": "Recognised ≠ recalled.",
+   "buttons": [
+    "OK"
+   ],
+   "press": 0,
+   "at": "L5:knowing"
+  },
+  {
+   "title": "Q3",
+   "message": "Start without the solution?",
+   "buttons": [
+    "Not yet",
+    "Start"
+   ],
+   "press": 1,
+   "at": "L6:blank"
+  }
+ ],
+ "final": {
+  "text": "A plan from your notes.\nTested as you go.\nIn your calendar.",
+  "at": "L7"
+ },
+ "cascade": {
+  "at": "L4:step",
+  "every": 0.11,
+  "items": [
+   {
+    "title": "Q3",
+    "message": "First step unknown."
+   },
+   {
+    "title": "Q3",
+    "message": "Cannot start from blank."
+   },
+   {
+    "title": "Method",
+    "message": "Where does it start?"
+   },
+   {
+    "title": "Q3",
+    "message": "Retry?"
+   },
+   {
+    "title": "Notes",
+    "message": "Looked familiar. Not found."
+   },
+   {
+    "title": "Q3",
+    "message": "First step unknown."
+   },
+   {
+    "title": "Method",
+    "message": "Not responding."
+   },
+   {
+    "title": "Q3",
+    "message": "Cannot start from blank."
+   },
+   {
+    "title": "Q3",
+    "message": "Retry?"
+   },
+   {
+    "title": "Method",
+    "message": "Where does it start?"
+   },
+   {
+    "title": "Q3",
+    "message": "Retry?"
+   },
+   {
+    "title": "Q3",
+    "message": "Retry?"
+   }
+  ]
+ }
+}

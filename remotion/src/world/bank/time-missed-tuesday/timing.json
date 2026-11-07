@@ -1,0 +1,442 @@
+{
+ "duration": 28.882,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "POV: it's dark at half four and you missed Tuesday.",
+   "start": 0.15,
+   "end": 2.979,
+   "words": [
+    {
+     "text": "POV:",
+     "start": 0.15,
+     "end": 1.74
+    },
+    {
+     "text": "it's",
+     "start": 1.84,
+     "end": 1.946
+    },
+    {
+     "text": "dark",
+     "start": 1.946,
+     "end": 2.072
+    },
+    {
+     "text": "at",
+     "start": 2.072,
+     "end": 2.157
+    },
+    {
+     "text": "half",
+     "start": 2.157,
+     "end": 2.283
+    },
+    {
+     "text": "four",
+     "start": 2.283,
+     "end": 2.41
+    },
+    {
+     "text": "and",
+     "start": 2.41,
+     "end": 2.515
+    },
+    {
+     "text": "you",
+     "start": 2.515,
+     "end": 2.621
+    },
+    {
+     "text": "missed",
+     "start": 2.621,
+     "end": 2.79
+    },
+    {
+     "text": "Tuesday.",
+     "start": 2.79,
+     "end": 2.979
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Now Wednesday has two days in it.",
+   "start": 3.479,
+   "end": 5.626,
+   "words": [
+    {
+     "text": "Now",
+     "start": 3.479,
+     "end": 3.748
+    },
+    {
+     "text": "Wednesday",
+     "start": 3.748,
+     "end": 4.338
+    },
+    {
+     "text": "has",
+     "start": 4.338,
+     "end": 4.606
+    },
+    {
+     "text": "two",
+     "start": 4.606,
+     "end": 4.874
+    },
+    {
+     "text": "days",
+     "start": 4.874,
+     "end": 5.196
+    },
+    {
+     "text": "in",
+     "start": 5.196,
+     "end": 5.411
+    },
+    {
+     "text": "it.",
+     "start": 5.411,
+     "end": 5.626
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Usually, that's when the whole plan goes.",
+   "start": 6.126,
+   "end": 8.521,
+   "words": [
+    {
+     "text": "Usually,",
+     "start": 6.126,
+     "end": 6.696
+    },
+    {
+     "text": "that's",
+     "start": 6.816,
+     "end": 7.138
+    },
+    {
+     "text": "when",
+     "start": 7.138,
+     "end": 7.415
+    },
+    {
+     "text": "the",
+     "start": 7.415,
+     "end": 7.646
+    },
+    {
+     "text": "whole",
+     "start": 7.646,
+     "end": 7.968
+    },
+    {
+     "text": "plan",
+     "start": 7.968,
+     "end": 8.245
+    },
+    {
+     "text": "goes.",
+     "start": 8.245,
+     "end": 8.521
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Not this time.",
+   "start": 9.122,
+   "end": 10.576,
+   "words": [
+    {
+     "text": "Not",
+     "start": 9.122,
+     "end": 9.549
+    },
+    {
+     "text": "this",
+     "start": 9.549,
+     "end": 10.062
+    },
+    {
+     "text": "time.",
+     "start": 10.062,
+     "end": 10.576
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Tuesday happened. The plan just stepped round it.",
+   "start": 11.176,
+   "end": 13.937,
+   "words": [
+    {
+     "text": "Tuesday",
+     "start": 11.176,
+     "end": 11.611
+    },
+    {
+     "text": "happened.",
+     "start": 11.611,
+     "end": 12.096
+    },
+    {
+     "text": "The",
+     "start": 12.296,
+     "end": 12.517
+    },
+    {
+     "text": "plan",
+     "start": 12.517,
+     "end": 12.784
+    },
+    {
+     "text": "just",
+     "start": 12.784,
+     "end": 13.05
+    },
+    {
+     "text": "stepped",
+     "start": 13.05,
+     "end": 13.449
+    },
+    {
+     "text": "round",
+     "start": 13.449,
+     "end": 13.76
+    },
+    {
+     "text": "it.",
+     "start": 13.76,
+     "end": 13.937
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload plans from your notes and exam dates.",
+   "start": 14.637,
+   "end": 17.506,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 14.637,
+     "end": 15.124
+    },
+    {
+     "text": "plans",
+     "start": 15.124,
+     "end": 15.503
+    },
+    {
+     "text": "from",
+     "start": 15.503,
+     "end": 15.828
+    },
+    {
+     "text": "your",
+     "start": 15.828,
+     "end": 16.153
+    },
+    {
+     "text": "notes",
+     "start": 16.153,
+     "end": 16.532
+    },
+    {
+     "text": "and",
+     "start": 16.532,
+     "end": 16.803
+    },
+    {
+     "text": "exam",
+     "start": 16.803,
+     "end": 17.127
+    },
+    {
+     "text": "dates.",
+     "start": 17.127,
+     "end": 17.506
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "When a day goes wrong, it moves the plan.",
+   "start": 17.906,
+   "end": 20.143,
+   "words": [
+    {
+     "text": "When",
+     "start": 17.906,
+     "end": 18.133
+    },
+    {
+     "text": "a",
+     "start": 18.133,
+     "end": 18.246
+    },
+    {
+     "text": "day",
+     "start": 18.246,
+     "end": 18.435
+    },
+    {
+     "text": "goes",
+     "start": 18.435,
+     "end": 18.662
+    },
+    {
+     "text": "wrong,",
+     "start": 18.662,
+     "end": 18.926
+    },
+    {
+     "text": "it",
+     "start": 19.056,
+     "end": 19.254
+    },
+    {
+     "text": "moves",
+     "start": 19.254,
+     "end": 19.6
+    },
+    {
+     "text": "the",
+     "start": 19.6,
+     "end": 19.847
+    },
+    {
+     "text": "plan.",
+     "start": 19.847,
+     "end": 20.143
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "It tests you, and brings topics back before you forget.",
+   "start": 20.543,
+   "end": 23.557,
+   "words": [
+    {
+     "text": "It",
+     "start": 20.543,
+     "end": 20.728
+    },
+    {
+     "text": "tests",
+     "start": 20.728,
+     "end": 21.052
+    },
+    {
+     "text": "you,",
+     "start": 21.052,
+     "end": 21.283
+    },
+    {
+     "text": "and",
+     "start": 21.373,
+     "end": 21.601
+    },
+    {
+     "text": "brings",
+     "start": 21.601,
+     "end": 21.965
+    },
+    {
+     "text": "topics",
+     "start": 21.965,
+     "end": 22.329
+    },
+    {
+     "text": "back",
+     "start": 22.329,
+     "end": 22.602
+    },
+    {
+     "text": "before",
+     "start": 22.602,
+     "end": 22.966
+    },
+    {
+     "text": "you",
+     "start": 22.966,
+     "end": 23.193
+    },
+    {
+     "text": "forget.",
+     "start": 23.193,
+     "end": 23.557
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 24.057,
+   "end": 26.882,
+   "words": [
+    {
+     "text": "You",
+     "start": 24.057,
+     "end": 24.278
+    },
+    {
+     "text": "just",
+     "start": 24.278,
+     "end": 24.543
+    },
+    {
+     "text": "click",
+     "start": 24.543,
+     "end": 24.851
+    },
+    {
+     "text": "the",
+     "start": 24.851,
+     "end": 25.072
+    },
+    {
+     "text": "link",
+     "start": 25.072,
+     "end": 25.337
+    },
+    {
+     "text": "in",
+     "start": 25.337,
+     "end": 25.514
+    },
+    {
+     "text": "your",
+     "start": 25.514,
+     "end": 25.778
+    },
+    {
+     "text": "calendar",
+     "start": 25.778,
+     "end": 26.22
+    },
+    {
+     "text": "and",
+     "start": 26.22,
+     "end": 26.44
+    },
+    {
+     "text": "show",
+     "start": 26.44,
+     "end": 26.705
+    },
+    {
+     "text": "up.",
+     "start": 26.705,
+     "end": 26.882
+    }
+   ]
+  }
+ ]
+}

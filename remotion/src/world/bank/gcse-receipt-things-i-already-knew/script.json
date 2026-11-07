@@ -1,0 +1,71 @@
+{
+ "id": "bank/gcse-receipt-things-i-already-knew",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "I always started with the topic I already knew.",
+   "after": 0.5
+  },
+  {
+   "id": "L2",
+   "say": "Felt brilliant. Very productive.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "Favourite topic. Three times over.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "The easy flashcards. Forty of them.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "Then the bit I avoided.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "The past-paper question I skipped. Zero.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "The topic from the mock. Also zero.",
+   "after": 0.6
+  },
+  {
+   "id": "L8",
+   "say": "Be honest. Yours looks the same.",
+   "after": 0.5
+  },
+  {
+   "id": "L9",
+   "say": "Comfortable isn't the same as useful.",
+   "after": 0.7
+  },
+  {
+   "id": "L10",
+   "say": "Offload builds your plan from your notes and exam dates.",
+   "after": 0.5
+  },
+  {
+   "id": "L11",
+   "say": "It tests you, and brings weak topics back sooner.",
+   "after": 0.5
+  },
+  {
+   "id": "L12",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1
+  }
+ ]
+}

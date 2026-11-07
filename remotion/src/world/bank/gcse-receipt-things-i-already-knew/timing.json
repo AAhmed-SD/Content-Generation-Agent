@@ -1,0 +1,521 @@
+{
+ "duration": 37.383,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "I always started with the topic I already knew.",
+   "start": 0.15,
+   "end": 3.018,
+   "words": [
+    {
+     "text": "I",
+     "start": 0.15,
+     "end": 0.304
+    },
+    {
+     "text": "always",
+     "start": 0.304,
+     "end": 0.713
+    },
+    {
+     "text": "started",
+     "start": 0.713,
+     "end": 1.174
+    },
+    {
+     "text": "with",
+     "start": 1.174,
+     "end": 1.481
+    },
+    {
+     "text": "the",
+     "start": 1.481,
+     "end": 1.737
+    },
+    {
+     "text": "topic",
+     "start": 1.737,
+     "end": 2.096
+    },
+    {
+     "text": "I",
+     "start": 2.096,
+     "end": 2.249
+    },
+    {
+     "text": "already",
+     "start": 2.249,
+     "end": 2.71
+    },
+    {
+     "text": "knew.",
+     "start": 2.71,
+     "end": 3.018
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Felt brilliant. Very productive.",
+   "start": 3.518,
+   "end": 5.648,
+   "words": [
+    {
+     "text": "Felt",
+     "start": 3.518,
+     "end": 4.072
+    },
+    {
+     "text": "brilliant.",
+     "start": 4.072,
+     "end": 5.088
+    },
+    {
+     "text": "Very",
+     "start": 5.198,
+     "end": 5.348
+    },
+    {
+     "text": "productive.",
+     "start": 5.348,
+     "end": 5.648
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "Favourite topic. Three times over.",
+   "start": 6.148,
+   "end": 8.348,
+   "words": [
+    {
+     "text": "Favourite",
+     "start": 6.148,
+     "end": 6.68
+    },
+    {
+     "text": "topic.",
+     "start": 6.68,
+     "end": 7.018
+    },
+    {
+     "text": "Three",
+     "start": 7.288,
+     "end": 7.659
+    },
+    {
+     "text": "times",
+     "start": 7.659,
+     "end": 8.03
+    },
+    {
+     "text": "over.",
+     "start": 8.03,
+     "end": 8.348
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "The easy flashcards. Forty of them.",
+   "start": 8.848,
+   "end": 11.259,
+   "words": [
+    {
+     "text": "The",
+     "start": 8.848,
+     "end": 9.14
+    },
+    {
+     "text": "easy",
+     "start": 9.14,
+     "end": 9.489
+    },
+    {
+     "text": "flashcards.",
+     "start": 9.489,
+     "end": 10.188
+    },
+    {
+     "text": "Forty",
+     "start": 10.448,
+     "end": 10.782
+    },
+    {
+     "text": "of",
+     "start": 10.782,
+     "end": 10.973
+    },
+    {
+     "text": "them.",
+     "start": 10.973,
+     "end": 11.259
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Then the bit I avoided.",
+   "start": 11.759,
+   "end": 13.507,
+   "words": [
+    {
+     "text": "Then",
+     "start": 11.759,
+     "end": 12.134
+    },
+    {
+     "text": "the",
+     "start": 12.134,
+     "end": 12.446
+    },
+    {
+     "text": "bit",
+     "start": 12.446,
+     "end": 12.758
+    },
+    {
+     "text": "I",
+     "start": 12.758,
+     "end": 12.945
+    },
+    {
+     "text": "avoided.",
+     "start": 12.945,
+     "end": 13.507
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "The past-paper question I skipped. Zero.",
+   "start": 14.007,
+   "end": 16.919,
+   "words": [
+    {
+     "text": "The",
+     "start": 14.007,
+     "end": 14.254
+    },
+    {
+     "text": "past-paper",
+     "start": 14.254,
+     "end": 14.798
+    },
+    {
+     "text": "question",
+     "start": 14.798,
+     "end": 15.293
+    },
+    {
+     "text": "I",
+     "start": 15.293,
+     "end": 15.441
+    },
+    {
+     "text": "skipped.",
+     "start": 15.441,
+     "end": 15.887
+    },
+    {
+     "text": "Zero.",
+     "start": 16.237,
+     "end": 16.919
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "The topic from the mock. Also zero.",
+   "start": 17.319,
+   "end": 19.686,
+   "words": [
+    {
+     "text": "The",
+     "start": 17.319,
+     "end": 17.514
+    },
+    {
+     "text": "topic",
+     "start": 17.514,
+     "end": 17.787
+    },
+    {
+     "text": "from",
+     "start": 17.787,
+     "end": 18.021
+    },
+    {
+     "text": "the",
+     "start": 18.021,
+     "end": 18.215
+    },
+    {
+     "text": "mock.",
+     "start": 18.215,
+     "end": 18.449
+    },
+    {
+     "text": "Also",
+     "start": 18.709,
+     "end": 19.198
+    },
+    {
+     "text": "zero.",
+     "start": 19.198,
+     "end": 19.686
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "Be honest. Yours looks the same.",
+   "start": 20.286,
+   "end": 22.222,
+   "words": [
+    {
+     "text": "Be",
+     "start": 20.286,
+     "end": 20.469
+    },
+    {
+     "text": "honest.",
+     "start": 20.469,
+     "end": 20.836
+    },
+    {
+     "text": "Yours",
+     "start": 20.936,
+     "end": 21.296
+    },
+    {
+     "text": "looks",
+     "start": 21.296,
+     "end": 21.656
+    },
+    {
+     "text": "the",
+     "start": 21.656,
+     "end": 21.914
+    },
+    {
+     "text": "same.",
+     "start": 21.914,
+     "end": 22.222
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "Comfortable isn't the same as useful.",
+   "start": 22.722,
+   "end": 25.0,
+   "words": [
+    {
+     "text": "Comfortable",
+     "start": 22.722,
+     "end": 23.427
+    },
+    {
+     "text": "isn't",
+     "start": 23.427,
+     "end": 23.753
+    },
+    {
+     "text": "the",
+     "start": 23.753,
+     "end": 24.024
+    },
+    {
+     "text": "same",
+     "start": 24.024,
+     "end": 24.349
+    },
+    {
+     "text": "as",
+     "start": 24.349,
+     "end": 24.566
+    },
+    {
+     "text": "useful.",
+     "start": 24.566,
+     "end": 25.0
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "say": "Offload builds your plan from your notes and exam dates.",
+   "start": 25.7,
+   "end": 28.844,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 25.7,
+     "end": 26.129
+    },
+    {
+     "text": "builds",
+     "start": 26.129,
+     "end": 26.51
+    },
+    {
+     "text": "your",
+     "start": 26.51,
+     "end": 26.796
+    },
+    {
+     "text": "plan",
+     "start": 26.796,
+     "end": 27.081
+    },
+    {
+     "text": "from",
+     "start": 27.081,
+     "end": 27.367
+    },
+    {
+     "text": "your",
+     "start": 27.367,
+     "end": 27.653
+    },
+    {
+     "text": "notes",
+     "start": 27.653,
+     "end": 27.986
+    },
+    {
+     "text": "and",
+     "start": 27.986,
+     "end": 28.225
+    },
+    {
+     "text": "exam",
+     "start": 28.225,
+     "end": 28.51
+    },
+    {
+     "text": "dates.",
+     "start": 28.51,
+     "end": 28.844
+    }
+   ]
+  },
+  {
+   "id": "L11",
+   "say": "It tests you, and brings weak topics back sooner.",
+   "start": 29.344,
+   "end": 32.058,
+   "words": [
+    {
+     "text": "It",
+     "start": 29.344,
+     "end": 29.709
+    },
+    {
+     "text": "tests",
+     "start": 29.709,
+     "end": 30.348
+    },
+    {
+     "text": "you,",
+     "start": 30.348,
+     "end": 30.804
+    },
+    {
+     "text": "and",
+     "start": 30.914,
+     "end": 31.053
+    },
+    {
+     "text": "brings",
+     "start": 31.053,
+     "end": 31.277
+    },
+    {
+     "text": "weak",
+     "start": 31.277,
+     "end": 31.444
+    },
+    {
+     "text": "topics",
+     "start": 31.444,
+     "end": 31.667
+    },
+    {
+     "text": "back",
+     "start": 31.667,
+     "end": 31.835
+    },
+    {
+     "text": "sooner.",
+     "start": 31.835,
+     "end": 32.058
+    }
+   ]
+  },
+  {
+   "id": "L12",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 32.558,
+   "end": 35.383,
+   "words": [
+    {
+     "text": "You",
+     "start": 32.558,
+     "end": 32.779
+    },
+    {
+     "text": "just",
+     "start": 32.779,
+     "end": 33.044
+    },
+    {
+     "text": "click",
+     "start": 33.044,
+     "end": 33.353
+    },
+    {
+     "text": "the",
+     "start": 33.353,
+     "end": 33.573
+    },
+    {
+     "text": "link",
+     "start": 33.573,
+     "end": 33.838
+    },
+    {
+     "text": "in",
+     "start": 33.838,
+     "end": 34.015
+    },
+    {
+     "text": "your",
+     "start": 34.015,
+     "end": 34.28
+    },
+    {
+     "text": "calendar",
+     "start": 34.28,
+     "end": 34.721
+    },
+    {
+     "text": "and",
+     "start": 34.721,
+     "end": 34.942
+    },
+    {
+     "text": "show",
+     "start": 34.942,
+     "end": 35.207
+    },
+    {
+     "text": "up.",
+     "start": 35.207,
+     "end": 35.383
+    }
+   ]
+  }
+ ]
+}

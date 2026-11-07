@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- The desk's worker, always on while the Mac is awake: it picks up jobs (films, posts, syncs) from Supabase,
+       whether the desk is on this Mac or hosted on Render. Restarts itself if it stops. -->
+  <key>Label</key><string>education.offload.desk-worker</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/hadiqa/.nvm/versions/node/v22.14.0/bin/node</string>
+    <string>scripts/worker.mjs</string>
+    <string>--forever</string>
+  </array>
+  <key>WorkingDirectory</key><string>/Users/hadiqa/Dropbox/Mac/Documents/Content Generation Agent/web</string>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>EnvironmentVariables</key>
+  <dict><key>PATH</key><string>/Users/hadiqa/.nvm/versions/node/v22.14.0/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string></dict>
+  <key>StandardOutPath</key><string>/Users/hadiqa/Dropbox/Mac/Documents/Content Generation Agent/web/data/worker.log</string>
+  <key>StandardErrorPath</key><string>/Users/hadiqa/Dropbox/Mac/Documents/Content Generation Agent/web/data/worker.log</string>
+</dict>
+</plist>

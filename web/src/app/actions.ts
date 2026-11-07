@@ -17,25 +17,92 @@ import { drawOffloadPin, isPinLayout } from "@/lib/pin-picture";
 import { isNicheId, writePin } from "@/lib/pin-draft";
 import { writeScripts } from "@/lib/prepare";
 import { claudePrompt, queueRender } from "@/lib/studio";
-import { COOKIE, passwordMatches, readSession, sessionCookieValue } from "@/lib/session";
+import { COOKIE, readSession, sessionCookieValue } from "@/lib/session";
 
 export type SignInState = { error?: string };
 
 export async function signIn(_state: SignInState, formData: FormData): Promise<SignInState> {
-  const who = String(formData.get("who") ?? "");
+  const username = String(formData.get("username") ?? "").trim().toLowerCase();
   const password = String(formData.get("password") ?? "");
-  if (!isPersonId(who) || !passwordMatches(who, password)) {
-    return { error: "That name and password do not open the desk." };
-  }
+  const { checkPassword } = await import("@/lib/users");
+  const person = isPersonId(username) ? await checkPassword(username, password) : null;
+  if (!person) return { error: "That username and password do not open the desk." };
   const jar = await cookies();
-  jar.set(COOKIE, await sessionCookieValue(who), {
+  jar.set(COOKIE, await sessionCookieValue(person.id), {
     httpOnly: true,
     sameSite: "lax",
     secure: process.env.NODE_ENV === "production",
     path: "/",
     maxAge: 60 * 60 * 24 * 7,
   });
-  redirect("/desk/home");
+  // a temporary password from an admin must be changed first
+  redirect(person.mustChange ? "/desk/settings?change=1" : "/desk/home");
+}
+
+export type SettingsState = { ok?: string; error?: string; temp?: string };
+
+/** Admins: the daily Claude budget, in dollars per day. */
+export async function setBudget(formData: FormData) {
+  const person = await readSession();
+  if (!person) redirect("/");
+  if (person.role !== "admin") return;
+  const cap = Number(formData.get("cap"));
+  if (!Number.isFinite(cap) || cap < 0.5 || cap > 50) return;
+  const { setClaudeCap } = await import("@/lib/spend");
+  await setClaudeCap(Math.round(cap * 100) / 100, person.id);
+  revalidatePath("/desk/settings");
+  revalidatePath("/desk/home");
+}
+
+/** Change your own password. */
+export async function changePassword(_s: SettingsState, formData: FormData): Promise<SettingsState> {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const { checkPassword, passwordProblem, setPassword } = await import("@/lib/users");
+  const current = String(formData.get("current") ?? "");
+  const next = String(formData.get("next") ?? "");
+  if (!(await checkPassword(person.id, current))) return { error: "Your current password is not right." };
+  const bad = passwordProblem(next);
+  if (bad) return { error: bad };
+  if (next !== String(formData.get("again") ?? "")) return { error: "The two new passwords do not match." };
+  await setPassword(person.id, next, false);
+  return { ok: "Password changed." };
+}
+
+/** Admins: add a person, reset a password, or turn an account off or on. */
+export async function manageUser(_s: SettingsState, formData: FormData): Promise<SettingsState> {
+  const person = await readSession();
+  if (!person) redirect("/");
+  if (person.role !== "admin") return { error: "Only an admin can do that." };
+  const { addUser, setActive, setPassword, tempPassword } = await import("@/lib/users");
+  const what = String(formData.get("what") ?? "");
+  const username = String(formData.get("username") ?? "").trim().toLowerCase();
+  if (!isPersonId(username)) return { error: "A username is 2 to 40 lowercase letters, numbers, dots, dashes or underscores." };
+  try {
+    if (what === "add") {
+      const name = String(formData.get("name") ?? "").trim();
+      if (!name) return { error: "Add their name." };
+      const temp = await addUser({ username, name, title: String(formData.get("title") ?? "").trim(), role: formData.get("role") === "admin" ? "admin" : "member" });
+      revalidatePath("/desk/settings");
+      return { ok: `${name} can sign in as ${username} with this one-time password. They choose their own when they first sign in.`, temp };
+    }
+    if (what === "reset") {
+      const temp = tempPassword();
+      await setPassword(username, temp, true);
+      revalidatePath("/desk/settings");
+      return { ok: `${username}'s password is reset. Give them this one-time password; they choose a new one when they sign in.`, temp };
+    }
+    if (what === "off" || what === "on") {
+      if (what === "off" && username === person.id) return { error: "You cannot turn off your own account." };
+      await setActive(username, what === "on");
+      revalidatePath("/desk/settings");
+      return { ok: what === "off" ? `${username} can no longer sign in.` : `${username} can sign in again.` };
+    }
+  } catch (e) {
+    const m = (e as Error).message;
+    return { error: /duplicate key/.test(m) ? "That username is taken." : m };
+  }
+  return { error: "Unknown action." };
 }
 
 export async function signOut() {
@@ -538,10 +605,11 @@ export async function decideProposal(formData: FormData) {
   const person = await readSession();
   if (!person) redirect("/");
   const { decide } = await import("@/lib/proposals");
-  const decision = String(formData.get("decision")) === "accepted" ? "accepted" : "rejected";
+  const raw = String(formData.get("decision"));
+  const decision = raw === "accepted" ? "accepted" : raw === "proposed" ? "proposed" : "rejected";
   const id = String(formData.get("id") ?? "");
-  await decide(id, decision, person.name, String(formData.get("reason") ?? ""));
-  if (decision === "accepted") {
+  const make = await decide(id, decision, person.name, String(formData.get("reason") ?? ""));
+  if (make) {
     // the content agent makes the film on the Mac: script, checks, voice, render, then Approval
     const { ensureWorker, queueJob } = await import("@/lib/db");
     await queueJob("make-film", { content_id: id });
@@ -578,5 +646,50 @@ export async function filmAction(formData: FormData) {
     if (note) await remakeFilm(id, note, person.name);
   }
   if (what === "retry") await retryFilm(id);
+  if (what === "render") {
+    const { renderHeld } = await import("@/lib/films");
+    await renderHeld(id);
+  }
+  if (what === "reject") {
+    // a rejected film leaves Approval and shows under Hooks → Rejected, where it can be accepted again
+    const { decide } = await import("@/lib/proposals");
+    await decide(id, "rejected", person.name, String(formData.get("reason") ?? ""));
+    revalidatePath("/desk/hooks");
+  }
   revalidatePath("/desk");
+}
+
+export async function postAction(formData: FormData) {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const { queuePosts, retryPost, syncNow, londonToIso } = await import("@/lib/posting");
+  const what = String(formData.get("what") ?? "");
+  if (what === "post" || what === "test") {
+    const when = String(formData.get("when") ?? "").trim();
+    // one caption per platform when the agent wrote them; one shared caption for older films
+    const per = Object.fromEntries(["tiktok", "instagram", "facebook", "youtube"].map((p) => [p, String(formData.get(`caption_${p}`) ?? "").trim()]).filter(([, v]) => v));
+    const caption: string | Record<string, string> = Object.keys(per).length ? per : String(formData.get("caption") ?? "").trim();
+    if (!caption) return;
+    const at = formData.get("timing") === "best" && what !== "test" ? "best" : when ? londonToIso(when) : null;
+    try {
+      await queuePosts(String(formData.get("id") ?? ""), formData.getAll("account").map(String), caption, at, what === "test");
+    } catch (e) {
+      // show the reason on Approval instead of an error page
+      redirect(`/desk?post_error=${encodeURIComponent((e as Error).message.slice(0, 300))}#to-post`);
+    }
+  }
+  if (what === "retry") await retryPost(String(formData.get("post") ?? ""));
+  if (what === "sync") await syncNow();
+  revalidatePath("/desk");
+}
+
+export async function linkAction(formData: FormData) {
+  const person = await readSession();
+  if (!person) redirect("/");
+  const { linkAccount } = await import("@/lib/posting");
+  for (const [k, v] of formData.entries()) {
+    const m = k.match(/^link:(\w+):(\w+)$/);
+    if (m) await linkAccount(m[1], m[2], String(v));
+  }
+  revalidatePath("/desk/accounts");
 }

@@ -1,0 +1,485 @@
+{
+ "duration": 31.568,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Myth: one big Sunday session covers the whole week.",
+   "start": 0.15,
+   "end": 3.296,
+   "words": [
+    {
+     "text": "Myth:",
+     "start": 0.15,
+     "end": 0.39
+    },
+    {
+     "text": "one",
+     "start": 0.61,
+     "end": 0.863
+    },
+    {
+     "text": "big",
+     "start": 0.863,
+     "end": 1.117
+    },
+    {
+     "text": "Sunday",
+     "start": 1.117,
+     "end": 1.522
+    },
+    {
+     "text": "session",
+     "start": 1.522,
+     "end": 1.978
+    },
+    {
+     "text": "covers",
+     "start": 1.978,
+     "end": 2.384
+    },
+    {
+     "text": "the",
+     "start": 2.384,
+     "end": 2.637
+    },
+    {
+     "text": "whole",
+     "start": 2.637,
+     "end": 2.992
+    },
+    {
+     "text": "week.",
+     "start": 2.992,
+     "end": 3.296
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "say": "Be honest. It turns into a long scroll.",
+   "start": 3.796,
+   "end": 6.294,
+   "words": [
+    {
+     "text": "Be",
+     "start": 3.796,
+     "end": 3.989
+    },
+    {
+     "text": "honest.",
+     "start": 3.989,
+     "end": 4.376
+    },
+    {
+     "text": "It",
+     "start": 4.536,
+     "end": 4.743
+    },
+    {
+     "text": "turns",
+     "start": 4.743,
+     "end": 5.105
+    },
+    {
+     "text": "into",
+     "start": 5.105,
+     "end": 5.415
+    },
+    {
+     "text": "a",
+     "start": 5.415,
+     "end": 5.57
+    },
+    {
+     "text": "long",
+     "start": 5.57,
+     "end": 5.881
+    },
+    {
+     "text": "scroll.",
+     "start": 5.881,
+     "end": 6.294
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "say": "And one topic, if you're lucky.",
+   "start": 6.694,
+   "end": 8.648,
+   "words": [
+    {
+     "text": "And",
+     "start": 6.694,
+     "end": 6.935
+    },
+    {
+     "text": "one",
+     "start": 6.935,
+     "end": 7.177
+    },
+    {
+     "text": "topic,",
+     "start": 7.177,
+     "end": 7.514
+    },
+    {
+     "text": "if",
+     "start": 7.734,
+     "end": 7.937
+    },
+    {
+     "text": "you're",
+     "start": 7.937,
+     "end": 8.293
+    },
+    {
+     "text": "lucky.",
+     "start": 8.293,
+     "end": 8.648
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "say": "Fact: short sessions across the week stick better.",
+   "start": 9.148,
+   "end": 11.931,
+   "words": [
+    {
+     "text": "Fact:",
+     "start": 9.148,
+     "end": 11.328
+    },
+    {
+     "text": "short",
+     "start": 11.468,
+     "end": 11.532
+    },
+    {
+     "text": "sessions",
+     "start": 11.532,
+     "end": 11.623
+    },
+    {
+     "text": "across",
+     "start": 11.623,
+     "end": 11.695
+    },
+    {
+     "text": "the",
+     "start": 11.695,
+     "end": 11.741
+    },
+    {
+     "text": "week",
+     "start": 11.741,
+     "end": 11.795
+    },
+    {
+     "text": "stick",
+     "start": 11.795,
+     "end": 11.859
+    },
+    {
+     "text": "better.",
+     "start": 11.859,
+     "end": 11.931
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "say": "Especially when you test yourself from memory.",
+   "start": 12.431,
+   "end": 14.855,
+   "words": [
+    {
+     "text": "Especially",
+     "start": 12.431,
+     "end": 12.98
+    },
+    {
+     "text": "when",
+     "start": 12.98,
+     "end": 13.254
+    },
+    {
+     "text": "you",
+     "start": 13.254,
+     "end": 13.483
+    },
+    {
+     "text": "test",
+     "start": 13.483,
+     "end": 13.757
+    },
+    {
+     "text": "yourself",
+     "start": 13.757,
+     "end": 14.215
+    },
+    {
+     "text": "from",
+     "start": 14.215,
+     "end": 14.489
+    },
+    {
+     "text": "memory.",
+     "start": 14.489,
+     "end": 14.855
+    }
+   ]
+  },
+  {
+   "id": "L6",
+   "say": "Offload builds your plan from your notes and exam dates.",
+   "start": 15.555,
+   "end": 18.699,
+   "words": [
+    {
+     "text": "Offload",
+     "start": 15.555,
+     "end": 15.984
+    },
+    {
+     "text": "builds",
+     "start": 15.984,
+     "end": 16.365
+    },
+    {
+     "text": "your",
+     "start": 16.365,
+     "end": 16.65
+    },
+    {
+     "text": "plan",
+     "start": 16.65,
+     "end": 16.936
+    },
+    {
+     "text": "from",
+     "start": 16.936,
+     "end": 17.222
+    },
+    {
+     "text": "your",
+     "start": 17.222,
+     "end": 17.508
+    },
+    {
+     "text": "notes",
+     "start": 17.508,
+     "end": 17.841
+    },
+    {
+     "text": "and",
+     "start": 17.841,
+     "end": 18.079
+    },
+    {
+     "text": "exam",
+     "start": 18.079,
+     "end": 18.365
+    },
+    {
+     "text": "dates.",
+     "start": 18.365,
+     "end": 18.699
+    }
+   ]
+  },
+  {
+   "id": "L7",
+   "say": "If you miss an evening, it moves.",
+   "start": 19.099,
+   "end": 21.192,
+   "words": [
+    {
+     "text": "If",
+     "start": 19.099,
+     "end": 19.257
+    },
+    {
+     "text": "you",
+     "start": 19.257,
+     "end": 19.455
+    },
+    {
+     "text": "miss",
+     "start": 19.455,
+     "end": 19.693
+    },
+    {
+     "text": "an",
+     "start": 19.693,
+     "end": 19.852
+    },
+    {
+     "text": "evening,",
+     "start": 19.852,
+     "end": 20.209
+    },
+    {
+     "text": "it",
+     "start": 20.369,
+     "end": 20.668
+    },
+    {
+     "text": "moves.",
+     "start": 20.668,
+     "end": 21.192
+    }
+   ]
+  },
+  {
+   "id": "L8",
+   "say": "It tests you as you go.",
+   "start": 21.692,
+   "end": 23.338,
+   "words": [
+    {
+     "text": "It",
+     "start": 21.692,
+     "end": 21.919
+    },
+    {
+     "text": "tests",
+     "start": 21.919,
+     "end": 22.317
+    },
+    {
+     "text": "you",
+     "start": 22.317,
+     "end": 22.6
+    },
+    {
+     "text": "as",
+     "start": 22.6,
+     "end": 22.827
+    },
+    {
+     "text": "you",
+     "start": 22.827,
+     "end": 23.111
+    },
+    {
+     "text": "go.",
+     "start": 23.111,
+     "end": 23.338
+    }
+   ]
+  },
+  {
+   "id": "L9",
+   "say": "And brings topics back before you forget them.",
+   "start": 23.738,
+   "end": 26.243,
+   "words": [
+    {
+     "text": "And",
+     "start": 23.738,
+     "end": 23.97
+    },
+    {
+     "text": "brings",
+     "start": 23.97,
+     "end": 24.341
+    },
+    {
+     "text": "topics",
+     "start": 24.341,
+     "end": 24.712
+    },
+    {
+     "text": "back",
+     "start": 24.712,
+     "end": 24.99
+    },
+    {
+     "text": "before",
+     "start": 24.99,
+     "end": 25.362
+    },
+    {
+     "text": "you",
+     "start": 25.362,
+     "end": 25.594
+    },
+    {
+     "text": "forget",
+     "start": 25.594,
+     "end": 25.965
+    },
+    {
+     "text": "them.",
+     "start": 25.965,
+     "end": 26.243
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar and show up.",
+   "start": 26.743,
+   "end": 29.568,
+   "words": [
+    {
+     "text": "You",
+     "start": 26.743,
+     "end": 26.964
+    },
+    {
+     "text": "just",
+     "start": 26.964,
+     "end": 27.229
+    },
+    {
+     "text": "click",
+     "start": 27.229,
+     "end": 27.538
+    },
+    {
+     "text": "the",
+     "start": 27.538,
+     "end": 27.758
+    },
+    {
+     "text": "link",
+     "start": 27.758,
+     "end": 28.023
+    },
+    {
+     "text": "in",
+     "start": 28.023,
+     "end": 28.2
+    },
+    {
+     "text": "your",
+     "start": 28.2,
+     "end": 28.465
+    },
+    {
+     "text": "calendar",
+     "start": 28.465,
+     "end": 28.906
+    },
+    {
+     "text": "and",
+     "start": 28.906,
+     "end": 29.127
+    },
+    {
+     "text": "show",
+     "start": 29.127,
+     "end": 29.391
+    },
+    {
+     "text": "up.",
+     "start": 29.391,
+     "end": 29.568
+    }
+   ]
+  }
+ ]
+}

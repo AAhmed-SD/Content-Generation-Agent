@@ -1,7 +1,6 @@
 import { AbsoluteFill, Sequence, staticFile } from "remotion";
-import { Audio } from "@remotion/media";
 import { tokens } from "../../tokens";
-import { alpha, INTER, POP, soft, useK, type Cue } from "../kit/dark";
+import { alpha, Audio, INTER, POP, soft, useK, type Cue } from "../kit/dark";
 import { Kinetic } from "../kinetic";
 import { Type } from "../kit/talk";
 import { SCRIPT, SERIF } from "../../story/fonts";

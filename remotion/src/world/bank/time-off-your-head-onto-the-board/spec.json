@@ -1,0 +1,76 @@
+{
+ "id": "time-off-your-head-onto-the-board",
+ "format": "kanban",
+ "title": "Off your head, onto the board",
+ "cards": [
+  {
+   "text": "What I got wrong",
+   "col": 0,
+   "at": "L2:wrong",
+   "move": {
+    "col": 1,
+    "at": "L5:something"
+   }
+  },
+  {
+   "text": "What's due",
+   "col": 0,
+   "at": "L2:due",
+   "move": {
+    "col": 1,
+    "at": "L5:hold"
+   }
+  },
+  {
+   "text": "When",
+   "col": 0,
+   "at": "L2:when",
+   "move": {
+    "col": 1,
+    "at": "L6:plan"
+   }
+  },
+  {
+   "text": "Remember what I missed",
+   "col": 0,
+   "at": "L4",
+   "move": {
+    "col": 1,
+    "at": "L4:too"
+   }
+  },
+  {
+   "text": "Next session",
+   "col": 2,
+   "at": "L8:link"
+  }
+ ],
+ "final": {
+  "text": "One card.\nThe rest is held.",
+  "at": "L8:show"
+ },
+ "pile": {
+  "col": 0,
+  "at": "L1:everything",
+  "every": 0.11,
+  "calm": "L5:hold",
+  "items": [
+   "Wrong answer",
+   "Flashcards due",
+   "Which topic?",
+   "When's the test?",
+   "Missed card",
+   "Due Thursday",
+   "Topic I skipped",
+   "Check later",
+   "What was hard",
+   "Which deck?",
+   "Quiz on Friday",
+   "Still unsure",
+   "Next review",
+   "The one I missed",
+   "Notes to check",
+   "What's due?"
+  ]
+ }
+}

@@ -12,7 +12,7 @@ A student in medicine, dentistry, nursing, or radiology should recognise the unf
 
 ## Audience
 
-Students in medicine, dentistry, nursing, and radiology.
+Students on clinical, healthcare and science degrees: medicine, dentistry, nursing, radiography, and other healthcare or science-related degrees (pharmacy, midwifery, physiotherapy, biomedical science, biology and similar) (decided 2026-11-07). Neurodivergent students are the time account's audience, not this one's.
 
 ## Pains
 

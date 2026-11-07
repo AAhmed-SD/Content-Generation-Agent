@@ -1,0 +1,41 @@
+{
+ "id": "analytical-double-speed-itemised",
+ "format": "receipt",
+ "shop": "LECTURE CAPTURE LTD",
+ "sub": "Item: this week's lecture, 2x",
+ "items": [
+  {
+   "label": "Lecture",
+   "value": "watched",
+   "at": "L2"
+  },
+  {
+   "label": "Method",
+   "value": "nodded along",
+   "at": "L3"
+  },
+  {
+   "label": "Feeling",
+   "value": "productive",
+   "at": "L4"
+  },
+  {
+   "label": "Problem sheet",
+   "value": "OPEN",
+   "at": "L5"
+  }
+ ],
+ "total": {
+  "label": "Ability to do it without the video",
+  "value": "NOT INCLUDED",
+  "at": "L6"
+ },
+ "stamp": {
+  "text": "NO REFUNDS",
+  "at": "L7:half"
+ },
+ "footer": {
+  "text": "Next time: start from blank.",
+  "at": "L10:blank"
+ }
+}

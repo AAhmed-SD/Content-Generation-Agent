@@ -1,0 +1,55 @@
+{
+ "id": "time-thursday-s-forecast",
+ "format": "weather",
+ "title": "Thursday's forecast",
+ "days": [
+  {
+   "day": "Mon",
+   "sky": "sun",
+   "label": "Plan made. All sunny",
+   "at": "L2:Monday"
+  },
+  {
+   "day": "Tue",
+   "sky": "cloud",
+   "label": "Holding",
+   "at": "L3:Tuesday"
+  },
+  {
+   "day": "Wed",
+   "sky": "cloud",
+   "label": "Still holding",
+   "at": "L3:Wednesday"
+  },
+  {
+   "day": "Thu",
+   "sky": "storm",
+   "label": "Shift. Deadlines. Study block washed out",
+   "at": "L4:Thursday"
+  },
+  {
+   "day": "Fri",
+   "sky": "cloud",
+   "label": "Partly cloudy",
+   "at": "L7"
+  },
+  {
+   "day": "Sat",
+   "sky": "sun",
+   "label": "Study block moved here",
+   "ok": true,
+   "at": "L8:moves"
+  },
+  {
+   "day": "Sun",
+   "sky": "sun",
+   "label": "Clear",
+   "ok": true,
+   "at": "L10"
+  }
+ ],
+ "final": {
+  "text": "Friday: clearing up.\nBring a coat anyway.",
+  "at": "L11"
+ }
+}

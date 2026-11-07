@@ -1,0 +1,61 @@
+{
+ "id": "bank/clinical-long-days-still-fits",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Watch a week of long days fit around revision.",
+   "after": 0.5
+  },
+  {
+   "id": "L2",
+   "say": "The shifts go in first.",
+   "after": 0.4
+  },
+  {
+   "id": "L3",
+   "say": "They don't move.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "Revision drops into whatever's left.",
+   "after": 0.6
+  },
+  {
+   "id": "L5",
+   "say": "Then a shift runs late.",
+   "after": 0.7
+  },
+  {
+   "id": "L6",
+   "say": "Offload plans your revision around the rota.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "And moves it when a day runs over.",
+   "after": 0.5
+  },
+  {
+   "id": "L8",
+   "say": "It tests you as you go.",
+   "after": 0.4
+  },
+  {
+   "id": "L9",
+   "say": "And brings topics back before they fade.",
+   "after": 0.5
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1
+  }
+ ]
+}

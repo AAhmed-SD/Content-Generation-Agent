@@ -1,0 +1,66 @@
+{
+ "id": "bank/time-thursday-s-forecast",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Thursday's forecast: two deadlines, one shift, heavy group chat.",
+   "after": 0.5
+  },
+  {
+   "id": "L2",
+   "say": "Your plan was made on a sunny Monday.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "Tuesday and Wednesday: cloudy, but holding.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "Then Thursday arrived.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "Shift alert. Deadline pings. The group chat.",
+   "after": 0.4
+  },
+  {
+   "id": "L6",
+   "say": "Your study block? Washed out.",
+   "after": 0.7
+  },
+  {
+   "id": "L7",
+   "say": "Offload builds the plan from your notes and exam dates.",
+   "after": 0.4
+  },
+  {
+   "id": "L8",
+   "say": "When a day goes wrong, it moves it.",
+   "after": 0.5
+  },
+  {
+   "id": "L9",
+   "say": "It tests you as you go,",
+   "after": 0.4
+  },
+  {
+   "id": "L10",
+   "say": "and brings topics back before they fade.",
+   "after": 0.5
+  },
+  {
+   "id": "L11",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1.1
+  }
+ ]
+}

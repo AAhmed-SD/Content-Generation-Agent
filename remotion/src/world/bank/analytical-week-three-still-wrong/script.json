@@ -1,0 +1,61 @@
+{
+ "id": "bank/analytical-week-three-still-wrong",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "This is for whoever got eigenvectors wrong and moved on.",
+   "after": 0.5
+  },
+  {
+   "id": "L2",
+   "say": "Linear Algebra, week three.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "And it'll be on the exam.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "You meant to come back to it.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "The sheet got marked. You filed it.",
+   "after": 0.5
+  },
+  {
+   "id": "L6",
+   "say": "Are they still wrong? Probably.",
+   "after": 0.5
+  },
+  {
+   "id": "L7",
+   "say": "Wrong answers don't send reminders.",
+   "after": 0.7
+  },
+  {
+   "id": "L8",
+   "say": "Offload builds the plan from your notes and exam dates.",
+   "after": 0.5
+  },
+  {
+   "id": "L9",
+   "say": "It tests you, and brings misses back sooner.",
+   "after": 0.5
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1
+  }
+ ]
+}

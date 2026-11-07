@@ -1,0 +1,133 @@
+{
+ "id": "clinical-september-is-downhill",
+ "format": "science",
+ "title": "September is downhill",
+ "beats": [
+  {
+   "kind": "curve",
+   "at": "L2",
+   "curve": "forget",
+   "xLabel": "Time since September",
+   "yLabel": "Memory",
+   "labels": {
+    "a": "No review"
+   },
+   "topic": "September lectures",
+   "recalled": [
+    {
+     "text": "Learnt in September",
+     "at": "L1:september"
+    }
+   ],
+   "checkAt": "L2:review",
+   "missed": [
+    {
+     "text": "Drops fast without review",
+     "at": "L2:drops"
+    },
+    {
+     "text": "Then levels off",
+     "at": "L3:levels"
+    }
+   ]
+  },
+  {
+   "kind": "curve",
+   "at": "L4",
+   "curve": "spaced",
+   "xLabel": "Time",
+   "yLabel": "Memory",
+   "labels": {
+    "a": "No review",
+    "b": "Reviewed at the right time"
+   },
+   "topic": "Spaced review",
+   "recalled": [
+    {
+     "text": "Each review",
+     "at": "L4:review",
+     "tone": "ok"
+    }
+   ],
+   "checkAt": "L4:time",
+   "missed": [
+    {
+     "text": "A gentler drop",
+     "at": "L4:flattens",
+     "tone": "ok"
+    }
+   ]
+  },
+  {
+   "kind": "steps",
+   "at": "L5",
+   "title": "Finals",
+   "steps": [
+    {
+     "text": "What you learnt",
+     "at": "L5:learnt"
+    },
+    {
+     "text": "What's left",
+     "at": "L6:left"
+    }
+   ],
+   "topic": "Finals",
+   "recalled": [
+    {
+     "text": "What you learnt",
+     "at": "L5:learnt"
+    }
+   ],
+   "checkAt": "L6:test",
+   "missed": [
+    {
+     "text": "Only what's left counts",
+     "at": "L6:left"
+    }
+   ]
+  },
+  {
+   "kind": "steps",
+   "at": "L7",
+   "title": "With Offload",
+   "steps": [
+    {
+     "text": "Plans from your notes and exam dates",
+     "at": "L7:builds",
+     "tone": "ok"
+    },
+    {
+     "text": "Brings topics back before they fade",
+     "at": "L8:brings",
+     "tone": "ok"
+    },
+    {
+     "text": "One click in your calendar",
+     "at": "L9:click",
+     "tone": "ok"
+    }
+   ],
+   "topic": "With Offload",
+   "recalled": [
+    {
+     "text": "Your plan, built for you",
+     "at": "L7:plan",
+     "tone": "ok"
+    }
+   ],
+   "checkAt": "L8:tests",
+   "missed": [
+    {
+     "text": "Topics back before they fade",
+     "at": "L8:fade",
+     "tone": "ok"
+    }
+   ]
+  }
+ ],
+ "source": {
+  "text": "Ebbinghaus, 1885 (forgetting curve)",
+  "at": "L2:memory"
+ }
+}

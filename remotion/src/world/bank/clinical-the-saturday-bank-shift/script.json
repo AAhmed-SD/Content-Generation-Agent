@@ -1,0 +1,96 @@
+{
+ "id": "bank/clinical-the-saturday-bank-shift",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Well, I guess that's Sunday's plan then.",
+   "after": 0.4
+  },
+  {
+   "id": "L2",
+   "say": "A Saturday bank shift just came in.",
+   "after": 0.5
+  },
+  {
+   "id": "L3",
+   "say": "Saturday was your only free day.",
+   "after": 0.4
+  },
+  {
+   "id": "L4",
+   "say": "It runs on into Sunday morning.",
+   "after": 0.4
+  },
+  {
+   "id": "L5",
+   "say": "Sunday's plan thought you'd be home.",
+   "after": 0.4
+  },
+  {
+   "id": "L6",
+   "say": "Pharmacology. Your weakest topic.",
+   "after": 0.5
+  },
+  {
+   "id": "L7",
+   "say": "Christmas money, though. Worth it.",
+   "after": 0.5
+  },
+  {
+   "id": "L8",
+   "say": "So you rebuild the week by hand.",
+   "after": 0.4
+  },
+  {
+   "id": "L9",
+   "say": "Every block lifted and shuffled.",
+   "after": 0.4
+  },
+  {
+   "id": "L10",
+   "say": "An evening gone. Still no pharmacology.",
+   "after": 0.5
+  },
+  {
+   "id": "L11",
+   "say": "Tip: rehome your weakest topic first.",
+   "after": 0.4
+  },
+  {
+   "id": "L12",
+   "say": "Give it a fresh evening, never after a shift.",
+   "after": 0.7
+  },
+  {
+   "id": "L13",
+   "say": "Add the shift to Google Calendar. Offload plans round it.",
+   "after": 0.6
+  },
+  {
+   "id": "L14",
+   "say": "Tuesday evening. Clear head.",
+   "after": 0.5
+  },
+  {
+   "id": "L15",
+   "say": "It tells you what moved.",
+   "after": 0.4
+  },
+  {
+   "id": "L16",
+   "say": "You click the link in your calendar and start.",
+   "after": 0.7
+  },
+  {
+   "id": "L17",
+   "say": "Take the shift. The plan moves, not you.",
+   "after": 1.1
+  }
+ ]
+}

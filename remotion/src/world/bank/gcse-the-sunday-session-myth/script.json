@@ -1,0 +1,61 @@
+{
+ "id": "bank/gcse-the-sunday-session-myth",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Myth: one big Sunday session covers the whole week.",
+   "after": 0.5
+  },
+  {
+   "id": "L2",
+   "say": "Be honest. It turns into a long scroll.",
+   "after": 0.4
+  },
+  {
+   "id": "L3",
+   "say": "And one topic, if you're lucky.",
+   "after": 0.5
+  },
+  {
+   "id": "L4",
+   "say": "Fact: short sessions across the week stick better.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "Especially when you test yourself from memory.",
+   "after": 0.7
+  },
+  {
+   "id": "L6",
+   "say": "Offload builds your plan from your notes and exam dates.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "If you miss an evening, it moves.",
+   "after": 0.5
+  },
+  {
+   "id": "L8",
+   "say": "It tests you as you go.",
+   "after": 0.4
+  },
+  {
+   "id": "L9",
+   "say": "And brings topics back before you forget them.",
+   "after": 0.5
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1
+  }
+ ]
+}

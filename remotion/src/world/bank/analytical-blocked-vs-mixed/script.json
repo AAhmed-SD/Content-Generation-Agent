@@ -1,0 +1,61 @@
+{
+ "id": "bank/analytical-blocked-vs-mixed",
+ "voice": "bm_fable*0.65+bm_george*0.35",
+ "lang": "en-gb",
+ "speed": 0.98,
+ "gap": 0.38,
+ "takes": "line",
+ "master": true,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "Two revision sessions. Which one wins in the exam?",
+   "after": 0.6
+  },
+  {
+   "id": "L2",
+   "say": "Session A: the same problem type, over and over.",
+   "after": 0.4
+  },
+  {
+   "id": "L3",
+   "say": "Session B: all mixed up.",
+   "after": 0.6
+  },
+  {
+   "id": "L4",
+   "say": "A feels better while you're doing it.",
+   "after": 0.5
+  },
+  {
+   "id": "L5",
+   "say": "B wins later, when it counts.",
+   "after": 0.6
+  },
+  {
+   "id": "L6",
+   "say": "The exam never tells you which method to use.",
+   "after": 0.4
+  },
+  {
+   "id": "L7",
+   "say": "Mixed practice makes you pick it yourself.",
+   "after": 0.7
+  },
+  {
+   "id": "L8",
+   "say": "Offload builds your plan from your notes and deadlines.",
+   "after": 0.4
+  },
+  {
+   "id": "L9",
+   "say": "It tests you, and brings old topics back before they fade.",
+   "after": 0.4
+  },
+  {
+   "id": "L10",
+   "say": "You just click the link in your calendar and show up.",
+   "after": 1
+  }
+ ]
+}

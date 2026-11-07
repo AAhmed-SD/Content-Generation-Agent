@@ -1,34 +1,52 @@
-# Time, for ADHD and other mental health
+# Time: studying with ADHD and other neurodivergence
 
-This account is for kids and young people with ADHD and other mental health difficulties. The post is about managing time. It is not treatment and it does not tell them what they have.
+This account is for students with ADHD, autism, dyslexia and executive-function difficulties. Its films name the struggle with schoolwork and revision, explain the executive function behind it, and show Offload carrying that load. It is not treatment and it never diagnoses the viewer.
 
 ## Line
 
-The afternoon disappeared.
+ADHD makes the tracking hard, not the work. (Rewritten 2026-11-07.)
 
 ## Goal
 
-A young person should see the day as too many starts, and Offload as the next block of time. The post does not assess them.
+A student with ADHD (or autism, dyslexia, or executive-function difficulties) should recognise their exact struggle with schoolwork, understand why it happens (the executive function behind it), and see Offload as the thing that carries that load for them.
 
 ## Audience
 
-Kids and young people with ADHD and other mental health difficulties. Some of them are under 18.
+Students at school, college and university with ADHD, autism, dyslexia and other executive-function difficulties, diagnosed or not. Some are under 18.
+
+## What the films are about
+
+Name the condition and the specific study struggle, then say why it is hard, in plain words:
+
+- **Tracking schoolwork.** Other students keep a running list in their head; with ADHD the list leaks. Working memory drops the deadline the moment the tab closes. Homework set verbally in class is gone by the corridor.
+- **Starting.** Task initiation: knowing exactly what to do and still not being able to begin. It is not laziness; the brain's "start" signal needs more interest, urgency or novelty than a worksheet gives.
+- **Time.** Time blindness: "later" and "now" feel the same, so a deadline three weeks away feels like no deadline at all, until it is tomorrow.
+- **Planning and breaking work down.** A big assignment arrives as one wall; the steps inside it are invisible until someone splits them.
+- **Switching and losing the thread.** Coming back to a half-done task and having to rebuild it from scratch.
+- **Revision that does not stick or is not checked.** No record of what was tested, so the same topics get redone and the weak ones never do.
+
+Then show how Offload carries that part: it holds the list, splits the work, plans the blocks, moves them when the day breaks, and tests and brings back what was missed (claims only from product-facts.md).
 
 ## Pains
 
-A day with too many starts. An afternoon that disappeared. A caption that turns the comment into a case.
+The homework you were told about out loud and never wrote down. The planner abandoned by week two. Three weeks' notice that still turns into the night before. Staring at the first question for an hour. Forgetting what you got wrong last time.
 
 ## Vocabulary
 
-Day, time, card, start, next. Do not use a condition as a personality.
+ADHD, autism, dyslexia, executive function, working memory, task initiation, time blindness, planning, schoolwork, homework, revision, deadlines. Say the words the community uses. Do not use a condition as a personality or a joke.
 
 ## Exams
 
-None. Do not attach an exam to this account.
+Any: GCSE, A-level, university. The struggle is the same; name the student's stage when it helps.
 
 ## Rules
 
-The post is about managing time. Do not name a condition as theirs. No treatment claim. Age-appropriate. If the line is distressing, the caption points to help and stops. Both stamps before the pack opens. Do not describe how Offload works.
+- Always say it is about studying: schoolwork, homework, revision or coursework, in the first two lines. Never assume the viewer knows the context.
+- Name the condition and explain the executive function behind the struggle, accurately and kindly. Talk about ADHD ("with ADHD, ...", "for ADHD brains, ..."), not about the viewer: never "you have ADHD", never assess or diagnose the viewer.
+- No treatment or cure claims, no medication talk, no invented statistics. Explanations stay general and accurate (working memory, task initiation, time perception, planning).
+- Never make the condition the punchline. The joke, if any, is on the system (the planner, the verbal homework, the three-week deadline), never on the person.
+- Age-appropriate. If a line is distressing, the caption points to help and stops.
+- One approval is enough.
 
 ## UK context (researched 2026-11-05)
 
