@@ -41,20 +41,40 @@ export type AccountRow = {
   lastPosted: string | null;
 };
 
-export type Range = { days: number; niche?: string; platform?: string };
+export type Range = { days: number; niche?: string; platform?: string; from?: string; to?: string };
+
+/** A London date ("2026-11-07") at midnight, as an instant. */
+function londonMidnight(day: string) {
+  const guess = new Date(`${day}T00:00:00Z`);
+  const parts = Object.fromEntries(new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/London", hourCycle: "h23", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).formatToParts(guess).map((x) => [x.type, x.value]));
+  const shown = Date.UTC(+parts.year, +parts.month - 1, +parts.day, +parts.hour, +parts.minute);
+  return new Date(guess.getTime() - (shown - guess.getTime()));
+}
+const DAY = /^\d{4}-\d{2}-\d{2}$/;
+/** The window a page is looking at: chosen dates (London, inclusive), or the last N days up to now. */
+export function bounds(r: { days: number; from?: string; to?: string }) {
+  if (r.from && DAY.test(r.from)) {
+    const to = r.to && DAY.test(r.to) && r.to >= r.from ? r.to : r.from;
+    const end = londonMidnight(to);
+    end.setUTCDate(end.getUTCDate() + 1);
+    return { start: londonMidnight(r.from).toISOString(), end: end.toISOString() };
+  }
+  return { start: new Date(Date.now() - r.days * 864e5).toISOString(), end: new Date(Date.now() + 864e5).toISOString() };
+}
 
 /** One row per account (19), with totals over the range from each post's latest snapshot. */
-export async function accountTable({ days, niche, platform }: Range): Promise<AccountRow[]> {
+export async function accountTable({ days, niche, platform, from, to }: Range): Promise<AccountRow[]> {
+  const { start, end } = bounds({ days, from, to });
   const sql = db();
   const rows = await sql`
     with latest as (
       select distinct on (m.post_id) m.*
       from metrics m join posts p on p.id = m.post_id
-      where p.posted_at > now() - make_interval(days => ${days})
+      where p.posted_at >= ${start} and p.posted_at < ${end}
       order by m.post_id, m.taken_at desc
     )
     select a.id, a.niche, a.platform, a.kind, a.handle, a.status, a.blotato_account_id is not null as connected,
-      count(distinct p.id) filter (where p.posted_at > now() - make_interval(days => ${days})) as posts,
+      count(distinct p.id) filter (where p.posted_at >= ${start} and p.posted_at < ${end}) as posts,
       coalesce(sum(l.views), 0) as views, coalesce(sum(l.likes), 0) as likes, coalesce(sum(l.comments), 0) as comments,
       coalesce(sum(l.shares), 0) as shares, coalesce(sum(l.saves), 0) as saves, coalesce(sum(l.reach), 0) as reach,
       coalesce(sum(l.follows), 0) as follows, max(p.posted_at) as last_posted
@@ -91,7 +111,8 @@ export type CheckpointRow = { checkpoint: string; views: number; likes: number; 
 export type OpenerRow = { opener: string; posts: number; views: number; perPost: number };
 
 /** One account's detail: its posts, the checkpoint curve (1h → 7d), and A vs B openers on this platform. */
-export async function accountDetail(accountId: string, days: number) {
+export async function accountDetail(accountId: string, days: number, from?: string, to?: string) {
+  const { start, end } = bounds({ days, from, to });
   const sql = db();
   const [account] = await sql`select id, niche, platform, kind, handle, status from accounts where id = ${accountId}`;
   if (!account) return null;
@@ -100,18 +121,18 @@ export async function accountDetail(accountId: string, days: number) {
       coalesce(l.views, 0) as views, coalesce(l.likes, 0) as likes, coalesce(l.comments, 0) as comments, coalesce(l.shares, 0) as shares, coalesce(l.saves, 0) as saves
     from posts p join content c on c.id = p.content_id
     left join lateral (select * from metrics m where m.post_id = p.id order by m.taken_at desc limit 1) l on true
-    where p.account_id = ${accountId} and (p.posted_at is null or p.posted_at > now() - make_interval(days => ${days}))
+    where p.account_id = ${accountId} and (p.posted_at is null or (p.posted_at >= ${start} and p.posted_at < ${end}))
     order by p.posted_at desc nulls first limit 60`;
   const curve = await sql`
     select m.checkpoint, avg(m.views)::bigint as views, avg(m.likes)::bigint as likes, avg(m.shares)::bigint as shares
     from metrics m join posts p on p.id = m.post_id
-    where p.account_id = ${accountId} and m.checkpoint in ('1h','24h','72h','7d') and p.posted_at > now() - make_interval(days => ${days})
+    where p.account_id = ${accountId} and m.checkpoint in ('1h','24h','72h','7d') and p.posted_at >= ${start} and p.posted_at < ${end}
     group by m.checkpoint order by array_position(array['1h','24h','72h','7d'], m.checkpoint)`;
   const openers = await sql`
     with latest as (select distinct on (post_id) * from metrics order by post_id, taken_at desc)
     select p.opener, count(*) as posts, coalesce(sum(l.views), 0) as views
     from posts p left join latest l on l.post_id = p.id
-    where p.account_id = ${accountId} and p.opener is not null and p.posted_at > now() - make_interval(days => ${days})
+    where p.account_id = ${accountId} and p.opener is not null and p.posted_at >= ${start} and p.posted_at < ${end}
     group by p.opener order by p.opener`;
   return {
     account,
@@ -171,7 +192,8 @@ export type PostLine = PostRow & { niche: string; platform: Platform; kind: stri
  * Every post in the range, one row each, with its account's niche and platform and its latest snapshot.
  * Engagement = (likes + comments + shares + saves) / views, as a percentage.
  */
-export async function postTable({ days, niche, platform, sort = "posted" }: Range & { sort?: PostSort }): Promise<PostLine[]> {
+export async function postTable({ days, niche, platform, from, to, sort = "posted" }: Range & { sort?: PostSort }): Promise<PostLine[]> {
+  const { start, end } = bounds({ days, from, to });
   const sql = db();
   const rows = await sql`
     select p.id, coalesce(c.title, c.hook, c.bank_id, 'Untitled') as title, c.format, p.opener, p.posted_at, p.url, p.status,
@@ -182,7 +204,7 @@ export async function postTable({ days, niche, platform, sort = "posted" }: Rang
     join content c on c.id = p.content_id
     join accounts a on a.id = p.account_id
     left join lateral (select * from metrics m where m.post_id = p.id order by m.taken_at desc limit 1) l on true
-    where (p.posted_at is null or p.posted_at > now() - make_interval(days => ${days}))
+    where (p.posted_at is null or (p.posted_at >= ${start} and p.posted_at < ${end}))
       and (${niche ?? null}::text is null or a.niche = ${niche ?? null})
       and (${platform ?? null}::text is null or a.platform = ${platform ?? null})
     limit 1000`;
@@ -229,7 +251,8 @@ export type LiveSummary = {
  * What our posts are doing right now, straight from what Blotato last reported: how many are live, coming up or
  * failed, the totals, and the latest posts with their numbers. The worker asks Blotato every 20 minutes.
  */
-export async function liveSummary(days: number, limit = 20): Promise<LiveSummary> {
+export async function liveSummary(days: number, limit = 20, from?: string, to?: string): Promise<LiveSummary> {
+  const { start, end } = bounds({ days, from, to });
   const sql = db();
   const [last] = await sql`select at from runs where kind = 'blotato-sync' order by at desc limit 1`;
   const [c] = await sql`select count(*) filter (where status = 'published')::int as live,
@@ -240,7 +263,7 @@ export async function liveSummary(days: number, limit = 20): Promise<LiveSummary
       coalesce(l.views, 0)::int as views, coalesce(l.likes, 0)::int as likes, coalesce(l.comments, 0)::int as comments, coalesce(l.shares, 0)::int as shares, l.taken_at
     from posts p join accounts a on a.id = p.account_id join content c on c.id = p.content_id
     left join lateral (select * from metrics m where m.post_id = p.id order by m.taken_at desc limit 1) l on true
-    where not p.test and p.status = 'published' and p.posted_at > now() - make_interval(days => ${days})
+    where not p.test and p.status = 'published' and p.posted_at >= ${start} and p.posted_at < ${end}
     order by p.posted_at desc`;
   const totals = { views: 0, likes: 0, comments: 0, shares: 0 };
   for (const r of rows) {

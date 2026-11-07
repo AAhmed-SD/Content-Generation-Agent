@@ -21,28 +21,35 @@ const ago = (iso: string) => {
   return m < 1 ? "just now" : m < 60 ? `${m} min ago` : `${Math.round(m / 60)} h ago`;
 };
 
-export default async function DataPage({ searchParams }: { searchParams: Promise<{ days?: string; niche?: string; platform?: string; account?: string; view?: string; sort?: string }> }) {
+export default async function DataPage({ searchParams }: { searchParams: Promise<{ days?: string; niche?: string; platform?: string; account?: string; view?: string; sort?: string; from?: string; to?: string }> }) {
   const person = await readSession();
   if (!person) redirect("/");
   const q = await searchParams;
   const days = RANGES.includes(Number(q.days)) ? Number(q.days) : 30;
+  // chosen dates (London, inclusive) override the 7 / 30 / 90 day buttons
+  const isDay = (v?: string) => Boolean(v && /^\d{4}-\d{2}-\d{2}$/.test(v));
+  const from = isDay(q.from) ? q.from : undefined;
+  const to = from && isDay(q.to) && q.to! >= from ? q.to : from;
+  const today = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/London" }).format(new Date());
+  const pretty = (d: string) => new Date(`${d}T12:00:00Z`).toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
+  const rangeLabel = from ? (from === to ? pretty(from) : `${pretty(from)} to ${pretty(to!)}`) : `the last ${days} days`;
   const niche = q.niche && (NICHES.includes(q.niche) || q.niche === "all") ? q.niche : undefined;
   const platform = q.platform && (PLATFORMS as readonly string[]).includes(q.platform) ? q.platform : undefined;
   const view = q.view === "post" ? "post" : "account";
   const sort: PostSort = (POST_SORTS as readonly string[]).includes(q.sort ?? "") ? (q.sort as PostSort) : "posted";
   const link = (over: Record<string, string | number | undefined>) => {
     const p = new URLSearchParams();
-    const merged = { days, niche, platform, account: q.account, view: view === "post" ? "post" : undefined, sort: view === "post" && sort !== "posted" ? sort : undefined, ...over };
+    const merged = { days, from, to: from && to !== from ? to : undefined, niche, platform, account: q.account, view: view === "post" ? "post" : undefined, sort: view === "post" && sort !== "posted" ? sort : undefined, ...over };
     for (const [k, v] of Object.entries(merged)) if (v !== undefined && v !== "") p.set(k, String(v));
     return `/desk/data?${p.toString()}`;
   };
 
   const [live, rows, top, detail, postLines] = await Promise.all([
-    liveSummary(days),
-    accountTable({ days, niche, platform }),
+    liveSummary(days, 20, from, to),
+    accountTable({ days, niche, platform, from, to }),
     topOfFunnel(days),
-    q.account && view === "account" ? accountDetail(q.account, days) : Promise.resolve(null),
-    view === "post" ? postTable({ days, niche, platform, sort }) : Promise.resolve([]),
+    q.account && view === "account" ? accountDetail(q.account, days, from, to) : Promise.resolve(null),
+    view === "post" ? postTable({ days, niche, platform, sort, from, to }) : Promise.resolve([]),
   ]);
   const claude = await spend(days);
   const claudeTotal = claude.reduce((t, r) => t + r.usd, 0);
@@ -60,11 +67,30 @@ export default async function DataPage({ searchParams }: { searchParams: Promise
         </div>
         <nav className="data-filters" aria-label="Range">
           {RANGES.map((d) => (
-            <Link key={d} href={link({ days: d })} className={d === days ? "is-on" : undefined} scroll={false}>
+            <Link key={d} href={link({ days: d, from: undefined, to: undefined })} className={!from && d === days ? "is-on" : undefined} scroll={false}>
               {d} days
             </Link>
           ))}
         </nav>
+        <form method="get" action="/desk/data" className="date-pick" aria-label="Choose dates">
+          {niche ? <input type="hidden" name="niche" value={niche} /> : null}
+          {platform ? <input type="hidden" name="platform" value={platform} /> : null}
+          {view === "post" ? <input type="hidden" name="view" value="post" /> : null}
+          <label>
+            From
+            <input type="date" name="from" defaultValue={from ?? today} max={today} />
+          </label>
+          <label>
+            To
+            <input type="date" name="to" defaultValue={to ?? from ?? today} max={today} />
+          </label>
+          <button type="submit">Show</button>
+          {from ? (
+            <Link href={link({ from: undefined, to: undefined })} className="text-button" scroll={false}>
+              Clear dates
+            </Link>
+          ) : null}
+        </form>
       </div>
 
 
@@ -95,7 +121,7 @@ export default async function DataPage({ searchParams }: { searchParams: Promise
           <div>
             <span className="data-note">Views</span>
             <strong>{n(live.totals.views)}</strong>
-            <span className="data-note">last {days} days</span>
+            <span className="data-note">{rangeLabel}</span>
           </div>
           <div>
             <span className="data-note">Likes · comments · shares</span>
@@ -145,7 +171,7 @@ export default async function DataPage({ searchParams }: { searchParams: Promise
             </table>
           </div>
         ) : (
-          <p className="data-note">Nothing has gone out in this range yet. Posts appear here as soon as Blotato reports them live; numbers follow within the hour.</p>
+          <p className="data-note">Nothing went out on {rangeLabel}. Posts appear here as soon as Blotato reports them live; numbers follow within the hour.</p>
         )}
       </section>
 

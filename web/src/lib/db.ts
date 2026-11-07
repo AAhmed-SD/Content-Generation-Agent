@@ -21,8 +21,8 @@ function connect() {
     ssl: "require",
     prepare: false, // the transaction pooler does not keep prepared statements
     max: process.env.VERCEL ? 1 : 5,
-    idle_timeout: 20,
-    max_lifetime: 60 * 5, // recycle connections, so a socket the pooler dropped is not reused for long
+    idle_timeout: 8, // the Supabase pooler drops idle sockets; close ours first so a dead one is never reused
+    max_lifetime: 60, // and recycle every connection after a minute
     connect_timeout: 10,
     // a query that hangs fails after 30 s instead of holding the page for minutes
     connection: { search_path: "marketing", statement_timeout: 30_000, idle_in_transaction_session_timeout: 30_000 },
