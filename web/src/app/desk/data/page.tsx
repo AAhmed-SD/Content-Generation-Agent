@@ -140,6 +140,11 @@ export default async function DataPage({ searchParams }: { searchParams: Promise
             </div>
           ) : null}
         </div>
+        {live.byLead.length ? (
+          <p className="data-note">
+            {live.byLead.map((g) => `${g.lead}: ${n(g.posts)} posts, ${n(Math.round(g.views / Math.max(1, g.posts)))} views each on average`).join(" · ")}
+          </p>
+        ) : null}
         {live.posts.length ? (
           <div className="doc-table data-table">
             <table>

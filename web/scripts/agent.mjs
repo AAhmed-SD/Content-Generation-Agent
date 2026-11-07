@@ -272,6 +272,7 @@ export async function review({ row, lead, draft }) {
           lead.truth ? `The truth it must open on: ${lead.truth.text}` : "",
           lead.shape ? `The shape (${lead.shape.id}, ${lead.shape.name}): ${lead.shape.beats.map((b) => `${b.at}: ${b.job}`).join(" | ")}` : "",
           lead.pattern ? `The hook pattern: ${lead.pattern.pattern}` : "",
+          row.lead === "trend" && row.trend ? `Trend-led: it should follow the rising trend "${row.trend.name}" (${row.trend.recipe ?? ""}), keeping: ${row.trend.keep_swap ?? ""}. Score "shape" on how well it captures the trend's mechanic and rhythm.` : "",
           `The takeaway the film intends: ${row.theme}`,
           `The script, line by line (seconds of pause after each):\n${draft.lines.map((l) => `${l.id} (${l.after}s): ${l.say}`).join("\n")}`,
           `On screen (from the spec): ${JSON.stringify(draft.spec).slice(0, 6000)}`,
@@ -357,6 +358,19 @@ export async function makeFilm(contentId, note = "", { renderOnly = false } = {}
     truth ? `The truth this film opens on and stays on (the viewer must recognise it as theirs): ${truth.text}${truth.offload && truth.offload !== "none" ? `\nHow Offload answers it: ${truth.offload}` : ""}` : "",
     shape ? `Follow this shape, beat by beat (${shape.id}, ${shape.name}: ${shape.purpose}):\n${shape.beats.map((b) => `- ${b.at}: ${b.job}. Voice: ${b.voice}. Screen: ${b.screen}`).join("\n")}` : "",
     pattern ? `Hook A follows this trend pattern: ${pattern.pattern} (${pattern.why})` : "",
+    // trend-led: the trend leads; the shape only fills gaps
+    row.lead === "trend" && row.trend
+      ? [
+          `THIS FILM IS TREND-LED. It starts from a rising trend: "${row.trend.name}". The trend leads the structure, rhythm and visual mechanic; the shape above only fills gaps.`,
+          row.trend.recipe ? `What the trend is: ${row.trend.recipe}` : "",
+          row.trend.keep_swap ? `What we keep and what we swap: ${row.trend.keep_swap}` : "",
+          row.trend.transcript ? `The trend's own script, for timing and rhythm only (beats, line length, where the turn lands; never copy its words):\n${row.trend.transcript}` : "",
+          row.trend.duration ? `It runs about ${Math.round(row.trend.duration)} seconds: aim for a similar length.` : "",
+          `Rebuild its mechanic on screen as motion graphics (objects, screens, type, diagrams), faceless, with our one narrator.`,
+        ]
+          .filter(Boolean)
+          .join("\n")
+      : "",
     `Every claim in a line must be true of the picture you build: if a line says "only", "every", "empty" or "busy", or names a count, a day, a time or a subject, the spec must show exactly that. Say what is specifically lost or changed (for example "Saturday was the only slot for pharmacology"), not a general claim the screen contradicts.`,
     `Before writing, fix the takeaway in one sentence (the proposal's theme: ${row.theme}). Every line serves it. Follow "Explaining Offload" and "Delivery" in scripting.md.`,
     `Use hook A as line 1. ${silent ? "This format has no narrator: leave lines empty and time everything in seconds." : "Keep every line under about ten words where possible, with after pauses of 0.4 to 1.0 seconds, and end on the three-beat Offload explainer."}`,

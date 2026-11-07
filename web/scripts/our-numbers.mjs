@@ -18,7 +18,7 @@ const round = (n, d = 1) => Math.round(n * 10 ** d) / 10 ** d;
 export async function postRows(sql, niches, days = 30) {
   return sql`
     select p.id, p.opener, p.posted_at, a.niche, a.platform, c.id as content_id, coalesce(c.hook, c.openers->>0, c.title) as hook,
-      c.openers, c.format, c.hook_style, c.pillar, m.views, m.likes, m.comments, m.shares, m.saves, m.follows, m.completion, m.checkpoint
+      c.openers, c.format, c.hook_style, c.pillar, c.lead, m.views, m.likes, m.comments, m.shares, m.saves, m.follows, m.completion, m.checkpoint
     from posts p
     join accounts a on a.id = p.account_id
     join content c on c.id = p.content_id
@@ -86,6 +86,7 @@ export async function ourNumbers(sql, niches, { days = 30, top = 6 } = {}) {
     groups("By format, per platform:", byKey(rows, "format")),
     groups("By hook style, per platform:", byKey(rows, "hook_style")),
     groups("By pillar, per platform:", byKey(rows, "pillar")),
+    groups("Trend-led vs truth-led, per platform:", byKey(rows, "lead")),
     Object.values(ab).some((l) => l.length > 1) ? groups("Opener A vs B, per platform:", ab) : "",
   ]
     .filter(Boolean)

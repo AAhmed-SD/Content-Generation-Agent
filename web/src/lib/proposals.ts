@@ -36,6 +36,8 @@ export type Proposal = {
   truth: string | null;
   shape: string | null;
   pattern: string | null;
+  lead: "trend" | "truth" | null;
+  trend: { name: string; recipe?: string | null; keep_swap?: string | null; example?: string | null } | null;
 };
 export type Message = { id: string; role: "person" | "desk"; author: string; text: string; revised: boolean; at: string };
 
@@ -68,6 +70,8 @@ const toProposal = (r: Record<string, unknown>): Proposal => ({
   truth: (r.truth_text as string) ?? null,
   shape: (r.shape_name as string) ?? null,
   pattern: (r.pattern_text as string) ?? null,
+  lead: (r.lead as Proposal["lead"]) ?? null,
+  trend: (r.trend as Proposal["trend"]) ?? null,
 });
 
 export async function listProposals(status: "proposed" | "accepted" | "rejected", niche?: string) {
@@ -145,6 +149,12 @@ async function liveInputs(niche?: string) {
   const kept = await sql`select title, summary from inspiration_items i where not exists (select 1 from rejected r where r.kind = 'inspiration' and r.value = i.url)
     order by collected_at desc limit 12`;
   const formats = await sql`select title, hook from virlo_items where kind = 'format' and collected_at > now() - interval '21 days' order by score desc nulls last limit 8`;
+  // trend-led films start here: the formats creators are copying, and this account's outlier videos (Virlo)
+  const trendFormats = await sql`select id, title, payload from virlo_items where kind = 'format' and collected_at > now() - interval '21 days'
+    and coalesce((payload->>'is_sound_meme')::boolean, false) = false order by score desc nulls last limit 10`;
+  const trendVideos = await sql`select id, niche, views, payload from (
+      select v.*, row_number() over (partition by niche order by score desc nulls last) as k from virlo_items v
+      where kind = 'video' and niche = any(${niches}) and collected_at > now() - interval '21 days') x where k <= ${niche ? 10 : 5}`;
   // the script lead: fresh truths in season (never one used in the last 60 days) and the live trend hook patterns
   const month = Number(new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/London", month: "numeric" }).format(new Date()));
   const truths = await sql`select id, niche, category, text from (
@@ -155,7 +165,20 @@ async function liveInputs(niche?: string) {
   const patterns = await sql`select id, niche, pattern, why from (
       select h.*, row_number() over (partition by niche order by uses, random()) as k from hook_patterns h where niche = any(${niches}) and status = 'live'
     ) x where k <= ${niche ? 20 : 12} order by niche, id`;
+  const trendLines = [
+    ...trendFormats.map((t) => {
+      const p = t.payload as Record<string, unknown>;
+      const ex = ((p.examples as { url?: string; views?: number }[]) ?? [])[0];
+      return `- T${t.id} [format · ${p.lifecycle ?? "?"} · ${p.creators_7d ?? "?"} creators this week] ${t.title}: ${String(p.recipe ?? "").slice(0, 260)} Stays the same: ${String(p.constant_part ?? "").slice(0, 160)} Swapped: ${String(p.swapped_part ?? "").slice(0, 120)}${ex?.url ? ` Example: ${ex.url}` : ""}`;
+    }),
+    ...trendVideos.map((v) => {
+      const p = v.payload as Record<string, unknown>;
+      const i = (p.intelligence as Record<string, unknown>) ?? {};
+      return `- T${v.id} [${v.niche} outlier · ${v.views ?? "?"} views · ${i.content_format ?? "?"} · ${i.visual_format ?? "?"} · ${i.emotional_tone ?? "?"}] ${String(i.summary ?? p.description ?? "").slice(0, 260)}${i.hook_text ? ` Hook: "${String(i.hook_text).slice(0, 120)}"` : ""}${p.transcript ? ` Script opens: "${String(p.transcript).slice(0, 220)}"` : ""}`;
+    }),
+  ];
   return [
+    "--- Trends to build from (trend-led films start from one of these; cite its id without the T) ---\n" + (trendLines.join("\n") || "(none yet)"),
     "--- Truths to build from (each film opens on exactly one; cite its id) ---\n" + (truths.map((t) => `- #${t.id} [${t.niche} · ${t.category}] ${t.text}`).join("\n") || "(the truth bank is empty)"),
     "--- Hook patterns trending now (hook A follows one; cite its id) ---\n" + (patterns.map((h) => `- #${h.id} [${h.niche}] ${h.pattern} (${h.why})`).join("\n") || "(none yet)"),
     "--- How our own posts did (this outranks everything below once groups have 3 or more posts; numbers are for choosing, never for the film) ---\n" +
@@ -179,6 +202,11 @@ const PROPOSAL_SCHEMA = {
     pillar: { type: "string", enum: ["know-what-you-know", "methods", "life-around-study", "starting"], description: "The content pillar from pillars.md" },
     format: { type: "string", description: "A format id from the list" },
     hook_style: { type: "string", description: "One style from hook-styles.md" },
+    lead: { type: "string", enum: ["trend", "truth"], description: "trend: the film starts from a rising trend and copies its mechanic; truth: it starts from a moment in our audience's life" },
+    trend_id: { type: "integer", description: "For a trend-led film, the id of the trend it starts from (the number after T); 0 for a truth-led film" },
+    trend_use: { type: "string", description: "For a trend-led film: what we keep from the trend (structure, rhythm, visual mechanic, the joke's turn) and what we swap in for our audience, in one or two sentences; empty for truth-led" },
+    template_fit: { type: "string", enum: ["fits", "needs_new"], description: "Does the chosen format really show this film, or does the trend need a template we do not have yet?" },
+    template_idea: { type: "string", description: "When template_fit is needs_new: the template we should build, in two sentences (what it looks like, how it moves); otherwise empty" },
     truth_id: { type: "integer", description: "The id of the truth this film opens on, from the list for this account" },
     shape: { type: "string", description: "The id of the script shape it follows" },
     hook_pattern_id: { type: "integer", description: "The id of the trending hook pattern hook A follows, or 0 if none fits" },
@@ -210,7 +238,7 @@ const PROPOSAL_SCHEMA = {
     },
     reasoning: { type: "string", description: "Why this should work: which of our own results, signal, research or idea it answers" },
   },
-  required: ["niche", "pillar", "truth_id", "shape", "hook_pattern_id", "format", "hook_style", "theme", "title", "openers", "look", "storyboard", "reasoning"],
+  required: ["niche", "pillar", "lead", "trend_id", "trend_use", "template_fit", "template_idea", "truth_id", "shape", "hook_pattern_id", "format", "hook_style", "theme", "title", "openers", "look", "storyboard", "reasoning"],
   additionalProperties: false,
 };
 
@@ -240,7 +268,14 @@ function valid(p: Record<string, unknown>, formats: Set<string>) {
 export async function propose({ count = 8, niche, by }: { count?: number; niche?: string; by: string }) {
   const cat = await readCatalogue();
   const formats = new Set((cat?.formats ?? []).map((f) => f.id));
-  const ask = `${await liveInputs(niche)}\n\nPropose ${count} new videos${niche ? ` for ${niche}` : ", spread across all four accounts"}. Each opens on one truth from the list for its account (cite truth_id; never two films on one truth), follows one script shape (cite shape; vary them), and hook A follows one trending hook pattern for its account where one fits (cite hook_pattern_id). Each needs a hook with two openers (A and B), the takeaway as the theme, a hook style, a format from the list, the look, and a storyboard of 4 to 7 frames that runs from the hook to the Offload end card. Follow the pillar mix in pillars.md: at least three from pillar 1 (know what you actually know), at least two science explainers in the science format (graphs and method demos: forgetting curve, spacing, testing effect, blurting, Feynman, applied questions), at most one from pillar 4 (starting), none of the paused delay jokes, and a mix of looks. Where our own posts show a format, hook style or pillar doing well on a platform, make more like it; drop what keeps doing badly. Keep about a fifth of the batch for new things, so we keep learning.`;
+  const ask = `${await liveInputs(niche)}\n\nPropose ${count} new videos${niche ? ` for ${niche}` : ", spread across all four accounts"}.
+
+Make it a hybrid batch: half TREND-LED and half TRUTH-LED (lead).
+- Trend-led: start from one trend in the list (cite trend_id). Keep what makes it work (its structure, its rhythm, its visual mechanic, the turn of its joke) and swap in our audience and a truth from their life; say exactly what you keep and what you swap in trend_use. Our films are faceless motion graphics with one narrator, so rebuild the trend's mechanic on screen (objects, screens, type, diagrams): skip trends that only work with a person on camera, a dance, a real place or a licensed sound. Never copy words, never name the creator.
+- Truth-led: as before, start from a truth, with a trending hook pattern where one fits.
+- For both: pick the format that really shows the film. If the trend's look needs a template we do not have, set template_fit to needs_new and describe the template in template_idea, then still pick the closest format for now.
+
+Each opens on one truth from the list for its account (cite truth_id; never two films on one truth), follows one script shape (cite shape; vary them), and hook A follows one trending hook pattern for its account where one fits (cite hook_pattern_id). Each needs a hook with two openers (A and B), the takeaway as the theme, a hook style, a format from the list, the look, and a storyboard of 4 to 7 frames that runs from the hook to the Offload end card. Follow the pillar mix in pillars.md: at least three from pillar 1 (know what you actually know), at least two science explainers in the science format (graphs and method demos: forgetting curve, spacing, testing effect, blurting, Feynman, applied questions), at most one from pillar 4 (starting), none of the paused delay jokes, and a mix of looks. Where our own posts show a format, hook style or pillar doing well on a platform, make more like it; drop what keeps doing badly. Keep about a fifth of the batch for new things, so we keep learning.`;
   const out = await claudeJson<{ proposals: Record<string, unknown>[] }>({
     task: "proposals",
     tier: "heavy",
@@ -265,8 +300,28 @@ export async function propose({ count = 8, niche, by }: { count?: number; niche?
     if (truthId) await sql`update truths set uses = uses + 1, status = 'used' where id = ${truthId}`;
     if (shape) await sql`update shapes set uses = uses + 1 where id = ${shape.id}`;
     if (pattern) await sql`update hook_patterns set uses = uses + 1 where id = ${pattern.id}`;
-    await sql`insert into content (kind, niche, pillar, truth_id, shape, hook_pattern_id, format, title, hook, hook_style, theme, look, openers, storyboard, reasoning, status, created_by)
-      values ('film', ${String(p.niche)}, ${String(p.pillar ?? "") || null}, ${truthId}, ${shape?.id ?? null}, ${pattern ? Number(pattern.id) : null}, ${String(p.format)}, ${String(p.title ?? p.theme).slice(0, 140)}, ${String((p.openers as string[])[0]).slice(0, 300)},
+    // trend-led: keep a snapshot of the trend it starts from (Virlo), so the writer can follow its rhythm
+    const lead = p.lead === "trend" ? "trend" : "truth";
+    const [tr] = lead === "trend" ? await sql`select id, kind, niche, title, url, views, payload from virlo_items where id = ${Number(p.trend_id) || 0}` : [];
+    const trendSnap = tr
+      ? {
+          id: Number(tr.id),
+          kind: tr.kind,
+          name: tr.kind === "format" ? tr.title : ((tr.payload?.intelligence?.primary_topic as string) ?? tr.title),
+          recipe: tr.payload?.recipe ?? tr.payload?.intelligence?.summary ?? null,
+          keep_swap: String(p.trend_use ?? "").slice(0, 600),
+          example: tr.kind === "format" ? (tr.payload?.examples?.[0]?.url ?? null) : tr.url,
+          transcript: tr.payload?.transcript ? String(tr.payload.transcript).slice(0, 2000) : null,
+          duration: tr.payload?.duration ?? null,
+        }
+      : null;
+    // a trend that needs a look we do not have becomes a template idea on Ideas
+    if (p.template_fit === "needs_new" && String(p.template_idea ?? "").trim())
+      await sql`insert into ideas (id, title, kind, niche, pitch, status, frames, by, at)
+        values (${"t" + Date.now().toString(36) + Math.random().toString(36).slice(2, 5)}, ${`Template for: ${String(trendSnap?.name ?? p.title ?? "a trend").slice(0, 100)}`}, 'Film format', ${String(p.niche)},
+          ${String(p.template_idea).slice(0, 800)}, 'new', ${sql.json([])}, 'Proposals (trend needs a template)', ${new Date().toISOString().slice(0, 10)})`;
+    await sql`insert into content (kind, niche, pillar, lead, trend, truth_id, shape, hook_pattern_id, format, title, hook, hook_style, theme, look, openers, storyboard, reasoning, status, created_by)
+      values ('film', ${String(p.niche)}, ${String(p.pillar ?? "") || null}, ${trendSnap ? "trend" : "truth"}, ${trendSnap ? sql.json(trendSnap) : null}, ${truthId}, ${shape?.id ?? null}, ${pattern ? Number(pattern.id) : null}, ${String(p.format)}, ${String(p.title ?? p.theme).slice(0, 140)}, ${String((p.openers as string[])[0]).slice(0, 300)},
         ${String(p.hook_style ?? "")}, ${String(p.theme).slice(0, 400)}, ${String(p.look ?? "").slice(0, 400)},
         ${sql.json((p.openers as string[]).slice(0, 2).map((o) => String(o).slice(0, 300)))},
         ${sql.json((p.storyboard as Frame[]).slice(0, 8).map((f) => frameOf(f)))},

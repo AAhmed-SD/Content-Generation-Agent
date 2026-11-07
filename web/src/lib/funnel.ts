@@ -245,6 +245,7 @@ export type LiveSummary = {
   failed: number;
   totals: { views: number; likes: number; comments: number; shares: number };
   posts: LivePost[];
+  byLead: { lead: string; posts: number; views: number }[];
 };
 
 /**
@@ -257,9 +258,9 @@ export async function liveSummary(days: number, limit = 20, from?: string, to?: 
   const [last] = await sql`select at from runs where kind = 'blotato-sync' order by at desc limit 1`;
   const [c] = await sql`select count(*) filter (where status = 'published')::int as live,
       count(*) filter (where status in ('planned','scheduled','publishing'))::int as scheduled,
-      count(*) filter (where status = 'failed' and coalesce(error, '') not like 'Cancelled:%')::int as failed
+      count(*) filter (where status = 'failed' and coalesce(error, '') !~ '^(Cancelled|Replaced|Superseded):')::int as failed
     from posts where not test`;
-  const rows = await sql`select p.id, coalesce(c.title, c.theme, 'Untitled') as title, a.niche, a.platform, p.posted_at, p.url,
+  const rows = await sql`select p.id, coalesce(c.title, c.theme, 'Untitled') as title, a.niche, a.platform, p.posted_at, p.url, c.lead,
       coalesce(l.views, 0)::int as views, coalesce(l.likes, 0)::int as likes, coalesce(l.comments, 0)::int as comments, coalesce(l.shares, 0)::int as shares, l.taken_at
     from posts p join accounts a on a.id = p.account_id join content c on c.id = p.content_id
     left join lateral (select * from metrics m where m.post_id = p.id order by m.taken_at desc limit 1) l on true
@@ -272,7 +273,16 @@ export async function liveSummary(days: number, limit = 20, from?: string, to?: 
     totals.comments += Number(r.comments);
     totals.shares += Number(r.shares);
   }
+  const leads = new Map<string, { posts: number; views: number }>();
+  for (const r of rows) {
+    const k = r.lead === "trend" ? "Trend-led" : r.lead === "truth" ? "Truth-led" : "Before the split";
+    const g = leads.get(k) ?? { posts: 0, views: 0 };
+    g.posts++;
+    g.views += Number(r.views);
+    leads.set(k, g);
+  }
   return {
+    byLead: [...leads.entries()].map(([lead, g]) => ({ lead, ...g })),
     lastSync: last ? new Date(last.at).toISOString() : null,
     live: c.live,
     scheduled: c.scheduled,

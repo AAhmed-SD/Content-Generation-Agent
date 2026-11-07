@@ -86,6 +86,7 @@ export default async function HooksPage({ searchParams }: { searchParams: Promis
           <li key={p.id} className="lib-card hook-card">
             <div className="hook-meta">
               <span className="hook-account">{ACCOUNT[p.niche]}</span>
+              {p.lead ? <span className={p.lead === "trend" ? "hook-lead-tag is-trend" : "hook-lead-tag"}>{p.lead === "trend" ? "Trend-led" : "Truth-led"}</span> : null}
               {p.pillar ? <span className={p.pillar === "know-what-you-know" ? "hook-pillar is-lead" : "hook-pillar"}>{PILLAR[p.pillar] ?? p.pillar}</span> : null}
               <span>{p.format}</span>
               <span>{p.hookStyle}</span>
@@ -96,6 +97,25 @@ export default async function HooksPage({ searchParams }: { searchParams: Promis
               ) : null}
             </div>
             <h3 className="hook-title">{p.title || p.theme}</h3>
+            {p.trend ? (
+              <div className="hook-trend">
+                <strong>Trend:</strong> {p.trend.name}
+                {p.trend.example ? (
+                  <>
+                    {" · "}
+                    <a href={p.trend.example} target="_blank" rel="noreferrer">
+                      watch an example
+                    </a>
+                  </>
+                ) : null}
+                {p.trend.recipe ? <p>{p.trend.recipe}</p> : null}
+                {p.trend.keep_swap ? (
+                  <p>
+                    <strong>We keep and swap:</strong> {p.trend.keep_swap}
+                  </p>
+                ) : null}
+              </div>
+            ) : null}
             {p.truth || p.shape ? (
               <dl className="hook-lead">
                 {p.truth ? (

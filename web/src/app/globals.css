@@ -3861,3 +3861,28 @@ input[type="file"] {
   border-color: var(--ink);
   color: var(--white);
 }
+
+/* Hooks: trend-led or truth-led */
+.hook-lead-tag {
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  font-size: 12px;
+  font-weight: 600;
+}
+.hook-lead-tag.is-trend {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: var(--white);
+}
+.hook-trend {
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  border-left: 1px solid var(--blue);
+  background: var(--white);
+  border-radius: 8px;
+  font-size: 14px;
+}
+.hook-trend p {
+  margin: 4px 0 0;
+}
