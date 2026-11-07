@@ -41,11 +41,14 @@ export function FilmQueue({ films, me, linked = [], posts = [], blotato = false 
             <strong>{f.title}</strong> · {ACCOUNT[f.niche]} · {f.format}. Held before rendering: the script editor scored it {f.review?.total ?? "?"}/40 after one rewrite, so it was not rendered (to save money).
           </p>
           {f.review?.fixes?.length ? (
-            <ul className="films-held-notes">
-              {f.review.fixes.slice(0, 5).map((x, i) => (
-                <li key={i}>{x}</li>
-              ))}
-            </ul>
+            <details className="films-held-details">
+              <summary>The editor&apos;s notes ({Math.min(f.review.fixes.length, 5)})</summary>
+              <ul className="films-held-notes">
+                {f.review.fixes.slice(0, 5).map((x, i) => (
+                  <li key={i}>{x}</li>
+                ))}
+              </ul>
+            </details>
           ) : null}
           {f.lines.length ? (
             <details>
