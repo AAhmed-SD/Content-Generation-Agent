@@ -153,7 +153,9 @@ export async function syncPosts(sql, get) {
       // Blotato is the source of truth: its scheduled time and status, and when we last checked
       await sql`update posts set blotato_status = ${s.status ?? null}, synced_at = now(),
         scheduled_at = coalesce(${s.scheduledTime ?? null}::timestamptz, scheduled_at),
-        status = case when ${s.status ?? ""} = 'scheduled' then 'scheduled' when ${s.status ?? ""} = 'in-progress' then 'publishing' else status end
+        status = case when ${s.status ?? ""} = 'scheduled' then 'scheduled'
+          when ${s.status ?? ""} = 'in-progress' and coalesce(${s.scheduledTime ?? null}::timestamptz, scheduled_at) > now() then 'scheduled'
+          when ${s.status ?? ""} = 'in-progress' then 'publishing' else status end
         where id = ${p.id}`;
       if (s.status === "published")
         await sql`update posts set status = 'published', url = coalesce(${s.publicUrl ?? null}, url), posted_at = coalesce(posted_at, now()), error = null where id = ${p.id}`;
@@ -167,7 +169,9 @@ export async function syncPosts(sql, get) {
   // 2. numbers for posts published in the last 30 days, matched on the public URL
   const live = await sql`select p.id, p.url, p.posted_at, p.blotato_post_id, a.platform from posts p join accounts a on a.id = p.account_id
     where p.status = 'published' and p.posted_at > now() - interval '30 days'`;
-  if (!live.length) return { open: open.length, measured: 0 };
+  // the Numbers page shows when Blotato was last asked
+  const logged = async (r) => (await sql`insert into runs (kind, detail) values ('blotato-sync', ${sql.json(r)})`, r);
+  if (!live.length) return logged({ open: open.length, measured: 0 });
   const since = new Date(Math.min(...live.map((p) => +new Date(p.posted_at))) - 86400e3).toISOString();
   const items = [];
   for (const platform of [...new Set(live.map((p) => p.platform))]) items.push(...(await api.analytics({ since, platform }).catch(() => [])));
@@ -188,5 +192,5 @@ export async function syncPosts(sql, get) {
       values (${p.id}, ${it.latestMetrics.fetchedAt ?? new Date().toISOString()}, ${cp}, ${x.views}, ${x.likes}, ${x.comments}, ${x.shares}, ${x.saves}, ${x.reach}, 'blotato')`;
     measured++;
   }
-  return { open: open.length, measured };
+  return logged({ open: open.length, measured });
 }

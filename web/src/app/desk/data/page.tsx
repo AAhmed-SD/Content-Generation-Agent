@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { postAction } from "@/app/actions";
+import { AutoRefresh } from "@/components/auto-refresh";
 import { DeskFrame } from "@/components/desk-frame";
-import { accountDetail, accountTable, NICHE_LABEL, PLATFORM_LABEL, PLATFORMS, POST_SORTS, postTable, topOfFunnel, type PostSort } from "@/lib/funnel";
+import { accountDetail, accountTable, liveSummary, NICHE_LABEL, PLATFORM_LABEL, PLATFORMS, POST_SORTS, postTable, topOfFunnel, type PostSort } from "@/lib/funnel";
 import { readSession } from "@/lib/session";
 import { spend } from "@/lib/claude-stream";
 
@@ -12,6 +14,12 @@ const RANGES = [7, 30, 90];
 const NICHES = ["clinical", "analytical", "gcsealevel", "mentalhealth"];
 const n = (v: number) => v.toLocaleString("en-GB");
 const KIND: Record<string, string> = { founder: "Founder", outreach: "Outreach officer", brand: "Company page" };
+
+const when = (iso: string) => new Date(iso).toLocaleString("en-GB", { timeZone: "Europe/London", weekday: "short", hour: "numeric", minute: "2-digit", hour12: true }).replace(" am", "am").replace(" pm", "pm");
+const ago = (iso: string) => {
+  const m = Math.round((Date.now() - Date.parse(iso)) / 60000);
+  return m < 1 ? "just now" : m < 60 ? `${m} min ago` : `${Math.round(m / 60)} h ago`;
+};
 
 export default async function DataPage({ searchParams }: { searchParams: Promise<{ days?: string; niche?: string; platform?: string; account?: string; view?: string; sort?: string }> }) {
   const person = await readSession();
@@ -29,7 +37,8 @@ export default async function DataPage({ searchParams }: { searchParams: Promise
     return `/desk/data?${p.toString()}`;
   };
 
-  const [rows, top, detail, postLines] = await Promise.all([
+  const [live, rows, top, detail, postLines] = await Promise.all([
+    liveSummary(days),
     accountTable({ days, niche, platform }),
     topOfFunnel(days),
     q.account && view === "account" ? accountDetail(q.account, days) : Promise.resolve(null),
@@ -46,7 +55,7 @@ export default async function DataPage({ searchParams }: { searchParams: Promise
         <div>
           <h2 className="page-title">Numbers.</h2>
           <p className="split">
-            In at the top: what is working for UK students out there. Out at the bottom: what our own posts did, per account and per platform. Blotato fills the bottom by itself once accounts are connected; LinkedIn numbers come from a CSV.
+            What our posts are doing, straight from Blotato and kept up to date: first the latest posts, then each account on each platform. LinkedIn numbers still come from a CSV. What is coming in from outside (signals, Virlo, research) is folded at the bottom.
           </p>
         </div>
         <nav className="data-filters" aria-label="Range">
@@ -58,77 +67,92 @@ export default async function DataPage({ searchParams }: { searchParams: Promise
         </nav>
       </div>
 
-      <section aria-labelledby="top-h" className="data-section">
-        <h3 id="top-h" className="home-h">
-          Top of the funnel: what is coming in
-        </h3>
-        <div className="data-daily" role="img" aria-label={`Items collected per day over ${days} days`}>
-          {top.daily.map((d) => (
-            <span key={d.day} title={`${d.day}: ${d.signals} signals, ${d.virlo} Virlo, ${d.inspiration} inspiration`}>
-              <i style={{ height: `${((d.signals + d.virlo + d.inspiration) / maxDaily) * 100}%` }} />
-            </span>
-          ))}
+
+      <AutoRefresh seconds={60} />
+      <section aria-labelledby="live-h" className="data-section live">
+        <div className="home-row">
+          <h3 id="live-h" className="home-h">
+            Our posts, live from Blotato
+          </h3>
+          <form action={postAction} className="live-check">
+            <span className="data-note">{live.lastSync ? `Last checked with Blotato ${ago(live.lastSync)}` : "Not checked with Blotato yet"}. It checks every 20 minutes.</span>
+            <button type="submit" name="what" value="sync" className="text-button">
+              Check now
+            </button>
+          </form>
         </div>
-        <p className="data-note">Items collected per day: signals, Virlo and inspiration.</p>
-        <div className="data-niches">
-          {top.niches.map((t) => (
-            <article key={t.niche} className="data-niche">
-              <h4>{NICHE_LABEL[t.niche]}</h4>
-              <dl className="data-counts">
-                <div>
-                  <dt>Signals</dt>
-                  <dd>{n(t.signals)}</dd>
-                </div>
-                <div>
-                  <dt>Virlo</dt>
-                  <dd>{t.virlo ? n(t.virlo) : "—"}</dd>
-                </div>
-                <div>
-                  <dt>Research</dt>
-                  <dd>{n(t.research)}</dd>
-                </div>
-              </dl>
-              {t.topSignals.length ? (
-                <ol className="data-hooks">
-                  {t.topSignals.map((s) => (
-                    <li key={s.url}>
-                      <a href={s.url} target="_blank" rel="noreferrer">
-                        {s.hook || "Untitled"}
-                      </a>
-                      <span>
-                        @{s.account} · {s.ratio}× usual
-                      </span>
-                    </li>
-                  ))}
-                </ol>
-              ) : (
-                <p className="data-note">No signals in this range.</p>
-              )}
-              {t.topHooks.length ? (
-                <ol className="data-hooks">
-                  {t.topHooks.map((h, i) => (
-                    <li key={i}>
-                      {h.url ? (
-                        <a href={h.url} target="_blank" rel="noreferrer">
-                          {h.hook}
-                        </a>
-                      ) : (
-                        h.hook
-                      )}
-                      <span>Virlo · {n(h.views)} views</span>
-                    </li>
-                  ))}
-                </ol>
-              ) : null}
-            </article>
-          ))}
+        <div className="live-cards">
+          <div>
+            <span className="data-note">Live</span>
+            <strong>{n(live.live)}</strong>
+            <span className="data-note">posts out</span>
+          </div>
+          <div>
+            <span className="data-note">Coming up</span>
+            <strong>{n(live.scheduled)}</strong>
+            <span className="data-note">scheduled at Blotato</span>
+          </div>
+          <div>
+            <span className="data-note">Views</span>
+            <strong>{n(live.totals.views)}</strong>
+            <span className="data-note">last {days} days</span>
+          </div>
+          <div>
+            <span className="data-note">Likes · comments · shares</span>
+            <strong>
+              {n(live.totals.likes)} · {n(live.totals.comments)} · {n(live.totals.shares)}
+            </strong>
+          </div>
+          {live.failed ? (
+            <div className="is-bad">
+              <span className="data-note">Failed</span>
+              <strong>{n(live.failed)}</strong>
+              <Link href="/desk#to-post">see why</Link>
+            </div>
+          ) : null}
         </div>
+        {live.posts.length ? (
+          <div className="doc-table data-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Posted</th>
+                  <th>Film</th>
+                  <th>Account</th>
+                  <th>Platform</th>
+                  <th className="num">Views</th>
+                  <th className="num">Likes</th>
+                  <th className="num">Comments</th>
+                  <th className="num">Shares</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                {live.posts.map((p) => (
+                  <tr key={p.id}>
+                    <td>{when(p.postedAt)}</td>
+                    <td>{p.title}</td>
+                    <td>{NICHE_LABEL[p.niche] ?? p.niche}</td>
+                    <td>{PLATFORM_LABEL[p.platform as keyof typeof PLATFORM_LABEL] ?? p.platform}</td>
+                    <td className="num">{p.checkedAt ? n(p.views) : "…"}</td>
+                    <td className="num">{p.checkedAt ? n(p.likes) : "…"}</td>
+                    <td className="num">{p.checkedAt ? n(p.comments) : "…"}</td>
+                    <td className="num">{p.checkedAt ? n(p.shares) : "…"}</td>
+                    <td>{p.url ? <a href={p.url} target="_blank" rel="noreferrer">open</a> : null}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : (
+          <p className="data-note">Nothing has gone out in this range yet. Posts appear here as soon as Blotato reports them live; numbers follow within the hour.</p>
+        )}
       </section>
 
       <section aria-labelledby="bottom-h" className="data-section">
         <div className="home-row">
           <h3 id="bottom-h" className="home-h">
-            Bottom of the funnel: what our posts did
+            By account and platform
           </h3>
           <span className="data-links">
             <Link href="/desk/loop">Import a CSV</Link>
@@ -277,48 +301,73 @@ export default async function DataPage({ searchParams }: { searchParams: Promise
         {view === "account" && totals.posts === 0 ? <p className="data-note">Nothing posted in this range yet. Rows fill in as Blotato reports each post at 1 hour, 24 hours, 72 hours and 7 days.</p> : null}
       </section>
 
-      <section aria-labelledby="spend-h" className="data-section">
-        <div className="home-row">
-          <h3 id="spend-h" className="home-h">
-            Claude API spend, last {days} days
-          </h3>
-          <span className="data-note">
-            ${claudeTotal.toFixed(2)} · about ${((claudeTotal / days) * 30).toFixed(2)} a month at this rate
-          </span>
+      <details className="data-section data-fold">
+        <summary className="home-h">What is coming in: signals, Virlo and research</summary>
+        <div className="data-daily" role="img" aria-label={`Items collected per day over ${days} days`}>
+          {top.daily.map((d) => (
+            <span key={d.day} title={`${d.day}: ${d.signals} signals, ${d.virlo} Virlo, ${d.inspiration} inspiration`}>
+              <i style={{ height: `${((d.signals + d.virlo + d.inspiration) / maxDaily) * 100}%` }} />
+            </span>
+          ))}
         </div>
-        {claude.length ? (
-          <div className="doc-table data-table">
-            <table>
-              <thead>
-                <tr>
-                  <th>Task</th>
-                  <th>Model</th>
-                  <th className="num">Calls</th>
-                  <th className="num">New input</th>
-                  <th className="num">From cache</th>
-                  <th className="num">Output</th>
-                  <th className="num">Cost</th>
-                </tr>
-              </thead>
-              <tbody>
-                {claude.map((r) => (
-                  <tr key={`${r.task}-${r.model}`}>
-                    <td>{r.task}</td>
-                    <td>{r.model.replace("claude-", "")}</td>
-                    <td className="num">{n(r.calls)}</td>
-                    <td className="num">{n(r.input + r.written)}</td>
-                    <td className="num">{n(r.read)}</td>
-                    <td className="num">{n(r.output)}</td>
-                    <td className="num">${r.usd.toFixed(3)}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        ) : (
-          <p className="data-note">No Claude calls logged in this range yet.</p>
-        )}
-      </section>
+        <p className="data-note">Items collected per day: signals, Virlo and inspiration.</p>
+        <div className="data-niches">
+          {top.niches.map((t) => (
+            <article key={t.niche} className="data-niche">
+              <h4>{NICHE_LABEL[t.niche]}</h4>
+              <dl className="data-counts">
+                <div>
+                  <dt>Signals</dt>
+                  <dd>{n(t.signals)}</dd>
+                </div>
+                <div>
+                  <dt>Virlo</dt>
+                  <dd>{t.virlo ? n(t.virlo) : "—"}</dd>
+                </div>
+                <div>
+                  <dt>Research</dt>
+                  <dd>{n(t.research)}</dd>
+                </div>
+              </dl>
+              {t.topSignals.length ? (
+                <ol className="data-hooks">
+                  {t.topSignals.map((s) => (
+                    <li key={s.url}>
+                      <a href={s.url} target="_blank" rel="noreferrer">
+                        {s.hook || "Untitled"}
+                      </a>
+                      <span>
+                        @{s.account} · {s.ratio}× usual
+                      </span>
+                    </li>
+                  ))}
+                </ol>
+              ) : (
+                <p className="data-note">No signals in this range.</p>
+              )}
+              {t.topHooks.length ? (
+                <ol className="data-hooks">
+                  {t.topHooks.map((h, i) => (
+                    <li key={i}>
+                      {h.url ? (
+                        <a href={h.url} target="_blank" rel="noreferrer">
+                          {h.hook}
+                        </a>
+                      ) : (
+                        h.hook
+                      )}
+                      <span>Virlo · {n(h.views)} views</span>
+                    </li>
+                  ))}
+                </ol>
+              ) : null}
+            </article>
+          ))}
+        </div>
+      </details>
+      <p className="data-note">
+        Claude spend: ${claudeTotal.toFixed(2)} in the last {days} days. The full breakdown and the daily cap are in <Link href="/desk/settings">Settings</Link>.
+      </p>
 
       {detail ? (
         <section aria-labelledby="detail-h" className="data-section data-detail">

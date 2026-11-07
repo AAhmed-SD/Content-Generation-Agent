@@ -681,6 +681,7 @@ export async function postAction(formData: FormData) {
   if (what === "retry") await retryPost(String(formData.get("post") ?? ""));
   if (what === "sync") await syncNow();
   revalidatePath("/desk");
+  revalidatePath("/desk/data");
 }
 
 export async function linkAction(formData: FormData) {

@@ -214,3 +214,59 @@ export async function postTable({ days, niche, platform, sort = "posted" }: Rang
   const key = sort === "posted" ? null : sort;
   return lines.sort((a, b) => (key ? (b[key] as number) - (a[key] as number) : (b.postedAt ?? "9999").localeCompare(a.postedAt ?? "9999")));
 }
+
+export type LivePost = { id: string; title: string; niche: string; platform: string; postedAt: string; url: string | null; views: number; likes: number; comments: number; shares: number; checkedAt: string | null };
+export type LiveSummary = {
+  lastSync: string | null;
+  live: number;
+  scheduled: number;
+  failed: number;
+  totals: { views: number; likes: number; comments: number; shares: number };
+  posts: LivePost[];
+};
+
+/**
+ * What our posts are doing right now, straight from what Blotato last reported: how many are live, coming up or
+ * failed, the totals, and the latest posts with their numbers. The worker asks Blotato every 20 minutes.
+ */
+export async function liveSummary(days: number, limit = 20): Promise<LiveSummary> {
+  const sql = db();
+  const [last] = await sql`select at from runs where kind = 'blotato-sync' order by at desc limit 1`;
+  const [c] = await sql`select count(*) filter (where status = 'published')::int as live,
+      count(*) filter (where status in ('planned','scheduled','publishing'))::int as scheduled,
+      count(*) filter (where status = 'failed' and coalesce(error, '') not like 'Cancelled:%')::int as failed
+    from posts where not test`;
+  const rows = await sql`select p.id, coalesce(c.title, c.theme, 'Untitled') as title, a.niche, a.platform, p.posted_at, p.url,
+      coalesce(l.views, 0)::int as views, coalesce(l.likes, 0)::int as likes, coalesce(l.comments, 0)::int as comments, coalesce(l.shares, 0)::int as shares, l.taken_at
+    from posts p join accounts a on a.id = p.account_id join content c on c.id = p.content_id
+    left join lateral (select * from metrics m where m.post_id = p.id order by m.taken_at desc limit 1) l on true
+    where not p.test and p.status = 'published' and p.posted_at > now() - make_interval(days => ${days})
+    order by p.posted_at desc`;
+  const totals = { views: 0, likes: 0, comments: 0, shares: 0 };
+  for (const r of rows) {
+    totals.views += Number(r.views);
+    totals.likes += Number(r.likes);
+    totals.comments += Number(r.comments);
+    totals.shares += Number(r.shares);
+  }
+  return {
+    lastSync: last ? new Date(last.at).toISOString() : null,
+    live: c.live,
+    scheduled: c.scheduled,
+    failed: c.failed,
+    totals,
+    posts: rows.slice(0, limit).map((r) => ({
+      id: r.id,
+      title: r.title,
+      niche: r.niche,
+      platform: r.platform,
+      postedAt: new Date(r.posted_at).toISOString(),
+      url: r.url,
+      views: r.views,
+      likes: r.likes,
+      comments: r.comments,
+      shares: r.shares,
+      checkedAt: r.taken_at ? new Date(r.taken_at).toISOString() : null,
+    })),
+  };
+}
