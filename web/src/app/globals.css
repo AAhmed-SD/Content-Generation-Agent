@@ -3768,3 +3768,15 @@ input[type="file"] {
   scroll-snap-align: start;
   box-shadow: 0 0 0 1px var(--line);
 }
+
+/* Folded sidebar: the dot above the open button, both centred in the narrow column */
+.desk-shell.is-shut .side-top {
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.desk-shell.is-shut .side-fold {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+}
