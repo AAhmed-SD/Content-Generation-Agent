@@ -145,9 +145,20 @@ const CHECKPOINTS = [
 export async function syncPosts(sql, get) {
   if (!get("BLOTATO_API_KEY")) return { skipped: "no key" };
   const api = blotato(() => get("BLOTATO_API_KEY"));
-  // 1. status of everything not finished
-  const open = await sql`select id, blotato_submission_id, scheduled_at from posts where blotato_submission_id is not null and status in ('publishing','scheduled')`;
+  // 1. status of everything not finished. Blotato's post list is the truth: its per-post status check can say
+  //    "in progress" for hours after a post went out (7 Nov 2026: that led to posts being recreated and doubled).
+  const open = await sql`select p.id, p.blotato_submission_id, p.scheduled_at, p.caption, a.platform, a.blotato_account_id
+    from posts p join accounts a on a.id = p.account_id where p.blotato_submission_id is not null and p.status in ('publishing','scheduled')`;
+  const listed = await api.posts().catch(() => []);
+  const near = (a, b) => Math.abs(new Date(a).getTime() - new Date(b).getTime()) < 15 * 60e3;
+  const same = (a, b) => String(a ?? "").replace(/\s+/g, " ").trim().slice(0, 40) === String(b ?? "").replace(/\s+/g, " ").trim().slice(0, 40);
   for (const p of open) {
+    const hit = listed.find((x) => String(x.account?.id) === String(p.blotato_account_id) && x.platform === p.platform && near(x.postTime, p.scheduled_at) && same(x.text, p.caption));
+    if (hit?.state?.type === "published") {
+      await sql`update posts set status = 'published', blotato_status = 'published', synced_at = now(), url = coalesce(${hit.state.postUrl ?? null}, url),
+        posted_at = coalesce(posted_at, ${hit.postTime}::timestamptz), error = null where id = ${p.id}`;
+      continue;
+    }
     try {
       const s = await api.status(p.blotato_submission_id);
       // Blotato is the source of truth: its scheduled time and status, and when we last checked

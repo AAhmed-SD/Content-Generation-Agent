@@ -59,6 +59,18 @@ export function blotato(key) {
     /** { status: in-progress | scheduled | published | failed, publicUrl?, errorMessage?, scheduledTime? } */
     status: (submissionId) => call("GET", `/posts/${submissionId}`),
     /** Published posts with their latest metrics. */
+    /** Every post Blotato holds, with its real state ("scheduled", "published", ...) and public URL. */
+    posts: async () => {
+      const out = [];
+      for (let page = 0; page < 10; page++) {
+        const r = await call("GET", `/posts?limit=100&offset=${out.length}`);
+        const items = r?.items ?? [];
+        const fresh = items.filter((x) => !out.some((y) => y.id === x.id));
+        out.push(...fresh);
+        if (items.length < 100 || !fresh.length) break;
+      }
+      return out;
+    },
     analytics: async ({ since, platform, limit = 100 } = {}) => {
       const q = new URLSearchParams({ limit: String(limit), ...(since ? { since } : {}), ...(platform ? { platform } : {}) });
       return (await call("GET", `/analytics?${q}`))?.items ?? [];
