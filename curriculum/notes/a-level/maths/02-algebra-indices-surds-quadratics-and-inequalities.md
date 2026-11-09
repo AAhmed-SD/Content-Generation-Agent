@@ -41,7 +41,7 @@ Everything here is AS content and is assumed in every later topic. Much of it ex
 
 ## B1 Laws of indices
 
-*Refs: AQA B1 · Edexcel 2.1 · OCR 1.02a · MEI Ma12, Ma13. Level: AS & A.*
+*Refs: AQA B1 · Edexcel 2.1 · OCR 1.02a · MEI Ma1, Ma12, Ma13. Level: AS & A.*
 
 ### What you need to know
 

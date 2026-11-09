@@ -41,7 +41,7 @@ All A-level only. These methods are for equations and integrals that cannot be s
 
 ## I1 Locating roots by change of sign
 
-*Refs: AQA I1 · Edexcel 9.1 · OCR 1.09a, 1.09b · MEI Me1, Me2. Level: A-level only.*
+*Refs: AQA I1, OT2.4 · Edexcel 9.1 · OCR 1.09a, 1.09b · MEI Me1, Me2. Level: A-level only.*
 
 ### What you need to know
 
