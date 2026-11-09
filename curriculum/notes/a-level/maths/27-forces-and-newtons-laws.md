@@ -151,7 +151,7 @@ Over a smooth pulley with a light inextensible string, the tension is the same o
 
 **Lifts.** For a person of mass m in a lift with acceleration a upwards, the floor pushes up with R: R − mg = ma.
 
-**(A-level only) Equilibrium with angles.** Resolve horizontally and vertically (or along and perpendicular to a slope) and set each sum to zero. Three forces in equilibrium form a closed triangle, so the sine rule or Lami's ideas can also be used.
+**(A-level only) Equilibrium with angles.** Resolve horizontally and vertically (or along and perpendicular to a slope) and set each sum to zero. Three forces in equilibrium form a closed triangle, so the sine rule can also be used on that triangle.
 
 ### Worked example
 
