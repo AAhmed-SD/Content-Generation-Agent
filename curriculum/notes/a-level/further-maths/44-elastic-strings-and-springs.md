@@ -113,5 +113,5 @@ A spring of stiffness 200 N m⁻¹ is compressed by 0.1 m and launches a 0.05 kg
 
 1. Extension 0.6 m (1). EPE = 30 × 0.36/3 = 3.6 J (1). ½ × 2v² = 3.6 (1). v = 1.90 m s⁻¹ (1).
 2. Extensions: one string 0.6 − 0.4 = 0.2 m, the other 0.4 − 0.4 = 0 m (2). Tensions 12 × 0.2/0.4 = 6 N and 0 N (the shorter string is just taut) (2).
-3. Let compression x: GPE lost 0.2 × 9.8 × (0.4 + x) (1) = 18x²/1.2 (2). 15x² − 1.96x − 0.784 = 0 (1). x = 0.302 m (2).
+3. Let compression x: GPE lost 0.2 × 9.8 × (0.4 + x) (1) = 18x²/1.2 (2). 15x² − 1.96x − 0.784 = 0 (1). x = 0.303 m (2).
 4. E.g. ignoring air resistance (1), so the true compression is slightly less (1). Or: spring is light / ball is a particle.
