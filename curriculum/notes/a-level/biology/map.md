@@ -849,7 +849,7 @@ Level key: AS & A = also in that board's AS; A-level only = not in AS.
 | 3.2.1(a) | Pathogens | AS & A | [27-pathogens-disease-and-antibiotics.md](27-pathogens-disease-and-antibiotics.md) |
 | 3.2.1(b) | Causes and transmission of diseases | AS & A | [27-pathogens-disease-and-antibiotics.md](27-pathogens-disease-and-antibiotics.md) |
 | 3.2.1(c) | HIV structure and replication | AS & A | [27-pathogens-disease-and-antibiotics.md](27-pathogens-disease-and-antibiotics.md) |
-| 3.2.1(d) | Bacterial and viral replication | AS & A | [27-pathogens-disease-and-antibiotics.md](27-pathogens-disease-and-antibiotics.md) |
+| 3.2.1(d) | Gram stain, colony morphology and culturing bacteria | AS & A | [28-microbiology-and-culturing.md](28-microbiology-and-culturing.md) |
 | 3.2.1(e) | Incidence and prevalence | AS & A | [27-pathogens-disease-and-antibiotics.md](27-pathogens-disease-and-antibiotics.md) |
 | 3.2.1(f) | Incidence and mortality calculations | AS & A | [27-pathogens-disease-and-antibiotics.md](27-pathogens-disease-and-antibiotics.md) |
 | 3.2.1(g) | Epidemiological data | AS & A | [27-pathogens-disease-and-antibiotics.md](27-pathogens-disease-and-antibiotics.md) |
