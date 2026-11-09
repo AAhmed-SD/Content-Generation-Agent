@@ -75,7 +75,7 @@ Adding or deleting three bases removes or adds one amino acid without a frame sh
 
 **Effect on the protein.** A different primary structure may change the bonds that form between R groups, so the tertiary structure changes. An enzyme's active site may no longer be complementary to its substrate. Some mutations are harmful, most are neutral, and a few are beneficial.
 
-**Sickle cell anaemia** (Edexcel A, Edexcel B, Eduqas). A substitution in the gene for the β chain of haemoglobin replaces a T with an A, changing the codon GAG (glutamic acid) to GTG (valine) on the coding strand. Valine is non-polar, so haemoglobin molecules stick together at low oxygen, forming long fibres. Red blood cells become sickle-shaped, carry less oxygen and block capillaries. Heterozygotes are protected against malaria, so the allele is common where malaria is.
+**Sickle cell anaemia** (Edexcel A, Edexcel B, Eduqas). A substitution in the gene for the β chain of haemoglobin changes one base on the coding strand from A to T, so the triplet GAG (glutamic acid) becomes GTG (valine); on the mRNA, GAG becomes GUG. Valine is non-polar, so haemoglobin molecules stick together at low oxygen, forming long fibres. Red blood cells become sickle-shaped, carry less oxygen and block capillaries. Heterozygotes are protected against malaria, so the allele is common where malaria is.
 
 **Mutagens.** Ionising radiation (breaks DNA strands); UV light (makes adjacent thymines bond together); chemicals such as benzene, mustard gas, nitrogen oxides and tar in tobacco smoke (alter bases or insert between them); some viruses insert DNA into the genome. A carcinogen is a mutagen that causes cancer (Eduqas C2.5(g)).
 
