@@ -81,7 +81,7 @@ A uniform L-shaped lamina is made from a 6 × 2 rectangle (from (0, 0) to (6, 2)
 A circle of radius 1 centred at (4, 3) is cut from a uniform rectangular plate from (0, 0) to (8, 6). Find the centre of mass.
 
 1. Plate area 48 at (4, 3); hole area π at (4, 3). The hole is at the centre, so the centre of mass stays at (4, 3).
-2. If instead the hole is centred at (6, 3): x̄ = (48 × 4 − π × 6)/(48 − π) = 3.866.
+2. If instead the hole is centred at (6, 3): x̄ = (48 × 4 − π × 6)/(48 − π) = 3.860.
 
 ### Common mistakes
 
