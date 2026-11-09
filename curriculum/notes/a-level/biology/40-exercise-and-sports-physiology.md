@@ -92,7 +92,7 @@ Rest: 52 × 100 = 5200 cm³ min⁻¹. Race: 180 × 160 = 28 800 cm³ min⁻¹. I
 
 ## Aerobic fitness and VO₂ max
 
-*Refs: OCR B 4.1.2(b), (c), (f) · Edexcel A CP17. Level: A-level only.*
+*Refs: OCR B 4.1.2(b) to (d), (f) · Edexcel A CP17. Level: A-level only.*
 
 ### What you need to know
 
@@ -102,6 +102,8 @@ Rest: 52 × 100 = 5200 cm³ min⁻¹. Race: 180 × 160 = 28 800 cm³ min⁻¹. I
 ### Explained
 
 **Aerobic fitness** is the ability to take in, transport and use oxygen. It depends on: lung function; heart size and stroke volume; haemoglobin and red blood cell count; capillary density in muscles; numbers of mitochondria and myoglobin in muscles; proportion of slow-twitch fibres (partly inherited); age (falls with age); sex; training; health (smoking reduces it).
+
+**Training and the F.I.T.T. principles** (OCR B 4.1.2(d)). Aerobic fitness improves with training planned by four factors: **F**requency (how often, such as three to five sessions a week), **I**ntensity (how hard, often judged as a percentage of maximum heart rate, roughly 220 minus age), **T**ime (how long each session lasts) and **T**ype (the kind of exercise, matched to the goal: running or cycling for endurance). Training must be progressive (gradually increased) to keep producing the long-term effects described above; the effects are lost if training stops. Practical investigations measure resting heart rate, breathing rate or recovery time before and after a training programme, or in people with different training histories.
 
 **VO₂ max** is the maximum rate at which a person can take in and use oxygen during intense exercise, measured in cm³ of oxygen per kg of body mass per minute (cm³ kg⁻¹ min⁻¹). Typical values: untrained adults 35 to 45; elite endurance athletes 70 to 85. It is measured on a treadmill or exercise bike with increasing intensity while expired air is analysed, or estimated from tests such as a multi-stage shuttle run. A higher VO₂ max means more work can be done aerobically before lactate builds up.
 

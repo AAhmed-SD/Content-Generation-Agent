@@ -18,7 +18,7 @@ boards:
     spec_refs: ["4.2.1(a)", "4.2.1(b)", "4.2.1(c)", "4.2.1(d)", "4.2.1(e)", "4.2.2(a)", "4.2.2(b)", "4.2.2(c)", "4.2.2(d)"]
   - board: OCR B
     code: "H422"
-    spec_refs: ["3.1.3(a)", "3.1.3(b)", "3.1.3(c)", "3.1.3(d)", "3.1.3(f)", "3.1.3(h)", "3.1.3(i)"]
+    spec_refs: ["3.1.3(a)", "3.1.3(b)", "3.1.3(c)", "3.1.3(d)", "3.1.3(f)", "3.1.3(h)", "3.1.3(i)", "4.3.1(l)"]
   - board: Eduqas
     code: "A400QS"
     spec_refs: ["C2.1(a)", "C2.1(b)", "C2.1(c)", "C2.1(d)", "C2.1(e)", "C2.1(f)", "C2.1(g)", "C2.1(h)", "C2.1(i)", "C2.1(j)", "C2.1(k)", "C2.1(l)"]
@@ -115,7 +115,7 @@ In 1990 Carl Woese proposed three domains above the kingdoms: **Bacteria**, **Ar
 
 ## 3.4.6 Biodiversity within a community
 
-*Refs: AQA 3.4.6 · Edexcel A 4.1, 4.2, 4.3 · Edexcel B 3.2 ii, 3.3 i · OCR A 4.2.1(a) to (d) · OCR B 3.1.3(h) · Eduqas C2.1(h) to (j). Level: AS & A.*
+*Refs: AQA 3.4.6 · Edexcel A 4.1, 4.2, 4.3 · Edexcel B 3.2 ii, 3.3 i · OCR A 4.2.1(a) to (d) · OCR B 3.1.3(h), 4.3.1(l) · Eduqas C2.1(h) to (j). Level: AS & A.*
 
 ### What you need to know
 

@@ -157,7 +157,7 @@ Most characteristics depend on both.
 
 - The consequences of brain and spinal cord injuries.
 - The symptoms and possible causes of Alzheimer's disease.
-- Age-related loss of vision and hearing (vision detail in file 35).
+- The effect of ageing on the nervous system, including reaction time and memory; age-related loss of vision and hearing (vision detail in file 35).
 
 ### Explained
 
@@ -166,6 +166,8 @@ Most characteristics depend on both.
 **Spinal cord injury.** Neurones in the CNS do not regrow well. Damage cuts communication between the brain and the body below the injury: loss of sensation and movement (paralysis). Injury in the neck can cause quadriplegia (all four limbs) and affect breathing; lower down, paraplegia (legs). Autonomic functions below the injury (bladder control) may also be lost. Research: stem cells, nerve growth factors, electrical stimulation.
 
 **Alzheimer's disease.** The most common form of dementia. Symptoms: progressive memory loss (recent memories first), confusion, difficulty with language and planning, mood changes. Changes in the brain: plaques of beta-amyloid protein between neurones; tangles of tau protein inside neurones; loss of neurones and synapses, especially in the hippocampus and cortex; reduced acetylcholine. The brain shrinks. Possible causes and risk factors: age; inherited alleles (such as APOE4); head injury; cardiovascular risk factors. Treatment: drugs that inhibit acetylcholinesterase raise acetylcholine and slow symptoms for a time; newer antibodies that clear amyloid; no cure.
+
+**The ageing nervous system** (OCR B 5.2.3(b)). With age, the brain loses some neurones and synapses, myelin sheaths thin, and less neurotransmitter is made. Impulses are conducted more slowly and synapses work less efficiently, so reaction times lengthen and short-term memory and recall decline (long-term and well-practised skills are kept better). Practical investigations compare reaction times (for example the ruler-drop test or computer tests) and memory tests across age groups, controlling for practice, alertness and time of day. Regular physical and mental activity may slow the decline (plasticity).
 
 **Age-related hearing loss** (presbycusis): hair cells in the cochlea are damaged and lost over a lifetime (especially by loud noise) and do not regrow, so high-frequency sounds are lost first. Hearing aids amplify sound; cochlear implants stimulate the auditory nerve directly.
 

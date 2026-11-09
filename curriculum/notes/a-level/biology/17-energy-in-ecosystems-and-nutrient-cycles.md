@@ -18,7 +18,7 @@ boards:
     spec_refs: ["6.3.1(b)", "6.3.1(c)"]
   - board: OCR B
     code: "H422"
-    spec_refs: ["4.3.1(i)", "4.3.1(j)", "4.3.1(k)", "4.3.1(l)", "4.3.1(m)"]
+    spec_refs: ["4.3.1(h)", "4.3.1(i)", "4.3.1(j)", "4.3.1(k)"]
   - board: Eduqas
     code: "A400QS"
     spec_refs: ["C1.5(f)", "C1.5(h)", "C1.5(k)", "C1.5(l)", "C1.5(n)", "C1.5(o)", "C1.5(p)"]
@@ -43,8 +43,8 @@ A-level only. Populations, succession and sampling are in file 23. Climate chang
 
 ### Board differences
 
-- AQA 3.5.3, 3.5.4. Edexcel A 5.10, 5.11, 5.21, 6.2. Edexcel B 10.1 ii, iii, 10.2 i to iii. OCR A 6.3.1(b), (c). OCR B 4.3.1(i) to (m). Eduqas C1.5(f), (h), (k), (l), (n) to (p).
-- OCR A, OCR B, Edexcel A and Eduqas ask for the carbon cycle; AQA does not. Included below.
+- AQA 3.5.3, 3.5.4. Edexcel A 5.10, 5.11, 5.21, 6.2. Edexcel B 10.1 ii, iii, 10.2 i to iii. OCR A 6.3.1(b), (c). OCR B 4.3.1(h) to (k). Eduqas C1.5(f), (h), (k), (l), (n) to (p).
+- OCR A, Edexcel A and Eduqas ask for the carbon cycle; AQA does not. Included below.
 - AQA alone asks for the phosphorus cycle and mycorrhizae.
 - Edexcel B asks for pyramids of numbers, biomass and energy (10.1 iii).
 - Eduqas asks about ploughing and drainage (C1.5(o)).
@@ -104,6 +104,8 @@ Because so much is lost at each step, food chains rarely have more than four or 
 - *Simplifying food webs:* removing other species that would take energy from the crop. Herbicides remove weeds (competitors for light, water, ions); pesticides and fungicides remove pests that eat the crop. More of the NPP goes to the crop.
 - *Reducing respiratory losses in livestock:* keep animals indoors in warm conditions (less energy for heat), restrict movement (less energy for muscle contraction), feed high-energy, easily digested food, slaughter young (young animals put more of their energy into growth). More of the food becomes meat. Ethical concerns: animal welfare, antibiotic overuse.
 
+**Ruminants in the human food chain** (OCR B 4.3.1(k)). Cattle and sheep (file 45) can turn grass and other cellulose-rich plants, which humans cannot digest, into meat and milk, so they make food from land unsuitable for crops. But energy transfer from plants to cattle is inefficient (often less than 10%), so more people can be fed per hectare by eating crops directly; ruminants also release methane, a greenhouse gas (file 42).
+
 ### Worked example
 
 1. Grassland GPP = 21 000 kJ m⁻² yr⁻¹; plant respiration = 12 500 kJ m⁻² yr⁻¹. NPP = 21 000 − 12 500 = 8500 kJ m⁻² yr⁻¹.
@@ -121,7 +123,7 @@ Because so much is lost at each step, food chains rarely have more than four or 
 
 ## 3.5.4 Nutrient cycles
 
-*Refs: AQA 3.5.4 · Edexcel A 5.21, 6.2 · Edexcel B 10.2 iii · OCR A 6.3.1(c) · OCR B 4.3.1(l), (m) · Eduqas C1.5(k), (l), (n) to (p). Level: A-level only.*
+*Refs: AQA 3.5.4 · Edexcel A 5.21, 6.2 · Edexcel B 10.2 iii · OCR A 6.3.1(c) · OCR B 4.3.1(h) · Eduqas C1.5(k), (l), (n) to (p). Level: A-level only.*
 
 ### What you need to know
 
@@ -149,6 +151,8 @@ AQA does not require the names of species; the genus names above are given as co
 
 Farmers improve soil nitrogen by ploughing (aerates soil, so nitrification is favoured and denitrification reduced) and draining waterlogged fields (Eduqas C1.5(o)). Ploughing can also increase erosion and the loss of organic matter.
 
+**Studying *Rhizobium*** (OCR B 4.3.1(h)). Cut open the root nodules of a legume (clover, pea): a pink colour shows leghaemoglobin, which binds oxygen so that nitrogenase (which oxygen inactivates) can work. *Rhizobium* can be cultured from a crushed, surface-sterilised nodule on a yeast-mannitol agar plate using aseptic technique (file 28). Legumes are used in crop rotation because their nodules add nitrogen compounds to the soil.
+
 **Mycorrhizae.** Associations between fungi and plant roots. The fungal hyphae spread through the soil, greatly increasing the surface area for absorbing water and ions, especially phosphate. They also store water. The fungus receives sugars from the plant. This is a mutualistic relationship.
 
 **The phosphorus cycle.** Phosphorus is needed for ATP, nucleic acids and phospholipids. It has no gas phase.
@@ -160,7 +164,7 @@ Farmers improve soil nitrogen by ploughing (aerates soil, so nitrification is fa
 
 The cycle is slow, so phosphate is often a limiting nutrient.
 
-**The carbon cycle** (OCR A, OCR B, Edexcel A, Eduqas).
+**The carbon cycle** (OCR A, Edexcel A, Eduqas).
 
 - CO₂ is removed from the air and water by photosynthesis, and dissolves in the oceans (some forming carbonate shells and rocks).
 - Carbon passes through food chains as organic compounds.

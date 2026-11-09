@@ -35,7 +35,7 @@ A-level only. How the nephron works and ADH are in file 20. AQA does not ask for
 
 ### Board differences
 
-- OCR A 5.1.2(a), (b), (c) (dissection), (e), (f). OCR B 5.3.3(a), (b), (e) to (i). Edexcel B 9.9 ii, v. Eduqas C3.4(h), (i).
+- OCR A 5.1.2(a), (b), (c) (dissection), (e), (f). OCR B 5.3.3(a), (b), (e) to (i). (OCR B does not ask for the liver.) Edexcel B 9.9 ii, v. Eduqas C3.4(h), (i).
 - OCR A asks for liver histology and a kidney dissection (5.1.2(b), (c)), and urine tests for pregnancy and anabolic steroids (5.1.2(f)).
 - OCR B asks for the kidney as an endocrine gland (erythropoietin, vitamin D), diagnosis of kidney disease, dialysis, transplants and the future of transplant surgery.
 - Edexcel B asks for urea formation in the liver (detail of the ornithine cycle not needed) and the kangaroo rat's kidney.
@@ -43,7 +43,7 @@ A-level only. How the nephron works and ADH are in file 20. AQA does not ask for
 
 ## Excretion and the liver
 
-*Refs: OCR A 5.1.2(a), (b) · OCR B 5.3.3(a), (b) · Edexcel B 9.9 ii. Level: A-level only.*
+*Refs: OCR A 5.1.2(a), (b) · OCR B 5.3.3(a) · Edexcel B 9.9 ii. Level: A-level only.*
 
 ### What you need to know
 
@@ -112,7 +112,7 @@ In a stained section (OCR A), lobules look roughly hexagonal, each with a centra
 
 ## Kidney structure, dissection and the kidney as an endocrine gland
 
-*Refs: OCR A 5.1.2(c) · OCR B 5.3.3(e). Level: A-level only.*
+*Refs: OCR A 5.1.2(c) · OCR B 5.3.3(b), (e). Level: A-level only.*
 
 ### What you need to know
 

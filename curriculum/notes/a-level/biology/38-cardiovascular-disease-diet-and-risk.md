@@ -12,7 +12,7 @@ boards:
     spec_refs: ["4.4 viii", "4.4 ix"]
   - board: OCR B
     code: "H422"
-    spec_refs: ["2.2.2(e)"]
+    spec_refs: ["2.1.3(e)", "2.2.2(d)", "2.2.2(e)"]
   - board: Eduqas
     code: "A400QS"
     spec_refs: ["CC1(g)"]

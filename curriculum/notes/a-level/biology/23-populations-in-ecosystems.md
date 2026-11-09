@@ -16,6 +16,9 @@ boards:
   - board: OCR A
     code: "H420"
     spec_refs: ["4.2.1(b)", "4.2.1(h)", "6.3.1(a)", "6.3.1(d)", "6.3.1(e)", "6.3.2(a)", "6.3.2(b)", "6.3.2(c)"]
+  - board: OCR B
+    code: "H422"
+    spec_refs: ["4.3.1(m)"]
   - board: Eduqas
     code: "A400QS"
     spec_refs: ["C1.5(a)", "C1.5(b)", "C1.5(c)", "C1.5(d)", "C1.5(e)", "C1.5(g)", "C1.5(i)", "C1.5(j)", "C1.6(b)"]
@@ -25,6 +28,7 @@ spec_urls:
   Edexcel A: https://qualifications.pearson.com/en/qualifications/edexcel-a-levels/biology-a-2015.html
   Edexcel B: https://qualifications.pearson.com/en/qualifications/edexcel-a-levels/biology-b-2015.html
   OCR A: https://www.ocr.org.uk/qualifications/as-and-a-level/biology-a-h020-h420-from-2015/
+  OCR B: https://www.ocr.org.uk/qualifications/as-and-a-level/biology-b-advancing-biology-h022-h422-from-2015/
   Eduqas: https://www.eduqas.co.uk/qualifications/biology-asa-level/
 pmt_url: https://www.physicsandmathstutor.com/biology-revision/
 ---
@@ -47,7 +51,7 @@ A-level only for AQA. Energy flow and nutrient cycles are in file 17. Biodiversi
 
 ## 3.7.4 Populations in ecosystems
 
-*Refs: AQA 3.7.4, RP12 · Edexcel A 4.3, 4.16, 5.1 to 5.4, CP10 · Edexcel B 3.3 ii, iii, 10.1 i, iv, v, 10.3 i, ii, CP15, CP16 · OCR A 4.2.1(b), (h), 6.3.1(a), (d), (e), 6.3.2(a) to (c) · Eduqas C1.5(a) to (e), (g), (i), (j), C1.6(b). Level: A-level only.*
+*Refs: AQA 3.7.4, RP12 · Edexcel A 4.3, 4.16, 5.1 to 5.4, CP10 · Edexcel B 3.3 ii, iii, 10.1 i, iv, v, 10.3 i, ii, CP15, CP16 · OCR A 4.2.1(b), (h), 6.3.1(a), (d), (e), 6.3.2(a) to (c) · OCR B 4.3.1(m) · Eduqas C1.5(a) to (e), (g), (i), (j), C1.6(b). Level: A-level only.*
 
 ### What you need to know
 

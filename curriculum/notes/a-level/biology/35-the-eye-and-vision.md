@@ -12,7 +12,7 @@ boards:
     spec_refs: ["9.7 i", "9.7 ii", "9.7 iii"]
   - board: OCR B
     code: "H422"
-    spec_refs: ["5.2.2(a)", "5.2.2(b)", "5.2.2(c)", "5.2.2(d)", "5.2.3(b)"]
+    spec_refs: ["5.2.2(a)", "5.2.2(b)", "5.2.2(c)", "5.2.2(d)"]
 refs_checked: false
 spec_urls:
   Edexcel A: https://qualifications.pearson.com/en/qualifications/edexcel-a-levels/biology-a-2015.html

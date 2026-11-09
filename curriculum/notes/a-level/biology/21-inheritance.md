@@ -18,7 +18,7 @@ boards:
     spec_refs: ["6.1.2(a)", "6.1.2(b)", "6.1.2(c)", "6.1.2(d)"]
   - board: OCR B
     code: "H422"
-    spec_refs: ["5.1.1(a)", "5.1.1(c)", "5.1.1(d)", "5.1.1(e)", "5.1.1(f)"]
+    spec_refs: ["5.1.1(a)", "5.1.1(c)", "5.1.1(d)", "5.1.1(e)"]
   - board: Eduqas
     code: "A400QS"
     spec_refs: ["C2.5(a)", "C2.5(b)", "C2.5(c)", "C2.5(d)", "C2.5(e)"]
@@ -43,7 +43,7 @@ A-level only for AQA. Meiosis is in file 13; Hardy–Weinberg in file 22; geneti
 
 ### Board differences
 
-- AQA 3.7.1. Edexcel A 2.13, 3.8, 3.15. Edexcel B 8.2 i to vi. OCR A 6.1.2(a) to (d). OCR B 5.1.1(a), (c) to (f). Eduqas C2.5(a) to (e).
+- AQA 3.7.1. Edexcel A 2.13, 3.8, 3.15. Edexcel B 8.2 i to vi. OCR A 6.1.2(a) to (d). OCR B 5.1.1(a), (c) to (e). Eduqas C2.5(a) to (e).
 - Edexcel A asks for pedigree diagrams and cystic fibrosis as its monohybrid example (CF itself in file 39), and polygenic inheritance (3.15).
 - OCR A asks for continuous and discontinuous variation linked to polygenes (6.1.2(d)), and for environmental effects such as chlorosis and etiolation in plants (6.1.2(a)).
 - OCR B asks for model organisms used in genetics (5.1.1(e)).
@@ -51,7 +51,7 @@ A-level only for AQA. Meiosis is in file 13; Hardy–Weinberg in file 22; geneti
 
 ## 3.7.1 Inheritance
 
-*Refs: AQA 3.7.1 · Edexcel A 2.13, 3.8, 3.15 · Edexcel B 8.2 i to vi · OCR A 6.1.2(a) to (d) · OCR B 5.1.1(a), (c) to (f) · Eduqas C2.5(a) to (e). Level: A-level only (AS for Edexcel A).*
+*Refs: AQA 3.7.1 · Edexcel A 2.13, 3.8, 3.15 · Edexcel B 8.2 i to vi · OCR A 6.1.2(a) to (d) · OCR B 5.1.1(a), (c) to (e) · Eduqas C2.5(a) to (e). Level: A-level only (AS for Edexcel A).*
 
 ### What you need to know
 

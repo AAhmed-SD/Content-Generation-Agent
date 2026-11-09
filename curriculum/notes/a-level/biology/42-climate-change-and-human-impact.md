@@ -15,7 +15,7 @@ boards:
     spec_refs: ["4.2.1(f)", "4.2.1(g)", "4.2.1(h)", "4.2.1(i)", "6.3.2(c)", "6.3.2(d)", "6.3.2(e)"]
   - board: OCR B
     code: "H422"
-    spec_refs: ["4.3.1(g)", "4.3.1(h)", "4.3.2(a)", "4.3.2(b)", "4.3.2(c)", "4.3.2(d)"]
+    spec_refs: ["4.3.1(l)", "4.3.2(a)", "4.3.2(b)", "4.3.2(c)", "4.3.2(d)"]
   - board: Eduqas
     code: "A400QS"
     spec_refs: ["C1.5(m)", "C1.6(a)", "C1.6(b)", "C1.6(c)", "C1.6(d)", "C1.6(e)", "C1.6(f)"]
@@ -31,7 +31,7 @@ pmt_url: https://www.physicsandmathstutor.com/biology-revision/
 
 # Climate change, human impact and sustainability
 
-Human activity is changing climates and ecosystems and driving species to extinction. This file covers the evidence for and causes of climate change, its effects on organisms, why biodiversity matters, how species and ecosystems are conserved and managed sustainably, international agreements, human population growth and food security, and Edexcel A core practical 13.
+Human activity is changing climates and ecosystems and driving species to extinction. This file covers the evidence for and causes of climate change, its effects on organisms, why biodiversity matters, how species and ecosystems are conserved and managed sustainably, international agreements, farms as ecosystems, human population growth and food security, and Edexcel A core practical 13.
 
 ## Overview
 
@@ -39,10 +39,10 @@ Carbon and nitrogen cycles are in file 17; succession, conservation by managing 
 
 ### Board differences
 
-- Edexcel A 4.1, 4.16, 5.12 to 5.16, 5.18, 5.20 to 5.22, CP13. Edexcel B 3.3 ii, iii, 10.4 i to iv. OCR A 4.2.1(f) to (i), 6.3.2(c) to (e). OCR B 4.3.1(g), (h), 4.3.2(a) to (d). Eduqas C1.5(m), C1.6(a) to (f).
+- Edexcel A 4.1, 4.16, 5.12 to 5.16, 5.18, 5.20 to 5.22, CP13. Edexcel B 3.3 ii, iii, 10.4 i to iv. OCR A 4.2.1(f) to (i), 6.3.2(c) to (e). OCR B 4.3.1(l), 4.3.2(a) to (d). Eduqas C1.5(m), C1.6(a) to (f).
 - Edexcel A has a full sub-topic on climate change: evidence, causes, models, effects, and how scientific conclusions about controversial issues are reached.
 - OCR A asks for named examples of managed ecosystems (Galápagos, Masai Mara, Terai region, Peak District, Snowdonia, Antarctica) and agreements (CITES, CBD, Countryside Stewardship).
-- OCR B asks for increasing crop yields, pest control, human population growth and food security.
+- OCR B asks for farms as ecosystems, human population growth, the importance of biodiversity and food security.
 - Eduqas asks for planetary boundaries (C1.6(f)).
 
 ## Climate change: evidence, causes and models
@@ -177,24 +177,18 @@ Small populations are vulnerable: low genetic diversity, inbreeding, chance even
 
 ## Human population, crops and food security
 
-*Refs: OCR B 4.3.1(g), (h), 4.3.2(a) to (d) · Eduqas C1.6(d). Level: A-level only.*
+*Refs: OCR B 4.3.1(l), 4.3.2(a) to (d) · Eduqas C1.6(d). Level: A-level only.*
 
 ### What you need to know
 
-- Ways of increasing crop yields; methods of pest control.
+- Farms as ecosystems; the conflict between agriculture and conservation.
 - The factors that alter birth and death rates; the effect of human population growth on biodiversity.
 - The ecological, economic and scientific reasons for conservation.
 - Global food security.
 
 ### Explained
 
-**Increasing crop yields** (OCR B 4.3.1(g)). Selective breeding and genetic modification for high yield, disease and drought resistance; fertilisers; irrigation; glasshouses with extra CO₂, light and heat (file 15); controlling weeds, pests and diseases.
-
-**Pest control** (OCR B 4.3.1(h)).
-
-- *Chemical:* pesticides (insecticides, fungicides, herbicides). Fast and effective, but may kill non-target species, persist and bioaccumulate up food chains, and select for resistance.
-- *Biological:* introducing a natural predator, parasite or pathogen of the pest (ladybirds eat aphids; parasitic wasps for whitefly in glasshouses). Specific, no residues, no resistance; but slower, does not eliminate the pest, and an introduced species may become a pest itself.
-- *Integrated pest management:* combining methods (crop rotation, resistant varieties, biological control, and chemicals only when needed).
+**Farms as ecosystems** (OCR B 4.3.1(l)). A farm is an ecosystem managed to channel as much energy as possible into crops and livestock: weeds, pests and competitors are removed and nutrients are added. This conflicts with conservation, because hedgerow removal, monocultures, pesticides, fertilisers and drainage reduce biodiversity (file 14). Compromises: keeping hedgerows and field margins, agri-environment payments, integrated pest management, set-aside land and wildlife-friendly farming. The compensation point and crop yields are in file 15; deflected succession through land management in file 23.
 
 **Population growth** (OCR B 4.3.2(a), (b)). Human population grows when birth rate exceeds death rate. Birth rates fall with better education (especially for women), contraception, lower infant mortality and urbanisation; death rates fall with better food, clean water, sanitation, vaccination and medicine. The world population has grown from about 1 billion in 1800 to over 8 billion. This increases demand for land, water and food, leading to habitat loss, pollution and over-exploitation, reducing biodiversity.
 
@@ -209,7 +203,7 @@ Small populations are vulnerable: low genetic diversity, inbreeding, chance even
 5. Explain why a 10 °C rise in temperature might double the rate of decomposition in soil. (2 marks)
 6. Give one ecological, one economic and one aesthetic reason for conserving biodiversity. (3 marks)
 7. Evaluate the effectiveness of CITES. (3 marks)
-8. Compare chemical and biological pest control. (4 marks)
+8. Explain why there is often conflict between farming and conservation, and suggest two compromises. (4 marks)
 
 ## Mark scheme
 
@@ -220,4 +214,4 @@ Small populations are vulnerable: low genetic diversity, inbreeding, chance even
 5. Decomposition is enzyme-controlled (1); more kinetic energy / more enzyme–substrate collisions, Q10 about 2 (1).
 6. Ecological: food webs / stability / keystone species / nutrient cycling (1); economic: food / medicines / timber / ecotourism / pollination (1); aesthetic: enjoyment / wellbeing / beauty (1).
 7. Has reduced legal trade in endangered species (e.g. ivory) (1); but illegal trade continues / poaching (1); depends on enforcement and funding in each country / not all countries signed (1).
-8. Chemical: fast / effective / easy to apply (1); but kills non-target species / bioaccumulates / resistance (1). Biological: specific, no residues, no resistance (1); but slow / does not remove all pests / control agent may become a pest (1).
+8. Farming maximises yield by removing other species / monocultures / pesticides / hedgerow removal (1); this reduces habitats and biodiversity (1); any two compromises (1 each): hedgerows / field margins; agri-environment payments; integrated pest management; set-aside / wildlife areas.

@@ -15,7 +15,7 @@ boards:
     spec_refs: ["6.2.1(g)", "6.2.1(h)"]
   - board: OCR B
     code: "H422"
-    spec_refs: ["3.2.1(d)", "3.2.3(g)"]
+    spec_refs: ["3.2.1(d)", "3.2.3(g)", "4.3.1(h)"]
   - board: Eduqas
     code: "A400QS"
     spec_refs: ["C1.4(a)", "C1.4(b)", "C1.4(c)", "C1.4(d)"]

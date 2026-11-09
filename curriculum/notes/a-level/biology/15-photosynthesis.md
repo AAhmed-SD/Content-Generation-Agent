@@ -51,7 +51,7 @@ A-level only. ATP and ATP synthase are introduced in file 03; chemiosmosis is ex
 
 ## 3.5.1 Photosynthesis
 
-*Refs: AQA 3.5.1, RP7, RP8 · Edexcel A 5.5 to 5.9, CP11 · Edexcel B 5.6 i, ii, 5.7 i to viii, CP10, CP11 · OCR A 5.2.1(a) to (g) · OCR B 4.3.1(a) to (f) · Eduqas C1.1(b), C1.2(a) to (k). Level: A-level only.*
+*Refs: AQA 3.5.1, RP7, RP8 · Edexcel A 5.5 to 5.9, CP11 · Edexcel B 5.6 i, ii, 5.7 i to viii, CP10, CP11 · OCR A 5.2.1(a) to (g) · OCR B 4.3.1(a) to (g) · Eduqas C1.1(b), C1.2(a) to (k). Level: A-level only.*
 
 ### What you need to know
 
@@ -110,7 +110,7 @@ Six turns of the cycle fix 6 CO₂ and make one hexose (from 2 TP).
 
 **Agricultural practice.** Glasshouse growers raise CO₂ (by burning fuel, which also warms the air), use artificial lighting, and heat the glasshouse. The extra cost must be balanced against the extra yield: adding more of a factor that is not limiting just wastes money.
 
-**Respiration and photosynthesis** (OCR A, OCR B). Plants respire all the time. At the light compensation point, the rate of photosynthesis equals the rate of respiration, so there is no net gas exchange. The products of each are the raw materials for the other.
+**Respiration and photosynthesis** (OCR A, OCR B). Plants respire all the time. At the light compensation point, the rate of photosynthesis equals the rate of respiration, so there is no net gas exchange and no net gain in biomass. The products of each are the raw materials for the other. (OCR B 4.3.1(g)) For crop production, plants must spend as long as possible above the compensation point: growers extend the hours of light and raise light intensity and CO₂ in glasshouses, but heating at night raises respiration and lowers the net gain, so night temperatures are kept low.
 
 ### Worked example
 

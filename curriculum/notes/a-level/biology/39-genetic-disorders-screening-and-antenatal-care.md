@@ -12,7 +12,7 @@ boards:
     spec_refs: ["1.4 ix", "2.3 vi", "2.3 vii"]
   - board: OCR B
     code: "H422"
-    spec_refs: ["3.1.2(d)", "3.1.2(e)", "3.1.2(f)", "3.1.2(g)", "3.1.2(h)", "3.1.2(i)", "5.1.1(g)"]
+    spec_refs: ["3.1.2(d)", "3.1.2(e)", "3.1.2(f)", "3.1.2(g)", "3.1.2(h)", "3.1.2(i)", "5.1.1(f)", "5.1.1(g)", "5.1.2(b)"]
   - board: Eduqas
     code: "A400QS"
     spec_refs: ["C2.5(f)"]
@@ -35,7 +35,7 @@ Inheritance and pedigrees are in file 21; gene mutations and sickle cell anaemia
 
 ### Board differences
 
-- Edexcel A 2.14 to 2.16. Edexcel B 1.4 ix, 2.3 vi, vii. OCR B 3.1.2(d) to (i), 5.1.1(g). Eduqas C2.5(f).
+- Edexcel A 2.14 to 2.16. Edexcel B 1.4 ix, 2.3 vi, vii. OCR B 3.1.2(d) to (i), 5.1.1(f), (g), 5.1.2(b). Eduqas C2.5(f).
 - Edexcel A uses cystic fibrosis to show how a gene mutation affects the body, and asks for genetic screening (carrier testing, pre-implantation genetic diagnosis, prenatal testing) and its ethics.
 - Edexcel B asks for translocations and non-disjunction (including Down's syndrome).
 - OCR B asks for the UK antenatal care programme, diet, alcohol and smoking in pregnancy, fetal monitoring, amniocentesis and CVS, karyotypes, and the role of the genetic counsellor.
@@ -67,7 +67,7 @@ Cystic fibrosis (CF) is caused by recessive alleles of the **CFTR** gene, which 
 
 ## Chromosome mutations and karyotypes
 
-*Refs: Edexcel B 2.3 vi, vii · OCR B 3.1.2(i) · Eduqas C2.5(f). Level: AS & A (Edexcel B, OCR B); A-level only (Eduqas).*
+*Refs: Edexcel B 2.3 vi, vii · OCR B 3.1.2(i), 5.1.1(f) · Eduqas C2.5(f). Level: AS & A (Edexcel B, OCR B); A-level only (Eduqas).*
 
 ### What you need to know
 

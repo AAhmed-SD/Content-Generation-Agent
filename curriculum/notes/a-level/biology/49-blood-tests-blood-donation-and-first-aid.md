@@ -9,7 +9,7 @@ boards:
     spec_refs: ["4.4 vi", "4.4 vii"]
   - board: OCR B
     code: "H422"
-    spec_refs: ["2.1.1(a)", "2.1.1(b)", "2.1.1(c)", "2.1.1(e)", "2.1.1(f)", "2.1.3(g)", "2.2.1(g)", "2.2.1(i)", "2.2.2(e)", "2.2.3(d)"]
+    spec_refs: ["2.1.1(a)", "2.1.1(b)", "2.1.1(c)", "2.1.1(e)", "2.1.1(f)", "2.1.3(e)", "2.1.3(g)", "2.2.1(g)", "2.2.1(i)", "2.2.2(d)", "2.2.2(e)", "2.2.3(d)"]
   - board: Eduqas
     code: "A400QS"
     spec_refs: ["C3.2(d)", "C3.2(g)"]
@@ -31,7 +31,7 @@ AS content for OCR B. The immune functions of white blood cells are in file 07; 
 
 ### Board differences
 
-- OCR B 2.1.1(a) to (c), (e), (f), 2.1.3(g), 2.2.1(g), (i), 2.2.2(e), 2.2.3(d). Edexcel B 4.4 vi, vii. Eduqas C3.2(d), (g).
+- OCR B 2.1.1(a) to (c), (e), (f), 2.1.3(e) (first aid for bleeding), 2.1.3(g), 2.2.1(g), (i), 2.2.2(e), 2.2.3(d). Edexcel B 4.4 vi, vii. Eduqas C3.2(d), (g).
 - OCR B treats blood in a medical context: smears, Leishman's stain, haemocytometer counts, flow cytometry, blood donation and blood products, measuring pulse and blood pressure, CPR and defibrillation.
 - Edexcel B and Eduqas ask for the structure and functions of blood (plasma and cells, and what plasma transports).
 
@@ -141,7 +141,7 @@ If incompatible blood is given, the recipient's antibodies bind to the donor's r
 
 ## Measuring pulse and blood pressure
 
-*Refs: OCR B 2.2.1(g), 2.2.2(e). Level: AS & A.*
+*Refs: OCR B 2.2.1(g), 2.2.2(d), (e). Level: AS & A.*
 
 ### What you need to know
 
@@ -161,6 +161,23 @@ If incompatible blood is given, the recipient's antibodies bind to the donor's r
 5. Recorded as systolic/diastolic in mmHg, for example 120/80.
 
 Readings are affected by exercise, stress, caffeine, posture and cuff size, so several readings at rest are taken. Hypertension: 140/90 or higher (file 38).
+
+## First aid for bleeding
+
+*Refs: OCR B 2.1.3(e). Level: AS & A.*
+
+### What you need to know
+
+- The first-aid procedure to assist the blood clotting process and prevent excessive blood loss (clotting itself is in file 38).
+
+### Explained
+
+1. Wear gloves if available (protects both people from infection).
+2. Apply firm, direct pressure to the wound with a clean pad or dressing. Pressure squeezes the damaged vessels, slowing blood flow so platelets and fibrin have time to form a clot.
+3. If possible, raise the injured part above the level of the heart, which lowers the pressure in its vessels.
+4. Do not remove the first pad if blood soaks through; add another on top, so the forming clot is not disturbed.
+5. Secure the dressing with a bandage that is firm but not so tight it stops circulation.
+6. For severe bleeding call 999; keep the casualty lying down and warm and watch for shock (pale, cold, clammy skin; rapid weak pulse), caused by low blood volume.
 
 ## Emergency treatment
 

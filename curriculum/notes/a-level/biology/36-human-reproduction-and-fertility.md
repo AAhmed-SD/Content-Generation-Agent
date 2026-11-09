@@ -27,7 +27,7 @@ pmt_url: https://www.physicsandmathstutor.com/biology-revision/
 
 # Human reproduction, fertility and ageing of the reproductive system
 
-This file covers the human reproductive systems, how sperm and eggs are made and how they are adapted, hormonal control of gametogenesis and the menstrual cycle, fertilisation, early development and the placenta, and the biology of contraception, assisted reproduction and the effects of ageing.
+This file covers the human reproductive systems, how sperm and eggs are made and how they are adapted, hormonal control of gametogenesis and the menstrual cycle, fertilisation, early development and the placenta, infertility and assisted reproduction, and the effects of ageing.
 
 ## Overview
 
@@ -37,7 +37,7 @@ Meiosis is in file 13. Pregnancy tests with monoclonal antibodies are in files 0
 
 - Edexcel A 3.6, 3.7 (mammals). Edexcel B 2.4 i to iii. OCR B 4.2.1(a) to (j), 4.2.2(a) to (c). Eduqas C2.3(a) to (d).
 - Edexcel A asks for the specialisation of mammalian gametes and fertilisation (acrosome and cortical reactions). Edexcel B adds oogenesis, spermatogenesis and development to the blastocyst.
-- OCR B asks for the urinogenital systems, gonad histology, hormonal control, contraception, assisted reproduction and the effects of ageing.
+- OCR B asks for the urinogenital systems, gonad histology, hormonal control, pregnancy testing, the biological and ethical issues of infertility, assisted reproduction and the effects of ageing.
 - Eduqas asks for the reproductive systems, gametogenesis, the menstrual cycle and the role of the placenta.
 
 ## The reproductive systems and gametogenesis
@@ -132,27 +132,17 @@ Meiosis is in file 13. Pregnancy tests with monoclonal antibodies are in files 0
 - Hormones: the embryo first makes **hCG**, which keeps the corpus luteum making progesterone, so the lining is not shed. Later the placenta itself makes progesterone and oestrogen (maintaining the endometrium and inhibiting FSH and LH, so no more ovulation) and human placental lactogen.
 - Oxytocin (from the posterior pituitary) causes contractions at birth; prolactin causes milk production.
 
-## Contraception, assisted reproduction and ageing
+## Infertility, assisted reproduction and ageing
 
 *Refs: OCR B 4.2.1(h) to (j), 4.2.2(a) to (c). Level: A-level only.*
 
 ### What you need to know
 
-- The biological basis of contraception.
+- The biological and ethical issues surrounding infertility.
 - Assisted reproduction, including IVF.
 - The effects of ageing on the female and male reproductive systems and how the effects are managed.
 
 ### Explained
-
-**Contraception** (the biology of each method).
-
-- *Hormonal* (combined pill, implants, injections): synthetic oestrogen and progesterone inhibit FSH and LH by negative feedback, so no follicle matures and no ovulation; progesterone also thickens cervical mucus. Very effective if used correctly; side effects for some users.
-- *Barrier methods* (condoms, diaphragms): stop sperm reaching the egg; condoms also reduce transmission of sexually transmitted infections.
-- *Intrauterine devices:* stop sperm reaching the egg or prevent implantation.
-- *Surgical:* cutting the sperm ducts (vasectomy) or tying the oviducts; usually permanent.
-- *Natural methods:* avoiding the fertile days, judged from body temperature and mucus; less reliable.
-
-Evaluating methods uses effectiveness, side effects, reversibility, protection from infection, and personal and religious views.
 
 **Causes of infertility.** In women: no ovulation (hormone imbalance), blocked oviducts (after infection), endometriosis. In men: low sperm count or poor motility. Age reduces fertility.
 
@@ -160,7 +150,7 @@ Evaluating methods uses effectiveness, side effects, reversibility, protection f
 
 - *Fertility drugs:* FSH and LH (or drugs that increase them, such as clomifene) stimulate follicle development and ovulation.
 - *In vitro fertilisation (IVF):* hormones stimulate many follicles; eggs are collected with a needle; eggs and sperm are mixed in a dish (or a single sperm is injected into an egg, ICSI, when sperm are few or weak); embryos grow for 2 to 5 days; one or two are placed in the uterus. Success rates fall with the woman's age. Spare embryos can be frozen. Pre-implantation genetic diagnosis can test embryos for serious inherited disorders.
-- Issues: cost; multiple pregnancies (higher risk); what happens to unused embryos; HFEA regulation in the UK.
+- Issues: cost and who should receive NHS-funded treatment; multiple pregnancies (higher risk); what happens to unused embryos; the use of donated eggs or sperm and the child's right to know their genetic parent; age limits; the emotional effect of failed cycles; HFEA regulation in the UK. Religious and personal views differ on which treatments are acceptable.
 
 **Ageing: women.** The **menopause** (usually between 45 and 55): the supply of follicles runs out; the ovaries stop responding; oestrogen and progesterone fall; menstruation and ovulation stop. FSH and LH rise (less negative feedback). Effects: hot flushes, mood changes, thinning of the vaginal lining; loss of bone density (osteoporosis risk, file 47); higher risk of heart disease. **Hormone replacement therapy (HRT)** gives oestrogen (with progesterone if the woman has a uterus) to relieve symptoms and protect bone; risks for some women include blood clots and a small increase in some cancers, so benefits and risks are weighed individually.
 
@@ -180,7 +170,7 @@ Evaluating methods uses effectiveness, side effects, reversibility, protection f
 3. Explain the roles of FSH and LH in the menstrual cycle. (4 marks)
 4. Describe the acrosome reaction and the cortical reaction, and explain the importance of each. (4 marks)
 5. Explain why the endometrium is not shed at the end of the cycle if an embryo implants. (3 marks)
-6. Explain how the combined contraceptive pill prevents pregnancy. (3 marks)
+6. Give three biological causes of infertility and one ethical issue raised by IVF. (4 marks)
 7. Describe the stages of IVF. (4 marks)
 8. Explain why women are more at risk of osteoporosis after the menopause. (2 marks)
 
@@ -191,6 +181,6 @@ Evaluating methods uses effectiveness, side effects, reversibility, protection f
 3. FSH stimulates follicle development (1); follicle makes oestrogen (1); LH surge causes ovulation (1); LH stimulates corpus luteum to make progesterone (1).
 4. Acrosome releases enzymes / proteases to digest zona pellucida (1), allowing sperm to reach oocyte membrane (1); cortical granules release contents, hardening zona pellucida (1), preventing polyspermy (1).
 5. Embryo / trophoblast makes hCG (1); maintains corpus luteum (1); which keeps making progesterone, maintaining the lining (1).
-6. Oestrogen and progesterone inhibit FSH / LH release (1); no follicle matures (1); no ovulation; cervical mucus thickened (1).
+6. Any three (1 each): no ovulation / hormone imbalance; blocked oviducts; endometriosis; low sperm count / poor motility; age. Ethical issue (1): unused embryos; multiple births; cost / access; donor anonymity.
 7. Hormones to stimulate many follicles (1); eggs collected (1); fertilised with sperm in a dish (1); embryos grown and one or two transferred to uterus (1).
 8. Oestrogen falls (1); oestrogen helps maintain bone density, so bone is lost faster (1).

@@ -45,7 +45,7 @@ AS content. Sclerenchyma and plant fibres (Edexcel A) are in file 41. How xylem 
 
 - AQA 3.3.4.2. Edexcel A 4.11 (part). Edexcel B 4.7 i to v, CP8. OCR A 3.1.3(a) to (f). OCR B 2.2.4(a) to (f). Eduqas C3.2(i) to (r).
 - OCR A, OCR B, Edexcel B and Eduqas ask for the root: water entering root hairs, apoplast and symplast pathways, the endodermis and Casparian strip. AQA does not; it is included below for those boards.
-- OCR A, OCR B and Eduqas ask for xerophytes and hydrophytes (OCR A 3.1.3(e), Eduqas C3.2(p)); AQA mentions xerophytes only under gas exchange (file 08).
+- OCR A and Eduqas ask for xerophytes and hydrophytes (OCR A 3.1.3(e), Eduqas C3.2(p)); AQA mentions xerophytes only under gas exchange (file 08).
 - OCR A asks for the distribution of xylem and phloem in roots, stems and leaves of dicots, and drawing stained sections (3.1.3(b)).
 - Potometer practicals: OCR A PAG5 / 3.1.3(c), Edexcel B CP8, OCR B 2.2.4(c). AQA lists the potometer as a skills opportunity, not a required practical.
 

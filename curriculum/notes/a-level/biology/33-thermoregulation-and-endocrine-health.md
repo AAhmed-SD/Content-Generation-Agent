@@ -137,6 +137,7 @@ Cold exposure increases thyroxine release.
 - *Fasting blood glucose:* blood glucose after no food for 8 hours or more. Normal below about 6 mmol dm⁻³; 7 or above suggests diabetes.
 - *Glucose tolerance test:* after fasting, the person drinks a set amount of glucose, and blood glucose is measured at intervals (usually after 2 hours). In diabetes, glucose rises higher and stays high for longer, because it is not taken up into cells.
 - *HbA1c test:* measures the proportion of haemoglobin with glucose attached (glycated). Red blood cells last about 3 months, so it shows the average blood glucose over the last 2 to 3 months. Used to diagnose and to check control.
+- *Biosensors:* handheld blood glucose meters use a biosensor: glucose oxidase immobilised on a test strip oxidises glucose in a drop of blood, and the reaction produces a small electric current proportional to the glucose concentration, shown as a reading (file 01). Continuous glucose monitors use a sensor under the skin.
 - *Urine test:* dipsticks with glucose oxidase show glucose in urine (glucose exceeds the kidney's reabsorption capacity). Ketones in urine show the body is breaking down fat because glucose cannot enter cells (dangerous in type 1).
 
 **Treatment.**

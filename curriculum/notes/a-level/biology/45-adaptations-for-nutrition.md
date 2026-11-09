@@ -4,11 +4,15 @@ subject: Biology
 topic: "Adaptations for nutrition"
 as_content: "AS content for Eduqas (C3.3)."
 boards:
+  - board: OCR B
+    code: "H422"
+    spec_refs: ["4.3.1(k)"]
   - board: Eduqas
     code: "A400QS"
     spec_refs: ["C3.3(a)", "C3.3(b)", "C3.3(c)", "C3.3(d)", "C3.3(e)", "C3.3(f)", "C3.3(g)", "C3.3(i)", "C3.3(j)"]
 refs_checked: false
 spec_urls:
+  OCR B: https://www.ocr.org.uk/qualifications/as-and-a-level/biology-b-advancing-biology-h022-h422-from-2015/
   Eduqas: https://www.eduqas.co.uk/qualifications/biology-asa-level/
 pmt_url: https://www.physicsandmathstutor.com/biology-revision/
 ---

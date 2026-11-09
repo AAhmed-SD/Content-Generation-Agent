@@ -769,36 +769,36 @@ Level key: AS & A = also in that board's AS; A-level only = not in AS.
 | 2.1.1(g) | Ultrastructure of eukaryotic cells | AS & A | [04-cell-structure-and-microscopy.md](04-cell-structure-and-microscopy.md) |
 | 2.1.1(h) | Plant cell ultrastructure; prokaryotic and eukaryotic cells compared | AS & A | [04-cell-structure-and-microscopy.md](04-cell-structure-and-microscopy.md) |
 | 2.1.1(i) | Calibrating and using a graticule | AS & A | [04-cell-structure-and-microscopy.md](04-cell-structure-and-microscopy.md) |
-| 2.1.1(j) | Plasma membrane components | AS & A | [06-membranes-and-transport-across-them.md](06-membranes-and-transport-across-them.md) |
+| 2.1.1(j) | Membrane lipids; triglycerides and phospholipids | AS & A | [06-membranes-and-transport-across-them.md](06-membranes-and-transport-across-them.md), [01-monomers-carbohydrates-and-lipids.md](01-monomers-carbohydrates-and-lipids.md) |
 | 2.1.1(k) | Fluid mosaic model | AS & A | [06-membranes-and-transport-across-them.md](06-membranes-and-transport-across-them.md) |
 | 2.1.1(l) | Movement across membranes | AS & A | [06-membranes-and-transport-across-them.md](06-membranes-and-transport-across-them.md) |
 | 2.1.1(m) | Practicals on membrane permeability | AS & A | [06-membranes-and-transport-across-them.md](06-membranes-and-transport-across-them.md) |
 | 2.1.1(n) | Roles of membranes | AS & A | [06-membranes-and-transport-across-them.md](06-membranes-and-transport-across-them.md) |
 | 2.1.1(o) | Organelles in protein production | AS & A | [04-cell-structure-and-microscopy.md](04-cell-structure-and-microscopy.md) |
 | 2.1.2(a) | Properties of water | AS & A | [03-nucleic-acids-atp-water-and-inorganic-ions.md](03-nucleic-acids-atp-water-and-inorganic-ions.md) |
-| 2.1.2(b) | Monosaccharides and disaccharides | AS & A | [01-monomers-carbohydrates-and-lipids.md](01-monomers-carbohydrates-and-lipids.md) |
-| 2.1.2(c) | Polysaccharides | AS & A | [01-monomers-carbohydrates-and-lipids.md](01-monomers-carbohydrates-and-lipids.md) |
+| 2.1.2(b) | Water as a constituent of cells and as a transport medium | AS & A | [03-nucleic-acids-atp-water-and-inorganic-ions.md](03-nucleic-acids-atp-water-and-inorganic-ions.md) |
+| 2.1.2(c) | Detecting sugars and proteins: Benedict's, biuret, colorimetry | AS & A | [01-monomers-carbohydrates-and-lipids.md](01-monomers-carbohydrates-and-lipids.md), [02-proteins-and-enzymes.md](02-proteins-and-enzymes.md) |
 | 2.1.2(d) | Hydrolysis and condensation | AS & A | [01-monomers-carbohydrates-and-lipids.md](01-monomers-carbohydrates-and-lipids.md) |
-| 2.1.2(e) | Alpha-glucose structure | AS & A | [01-monomers-carbohydrates-and-lipids.md](01-monomers-carbohydrates-and-lipids.md) |
-| 2.1.2(f) | Triglycerides, phospholipids and cholesterol | AS & A | [01-monomers-carbohydrates-and-lipids.md](01-monomers-carbohydrates-and-lipids.md) |
+| 2.1.2(e) | Alpha-glucose and lactose | AS & A | [01-monomers-carbohydrates-and-lipids.md](01-monomers-carbohydrates-and-lipids.md) |
+| 2.1.2(f) | Forming polysaccharides; test for starch | AS & A | [01-monomers-carbohydrates-and-lipids.md](01-monomers-carbohydrates-and-lipids.md) |
 | 2.1.2(g) | Osmosis and water potential | AS & A | [06-membranes-and-transport-across-them.md](06-membranes-and-transport-across-them.md) |
 | 2.1.2(h) | Practicals on osmosis | AS & A | [06-membranes-and-transport-across-them.md](06-membranes-and-transport-across-them.md) |
-| 2.1.3(a) | Amino acids, peptide bonds and protein structure | AS & A | [02-proteins-and-enzymes.md](02-proteins-and-enzymes.md) |
+| 2.1.3(a) | Amino acids, peptide bonds; chromatography of amino acids | AS & A | [02-proteins-and-enzymes.md](02-proteins-and-enzymes.md) |
 | 2.1.3(b) | Globular proteins | AS & A | [02-proteins-and-enzymes.md](02-proteins-and-enzymes.md) |
 | 2.1.3(c) | Globular proteins as enzymes | AS & A | [02-proteins-and-enzymes.md](02-proteins-and-enzymes.md) |
-| 2.1.3(d) | Enzyme mechanism and factors affecting activity | AS & A | [02-proteins-and-enzymes.md](02-proteins-and-enzymes.md) |
-| 2.1.3(e) | Inhibitors; practicals | AS & A | [02-proteins-and-enzymes.md](02-proteins-and-enzymes.md) |
+| 2.1.3(d) | Factors affecting enzyme activity; practicals | AS & A | [02-proteins-and-enzymes.md](02-proteins-and-enzymes.md) |
+| 2.1.3(e) | Blood clotting as an enzyme-controlled process; first aid for bleeding | AS & A | [38-cardiovascular-disease-diet-and-risk.md](38-cardiovascular-disease-diet-and-risk.md), [49-blood-tests-blood-donation-and-first-aid.md](49-blood-tests-blood-donation-and-first-aid.md) |
 | 2.1.3(f) | Enzymes and inhibitors in medical diagnosis and treatment | AS & A | [02-proteins-and-enzymes.md](02-proteins-and-enzymes.md) |
 | 2.1.3(g) | Blood donation; blood groups and blood products | AS & A | [49-blood-tests-blood-donation-and-first-aid.md](49-blood-tests-blood-donation-and-first-aid.md) |
 | 2.1.4(a) | Nucleotide structure | AS & A | [03-nucleic-acids-atp-water-and-inorganic-ions.md](03-nucleic-acids-atp-water-and-inorganic-ions.md) |
 | 2.1.4(b) | ADP and ATP | AS & A | [03-nucleic-acids-atp-water-and-inorganic-ions.md](03-nucleic-acids-atp-water-and-inorganic-ions.md) |
-| 2.1.4(c) | DNA structure | AS & A | [03-nucleic-acids-atp-water-and-inorganic-ions.md](03-nucleic-acids-atp-water-and-inorganic-ions.md) |
+| 2.1.4(c) | DNA structure; Chargaff's rules; purifying DNA | AS & A | [03-nucleic-acids-atp-water-and-inorganic-ions.md](03-nucleic-acids-atp-water-and-inorganic-ions.md) |
 | 2.1.4(d) | Semi-conservative replication | AS & A | [03-nucleic-acids-atp-water-and-inorganic-ions.md](03-nucleic-acids-atp-water-and-inorganic-ions.md) |
 | 2.1.4(e) | The genetic code | AS & A | [12-dna-genes-and-protein-synthesis.md](12-dna-genes-and-protein-synthesis.md) |
 | 2.1.4(f) | RNA structure | AS & A | [12-dna-genes-and-protein-synthesis.md](12-dna-genes-and-protein-synthesis.md) |
 | 2.1.4(g) | Transcription and translation | AS & A | [12-dna-genes-and-protein-synthesis.md](12-dna-genes-and-protein-synthesis.md) |
 | 2.2.1(a) | Need for mass transport in animals | AS & A | [10-mass-transport-in-animals.md](10-mass-transport-in-animals.md) |
-| 2.2.1(b) | Heart structure | AS & A | [10-mass-transport-in-animals.md](10-mass-transport-in-animals.md) |
+| 2.2.1(b) | Heart structure; heart dissection | AS & A | [10-mass-transport-in-animals.md](10-mass-transport-in-animals.md) |
 | 2.2.1(c) | Cardiac cycle | AS & A | [10-mass-transport-in-animals.md](10-mass-transport-in-animals.md) |
 | 2.2.1(d) | Initiation and coordination of the heartbeat | AS & A | [18-stimuli-receptors-and-control-of-heart-rate.md](18-stimuli-receptors-and-control-of-heart-rate.md) |
 | 2.2.1(e) | Practicals on heart rate | AS & A | [18-stimuli-receptors-and-control-of-heart-rate.md](18-stimuli-receptors-and-control-of-heart-rate.md), [40-exercise-and-sports-physiology.md](40-exercise-and-sports-physiology.md) |
@@ -807,41 +807,41 @@ Level key: AS & A = also in that board's AS; A-level only = not in AS.
 | 2.2.1(h) | ECGs | AS & A | [18-stimuli-receptors-and-control-of-heart-rate.md](18-stimuli-receptors-and-control-of-heart-rate.md) |
 | 2.2.1(i) | Emergency treatment for cardiac arrest; CPR, defibrillation | AS & A | [49-blood-tests-blood-donation-and-first-aid.md](49-blood-tests-blood-donation-and-first-aid.md) |
 | 2.2.2(a) | Closed double circulation | AS & A | [10-mass-transport-in-animals.md](10-mass-transport-in-animals.md) |
-| 2.2.2(b) | Blood vessels | AS & A | [10-mass-transport-in-animals.md](10-mass-transport-in-animals.md) |
+| 2.2.2(b) | Arteries, arterioles, capillaries, venules and veins | AS & A | [10-mass-transport-in-animals.md](10-mass-transport-in-animals.md) |
 | 2.2.2(c) | Tissue fluid | AS & A | [10-mass-transport-in-animals.md](10-mass-transport-in-animals.md) |
-| 2.2.2(d) | Haemoglobin; oxygen and carbon dioxide transport | AS & A | [10-mass-transport-in-animals.md](10-mass-transport-in-animals.md) |
+| 2.2.2(d) | Measuring blood pressure with a sphygmomanometer | AS & A | [49-blood-tests-blood-donation-and-first-aid.md](49-blood-tests-blood-donation-and-first-aid.md), [38-cardiovascular-disease-diet-and-risk.md](38-cardiovascular-disease-diet-and-risk.md) |
 | 2.2.2(e) | Systolic and diastolic blood pressure | AS & A | [38-cardiovascular-disease-diet-and-risk.md](38-cardiovascular-disease-diet-and-risk.md), [49-blood-tests-blood-donation-and-first-aid.md](49-blood-tests-blood-donation-and-first-aid.md) |
-| 2.2.3(a) | Mammalian gas exchange system | AS & A | [08-surface-area-and-gas-exchange.md](08-surface-area-and-gas-exchange.md) |
+| 2.2.3(a) | Cells, tissues and organs of the gas exchange system | AS & A | [08-surface-area-and-gas-exchange.md](08-surface-area-and-gas-exchange.md) |
 | 2.2.3(b) | Gas exchange in alveoli | AS & A | [08-surface-area-and-gas-exchange.md](08-surface-area-and-gas-exchange.md) |
 | 2.2.3(c) | Pulmonary ventilation; spirometry | AS & A | [08-surface-area-and-gas-exchange.md](08-surface-area-and-gas-exchange.md) |
 | 2.2.3(d) | Expired air resuscitation | AS & A | [49-blood-tests-blood-donation-and-first-aid.md](49-blood-tests-blood-donation-and-first-aid.md) |
 | 2.2.3(e) | Gas exchange in plants | AS & A | [08-surface-area-and-gas-exchange.md](08-surface-area-and-gas-exchange.md) |
-| 2.2.3(f) | Stomata | AS & A | [08-surface-area-and-gas-exchange.md](08-surface-area-and-gas-exchange.md) |
+| 2.2.3(f) | Structure, opening and closing of stomata | AS & A | [08-surface-area-and-gas-exchange.md](08-surface-area-and-gas-exchange.md) |
 | 2.2.4(a) | Need for transport in plants | AS & A | [11-mass-transport-in-plants.md](11-mass-transport-in-plants.md) |
 | 2.2.4(b) | Vascular tissue | AS & A | [11-mass-transport-in-plants.md](11-mass-transport-in-plants.md) |
-| 2.2.4(c) | Transpiration; potometers | AS & A | [11-mass-transport-in-plants.md](11-mass-transport-in-plants.md) |
+| 2.2.4(c) | Stained sections and dissection of plant organs | AS & A | [11-mass-transport-in-plants.md](11-mass-transport-in-plants.md) |
 | 2.2.4(d) | Water uptake and transport | AS & A | [11-mass-transport-in-plants.md](11-mass-transport-in-plants.md) |
-| 2.2.4(e) | Adaptations to water availability | AS & A | [11-mass-transport-in-plants.md](11-mass-transport-in-plants.md) |
+| 2.2.4(e) | Transpiration and factors affecting it; potometer | AS & A | [11-mass-transport-in-plants.md](11-mass-transport-in-plants.md) |
 | 2.2.4(f) | Translocation | AS & A | [11-mass-transport-in-plants.md](11-mass-transport-in-plants.md) |
 | 3.1.1(a) | The cell cycle | AS & A | [05-cell-cycle-mitosis-and-cancer.md](05-cell-cycle-mitosis-and-cancer.md) |
 | 3.1.1(b) | Mitosis; root tip practical | AS & A | [05-cell-cycle-mitosis-and-cancer.md](05-cell-cycle-mitosis-and-cancer.md) |
 | 3.1.1(c) | Apoptosis | AS & A | [24-mutation-stem-cells-and-gene-expression.md](24-mutation-stem-cells-and-gene-expression.md) |
 | 3.1.1(d) | Apoptosis and mitosis in development | AS & A | [24-mutation-stem-cells-and-gene-expression.md](24-mutation-stem-cells-and-gene-expression.md) |
-| 3.1.1(e) | Stem cells | AS & A | [24-mutation-stem-cells-and-gene-expression.md](24-mutation-stem-cells-and-gene-expression.md) |
+| 3.1.1(e) | Stem cell differentiation and uses | AS & A | [24-mutation-stem-cells-and-gene-expression.md](24-mutation-stem-cells-and-gene-expression.md) |
 | 3.1.2(a) | Significance of meiosis | AS & A | [13-mutation-meiosis-and-genetic-diversity.md](13-mutation-meiosis-and-genetic-diversity.md) |
 | 3.1.2(b) | Stages of meiosis | AS & A | [13-mutation-meiosis-and-genetic-diversity.md](13-mutation-meiosis-and-genetic-diversity.md) |
 | 3.1.2(c) | Genetic variation from meiosis | AS & A | [13-mutation-meiosis-and-genetic-diversity.md](13-mutation-meiosis-and-genetic-diversity.md) |
 | 3.1.2(d) | UK antenatal care | AS & A | [39-genetic-disorders-screening-and-antenatal-care.md](39-genetic-disorders-screening-and-antenatal-care.md) |
 | 3.1.2(e) | Diet in pregnancy | AS & A | [39-genetic-disorders-screening-and-antenatal-care.md](39-genetic-disorders-screening-and-antenatal-care.md) |
 | 3.1.2(f) | Alcohol and smoking in pregnancy | AS & A | [39-genetic-disorders-screening-and-antenatal-care.md](39-genetic-disorders-screening-and-antenatal-care.md) |
-| 3.1.2(g) | Fetal growth and screening | AS & A | [39-genetic-disorders-screening-and-antenatal-care.md](39-genetic-disorders-screening-and-antenatal-care.md) |
+| 3.1.2(g) | Ultrasound and fetal growth charts | AS & A | [39-genetic-disorders-screening-and-antenatal-care.md](39-genetic-disorders-screening-and-antenatal-care.md) |
 | 3.1.2(h) | Amniocentesis and CVS | AS & A | [39-genetic-disorders-screening-and-antenatal-care.md](39-genetic-disorders-screening-and-antenatal-care.md) |
 | 3.1.2(i) | Karyotypes | AS & A | [39-genetic-disorders-screening-and-antenatal-care.md](39-genetic-disorders-screening-and-antenatal-care.md) |
 | 3.1.3(a) | Classification and species | AS & A | [14-species-taxonomy-and-biodiversity.md](14-species-taxonomy-and-biodiversity.md) |
 | 3.1.3(b) | Evidence used in classification | AS & A | [14-species-taxonomy-and-biodiversity.md](14-species-taxonomy-and-biodiversity.md) |
 | 3.1.3(c) | DNA barcoding | AS & A | [14-species-taxonomy-and-biodiversity.md](14-species-taxonomy-and-biodiversity.md) |
 | 3.1.3(d) | Phylogenetic trees | AS & A | [14-species-taxonomy-and-biodiversity.md](14-species-taxonomy-and-biodiversity.md) |
-| 3.1.3(e) | Natural selection and evolution | AS & A | [13-mutation-meiosis-and-genetic-diversity.md](13-mutation-meiosis-and-genetic-diversity.md), [22-populations-evolution-and-speciation.md](22-populations-evolution-and-speciation.md) |
+| 3.1.3(e) | Behavioural, physiological and anatomical adaptations | AS & A | [13-mutation-meiosis-and-genetic-diversity.md](13-mutation-meiosis-and-genetic-diversity.md) |
 | 3.1.3(f) | Evolution of language as a model | AS & A | [14-species-taxonomy-and-biodiversity.md](14-species-taxonomy-and-biodiversity.md) |
 | 3.1.3(g) | Adaptation and selection | AS & A | [13-mutation-meiosis-and-genetic-diversity.md](13-mutation-meiosis-and-genetic-diversity.md) |
 | 3.1.3(h) | Measuring biodiversity | AS & A | [14-species-taxonomy-and-biodiversity.md](14-species-taxonomy-and-biodiversity.md) |
@@ -895,41 +895,41 @@ Level key: AS & A = also in that board's AS; A-level only = not in AS.
 | 4.1.2(a) | Effects of exercise | A-level only | [40-exercise-and-sports-physiology.md](40-exercise-and-sports-physiology.md) |
 | 4.1.2(b) | Aerobic fitness | A-level only | [40-exercise-and-sports-physiology.md](40-exercise-and-sports-physiology.md) |
 | 4.1.2(c) | Practicals on fitness | A-level only | [40-exercise-and-sports-physiology.md](40-exercise-and-sports-physiology.md) |
-| 4.1.2(d) | Performance-enhancing substances | A-level only | [40-exercise-and-sports-physiology.md](40-exercise-and-sports-physiology.md) |
-| 4.1.2(e) | Supplementary methods: blood doping, altitude | A-level only | [40-exercise-and-sports-physiology.md](40-exercise-and-sports-physiology.md) |
+| 4.1.2(d) | Training and aerobic fitness; F.I.T.T. practicals | A-level only | [40-exercise-and-sports-physiology.md](40-exercise-and-sports-physiology.md) |
+| 4.1.2(e) | Supplementary methods of enhancing performance | A-level only | [40-exercise-and-sports-physiology.md](40-exercise-and-sports-physiology.md) |
 | 4.1.2(f) | VO2 max | A-level only | [40-exercise-and-sports-physiology.md](40-exercise-and-sports-physiology.md) |
 | 4.1.2(g) | Haemoglobin | A-level only | [10-mass-transport-in-animals.md](10-mass-transport-in-animals.md) |
 | 4.1.2(h) | Dissociation curves | A-level only | [10-mass-transport-in-animals.md](10-mass-transport-in-animals.md) |
 | 4.1.2(i) | Bohr effect | A-level only | [10-mass-transport-in-animals.md](10-mass-transport-in-animals.md) |
 | 4.1.2(j) | Oxygen deficit and EPOC | A-level only | [40-exercise-and-sports-physiology.md](40-exercise-and-sports-physiology.md) |
-| 4.1.2(k) | Muscle structure; fast and slow twitch | A-level only | [19-nerve-impulses-synapses-and-muscle.md](19-nerve-impulses-synapses-and-muscle.md) |
+| 4.1.2(k) | Skeletal muscle histology and ultrastructure | A-level only | [19-nerve-impulses-synapses-and-muscle.md](19-nerve-impulses-synapses-and-muscle.md) |
 | 4.1.2(l) | Sliding filament theory | A-level only | [19-nerve-impulses-synapses-and-muscle.md](19-nerve-impulses-synapses-and-muscle.md) |
 | 4.2.1(a) | Urinogenital systems | A-level only | [36-human-reproduction-and-fertility.md](36-human-reproduction-and-fertility.md) |
-| 4.2.1(b) | Gonad histology | A-level only | [36-human-reproduction-and-fertility.md](36-human-reproduction-and-fertility.md) |
+| 4.2.1(b) | Histology of ovaries and testes | A-level only | [36-human-reproduction-and-fertility.md](36-human-reproduction-and-fertility.md) |
 | 4.2.1(c) | Gametogenesis | A-level only | [36-human-reproduction-and-fertility.md](36-human-reproduction-and-fertility.md) |
 | 4.2.1(d) | Secondary oocyte and sperm | A-level only | [36-human-reproduction-and-fertility.md](36-human-reproduction-and-fertility.md) |
 | 4.2.1(e) | Hormones in gametogenesis | A-level only | [36-human-reproduction-and-fertility.md](36-human-reproduction-and-fertility.md) |
 | 4.2.1(f) | Menstrual cycle | A-level only | [36-human-reproduction-and-fertility.md](36-human-reproduction-and-fertility.md) |
 | 4.2.1(g) | Fertilisation | A-level only | [36-human-reproduction-and-fertility.md](36-human-reproduction-and-fertility.md) |
 | 4.2.1(h) | Monoclonal antibodies in pregnancy tests | A-level only | [36-human-reproduction-and-fertility.md](36-human-reproduction-and-fertility.md), [07-immune-system.md](07-immune-system.md) |
-| 4.2.1(i) | Contraception | A-level only | [36-human-reproduction-and-fertility.md](36-human-reproduction-and-fertility.md) |
+| 4.2.1(i) | Biological and ethical issues of infertility | A-level only | [36-human-reproduction-and-fertility.md](36-human-reproduction-and-fertility.md) |
 | 4.2.1(j) | Assisted reproduction; IVF | A-level only | [36-human-reproduction-and-fertility.md](36-human-reproduction-and-fertility.md) |
 | 4.2.2(a) | Ageing of the female reproductive system | A-level only | [36-human-reproduction-and-fertility.md](36-human-reproduction-and-fertility.md) |
 | 4.2.2(b) | Managing menopause; HRT | A-level only | [36-human-reproduction-and-fertility.md](36-human-reproduction-and-fertility.md) |
 | 4.2.2(c) | Ageing of the male urinogenital system | A-level only | [36-human-reproduction-and-fertility.md](36-human-reproduction-and-fertility.md) |
-| 4.3.1(a) | Photosynthesis overview; chloroplasts | A-level only | [15-photosynthesis.md](15-photosynthesis.md) |
+| 4.3.1(a) | Chloroplast ultrastructure; paper chromatography of pigments | A-level only | [15-photosynthesis.md](15-photosynthesis.md) |
 | 4.3.1(b) | Light-dependent stage | A-level only | [15-photosynthesis.md](15-photosynthesis.md) |
 | 4.3.1(c) | Calvin cycle | A-level only | [15-photosynthesis.md](15-photosynthesis.md) |
-| 4.3.1(d) | Limiting factors | A-level only | [15-photosynthesis.md](15-photosynthesis.md) |
+| 4.3.1(d) | Factors affecting photosynthesis; Hill reaction | A-level only | [15-photosynthesis.md](15-photosynthesis.md) |
 | 4.3.1(e) | Uses of TP and GP | A-level only | [15-photosynthesis.md](15-photosynthesis.md) |
 | 4.3.1(f) | Photosynthesis and respiration | A-level only | [15-photosynthesis.md](15-photosynthesis.md) |
-| 4.3.1(g) | Increasing crop yields | A-level only | [42-climate-change-and-human-impact.md](42-climate-change-and-human-impact.md), [15-photosynthesis.md](15-photosynthesis.md) |
-| 4.3.1(h) | Pest control | A-level only | [42-climate-change-and-human-impact.md](42-climate-change-and-human-impact.md) |
+| 4.3.1(g) | Compensation point and crop production | A-level only | [15-photosynthesis.md](15-photosynthesis.md) |
+| 4.3.1(h) | Microorganisms in ecosystems; nitrogen cycle; culturing Rhizobium | A-level only | [17-energy-in-ecosystems-and-nutrient-cycles.md](17-energy-in-ecosystems-and-nutrient-cycles.md), [28-microbiology-and-culturing.md](28-microbiology-and-culturing.md) |
 | 4.3.1(i) | Biomass transfer | A-level only | [17-energy-in-ecosystems-and-nutrient-cycles.md](17-energy-in-ecosystems-and-nutrient-cycles.md) |
 | 4.3.1(j) | Efficiency of transfer | A-level only | [17-energy-in-ecosystems-and-nutrient-cycles.md](17-energy-in-ecosystems-and-nutrient-cycles.md) |
-| 4.3.1(k) | Productivity and agriculture | A-level only | [17-energy-in-ecosystems-and-nutrient-cycles.md](17-energy-in-ecosystems-and-nutrient-cycles.md) |
-| 4.3.1(l) | Nitrogen cycle | A-level only | [17-energy-in-ecosystems-and-nutrient-cycles.md](17-energy-in-ecosystems-and-nutrient-cycles.md) |
-| 4.3.1(m) | Carbon cycle | A-level only | [17-energy-in-ecosystems-and-nutrient-cycles.md](17-energy-in-ecosystems-and-nutrient-cycles.md) |
+| 4.3.1(k) | Ruminants in the human food chain | A-level only | [17-energy-in-ecosystems-and-nutrient-cycles.md](17-energy-in-ecosystems-and-nutrient-cycles.md), [45-adaptations-for-nutrition.md](45-adaptations-for-nutrition.md) |
+| 4.3.1(l) | Farms as ecosystems; agriculture and conservation | A-level only | [14-species-taxonomy-and-biodiversity.md](14-species-taxonomy-and-biodiversity.md), [42-climate-change-and-human-impact.md](42-climate-change-and-human-impact.md) |
+| 4.3.1(m) | Land management and deflected succession; measuring biodiversity | A-level only | [23-populations-in-ecosystems.md](23-populations-in-ecosystems.md) |
 | 4.3.2(a) | Birth and death rates | A-level only | [42-climate-change-and-human-impact.md](42-climate-change-and-human-impact.md) |
 | 4.3.2(b) | Human population growth and biodiversity | A-level only | [42-climate-change-and-human-impact.md](42-climate-change-and-human-impact.md) |
 | 4.3.2(c) | Reasons for conservation | A-level only | [42-climate-change-and-human-impact.md](42-climate-change-and-human-impact.md) |
@@ -942,40 +942,40 @@ Level key: AS & A = also in that board's AS; A-level only = not in AS.
 | 5.1.1(a) | Monogenic inheritance | A-level only | [21-inheritance.md](21-inheritance.md) |
 | 5.1.1(b) | Gene mutations | A-level only | [24-mutation-stem-cells-and-gene-expression.md](24-mutation-stem-cells-and-gene-expression.md) |
 | 5.1.1(c) | Codominance and multiple alleles | A-level only | [21-inheritance.md](21-inheritance.md) |
-| 5.1.1(d) | Sex linkage | A-level only | [21-inheritance.md](21-inheritance.md) |
+| 5.1.1(d) | Sex linkage and autosomal linkage | A-level only | [21-inheritance.md](21-inheritance.md) |
 | 5.1.1(e) | Model organisms | A-level only | [21-inheritance.md](21-inheritance.md) |
-| 5.1.1(f) | Dihybrid inheritance; linkage; chi-squared | A-level only | [21-inheritance.md](21-inheritance.md) |
+| 5.1.1(f) | Chromosome mutations in humans | A-level only | [39-genetic-disorders-screening-and-antenatal-care.md](39-genetic-disorders-screening-and-antenatal-care.md) |
 | 5.1.1(g) | Genetic counselling | A-level only | [39-genetic-disorders-screening-and-antenatal-care.md](39-genetic-disorders-screening-and-antenatal-care.md) |
 | 5.1.2(a) | Natural selection and allele frequencies | A-level only | [22-populations-evolution-and-speciation.md](22-populations-evolution-and-speciation.md) |
-| 5.1.2(b) | Amino acid sequences and evolution | A-level only | [22-populations-evolution-and-speciation.md](22-populations-evolution-and-speciation.md) |
+| 5.1.2(b) | Amino acid changes and protein properties (haemoglobin) | A-level only | [24-mutation-stem-cells-and-gene-expression.md](24-mutation-stem-cells-and-gene-expression.md), [39-genetic-disorders-screening-and-antenatal-care.md](39-genetic-disorders-screening-and-antenatal-care.md) |
 | 5.1.2(c) | Hardy-Weinberg | A-level only | [22-populations-evolution-and-speciation.md](22-populations-evolution-and-speciation.md) |
-| 5.1.2(d) | Genetic drift, founder effect, bottlenecks | A-level only | [22-populations-evolution-and-speciation.md](22-populations-evolution-and-speciation.md) |
+| 5.1.2(d) | Factors other than selection: drift, founder effect, bottlenecks | A-level only | [22-populations-evolution-and-speciation.md](22-populations-evolution-and-speciation.md) |
 | 5.1.2(e) | Isolation and speciation | A-level only | [22-populations-evolution-and-speciation.md](22-populations-evolution-and-speciation.md) |
 | 5.1.2(f) | Epigenetics | A-level only | [24-mutation-stem-cells-and-gene-expression.md](24-mutation-stem-cells-and-gene-expression.md) |
 | 5.1.3(a) | Post-transcriptional editing | A-level only | [24-mutation-stem-cells-and-gene-expression.md](24-mutation-stem-cells-and-gene-expression.md) |
 | 5.1.3(b) | Genetic modification of bacteria | A-level only | [25-genome-projects-and-gene-technologies.md](25-genome-projects-and-gene-technologies.md) |
 | 5.1.3(c) | PCR | A-level only | [25-genome-projects-and-gene-technologies.md](25-genome-projects-and-gene-technologies.md) |
 | 5.1.3(d) | Gel electrophoresis | A-level only | [25-genome-projects-and-gene-technologies.md](25-genome-projects-and-gene-technologies.md) |
-| 5.1.3(e) | Haplotypes, SNPs, personalised medicine | A-level only | [25-genome-projects-and-gene-technologies.md](25-genome-projects-and-gene-technologies.md) |
-| 5.1.3(f) | Genome sequencing | A-level only | [25-genome-projects-and-gene-technologies.md](25-genome-projects-and-gene-technologies.md) |
+| 5.1.3(e) | Haplotypes, SNPs and VNTRs | A-level only | [25-genome-projects-and-gene-technologies.md](25-genome-projects-and-gene-technologies.md) |
+| 5.1.3(f) | Genetic engineering in eukaryotic cells | A-level only | [25-genome-projects-and-gene-technologies.md](25-genome-projects-and-gene-technologies.md) |
 | 5.1.3(g) | Somatic and germ line gene therapy | A-level only | [25-genome-projects-and-gene-technologies.md](25-genome-projects-and-gene-technologies.md) |
 | 5.1.3(h) | RNA interference | A-level only | [24-mutation-stem-cells-and-gene-expression.md](24-mutation-stem-cells-and-gene-expression.md) |
-| 5.2.1(a) | Organisation of the nervous system | A-level only | [32-nervous-and-hormonal-systems.md](32-nervous-and-hormonal-systems.md) |
+| 5.2.1(a) | Somatic and autonomic nervous systems | A-level only | [32-nervous-and-hormonal-systems.md](32-nervous-and-hormonal-systems.md) |
 | 5.2.1(b) | Brain structure and function | A-level only | [32-nervous-and-hormonal-systems.md](32-nervous-and-hormonal-systems.md) |
 | 5.2.1(c) | Motor, sensory and relay neurones | A-level only | [19-nerve-impulses-synapses-and-muscle.md](19-nerve-impulses-synapses-and-muscle.md) |
 | 5.2.1(d) | Resting and action potentials | A-level only | [19-nerve-impulses-synapses-and-muscle.md](19-nerve-impulses-synapses-and-muscle.md) |
 | 5.2.1(e) | Synapses | A-level only | [19-nerve-impulses-synapses-and-muscle.md](19-nerve-impulses-synapses-and-muscle.md) |
-| 5.2.1(f) | Reflexes | A-level only | [32-nervous-and-hormonal-systems.md](32-nervous-and-hormonal-systems.md) |
+| 5.2.1(f) | Reflex arcs and reactions; reflex practicals | A-level only | [32-nervous-and-hormonal-systems.md](32-nervous-and-hormonal-systems.md) |
 | 5.2.1(g) | Brain scans | A-level only | [34-brain-imaging-development-drugs-and-ageing.md](34-brain-imaging-development-drugs-and-ageing.md) |
 | 5.2.1(h) | Brain and spinal cord injuries | A-level only | [34-brain-imaging-development-drugs-and-ageing.md](34-brain-imaging-development-drugs-and-ageing.md) |
 | 5.2.1(i) | Drugs that modify brain activity | A-level only | [34-brain-imaging-development-drugs-and-ageing.md](34-brain-imaging-development-drugs-and-ageing.md) |
 | 5.2.1(j) | Drug dependency | A-level only | [34-brain-imaging-development-drugs-and-ageing.md](34-brain-imaging-development-drugs-and-ageing.md) |
 | 5.2.2(a) | Structure of the eye | A-level only | [35-the-eye-and-vision.md](35-the-eye-and-vision.md) |
-| 5.2.2(b) | Pupil reflex; accommodation | A-level only | [35-the-eye-and-vision.md](35-the-eye-and-vision.md) |
+| 5.2.2(b) | Structure of the retina | A-level only | [35-the-eye-and-vision.md](35-the-eye-and-vision.md) |
 | 5.2.2(c) | Retina; rods and cones | A-level only | [35-the-eye-and-vision.md](35-the-eye-and-vision.md) |
 | 5.2.2(d) | Assessing visual function | A-level only | [35-the-eye-and-vision.md](35-the-eye-and-vision.md) |
 | 5.2.3(a) | Alzheimer's disease | A-level only | [34-brain-imaging-development-drugs-and-ageing.md](34-brain-imaging-development-drugs-and-ageing.md) |
-| 5.2.3(b) | Age-related vision and hearing loss | A-level only | [34-brain-imaging-development-drugs-and-ageing.md](34-brain-imaging-development-drugs-and-ageing.md), [35-the-eye-and-vision.md](35-the-eye-and-vision.md) |
+| 5.2.3(b) | Ageing and the nervous system: reaction time and memory | A-level only | [34-brain-imaging-development-drugs-and-ageing.md](34-brain-imaging-development-drugs-and-ageing.md) |
 | 5.3.1(a) | Principles of homeostasis | A-level only | [20-homeostasis-blood-glucose-and-water.md](20-homeostasis-blood-glucose-and-water.md) |
 | 5.3.1(b) | Nervous and hormonal control of heart rate | A-level only | [18-stimuli-receptors-and-control-of-heart-rate.md](18-stimuli-receptors-and-control-of-heart-rate.md) |
 | 5.3.1(c) | Body temperature control | A-level only | [33-thermoregulation-and-endocrine-health.md](33-thermoregulation-and-endocrine-health.md) |
@@ -985,12 +985,12 @@ Level key: AS & A = also in that board's AS; A-level only = not in AS.
 | 5.3.2(a) | Pancreas; insulin and glucagon | A-level only | [20-homeostasis-blood-glucose-and-water.md](20-homeostasis-blood-glucose-and-water.md) |
 | 5.3.2(b) | Negative feedback of blood glucose | A-level only | [20-homeostasis-blood-glucose-and-water.md](20-homeostasis-blood-glucose-and-water.md) |
 | 5.3.2(c) | Types of diabetes | A-level only | [33-thermoregulation-and-endocrine-health.md](33-thermoregulation-and-endocrine-health.md), [20-homeostasis-blood-glucose-and-water.md](20-homeostasis-blood-glucose-and-water.md) |
-| 5.3.2(d) | Diabetes tests | A-level only | [33-thermoregulation-and-endocrine-health.md](33-thermoregulation-and-endocrine-health.md) |
+| 5.3.2(d) | Blood glucose tests and biosensors | A-level only | [33-thermoregulation-and-endocrine-health.md](33-thermoregulation-and-endocrine-health.md) |
 | 5.3.2(e) | Treating Type 1 and Type 2 | A-level only | [33-thermoregulation-and-endocrine-health.md](33-thermoregulation-and-endocrine-health.md) |
 | 5.3.2(f) | Diabetes care team | A-level only | [33-thermoregulation-and-endocrine-health.md](33-thermoregulation-and-endocrine-health.md) |
 | 5.3.2(g) | Future impact of diabetes | A-level only | [33-thermoregulation-and-endocrine-health.md](33-thermoregulation-and-endocrine-health.md) |
 | 5.3.3(a) | Removing excretory products | A-level only | [30-excretion-liver-and-kidney-disease.md](30-excretion-liver-and-kidney-disease.md) |
-| 5.3.3(b) | Liver structure and function | A-level only | [30-excretion-liver-and-kidney-disease.md](30-excretion-liver-and-kidney-disease.md) |
+| 5.3.3(b) | Structure of the kidney | A-level only | [20-homeostasis-blood-glucose-and-water.md](20-homeostasis-blood-glucose-and-water.md), [30-excretion-liver-and-kidney-disease.md](30-excretion-liver-and-kidney-disease.md) |
 | 5.3.3(c) | Kidney structure; ultrafiltration and reabsorption | A-level only | [20-homeostasis-blood-glucose-and-water.md](20-homeostasis-blood-glucose-and-water.md) |
 | 5.3.3(d) | Osmoregulation | A-level only | [20-homeostasis-blood-glucose-and-water.md](20-homeostasis-blood-glucose-and-water.md) |
 | 5.3.3(e) | Kidney as an endocrine gland: EPO, vitamin D | A-level only | [30-excretion-liver-and-kidney-disease.md](30-excretion-liver-and-kidney-disease.md) |
