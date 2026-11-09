@@ -121,7 +121,8 @@ The coefficient of x² in (1 + x)ⁿ is 28. Find n.
 Use the expansion of (1 + x)⁸ to estimate 1.02⁸ to 5 decimal places.
 
 1. x = 0.02: 1 + 8(0.02) + 28(0.02)² + 56(0.02)³ + ...
-2. = 1 + 0.16 + 0.0112 + 0.000448 + ... = 1.17165 (5 d.p.). The next term, 70(0.02)⁴ = 0.0000112, does not change the fifth decimal place.
+2. = 1 + 0.16 + 0.0112 + 0.000448 + 70(0.02)⁴ + ... = 1.171648 + 0.0000112 + ... = 1.1716592...
+3. To 5 decimal places, 1.02⁸ ≈ 1.17166. The later terms are smaller than 0.0000002, so they cannot change this.
 
 (A-level only) Expand (1 − 3x)^{1/2} up to x³ and state the validity.
 
@@ -178,6 +179,6 @@ Use the expansion of (1 + x)⁸ to estimate 1.02⁸ to 5 decimal places.
 4. ⁷C₂k² = 21k² (1); 21k² = 84 (1); k = ±2 (1).
 5. The coefficients are ⁵Cᵣ (1); P(X = r) = ⁵Cᵣ pʳ(1 − p)⁵⁻ʳ is the term in pʳ of (p + (1 − p))⁵, with q = 1 − p (1).
 6. 1 + (−2)(2x) + [(−2)(−3)/2](2x)² + [(−2)(−3)(−4)/6](2x)³ (1); 1 − 4x (1); + 12x² − 32x³ (1); valid for |x| < 1/2 (1).
-7. (a) 3(1 − x/9)^{1/2} (1); 1 − x/18 − x²/648 (1); 3 − x/6 − x²/216 (1). (b) √8.91 = √(9 − 0.09) (1); 3 − 0.015 − 0.0000375 (1); 2.984963 (1).
+7. (a) 3(1 − x/9)^{1/2} (1); 1 − x/18 − x²/648 (1); 3 − x/6 − x²/216 (1). (b) √8.91 = √(9 − 0.09) (1); 3 − 0.015 − 0.0000375 (1); 2.984963 (1). (The true value is 2.984962 to 6 d.p.; the small difference comes from the terms left out.)
 8. (1 − x)⁻¹ = 1 + x + x² + x³ + ... (1); (1 + x)(1 + x + x² + x³) (1); = 1 + 2x + 2x² + 2x³ + ... (1).
 9. (a) 4x + 5 ≡ A(x + 2) + B(x + 1) (1); 1/(x + 1) + 3/(x + 2) (2). (b) (1 + x)⁻¹ = 1 − x + x² (1); 3/(x + 2) = (3/2)(1 + x/2)⁻¹ = 3/2 − 3x/4 + 3x²/8 (1); 5/2 − (7/4)x + (11/8)x² (1); valid for |x| < 1 (1).
