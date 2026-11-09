@@ -254,7 +254,7 @@ first = "Priya"
 surname = "Shah"
 year = 2026
 username = (surname[0:3] + first[0]).lower() + str(year)
-print(username)     # shapp2026
+print(username)     # shap2026
 ```
 
 Count the vowels in a word.
