@@ -53,8 +53,8 @@ Streams run one at a time (disk space allows one session), in the order below. E
 | --- | --- | --- | --- |
 | AQA GCSE Biology | 8461 | `notes/aqa/gcse/biology-8461/` | Done |
 | AQA GCSE Chemistry | 8462 | `notes/aqa/gcse/chemistry-8462/` | Done |
-| AQA GCSE Physics | 8463 | `notes/aqa/gcse/physics-8463/` | In progress |
-| GCSE Maths | AQA 8300, Edexcel 1MA1, OCR J560, Eduqas C300QS | `notes/gcse/maths/` | Queued |
+| AQA GCSE Physics | 8463 | `notes/aqa/gcse/physics-8463/` | Done |
+| GCSE Maths | AQA 8300, Edexcel 1MA1, OCR J560, Eduqas C300QS | `notes/gcse/maths/` | In progress |
 | GCSE Statistics | AQA 8382, Edexcel | `notes/gcse/statistics/` | Queued |
 | GCSE Computer Science | AQA 8525, OCR J277, Edexcel, Eduqas C500QS | `notes/gcse/computer-science/` | Queued |
 | A-level Maths | AQA 7357, Edexcel 9MA0, OCR H240, OCR MEI H640 | `notes/a-level/maths/` | Queued |
