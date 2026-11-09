@@ -406,7 +406,7 @@ Level key: AS & A = also in that board's AS; A-level only = not in AS.
 | CP5 | Core practical 5: temperature and beetroot membrane permeability | AS & A | [06-membranes-and-transport-across-them.md](06-membranes-and-transport-across-them.md) |
 | CP6 | Core practical 6: water potential of plant cells | AS & A | [06-membranes-and-transport-across-them.md](06-membranes-and-transport-across-them.md) |
 | CP7 | Core practical 7: insect dissection; gas exchange system | AS & A | [08-surface-area-and-gas-exchange.md](08-surface-area-and-gas-exchange.md) |
-| CP8 | Core practical 8: transpiration rate using a potometer | AS & A | [11-mass-transport-in-plants.md](11-mass-transport-in-plants.md) |
+| CP8 | Core practical 8: factors affecting water uptake by shoots (potometer) | AS & A | [11-mass-transport-in-plants.md](11-mass-transport-in-plants.md) |
 | 5.1 i | ATP from respiration | A-level only | [16-respiration.md](16-respiration.md) |
 | 5.1 ii | Stages of aerobic respiration | A-level only | [16-respiration.md](16-respiration.md) |
 | 5.2 i | Glycolysis | A-level only | [16-respiration.md](16-respiration.md) |
