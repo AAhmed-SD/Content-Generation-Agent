@@ -91,6 +91,7 @@ GCSE Computer Science is not tiered, so there is no tier column.
 | 3.7.1 | Relational databases | [18-databases-and-sql.md](18-databases-and-sql.md) |
 | 3.7.2 | SQL | [18-databases-and-sql.md](18-databases-and-sql.md) |
 | 3.8 | Ethical, legal and environmental impacts, including privacy | [19-impacts-ethics-and-law.md](19-impacts-ethics-and-law.md) |
+| 3.4.5 (2020 spec only) | Optical storage | [13-memory-and-storage.md](13-memory-and-storage.md) |
 | 3.5 (2020 spec only) | Star and bus topologies | [15-networks.md](15-networks.md) |
 | 3.5 (2020 spec only) | Ethernet, Wi-Fi, UDP and FTP protocols and their layers | [16-protocols-and-layers.md](16-protocols-and-layers.md) |
 
