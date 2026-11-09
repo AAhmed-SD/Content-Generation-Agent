@@ -99,7 +99,7 @@ A ball is projected at 20 m s⁻¹ at 45° to the horizontal up a plane inclined
 A target at (40, 10) is to be hit with speed 25 m s⁻¹. Find the possible angles of projection.
 
 1. 10 = 40T − 9.8 × 1600(1 + T²)/1250, with T = tan θ: 12.544T² − 40T + 22.544 = 0.
-2. T = 2.36 or 0.762, θ = 67.0° or 37.3°.
+2. T = 2.457 or 0.731, θ = 67.9° or 36.2°.
 
 ### Common mistakes
 
