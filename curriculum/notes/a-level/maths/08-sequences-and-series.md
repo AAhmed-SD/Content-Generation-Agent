@@ -267,7 +267,7 @@ A fixed amount added each time gives an arithmetic model. A fixed percentage cha
 
 1. u₈ = 5 × 1.1⁷ = 9.74 km.
 2. S₈ = 5(1.1⁸ − 1)/0.1 = 57.2 km.
-3. The model cannot continue: after a year it would predict over 700 km in one week. A real plan would level off.
+3. The model cannot continue: in week 52 it would predict about 650 km in one week. A real plan would level off.
 
 ### Common mistakes
 
@@ -296,4 +296,4 @@ A fixed amount added each time gives an arithmetic model. A fixed percentage cha
 6. ar² = 18 and ar⁵ = 486 (1); r³ = 27, r = 3 (1); a = 2 (1); S₁₀ = 2(3¹⁰ − 1)/2 = 59 048 (1).
 7. (a) 80/0.25 = 320 (1). (b) 320(1 − 0.75ⁿ) > 300 (1); 0.75ⁿ < 1/16 (1); n > ln(1/16)/ln 0.75 = 9.64 (1); n = 10 (1).
 8. (a) |x − 1| < 1 (1); 0 < x < 2 (1). (b) 1/(1 − (x − 1)) = 1/(2 − x) = 4 (1); x = 7/4 (1).
-9. Geometric, a = 5, r = 1.1 (1); S₈ = 5(1.1⁸ − 1)/0.1 (1) = 57.2 km (1); e.g. it predicts impossibly large weekly distances, since 5 × 1.1⁵¹ is over 700 km (1).
+9. Geometric, a = 5, r = 1.1 (1); S₈ = 5(1.1⁸ − 1)/0.1 (1) = 57.2 km (1); e.g. it predicts impossibly large weekly distances, since 5 × 1.1⁵¹ is about 650 km (1).
