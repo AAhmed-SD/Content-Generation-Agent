@@ -12,7 +12,7 @@ boards:
     spec_refs: ["CP2.4", "CP2.5", "CP2.6", "CP2.7"]
   - board: OCR
     code: "H245"
-    spec_refs: ["4.02f", "4.02k", "4.02l", "4.02m", "4.02o", "4.02p"]
+    spec_refs: ["4.02c", "4.02f", "4.02k", "4.02l", "4.02m", "4.02o", "4.02p"]
   - board: OCR MEI
     code: "H645"
     spec_refs: ["Pj6", "Pj7", "Pj8", "Pj9", "Pj10", "Pj11", "Pj18"]

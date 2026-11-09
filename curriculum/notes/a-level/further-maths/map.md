@@ -547,10 +547,10 @@ Level key: AS & A = also in AS Further Mathematics; A-level only = not in AS; AS
 | --- | --- | --- | --- |
 | 4.01a | Proof by induction | AS & A | [01-proof-by-induction.md](01-proof-by-induction.md) |
 | 4.01b | Proof by induction | A-level only | [01-proof-by-induction.md](01-proof-by-induction.md) |
-| 4.02a | Language, notation and arithmetic of complex numbers | AS & A | [02-complex-numbers-cartesian-form-and-polynomial-roots.md](02-complex-numbers-cartesian-form-and-polynomial-roots.md) |
-| 4.02b | Language, notation and arithmetic of complex numbers | AS & A | [02-complex-numbers-cartesian-form-and-polynomial-roots.md](02-complex-numbers-cartesian-form-and-polynomial-roots.md) |
-| 4.02c | Language, notation and arithmetic of complex numbers | AS & A | [02-complex-numbers-cartesian-form-and-polynomial-roots.md](02-complex-numbers-cartesian-form-and-polynomial-roots.md) |
-| 4.02e | Language, notation and arithmetic of complex numbers | AS & A | [02-complex-numbers-cartesian-form-and-polynomial-roots.md](02-complex-numbers-cartesian-form-and-polynomial-roots.md) |
+| 4.02a | Language and forms of complex numbers | AS & A | [02-complex-numbers-cartesian-form-and-polynomial-roots.md](02-complex-numbers-cartesian-form-and-polynomial-roots.md) |
+| 4.02b | Language and forms of complex numbers | AS & A | [02-complex-numbers-cartesian-form-and-polynomial-roots.md](02-complex-numbers-cartesian-form-and-polynomial-roots.md) |
+| 4.02c | Notation: z*, Re, Im, arg, |z| | AS & A | [02-complex-numbers-cartesian-form-and-polynomial-roots.md](02-complex-numbers-cartesian-form-and-polynomial-roots.md), [03-complex-numbers-argand-diagrams-modulus-argument-and-loci.md](03-complex-numbers-argand-diagrams-modulus-argument-and-loci.md) |
+| 4.02e | Arithmetic of complex numbers | AS & A | [02-complex-numbers-cartesian-form-and-polynomial-roots.md](02-complex-numbers-cartesian-form-and-polynomial-roots.md) |
 | 4.02d | Exponential form | A-level only | [04-complex-numbers-de-moivre-exponential-form-and-nth-roots.md](04-complex-numbers-de-moivre-exponential-form-and-nth-roots.md) |
 | 4.02f | Cartesian and modulus-argument forms | AS & A | [03-complex-numbers-argand-diagrams-modulus-argument-and-loci.md](03-complex-numbers-argand-diagrams-modulus-argument-and-loci.md) |
 | 4.02g | Roots of polynomials; square roots of complex numbers | AS & A | [02-complex-numbers-cartesian-form-and-polynomial-roots.md](02-complex-numbers-cartesian-form-and-polynomial-roots.md) |
