@@ -145,7 +145,7 @@ Because so much is lost at each step, food chains rarely have more than four or 
 | Assimilation | Plants absorb nitrate by active transport and use it to make amino acids | Plants |
 | Denitrification | NO₃⁻ → N₂; happens in waterlogged, anaerobic soils | Denitrifying bacteria |
 
-Names of species are needed by OCR A and Eduqas, not AQA.
+AQA does not require the names of species; the genus names above are given as common examples.
 
 Farmers improve soil nitrogen by ploughing (aerates soil, so nitrification is favoured and denitrification reduced) and draining waterlogged fields (Eduqas C1.5(o)). Ploughing can also increase erosion and the loss of organic matter.
 
