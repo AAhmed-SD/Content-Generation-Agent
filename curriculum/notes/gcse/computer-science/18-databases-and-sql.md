@@ -91,7 +91,7 @@ MemberID is the primary key of Members and a foreign key in Loans. The phone num
 - `WHERE` gives conditions that records must meet. Conditions use `=`, `<>` or `!=`, `<`, `>`, `<=`, `>=` and can be combined with `AND`, `OR`, `NOT`. Text values go in quotation marks.
 - `ORDER BY field ASC` sorts ascending (A to Z, smallest first; the default); `DESC` sorts descending (AQA).
 - (AQA) Data from two tables: list both tables in `FROM` and link them in `WHERE` by matching the foreign key to the primary key. Use `Table.Field` when a field name appears in both tables.
-- OCR also accepts the wildcard `LIKE` with `%` in some answers, but it is not in the spec list; stick to SELECT, FROM, WHERE.
+- OCR's list is SELECT, FROM and WHERE only.
 
 ### Worked example
 
