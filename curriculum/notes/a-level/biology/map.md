@@ -760,15 +760,15 @@ Level key: AS & A = also in that board's AS; A-level only = not in AS.
 | --- | --- | --- | --- |
 | 1.1 | Practical skills assessed in written exams | AS & A | [26-practical-skills-and-statistics.md](26-practical-skills-and-statistics.md) |
 | 1.2 | Practical skills assessed in the practical endorsement | AS & A | [26-practical-skills-and-statistics.md](26-practical-skills-and-statistics.md) |
-| 2.1.1(a) | Light microscopes and slides; blood smears | AS & A | [04-cell-structure-and-microscopy.md](04-cell-structure-and-microscopy.md), [49-blood-tests-blood-donation-and-first-aid.md](49-blood-tests-blood-donation-and-first-aid.md) |
+| 2.1.1(a) | Microscopy and cell theory; preparing blood smears | AS & A | [04-cell-structure-and-microscopy.md](04-cell-structure-and-microscopy.md), [49-blood-tests-blood-donation-and-first-aid.md](49-blood-tests-blood-donation-and-first-aid.md) |
 | 2.1.1(b) | Differential staining | AS & A | [04-cell-structure-and-microscopy.md](04-cell-structure-and-microscopy.md), [49-blood-tests-blood-donation-and-first-aid.md](49-blood-tests-blood-donation-and-first-aid.md) |
-| 2.1.1(c) | Calibrating graticules; magnification | AS & A | [04-cell-structure-and-microscopy.md](04-cell-structure-and-microscopy.md) |
-| 2.1.1(d) | Resolution and electron microscopes | AS & A | [04-cell-structure-and-microscopy.md](04-cell-structure-and-microscopy.md) |
+| 2.1.1(c) | Blood cells under the light microscope; drawing a blood smear | AS & A | [49-blood-tests-blood-donation-and-first-aid.md](49-blood-tests-blood-donation-and-first-aid.md), [04-cell-structure-and-microscopy.md](04-cell-structure-and-microscopy.md) |
+| 2.1.1(d) | Cell size and the magnification formula | AS & A | [04-cell-structure-and-microscopy.md](04-cell-structure-and-microscopy.md) |
 | 2.1.1(e) | Haemocytometer | AS & A | [49-blood-tests-blood-donation-and-first-aid.md](49-blood-tests-blood-donation-and-first-aid.md) |
 | 2.1.1(f) | Flow cytometry | AS & A | [49-blood-tests-blood-donation-and-first-aid.md](49-blood-tests-blood-donation-and-first-aid.md) |
 | 2.1.1(g) | Ultrastructure of eukaryotic cells | AS & A | [04-cell-structure-and-microscopy.md](04-cell-structure-and-microscopy.md) |
-| 2.1.1(h) | Prokaryotic cells | AS & A | [04-cell-structure-and-microscopy.md](04-cell-structure-and-microscopy.md) |
-| 2.1.1(i) | Measuring with graticules | AS & A | [04-cell-structure-and-microscopy.md](04-cell-structure-and-microscopy.md) |
+| 2.1.1(h) | Plant cell ultrastructure; prokaryotic and eukaryotic cells compared | AS & A | [04-cell-structure-and-microscopy.md](04-cell-structure-and-microscopy.md) |
+| 2.1.1(i) | Calibrating and using a graticule | AS & A | [04-cell-structure-and-microscopy.md](04-cell-structure-and-microscopy.md) |
 | 2.1.1(j) | Plasma membrane components | AS & A | [06-membranes-and-transport-across-them.md](06-membranes-and-transport-across-them.md) |
 | 2.1.1(k) | Fluid mosaic model | AS & A | [06-membranes-and-transport-across-them.md](06-membranes-and-transport-across-them.md) |
 | 2.1.1(l) | Movement across membranes | AS & A | [06-membranes-and-transport-across-them.md](06-membranes-and-transport-across-them.md) |
