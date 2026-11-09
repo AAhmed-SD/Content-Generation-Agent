@@ -128,7 +128,7 @@ Verify that y = 1/(C − x) satisfies dy/dx = y².
 ## Mark scheme
 
 1. a > 0: defined everywhere, through O, horizontal asymptote y = 0, max and min at x = ±√a (2). a = 0: y = 1/x, asymptotes the axes (2). a < 0: vertical asymptotes x = ±√(−a), through O, y = 0 asymptote (2).
-2. dx/dt = −2 sin 2t = 0 (1) with dy/dt = 3 cos 3t ≠ 0 (1). t = 0 gives (1, 0); t = π/2 gives (−1, −1) (2).
+2. dx/dt = −2 sin 2t = 0 (1) with dy/dt = 3 cos 3t ≠ 0 (1). t = 0 gives (1, 0) (1). At t = π/2 both derivatives are 0, so (−1, −1) is a singular point where the curve turns back, not a vertical tangent (1).
 3. F = x/t + ty − 2; ∂F/∂t = −x/t² + y = 0, so x = yt² (2). Substitute: yt + yt = 2, t = 1/y (1). x = 1/y, so xy = 1 (1).
 4. Segments point along lines through the origin (each segment at (x, y) has gradient y/x) (1). y = Cx (2).
 5. y − x = a(x² − x) (1). For all a: x² − x = 0 and y = x (1). (0, 0) and (1, 1) (1).
