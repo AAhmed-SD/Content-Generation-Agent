@@ -250,7 +250,7 @@ The practical endorsement is reported separately as Pass or Not classified. Stud
 5. Two means have 95% confidence intervals of 12.0 ± 1.5 and 16.0 ± 1.8. What can you conclude? (2 marks)
 6. A t-test gave t = 1.9 with 10 degrees of freedom; the critical value at p = 0.05 is 2.23. State the conclusion. (2 marks)
 7. Explain why peer review is important before a finding is published. (2 marks)
-8. Calculate Spearman's rs for 7 pairs with Σd² = 12, and state whether there is a significant correlation (critical value 0.79). (3 marks)
+8. Calculate Spearman's rs for 7 pairs with Σd² = 10, and state whether there is a significant correlation (critical value 0.786 at p = 0.05). (3 marks)
 
 ## Mark scheme
 
@@ -261,4 +261,4 @@ The practical endorsement is reported separately as Pass or Not classified. Stud
 5. Intervals do not overlap (12.0 to 13.5 and 14.2 to 17.8) (1); difference is likely to be significant / not due to chance (1).
 6. 1.9 < 2.23, so accept null hypothesis (1); no significant difference between the means; difference due to chance (1).
 7. Other experts check methods, data and conclusions (1); reduces errors / fraud / unsupported claims; findings more reliable (1).
-8. rs = 1 − (6 × 12) ÷ (7 × 48) = 1 − 72/336 = 0.79 (2); equal to critical value, so (just) significant at p = 0.05 / borderline; accept either with reasoning that rs must be at least the critical value (1).
+8. rs = 1 − (6 × 10) ÷ (7 × 48) (1) = 1 − 60/336 = 0.82 (1); 0.82 > 0.786, so reject null hypothesis: significant positive correlation (1).
