@@ -273,7 +273,7 @@ Zinc can reduce all three because all three are more positive than −0.76 V. V�
 - Using the 1 : 1 ratio for MnO₄⁻ and Fe²⁺.
 - Adding starch at the start of an iodine–thiosulfate titration.
 - Saying the chromate/dichromate change is redox.
-- Reading the top of the meniscus for KMnO₄ (it is so dark you read the top, which is correct; reading the bottom is the mistake).
+- Trying to read the bottom of the meniscus in a KMnO₄ burette. The solution is so dark that the top of the meniscus is read instead.
 
 ## 3.2.5.6 Catalysts
 
