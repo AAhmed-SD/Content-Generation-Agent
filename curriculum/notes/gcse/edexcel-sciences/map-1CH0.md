@@ -1,0 +1,315 @@
+# Pearson Edexcel GCSE (9-1) Chemistry (1CH0): spec map
+
+Every spec statement of Pearson Edexcel GCSE (9-1) Chemistry 1CH0 (first teaching 2016), in the board's order: Topic 0 (formulae, equations and hazards) and Topics 1 to 9, with the eight core practicals (2.11, 3.6, 3.17, 3.31, 5.9C, 7.1, 9.6C, 9.28C) in place. Topics 5 and 9 ('Separate chemistry') are Chemistry only. Most content is already taught by the AQA GCSE Chemistry 8462 notes; the five chemistry gap files add the rest.
+
+## How to read the tables
+
+- **Ref**: the spec statement number. A letter at the end (B, C or P) is Edexcel's own mark for content that is in the separate science only, not in Combined Science 1SC0.
+- **Content**: a short paraphrase, not the board's wording.
+- **Tier**: HT = higher tier only; part HT = the statement is partly higher tier. Tier marks were read automatically from the bold type in the spec PDF and need a person to check them.
+- **File**: the existing AQA note and spec section that teaches the same content, and/or the Edexcel gap file in this folder that adds what the AQA note lacks. "(required practical)" means the AQA note's required practical covers the same technique as the Edexcel core practical; where the method differs, the gap file adds it.
+
+`refs_checked: false`: references were taken from the Pearson spec PDFs (Issue 4, March 2024 for 1BI0, 1CH0 and 1PH0; Issue 6 for 1SC0), downloaded from https://qualifications.pearson.com/en/qualifications/edexcel-gcses/sciences-2016.html, and still need a person to check them. Nothing from the spec is copied beyond the reference numbers.
+
+## Gap files
+
+- [chemistry-01-formulae-hazards-and-empirical-formulae.md](chemistry-01-formulae-hazards-and-empirical-formulae.md): ion formulae, ionic equations, hazard symbols, risk assessment, empirical formulae
+- [chemistry-02-separation-indicators-and-neutralisation-practicals.md](chemistry-02-separation-indicators-and-neutralisation-practicals.md): choosing separation methods, ink core practical, indicators, calcium hydroxide pH core practical
+- [chemistry-03-solubility-and-insoluble-salts.md](chemistry-03-solubility-and-insoluble-salts.md): solubility rules, precipitates, preparing an insoluble salt
+- [chemistry-04-electrolysis-with-copper-electrodes.md](chemistry-04-electrolysis-with-copper-electrodes.md): copper sulfate with copper electrodes, purifying copper
+- [chemistry-05-extra-tests-fuels-and-materials.md](chemistry-05-extra-tests-fuels-and-materials.md): halogen colours, hydrogen halides, noble gas uses, heat changes, hydrogen as a car fuel, ammonium and ammonia tests, polymer problems, alcohol combustion core practical
+
+## Edexcel 1CH0
+
+### Topic 0: Formulae, equations and hazards
+
+| Ref | Content | Tier | Separate only | File |
+| --- | --- | --- | --- | --- |
+| 0.1 | Formulae of elements, compounds and ions |  |  | [AQA 8462 4.2.1.3](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) + [chemistry-01-formulae-hazards-and-empirical-formulae.md](chemistry-01-formulae-hazards-and-empirical-formulae.md) |
+| 0.2 | Word equations |  |  | [AQA 8462 4.3.1.1](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| 0.3 | Balanced equations with state symbols |  |  | [AQA 8462 4.3.1.1](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md), [AQA 8462 4.2.2.2](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 0.4 | Balanced ionic equations | HT |  | [AQA 8462 4.4.1.4, 4.4.2.4](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) + [chemistry-01-formulae-hazards-and-empirical-formulae.md](chemistry-01-formulae-hazards-and-empirical-formulae.md) |
+| 0.5 | Hazard symbols |  |  | [chemistry-01-formulae-hazards-and-empirical-formulae.md](chemistry-01-formulae-hazards-and-empirical-formulae.md) |
+| 0.6 | Risk assessment for practicals |  |  | [chemistry-01-formulae-hazards-and-empirical-formulae.md](chemistry-01-formulae-hazards-and-empirical-formulae.md) |
+
+### Topic 1: Key concepts in chemistry
+
+| Ref | Content | Tier | Separate only | File |
+| --- | --- | --- | --- | --- |
+| 1.1 | How the Dalton model changed with subatomic particles |  |  | [AQA 8462 4.1.1.3](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.2 | Nucleus with protons and neutrons, electrons in shells |  |  | [AQA 8462 4.1.1.4](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.3 | Relative charge and mass of subatomic particles |  |  | [AQA 8462 4.1.1.4](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.4 | Equal numbers of protons and electrons |  |  | [AQA 8462 4.1.1.4](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.5 | Nucleus is tiny compared to the atom |  |  | [AQA 8462 4.1.1.5](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.6 | Mass is concentrated in the nucleus |  |  | [AQA 8462 4.1.1.5](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.7 | Mass number |  |  | [AQA 8462 4.1.1.5](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.8 | Same element, same proton number |  |  | [AQA 8462 4.1.1.5](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.9 | Isotopes |  |  | [AQA 8462 4.1.1.5](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.10 | Protons, neutrons, electrons from atomic and mass numbers |  |  | [AQA 8462 4.1.1.5](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.11 | Why relative atomic masses are not whole numbers |  |  | [AQA 8462 4.1.1.6](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.12 | Relative atomic mass from isotope abundances | HT |  | [AQA 8462 4.1.1.6](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.13 | Mendeleev's table by relative atomic mass |  |  | [AQA 8462 4.1.2.2](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.14 | Mendeleev's predictions of new elements |  |  | [AQA 8462 4.1.2.2](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.15 | Isotopes explain Mendeleev's pair reversals |  |  | [AQA 8462 4.1.2.2](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.16 | Atomic number and position in the table |  |  | [AQA 8462 4.1.2.1](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.17 | Periods and groups |  |  | [AQA 8462 4.1.2.1](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.18 | Metals and non-metals by position and properties |  |  | [AQA 8462 4.1.2.3](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.19 | Electronic configurations of first 20 elements |  |  | [AQA 8462 4.1.1.7](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.20 | Configuration and position in the table |  |  | [AQA 8462 4.1.2.1](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.21 | Ionic bonding by electron transfer |  |  | [AQA 8462 4.2.1.2](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.22 | What an ion is |  |  | [AQA 8462 4.2.1.2](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.23 | Particles in simple ions |  |  | [AQA 8462 4.1.1.5](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md), [AQA 8462 4.2.1.2](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.24 | Forming ions from groups 1, 2, 6, 7 |  |  | [AQA 8462 4.2.1.2](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.25 | Naming: -ide and -ate |  |  | [AQA 8462 4.2.1.3](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) + [chemistry-01-formulae-hazards-and-empirical-formulae.md](chemistry-01-formulae-hazards-and-empirical-formulae.md) |
+| 1.26 | Formulae of ionic compounds |  |  | [AQA 8462 4.2.1.3](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.27 | Ionic lattice structure |  |  | [AQA 8462 4.2.1.3](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.28 | Covalent bond as a shared pair |  |  | [AQA 8462 4.2.1.4](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.29 | Covalent bonding makes molecules |  |  | [AQA 8462 4.2.1.4](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.30 | Typical size of atoms and small molecules |  |  | [AQA 8462 4.1.1.5](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.31 | Dot and cross diagrams of simple molecules |  |  | [AQA 8462 4.2.1.4](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.32 | Classifying ionic, molecular, giant covalent, metallic |  |  | [AQA 8462 4.2.1.1](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.33 | Properties of ionic compounds |  |  | [AQA 8462 4.2.2.3](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.34 | Properties of simple molecular compounds |  |  | [AQA 8462 4.2.2.4](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.35 | Graphite and diamond as giant covalent carbon |  |  | [AQA 8462 4.2.3.1, 4.2.3.2](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.36 | Structures of graphite and diamond |  |  | [AQA 8462 4.2.3.1, 4.2.3.2](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.37 | Uses of graphite and diamond explained |  |  | [AQA 8462 4.2.3.1, 4.2.3.2](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.38 | Fullerenes and graphene |  |  | [AQA 8462 4.2.3.3](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.39 | Simple polymers such as poly(ethene) |  |  | [AQA 8462 4.2.2.5](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.40 | Properties of metals from metallic bonding |  |  | [AQA 8462 4.2.1.5, 4.2.2.7, 4.2.2.8](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.41 | Limits of bonding models and diagrams |  |  | [AQA 8462 4.2.1.1, 4.2.1.4](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 1.42 | Typical properties of metals and non-metals |  |  | [AQA 8462 4.1.2.3](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 1.43 | Relative formula mass and percentage by mass |  |  | [AQA 8462 4.3.1.2](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) + [chemistry-01-formulae-hazards-and-empirical-formulae.md](chemistry-01-formulae-hazards-and-empirical-formulae.md) |
+| 1.44 | Formulae from reacting masses or percentages |  |  | [chemistry-01-formulae-hazards-and-empirical-formulae.md](chemistry-01-formulae-hazards-and-empirical-formulae.md) |
+| 1.45 | Empirical and molecular formulae |  |  | [chemistry-01-formulae-hazards-and-empirical-formulae.md](chemistry-01-formulae-hazards-and-empirical-formulae.md) |
+| 1.46 | Experiment: empirical formula of magnesium oxide |  |  | [chemistry-01-formulae-hazards-and-empirical-formulae.md](chemistry-01-formulae-hazards-and-empirical-formulae.md) |
+| 1.47 | Conservation of mass in closed and open systems |  |  | [AQA 8462 4.3.1.1, 4.3.1.3](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| 1.48 | Masses of reactants and products from equations |  |  | [AQA 8462 4.3.2.2](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| 1.49 | Concentration in g dm⁻³ | HT |  | [AQA 8462 4.3.2.5](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| 1.50 | The mole and the Avogadro constant | HT |  | [AQA 8462 4.3.2.1](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| 1.51 | Moles, masses and particle numbers | HT |  | [AQA 8462 4.3.2.1](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| 1.52 | Limiting reactants | HT |  | [AQA 8462 4.3.2.4](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| 1.53 | Stoichiometry from reacting masses | HT |  | [AQA 8462 4.3.2.3](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+
+### Topic 2: States of matter and mixtures
+
+| Ref | Content | Tier | Separate only | File |
+| --- | --- | --- | --- | --- |
+| 2.1 | Particles in solids, liquids and gases |  |  | [AQA 8462 4.2.2.1](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 2.2 | Names of changes of state |  |  | [AQA 8462 4.2.2.1](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 2.3 | Particle changes during changes of state |  |  | [AQA 8462 4.2.2.1](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 2.4 | Predicting state from data |  |  | [AQA 8462 4.2.2.1](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 2.5 | 'Pure' in chemistry vs everyday |  |  | [AQA 8462 4.8.1.1](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| 2.6 | Melting points of pure and impure substances |  |  | [AQA 8462 4.8.1.1](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| 2.7 | Separation techniques and what they separate |  |  | [AQA 8462 4.1.1.2](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) + [chemistry-02-separation-indicators-and-neutralisation-practicals.md](chemistry-02-separation-indicators-and-neutralisation-practicals.md) |
+| 2.8 | Choosing a separation method |  |  | [AQA 8462 4.1.1.2](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) + [chemistry-02-separation-indicators-and-neutralisation-practicals.md](chemistry-02-separation-indicators-and-neutralisation-practicals.md) |
+| 2.9 | Paper chromatography |  |  | [AQA 8462 4.8.1.3](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| 2.10 | Interpreting chromatograms, Rf values |  |  | [AQA 8462 4.8.1.3](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| 2.11 | Core practical: inks by distillation and chromatography |  |  | [AQA 8462 4.8.1.3](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) (required practical) + [chemistry-02-separation-indicators-and-neutralisation-practicals.md](chemistry-02-separation-indicators-and-neutralisation-practicals.md) |
+| 2.12 | Potable water from waste, ground and sea water |  |  | [AQA 8462 4.10.1.2, 4.10.1.3](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+
+### Topic 3: Chemical changes
+
+| Ref | Content | Tier | Separate only | File |
+| --- | --- | --- | --- | --- |
+| 3.1 | Acids give H⁺, alkalis give OH⁻ |  |  | [AQA 8462 4.4.2.4](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.2 | The pH scale |  |  | [AQA 8462 4.4.2.4](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.3 | Indicators: litmus, methyl orange, phenolphthalein |  |  | [AQA 8462 4.4.2.4](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) + [chemistry-02-separation-indicators-and-neutralisation-practicals.md](chemistry-02-separation-indicators-and-neutralisation-practicals.md) |
+| 3.4 | H⁺ concentration and pH | HT |  | [AQA 8462 4.4.2.6](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.5 | Tenfold change in H⁺ per pH unit | HT |  | [AQA 8462 4.4.2.6](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.6 | Core practical: pH change adding calcium hydroxide |  |  | [chemistry-02-separation-indicators-and-neutralisation-practicals.md](chemistry-02-separation-indicators-and-neutralisation-practicals.md) |
+| 3.7 | Dilute vs concentrated | HT |  | [AQA 8462 4.4.2.6](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.8 | Weak vs strong acids | HT |  | [AQA 8462 4.4.2.6](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.9 | Bases make salt and water with acids |  |  | [AQA 8462 4.4.2.2](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.10 | Alkalis are soluble bases |  |  | [AQA 8462 4.4.2.4](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.11 | Acids with metals, oxides, hydroxides, carbonates |  |  | [AQA 8462 4.4.2.1, 4.4.2.2](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.12 | Tests for hydrogen and carbon dioxide |  |  | [AQA 8462 4.8.2.1, 4.8.2.3](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| 3.13 | Neutralisation |  |  | [AQA 8462 4.4.2.2](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.14 | H⁺ + OH⁻ → H₂O |  |  | [AQA 8462 4.4.2.4](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.15 | Salts from insoluble bases: use excess, filter |  |  | [AQA 8462 4.4.2.3](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.16 | Salts from soluble bases: titrate |  |  | [AQA 8462 4.4.2.5](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) + [chemistry-03-solubility-and-insoluble-salts.md](chemistry-03-solubility-and-insoluble-salts.md) |
+| 3.17 | Core practical: hydrated copper sulfate crystals |  |  | [AQA 8462 4.4.2.3](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) (required practical) |
+| 3.18 | Carrying out an acid-alkali titration |  |  | [AQA 8462 4.4.2.5](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.19 | Solubility rules |  |  | [chemistry-03-solubility-and-insoluble-salts.md](chemistry-03-solubility-and-insoluble-salts.md) |
+| 3.20 | Predicting precipitates |  |  | [chemistry-03-solubility-and-insoluble-salts.md](chemistry-03-solubility-and-insoluble-salts.md) |
+| 3.21 | Preparing an insoluble salt |  |  | [chemistry-03-solubility-and-insoluble-salts.md](chemistry-03-solubility-and-insoluble-salts.md) |
+| 3.22 | Electrolytes |  |  | [AQA 8462 4.4.3.1](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.23 | Electrolysis as decomposition by direct current |  |  | [AQA 8462 4.4.3.1](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.24 | Movement of ions to electrodes |  |  | [AQA 8462 4.4.3.1](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.25 | Products of electrolysis with inert electrodes |  |  | [AQA 8462 4.4.3.2, 4.4.3.4](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.26 | Predicting products for molten binary compounds | part HT |  | [AQA 8462 4.4.3.2](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.27 | Half equations at electrodes | HT |  | [AQA 8462 4.4.3.5](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.28 | Oxidation and reduction as electron loss and gain | HT |  | [AQA 8462 4.4.1.4](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.29 | Oxidation at anode, reduction at cathode | HT |  | [AQA 8462 4.4.3.5](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 3.30 | Electrolysis of copper sulfate with copper electrodes |  |  | [chemistry-04-electrolysis-with-copper-electrodes.md](chemistry-04-electrolysis-with-copper-electrodes.md) |
+| 3.31 | Core practical: copper sulfate electrolysis, inert and copper electrodes |  |  | [AQA 8462 4.4.3.4](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) (required practical) + [chemistry-04-electrolysis-with-copper-electrodes.md](chemistry-04-electrolysis-with-copper-electrodes.md) |
+
+### Topic 4: Extracting metals and equilibria
+
+| Ref | Content | Tier | Separate only | File |
+| --- | --- | --- | --- | --- |
+| 4.1 | Reactivity from reactions with water, acids, salts |  |  | [AQA 8462 4.4.1.2](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 4.2 | Displacement as redox | HT |  | [AQA 8462 4.4.1.4](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 4.3 | The reactivity series |  |  | [AQA 8462 4.4.1.2](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 4.4 | Ores and native metals |  |  | [AQA 8462 4.4.1.3](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 4.5 | Oxidation and reduction as oxygen gain and loss |  |  | [AQA 8462 4.4.1.1](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 4.6 | Extraction is reduction |  |  | [AQA 8462 4.4.1.3](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 4.7 | Extraction method and reactivity |  |  | [AQA 8462 4.4.1.3, 4.4.3.3](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 4.8 | Bioleaching and phytoextraction | HT |  | [AQA 8462 4.10.1.4](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| 4.9 | Resistance to oxidation and reactivity |  |  | [AQA 8462 4.4.1.2](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 4.10 | Recycling metals |  |  | [AQA 8462 4.10.2.2](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| 4.11 | Life cycle assessment |  |  | [AQA 8462 4.10.2.1](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| 4.12 | Evaluating LCA data |  |  | [AQA 8462 4.10.2.1](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| 4.13 | Reversible reactions |  |  | [AQA 8462 4.6.2.1](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| 4.14 | Dynamic equilibrium |  |  | [AQA 8462 4.6.2.3](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| 4.15 | Ammonia from nitrogen and hydrogen |  |  | [AQA 8462 4.10.4.1](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| 4.16 | Haber process conditions |  |  | [AQA 8462 4.10.4.1](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| 4.17 | Position of equilibrium and conditions | HT |  | [AQA 8462 4.6.2.4, 4.6.2.5, 4.6.2.6, 4.6.2.7](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+
+### Topic 5: Separate chemistry 1
+
+| Ref | Content | Tier | Separate only | File |
+| --- | --- | --- | --- | --- |
+| 5.1C | Transition metal properties |  | Yes | [AQA 8462 4.1.3.1, 4.1.3.2](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 5.2C | Corrosion as oxidation |  | Yes | [AQA 8462 4.10.3.1](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| 5.3C | Preventing rusting |  | Yes | [AQA 8462 4.10.3.1](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| 5.4C | Electroplating |  | Yes | [AQA 8462 4.10.3.1](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| 5.5C | Why alloys are stronger |  | Yes | [AQA 8462 4.2.2.7](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 5.6C | Alloy steels |  | Yes | [AQA 8462 4.10.3.2](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| 5.7C | Uses of metals from properties |  | Yes | [AQA 8462 4.10.3.2](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| 5.8C | Concentration in mol dm⁻³ and g dm⁻³ | HT | Yes | [AQA 8462 4.3.4](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| 5.9C | Core practical: accurate acid-alkali titration |  | Yes | [AQA 8462 4.4.2.5](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) (required practical) |
+| 5.10C | Titration calculations | HT | Yes | [AQA 8462 4.3.4](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| 5.11C | Percentage yield |  | Yes | [AQA 8462 4.3.3.1](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| 5.12C | Why actual yield is lower |  | Yes | [AQA 8462 4.3.3.1](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| 5.13C | Atom economy defined |  | Yes | [AQA 8462 4.3.3.2](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| 5.14C | Calculating atom economy |  | Yes | [AQA 8462 4.3.3.2](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| 5.15C | Choosing a reaction pathway | HT | Yes | [AQA 8462 4.3.3.2](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| 5.16C | Molar gas volume | HT | Yes | [AQA 8462 4.3.5](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| 5.17C | Gas volume calculations | HT | Yes | [AQA 8462 4.3.5](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| 5.18C | Gas volumes from equations | HT | Yes | [AQA 8462 4.3.5](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| 5.19C | Haber process in detail | part HT | Yes | [AQA 8462 4.10.4.1](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| 5.20C | Factors affecting equilibrium and rate in Haber | HT | Yes | [AQA 8462 4.10.4.1](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| 5.21C | Industrial conditions as compromise | HT | Yes | [AQA 8462 4.10.4.1](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| 5.22C | NPK fertilisers |  | Yes | [AQA 8462 4.10.4.2](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| 5.23C | Ammonia + nitric acid → ammonium nitrate |  | Yes | [AQA 8462 4.10.4.2](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| 5.24C | Lab vs industrial ammonium sulfate |  | Yes | [AQA 8462 4.10.4.2](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| 5.25C | Chemical cells |  | Yes | [AQA 8462 4.5.2.1](../../aqa/gcse/chemistry-8462/4.5-energy-changes.md) |
+| 5.26C | Hydrogen–oxygen fuel cell |  | Yes | [AQA 8462 4.5.2.2](../../aqa/gcse/chemistry-8462/4.5-energy-changes.md) |
+| 5.27C | Fuel cells evaluated |  | Yes | [AQA 8462 4.5.2.2](../../aqa/gcse/chemistry-8462/4.5-energy-changes.md) |
+
+### Topic 6: Groups in the periodic table
+
+| Ref | Content | Tier | Separate only | File |
+| --- | --- | --- | --- | --- |
+| 6.1 | Alkali metals, halogens, noble gases by configuration |  |  | [AQA 8462 4.1.2.4, 4.1.2.5, 4.1.2.6](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 6.2 | Alkali metals are soft with low melting points |  |  | [AQA 8462 4.1.2.5](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 6.3 | Li, Na, K with water |  |  | [AQA 8462 4.1.2.5](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 6.4 | Reactivity pattern of alkali metals |  |  | [AQA 8462 4.1.2.5](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 6.5 | Explaining the alkali metal trend |  |  | [AQA 8462 4.1.2.5](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 6.6 | Colours and states of halogens |  |  | [AQA 8462 4.1.2.6](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) + [chemistry-05-extra-tests-fuels-and-materials.md](chemistry-05-extra-tests-fuels-and-materials.md) |
+| 6.7 | Physical trends in halogens |  |  | [AQA 8462 4.1.2.6](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 6.8 | Test for chlorine |  |  | [AQA 8462 4.8.2.4](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| 6.9 | Halogens with metals |  |  | [AQA 8462 4.1.2.6](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 6.10 | Hydrogen halides form acids |  |  | [chemistry-05-extra-tests-fuels-and-materials.md](chemistry-05-extra-tests-fuels-and-materials.md) |
+| 6.11 | Halogen displacement reactions |  |  | [AQA 8462 4.1.2.6](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 6.12 | Halogen displacement as redox | HT |  | [AQA 8462 4.1.2.6](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md), [AQA 8462 4.4.1.4](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| 6.13 | Explaining halogen reactivity |  |  | [AQA 8462 4.1.2.6](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 6.14 | Why noble gases are inert |  |  | [AQA 8462 4.1.2.4](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| 6.15 | Uses of noble gases |  |  | [chemistry-05-extra-tests-fuels-and-materials.md](chemistry-05-extra-tests-fuels-and-materials.md) |
+| 6.16 | Physical trends in noble gases |  |  | [AQA 8462 4.1.2.4](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+
+### Topic 7: Rates of reaction and energy changes
+
+| Ref | Content | Tier | Separate only | File |
+| --- | --- | --- | --- | --- |
+| 7.1 | Core practical: conditions and rate (gas volume, turbidity) |  |  | [AQA 8462 4.6.1.2](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) (required practical) |
+| 7.2 | Methods for measuring rate |  |  | [AQA 8462 4.6.1.1](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| 7.3 | Collision theory |  |  | [AQA 8462 4.6.1.3](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| 7.4 | Effects of temperature, concentration, surface area, pressure |  |  | [AQA 8462 4.6.1.2, 4.6.1.3](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| 7.5 | Interpreting rate graphs |  |  | [AQA 8462 4.6.1.1](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| 7.6 | Catalysts |  |  | [AQA 8462 4.6.1.4](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| 7.7 | Catalysts lower activation energy |  |  | [AQA 8462 4.6.1.4](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| 7.8 | Enzymes as catalysts in brewing |  |  | [AQA 8462 4.6.1.4](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md), [AQA 8462 4.7.2.3](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 7.9 | Heat changes in dissolving, neutralisation, displacement, precipitation |  |  | [AQA 8462 4.5.1.1](../../aqa/gcse/chemistry-8462/4.5-energy-changes.md) + [chemistry-05-extra-tests-fuels-and-materials.md](chemistry-05-extra-tests-fuels-and-materials.md) |
+| 7.10 | Exothermic |  |  | [AQA 8462 4.5.1.1](../../aqa/gcse/chemistry-8462/4.5-energy-changes.md) |
+| 7.11 | Endothermic |  |  | [AQA 8462 4.5.1.1](../../aqa/gcse/chemistry-8462/4.5-energy-changes.md) |
+| 7.12 | Bond breaking and making |  |  | [AQA 8462 4.5.1.3](../../aqa/gcse/chemistry-8462/4.5-energy-changes.md) |
+| 7.13 | Overall energy change from bonds | part HT |  | [AQA 8462 4.5.1.3](../../aqa/gcse/chemistry-8462/4.5-energy-changes.md) |
+| 7.14 | Bond energy calculations | HT |  | [AQA 8462 4.5.1.3](../../aqa/gcse/chemistry-8462/4.5-energy-changes.md) |
+| 7.15 | Activation energy |  |  | [AQA 8462 4.5.1.2](../../aqa/gcse/chemistry-8462/4.5-energy-changes.md) |
+| 7.16 | Reaction profiles |  |  | [AQA 8462 4.5.1.2](../../aqa/gcse/chemistry-8462/4.5-energy-changes.md) |
+
+### Topic 8: Fuels and Earth science
+
+| Ref | Content | Tier | Separate only | File |
+| --- | --- | --- | --- | --- |
+| 8.1 | Hydrocarbons |  |  | [AQA 8462 4.7.1.1](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 8.2 | Crude oil as a mixture and finite resource |  |  | [AQA 8462 4.7.1.1](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 8.3 | Fractional distillation |  |  | [AQA 8462 4.7.1.2](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 8.4 | Fractions and their uses |  |  | [AQA 8462 4.7.1.2](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 8.5 | How fractions differ |  |  | [AQA 8462 4.7.1.3](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 8.6 | Homologous series |  |  | [AQA 8462 4.7.1.1, 4.7.2.1](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 8.7 | Complete combustion |  |  | [AQA 8462 4.7.1.3](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 8.8 | Incomplete combustion |  |  | [AQA 8462 4.9.3.1](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| 8.9 | Carbon monoxide toxicity |  |  | [AQA 8462 4.9.3.2](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| 8.10 | Problems of CO and soot in appliances |  |  | [AQA 8462 4.9.3.2](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| 8.11 | Sulfur dioxide from fuel impurities |  |  | [AQA 8462 4.9.3.1](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| 8.12 | Acid rain |  |  | [AQA 8462 4.9.3.2](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| 8.13 | Nitrogen oxides from engines |  |  | [AQA 8462 4.9.3.1, 4.9.3.2](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| 8.14 | Hydrogen vs petrol as a car fuel |  |  | [chemistry-05-extra-tests-fuels-and-materials.md](chemistry-05-extra-tests-fuels-and-materials.md) |
+| 8.15 | Fossil fuels are non-renewable |  |  | [AQA 8462 4.7.1.1](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 8.16 | Cracking |  |  | [AQA 8462 4.7.1.4](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 8.17 | Why cracking is needed |  |  | [AQA 8462 4.7.1.4](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 8.18 | Volcanic gases and the early atmosphere |  |  | [AQA 8462 4.9.1.2](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| 8.19 | Composition of the early atmosphere |  |  | [AQA 8462 4.9.1.2](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| 8.20 | Oceans from condensed water vapour |  |  | [AQA 8462 4.9.1.2](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| 8.21 | CO₂ removed by dissolving in oceans |  |  | [AQA 8462 4.9.1.4](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| 8.22 | Oxygen from photosynthesis |  |  | [AQA 8462 4.9.1.3](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| 8.23 | Test for oxygen |  |  | [AQA 8462 4.8.2.2](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| 8.24 | Greenhouse gases |  |  | [AQA 8462 4.9.2.1](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| 8.25 | Evidence for human-caused climate change |  |  | [AQA 8462 4.9.2.2, 4.9.2.3](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| 8.26 | Today's atmosphere and effects of more greenhouse gases |  |  | [AQA 8462 4.9.1.1, 4.9.2.3, 4.9.2.4](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+
+### Topic 9: Separate chemistry 2
+
+| Ref | Content | Tier | Separate only | File |
+| --- | --- | --- | --- | --- |
+| 9.1C | Each ion test must be unique |  | Yes | [AQA 8462 4.8.3.1](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| 9.2C | Flame tests |  | Yes | [AQA 8462 4.8.3.1](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| 9.3C | Tests for metal cations and ammonium |  | Yes | [AQA 8462 4.8.3.2](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) + [chemistry-05-extra-tests-fuels-and-materials.md](chemistry-05-extra-tests-fuels-and-materials.md) |
+| 9.4C | Test for ammonia |  | Yes | [chemistry-05-extra-tests-fuels-and-materials.md](chemistry-05-extra-tests-fuels-and-materials.md) |
+| 9.5C | Tests for carbonate, sulfate and halide ions |  | Yes | [AQA 8462 4.8.3.3, 4.8.3.4, 4.8.3.5](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| 9.6C | Core practical: identify ions in unknown salts |  | Yes | [AQA 8462 4.8.3.5](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) (required practical) |
+| 9.7C | Identifying ions from results |  | Yes | [AQA 8462 4.8.3.2, 4.8.3.5](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| 9.8C | Instrumental methods |  | Yes | [AQA 8462 4.8.3.6](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| 9.9C | Flame photometer data |  | Yes | [AQA 8462 4.8.3.7](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| 9.10C | Alkane formulae and structures |  | Yes | [AQA 8462 4.7.1.1](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.11C | Alkanes are saturated |  | Yes | [AQA 8462 4.7.1.1](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.12C | Alkene formulae and structures |  | Yes | [AQA 8462 4.7.2.1](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.13C | Alkenes are unsaturated |  | Yes | [AQA 8462 4.7.2.1](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.14C | Ethene + bromine |  | Yes | [AQA 8462 4.7.2.2](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.15C | Bromine water test |  | Yes | [AQA 8462 4.7.1.4](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.16C | Combustion of alkanes and alkenes |  | Yes | [AQA 8462 4.7.1.3, 4.7.2.2](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.17C | Polymers defined |  | Yes | [AQA 8462 4.7.3.1](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.18C | Poly(ethene) from ethene |  | Yes | [AQA 8462 4.7.3.1](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.19C | Other addition polymers |  | Yes | [AQA 8462 4.7.3.1](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.20C | Monomer from polymer and back |  | Yes | [AQA 8462 4.7.3.1](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.21C | Uses and properties of polymers |  | Yes | [AQA 8462 4.2.2.5](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md), [AQA 8462 4.10.3.3](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) + [chemistry-05-extra-tests-fuels-and-materials.md](chemistry-05-extra-tests-fuels-and-materials.md) |
+| 9.22C | Condensation polymers: polyesters | HT | Yes | [AQA 8462 4.7.3.2](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.23C | Problems with polymers |  | Yes | [chemistry-05-extra-tests-fuels-and-materials.md](chemistry-05-extra-tests-fuels-and-materials.md) |
+| 9.24C | Recycling polymers |  | Yes | [AQA 8462 4.10.2.2](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) + [chemistry-05-extra-tests-fuels-and-materials.md](chemistry-05-extra-tests-fuels-and-materials.md) |
+| 9.25C | DNA, proteins, starch and cellulose as polymers |  | Yes | [AQA 8462 4.7.3.3, 4.7.3.4](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.26C | Alcohol formulae and structures |  | Yes | [AQA 8462 4.7.2.3](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.27C | –OH group |  | Yes | [AQA 8462 4.7.2.3](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.28C | Core practical: combustion of alcohols heating water |  | Yes | [chemistry-05-extra-tests-fuels-and-materials.md](chemistry-05-extra-tests-fuels-and-materials.md) |
+| 9.29C | Carboxylic acid formulae and structures |  | Yes | [AQA 8462 4.7.2.4](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.30C | –COOH group and acidity |  | Yes | [AQA 8462 4.7.2.4](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.31C | Oxidising alcohols to carboxylic acids |  | Yes | [AQA 8462 4.7.2.3](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.32C | Similar reactions in a homologous series |  | Yes | [AQA 8462 4.7.2.3, 4.7.2.4](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.33C | Fermentation |  | Yes | [AQA 8462 4.7.2.3](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| 9.34C | Fractional distillation of fermented mixture |  | Yes | [AQA 8462 4.7.2.3](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) + [chemistry-05-extra-tests-fuels-and-materials.md](chemistry-05-extra-tests-fuels-and-materials.md) |
+| 9.35C | Nanoparticle sizes |  | Yes | [AQA 8462 4.2.4.1](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 9.36C | Uses of nanoparticles |  | Yes | [AQA 8462 4.2.4.2](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 9.37C | Risks of nanoparticles |  | Yes | [AQA 8462 4.2.4.2](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| 9.38C | Ceramics, polymers, composites, metals compared |  | Yes | [AQA 8462 4.10.3.3](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| 9.39C | Choosing materials from data |  | Yes | [AQA 8462 4.10.3.3](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
