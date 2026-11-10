@@ -39,7 +39,7 @@ Every spec statement of Pearson Edexcel GCSE (9-1) Biology 1BI0 (first teaching 
 | 1.10 | Core practical: pH and enzyme activity |  |  | [AQA 8461 4.2.2.1](../../aqa/gcse/biology-8461/4.2-organisation.md) (required practical) |
 | 1.11 | Rate calculations for enzyme activity |  |  | [biology-01-enzyme-rates-food-energy-and-growth.md](biology-01-enzyme-rates-food-energy-and-growth.md) |
 | 1.12 | Enzymes building and breaking down food molecules |  |  | [AQA 8461 4.2.2.1](../../aqa/gcse/biology-8461/4.2-organisation.md) |
-| 1.13B | Core practical: food tests (starch, sugars, protein, fat) |  | Yes | [AQA 8461 4.2.2.1](../../aqa/gcse/biology-8461/4.2-organisation.md) (required practical) |
+| 1.13B | Core practical: food tests (starch, sugars, protein, fat) |  | Yes | [AQA 8461 4.2.2.1](../../aqa/gcse/biology-8461/4.2-organisation.md) (required practical) + [biology-01-enzyme-rates-food-energy-and-growth.md](biology-01-enzyme-rates-food-energy-and-growth.md) |
 | 1.14B | Measuring energy in food by calorimetry |  | Yes | [biology-01-enzyme-rates-food-energy-and-growth.md](biology-01-enzyme-rates-food-energy-and-growth.md) |
 | 1.15 | Diffusion, osmosis and active transport |  |  | [AQA 8461 4.1.3.1, 4.1.3.2, 4.1.3.3](../../aqa/gcse/biology-8461/4.1-cell-biology.md) |
 | 1.16 | Core practical: osmosis in potatoes |  |  | [AQA 8461 4.1.3.2](../../aqa/gcse/biology-8461/4.1-cell-biology.md) (required practical) |
