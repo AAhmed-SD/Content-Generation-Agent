@@ -182,9 +182,9 @@ A circular queue has 4 spaces. Trace: enqueue A, B, C; dequeue; dequeue; enqueue
 | dequeue → B | A B C – | 2 | 2 | 1 |
 | enqueue D | A B C D | 2 | 3 | 2 |
 | enqueue E | E B C D | 2 | 0 (wrapped) | 3 |
-| enqueue F | F E C D → F in [1] | 2 | 1 | 4 (full) |
+| enqueue F | E F C D | 2 | 1 | 4 (full) |
 
-After the last step the array holds [E, F, C, D], front = 2, so the order of leaving is C, D, E, F. A linear queue of 4 would have reported full at the enqueue of E.
+Old values (A, B) stay in the array until overwritten; they are outside the queue. After the last step the array holds [E, F, C, D], front = 2, so the order of leaving is C, D, E, F. A linear queue of 4 would have reported full at the enqueue of E.
 
 ### Priority queue
 
