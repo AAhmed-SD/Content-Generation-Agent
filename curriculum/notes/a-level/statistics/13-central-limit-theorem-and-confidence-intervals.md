@@ -96,7 +96,7 @@ Bolts have lengths with σ = 6 mm. A sample of 36 has mean 52.3 mm. Find a 95% c
 52.3 \pm 1.96 \times \frac{6}{\sqrt{36}} = 52.3 \pm 1.96 = (50.34, \; 54.26)
 ```
 
-Ten jars of honey have masses (g) 12.4, 11.8, 13.1, 12.9, 12.2, 11.5, 12.7, 13.4, 12.0, 12.6 (in tens of grams above 450 g). Assuming normality, find a 95% confidence interval for the mean.
+Ten fish from a pond have lengths (cm) 12.4, 11.8, 13.1, 12.9, 12.2, 11.5, 12.7, 13.4, 12.0, 12.6. Assuming lengths are normal, find a 95% confidence interval for the mean length.
 
 1. x̄ = 12.46, s = 0.5967 (calculator, divisor n − 1).
 2. σ unknown and n = 10 < 30, so use t₉: t₉(2.5% each tail) = 2.262.
