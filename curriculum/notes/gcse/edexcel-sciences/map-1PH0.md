@@ -17,7 +17,7 @@ Every spec statement of Pearson Edexcel GCSE (9-1) Physics 1PH0 (first teaching 
 - [physics-02-total-internal-reflection-and-lens-power.md](physics-02-total-internal-reflection-and-lens-power.md): total internal reflection, critical angle, lens power
 - [physics-03-positron-decay-detection-and-fusion.md](physics-03-positron-decay-detection-and-fusion.md): beta-plus decay, detectors, PET isotopes, fusion power
 - [physics-04-astronomy.md](physics-04-astronomy.md): g on other bodies, models of the Solar System, comets, Doppler effect, Steady State vs Big Bang, CMB, telescopes, centripetal force
-- [physics-05-mains-safety-static-and-absolute-zero.md](physics-05-mains-safety-static-and-absolute-zero.md): p.d. as energy per charge, fuses and switches in the live wire, earthing and uses of static, melting ice core practical, absolute zero and kelvin
+- [physics-05-mains-safety-static-and-absolute-zero.md](physics-05-mains-safety-static-and-absolute-zero.md): infrasound, p.d. as energy per charge, fuses and switches in the live wire, earthing and uses of static, melting ice core practical, absolute zero and kelvin
 
 ## Edexcel 1PH0
 
@@ -104,7 +104,7 @@ Every spec statement of Pearson Edexcel GCSE (9-1) Physics 1PH0 (first teaching 
 | 4.11 | Different substances and different wavelengths | HT |  | [AQA 8463 4.6.1.3, 4.6.2.2](../../aqa/gcse/physics-8463/4.6-waves.md) |
 | 4.12P | Sound to vibrations in solids; the ear | HT | Yes | [AQA 8463 4.6.1.4](../../aqa/gcse/physics-8463/4.6-waves.md) |
 | 4.13P | Ultrasound | HT | Yes | [AQA 8463 4.6.1.5](../../aqa/gcse/physics-8463/4.6-waves.md) |
-| 4.14P | Infrasound | HT | Yes | [AQA 8463 4.6.1.5](../../aqa/gcse/physics-8463/4.6-waves.md) + [physics-04-astronomy.md](physics-04-astronomy.md) |
+| 4.14P | Infrasound | HT | Yes | [AQA 8463 4.6.1.5](../../aqa/gcse/physics-8463/4.6-waves.md) + [physics-05-mains-safety-static-and-absolute-zero.md](physics-05-mains-safety-static-and-absolute-zero.md) |
 | 4.15P | Uses of ultrasound and infrasound | HT | Yes | [AQA 8463 4.6.1.5](../../aqa/gcse/physics-8463/4.6-waves.md) |
 | 4.16P | Changes in speed, frequency, wavelength between media |  | Yes | [AQA 8463 4.6.1.4](../../aqa/gcse/physics-8463/4.6-waves.md) |
 | 4.17 | Core practical: measuring wave speed, frequency, wavelength |  |  | [AQA 8463 4.6.1.2](../../aqa/gcse/physics-8463/4.6-waves.md) (required practical) |

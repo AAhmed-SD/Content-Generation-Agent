@@ -29,7 +29,7 @@ Every spec statement of Pearson Edexcel GCSE (9-1) Combined Science 1SC0 (first 
 - [physics-02-total-internal-reflection-and-lens-power.md](physics-02-total-internal-reflection-and-lens-power.md): total internal reflection, critical angle, lens power
 - [physics-03-positron-decay-detection-and-fusion.md](physics-03-positron-decay-detection-and-fusion.md): beta-plus decay, detectors, PET isotopes, fusion power
 - [physics-04-astronomy.md](physics-04-astronomy.md): g on other bodies, models of the Solar System, comets, Doppler effect, Steady State vs Big Bang, CMB, telescopes, centripetal force
-- [physics-05-mains-safety-static-and-absolute-zero.md](physics-05-mains-safety-static-and-absolute-zero.md): p.d. as energy per charge, fuses and switches in the live wire, earthing and uses of static, melting ice core practical, absolute zero and kelvin
+- [physics-05-mains-safety-static-and-absolute-zero.md](physics-05-mains-safety-static-and-absolute-zero.md): infrasound, p.d. as energy per charge, fuses and switches in the live wire, earthing and uses of static, melting ice core practical, absolute zero and kelvin
 
 ## Edexcel 1SC0
 ### Biology (Papers 1 and 2)
