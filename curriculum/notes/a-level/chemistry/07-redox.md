@@ -15,7 +15,7 @@ boards:
     spec_refs: ["2.1.5(a)", "2.1.5(b)", "2.1.5(c)", "2.1.5(d)", "2.1.5(e)", "2.1.5(f)", "5.2.3(a)", "5.2.3(b)", "5.2.3(c)"]
   - board: OCR B
     code: "H433"
-    spec_refs: ["ES(d)", "ES(e)", "ES(f)", "ES(g)", "DM(c)"]
+    spec_refs: ["ES(d)", "ES(e)", "ES(g)", "DM(c)"]
   - board: Eduqas
     code: "A410QS"
     spec_refs: ["C1.1(b)", "C1.6(c)", "PI1.1(a)", "PI1.1(b)", "PI1.2(a)", "PI1.2(b)"]
@@ -42,12 +42,12 @@ AS content. Redox runs through the halogens (file 14), electrode potentials (fil
 - AQA 3.1.7 (AS).
 - Edexcel 3.1 to 3.13 (AS) include disproportionation (3.7) and the idea that metals form positive ions and non-metals negative ions (3.11, 3.12).
 - OCR A 2.1.5(a) to (f) (AS) include redox reactions of metals with acids (2.1.5(e)). OCR A 5.2.3(a) to (c) (A-level) revisit oxidising and reducing agents and half-equations for unfamiliar systems.
-- OCR B ES(d) to (g) (AS) cover oxidation states and redox in the halogen context, including systematic names such as chlorate(I). DM(c) (A-level) balances half-equations for transition metal redox.
+- OCR B ES(d), (e), (g) (AS) cover oxidation states and redox in the halogen context, including systematic names such as chlorate(I). Iodine–thiosulfate titrations (ES(f)) are in file 15. DM(c) (A-level) balances half-equations for transition metal redox.
 - Eduqas C1.1(b) and C1.6(c) (AS) and PI1.1(a), (b), PI1.2(a), (b) (A-level).
 
 ## 3.1.7 Oxidation, reduction and redox equations
 
-*Refs: AQA 3.1.7 · Edexcel 3.1 to 3.13 · OCR A 2.1.5(a) to (f), 5.2.3(a) to (c) · OCR B ES(d) to (g), DM(c) · Eduqas C1.1(b), C1.6(c), PI1.1(a), (b), PI1.2(a), (b). Level: AS & A.*
+*Refs: AQA 3.1.7 · Edexcel 3.1 to 3.13 · OCR A 2.1.5(a) to (f), 5.2.3(a) to (c) · OCR B ES(d), (e), (g), DM(c) · Eduqas C1.1(b), C1.6(c), PI1.1(a), (b), PI1.2(a), (b). Level: AS & A.*
 
 ### What you need to know
 
