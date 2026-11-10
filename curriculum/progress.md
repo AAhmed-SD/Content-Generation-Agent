@@ -59,9 +59,9 @@ Streams run two at a time in the shared checkout (disk space allows no worktrees
 | GCSE Computer Science | AQA 8525, OCR J277, Edexcel, Eduqas C500QS | `notes/gcse/computer-science/` | Done |
 | A-level Maths | AQA 7357, Edexcel 9MA0, OCR H240, OCR MEI H640 | `notes/a-level/maths/` | Done |
 | A-level Further Maths | AQA 7367, Edexcel 9FM0, OCR H245, OCR MEI H645 | `notes/a-level/further-maths/` | Done |
-| A-level Biology | AQA 7402, Edexcel A and B, OCR A and B, Eduqas A400QS | `notes/a-level/biology/` | In progress |
-| A-level Chemistry | AQA 7405, Edexcel, OCR A and B, Eduqas A410QS | `notes/a-level/chemistry/` | Queued |
-| A-level Physics | AQA 7408, Edexcel, OCR A and B, Eduqas A420QS | `notes/a-level/physics/` | Queued |
+| A-level Biology | AQA 7402, Edexcel A and B, OCR A and B, Eduqas A400QS | `notes/a-level/biology/` | Done |
+| A-level Chemistry | AQA 7405, Edexcel, OCR A and B, Eduqas A410QS | `notes/a-level/chemistry/` | In progress |
+| A-level Physics | AQA 7408, Edexcel, OCR A and B, Eduqas A420QS | `notes/a-level/physics/` | In progress |
 | A-level Computer Science | AQA 7517, OCR H446, Eduqas A500QS | `notes/a-level/computer-science/` | Queued |
 | AQA GCSE Combined Science: Synergy | 8465 | | After AQA Physics |
 | Other boards' GCSE sciences | Edexcel, OCR A and B, Eduqas | | After AQA Physics |
