@@ -1,0 +1,272 @@
+# Pearson Edexcel GCSE Astronomy 1AS0: spec map
+
+Every spec point of Pearson Edexcel Level 1/Level 2 GCSE (9–1) in Astronomy (1AS0), in the board's order, with the notes file that covers it.
+
+- Specification: Issue 3, December 2024 (first teaching 2017, first certification 2019). Qualification code 1AS0, confirmed from the spec PDF. Not tiered.
+- The spec numbers its content by topic: 1.1 to 16.12. Sub-items are lettered (a, b, c ...); this map lists the point and the file covers every lettered item.
+- Students do not have to recall equations. The six formulae (4.4, 8.6, 11.23, 13.3, 16.3, 16.5) and a data sheet (planet data, distances, constants including H₀ = 68 km/s/Mpc) are given in the exam.
+- Each student must complete at least one unaided and one aided observation task (from A1 to A10 and B1 to B12, not both from the same row). Observations are not marked, but the written papers test observational techniques; they are covered in file 17.
+- Existing notes elsewhere (AQA GCSE Physics 4.8 and the Edexcel GCSE Physics astronomy file) cover a small part of Topics 14 and 16 at a lower depth. The 1AS0 points need more detail, so every point has its own coverage here, with those files linked as background.
+- `refs_checked: false`: references were taken from the Issue 3 spec PDF and still need a person to check them.
+
+## Papers
+
+| Paper | What it examines |
+| --- | --- |
+| Paper 1 1AS0/01: Naked-eye Astronomy (1 h 45 min, 100 marks, 50%) | Topics 1 to 8 |
+| Paper 2 1AS0/02: Telescopic Astronomy (1 h 45 min, 100 marks, 50%) | Topics 9 to 16 |
+
+Both papers have multiple-choice, short-answer, calculation, graphical and extended-response questions; calculators are allowed; both are synoptic.
+
+## Files
+
+- [01-planet-earth.md](01-planet-earth.md): Topic 1 Planet Earth
+- [02-the-lunar-disc.md](02-the-lunar-disc.md): Topic 2 The lunar disc
+- [03-earth-moon-sun-system.md](03-earth-moon-sun-system.md): Topic 3 The Earth-Moon-Sun system
+- [04-time-and-earth-moon-sun-cycles.md](04-time-and-earth-moon-sun-cycles.md): Topic 4 Time and the Earth-Moon-Sun cycles
+- [05-solar-system-observation.md](05-solar-system-observation.md): Topic 5 Solar System observation
+- [06-celestial-observation.md](06-celestial-observation.md): Topic 6 Celestial observation
+- [07-early-models-of-the-solar-system.md](07-early-models-of-the-solar-system.md): Topic 7 Early models of the Solar System
+- [08-planetary-motion-and-gravity.md](08-planetary-motion-and-gravity.md): Topic 8 Planetary motion and gravity
+- [09-exploring-the-moon.md](09-exploring-the-moon.md): Topic 9 Exploring the Moon
+- [10-solar-astronomy.md](10-solar-astronomy.md): Topic 10 Solar astronomy
+- [11-exploring-the-solar-system.md](11-exploring-the-solar-system.md): Topic 11 Exploring the Solar System (bodies, telescopes, probes, missions)
+- [12-formation-of-planetary-systems.md](12-formation-of-planetary-systems.md): Topic 12 Formation of planetary systems
+- [13-exploring-starlight.md](13-exploring-starlight.md): Topic 13 Exploring starlight
+- [14-stellar-evolution.md](14-stellar-evolution.md): Topic 14 Stellar evolution
+- [15-our-place-in-the-galaxy.md](15-our-place-in-the-galaxy.md): Topic 15 Our place in the Galaxy
+- [16-cosmology.md](16-cosmology.md): Topic 16 Cosmology
+- [17-observational-skills.md](17-observational-skills.md): Observational skills and tasks A1 to A10, B1 to B12
+
+## Paper 1: Naked-eye Astronomy
+
+| Ref | Content | File |
+| --- | --- | --- |
+| 1.1 | Earth is an oblate spheroid | [01](01-planet-earth.md) |
+| 1.2 | Mean diameter of the Earth (13 000 km) | [01](01-planet-earth.md) |
+| 1.3 | Internal divisions: crust, mantle, outer core, inner core | [01](01-planet-earth.md) |
+| 1.4 | Latitude and longitude | [01](01-planet-earth.md) |
+| 1.5 | Surface reference points: Equator, Tropics, Arctic and Antarctic Circles, Prime Meridian, Poles | [01](01-planet-earth.md) |
+| 1.6 | Atmosphere's effects: sky colour, skyglow, twinkling (seeing) | [01](01-planet-earth.md) |
+| 2.1 | Shape of the Moon | [02](02-the-lunar-disc.md) |
+| 2.2 | Mean diameter of the Moon (3500 km) | [02](02-the-lunar-disc.md) |
+| 2.3 | Recognising craters, maria, terrae, mountains, valleys | [02](02-the-lunar-disc.md) |
+| 2.4 | Structure and origin of those formations | [02](02-the-lunar-disc.md) |
+| 2.5 | Identifying named features (Sea of Tranquility, Ocean of Storms, Sea of Crises, Tycho, Copernicus, Kepler, Apennines) | [02](02-the-lunar-disc.md) |
+| 2.6 | Rotation and orbital periods of the Moon | [02](02-the-lunar-disc.md) |
+| 2.7 | Synchronous rotation | [02](02-the-lunar-disc.md) |
+| 2.8 | Libration and its effect on visibility | [02](02-the-lunar-disc.md) |
+| 3.1 | Relative sizes of Earth, Moon and Sun | [03](03-earth-moon-sun-system.md) |
+| 3.2 | Relative distances | [03](03-earth-moon-sun-system.md) |
+| 3.3 | Eratosthenes and Aristarchus: Earth's diameter, Moon's diameter and distance, Sun's distance and diameter | [03](03-earth-moon-sun-system.md) |
+| 3.4 | Mean diameter of the Sun (1.4 × 10⁶ km) | [03](03-earth-moon-sun-system.md) |
+| 3.5 | Tides: high, low, spring, neap | [03](03-earth-moon-sun-system.md) |
+| 3.6 | Precession of Earth's axis; archaeoastronomy | [03](03-earth-moon-sun-system.md) |
+| 3.7 | Rate of precession data | [03](03-earth-moon-sun-system.md) |
+| 3.8 | Solar eclipses: partial, total, annular; contacts | [03](03-earth-moon-sun-system.md) |
+| 3.9 | Lunar eclipses: partial, total; contacts | [03](03-earth-moon-sun-system.md) |
+| 3.10 | Causes of eclipses | [03](03-earth-moon-sun-system.md) |
+| 4.1 | Sidereal and synodic days | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.2 | Apparent Solar Time | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.3 | Mean Sun, Mean Solar Time, Local Mean Time | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.4 | Equation of Time = AST − MST | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.5 | Annual variation of the Equation of Time | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.6 | Causes of that variation | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.7 | Local noon from shadows; shadow stick | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.8 | Sundials | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.9 | Lunar phase cycle | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.10 | Sidereal and synodic months | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.11 | Annual variation in sunrise and sunset | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.12 | Equinoxes and solstices | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.13 | Sun's apparent motion through the year | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.14 | Relationship between sidereal and solar time | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.15 | Local time at different longitudes | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.16 | Time zones | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.17 | Time-zone data | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.18 | GMT and UT | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.19 | Longitude from shadow-stick data and the Equation of Time | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.20 | Astronomical longitude methods; lunar distance method | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 4.21 | Horological method (Harrison's chronometer) | [04](04-time-and-earth-moon-sun-cycles.md) |
+| 5.1 | Pinhole projection of the Sun | [05](05-solar-system-observation.md) |
+| 5.2 | The ecliptic | [05](05-solar-system-observation.md) |
+| 5.3 | Changing positions of the planets | [05](05-solar-system-observation.md) |
+| 5.4 | The Zodiacal Band | [05](05-solar-system-observation.md) |
+| 5.5 | Retrograde motion | [05](05-solar-system-observation.md) |
+| 5.6 | First Point of Aries and First Point of Libra | [05](05-solar-system-observation.md) |
+| 5.7 | Meteors, showers, radiant | [05](05-solar-system-observation.md) |
+| 5.8 | Conjunction, opposition, elongation, transit, occultation | [05](05-solar-system-observation.md) |
+| 6.1 | Recognising naked-eye phenomena and artificial objects | [06](06-celestial-observation.md) |
+| 6.2 | Constellations and asterisms: Cassiopeia, Cygnus, Orion, Plough, Southern Cross, Summer Triangle, Square of Pegasus | [06](06-celestial-observation.md) |
+| 6.3 | Asterisms as pointers | [06](06-celestial-observation.md) |
+| 6.4 | Different names across cultures | [06](06-celestial-observation.md) |
+| 6.5 | Star charts, planispheres, apps | [06](06-celestial-observation.md) |
+| 6.6 | Light pollution | [06](06-celestial-observation.md) |
+| 6.7 | Celestial sphere, poles, equator | [06](06-celestial-observation.md) |
+| 6.8 | Equatorial coordinates (RA and dec) | [06](06-celestial-observation.md) |
+| 6.9 | Horizon coordinates (altitude and azimuth) | [06](06-celestial-observation.md) |
+| 6.10 | Linking the two systems with latitude on the meridian | [06](06-celestial-observation.md) |
+| 6.11 | Meridian, local sidereal time, hour angle | [06](06-celestial-observation.md) |
+| 6.12 | Best time and best objects to observe | [06](06-celestial-observation.md) |
+| 6.13 | Cardinal points, culmination, meridian, zenith, circumpolarity | [06](06-celestial-observation.md) |
+| 6.14 | Diurnal motion | [06](06-celestial-observation.md) |
+| 6.15 | Circumpolar test from declination and latitude | [06](06-celestial-observation.md) |
+| 6.16 | Upper and lower transit of circumpolar stars | [06](06-celestial-observation.md) |
+| 6.17 | Rising and setting times to predict position | [06](06-celestial-observation.md) |
+| 6.18 | Latitude from Polaris | [06](06-celestial-observation.md) |
+| 6.19 | Dark adaptation, averted vision | [06](06-celestial-observation.md) |
+| 6.20 | Visibility factors | [06](06-celestial-observation.md) |
+| 6.21 | Naked-eye Milky Way | [06](06-celestial-observation.md) |
+| 7.1 | Ancient uses of solar and lunar cycles | [07](07-early-models-of-the-solar-system.md) |
+| 7.2 | Monument alignments changed by precession | [07](07-early-models-of-the-solar-system.md) |
+| 7.3 | Geocentric models | [07](07-early-models-of-the-solar-system.md) |
+| 7.4 | Ptolemy's epicycles | [07](07-early-models-of-the-solar-system.md) |
+| 7.5 | Scale of the Solar System | [07](07-early-models-of-the-solar-system.md) |
+| 7.6 | AU, light year, parsec | [07](07-early-models-of-the-solar-system.md) |
+| 8.1 | Brahe's observations | [08](08-planetary-motion-and-gravity.md) |
+| 8.2 | Copernicus and Kepler | [08](08-planetary-motion-and-gravity.md) |
+| 8.3 | Gravity and stable elliptical orbits | [08](08-planetary-motion-and-gravity.md) |
+| 8.4 | Kepler's laws | [08](08-planetary-motion-and-gravity.md) |
+| 8.5 | Aphelion, perihelion, apogee, perigee | [08](08-planetary-motion-and-gravity.md) |
+| 8.6 | Kepler's third law T²/r³ = constant | [08](08-planetary-motion-and-gravity.md) |
+| 8.7 | The constant depends inversely on the central mass | [08](08-planetary-motion-and-gravity.md) |
+| 8.8 | Newton explained Kepler's laws | [08](08-planetary-motion-and-gravity.md) |
+| 8.9 | Inverse square law of gravitation | [08](08-planetary-motion-and-gravity.md) |
+
+## Paper 2: Telescopic Astronomy
+
+| Ref | Content | File |
+| --- | --- | --- |
+| 9.1 | Moon's internal divisions compared with Earth's | [09](09-exploring-the-moon.md) |
+| 9.2 | Near side and far side | [09](09-exploring-the-moon.md) |
+| 9.3 | How the far side was studied | [09](09-exploring-the-moon.md) |
+| 9.4 | Escape velocity and rockets | [09](09-exploring-the-moon.md) |
+| 9.5 | Giant Impact, Capture and Co-accretion theories | [09](09-exploring-the-moon.md) |
+| 10.1 | Safe solar observing: projection, H-alpha filter | [10](10-solar-astronomy.md) |
+| 10.2 | Sun's internal divisions and temperatures | [10](10-solar-astronomy.md) |
+| 10.3 | Energy production and transfer | [10](10-solar-astronomy.md) |
+| 10.4 | Proton-proton cycle | [10](10-solar-astronomy.md) |
+| 10.5 | Chromosphere and corona | [10](10-solar-astronomy.md) |
+| 10.6 | Sunspots | [10](10-solar-astronomy.md) |
+| 10.7 | Solar rotation period from sunspots | [10](10-solar-astronomy.md) |
+| 10.8 | Solar cycle data | [10](10-solar-astronomy.md) |
+| 10.9 | The Sun at different wavelengths | [10](10-solar-astronomy.md) |
+| 10.10 | Solar wind: nature, composition, origin | [10](10-solar-astronomy.md) |
+| 10.11 | Effects of the solar wind | [10](10-solar-astronomy.md) |
+| 10.12 | Magnetosphere and Van Allen Belts | [10](10-solar-astronomy.md) |
+| 11.1 | Names and locations of bodies: planets, dwarf planets, SSSOs | [11](11-exploring-the-solar-system.md) |
+| 11.2 | Comet structure | [11](11-exploring-the-solar-system.md) |
+| 11.3 | Short-period comets and the Kuiper Belt | [11](11-exploring-the-solar-system.md) |
+| 11.4 | Long-period comets and the Oort Cloud | [11](11-exploring-the-solar-system.md) |
+| 11.5 | Kuiper Belt, Oort Cloud, heliosphere | [11](11-exploring-the-solar-system.md) |
+| 11.6 | Planet characteristics | [11](11-exploring-the-solar-system.md) |
+| 11.7 | Formation and position of the gas giants | [11](11-exploring-the-solar-system.md) |
+| 11.8 | Size of the Solar System | [11](11-exploring-the-solar-system.md) |
+| 11.9 | AU, light year, parsec | [11](11-exploring-the-solar-system.md) (and [07](07-early-models-of-the-solar-system.md)) |
+| 11.10 | Meteoroids and meteorites | [11](11-exploring-the-solar-system.md) |
+| 11.11 | Bodies orbit near the ecliptic plane | [11](11-exploring-the-solar-system.md) |
+| 11.12 | Transits of Venus and the AU | [11](11-exploring-the-solar-system.md) |
+| 11.13 | Origin of Earth's water | [11](11-exploring-the-solar-system.md) |
+| 11.14 | Limits of the human eye | [11](11-exploring-the-solar-system.md) |
+| 11.15 | Objective and eyepiece | [11](11-exploring-the-solar-system.md) |
+| 11.16 | Converging lenses and concave mirrors | [11](11-exploring-the-solar-system.md) |
+| 11.17 | Simple telescopes | [11](11-exploring-the-solar-system.md) |
+| 11.18 | Galilean, Keplerian, Newtonian, Cassegrain designs | [11](11-exploring-the-solar-system.md) |
+| 11.19 | Light grasp ∝ diameter² | [11](11-exploring-the-solar-system.md) |
+| 11.20 | Aperture | [11](11-exploring-the-solar-system.md) |
+| 11.21 | Field of view | [11](11-exploring-the-solar-system.md) |
+| 11.22 | Resolution | [11](11-exploring-the-solar-system.md) |
+| 11.23 | Magnification = fo ÷ fe | [11](11-exploring-the-solar-system.md) |
+| 11.24 | Galileo's observations and heliocentrism | [11](11-exploring-the-solar-system.md) |
+| 11.25 | Reflectors versus refractors | [11](11-exploring-the-solar-system.md) |
+| 11.26 | Fly-by, orbiter, impactor, lander probes | [11](11-exploring-the-solar-system.md) |
+| 11.27 | Named probes: New Horizons, Juno or Dawn, Deep Impact, Philae | [11](11-exploring-the-solar-system.md) |
+| 11.28 | Escape velocity for probes | [11](11-exploring-the-solar-system.md) |
+| 11.29 | Manned missions: pros and cons | [11](11-exploring-the-solar-system.md) |
+| 11.30 | The Apollo programme | [11](11-exploring-the-solar-system.md) |
+| 12.1 | Gravity, tides, multi-body effects, collisions, solar wind in the Solar System | [12](12-formation-of-planetary-systems.md) |
+| 12.2 | Roche limit, shape, atmospheres | [12](12-formation-of-planetary-systems.md) |
+| 12.3 | Gas giant formation theories | [12](12-formation-of-planetary-systems.md) |
+| 12.4 | Exoplanet detection: transit, astrometry, radial velocity | [12](12-formation-of-planetary-systems.md) |
+| 12.5 | Life on Titan, Europa, Enceladus, beyond | [12](12-formation-of-planetary-systems.md) |
+| 12.6 | Goldilocks (habitable) zones | [12](12-formation-of-planetary-systems.md) |
+| 12.7 | Drake equation | [12](12-formation-of-planetary-systems.md) |
+| 12.8 | SETI; benefits and dangers | [12](12-formation-of-planetary-systems.md) |
+| 13.1 | Apparent magnitude | [13](13-exploring-starlight.md) |
+| 13.2 | Absolute magnitude | [13](13-exploring-starlight.md) |
+| 13.3 | Distance modulus M = m + 5 − 5 log d | [13](13-exploring-starlight.md) |
+| 13.4 | Information from spectra | [13](13-exploring-starlight.md) |
+| 13.5 | Spectral types | [13](13-exploring-starlight.md) |
+| 13.6 | Colour, type and temperature | [13](13-exploring-starlight.md) |
+| 13.7 | Sketching the HR diagram | [13](13-exploring-starlight.md) |
+| 13.8 | Life cycles on the HR diagram | [13](13-exploring-starlight.md) |
+| 13.9 | Inverse square law for brightness | [13](13-exploring-starlight.md) |
+| 13.10 | Degrees, arcminutes, arcseconds | [13](13-exploring-starlight.md) |
+| 13.11 | The parsec | [13](13-exploring-starlight.md) |
+| 13.12 | Heliocentric parallax | [13](13-exploring-starlight.md) |
+| 13.13 | Distances from the HR diagram | [13](13-exploring-starlight.md) |
+| 13.14 | Light curves of variable stars | [13](13-exploring-starlight.md) |
+| 13.15 | Eclipsing binaries | [13](13-exploring-starlight.md) |
+| 13.16 | Cepheids as distance indicators | [13](13-exploring-starlight.md) |
+| 13.17 | Binary stars and clusters | [13](13-exploring-starlight.md) |
+| 13.18 | Period of an eclipsing binary | [13](13-exploring-starlight.md) |
+| 13.19 | Sidereal day from star trails | [13](13-exploring-starlight.md) |
+| 13.20 | Digital sensors | [13](13-exploring-starlight.md) |
+| 13.21 | Obtaining spectra | [13](13-exploring-starlight.md) |
+| 13.22 | Atmospheric windows | [13](13-exploring-starlight.md) |
+| 13.23 | Only optical and radio at sea level | [13](13-exploring-starlight.md) |
+| 13.24 | Simple radio telescope | [13](13-exploring-starlight.md) |
+| 13.25 | Large radio apertures for resolution | [13](13-exploring-starlight.md) |
+| 13.26 | Aperture synthesis arrays | [13](13-exploring-starlight.md) |
+| 13.27 | Radio astronomy discoveries | [13](13-exploring-starlight.md) |
+| 13.28 | Infrared telescopes at altitude | [13](13-exploring-starlight.md) |
+| 13.29 | Infrared astronomy discoveries | [13](13-exploring-starlight.md) |
+| 13.30 | Atmosphere degrades images | [13](13-exploring-starlight.md) |
+| 13.31 | Why some telescopes go to space | [13](13-exploring-starlight.md) |
+| 13.32 | Space telescopes: pros and cons | [13](13-exploring-starlight.md) |
+| 13.33 | Gamma, X-ray and UV discoveries | [13](13-exploring-starlight.md) |
+| 13.34 | How a telescope changes the look of stars, doubles, binaries, clusters, nebulae, galaxies | [13](13-exploring-starlight.md) |
+| 14.1 | Messier and NGC catalogues | [14](14-stellar-evolution.md) |
+| 14.2 | Bayer naming | [14](14-stellar-evolution.md) |
+| 14.3 | Radiation pressure and gravity in a main sequence star | [14](14-stellar-evolution.md) |
+| 14.4 | Changes to the balance for a Sun-like star | [14](14-stellar-evolution.md) |
+| 14.5 | Electron pressure in a white dwarf | [14](14-stellar-evolution.md) |
+| 14.6 | Changes to the balance for a massive star | [14](14-stellar-evolution.md) |
+| 14.7 | Neutron pressure in a neutron star | [14](14-stellar-evolution.md) |
+| 14.8 | Chandrasekhar Limit | [14](14-stellar-evolution.md) |
+| 14.9 | Stages and timescales, Sun-like stars | [14](14-stellar-evolution.md); background in [AQA GCSE Physics 4.8](../../../aqa/gcse/physics-8463/4.8-space-physics.md) |
+| 14.10 | Stages and timescales, massive stars | [14](14-stellar-evolution.md); background in [AQA GCSE Physics 4.8](../../../aqa/gcse/physics-8463/4.8-space-physics.md) |
+| 14.11 | Evidence for black holes | [14](14-stellar-evolution.md) |
+| 15.1 | The Milky Way through binoculars or a small telescope | [15](15-our-place-in-the-galaxy.md) |
+| 15.2 | Size and shape of the Galaxy | [15](15-our-place-in-the-galaxy.md) |
+| 15.3 | 21 cm radio mapping | [15](15-our-place-in-the-galaxy.md) |
+| 15.4 | The Local Group | [15](15-our-place-in-the-galaxy.md) |
+| 15.5 | Its members: M31, LMC, SMC, M33 | [15](15-our-place-in-the-galaxy.md) |
+| 15.6 | Hubble classification | [15](15-our-place-in-the-galaxy.md) |
+| 15.7 | Tuning fork diagram | [15](15-our-place-in-the-galaxy.md) |
+| 15.8 | Milky Way is SBb | [15](15-our-place-in-the-galaxy.md) |
+| 15.9 | Galaxies emitting beyond visible light | [15](15-our-place-in-the-galaxy.md) |
+| 15.10 | AGN and supermassive black holes | [15](15-our-place-in-the-galaxy.md) |
+| 15.11 | Seyferts, quasars, blazars | [15](15-our-place-in-the-galaxy.md) |
+| 15.12 | AGN across the spectrum | [15](15-our-place-in-the-galaxy.md) |
+| 15.13 | Clusters and superclusters | [15](15-our-place-in-the-galaxy.md) |
+| 15.14 | Galaxy formation and evolution | [15](15-our-place-in-the-galaxy.md) |
+| 16.1 | Redshift of galaxies beyond the Local Group | [16](16-cosmology.md); background in [AQA GCSE Physics 4.8](../../../aqa/gcse/physics-8463/4.8-space-physics.md) |
+| 16.2 | Redshift caused by recession | [16](16-cosmology.md) |
+| 16.3 | (λ − λ₀) ÷ λ₀ = v ÷ c | [16](16-cosmology.md) |
+| 16.4 | Evidence for expansion | [16](16-cosmology.md) |
+| 16.5 | Hubble's law v = H₀d | [16](16-cosmology.md) |
+| 16.6 | Age and size of the Universe from H₀ | [16](16-cosmology.md) |
+| 16.7 | Expansion fits Big Bang and Steady State | [16](16-cosmology.md); background in [Edexcel GCSE Physics astronomy](../../edexcel-sciences/physics-04-astronomy.md) |
+| 16.8 | Evidence for the Big Bang: quasars, CMB, Hubble Deep Field | [16](16-cosmology.md) |
+| 16.9 | CMB fluctuations, WMAP and Planck | [16](16-cosmology.md) |
+| 16.10 | Dark matter and dark energy | [16](16-cosmology.md) |
+| 16.11 | Difficulty detecting them | [16](16-cosmology.md) |
+| 16.12 | Possible futures of the Universe | [16](16-cosmology.md) |
+
+## Observational skills
+
+| Ref | Content | File |
+| --- | --- | --- |
+| Skills 1 to 4 | Design, make, analyse and evaluate observations | [17](17-observational-skills.md) |
+| A1 to A10 | Unaided tasks | [17](17-observational-skills.md) |
+| B1 to B12 | Aided tasks (no B9 or B10; A11 and A12 do not exist) | [17](17-observational-skills.md) |
