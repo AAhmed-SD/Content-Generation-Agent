@@ -27,7 +27,7 @@ All of this file is on both tiers.
 
 ### Board differences
 
-- AQA 8382: planning is Section A (3.1.1 A1 to 3.1.3 A3). The SEC is 3.6, split into 3.6.1 to 3.6.5. Each AQA paper ends with an SEC question.
+- AQA 8382: planning is Section A (3.1.1 A1 to 3.1.3 A3). The SEC is 3.6, split into 3.6.1 to 3.6.5. Each AQA paper includes an SEC question.
 - Edexcel 1ST0: planning is 1a.01 to 1a.03. The SEC is a separate numbered list of five stages before the content tables (written SEC 1 to SEC 5 here). Edexcel orders its whole content list to follow the cycle.
 - Neither board needs a formal null hypothesis.
 
