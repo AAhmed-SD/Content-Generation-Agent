@@ -1,0 +1,656 @@
+# OCR Twenty First Century Science Combined Science B (J260): spec map
+
+Every assessable learning outcome of OCR GCSE (9–1) Combined Science B (Twenty First Century Science), J260, in OCR's order, with the notes that cover it. Biology B1 to B6, chemistry C1 to C6 and physics P1 to P6, plus Ideas about Science. Combined Science B renumbers some sub-topics and outcomes (for example its B2.5 is J257's B2.6), so each J260 outcome was matched to the same outcome in J257, J258 or J259 and uses that outcome's notes. There are sixteen combined PAGs (B1 to B5, C1 to C5, P1 to P6).
+
+The links go to the AQA GCSE notes in `notes/aqa/gcse/` (the section named in each link) or to the gap files in this folder, which hold only what the AQA notes lack. Where a spec point is wider than one AQA section, every section it needs is listed.
+
+How to read the table:
+
+- **Ref**: OCR's learning outcome reference, for example B1.1.1 (sub-topic B1.1, outcome 1). The topic and sub-topic come from the reference.
+- **Sub-topic**: OCR's sub-topic heading.
+- **Flags**: HT = Higher tier only (OCR prints these statements in bold). 
+- **IaS**: Ideas about Science outcomes (IaS1.1 to IaS4.6), taught through every chapter. They are the same in all four OCR B specifications and are covered once, in [ideas-about-science.md](ideas-about-science.md).
+- **Practical activity groups (PAGs)**: OCR's eight groups of practical apparatus and techniques for this subject, listed at the end. Each links to the practical guide in this folder and to the AQA required practical that uses the same techniques.
+
+`refs_checked: false`: references, tiers and the separate-only flags were taken from the OCR specification PDF (Version 5.0, June 2026) and still need a person to check them. Separate-only flags were found by matching each outcome against the Combined Science B specification. Sub-topic titles are OCR's headings; nothing else of OCR's wording is reproduced.
+
+Gap files:
+
+- [ideas-about-science.md](ideas-about-science.md): IaS1 to IaS4.
+- [storyline-contexts.md](storyline-contexts.md): genetic testing, identifying the cause of an infection, reducing air pollution, PET recycling, sampling and qualitative analysis, titration data quality.
+- [../ocr-a-sciences/biology-contexts.md](../ocr-a-sciences/biology-contexts.md), [../ocr-a-sciences/chemistry-contexts.md](../ocr-a-sciences/chemistry-contexts.md) and [../ocr-a-sciences/practical-activity-groups.md](../ocr-a-sciences/practical-activity-groups.md): content shared with OCR Gateway (named diseases, ATP, sampling, empirical formulae, PAGs). Their front matter lists the OCR B references too.
+
+## Chapter B1: You and your genes
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **B1.1 What is the genome and what does it do?** | | | |
+| B1.1.1 | What is the genome and what does it do? |  | [Biology 4.1.1.1 Eukaryotes and prokaryotes](../../aqa/gcse/biology-8461/4.1-cell-biology.md)<br>[Biology 4.1.1.2 Animal and plant cells](../../aqa/gcse/biology-8461/4.1-cell-biology.md)<br>[Biology 4.1.1.5 Microscopy](../../aqa/gcse/biology-8461/4.1-cell-biology.md) |
+| B1.1.2 | What is the genome and what does it do? |  | [Biology 4.6.1.4 DNA and the genome](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B1.1.3 | What is the genome and what does it do? |  | [Biology 4.6.1.4 DNA and the genome](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md)<br>[Biology 4.6.1.5 DNA structure (Biology only)](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B1.1.4 | What is the genome and what does it do? |  | [Biology 4.6.1.4 DNA and the genome](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md)<br>[Biology 4.6.2.1 Variation](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B1.1.5 | What is the genome and what does it do? |  | [Biology 4.6.1.4 DNA and the genome](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md)<br>[Biology 4.6.1.6 Genetic inheritance](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B1.1.6 | What is the genome and what does it do? |  | [Biology 4.4.2.3 Metabolism](../../aqa/gcse/biology-8461/4.4-bioenergetics.md)<br>[Biology 4.6.1.5 DNA structure (Biology only)](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| **B1.2 How is genetic information inherited?** | | | |
+| B1.2.1 | How is genetic information inherited? |  | [Biology 4.6.1.6 Genetic inheritance](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B1.2.2 | How is genetic information inherited? |  | [Biology 4.6.1.6 Genetic inheritance](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B1.2.3 | How is genetic information inherited? |  | [Biology 4.6.1.6 Genetic inheritance](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B1.2.4 | How is genetic information inherited? |  | [Biology 4.6.1.6 Genetic inheritance](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B1.2.5 | How is genetic information inherited? |  | [Biology 4.6.1.6 Genetic inheritance](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B1.2.6 | How is genetic information inherited? |  | [Biology 4.6.1.6 Genetic inheritance](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B1.2.7 | How is genetic information inherited? |  | [Biology 4.6.1.8 Sex determination](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| **B1.3 How can and should gene technology be used?** | | | |
+| B1.3.1 | How can and should gene technology be used? |  | [Biology 4.6.1.4 DNA and the genome](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md)<br>[Biology 4.6.1.7 Inherited disorders](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md)<br>[OCR B storyline contexts](storyline-contexts.md) |
+| B1.3.2 | How can and should gene technology be used? |  | [Biology 4.6.2.4 Genetic engineering](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B1.3.3 | How can and should gene technology be used? | HT | [Biology 4.6.2.4 Genetic engineering](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B1.3.4 | How can and should gene technology be used? |  | [Biology 4.6.2.4 Genetic engineering](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+
+## Chapter B2: Keeping healthy
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **B2.1 What are the causes of disease?** | | | |
+| B2.1.1 | What are the causes of disease? |  | [Biology 4.2.2.5 Health issues](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| B2.1.2 | What are the causes of disease? |  | [Biology 4.2.2.5 Health issues](../../aqa/gcse/biology-8461/4.2-organisation.md)<br>[Biology 4.3.1.1 Communicable (infectious) diseases](../../aqa/gcse/biology-8461/4.3-infection-and-response.md) |
+| B2.1.3 | What are the causes of disease? |  | [Biology 4.3.1.1 Communicable (infectious) diseases](../../aqa/gcse/biology-8461/4.3-infection-and-response.md) |
+| B2.1.4 | What are the causes of disease? |  | [Biology 4.3.1.2 Viral diseases](../../aqa/gcse/biology-8461/4.3-infection-and-response.md)<br>[Biology 4.3.1.3 Bacterial diseases](../../aqa/gcse/biology-8461/4.3-infection-and-response.md)<br>[Biology 4.3.1.5 Protist diseases](../../aqa/gcse/biology-8461/4.3-infection-and-response.md)<br>[OCR biology contexts](../ocr-a-sciences/biology-contexts.md) |
+| B2.1.5 | What are the causes of disease? |  | [Biology 4.3.1.2 Viral diseases](../../aqa/gcse/biology-8461/4.3-infection-and-response.md)<br>[Biology 4.3.3.1 Detection and identification of plant diseases (Biology only)](../../aqa/gcse/biology-8461/4.3-infection-and-response.md)<br>[OCR biology contexts](../ocr-a-sciences/biology-contexts.md) |
+| **B2.2 How do organisms protect themselves against pathogens?** | | | |
+| B2.2.1 | How do organisms protect themselves against pathogens? |  | [Biology 4.3.1.6 Human defence systems](../../aqa/gcse/biology-8461/4.3-infection-and-response.md) |
+| B2.2.2 | How do organisms protect themselves against pathogens? |  | [Biology 4.2.2.3 Blood](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| B2.2.3 | How do organisms protect themselves against pathogens? |  | [Biology 4.3.1.6 Human defence systems](../../aqa/gcse/biology-8461/4.3-infection-and-response.md) |
+| B2.2.4 | How do organisms protect themselves against pathogens? |  | [Biology 4.2.2.3 Blood](../../aqa/gcse/biology-8461/4.2-organisation.md)<br>[Biology 4.3.1.6 Human defence systems](../../aqa/gcse/biology-8461/4.3-infection-and-response.md) |
+| **B2.3 How can we prevent the spread of infection?** | | | |
+| B2.3.1 | How can we prevent the spread of infection? |  | [Biology 4.3.1.1 Communicable (infectious) diseases](../../aqa/gcse/biology-8461/4.3-infection-and-response.md)<br>[Biology 4.3.1.2 Viral diseases](../../aqa/gcse/biology-8461/4.3-infection-and-response.md)<br>[Biology 4.3.1.3 Bacterial diseases](../../aqa/gcse/biology-8461/4.3-infection-and-response.md) |
+| B2.3.2 | How can we prevent the spread of infection? |  | [Biology 4.3.1.7 Vaccination](../../aqa/gcse/biology-8461/4.3-infection-and-response.md) |
+| **B2.4 How can lifestyle, genes and the environment affect health?** | | | |
+| B2.4.1 | How can lifestyle, genes and the environment affect health? |  | [Biology 4.2.2.6 The effect of lifestyle on some non-communicable diseases](../../aqa/gcse/biology-8461/4.2-organisation.md)<br>[Biology 4.4.2.2 Response to exercise](../../aqa/gcse/biology-8461/4.4-bioenergetics.md) |
+| B2.4.2 | How can lifestyle, genes and the environment affect health? |  | [Biology 4.2.2.6 The effect of lifestyle on some non-communicable diseases](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| B2.4.3 | How can lifestyle, genes and the environment affect health? |  | [Biology 4.2.2.6 The effect of lifestyle on some non-communicable diseases](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| B2.4.4 | How can lifestyle, genes and the environment affect health? |  | [Biology 4.2.2.5 Health issues](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| **B2.5 How can we treat disease?** | | | |
+| B2.5.1 | How can we treat disease? |  | [Biology 4.3.1.8 Antibiotics and painkillers](../../aqa/gcse/biology-8461/4.3-infection-and-response.md) |
+| B2.5.2 | How can we treat disease? |  | [Biology 4.1.1.6 Culturing microorganisms (Biology only)](../../aqa/gcse/biology-8461/4.1-cell-biology.md) |
+| B2.5.3 | How can we treat disease? |  | [Biology 4.2.2.4 Coronary heart disease: a non-communicable disease](../../aqa/gcse/biology-8461/4.2-organisation.md)<br>[Biology 4.2.2.6 The effect of lifestyle on some non-communicable diseases](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| B2.5.4 | How can we treat disease? |  | [Biology 4.3.1.9 Discovery and development of drugs](../../aqa/gcse/biology-8461/4.3-infection-and-response.md) |
+
+## Chapter B3: Living together – food and ecosystems
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **B3.1 What happens during photosynthesis?** | | | |
+| B3.1.1 | What happens during photosynthesis? |  | [Biology 4.4.1.1 Photosynthetic reaction](../../aqa/gcse/biology-8461/4.4-bioenergetics.md) |
+| B3.1.2 | What happens during photosynthesis? |  | [Biology 4.1.1.2 Animal and plant cells](../../aqa/gcse/biology-8461/4.1-cell-biology.md)<br>[Biology 4.4.1.1 Photosynthetic reaction](../../aqa/gcse/biology-8461/4.4-bioenergetics.md) |
+| B3.1.3 | What happens during photosynthesis? |  | [Biology 4.2.2.1 The human digestive system](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| B3.1.4 | What happens during photosynthesis? |  | [Biology 4.4.1.2 Rate of photosynthesis](../../aqa/gcse/biology-8461/4.4-bioenergetics.md) |
+| B3.1.5 | What happens during photosynthesis? | HT | [Biology 4.4.1.2 Rate of photosynthesis](../../aqa/gcse/biology-8461/4.4-bioenergetics.md) |
+| B3.1.6 | What happens during photosynthesis? | HT | [Biology 4.4.1.2 Rate of photosynthesis](../../aqa/gcse/biology-8461/4.4-bioenergetics.md) |
+| B3.1.7 | What happens during photosynthesis? |  | [Biology 4.4.1.2 Rate of photosynthesis](../../aqa/gcse/biology-8461/4.4-bioenergetics.md) |
+| **B3.2 How do producers get the substances they need?** | | | |
+| B3.2.1 | How do producers get the substances they need? |  | [Biology 4.4.1.3 Uses of glucose from photosynthesis](../../aqa/gcse/biology-8461/4.4-bioenergetics.md)<br>[Biology 4.2.3.2 Plant organ system](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| B3.2.2 | How do producers get the substances they need? |  | [Biology 4.1.3.1 Diffusion](../../aqa/gcse/biology-8461/4.1-cell-biology.md)<br>[Biology 4.1.3.2 Osmosis](../../aqa/gcse/biology-8461/4.1-cell-biology.md)<br>[Biology 4.1.3.3 Active transport](../../aqa/gcse/biology-8461/4.1-cell-biology.md) |
+| B3.2.3 | How do producers get the substances they need? |  | [Biology 4.1.3.1 Diffusion](../../aqa/gcse/biology-8461/4.1-cell-biology.md)<br>[Biology 4.1.3.2 Osmosis](../../aqa/gcse/biology-8461/4.1-cell-biology.md)<br>[Biology 4.1.3.3 Active transport](../../aqa/gcse/biology-8461/4.1-cell-biology.md) |
+| B3.2.4 | How do producers get the substances they need? |  | [Biology 4.1.3.3 Active transport](../../aqa/gcse/biology-8461/4.1-cell-biology.md)<br>[Biology 4.2.3.2 Plant organ system](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| B3.2.5 | How do producers get the substances they need? |  | [Biology 4.2.3.1 Plant tissues](../../aqa/gcse/biology-8461/4.2-organisation.md)<br>[Biology 4.2.3.2 Plant organ system](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| B3.2.6 | How do producers get the substances they need? |  | [Biology 4.2.3.2 Plant organ system](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| B3.2.7 | How do producers get the substances they need? |  | [Biology 4.2.3.2 Plant organ system](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| B3.2.8 | How do producers get the substances they need? |  | [Biology 4.2.3.2 Plant organ system](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| **B3.3 How are organisms in an ecosystem interdependent?** | | | |
+| B3.3.1 | How are organisms in an ecosystem interdependent? |  | [Biology 4.4.2.3 Metabolism](../../aqa/gcse/biology-8461/4.4-bioenergetics.md)<br>[Biology 4.4.1.3 Uses of glucose from photosynthesis](../../aqa/gcse/biology-8461/4.4-bioenergetics.md) |
+| B3.3.2 | How are organisms in an ecosystem interdependent? |  | [Biology 4.7.2.1 Levels of organisation](../../aqa/gcse/biology-8461/4.7-ecology.md) |
+| B3.3.3 | How are organisms in an ecosystem interdependent? |  | [Biology 4.4.1.3 Uses of glucose from photosynthesis](../../aqa/gcse/biology-8461/4.4-bioenergetics.md) |
+| B3.3.4 | How are organisms in an ecosystem interdependent? |  | [Biology 4.7.1.1 Communities](../../aqa/gcse/biology-8461/4.7-ecology.md)<br>[Biology 4.7.2.1 Levels of organisation](../../aqa/gcse/biology-8461/4.7-ecology.md) |
+| B3.3.5 | How are organisms in an ecosystem interdependent? |  | [Biology 4.7.1.1 Communities](../../aqa/gcse/biology-8461/4.7-ecology.md) |
+| B3.3.6 | How are organisms in an ecosystem interdependent? |  | [Biology 4.7.2.2 How materials are cycled](../../aqa/gcse/biology-8461/4.7-ecology.md) |
+| B3.3.7 | How are organisms in an ecosystem interdependent? |  | [Biology 4.7.2.2 How materials are cycled](../../aqa/gcse/biology-8461/4.7-ecology.md) |
+| B3.3.8 | How are organisms in an ecosystem interdependent? |  | [Biology 4.7.2.2 How materials are cycled](../../aqa/gcse/biology-8461/4.7-ecology.md)<br>[Biology 4.7.2.3 Decomposition (Biology only)](../../aqa/gcse/biology-8461/4.7-ecology.md) |
+| B3.3.9 | How are organisms in an ecosystem interdependent? |  | [Biology 4.7.2.2 How materials are cycled](../../aqa/gcse/biology-8461/4.7-ecology.md) |
+| **B3.4 How are populations affected by the conditions in an ecosystem?** | | | |
+| B3.4.1 | How are populations affected by the conditions in an… |  | [Biology 4.7.1.2 Abiotic factors](../../aqa/gcse/biology-8461/4.7-ecology.md)<br>[Biology 4.7.1.3 Biotic factors](../../aqa/gcse/biology-8461/4.7-ecology.md) |
+| B3.4.2 | How are populations affected by the conditions in an… |  | [Biology 4.7.2.1 Levels of organisation](../../aqa/gcse/biology-8461/4.7-ecology.md)<br>[OCR biology contexts](../ocr-a-sciences/biology-contexts.md) |
+| B3.4.3 | How are populations affected by the conditions in an… |  | [Biology 4.7.2.1 Levels of organisation](../../aqa/gcse/biology-8461/4.7-ecology.md) |
+
+## Chapter B4: Using food and controlling growth
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **B4.1 What happens during cellular respiration?** | | | |
+| B4.1.1 | What happens during cellular respiration? |  | [Biology 4.4.2.1 Aerobic and anaerobic respiration](../../aqa/gcse/biology-8461/4.4-bioenergetics.md) |
+| B4.1.2 | What happens during cellular respiration? |  | [Biology 4.4.2.1 Aerobic and anaerobic respiration](../../aqa/gcse/biology-8461/4.4-bioenergetics.md)<br>[OCR biology contexts](../ocr-a-sciences/biology-contexts.md) |
+| B4.1.3 | What happens during cellular respiration? |  | [Biology 4.1.1.2 Animal and plant cells](../../aqa/gcse/biology-8461/4.1-cell-biology.md)<br>[Biology 4.4.2.1 Aerobic and anaerobic respiration](../../aqa/gcse/biology-8461/4.4-bioenergetics.md) |
+| B4.1.4 | What happens during cellular respiration? |  | [Biology 4.4.2.1 Aerobic and anaerobic respiration](../../aqa/gcse/biology-8461/4.4-bioenergetics.md) |
+| B4.1.5 | What happens during cellular respiration? |  | [Biology 4.4.2.1 Aerobic and anaerobic respiration](../../aqa/gcse/biology-8461/4.4-bioenergetics.md)<br>[OCR practical activity groups](../ocr-a-sciences/practical-activity-groups.md) |
+| **B4.2 How do we know about mitochondria and other cell structures?** | | | |
+| B4.2.1 | How do we know about mitochondria and other cell… |  | [Biology 4.1.1.5 Microscopy](../../aqa/gcse/biology-8461/4.1-cell-biology.md) |
+| B4.2.2 | How do we know about mitochondria and other cell… |  | [Biology 4.1.1.5 Microscopy](../../aqa/gcse/biology-8461/4.1-cell-biology.md) |
+| **B4.3 How do organisms grow and develop?** | | | |
+| B4.3.1 | How do organisms grow and develop? |  | [Biology 4.1.2.2 Mitosis and the cell cycle](../../aqa/gcse/biology-8461/4.1-cell-biology.md) |
+| B4.3.2 | How do organisms grow and develop? |  | [Biology 4.2.2.7 Cancer](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| B4.3.3 | How do organisms grow and develop? |  | [Biology 4.6.1.2 Meiosis](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B4.3.4 | How do organisms grow and develop? |  | [Biology 4.1.2.3 Stem cells](../../aqa/gcse/biology-8461/4.1-cell-biology.md) |
+| B4.3.5 | How do organisms grow and develop? |  | [Biology 4.1.1.4 Cell differentiation](../../aqa/gcse/biology-8461/4.1-cell-biology.md) |
+| **B4.4 Should we use stem cells to treat damage and disease?** | | | |
+| B4.4.1 | Should we use stem cells to treat damage and disease? |  | [Biology 4.1.2.3 Stem cells](../../aqa/gcse/biology-8461/4.1-cell-biology.md) |
+
+## Chapter B5: The human body – staying alive
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **B5.1 How do substances get into, out of and around our bodies?** | | | |
+| B5.1.1 | How do substances get into, out of and around our bodies? |  | [Biology 4.1.3.1 Diffusion](../../aqa/gcse/biology-8461/4.1-cell-biology.md) |
+| B5.1.2 | How do substances get into, out of and around our bodies? |  | [Biology 4.1.3.1 Diffusion](../../aqa/gcse/biology-8461/4.1-cell-biology.md)<br>[Biology 4.1.3.2 Osmosis](../../aqa/gcse/biology-8461/4.1-cell-biology.md)<br>[Biology 4.1.3.3 Active transport](../../aqa/gcse/biology-8461/4.1-cell-biology.md) |
+| B5.1.3 | How do substances get into, out of and around our bodies? |  | [Biology 4.2.2.2 The heart and blood vessels](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| B5.1.4 | How do substances get into, out of and around our bodies? |  | [Biology 4.2.2.2 The heart and blood vessels](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| B5.1.5 | How do substances get into, out of and around our bodies? |  | [Biology 4.2.2.2 The heart and blood vessels](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| B5.1.6 | How do substances get into, out of and around our bodies? |  | [Biology 4.2.2.3 Blood](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| B5.1.7 | How do substances get into, out of and around our bodies? |  | [Biology 4.1.3.1 Diffusion](../../aqa/gcse/biology-8461/4.1-cell-biology.md) |
+| B5.1.8 | How do substances get into, out of and around our bodies? |  | [Biology 4.1.3.1 Diffusion](../../aqa/gcse/biology-8461/4.1-cell-biology.md) |
+| **B5.2 How does the nervous system help us respond to changes?** | | | |
+| B5.2.1 | How does the nervous system help us respond to changes? |  | [Biology 4.5.2.1 Structure and function of the nervous system](../../aqa/gcse/biology-8461/4.5-homeostasis-and-response.md) |
+| B5.2.2 | How does the nervous system help us respond to changes? |  | [Biology 4.5.2.1 Structure and function of the nervous system](../../aqa/gcse/biology-8461/4.5-homeostasis-and-response.md) |
+| B5.2.3 | How does the nervous system help us respond to changes? |  | [Biology 4.5.2.1 Structure and function of the nervous system](../../aqa/gcse/biology-8461/4.5-homeostasis-and-response.md) |
+| **B5.3 How do hormones control responses in the human body?** | | | |
+| B5.3.1 | How do hormones control responses in the human body? |  | [Biology 4.5.3.1 Human endocrine system](../../aqa/gcse/biology-8461/4.5-homeostasis-and-response.md) |
+| B5.3.2 | How do hormones control responses in the human body? | HT | [Biology 4.5.3.7 Negative feedback (HT only)](../../aqa/gcse/biology-8461/4.5-homeostasis-and-response.md) |
+| **B5.4 Why do we need to maintain a constant internal environment?** | | | |
+| B5.4.1 | Why do we need to maintain a constant internal environment? |  | [Biology 4.5.1 Homeostasis](../../aqa/gcse/biology-8461/4.5-homeostasis-and-response.md) |
+| B5.4.2 | Why do we need to maintain a constant internal environment? |  | [Biology 4.5.1 Homeostasis](../../aqa/gcse/biology-8461/4.5-homeostasis-and-response.md) |
+| **B5.5 What role do hormones play in human reproduction?** | | | |
+| B5.5.1 | What role do hormones play in human reproduction? |  | [Biology 4.5.3.4 Hormones in human reproduction](../../aqa/gcse/biology-8461/4.5-homeostasis-and-response.md) |
+| B5.5.2 | What role do hormones play in human reproduction? | HT | [Biology 4.5.3.4 Hormones in human reproduction](../../aqa/gcse/biology-8461/4.5-homeostasis-and-response.md) |
+| B5.5.3 | What role do hormones play in human reproduction? |  | [Biology 4.5.3.5 Contraception](../../aqa/gcse/biology-8461/4.5-homeostasis-and-response.md) |
+| B5.5.4 | What role do hormones play in human reproduction? | HT | [Biology 4.5.3.6 The use of hormones to treat infertility (HT only)](../../aqa/gcse/biology-8461/4.5-homeostasis-and-response.md) |
+| **B5.6 What can happen when organs and control systems stop working?** | | | |
+| B5.6.1 | What can happen when organs and control systems stop… |  | [Biology 4.5.3.2 Control of blood glucose concentration](../../aqa/gcse/biology-8461/4.5-homeostasis-and-response.md) |
+| B5.6.2 | What can happen when organs and control systems stop… | HT | [Biology 4.5.3.2 Control of blood glucose concentration](../../aqa/gcse/biology-8461/4.5-homeostasis-and-response.md) |
+| B5.6.3 | What can happen when organs and control systems stop… |  | [Biology 4.5.3.2 Control of blood glucose concentration](../../aqa/gcse/biology-8461/4.5-homeostasis-and-response.md) |
+
+## Chapter B6: Life on Earth – past, present and future
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **B6.1 How was the theory of evolution developed?** | | | |
+| B6.1.1 | How was the theory of evolution developed? |  | [Biology 4.6.2.1 Variation](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B6.1.2 | How was the theory of evolution developed? |  | [Biology 4.6.2.1 Variation](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B6.1.3 | How was the theory of evolution developed? |  | [Biology 4.6.2.2 Evolution](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B6.1.4 | How was the theory of evolution developed? |  | [Biology 4.6.2.2 Evolution](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md)<br>[Biology 4.7.1.1 Communities](../../aqa/gcse/biology-8461/4.7-ecology.md) |
+| B6.1.5 | How was the theory of evolution developed? |  | [Biology 4.6.2.2 Evolution](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B6.1.6 | How was the theory of evolution developed? |  | [Biology 4.6.2.3 Selective breeding](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B6.1.7 | How was the theory of evolution developed? |  | [Biology 4.6.3.5 Fossils](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| B6.1.8 | How was the theory of evolution developed? |  | [Biology 4.6.3.4 Evidence for evolution](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md)<br>[Biology 4.6.3.7 Resistant bacteria](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| **B6.2 How does our understanding of biology help us classify the diversity of organisms on Earth?** | | | |
+| B6.2.1 | How does our understanding of biology help us classify… |  | [Biology 4.6.4 Classification of living organisms](../../aqa/gcse/biology-8461/4.6-inheritance-variation-and-evolution.md) |
+| **B6.3 Why is biodiversity threatened and how can we protect it?** | | | |
+| B6.3.1 | Why is biodiversity threatened and how can we protect it? |  | [Biology 4.7.3.1 Biodiversity](../../aqa/gcse/biology-8461/4.7-ecology.md)<br>[Biology 4.7.3.2 Waste management](../../aqa/gcse/biology-8461/4.7-ecology.md)<br>[Biology 4.7.3.3 Land use](../../aqa/gcse/biology-8461/4.7-ecology.md)<br>[Biology 4.7.3.4 Deforestation](../../aqa/gcse/biology-8461/4.7-ecology.md)<br>[Biology 4.7.3.6 Maintaining biodiversity](../../aqa/gcse/biology-8461/4.7-ecology.md) |
+| B6.3.2 | Why is biodiversity threatened and how can we protect it? |  | [Biology 4.7.3.6 Maintaining biodiversity](../../aqa/gcse/biology-8461/4.7-ecology.md) |
+| B6.3.3 | Why is biodiversity threatened and how can we protect it? |  | [Biology 4.7.3.1 Biodiversity](../../aqa/gcse/biology-8461/4.7-ecology.md) |
+
+## Chapter C1: Air and water
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **C1.1 How has the Earth’s atmosphere changed over time, and why?** | | | |
+| C1.1.1 | How has the Earth’s atmosphere changed over time, and why? |  | [Chemistry 4.2.2.1 The three states of matter](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C1.1.2 | How has the Earth’s atmosphere changed over time, and why? | HT | [Chemistry 4.2.2.1 The three states of matter](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C1.1.3 | How has the Earth’s atmosphere changed over time, and why? |  | [Chemistry 4.2.2.1 The three states of matter](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md)<br>[Chemistry 4.2.2.4 Properties of small molecules](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C1.1.4 | How has the Earth’s atmosphere changed over time, and why? |  | [Chemistry 4.2.2.1 The three states of matter](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C1.1.5 | How has the Earth’s atmosphere changed over time, and why? |  | [Chemistry 4.9.1.2 The Earth's early atmosphere](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| C1.1.6 | How has the Earth’s atmosphere changed over time, and why? |  | [Chemistry 4.9.1.3 How oxygen increased](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| C1.1.7 | How has the Earth’s atmosphere changed over time, and why? |  | [Chemistry 4.9.3.1 Atmospheric pollutants from fuels](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| C1.1.8 | How has the Earth’s atmosphere changed over time, and why? |  | [Chemistry 4.9.3.2 Properties and effects of atmospheric pollutants](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md)<br>[OCR B storyline contexts](storyline-contexts.md) |
+| C1.1.9 | How has the Earth’s atmosphere changed over time, and why? |  | [Chemistry 4.3.1.1 Conservation of mass and balanced chemical equations](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| C1.1.10 | How has the Earth’s atmosphere changed over time, and why? |  | [Chemistry 4.3.1.1 Conservation of mass and balanced chemical equations](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| C1.1.11 | How has the Earth’s atmosphere changed over time, and why? |  | [Chemistry 4.3.1.1 Conservation of mass and balanced chemical equations](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| C1.1.12 | How has the Earth’s atmosphere changed over time, and why? |  | [Chemistry 4.8.2.1 Test for hydrogen](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md)<br>[Chemistry 4.8.2.2 Test for oxygen](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md)<br>[Chemistry 4.8.2.3 Test for carbon dioxide](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| C1.1.13 | How has the Earth’s atmosphere changed over time, and why? |  | [Chemistry 4.4.1.1 Metal oxides](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| **C1.2 Why are there temperature changes in chemical reactions?** | | | |
+| C1.2.1 | Why are there temperature changes in chemical reactions? |  | [Chemistry 4.5.1.1 Energy transfer during exothermic and endothermic reactions](../../aqa/gcse/chemistry-8462/4.5-energy-changes.md) |
+| C1.2.2 | Why are there temperature changes in chemical reactions? |  | [Chemistry 4.5.1.2 Reaction profiles](../../aqa/gcse/chemistry-8462/4.5-energy-changes.md) |
+| C1.2.3 | Why are there temperature changes in chemical reactions? |  | [Chemistry 4.5.1.2 Reaction profiles](../../aqa/gcse/chemistry-8462/4.5-energy-changes.md) |
+| C1.2.4 | Why are there temperature changes in chemical reactions? |  | [Chemistry 4.5.1.2 Reaction profiles](../../aqa/gcse/chemistry-8462/4.5-energy-changes.md) |
+| C1.2.5 | Why are there temperature changes in chemical reactions? | HT | [Chemistry 4.5.1.3 The energy change of reactions (HT only)](../../aqa/gcse/chemistry-8462/4.5-energy-changes.md) |
+| C1.2.6 | Why are there temperature changes in chemical reactions? |  | [Chemistry 4.5.1.3 The energy change of reactions (HT only)](../../aqa/gcse/chemistry-8462/4.5-energy-changes.md) |
+| **C1.3 What is the evidence for climate change, why is it occurring?** | | | |
+| C1.3.1 | What is the evidence for climate change, why is it… |  | [Chemistry 4.9.2.1 Greenhouse gases](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| C1.3.2 | What is the evidence for climate change, why is it… |  | [Chemistry 4.9.2.2 Human activities which contribute to an increase in greenhouse gases in the atmosphere](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| C1.3.3 | What is the evidence for climate change, why is it… |  | [Chemistry 4.9.2.3 Global climate change](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| C1.3.4 | What is the evidence for climate change, why is it… |  | [Chemistry 4.9.2.4 The carbon footprint and its reduction](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| C1.3.5 | What is the evidence for climate change, why is it… |  | [Chemistry 4.9.2.2 Human activities which contribute to an increase in greenhouse gases in the atmosphere](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| C1.3.6 | What is the evidence for climate change, why is it… |  | [Chemistry 4.9.2.2 Human activities which contribute to an increase in greenhouse gases in the atmosphere](../../aqa/gcse/chemistry-8462/4.9-chemistry-of-the-atmosphere.md) |
+| **C1.4 How can scientists help improve the supply of potable water?** | | | |
+| C1.4.1 | How can scientists help improve the supply of potable… |  | [Chemistry 4.10.1.2 Potable water](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| C1.4.2 | How can scientists help improve the supply of potable… |  | [Chemistry 4.8.2.4 Test for chlorine](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+
+## Chapter C2: Chemical patterns
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **C2.1 How have our ideas about atoms developed over time?** | | | |
+| C2.1.1 | How have our ideas about atoms developed over time? |  | [Chemistry 4.1.1.3 The development of the model of the atom](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C2.1.2 | How have our ideas about atoms developed over time? |  | [Chemistry 4.1.1.4 Relative electrical charges of subatomic particles](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md)<br>[Chemistry 4.1.1.5 Size and mass of atoms](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C2.1.3 | How have our ideas about atoms developed over time? |  | [Chemistry 4.1.1.4 Relative electrical charges of subatomic particles](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md)<br>[Chemistry 4.1.1.5 Size and mass of atoms](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C2.1.4 | How have our ideas about atoms developed over time? |  | [Chemistry 4.1.1.5 Size and mass of atoms](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C2.1.5 | How have our ideas about atoms developed over time? |  | [Chemistry 4.1.1.5 Size and mass of atoms](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C2.1.6 | How have our ideas about atoms developed over time? |  | [Chemistry 4.1.1.5 Size and mass of atoms](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C2.1.7 | How have our ideas about atoms developed over time? |  | [Chemistry 4.1.1.5 Size and mass of atoms](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| **C2.2 What does the Periodic Table tell us about elements?** | | | |
+| C2.2.1 | What does the Periodic Table tell us about elements? |  | [Chemistry 4.1.1.7 Electronic structure](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md)<br>[Chemistry 4.1.2.1 The periodic table](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C2.2.2 | What does the Periodic Table tell us about elements? |  | [Chemistry 4.1.2.2 Development of the periodic table](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C2.2.3 | What does the Periodic Table tell us about elements? |  | [Chemistry 4.1.2.2 Development of the periodic table](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C2.2.4 | What does the Periodic Table tell us about elements? |  | [Chemistry 4.1.2.3 Metals and non-metals](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C2.2.5 | What does the Periodic Table tell us about elements? |  | [Chemistry 4.1.2.5 Group 1](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C2.2.6 | What does the Periodic Table tell us about elements? |  | [Chemistry 4.1.2.6 Group 7](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C2.2.7 | What does the Periodic Table tell us about elements? |  | [Chemistry 4.1.2.1 The periodic table](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C2.2.8 | What does the Periodic Table tell us about elements? |  | [Chemistry 4.1.2.6 Group 7](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C2.2.9 | What does the Periodic Table tell us about elements? |  | [Chemistry 4.1.2.5 Group 1](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| **C2.3 How do metals and non-metals combine to form compounds?** | | | |
+| C2.3.1 | How do metals and non-metals combine to form compounds? |  | [Chemistry 4.1.2.4 Group 0](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C2.3.2 | How do metals and non-metals combine to form compounds? |  | [Chemistry 4.1.2.4 Group 0](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md)<br>[Chemistry 4.1.2.5 Group 1](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md)<br>[Chemistry 4.1.2.6 Group 7](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C2.3.3 | How do metals and non-metals combine to form compounds? |  | [Chemistry 4.1.2.1 The periodic table](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C2.3.4 | How do metals and non-metals combine to form compounds? |  | [Chemistry 4.1.2.3 Metals and non-metals](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C2.3.5 | How do metals and non-metals combine to form compounds? |  | [Chemistry 4.2.1.3 Ionic compounds](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C2.3.6 | How do metals and non-metals combine to form compounds? |  | [Chemistry 4.2.1.2 Ionic bonding](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C2.3.7 | How do metals and non-metals combine to form compounds? |  | [Chemistry 4.1.1.5 Size and mass of atoms](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md)<br>[Chemistry 4.2.1.2 Ionic bonding](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C2.3.8 | How do metals and non-metals combine to form compounds? |  | [Chemistry 4.2.1.2 Ionic bonding](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C2.3.9 | How do metals and non-metals combine to form compounds? |  | [Chemistry 4.2.2.3 Properties of ionic compounds](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C2.3.10 | How do metals and non-metals combine to form compounds? |  | [Chemistry 4.2.2.3 Properties of ionic compounds](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C2.3.11 | How do metals and non-metals combine to form compounds? |  | [Chemistry 4.2.1.3 Ionic compounds](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C2.3.12 | How do metals and non-metals combine to form compounds? |  | [Chemistry 4.2.1.3 Ionic compounds](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| **C2.4 How are equations used to represent chemical reactions?** | | | |
+| C2.4.1 | How are equations used to represent chemical reactions? |  | [Chemistry 4.3.1.1 Conservation of mass and balanced chemical equations](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| C2.4.2 | How are equations used to represent chemical reactions? |  | [Chemistry 4.2.1.3 Ionic compounds](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C2.4.3 | How are equations used to represent chemical reactions? |  | [Chemistry 4.3.1.1 Conservation of mass and balanced chemical equations](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| C2.4.4 | How are equations used to represent chemical reactions? |  | [Chemistry 4.2.2.2 State symbols](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+
+## Chapter C3: Chemicals of the natural environment
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **C3.1 How are the atoms held together in a metal?** | | | |
+| C3.1.1 | How are the atoms held together in a metal? |  | [Chemistry 4.2.1.5 Metallic bonding](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C3.1.2 | How are the atoms held together in a metal? |  | [Chemistry 4.2.2.7 Properties of metals and alloys](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md)<br>[Chemistry 4.2.2.8 Metals as conductors](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| **C3.2 How are metals with different reactivities extracted?** | | | |
+| C3.2.1 | How are metals with different reactivities extracted? |  | [Chemistry 4.4.1.2 The reactivity series](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C3.2.2 | How are metals with different reactivities extracted? |  | [Chemistry 4.4.1.2 The reactivity series](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C3.2.3 | How are metals with different reactivities extracted? |  | [Chemistry 4.4.1.3 Extraction of metals and reduction](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md)<br>[Chemistry 4.3.1.1 Conservation of mass and balanced chemical equations](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| C3.2.4 | How are metals with different reactivities extracted? |  | [Chemistry 4.4.1.3 Extraction of metals and reduction](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C3.2.5 | How are metals with different reactivities extracted? |  | [Chemistry 4.4.3.3 Using electrolysis to extract metals](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C3.2.6 | How are metals with different reactivities extracted? | HT | [Chemistry 4.10.1.4 Alternative methods of extracting metals (HT only)](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| **C3.3 What are electrolytes and what happens during electrolysis?** | | | |
+| C3.3.1 | What are electrolytes and what happens during electrolysis? |  | [Chemistry 4.4.3.1 The process of electrolysis](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C3.3.2 | What are electrolytes and what happens during electrolysis? |  | [Chemistry 4.4.3.2 Electrolysis of molten ionic compounds](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C3.3.3 | What are electrolytes and what happens during electrolysis? |  | [Chemistry 4.4.3.1 The process of electrolysis](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C3.3.4 | What are electrolytes and what happens during electrolysis? | HT | [Chemistry 4.4.3.5 Representation of reactions at electrodes as half equations (HT only)](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C3.3.5 | What are electrolytes and what happens during electrolysis? | HT | [Chemistry 4.4.1.4 Oxidation and reduction in terms of electrons (HT only)](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C3.3.6 | What are electrolytes and what happens during electrolysis? |  | [Chemistry 4.4.3.3 Using electrolysis to extract metals](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C3.3.7 | What are electrolytes and what happens during electrolysis? |  | [Chemistry 4.4.3.4 Electrolysis of aqueous solutions](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C3.3.8 | What are electrolytes and what happens during electrolysis? |  | [Chemistry 4.4.3.4 Electrolysis of aqueous solutions](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| **C3.4 Why is crude oil important as a source of new materials?** | | | |
+| C3.4.1 | Why is crude oil important as a source of new materials? |  | [Chemistry 4.7.1.2 Fractional distillation and petrochemicals](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| C3.4.2 | Why is crude oil important as a source of new materials? |  | [Chemistry 4.7.1.2 Fractional distillation and petrochemicals](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| C3.4.3 | Why is crude oil important as a source of new materials? |  | [Chemistry 4.7.1.2 Fractional distillation and petrochemicals](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| C3.4.4 | Why is crude oil important as a source of new materials? |  | [Chemistry 4.7.1.1 Crude oil, hydrocarbons and alkanes](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| C3.4.5 | Why is crude oil important as a source of new materials? |  | [Chemistry 4.7.1.3 Properties of hydrocarbons](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md)<br>[Chemistry 4.2.2.4 Properties of small molecules](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C3.4.6 | Why is crude oil important as a source of new materials? |  | [OCR chemistry contexts](../ocr-a-sciences/chemistry-contexts.md) |
+| C3.4.7 | Why is crude oil important as a source of new materials? |  | [OCR chemistry contexts](../ocr-a-sciences/chemistry-contexts.md) |
+| C3.4.8 | Why is crude oil important as a source of new materials? |  | [Chemistry 4.2.1.4 Covalent bonding](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C3.4.9 | Why is crude oil important as a source of new materials? |  | [Chemistry 4.2.1.4 Covalent bonding](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C3.4.10 | Why is crude oil important as a source of new materials? |  | [Chemistry 4.2.1.4 Covalent bonding](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C3.4.11 | Why is crude oil important as a source of new materials? |  | [Chemistry 4.2.1.4 Covalent bonding](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C3.4.12 | Why is crude oil important as a source of new materials? |  | [Chemistry 4.2.1.4 Covalent bonding](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C3.4.13 | Why is crude oil important as a source of new materials? |  | [Chemistry 4.2.1.4 Covalent bonding](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C3.4.14 | Why is crude oil important as a source of new materials? |  | [Chemistry 4.2.2.4 Properties of small molecules](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C3.4.15 | Why is crude oil important as a source of new materials? |  | [Chemistry 4.7.1.4 Cracking and alkenes](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+
+## Chapter C4: Material choices
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **C4.1 How is data used to choose a material for a particular use?** | | | |
+| C4.1.1 | How is data used to choose a material for a particular use? |  | [Chemistry 4.10.3.3 Ceramics, polymers and composites (Chemistry only)](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| C4.1.2 | How is data used to choose a material for a particular use? |  | [Chemistry 4.10.3.3 Ceramics, polymers and composites (Chemistry only)](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| **C4.2 How do bonding and structure affect properties of materials?** | | | |
+| C4.2.1 | How do bonding and structure affect properties of… |  | [Chemistry 4.2.2.3 Properties of ionic compounds](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md)<br>[Chemistry 4.2.2.4 Properties of small molecules](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md)<br>[Chemistry 4.2.2.5 Polymers](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md)<br>[Chemistry 4.2.2.6 Giant covalent structures](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md)<br>[Chemistry 4.2.2.7 Properties of metals and alloys](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C4.2.2 | How do bonding and structure affect properties of… |  | [Chemistry 4.2.3.1 Diamond](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C4.2.3 | How do bonding and structure affect properties of… |  | [Chemistry 4.7.1.1 Crude oil, hydrocarbons and alkanes](../../aqa/gcse/chemistry-8462/4.7-organic-chemistry.md) |
+| C4.2.4 | How do bonding and structure affect properties of… |  | [Chemistry 4.2.2.5 Polymers](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C4.2.5 | How do bonding and structure affect properties of… |  | [Chemistry 4.2.2.6 Giant covalent structures](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C4.2.6 | How do bonding and structure affect properties of… |  | [Chemistry 4.2.3.1 Diamond](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md)<br>[Chemistry 4.2.3.2 Graphite](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C4.2.7 | How do bonding and structure affect properties of… |  | [Chemistry 4.2.1.4 Covalent bonding](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C4.2.8 | How do bonding and structure affect properties of… |  | [Chemistry 4.2.1.1 Chemical bonds](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| **C4.3 Why are nanoparticles so useful?** | | | |
+| C4.3.1 | Why are nanoparticles so useful? |  | [Chemistry 4.2.4.1 Sizes of particles and their properties (Chemistry only)](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C4.3.2 | Why are nanoparticles so useful? |  | [Chemistry 4.2.4.1 Sizes of particles and their properties (Chemistry only)](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C4.3.3 | Why are nanoparticles so useful? |  | [Chemistry 4.2.4.2 Uses of nanoparticles (Chemistry only)](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C4.3.4 | Why are nanoparticles so useful? |  | [Chemistry 4.2.3.3 Graphene and fullerenes](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C4.3.5 | Why are nanoparticles so useful? |  | [Chemistry 4.2.4.2 Uses of nanoparticles (Chemistry only)](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C4.3.6 | Why are nanoparticles so useful? |  | [Chemistry 4.2.4.1 Sizes of particles and their properties (Chemistry only)](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C4.3.7 | Why are nanoparticles so useful? |  | [Chemistry 4.2.4.1 Sizes of particles and their properties (Chemistry only)](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C4.3.8 | Why are nanoparticles so useful? |  | [Chemistry 4.2.4.1 Sizes of particles and their properties (Chemistry only)](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C4.3.9 | Why are nanoparticles so useful? |  | [Chemistry 4.2.4.1 Sizes of particles and their properties (Chemistry only)](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| **C4.4 What happens to products at the end of their useful life?** | | | |
+| C4.4.1 | What happens to products at the end of their useful life? |  | [Chemistry 4.4.1.1 Metal oxides](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C4.4.2 | What happens to products at the end of their useful life? | HT | [Chemistry 4.4.1.4 Oxidation and reduction in terms of electrons (HT only)](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C4.4.3 | What happens to products at the end of their useful life? |  | [Chemistry 4.10.2.1 Life cycle assessment](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| C4.4.4 | What happens to products at the end of their useful life? |  | [Chemistry 4.10.2.1 Life cycle assessment](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| C4.4.5 | What happens to products at the end of their useful life? |  | [Chemistry 4.10.2.2 Ways of reducing the use of resources](../../aqa/gcse/chemistry-8462/4.10-using-resources.md)<br>[OCR B storyline contexts](storyline-contexts.md) |
+| C4.4.6 | What happens to products at the end of their useful life? |  | [Chemistry 4.10.2.2 Ways of reducing the use of resources](../../aqa/gcse/chemistry-8462/4.10-using-resources.md)<br>[OCR B storyline contexts](storyline-contexts.md) |
+
+## Chapter C5: Chemical analysis
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **C5.1 How are chemicals separated and tested for purity?** | | | |
+| C5.1.1 | How are chemicals separated and tested for purity? |  | [Chemistry 4.8.1.2 Formulations](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| C5.1.2 | How are chemicals separated and tested for purity? |  | [Chemistry 4.8.1.1 Pure substances](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| C5.1.3 | How are chemicals separated and tested for purity? |  | [Chemistry 4.8.1.1 Pure substances](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| C5.1.4 | How are chemicals separated and tested for purity? |  | [Chemistry 4.8.1.3 Chromatography](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| C5.1.5 | How are chemicals separated and tested for purity? |  | [Chemistry 4.8.1.3 Chromatography](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| C5.1.6 | How are chemicals separated and tested for purity? |  | [Chemistry 4.8.1.3 Chromatography](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md)<br>[OCR chemistry contexts](../ocr-a-sciences/chemistry-contexts.md) |
+| C5.1.7 | How are chemicals separated and tested for purity? |  | [Chemistry 4.1.1.2 Mixtures](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| C5.1.8 | How are chemicals separated and tested for purity? |  | [Chemistry 4.1.1.2 Mixtures](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md) |
+| **C5.2 How are the amounts of substances in reactions calculated?** | | | |
+| C5.2.1 | How are the amounts of substances in reactions calculated? |  | [Chemistry 4.3.1.1 Conservation of mass and balanced chemical equations](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| C5.2.2 | How are the amounts of substances in reactions calculated? |  | [Chemistry 4.3.1.3 Mass changes when a reactant or product is a gas](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| C5.2.3 | How are the amounts of substances in reactions calculated? |  | [Chemistry 4.3.1.2 Relative formula mass](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| C5.2.4 | How are the amounts of substances in reactions calculated? | HT | [Chemistry 4.3.2.1 Moles (HT only)](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| C5.2.5 | How are the amounts of substances in reactions calculated? | HT | [Chemistry 4.3.2.1 Moles (HT only)](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| C5.2.6 | How are the amounts of substances in reactions calculated? | HT | [Chemistry 4.3.2.3 Using moles to balance equations (HT only)](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md)<br>[Chemistry 4.3.2.4 Limiting reactants (HT only)](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| C5.2.7 | How are the amounts of substances in reactions calculated? | HT | [Chemistry 4.3.2.2 Amounts of substances in equations (HT only)](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| C5.2.8 | How are the amounts of substances in reactions calculated? |  | [Chemistry 4.3.2.2 Amounts of substances in equations (HT only)](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md)<br>[Chemistry 4.3.3.1 Percentage yield (Chemistry only)](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| C5.2.9 | How are the amounts of substances in reactions calculated? | HT | [Chemistry 4.3.2.1 Moles (HT only)](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| C5.2.10 | How are the amounts of substances in reactions calculated? |  | [Chemistry 4.3.2.1 Moles (HT only)](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| **C5.3 How are the amounts of chemicals in solution measured?** | | | |
+| C5.3.1 | How are the amounts of chemicals in solution measured? | HT | [Chemistry 4.3.2.5 Concentration of solutions](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| C5.3.2 | How are the amounts of chemicals in solution measured? | HT | [Chemistry 4.3.4 Using concentrations of solutions in mol/dm³ (Chemistry only) (HT only)](../../aqa/gcse/chemistry-8462/4.3-quantitative-chemistry.md) |
+| C5.3.3 | How are the amounts of chemicals in solution measured? |  | [Chemistry 4.4.2.2 Neutralisation of acids and salt production](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C5.3.4 | How are the amounts of chemicals in solution measured? |  | [Chemistry 4.4.2.4 The pH scale and neutralisation](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C5.3.5 | How are the amounts of chemicals in solution measured? |  | [Chemistry 4.4.2.4 The pH scale and neutralisation](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C5.3.6 | How are the amounts of chemicals in solution measured? |  | [Chemistry 4.4.2.5 Titrations (Chemistry only)](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C5.3.7 | How are the amounts of chemicals in solution measured? |  | [Chemistry 4.4.2.5 Titrations (Chemistry only)](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md)<br>[OCR B storyline contexts](storyline-contexts.md) |
+
+## Chapter C6: Making useful chemicals
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **C6.1 What useful products can be made from acids?** | | | |
+| C6.1.1 | What useful products can be made from acids? |  | [Chemistry 4.4.2.1 Reactions of acids with metals](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md)<br>[Chemistry 4.4.2.2 Neutralisation of acids and salt production](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C6.1.2 | What useful products can be made from acids? |  | [Chemistry 4.4.2.3 Soluble salts](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C6.1.3 | What useful products can be made from acids? |  | [Chemistry 4.2.1.3 Ionic compounds](../../aqa/gcse/chemistry-8462/4.2-bonding-structure-and-the-properties-of-matter.md) |
+| C6.1.4 | What useful products can be made from acids? |  | [Chemistry 4.4.2.4 The pH scale and neutralisation](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C6.1.5 | What useful products can be made from acids? | HT | [Chemistry 4.4.2.6 Strong and weak acids (HT only)](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C6.1.6 | What useful products can be made from acids? | HT | [Chemistry 4.4.2.6 Strong and weak acids (HT only)](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| C6.1.7 | What useful products can be made from acids? | HT | [Chemistry 4.4.2.6 Strong and weak acids (HT only)](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| **C6.2 How do chemists control the rate of reactions?** | | | |
+| C6.2.1 | How do chemists control the rate of reactions? |  | [Chemistry 4.6.1.2 Factors which affect the rates of chemical reactions](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| C6.2.2 | How do chemists control the rate of reactions? |  | [Chemistry 4.6.1.3 Collision theory and activation energy](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| C6.2.3 | How do chemists control the rate of reactions? |  | [Chemistry 4.6.1.3 Collision theory and activation energy](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| C6.2.4 | How do chemists control the rate of reactions? |  | [Chemistry 4.6.1.4 Catalysts](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| C6.2.5 | How do chemists control the rate of reactions? |  | [Chemistry 4.6.1.4 Catalysts](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| C6.2.6 | How do chemists control the rate of reactions? |  | [Chemistry 4.6.1.4 Catalysts](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| C6.2.7 | How do chemists control the rate of reactions? |  | [Chemistry 4.6.1.1 Calculating rates of reactions](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md)<br>[Chemistry 4.6.1.2 Factors which affect the rates of chemical reactions](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| C6.2.8 | How do chemists control the rate of reactions? |  | [Chemistry 4.6.1.1 Calculating rates of reactions](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| C6.2.9 | How do chemists control the rate of reactions? |  | [Chemistry 4.6.1.1 Calculating rates of reactions](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| C6.2.10 | How do chemists control the rate of reactions? |  | [Chemistry 4.6.1.1 Calculating rates of reactions](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| C6.2.11 | How do chemists control the rate of reactions? |  | [Chemistry 4.6.1.1 Calculating rates of reactions](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| C6.2.12 | How do chemists control the rate of reactions? |  | [Chemistry 4.6.1.1 Calculating rates of reactions](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| C6.2.13 | How do chemists control the rate of reactions? |  | [Chemistry 4.6.1.4 Catalysts](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| **C6.3 What factors affect the yield of chemical reactions?** | | | |
+| C6.3.1 | What factors affect the yield of chemical reactions? |  | [Chemistry 4.6.2.1 Reversible reactions](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| C6.3.2 | What factors affect the yield of chemical reactions? |  | [Chemistry 4.6.2.3 Equilibrium](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| C6.3.3 | What factors affect the yield of chemical reactions? | HT | [Chemistry 4.6.2.4 The effect of changing conditions on equilibrium (HT only)](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md)<br>[Chemistry 4.6.2.5 The effect of changing concentration (HT only)](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md)<br>[Chemistry 4.6.2.6 The effect of temperature changes on equilibrium (HT only)](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md)<br>[Chemistry 4.6.2.7 The effect of pressure changes on equilibrium (HT only)](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+
+## Chapter P1: Radiation and waves
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **P1.1 What are the risks and benefits of using radiations?** | | | |
+| P1.1.1 | What are the risks and benefits of using radiations? |  | [Physics 4.6.2.1 Types of electromagnetic waves](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.1.2 | What are the risks and benefits of using radiations? |  | [Physics 4.6.2.1 Types of electromagnetic waves](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.1.3 | What are the risks and benefits of using radiations? |  | [Physics 4.6.2.1 Types of electromagnetic waves](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.1.4 | What are the risks and benefits of using radiations? |  | [Physics 4.6.2.1 Types of electromagnetic waves](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.1.5 | What are the risks and benefits of using radiations? |  | [Physics 4.6.2.2 Properties of electromagnetic waves 1](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.1.6 | What are the risks and benefits of using radiations? |  | [Physics 4.4.1.1 The structure of an atom](../../aqa/gcse/physics-8463/4.4-atomic-structure.md) |
+| P1.1.7 | What are the risks and benefits of using radiations? |  | [Physics 4.6.2.3 Properties of electromagnetic waves 2](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.1.8 | What are the risks and benefits of using radiations? |  | [Physics 4.6.2.3 Properties of electromagnetic waves 2](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.1.9 | What are the risks and benefits of using radiations? |  | [Physics 4.6.2.4 Uses and applications of electromagnetic waves](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.1.10 | What are the risks and benefits of using radiations? | HT | [Physics 4.6.2.3 Properties of electromagnetic waves 2](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| **P1.2 What is climate change and what is the evidence for it?** | | | |
+| P1.2.1 | What is climate change and what is the evidence for it? |  | [Physics 4.6.3.1 Emission and absorption of infrared radiation (Physics only)](../../aqa/gcse/physics-8463/4.6-waves.md)<br>[Physics 4.6.3.2 Perfect black bodies and radiation (Physics only)](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.2.2 | What is climate change and what is the evidence for it? | HT | [Physics 4.6.3.2 Perfect black bodies and radiation (Physics only)](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| **P1.3 How do waves behave?** | | | |
+| P1.3.1 | How do waves behave? |  | [Physics 4.6.1.2 Properties of waves](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.3.2 | How do waves behave? |  | [Physics 4.6.1.1 Transverse and longitudinal waves](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.3.3 | How do waves behave? |  | [Physics 4.6.1.1 Transverse and longitudinal waves](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.3.4 | How do waves behave? |  | [Physics 4.6.1.1 Transverse and longitudinal waves](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.3.5 | How do waves behave? |  | [Physics 4.6.1.2 Properties of waves](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.3.6 | How do waves behave? |  | [Physics 4.6.1.2 Properties of waves](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.3.7 | How do waves behave? |  | [Physics 4.6.1.2 Properties of waves](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.3.8 | How do waves behave? |  | [Physics 4.6.1.3 Reflection of waves (Physics only)](../../aqa/gcse/physics-8463/4.6-waves.md)<br>[Physics 4.6.2.2 Properties of electromagnetic waves 1](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.3.9 | How do waves behave? | HT | [Physics 4.6.1.2 Properties of waves](../../aqa/gcse/physics-8463/4.6-waves.md)<br>[Physics 4.6.2.2 Properties of electromagnetic waves 1](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.3.10 | How do waves behave? | HT | [Physics 4.6.2.2 Properties of electromagnetic waves 1](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.3.11 | How do waves behave? |  | [Physics 4.6.2.1 Types of electromagnetic waves](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| P1.3.12 | How do waves behave? |  | [Physics 4.6.2.1 Types of electromagnetic waves](../../aqa/gcse/physics-8463/4.6-waves.md) |
+
+## Chapter P2: Sustainable energy
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **P2.1 How much energy do we use?** | | | |
+| P2.1.1 | How much energy do we use? |  | [Physics 4.2.4.2 Energy transfers in everyday appliances](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P2.1.2 | How much energy do we use? |  | [Physics 4.2.4.2 Energy transfers in everyday appliances](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P2.1.3 | How much energy do we use? |  | [Physics 4.2.4.2 Energy transfers in everyday appliances](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P2.1.4 | How much energy do we use? |  | [Physics 4.1.1.1 Energy stores and systems](../../aqa/gcse/physics-8463/4.1-energy.md)<br>[Physics 4.1.2.1 Energy transfers in a system](../../aqa/gcse/physics-8463/4.1-energy.md) |
+| P2.1.5 | How much energy do we use? |  | [Physics 4.1.2.1 Energy transfers in a system](../../aqa/gcse/physics-8463/4.1-energy.md) |
+| P2.1.6 | How much energy do we use? |  | [Physics 4.1.2.1 Energy transfers in a system](../../aqa/gcse/physics-8463/4.1-energy.md) |
+| P2.1.7 | How much energy do we use? |  | [Physics 4.1.2.1 Energy transfers in a system](../../aqa/gcse/physics-8463/4.1-energy.md) |
+| P2.1.8 | How much energy do we use? |  | [Physics 4.1.2.2 Efficiency](../../aqa/gcse/physics-8463/4.1-energy.md) |
+| P2.1.9 | How much energy do we use? |  | [Physics 4.1.2.2 Efficiency](../../aqa/gcse/physics-8463/4.1-energy.md) |
+| **P2.2 How can electricity be generated?** | | | |
+| P2.2.1 | How can electricity be generated? |  | [Physics 4.1.3 National and global energy resources](../../aqa/gcse/physics-8463/4.1-energy.md) |
+| P2.2.2 | How can electricity be generated? |  | [Physics 4.1.3 National and global energy resources](../../aqa/gcse/physics-8463/4.1-energy.md) |
+| P2.2.3 | How can electricity be generated? |  | [Physics 4.1.3 National and global energy resources](../../aqa/gcse/physics-8463/4.1-energy.md) |
+| P2.2.4 | How can electricity be generated? |  | [Physics 4.2.3.1 Direct and alternating potential difference](../../aqa/gcse/physics-8463/4.2-electricity.md)<br>[Physics 4.2.3.2 Mains electricity](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P2.2.5 | How can electricity be generated? |  | [Physics 4.2.4.3 The National Grid](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P2.2.6 | How can electricity be generated? |  | [Physics 4.2.3.2 Mains electricity](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P2.2.7 | How can electricity be generated? |  | [Physics 4.1.3 National and global energy resources](../../aqa/gcse/physics-8463/4.1-energy.md) |
+
+## Chapter P3: Electric circuits
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **P3.1 What determines the current in an electric circuit?** | | | |
+| P3.1.1 | What determines the current in an electric circuit? |  | [Physics 4.2.1.2 Electrical charge and current](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P3.1.2 | What determines the current in an electric circuit? |  | [Physics 4.2.1.2 Electrical charge and current](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P3.1.3 | What determines the current in an electric circuit? |  | [Physics 4.2.1.3 Current, resistance and potential difference](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P3.1.4 | What determines the current in an electric circuit? |  | [Physics 4.2.1.3 Current, resistance and potential difference](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P3.1.5 | What determines the current in an electric circuit? |  | [Physics 4.2.1.4 Resistors](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P3.1.6 | What determines the current in an electric circuit? |  | [Physics 4.2.1.4 Resistors](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P3.1.7 | What determines the current in an electric circuit? |  | [Physics 4.2.1.1 Standard circuit diagram symbols](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| **P3.2 How do series and parallel circuits work?** | | | |
+| P3.2.1 | How do series and parallel circuits work? |  | [Physics 4.2.4.2 Energy transfers in everyday appliances](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P3.2.2 | How do series and parallel circuits work? |  | [Physics 4.2.2 Series and parallel circuits](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P3.2.3 | How do series and parallel circuits work? |  | [Physics 4.2.2 Series and parallel circuits](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P3.2.4 | How do series and parallel circuits work? |  | [Physics 4.2.2 Series and parallel circuits](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P3.2.5 | How do series and parallel circuits work? |  | [Physics 4.2.1.4 Resistors](../../aqa/gcse/physics-8463/4.2-electricity.md)<br>[Physics 4.2.2 Series and parallel circuits](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| **P3.3 What determines the rate of energy transfer in a circuit?** | | | |
+| P3.3.1 | What determines the rate of energy transfer in a circuit? |  | [Physics 4.2.4.2 Energy transfers in everyday appliances](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P3.3.2 | What determines the rate of energy transfer in a circuit? |  | [Physics 4.2.4.1 Power](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P3.3.3 | What determines the rate of energy transfer in a circuit? |  | [Physics 4.2.4.2 Energy transfers in everyday appliances](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P3.3.4 | What determines the rate of energy transfer in a circuit? |  | [Physics 4.2.4.1 Power](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| P3.3.5 | What determines the rate of energy transfer in a circuit? |  | [Physics 4.7.3.4 Transformers (Physics only) (HT only)](../../aqa/gcse/physics-8463/4.7-magnetism-and-electromagnetism.md) |
+| P3.3.6 | What determines the rate of energy transfer in a circuit? |  | [Physics 4.2.4.3 The National Grid](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+| **P3.4 What are magnetic fields?** | | | |
+| P3.4.1 | What are magnetic fields? |  | [Physics 4.7.1.1 Poles of a magnet](../../aqa/gcse/physics-8463/4.7-magnetism-and-electromagnetism.md) |
+| P3.4.2 | What are magnetic fields? |  | [Physics 4.7.1.2 Magnetic fields](../../aqa/gcse/physics-8463/4.7-magnetism-and-electromagnetism.md) |
+| P3.4.3 | What are magnetic fields? |  | [Physics 4.7.1.2 Magnetic fields](../../aqa/gcse/physics-8463/4.7-magnetism-and-electromagnetism.md) |
+| P3.4.4 | What are magnetic fields? |  | [Physics 4.7.1.1 Poles of a magnet](../../aqa/gcse/physics-8463/4.7-magnetism-and-electromagnetism.md) |
+| P3.4.5 | What are magnetic fields? |  | [Physics 4.7.2.1 Electromagnetism](../../aqa/gcse/physics-8463/4.7-magnetism-and-electromagnetism.md) |
+| P3.4.6 | What are magnetic fields? |  | [Physics 4.7.2.1 Electromagnetism](../../aqa/gcse/physics-8463/4.7-magnetism-and-electromagnetism.md) |
+| P3.4.7 | What are magnetic fields? |  | [Physics 4.7.2.1 Electromagnetism](../../aqa/gcse/physics-8463/4.7-magnetism-and-electromagnetism.md) |
+| P3.4.8 | What are magnetic fields? |  | [Physics 4.7.2.1 Electromagnetism](../../aqa/gcse/physics-8463/4.7-magnetism-and-electromagnetism.md) |
+| **P3.5 How do electric motors work?** | | | |
+| P3.5.1 | How do electric motors work? | HT | [Physics 4.7.2.2 Fleming's left-hand rule (HT only)](../../aqa/gcse/physics-8463/4.7-magnetism-and-electromagnetism.md) |
+| P3.5.2 | How do electric motors work? | HT | [Physics 4.7.2.2 Fleming's left-hand rule (HT only)](../../aqa/gcse/physics-8463/4.7-magnetism-and-electromagnetism.md) |
+| P3.5.3 | How do electric motors work? | HT | [Physics 4.7.2.2 Fleming's left-hand rule (HT only)](../../aqa/gcse/physics-8463/4.7-magnetism-and-electromagnetism.md) |
+| P3.5.4 | How do electric motors work? | HT | [Physics 4.7.2.3 Electric motors (HT only)](../../aqa/gcse/physics-8463/4.7-magnetism-and-electromagnetism.md) |
+
+## Chapter P4: Explaining motion
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **P4.1 What are forces?** | | | |
+| P4.1.1 | What are forces? |  | [Physics 4.5.6.2.3 Newton's Third Law](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.1.2 | What are forces? |  | [Physics 4.5.1.2 Contact and non-contact forces](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.1.3 | What are forces? |  | [Physics 4.5.1.2 Contact and non-contact forces](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.1.4 | What are forces? |  | [Physics 4.5.1.1 Scalar and vector quantities](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.1.5 | What are forces? |  | [Physics 4.5.1.3 Gravity](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.1.6 | What are forces? |  | [Physics 4.5.1.3 Gravity](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.1.7 | What are forces? |  | [Physics 4.5.1.3 Gravity](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| **P4.2 How can we describe motion?** | | | |
+| P4.2.1 | How can we describe motion? |  | [Physics 4.5.6.1.2 Speed](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.2.2 | How can we describe motion? |  | [Physics 4.5.6.1.2 Speed](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.2.3 | How can we describe motion? |  | [Physics 4.5.6.1.2 Speed](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.2.4 | How can we describe motion? |  | [Physics 4.5.6.1.2 Speed](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.2.5 | How can we describe motion? |  | [Physics 4.5.6.1.1 Distance and displacement](../../aqa/gcse/physics-8463/4.5-forces.md)<br>[Physics 4.5.6.1.3 Velocity](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.2.6 | How can we describe motion? |  | [Physics 4.5.6.1.5 Acceleration](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.2.7 | How can we describe motion? |  | [Physics 4.5.6.1.5 Acceleration](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.2.8 | How can we describe motion? |  | [Physics 4.5.6.1.4 The distance–time relationship](../../aqa/gcse/physics-8463/4.5-forces.md)<br>[Physics 4.5.6.1.5 Acceleration](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.2.9 | How can we describe motion? |  | [Physics 4.5.6.1.4 The distance–time relationship](../../aqa/gcse/physics-8463/4.5-forces.md)<br>[Physics 4.5.6.1.5 Acceleration](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.2.10 | How can we describe motion? | HT | [Physics 4.5.6.1.5 Acceleration](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.2.11 | How can we describe motion? |  | [Physics 4.5.6.1.5 Acceleration](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| **P4.3 What is the connection between forces and motion?** | | | |
+| P4.3.1 | What is the connection between forces and motion? |  | [Physics 4.5.1.4 Resultant forces](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.3.2 | What is the connection between forces and motion? |  | [Physics 4.5.1.4 Resultant forces](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.3.3 | What is the connection between forces and motion? | HT | [Physics 4.5.1.4 Resultant forces](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.3.4 | What is the connection between forces and motion? | HT | [Physics 4.5.7.1 Momentum is a property of moving objects (HT only)](../../aqa/gcse/physics-8463/4.5-forces.md)<br>[Physics 4.5.7.2 Conservation of momentum (HT only)](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.3.5 | What is the connection between forces and motion? | HT | [Physics 4.5.7.3 Changes in momentum (Physics only) (HT only)](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.3.6 | What is the connection between forces and motion? |  | [Physics 4.5.6.2.1 Newton's First Law](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.3.7 | What is the connection between forces and motion? | HT | [Physics 4.8.1.3 Orbital motion, natural and artificial satellites](../../aqa/gcse/physics-8463/4.8-space-physics.md) |
+| P4.3.8 | What is the connection between forces and motion? | HT | [Physics 4.5.6.2.2 Newton's Second Law](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.3.9 | What is the connection between forces and motion? |  | [Physics 4.5.6.2.2 Newton's Second Law](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.3.10 | What is the connection between forces and motion? |  | [Physics 4.5.6.2.2 Newton's Second Law](../../aqa/gcse/physics-8463/4.5-forces.md)<br>[Physics 4.5.7.1 Momentum is a property of moving objects (HT only)](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.3.11 | What is the connection between forces and motion? |  | [Physics 4.5.6.3.2 Reaction time](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.3.12 | What is the connection between forces and motion? |  | [Physics 4.5.6.3.1 Stopping distance](../../aqa/gcse/physics-8463/4.5-forces.md)<br>[Physics 4.5.6.3.3 Factors affecting braking distance 1](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.3.13 | What is the connection between forces and motion? |  | [Physics 4.5.6.3.4 Factors affecting braking distance 2](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| **P4.4 How can we describe motion in terms of energy transfers?** | | | |
+| P4.4.1 | How can we describe motion in terms of energy transfers? |  | [Physics 4.1.1.1 Energy stores and systems](../../aqa/gcse/physics-8463/4.1-energy.md) |
+| P4.4.2 | How can we describe motion in terms of energy transfers? |  | [Physics 4.5.2 Work done and energy transfer](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.4.3 | How can we describe motion in terms of energy transfers? |  | [Physics 4.1.1.2 Changes in energy](../../aqa/gcse/physics-8463/4.1-energy.md) |
+| P4.4.4 | How can we describe motion in terms of energy transfers? |  | [Physics 4.1.1.2 Changes in energy](../../aqa/gcse/physics-8463/4.1-energy.md) |
+| P4.4.5 | How can we describe motion in terms of energy transfers? |  | [Physics 4.1.1.2 Changes in energy](../../aqa/gcse/physics-8463/4.1-energy.md) |
+| P4.4.6 | How can we describe motion in terms of energy transfers? |  | [Physics 4.5.2 Work done and energy transfer](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P4.4.7 | How can we describe motion in terms of energy transfers? |  | [Physics 4.1.1.1 Energy stores and systems](../../aqa/gcse/physics-8463/4.1-energy.md) |
+| P4.4.8 | How can we describe motion in terms of energy transfers? |  | [Physics 4.1.1.4 Power](../../aqa/gcse/physics-8463/4.1-energy.md) |
+| P4.4.9 | How can we describe motion in terms of energy transfers? |  | [Physics 4.2.4.2 Energy transfers in everyday appliances](../../aqa/gcse/physics-8463/4.2-electricity.md) |
+
+## Chapter P5: Radioactive materials
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **P5.1 What is radioactivity?** | | | |
+| P5.1.1 | What is radioactivity? |  | [Physics 4.4.1.1 The structure of an atom](../../aqa/gcse/physics-8463/4.4-atomic-structure.md) |
+| P5.1.2 | What is radioactivity? |  | [Physics 4.4.1.3 The development of the model of the atom](../../aqa/gcse/physics-8463/4.4-atomic-structure.md) |
+| P5.1.3 | What is radioactivity? |  | [Physics 4.4.1.1 The structure of an atom](../../aqa/gcse/physics-8463/4.4-atomic-structure.md) |
+| P5.1.4 | What is radioactivity? |  | [Physics 4.4.1.2 Mass number, atomic number and isotopes](../../aqa/gcse/physics-8463/4.4-atomic-structure.md) |
+| P5.1.5 | What is radioactivity? |  | [Physics 4.4.1.2 Mass number, atomic number and isotopes](../../aqa/gcse/physics-8463/4.4-atomic-structure.md) |
+| P5.1.6 | What is radioactivity? |  | [Physics 4.4.1.2 Mass number, atomic number and isotopes](../../aqa/gcse/physics-8463/4.4-atomic-structure.md) |
+| P5.1.7 | What is radioactivity? |  | [Physics 4.4.2.1 Radioactive decay and nuclear radiation](../../aqa/gcse/physics-8463/4.4-atomic-structure.md) |
+| P5.1.8 | What is radioactivity? |  | [Physics 4.4.2.1 Radioactive decay and nuclear radiation](../../aqa/gcse/physics-8463/4.4-atomic-structure.md)<br>[Physics 4.4.2.2 Nuclear equations](../../aqa/gcse/physics-8463/4.4-atomic-structure.md) |
+| P5.1.9 | What is radioactivity? |  | [Physics 4.4.2.2 Nuclear equations](../../aqa/gcse/physics-8463/4.4-atomic-structure.md) |
+| P5.1.10 | What is radioactivity? |  | [Physics 4.4.2.3 Half-lives and the random nature of radioactive decay](../../aqa/gcse/physics-8463/4.4-atomic-structure.md) |
+| P5.1.11 | What is radioactivity? | HT | [Physics 4.4.2.3 Half-lives and the random nature of radioactive decay](../../aqa/gcse/physics-8463/4.4-atomic-structure.md) |
+| P5.1.12 | What is radioactivity? |  | [Physics 4.4.2.3 Half-lives and the random nature of radioactive decay](../../aqa/gcse/physics-8463/4.4-atomic-structure.md) |
+| **P5.2 How can radioactive materials be used safely?** | | | |
+| P5.2.1 | How can radioactive materials be used safely? |  | [Physics 4.4.2.1 Radioactive decay and nuclear radiation](../../aqa/gcse/physics-8463/4.4-atomic-structure.md) |
+| P5.2.2 | How can radioactive materials be used safely? |  | [Physics 4.4.2.4 Radioactive contamination](../../aqa/gcse/physics-8463/4.4-atomic-structure.md) |
+| P5.2.3 | How can radioactive materials be used safely? |  | [Physics 4.4.3.3 Uses of nuclear radiation (Physics only)](../../aqa/gcse/physics-8463/4.4-atomic-structure.md) |
+| P5.2.4 | How can radioactive materials be used safely? |  | [Physics 4.4.2.4 Radioactive contamination](../../aqa/gcse/physics-8463/4.4-atomic-structure.md)<br>[Physics 4.4.3.3 Uses of nuclear radiation (Physics only)](../../aqa/gcse/physics-8463/4.4-atomic-structure.md) |
+| P5.2.5 | How can radioactive materials be used safely? |  | [Physics 4.4.3.2 Different half-lives of radioactive isotopes (Physics only)](../../aqa/gcse/physics-8463/4.4-atomic-structure.md) |
+
+## Chapter P6: Matter – models and explanations
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **P6.1 How does energy transform matter?** | | | |
+| P6.1.1 | How does energy transform matter? |  | [Physics 4.3.1.1 Density of materials](../../aqa/gcse/physics-8463/4.3-particle-model-of-matter.md) |
+| P6.1.2 | How does energy transform matter? |  | [Physics 4.3.1.1 Density of materials](../../aqa/gcse/physics-8463/4.3-particle-model-of-matter.md) |
+| P6.1.3 | How does energy transform matter? |  | [Physics 4.3.2.1 Internal energy](../../aqa/gcse/physics-8463/4.3-particle-model-of-matter.md) |
+| P6.1.4 | How does energy transform matter? |  | [Physics 4.3.2.2 Temperature changes in a system and specific heat capacity](../../aqa/gcse/physics-8463/4.3-particle-model-of-matter.md)<br>[Physics 4.3.2.3 Changes of state and specific latent heat](../../aqa/gcse/physics-8463/4.3-particle-model-of-matter.md) |
+| P6.1.5 | How does energy transform matter? |  | [Physics 4.3.2.2 Temperature changes in a system and specific heat capacity](../../aqa/gcse/physics-8463/4.3-particle-model-of-matter.md) |
+| P6.1.6 | How does energy transform matter? |  | [Physics 4.3.2.3 Changes of state and specific latent heat](../../aqa/gcse/physics-8463/4.3-particle-model-of-matter.md) |
+| P6.1.7 | How does energy transform matter? |  | [Physics 4.3.1.2 Changes of state](../../aqa/gcse/physics-8463/4.3-particle-model-of-matter.md)<br>[Physics 4.3.2.1 Internal energy](../../aqa/gcse/physics-8463/4.3-particle-model-of-matter.md) |
+| P6.1.8 | How does energy transform matter? |  | [Physics 4.3.2.2 Temperature changes in a system and specific heat capacity](../../aqa/gcse/physics-8463/4.3-particle-model-of-matter.md)<br>[Physics 4.3.2.3 Changes of state and specific latent heat](../../aqa/gcse/physics-8463/4.3-particle-model-of-matter.md) |
+| **P6.2 How does the particle model explain the effects of heating?** | | | |
+| P6.2.1 | How does the particle model explain the effects of heating? |  | [Physics 4.3.1.1 Density of materials](../../aqa/gcse/physics-8463/4.3-particle-model-of-matter.md) |
+| P6.2.2 | How does the particle model explain the effects of heating? |  | [Physics 4.3.1.2 Changes of state](../../aqa/gcse/physics-8463/4.3-particle-model-of-matter.md) |
+| P6.2.3 | How does the particle model explain the effects of heating? |  | [Physics 4.3.2.1 Internal energy](../../aqa/gcse/physics-8463/4.3-particle-model-of-matter.md) |
+| P6.2.4 | How does the particle model explain the effects of heating? |  | [Physics 4.3.3.1 Particle motion in gases](../../aqa/gcse/physics-8463/4.3-particle-model-of-matter.md) |
+| **P6.3 How does the particle model relate to materials under stress?** | | | |
+| P6.3.1 | How does the particle model relate to materials under… |  | [Physics 4.5.3 Forces and elasticity](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P6.3.2 | How does the particle model relate to materials under… |  | [Physics 4.5.3 Forces and elasticity](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P6.3.3 | How does the particle model relate to materials under… |  | [Physics 4.5.3 Forces and elasticity](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P6.3.4 | How does the particle model relate to materials under… |  | [Physics 4.5.3 Forces and elasticity](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P6.3.5 | How does the particle model relate to materials under… |  | [Physics 4.5.3 Forces and elasticity](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P6.3.6 | How does the particle model relate to materials under… |  | [Physics 4.5.3 Forces and elasticity](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| P6.3.7 | How does the particle model relate to materials under… |  | [Physics 4.5.3 Forces and elasticity](../../aqa/gcse/physics-8463/4.5-forces.md) |
+
+## Ideas about Science (IaS1 to IaS4)
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| **IaS1 What needs to be considered when investigating a phenomenon scientifically?** | | | |
+| IaS1.1 | What needs to be considered when investigating a… |  | [Ideas about Science](ideas-about-science.md) |
+| IaS1.2 | What needs to be considered when investigating a… |  | [Ideas about Science](ideas-about-science.md) |
+| IaS1.3 | What needs to be considered when investigating a… |  | [Ideas about Science](ideas-about-science.md) |
+| IaS1.4 | What needs to be considered when investigating a… |  | [Ideas about Science](ideas-about-science.md) |
+| IaS1.5 | What needs to be considered when investigating a… |  | [Ideas about Science](ideas-about-science.md) |
+| IaS1.6 | What needs to be considered when investigating a… |  | [Ideas about Science](ideas-about-science.md) |
+| IaS1.7 | What needs to be considered when investigating a… |  | [Ideas about Science](ideas-about-science.md) |
+| IaS1.8 | What needs to be considered when investigating a… |  | [Ideas about Science](ideas-about-science.md) |
+| **IaS2 What processes are needed to draw conclusions from data?** | | | |
+| IaS2.1 | What processes are needed to draw conclusions from data? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS2.2 | What processes are needed to draw conclusions from data? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS2.3 | What processes are needed to draw conclusions from data? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS2.4 | What processes are needed to draw conclusions from data? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS2.5 | What processes are needed to draw conclusions from data? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS2.6 | What processes are needed to draw conclusions from data? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS2.7 | What processes are needed to draw conclusions from data? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS2.8 | What processes are needed to draw conclusions from data? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS2.9 | What processes are needed to draw conclusions from data? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS2.10 | What processes are needed to draw conclusions from data? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS2.11 | What processes are needed to draw conclusions from data? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS2.12 | What processes are needed to draw conclusions from data? |  | [Ideas about Science](ideas-about-science.md) |
+| **IaS3 How are scientific explanations developed?** | | | |
+| IaS3.1 | How are scientific explanations developed? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS3.2 | How are scientific explanations developed? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS3.3 | How are scientific explanations developed? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS3.4 | How are scientific explanations developed? |  | [Ideas about Science](ideas-about-science.md) |
+| **IaS4 How do science and technology impact society?** | | | |
+| IaS4.1 | How do science and technology impact society? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS4.2 | How do science and technology impact society? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS4.3 | How do science and technology impact society? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS4.4 | How do science and technology impact society? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS4.5 | How do science and technology impact society? |  | [Ideas about Science](ideas-about-science.md) |
+| IaS4.6 | How do science and technology impact society? |  | [Ideas about Science](ideas-about-science.md) |
+
+## Practical activity groups
+
+| Ref | Sub-topic | Flags | Covered in |
+| --- | --- | --- | --- |
+| PAG B1 | Microscopy |  | [OCR practical activity groups](../ocr-a-sciences/practical-activity-groups.md)<br>[Biology 4.1.1.5 Microscopy](../../aqa/gcse/biology-8461/4.1-cell-biology.md) |
+| PAG B2 | Sampling techniques |  | [OCR practical activity groups](../ocr-a-sciences/practical-activity-groups.md)<br>[Biology 4.7.2.1 Levels of organisation](../../aqa/gcse/biology-8461/4.7-ecology.md) |
+| PAG B3 | Rates of enzyme-controlled reactions |  | [OCR practical activity groups](../ocr-a-sciences/practical-activity-groups.md)<br>[Biology 4.2.2.1 The human digestive system](../../aqa/gcse/biology-8461/4.2-organisation.md) |
+| PAG B4 | Photosynthesis |  | [OCR practical activity groups](../ocr-a-sciences/practical-activity-groups.md)<br>[Biology 4.4.1.2 Rate of photosynthesis](../../aqa/gcse/biology-8461/4.4-bioenergetics.md) |
+| PAG B5 | Microbiological techniques |  | [OCR practical activity groups](../ocr-a-sciences/practical-activity-groups.md)<br>[Biology 4.1.1.6 Culturing microorganisms (Biology only)](../../aqa/gcse/biology-8461/4.1-cell-biology.md) |
+| PAG C1 | Electrolysis |  | [OCR practical activity groups](../ocr-a-sciences/practical-activity-groups.md)<br>[Chemistry 4.4.3.4 Electrolysis of aqueous solutions](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| PAG C2 | Distillation |  | [OCR practical activity groups](../ocr-a-sciences/practical-activity-groups.md)<br>[Chemistry 4.10.1.2 Potable water](../../aqa/gcse/chemistry-8462/4.10-using-resources.md) |
+| PAG C3 | Separation techniques |  | [OCR practical activity groups](../ocr-a-sciences/practical-activity-groups.md)<br>[Chemistry 4.1.1.2 Mixtures](../../aqa/gcse/chemistry-8462/4.1-atomic-structure-and-the-periodic-table.md)<br>[Chemistry 4.8.1.3 Chromatography](../../aqa/gcse/chemistry-8462/4.8-chemical-analysis.md) |
+| PAG C4 | Production of salts |  | [OCR practical activity groups](../ocr-a-sciences/practical-activity-groups.md)<br>[Chemistry 4.4.2.3 Soluble salts](../../aqa/gcse/chemistry-8462/4.4-chemical-changes.md) |
+| PAG C5 | Measuring rates of reaction |  | [OCR practical activity groups](../ocr-a-sciences/practical-activity-groups.md)<br>[Chemistry 4.6.1.2 Factors which affect the rates of chemical reactions](../../aqa/gcse/chemistry-8462/4.6-the-rate-and-extent-of-chemical-change.md) |
+| PAG P1 | Materials |  | [OCR practical activity groups](../ocr-a-sciences/practical-activity-groups.md)<br>[Physics 4.3.1.1 Density of materials](../../aqa/gcse/physics-8463/4.3-particle-model-of-matter.md) |
+| PAG P2 | Forces |  | [OCR practical activity groups](../ocr-a-sciences/practical-activity-groups.md)<br>[Physics 4.5.3 Forces and elasticity](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| PAG P3 | Motion |  | [OCR practical activity groups](../ocr-a-sciences/practical-activity-groups.md)<br>[Physics 4.5.6.2.2 Newton's Second Law](../../aqa/gcse/physics-8463/4.5-forces.md) |
+| PAG P4 | Waves |  | [OCR practical activity groups](../ocr-a-sciences/practical-activity-groups.md)<br>[Physics 4.6.1.2 Properties of waves](../../aqa/gcse/physics-8463/4.6-waves.md) |
+| PAG P5 | Energy |  | [OCR practical activity groups](../ocr-a-sciences/practical-activity-groups.md)<br>[Physics 4.1.1.3 Energy changes in systems](../../aqa/gcse/physics-8463/4.1-energy.md) |
+| PAG P6 | Circuits |  | [OCR practical activity groups](../ocr-a-sciences/practical-activity-groups.md)<br>[Physics 4.2.1.4 Resistors](../../aqa/gcse/physics-8463/4.2-electricity.md)<br>[Physics 4.2.1.3 Current, resistance and potential difference](../../aqa/gcse/physics-8463/4.2-electricity.md)<br>[Physics 4.2.2 Series and parallel circuits](../../aqa/gcse/physics-8463/4.2-electricity.md) |
