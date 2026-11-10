@@ -128,8 +128,8 @@ Quick check: each new moving average = previous + (new value − value dropped) 
 3. Describe the trend shown by your answer to question 2. [1 mark]
 4. Where should the first moving average in question 2 be plotted? [1 mark]
 5. (HT only) Daily cinema ticket sales show a weekly pattern. What length of moving average should be used? Explain why. [2 marks]
-6. (HT only) In question 2, the trend value for Q2 of the first year is 17.5 and for Q2 of the second year is 19.5. Find the mean seasonal variation for Q2. [2 marks]
-7. (HT only) The trend for Q2 of the third year is predicted to be 21.5. Use your answer to question 6 to predict the number of visitors. [1 mark]
+6. (HT only) In question 2, the trend value for Q2 of the first year is 17.75 and for Q2 of the second year is 19.75. Find the mean seasonal variation for Q2. [2 marks]
+7. (HT only) The trend for Q2 of the third year is predicted to be 21.75. Use your answer to question 6 to predict the number of visitors. [1 mark]
 8. (HT only) Give one reason why your prediction may not be reliable. [1 mark]
 
 ## Mark scheme
@@ -139,6 +139,6 @@ Quick check: each new moving average = previous + (new value − value dropped) 
 3. Increasing by about 50 visitors (0.5 hundred) per quarter (1).
 4. Halfway between the second and third quarters of the first year (1).
 5. 7-point (1), because the pattern repeats every 7 days (1).
-6. Q2 variations: 20 − 17.5 = 2.5 and 22 − 19.5 = 2.5 (1); mean 2.5 (1).
-7. 21.5 + 2.5 = 24, i.e. 2400 visitors (1).
+6. Q2 variations: 20 − 17.75 = 2.25 and 22 − 19.75 = 2.25 (1); mean 2.25 (1).
+7. 21.75 + 2.25 = 24, i.e. 2400 visitors (1).
 8. It uses extrapolation; the trend or seasonal pattern may change (e.g. a new exhibition, closures) (1).
