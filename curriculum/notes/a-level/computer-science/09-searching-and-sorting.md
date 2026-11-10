@@ -223,7 +223,7 @@ Merge:  [27 38] [3 43] [9 82] [5 10]
         [3 5 9 10 27 38 43 82]
 ```
 
-Final merge in detail: compare 3 and 5 → 3; 27 and 5 → 5; 27 and 9 → 9; 27 and 10 → 10; right list empty after 82 is compared... continuing: 27 vs 82 → 27; 38 vs 82 → 38; 43 vs 82 → 43; copy 82.
+Final merge in detail: 3 vs 5 → 3; 27 vs 5 → 5; 27 vs 9 → 9; 27 vs 10 → 10; 27 vs 82 → 27; 38 vs 82 → 38; 43 vs 82 → 43; the left list is now empty, so copy 82.
 
 ```python
 def merge_sort(a):
@@ -325,7 +325,7 @@ Why have several sorts (Eduqas)? No sort is best for every case: data size, how 
 ## Check questions
 
 1. State two conditions needed for binary search to be used. [2 marks]
-2. Trace a binary search for 15 in [2, 5, 8, 12, 15, 19, 23, 31, 40], showing low, high and mid each time. [4 marks]
+2. Trace a binary search for 31 in [2, 5, 8, 12, 15, 19, 23, 31, 40], showing low, high and mid each time. [4 marks]
 3. Explain why binary search is O(log n). [2 marks]
 4. Show the list after each pass of bubble sort on [9, 4, 7, 1, 3]. [3 marks]
 5. Explain why bubble sort is O(n²) in the worst case, and when its best case is O(n). [3 marks]
@@ -339,11 +339,11 @@ Why have several sorts (Eduqas)? No sort is best for every case: data size, how 
 ## Mark scheme
 
 1. Data must be sorted (1); must allow direct/indexed access (e.g. an array) (1).
-2. low 0, high 8, mid 4: 15 found (accept). If mid uses a different rounding, e.g. mid = 4 → items[4] = 15, found at index 4 (2 marks for correct values, 1 for the comparison, 1 for found at 4). Award full marks for any consistent method showing low/high/mid and the result.
+2. low 0, high 8, mid 4: 15 < 31 so low = 5 (1); low 5, high 8, mid 6: 23 < 31 so low = 7 (1); low 7, high 8, mid 7: 31 found (1); at index 7 (1). Accept mid rounded up if used consistently.
 3. Each comparison halves the remaining items (1); so at most about log₂ n comparisons are needed (1).
 4. Pass 1: [4, 7, 1, 3, 9] (1). Pass 2: [4, 1, 3, 7, 9] (1). Pass 3: [1, 3, 4, 7, 9]; pass 4 makes no swaps (1).
 5. Up to n − 1 passes (1) each with up to n − 1 comparisons, about n² comparisons in total (1). Best case: data already sorted and the algorithm stops after a pass with no swaps, so one pass of n − 1 comparisons (1).
-6. [2, 5, 9, 1, 6] (1); [2, 5, 9, 1, 6] then [1, 2, 5, 9, 6] (1); [1, 2, 5, 6, 9] (1).
+6. Insert 2: [2, 5, 9, 1, 6]; insert 9: no change (1); insert 1: [1, 2, 5, 9, 6] (1); insert 6: [1, 2, 5, 6, 9] (1).
 7. Split into [8, 3, 5] [1, 7, 2], then [8] [3, 5] [1] [7, 2], then single items (2). Merge: [3, 5], [2, 7]; [3, 5, 8], [1, 2, 7]; [1, 2, 3, 5, 7, 8] (2).
 8. Pivot 6: [3, 1, 2] 6 [9, 7, 8] (1). [3, 1, 2] pivot 3: [1, 2] 3; [9, 7, 8] pivot 9: [7, 8] 9 (1). Remaining partitions give [1, 2, 3, 6, 7, 8, 9] (1).
 9. Each pivot is the smallest item so one partition is empty and the other has n − 1 items (1); n levels of recursion, each with O(n) comparisons, so O(n²) (1).
