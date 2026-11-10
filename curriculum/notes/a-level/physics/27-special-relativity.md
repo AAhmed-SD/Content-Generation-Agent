@@ -27,7 +27,7 @@ At speeds close to the speed of light, time, length and energy behave in ways th
 
 ## Overview
 
-AQA option 3.12.3 (A-level only). Also Edexcel 139 (when the relativistic increase in particle lifetime matters, without equations) and OCR B 5.1.3(a)(ii) (time dilation with γ) and 6.2.1 (relativistic calculations for fast particles: E_rest = mc², E_total = γE_rest). Mass–energy in nuclear reactions is in file 19; annihilation in file 02; particle accelerators in file 33.
+AQA option 3.12.3 (A-level only). Also Edexcel 139 (when the relativistic increase in particle lifetime matters, without equations) and OCR B 5.1.3(a)(ii) (time dilation with γ) and 6.2.1 (relativistic calculations for fast particles: E_rest = mc², E_total = γE_rest). Mass–energy in nuclear reactions is in file 19; annihilation in file 02; particle accelerators in file 31.
 
 ### Board differences
 

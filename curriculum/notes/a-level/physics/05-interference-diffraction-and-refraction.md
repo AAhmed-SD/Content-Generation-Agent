@@ -35,7 +35,7 @@ When waves overlap they interfere; when they pass through gaps they spread out. 
 
 ## Overview
 
-AS & A for every board (OCR A 5.5.2(g), (h), the grating in the context of stellar spectra, is A-level only but is the same physics). Stationary waves are in file 04. Lenses are in file 31. The quantum (phasor) picture of two-slit interference for OCR B is in file 03.
+AS & A for every board (OCR A 5.5.2(g), (h), the grating in the context of stellar spectra, is A-level only but is the same physics). Stationary waves are in file 04. Lenses are in file 22. The quantum (phasor) picture of two-slit interference for OCR B is in file 03.
 
 ### Board differences
 

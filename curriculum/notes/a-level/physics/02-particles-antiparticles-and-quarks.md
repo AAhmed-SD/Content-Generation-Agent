@@ -35,7 +35,7 @@ This file builds the particle picture of matter: what atoms and nuclei are made 
 
 ## Overview
 
-AS & A for AQA, OCR B and Eduqas; A-level only for Edexcel (Topic 8) and OCR A (Module 6). Alpha scattering and nuclear radius are in file 18; binding energy, mass–energy and fission are in file 19; particle accelerators and detectors are in file 33.
+AS & A for AQA, OCR B and Eduqas; A-level only for Edexcel (Topic 8) and OCR A (Module 6). Alpha scattering and nuclear radius are in file 18; binding energy, mass–energy and fission are in file 19; particle accelerators and detectors are in file 31.
 
 ### Board differences
 
@@ -419,7 +419,7 @@ If any always-conserved quantity fails, the reaction cannot happen. If only stra
 
 **Which interaction?** If a neutrino is involved, or a quark changes flavour, it is weak. If only charged particles and photons are involved, it is electromagnetic. If only hadrons are involved and strangeness is conserved, it is probably strong.
 
-**(Edexcel 135)** Particle tracks in detectors: charged particles leave tracks; neutral ones do not, but their decay products do (a "V" appearing from nowhere shows a neutral particle decaying into two oppositely charged ones). Curvature in a magnetic field shows sign of charge and momentum (see file 33).
+**(Edexcel 135)** Particle tracks in detectors: charged particles leave tracks; neutral ones do not, but their decay products do (a "V" appearing from nowhere shows a neutral particle decaying into two oppositely charged ones). Curvature in a magnetic field shows sign of charge and momentum (see file 31).
 
 ### Worked example
 

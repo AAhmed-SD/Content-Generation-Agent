@@ -45,7 +45,7 @@ AS & A for every board, except OCR A 5.5.2 (energy levels and spectra in the con
 - Determining the Planck constant using LEDs: OCR A 4.5.1(e) (PAG6), OCR B 4.1(d)(vi) (PAG6), Eduqas specified practical. Not an AQA required practical.
 - OCR B 4.1(a)(vii) uses the "sum over paths" or phasor picture of quantum behaviour (Feynman's approach); no other board does. OCR B 6.2.1(a)(iv) and (b)(iii) model an atom as electron standing waves in a box.
 - Eduqas C3.4(m) and (n): photon momentum p = h/λ and radiation pressure on a surface.
-- Edexcel 89 (pulse-echo) is in file 31.
+- Edexcel 89 (pulse-echo) is in file 23.
 
 ## 3.2.2.1 The photoelectric effect
 

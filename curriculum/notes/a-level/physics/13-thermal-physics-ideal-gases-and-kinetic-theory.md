@@ -35,7 +35,7 @@ This file links the large-scale behaviour of matter (temperature, pressure, volu
 
 ## Overview
 
-A-level only for every board. The first law of thermodynamics, p–V diagrams and engines (AQA option 3.11.2) are in file 25; Eduqas C1.8's first-law points are covered here because they are core for Eduqas. Black-body radiation (Edexcel 153 to 155) is in file 20. Thermal conduction and U-values (Eduqas option D) are in file 38.
+A-level only for every board. The first law of thermodynamics, p–V diagrams and engines (AQA option 3.11.2) are in file 25; Eduqas C1.8's first-law points are covered here because they are core for Eduqas. Black-body radiation (Edexcel 153 to 155) is in file 20. Thermal conduction and U-values (Eduqas option D) are in file 35.
 
 ### Board differences
 

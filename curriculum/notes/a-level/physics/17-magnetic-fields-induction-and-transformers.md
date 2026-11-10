@@ -35,7 +35,7 @@ Moving charges make magnetic fields and feel forces in them; changing magnetic f
 
 ## Overview
 
-A-level only for every board. Particle accelerators and detectors in more detail (Edexcel 132 to 134) are in file 33. The Hall effect sensor in electronics (AQA 3.13.1.4) is in file 28. A.c. circuits with capacitors and inductors (Eduqas option A) are in file 36. MRI is in file 23.
+A-level only for every board. Particle accelerators and detectors in more detail (Edexcel 132 to 134) are in file 31. The Hall effect sensor in electronics (AQA 3.13.1.4) is in file 28. A.c. circuits with capacitors and inductors (Eduqas option A) are in file 34. MRI is in file 23.
 
 ### Board differences
 

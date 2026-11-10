@@ -19,7 +19,7 @@ This file covers the discrete semiconductor devices in the AQA electronics optio
 
 ## Overview
 
-AQA option 3.13 (A-level only). No other England board examines this content. Potential dividers and diodes are in files 10 and 11; capacitors in file 16; induction in file 17; the physics of the Hall effect (Eduqas) in file 17; resonance in file 12; LCR a.c. circuits (Eduqas option A) in file 36. Digital electronics and communications are in file 29.
+AQA option 3.13 (A-level only). No other England board examines this content. Potential dividers and diodes are in files 10 and 11; capacitors in file 16; induction in file 17; the physics of the Hall effect (Eduqas) in file 17; resonance in file 12; LCR a.c. circuits (Eduqas option A) in file 34. Digital electronics and communications are in file 29.
 
 ### Board differences
 

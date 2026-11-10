@@ -35,7 +35,7 @@ How do we learn about stars we can never visit? This file covers refracting and 
 
 ## Overview
 
-AQA option 3.9 (A-level only). Also core content for Edexcel (Topic 9 black body, Topic 10 Space), OCR A (5.5) and Eduqas (C2.7). Line spectra and energy levels are in file 03; the diffraction grating is in file 05. Distances (parallax, standard candles), Doppler shift, Hubble's law, the Big Bang and exoplanets are in file 21. Lenses in general (Edexcel) are in file 31.
+AQA option 3.9 (A-level only). Also core content for Edexcel (Topic 9 black body, Topic 10 Space), OCR A (5.5) and Eduqas (C2.7). Line spectra and energy levels are in file 03; the diffraction grating is in file 05. Distances (parallax, standard candles), Doppler shift, Hubble's law, the Big Bang and exoplanets are in file 21. Lenses in general (Edexcel) are in file 22.
 
 ### Board differences
 
