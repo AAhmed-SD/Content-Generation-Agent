@@ -1,0 +1,141 @@
+# A-level Statistics: spec map
+
+Every spec point of Pearson Edexcel A-level Statistics (9ST0), in the spec's own order, with the notes that cover it. Edexcel is the only board that offers A-level Statistics, so there is one table.
+
+- The spec numbers its content 1.1 to 21.2 (21 topics), then lists the Statistical Enquiry Cycle (SEC) in five lettered stages, A Initial planning (1 to 6), B Data collection (1 to 4), C Data processing and presentation (1 to 3), D Interpretation of results (1 to 5) and E Evaluation and review (1 to 4). Here the SEC points are written SEC A1 to SEC E4.
+- Appendix 4 (use of calculators, spreadsheets, databases and graph-plotting software) is examinable language, written here as App4.
+- Paper 1 (Data and Probability, 9ST0/01) sets topics 1 to 6, 7 (except 7.2), 11, 12, 13 and 18. Paper 2 (Statistical Inference, 9ST0/02) sets 7.2, 8 to 10, 13 to 17 and 19 to 21. Paper 3 (Statistics in Practice, 9ST0/03) may set anything. The SEC is on all three papers. Each paper is 2 hours and 80 marks.
+- Many ideas are already written up in the A-level Mathematics, A-level Further Mathematics and GCSE Statistics notes. Those files are linked, not repeated. The files in this folder add what 9ST0 asks for beyond them (for example published visualisations, judgmental and snowball sampling, Bayes' theorem for three events, the two-proportion test, experimental design, ANOVA and effect size), and restate each spec point in the 9ST0 wording so the folder works on its own.
+
+Paper key: P1, P2 = the paper that sets it (Paper 3 can set anything). Main file = the file in this folder written for that point; Also see = existing notes that cover the same ground.
+
+`refs_checked: false`: references were taken from the specification PDF (Pearson Edexcel Level 3 Advanced GCE in Statistics 9ST0, Issue 2, January 2024; code 9ST0 confirmed there) and still need a person to check them.
+
+## Files
+
+- [01-statistical-enquiry-cycle.md](01-statistical-enquiry-cycle.md): The statistical enquiry cycle: planning, collecting, processing, interpreting and evaluating
+- [02-diagrams-summary-measures-and-outliers.md](02-diagrams-summary-measures-and-outliers.md): Diagrams, published visualisations, summary measures, outliers and technology
+- [03-probability-and-bayes-theorem.md](03-probability-and-bayes-theorem.md): Probability, conditional probability and Bayes' theorem
+- [04-populations-and-sampling.md](04-populations-and-sampling.md): Populations and samples: random and non-random sampling
+- [05-random-variables-binomial-and-normal.md](05-random-variables-binomial-and-normal.md): Random variables, the binomial and normal distributions, and choosing a model
+- [06-poisson-and-exponential-distributions.md](06-poisson-and-exponential-distributions.md): The Poisson and exponential distributions
+- [07-linear-combinations-of-random-variables.md](07-linear-combinations-of-random-variables.md): Linear combinations of independent random variables
+- [08-correlation-and-regression.md](08-correlation-and-regression.md): Correlation and linear regression
+- [09-hypothesis-testing-principles-and-one-sample-tests.md](09-hypothesis-testing-principles-and-one-sample-tests.md): Hypothesis testing: language, a proportion and a mean
+- [10-contingency-tables-and-goodness-of-fit.md](10-contingency-tables-and-goodness-of-fit.md): Chi-squared tests: contingency tables and goodness of fit
+- [11-non-parametric-and-paired-tests.md](11-non-parametric-and-paired-tests.md): Sign, Wilcoxon and paired t-tests
+- [12-experimental-design.md](12-experimental-design.md): Experimental design
+- [13-central-limit-theorem-and-confidence-intervals.md](13-central-limit-theorem-and-confidence-intervals.md): Sampling, the central limit theorem and confidence intervals
+- [14-errors-power-and-p-values.md](14-errors-power-and-p-values.md): Type I and Type II errors, power and p-values
+- [15-tests-for-two-means-and-two-proportions.md](15-tests-for-two-means-and-two-proportions.md): The t-test and tests for two means and two proportions
+- [16-analysis-of-variance.md](16-analysis-of-variance.md): Analysis of variance (one-way and two-way)
+- [17-effect-size.md](17-effect-size.md): Effect size and Cohen's d
+
+## Pearson Edexcel 9ST0
+
+| Ref | Content | Paper | Main file | Also see |
+| --- | --- | --- | --- | --- |
+| 1.1 | Interpret statistical diagrams, including published and multivariate visualisations | P1 | [02](02-diagrams-summary-measures-and-outliers.md) | [Maths 20](../maths/20-data-presentation-and-interpretation.md), [GCSE Stats 05](../../gcse/statistics/05-tables-and-pictorial-representations.md), [GCSE Stats 06](../../gcse/statistics/06-graphs-histograms-and-cumulative-frequency.md) |
+| 1.2 | Features of an appropriate representation; how misrepresentation occurs | P1 | [02](02-diagrams-summary-measures-and-outliers.md) | [Maths 20](../maths/20-data-presentation-and-interpretation.md) |
+| 1.3 | Justify a graphical representation; comment on published ones | P1 | [02](02-diagrams-summary-measures-and-outliers.md) | [Maths 20](../maths/20-data-presentation-and-interpretation.md) |
+| 1.4 | Compare data sets using diagrams and measures of location and spread | P1 | [02](02-diagrams-summary-measures-and-outliers.md) | [Maths 20](../maths/20-data-presentation-and-interpretation.md), [GCSE Stats 07](../../gcse/statistics/07-averages.md), [GCSE Stats 08](../../gcse/statistics/08-spread-outliers-and-skewness.md) |
+| 1.5 | Calculate measures by calculator and by hand | P1 | [02](02-diagrams-summary-measures-and-outliers.md) | [Maths 20](../maths/20-data-presentation-and-interpretation.md) |
+| 1.6 | Identify outliers by inspection and by calculation | P1 | [02](02-diagrams-summary-measures-and-outliers.md) | [Maths 20](../maths/20-data-presentation-and-interpretation.md) |
+| 1.7 | Decide the nature of outliers from the population and collection process | P1 | [02](02-diagrams-summary-measures-and-outliers.md) | [Maths 20](../maths/20-data-presentation-and-interpretation.md) |
+| 1.8 | Misrepresentation out of context or through misleading visualisation | P1 | [02](02-diagrams-summary-measures-and-outliers.md) | |
+| 2.1 | Set language and symbols in probability | P1 | [03](03-probability-and-bayes-theorem.md) | [Maths 21](../maths/21-probability.md) |
+| 2.2 | Tree diagrams, Venn diagrams and two-way tables | P1 | [03](03-probability-and-bayes-theorem.md) | [Maths 21](../maths/21-probability.md), [GCSE Stats 13](../../gcse/statistics/13-probability.md) |
+| 2.3 | Single, independent, mutually exclusive and conditional probabilities | P1 | [03](03-probability-and-bayes-theorem.md) | [Maths 21](../maths/21-probability.md) |
+| 2.4 | Addition and multiplication laws, conditional probability | P1 | [03](03-probability-and-bayes-theorem.md) | [Maths 21](../maths/21-probability.md) |
+| 2.5 | Decide whether two events are independent | P1 | [03](03-probability-and-bayes-theorem.md) | [Maths 21](../maths/21-probability.md) |
+| 3.1 | Simple (without replacement) and unrestricted (with replacement) random samples | P1 | [04](04-populations-and-sampling.md) | [Maths 19](../maths/19-statistical-sampling.md) |
+| 3.2 | Random samples from random number tables or a calculator | P1 | [04](04-populations-and-sampling.md) | [Maths 19](../maths/19-statistical-sampling.md), [GCSE Stats 03](../../gcse/statistics/03-population-and-sampling.md) |
+| 3.3 | Random and non-random methods: simple random, systematic, cluster, judgmental, snowball, stratification | P1 | [04](04-populations-and-sampling.md) | [Maths 19](../maths/19-statistical-sampling.md) |
+| 3.4 | Advantages and limitations of sampling methods | P1 | [04](04-populations-and-sampling.md) | [Maths 19](../maths/19-statistical-sampling.md) |
+| 3.5 | Reasoned choice of method in context | P1 | [04](04-populations-and-sampling.md) | |
+| 3.6 | Practical constraints on collecting unbiased data | P1 | [04](04-populations-and-sampling.md) | [GCSE Stats 04](../../gcse/statistics/04-collecting-and-cleaning-data.md) |
+| 4.1 | Terms for variability: random, discrete, continuous, dependent, independent | P1 | [05](05-random-variables-binomial-and-normal.md) | |
+| 4.2 | Probabilities, expected values, variances and standard deviations of discrete distributions | P1 | [05](05-random-variables-binomial-and-normal.md) | [Further Maths 30](../further-maths/30-discrete-random-variables.md) |
+| 4.3 | Discrete random variables as models | P1 | [05](05-random-variables-binomial-and-normal.md) | [Maths 22](../maths/22-statistical-distributions.md) |
+| 4.4 | Properties of a continuous distribution | P1 | [05](05-random-variables-binomial-and-normal.md) | [Further Maths 35](../further-maths/35-continuous-random-variables.md) |
+| 4.5 | Interpret graphs or tables of discrete random variables | P1 | [05](05-random-variables-binomial-and-normal.md) | |
+| 4.6 | Interpret rectilinear graphs of continuous (uniform) distributions | P1 | [05](05-random-variables-binomial-and-normal.md) | [Further Maths 35](../further-maths/35-continuous-random-variables.md) |
+| 5.1 | When a binomial model is appropriate | P1 | [05](05-random-variables-binomial-and-normal.md) | [Maths 22](../maths/22-statistical-distributions.md) |
+| 5.2 | Binomial probabilities by formula, tables and calculator | P1 | [05](05-random-variables-binomial-and-normal.md) | [Maths 22](../maths/22-statistical-distributions.md) |
+| 5.3 | Mean and variance of the binomial | P1 | [05](05-random-variables-binomial-and-normal.md) | [Further Maths 30](../further-maths/30-discrete-random-variables.md) |
+| 6.1 | Properties of the normal distribution; sample variation | P1 | [05](05-random-variables-binomial-and-normal.md) | [Maths 22](../maths/22-statistical-distributions.md) |
+| 6.2 | About 2/3, 95% and 99.8% within 1, 2 and 3 standard deviations | P1 | [05](05-random-variables-binomial-and-normal.md) | [Maths 22](../maths/22-statistical-distributions.md) |
+| 6.3 | Normal probabilities and unknown parameters | P1 | [05](05-random-variables-binomial-and-normal.md) | [Maths 22](../maths/22-statistical-distributions.md) |
+| 6.4 | Normal models of real situations | P1 | [05](05-random-variables-binomial-and-normal.md) | [Maths 22](../maths/22-statistical-distributions.md) |
+| 6.5 | The sample mean of a normal variable is normal | P1 | [05](05-random-variables-binomial-and-normal.md) | [Further Maths 37](../further-maths/37-sampling-estimation-and-central-limit-theorem.md) |
+| 6.6 | Normal approximation to the binomial, with continuity correction | P1 | [05](05-random-variables-binomial-and-normal.md) | [Maths 22](../maths/22-statistical-distributions.md) |
+| 7.1 | Calculate and interpret Spearman's and Pearson's coefficients | P1 | [08](08-correlation-and-regression.md) | [Further Maths 40](../further-maths/40-correlation-and-regression.md), [Maths 20](../maths/20-data-presentation-and-interpretation.md) |
+| 7.2 | Use tables to test a correlation coefficient | P2 | [08](08-correlation-and-regression.md) | [Further Maths 40](../further-maths/40-correlation-and-regression.md), [Maths 23](../maths/23-hypothesis-testing.md) |
+| 7.3 | Conditions for each coefficient; choosing an approach | P1 | [08](08-correlation-and-regression.md) | [Further Maths 40](../further-maths/40-correlation-and-regression.md) |
+| 7.4 | Least squares regression line, interpolation, extrapolation and residuals | P1 | [08](08-correlation-and-regression.md) | [Further Maths 40](../further-maths/40-correlation-and-regression.md) |
+| 8.1 | Parameter, statistic, unbiased, standard error | P2 | [09](09-hypothesis-testing-principles-and-one-sample-tests.md) | [Further Maths 37](../further-maths/37-sampling-estimation-and-central-limit-theorem.md) |
+| 8.2 | Language of hypothesis testing, including p-values | P2 | [09](09-hypothesis-testing-principles-and-one-sample-tests.md) | [Maths 23](../maths/23-hypothesis-testing.md) |
+| 8.3 | A sample is used to infer about a population; random samples and conditions | P2 | [09](09-hypothesis-testing-principles-and-one-sample-tests.md) | [Maths 23](../maths/23-hypothesis-testing.md) |
+| 8.4 | Choose the appropriate test | P2 | [09](09-hypothesis-testing-principles-and-one-sample-tests.md) | |
+| 8.5 | Test a binomial proportion, exactly or by a normal approximation | P2 | [09](09-hypothesis-testing-principles-and-one-sample-tests.md) | [Maths 23](../maths/23-hypothesis-testing.md) |
+| 8.6 | Test the mean of a normal distribution with known variance, large sample | P2 | [09](09-hypothesis-testing-principles-and-one-sample-tests.md) | [Maths 23](../maths/23-hypothesis-testing.md) |
+| 8.7 | Sampling and critiquing conclusions of a test | P2 | [09](09-hypothesis-testing-principles-and-one-sample-tests.md) | |
+| 9.1 | Construct and interpret contingency tables, combining data | P2 | [10](10-contingency-tables-and-goodness-of-fit.md) | [Further Maths 34](../further-maths/34-chi-squared-tests.md) |
+| 9.2 | Chi-squared test for independence, degrees of freedom | P2 | [10](10-contingency-tables-and-goodness-of-fit.md) | [Further Maths 34](../further-maths/34-chi-squared-tests.md) |
+| 9.3 | Expected frequencies at least 5; combining classes | P2 | [10](10-contingency-tables-and-goodness-of-fit.md) | [Further Maths 34](../further-maths/34-chi-squared-tests.md) |
+| 10.1 | Sign and Wilcoxon signed-rank tests: one median and paired data | P2 | [11](11-non-parametric-and-paired-tests.md) | [Further Maths 41](../further-maths/41-non-parametric-tests.md) |
+| 10.2 | Wilcoxon rank-sum test for two independent samples | P2 | [11](11-non-parametric-and-paired-tests.md) | [Further Maths 41](../further-maths/41-non-parametric-tests.md) |
+| 11.1 | Conditional probability and Bayes' theorem for up to three events | P1 | [03](03-probability-and-bayes-theorem.md) | [Maths 21](../maths/21-probability.md) |
+| 12.1 | Use and validity of binomial, normal, Poisson and exponential models | P1 | [05](05-random-variables-binomial-and-normal.md), [06](06-poisson-and-exponential-distributions.md) | [Maths 22](../maths/22-statistical-distributions.md) |
+| 12.2 | Mean and variance of linear combinations of independent random variables | P1 | [07](07-linear-combinations-of-random-variables.md) | [Further Maths 36](../further-maths/36-linear-combinations-of-random-variables.md) |
+| 12.3 | Probabilities for linear combinations of independent normal variables | P1 | [07](07-linear-combinations-of-random-variables.md) | [Further Maths 36](../further-maths/36-linear-combinations-of-random-variables.md) |
+| 13.1 | Experimental error, randomisation, replication, control groups, blind and double blind trials | P1, P2 | [12](12-experimental-design.md) | [GCSE Stats 04](../../gcse/statistics/04-collecting-and-cleaning-data.md) |
+| 13.2 | Paired comparisons and blocking to reduce experimental error | P1, P2 | [12](12-experimental-design.md) | |
+| 13.3 | Completely randomised and randomised block designs | P1, P2 | [12](12-experimental-design.md) | |
+| 14.1 | Parameter, statistic, unbiased, standard error | P2 | [13](13-central-limit-theorem-and-confidence-intervals.md), [09](09-hypothesis-testing-principles-and-one-sample-tests.md) | [Further Maths 37](../further-maths/37-sampling-estimation-and-central-limit-theorem.md) |
+| 14.2 | The central limit theorem for a large sample from a non-normal population | P2 | [13](13-central-limit-theorem-and-confidence-intervals.md) | [Further Maths 37](../further-maths/37-sampling-estimation-and-central-limit-theorem.md) |
+| 15.1 | Confidence intervals for a mean using z or t | P2 | [13](13-central-limit-theorem-and-confidence-intervals.md) | [Further Maths 38](../further-maths/38-confidence-intervals-and-tests-for-means.md) |
+| 15.2 | Sample size and the width of a confidence interval | P2 | [13](13-central-limit-theorem-and-confidence-intervals.md) | |
+| 15.3 | Strength of conclusions, misreporting, and power | P2 | [14](14-errors-power-and-p-values.md) | [Further Maths 32](../further-maths/32-hypothesis-tests-errors-and-power.md) |
+| 15.4 | Changing sample size to gather evidence | P2 | [14](14-errors-power-and-p-values.md) | |
+| 15.5 | Type I and Type II errors in context | P2 | [14](14-errors-power-and-p-values.md) | [Further Maths 32](../further-maths/32-hypothesis-tests-errors-and-power.md) |
+| 15.6 | The risk of a Type II error; power | P2 | [14](14-errors-power-and-p-values.md) | [Further Maths 32](../further-maths/32-hypothesis-tests-errors-and-power.md) |
+| 15.7 | Critical regions or p-values | P2 | [14](14-errors-power-and-p-values.md) | [Maths 23](../maths/23-hypothesis-testing.md) |
+| 16.1 | t-test for the mean of a normal distribution, variance unknown | P2 | [15](15-tests-for-two-means-and-two-proportions.md) | [Further Maths 38](../further-maths/38-confidence-intervals-and-tests-for-means.md) |
+| 16.2 | Difference of two means, known variances | P2 | [15](15-tests-for-two-means-and-two-proportions.md) | [Further Maths 38](../further-maths/38-confidence-intervals-and-tests-for-means.md) |
+| 16.3 | Difference of two means, unknown equal variances (pooled t) | P2 | [15](15-tests-for-two-means-and-two-proportions.md) | [Further Maths 38](../further-maths/38-confidence-intervals-and-tests-for-means.md) |
+| 16.4 | Difference between two binomial proportions | P2 | [15](15-tests-for-two-means-and-two-proportions.md) | |
+| 16.5 | Interpret these tests in context | P2 | [15](15-tests-for-two-means-and-two-proportions.md) | |
+| 17.1 | Sign, Wilcoxon signed-rank or paired t-test: selection and interpretation | P2 | [11](11-non-parametric-and-paired-tests.md) | [Further Maths 38](../further-maths/38-confidence-intervals-and-tests-for-means.md), [Further Maths 41](../further-maths/41-non-parametric-tests.md) |
+| 18.1 | When a Poisson model is appropriate | P1 | [06](06-poisson-and-exponential-distributions.md) | [Further Maths 31](../further-maths/31-poisson-geometric-and-negative-binomial-distributions.md) |
+| 18.2 | When an exponential model is appropriate; link to the Poisson | P1 | [06](06-poisson-and-exponential-distributions.md) | [Further Maths 35](../further-maths/35-continuous-random-variables.md) |
+| 18.3 | Poisson and exponential probabilities, means and variances | P1 | [06](06-poisson-and-exponential-distributions.md) | [Further Maths 31](../further-maths/31-poisson-geometric-and-negative-binomial-distributions.md), [Further Maths 35](../further-maths/35-continuous-random-variables.md) |
+| 19.1 | Goodness of fit for binomial, Poisson, normal, exponential or a given discrete distribution | P2 | [10](10-contingency-tables-and-goodness-of-fit.md) | [Further Maths 34](../further-maths/34-chi-squared-tests.md) |
+| 20.1 | One-way ANOVA, completely randomised design | P2 | [16](16-analysis-of-variance.md) | |
+| 20.2 | Two-way ANOVA without replication, randomised block design | P2 | [16](16-analysis-of-variance.md) | |
+| 20.3 | ANOVA assumptions and interpretation | P2 | [16](16-analysis-of-variance.md) | |
+| 21.1 | Effect size alongside significance testing | P2 | [17](17-effect-size.md) | |
+| 21.2 | Cohen's d | P2 | [17](17-effect-size.md) | |
+| SEC A1 | Factors related to the problem | All | [01](01-statistical-enquiry-cycle.md) | [GCSE Stats 01](../../gcse/statistics/01-statistical-enquiry-cycle-and-planning.md) |
+| SEC A2 | Define a question or hypothesis | All | [01](01-statistical-enquiry-cycle.md) | [GCSE Stats 01](../../gcse/statistics/01-statistical-enquiry-cycle-and-planning.md) |
+| SEC A3 | Decide what data to collect, and how, with reasons | All | [01](01-statistical-enquiry-cycle.md) | [GCSE Stats 01](../../gcse/statistics/01-statistical-enquiry-cycle-and-planning.md) |
+| SEC A4 | Exploratory data analysis | All | [01](01-statistical-enquiry-cycle.md) | |
+| SEC A5 | Strategy for processing and representing data | All | [01](01-statistical-enquiry-cycle.md) | |
+| SEC A6 | Justify the plan: avoiding bias | All | [01](01-statistical-enquiry-cycle.md) | |
+| SEC B1 | Unbiased collection of primary data | All | [01](01-statistical-enquiry-cycle.md) | [GCSE Stats 04](../../gcse/statistics/04-collecting-and-cleaning-data.md) |
+| SEC B2 | Secondary data from publications, the internet and the media | All | [01](01-statistical-enquiry-cycle.md) | [GCSE Stats 04](../../gcse/statistics/04-collecting-and-cleaning-data.md) |
+| SEC B3 | Declaring methodology and acknowledging sources | All | [01](01-statistical-enquiry-cycle.md) | |
+| SEC B4 | Bias from leading questions, accidental or agenda-driven | All | [01](01-statistical-enquiry-cycle.md) | [GCSE Stats 04](../../gcse/statistics/04-collecting-and-cleaning-data.md) |
+| SEC C1 | Organising and processing data, including technology | All | [01](01-statistical-enquiry-cycle.md), [02](02-diagrams-summary-measures-and-outliers.md) | |
+| SEC C2 | Inferences from diagrams, summary measures and technology outputs | All | [01](01-statistical-enquiry-cycle.md), [02](02-diagrams-summary-measures-and-outliers.md) | |
+| SEC C3 | Avoiding misrepresentation | All | [01](01-statistical-enquiry-cycle.md), [02](02-diagrams-summary-measures-and-outliers.md) | |
+| SEC D1 | Analysing and interpreting diagrams and measures | All | [01](01-statistical-enquiry-cycle.md) | |
+| SEC D2 | Conclusions that answer the questions and hypotheses | All | [01](01-statistical-enquiry-cycle.md) | |
+| SEC D3 | Tests for statistical significance | All | [01](01-statistical-enquiry-cycle.md) | [09](09-hypothesis-testing-principles-and-one-sample-tests.md) |
+| SEC D4 | Reliability of findings | All | [01](01-statistical-enquiry-cycle.md) | |
+| SEC D5 | Clear, concise communication for the audience | All | [01](01-statistical-enquiry-cycle.md) | |
+| SEC E1 | Weaknesses in collection or display | All | [01](01-statistical-enquiry-cycle.md) | |
+| SEC E2 | Limitations from sample size and sampling technique | All | [01](01-statistical-enquiry-cycle.md) | |
+| SEC E3 | Improvements to processes or presentation | All | [01](01-statistical-enquiry-cycle.md) | |
+| SEC E4 | Refining processes to clarify the hypothesis | All | [01](01-statistical-enquiry-cycle.md) | |
+| App4 | Calculators, spreadsheets, databases and graph-plotting outputs | All | [02](02-diagrams-summary-measures-and-outliers.md) | |
