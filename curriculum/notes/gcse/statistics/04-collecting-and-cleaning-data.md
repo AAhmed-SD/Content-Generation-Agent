@@ -238,9 +238,10 @@ A table shows Year 10 students' choices.
 
 Find the error.
 
-1. Girls row: 21 + 17 + 14 = 52, not 50.
-2. Totals column: 39 + 50 = 89, which matches the grand total. Art column: 18 + 21 = 39 ✓. Music: 12 + 17 = 29 ✓. Drama: 9 + 14 = 23 ✓.
-3. Column totals add to 39 + 29 + 23 = 91, not 89. So the girls' total should be 52 and the grand total 91. The error is in the girls' total.
+1. Boys row: 18 + 12 + 9 = 39 ✓.
+2. Girls row: 21 + 17 + 14 = 52, not 50 ✗.
+3. Columns: Art 18 + 21 = 39 ✓, Music 12 + 17 = 29 ✓, Drama 9 + 14 = 23 ✓, and 39 + 29 + 23 = 91.
+4. So the girls' total should be 52 and the grand total 91. The 89 was found by adding the wrong girls' total, 39 + 50, which is why it looked consistent down the Total column.
 
 ### Common mistakes
 
