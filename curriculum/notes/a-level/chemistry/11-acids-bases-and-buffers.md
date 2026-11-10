@@ -279,7 +279,7 @@ Because both [HA] and [A⁻] are large, their ratio changes little, so pH change
 
 ## Mark scheme
 
-1. HNO₃ / NO₃⁻ is not a pair here: HNO₃ (base) and H₂NO₃⁺ (acid) (1); H₂SO₄ (acid) and HSO₄⁻ (base) (1).
+1. HNO₃ (base) and H₂NO₃⁺ (its conjugate acid) (1); H₂SO₄ (acid) and HSO₄⁻ (its conjugate base) (1). Here HNO₃ acts as a base because it accepts a proton.
 2. [OH⁻] = 0.0700 (1); [H⁺] = 1.43 × 10⁻¹³, pH = 12.85 (1).
 3. [H⁺] = √(2.92 × 10⁻¹⁴) = 1.71 × 10⁻⁷ (1); pH = 6.77 (1); [H⁺] = [OH⁻] (1).
 4. [H⁺] = √(1.35 × 10⁻⁵ × 0.150) = 1.42 × 10⁻³ (1); pH = 2.85 (1).
