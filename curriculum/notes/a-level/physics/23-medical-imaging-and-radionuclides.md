@@ -405,6 +405,11 @@ X-rays of several MeV (from a linear accelerator) penetrate deep into the body a
 
 High-energy X-rays deposit their maximum dose below the skin surface, sparing the skin.
 
+### Common mistakes
+
+- Saying radiotherapy uses gamma cameras.
+- Saying one large dose is safer than many small (fractionated) doses.
+
 ## 3.10.6.5 Use of radioactive implants
 
 *Refs: AQA 3.10.6.5. Level: A-level only.*
@@ -416,6 +421,10 @@ High-energy X-rays deposit their maximum dose below the skin surface, sparing th
 ### Explained
 
 In brachytherapy, small sealed sources (seeds or wires) emitting beta particles (or low-energy gamma) are placed inside or next to a tumour, e.g. iodine-125 seeds in the prostate, or a source in the cervix. Beta particles have a short range (a few mm in tissue), so they deliver a high dose to the tumour while healthy tissue further away receives very little. The implant is either removed after a set time or left in place if its half-life is short. Iodine-131 taken by mouth is concentrated in the thyroid, where its beta radiation destroys thyroid cancer cells.
+
+### Common mistakes
+
+- Saying gamma emitters are used as implants because they have a short range (beta has the short range).
 
 ## 3.10.6.6 Imaging comparisons
 
@@ -437,6 +446,11 @@ In brachytherapy, small sealed sources (seeds or wires) emitting beta particles 
 | Gamma camera / PET | Poor (5 to 10 mm; PET about 4 mm) | Slow, expensive (PET needs a cyclotron) | Ionising; dose from tracer |
 
 The choice depends on what needs to be seen: anatomy (structure) or function (metabolism), bone or soft tissue, and the risks to the patient (e.g. ultrasound for a fetus).
+
+### Common mistakes
+
+- Choosing CT for a fetus (ultrasound is used, as it is non-ionising).
+- Saying gamma camera images have better resolution than CT.
 
 ## Dose and effects of radiation (Eduqas)
 
@@ -461,6 +475,11 @@ The choice depends on what needs to be seen: anatomy (structure) or function (me
 1. A 2.0 kg organ (W_T = 0.12) absorbs 3.0 × 10⁻³ J of γ radiation. Find the absorbed, equivalent and effective doses.
 
    D = 1.5 × 10⁻³ Gy; H = 1.5 mSv; E = 0.18 mSv.
+
+### Common mistakes
+
+- Confusing absorbed dose (Gy) with equivalent or effective dose (Sv).
+- Forgetting the radiation weighting factor of 20 for alpha.
 
 ## Check questions
 

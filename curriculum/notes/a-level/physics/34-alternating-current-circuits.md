@@ -50,6 +50,10 @@ The r.m.s. value is the d.c. value that would dissipate the same mean power in a
 
    ω = 314 rad s⁻¹. V₀ = 314 × 0.080 × 0.012 × 200 = 60 V. V_rms = 43 V.
 
+### Common mistakes
+
+- Using peak values in P = IV for mean power.
+
 ## OA(h) to (k) Inductors and capacitors in a.c. circuits
 
 *Refs: Eduqas OA(h), (i), (j), (k). Level: A-level only.*
@@ -77,6 +81,11 @@ The r.m.s. value is the d.c. value that would dissipate the same mean power in a
 2. A 230 V r.m.s., 50 Hz supply is connected across the capacitor alone. Find the r.m.s. current.
 
    I = 230/318 = 0.72 A.
+
+### Common mistakes
+
+- Saying the current lags the p.d. in a capacitor (it leads).
+- Saying reactance is the same at all frequencies.
 
 ## OA(l), (m) Phasors and impedance in RC, RL and RCL circuits
 
@@ -111,6 +120,11 @@ Phase angle between supply p.d. and current: tan φ = (X_L − X_C)/R. If X_L > 
 1. A 100 Ω resistor and a 10 μF capacitor are in series across 12 V r.m.s. at 200 Hz. Find Z, the current and the phase angle.
 
    X_C = 1/(2π × 200 × 10⁻⁵) = 79.6 Ω. Z = √(100² + 79.6²) = 128 Ω. I = 12/128 = 0.094 A. tan φ = 79.6/100, φ = 38.5° (current leads the supply p.d.).
+
+### Common mistakes
+
+- Adding V_R, V_L and V_C arithmetically.
+- Taking the phase angle from Z instead of from tan φ = (X_L − X_C)/R.
 
 ## OA(n) to (p) Series resonance and Q factor
 

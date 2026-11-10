@@ -244,6 +244,11 @@ A torque T turning through angle θ does work W = Tθ (from W = Fs with s = rθ)
 
    α = 1.5 rad s⁻²; T = 7.5 N m. θ = ½ × 120 × 80 = 4800 rad. Check: W = Tθ = 36 000 J = ½ × 5.0 × 120².
 
+### Common mistakes
+
+- Using ω in rpm in P = Tω.
+- Forgetting frictional torque when finding the output of a machine.
+
 ## The physics of sports (Eduqas option C)
 
 *Refs: Eduqas OC(a), (b), (c), (d), (m), (n), (o). Level: A-level only.*

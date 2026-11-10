@@ -75,6 +75,11 @@ AS & A for every board. Errors and uncertainties are in file 01; each practical'
 
 **Science and society** (Edexcel 6 to 8). New results are published in journals after peer review (checking by independent experts), then accepted only when others reproduce them. Examples: the discovery of the Higgs boson (two independent detectors), the faster-than-light neutrino claim (2011), withdrawn when a faulty cable was found. Societies use scientific evidence (and its uncertainty) to decide on nuclear power, medical imaging doses, climate policy and mobile phone masts, weighing benefits against risks.
 
+### Common mistakes
+
+- Listing variables without saying how the control variables are kept constant.
+- Writing 'repeat to make it more accurate' (repeating improves precision; reduces random error).
+
 ## Implementing: apparatus and techniques
 
 *Refs: AQA ATa to ATk · OCR A 1.1.2, 1.2.1(b) to (g), (j), 1.2.2(a) to (l) · OCR B 1.1.2, 1.2.2 · Edexcel 2. Level: AS & A.*
@@ -111,6 +116,11 @@ The standard techniques that every board expects you to have used.
 
 **Recording data.** Tables with headings showing quantity and unit (e.g. "t / s"), consistent decimal places matching the instrument's resolution, raw data and processed data in separate columns.
 
+### Common mistakes
+
+- Recording readings to more decimal places than the instrument's resolution.
+- Timing a single oscillation.
+
 ## Analysis
 
 *Refs: OCR A 1.1.3(a) to (d) · OCR B 1.1.3 · AQA PS3 · Edexcel 2. Level: AS & A.*
@@ -146,6 +156,11 @@ The standard techniques that every board expects you to have used.
 
 **Significant figures.** Give results to the same number of significant figures as the least precise data (file 01).
 
+### Common mistakes
+
+- Using data points that are not on the line to find a gradient.
+- Using a small triangle for the gradient.
+
 ## Evaluation
 
 *Refs: OCR A 1.1.4(a) to (e) · OCR B 1.1.4 · AQA PS2, PS4. Level: AS & A.*
@@ -161,6 +176,11 @@ The standard techniques that every board expects you to have used.
 - **Anomalies**: points far from the line; suggest a cause and repeat them.
 - **Limitations and improvements**: identify the largest source of uncertainty and suggest a specific, practical improvement (e.g. "use a light gate instead of a stopwatch to remove reaction-time errors"), not "be more careful".
 - **Systematic errors**: a non-zero intercept where theory predicts zero suggests one (zero error, end correction).
+
+### Common mistakes
+
+- Suggesting vague improvements such as 'be more careful'.
+- Calling a result accurate because it is precise.
 
 ## Required, core and specified practicals: where to find them
 

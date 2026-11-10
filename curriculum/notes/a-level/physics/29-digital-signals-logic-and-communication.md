@@ -190,6 +190,10 @@ The timing is set by charging and discharging a capacitor through resistors (fil
 
    T = 4.0 ms, f = 250 Hz. Mark : space = 3 : 1. Duty cycle = 75%.
 
+### Common mistakes
+
+- Confusing duty cycle (mark ÷ period) with mark-to-space ratio (mark ÷ space).
+
 ## 3.13.6.1 Principles of communication systems
 
 *Refs: AQA 3.13.6.1. Level: A-level only.*
@@ -212,6 +216,10 @@ A typical system (e.g. a digital phone call):
 8. **Demodulator / demultiplexer**: separates the signals and removes the carrier.
 9. **DAC**: converts back to analogue.
 10. **Amplifier and output transducer** (loudspeaker).
+
+### Common mistakes
+
+- Putting the ADC after the modulator in a block diagram.
 
 ## 3.13.6.2 Transmission media
 
@@ -240,6 +248,11 @@ A typical system (e.g. a digital phone call):
 
 **Satellites.** Geostationary satellites (file 14) relay TV and communications at microwave frequencies (GHz, e.g. uplink 6 GHz and downlink 4 GHz, or 14/11 GHz). The uplink and downlink frequencies are different, so that the strong signal the satellite transmits does not swamp (desensitise) its own very sensitive receiver. Low-orbit satellite networks give lower signal delay.
 
+### Common mistakes
+
+- Saying sky waves are reflected by the ground only (they are refracted back by the ionosphere).
+- Saying satellites use the same frequency for uplink and downlink.
+
 ## 3.13.6.3 Time-division multiplexing
 
 *Refs: AQA 3.13.6.3. Level: A-level only.*
@@ -251,6 +264,10 @@ A typical system (e.g. a digital phone call):
 ### Explained
 
 Several digital signals share one channel by taking turns. The channel is divided into repeating time slots; each signal is given a slot in every frame, and sends its bits (or a sample) then. At the receiver, a demultiplexer synchronised to the same timing separates the slots back into the original signals. The channel's bit rate must be at least the sum of the bit rates of all the signals. TDM is used in phone networks and digital broadcasting.
+
+### Common mistakes
+
+- Saying signals are sent at the same time in TDM (they take turns in time slots).
 
 ## 3.13.6.4 Amplitude (AM) and frequency modulation (FM) techniques
 
@@ -293,6 +310,11 @@ Several digital signals share one channel by taking turns. The channel is divide
 2. An FM station has Δf = 75 kHz and audio up to 15 kHz. Find its bandwidth.
 
    2(75 + 15) = 180 kHz.
+
+### Common mistakes
+
+- Saying FM varies the amplitude.
+- Using bandwidth = f_M for AM (it is 2f_M).
 
 ## Check questions
 

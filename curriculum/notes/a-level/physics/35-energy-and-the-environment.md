@@ -60,6 +60,10 @@ The actual average surface temperature is about 288 K (15 °C). The difference i
 
    T ∝ (1 − albedo)^(1/4): 255 × (0.72/0.70)^(1/4) = 255 × 1.0071 = 256.8 K (about 2 K warmer).
 
+### Common mistakes
+
+- Using the Earth's surface area 4πR² for the absorbed power (the Earth intercepts sunlight over πR²).
+
 ## OD(b) Energy resources
 
 *Refs: Eduqas OD(b)(i) to (iv). Level: A-level only.*
@@ -110,6 +114,10 @@ The actual average surface temperature is about 288 K (15 °C). The difference i
 
    Input = 1280 W; efficiency = 0.17.
 
+### Common mistakes
+
+- Saying pumped storage generates energy (it stores it).
+
 ## OD(c) Fuel cells
 
 *Refs: Eduqas OD(c). Level: A-level only.*
@@ -123,6 +131,10 @@ The actual average surface temperature is about 288 K (15 °C). The difference i
 A hydrogen fuel cell converts chemical energy directly into electrical energy, without burning. Hydrogen is fed to the anode, where a catalyst (platinum) splits it into protons and electrons: H₂ → 2H⁺ + 2e⁻. The protons pass through an electrolyte membrane; the electrons cannot, so they flow through the external circuit as a current. At the cathode, oxygen combines with the protons and electrons to make water: O₂ + 4H⁺ + 4e⁻ → 2H₂O.
 
 Benefits: the only product is water, so there are no CO₂ or other pollutant emissions at the point of use; more efficient (about 40 to 60%) than combustion engines, since there is no heat-engine limit; quiet; can run continuously while fuel is supplied. Drawbacks: hydrogen must be produced (often from natural gas, which does release CO₂, unless made by electrolysis using renewable electricity), stored and transported safely; catalysts are expensive.
+
+### Common mistakes
+
+- Saying fuel cells burn hydrogen.
 
 ## OD(d), (e) Thermal conduction and insulation
 

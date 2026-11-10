@@ -111,6 +111,11 @@ This relation also holds relativistically (with p the relativistic momentum), wh
 
    p = BQr = 1.5 × 1.60 × 10⁻¹⁹ × 0.40 = 9.6 × 10⁻²⁰ kg m s⁻¹ (≈ 180 MeV/c).
 
+### Common mistakes
+
+- Using the mass in place of the momentum when comparing track radii.
+- Getting the curvature direction wrong for negative particles.
+
 ## Detectors and particle tracks
 
 *Refs: Edexcel 133, 135. Level: A-level only.*
@@ -140,6 +145,11 @@ This relation also holds relativistically (with p the relativistic momentum), wh
 
 **Calorimeters** measure energy by absorbing the particles completely; muon detectors (on the outside) catch muons, which pass through everything else.
 
+### Common mistakes
+
+- Saying neutral particles leave tracks.
+- Forgetting that momentum is a vector when balancing at a vertex.
+
 ## Why high energies are needed
 
 *Refs: Edexcel 136. Level: A-level only.*
@@ -161,6 +171,10 @@ Colliding beams (two beams in opposite directions) make all the energy available
 1. Estimate the energy of electrons needed to have a de Broglie wavelength of 1.0 × 10⁻¹⁶ m.
 
    p = h/λ = 6.6 × 10⁻¹⁸ kg m s⁻¹. At these energies E ≈ pc = 2.0 × 10⁻⁹ J ≈ 12 GeV.
+
+### Common mistakes
+
+- Saying higher energy gives a longer de Broglie wavelength.
 
 ## Check questions
 

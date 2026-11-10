@@ -104,6 +104,10 @@ A photodiode is a p–n junction with a window. Photons with enough energy (abov
 
 **With a scintillator.** A scintillator crystal produces a flash of light when a particle (or gamma photon) passes through it; a photodiode behind it converts each flash into a current pulse, so particles can be counted and their energy measured (pulse size).
 
+### Common mistakes
+
+- Saying a photodiode is forward biased in photoconductive mode.
+
 ## 3.13.1.4 Hall effect sensor
 
 *Refs: AQA 3.13.1.4. Level: A-level only.*
@@ -120,6 +124,10 @@ A Hall sensor gives an output p.d. proportional to the component of magnetic flu
 
 - **Attitude (orientation) monitoring.** Fixed to a spacecraft, aircraft or phone, Hall sensors measure the components of the Earth's magnetic field along different axes, so the orientation can be worked out (an electronic compass).
 - **Tachometer.** A small magnet is fixed to a rotating shaft or wheel; each time it passes the Hall sensor, the sensor gives a pulse. Counting pulses per second gives the rotation rate (e.g. car engine speed, bicycle speedometer, wheel speed for anti-lock braking). No contact, so no wear.
+
+### Common mistakes
+
+- Saying the Hall sensor needs to touch the rotating shaft.
 
 ## 3.13.3.1 LC resonance filters
 
@@ -189,6 +197,11 @@ An op-amp is an integrated circuit amplifier with two inputs, non-inverting (V�
 
    2.0 × 10⁵ × 0.001 = 200 V, so the output saturates at about +12 V (in practice slightly less).
 
+### Common mistakes
+
+- Expecting the open-loop output to be larger than the supply voltage.
+- Saying current flows into the input terminals of an ideal op-amp.
+
 ## 3.13.4.1 Inverting amplifier configuration
 
 *Refs: AQA 3.13.4.1. Level: A-level only.*
@@ -216,6 +229,11 @@ The minus sign shows the output is inverted (180° out of phase). The gain depen
 
    Gain = −15. V_out = −3.0 V. For 1.5 V: −22.5 V would exceed the supply, so the output saturates at about −13 to −15 V (clipped).
 
+### Common mistakes
+
+- Saying the virtual earth is connected to 0 V.
+- Forgetting the minus sign (the output is inverted).
+
 ## 3.13.4.2 Non-inverting amplifier configuration
 
 *Refs: AQA 3.13.4.2. Level: A-level only.*
@@ -233,6 +251,11 @@ The signal goes directly to V⁺. A potential divider of R_f (from output to V�
 1. R_f = 47 kΩ, R₁ = 3.3 kΩ. Find the gain.
 
    1 + 47/3.3 = 15.2.
+
+### Common mistakes
+
+- Writing the gain as R_f/R₁ (it is 1 + R_f/R₁).
+- Saying the output is inverted.
 
 ## 3.13.4.3 Summing amplifier and difference amplifier configurations
 
@@ -258,6 +281,10 @@ The signal goes directly to V⁺. A potential divider of R_f (from output to V�
 2. A difference amplifier with R_f/R₁ = 100 has V⁺ = 2.53 V and V⁻ = 2.50 V. Find V_out.
 
    (0.03) × 100 = 3.0 V.
+
+### Common mistakes
+
+- Forgetting the minus sign for the summing amplifier.
 
 ## 3.13.4.4 Real operational amplifiers
 
@@ -286,6 +313,10 @@ The signal goes directly to V⁺. A potential divider of R_f (from output to V�
 1. An op-amp has gain–bandwidth product 1.0 MHz. What is the maximum gain if the amplifier must handle frequencies up to 20 kHz?
 
    1.0 × 10⁶/2.0 × 10⁴ = 50.
+
+### Common mistakes
+
+- Saying feedback increases bandwidth without reducing gain (gain × bandwidth is constant).
 
 ## Check questions
 

@@ -83,6 +83,11 @@ In the 1800s, physicists believed light waves needed a medium, the aether, filli
 
 These lead to the conclusion that time intervals and lengths depend on the observer's frame. Because c is invariant, distance can be defined in terms of the time light takes to travel it (OCR B: radar ranging).
 
+### Common mistakes
+
+- Saying a frame moving at constant velocity is not inertial.
+- Saying the speed of light depends on the speed of the source.
+
 ## 3.12.3.3 Time dilation
 
 *Refs: AQA 3.12.3.3 · Edexcel 139 · OCR B 5.1.3(a)(ii). Level: A-level only.*

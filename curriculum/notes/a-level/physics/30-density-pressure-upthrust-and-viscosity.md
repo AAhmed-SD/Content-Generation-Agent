@@ -57,6 +57,11 @@ AS & A for Edexcel (49 to 52, CP4), OCR A (3.2.4, with 3.2.2 drag) and Eduqas (C
 
 Density is mass per unit volume: ρ = m/V. 1 g cm⁻³ = 1000 kg m⁻³. Water: 1000 kg m⁻³. Air: about 1.2 kg m⁻³. Aluminium: 2700 kg m⁻³. Iron: 7900 kg m⁻³.
 
+### Common mistakes
+
+- Using g cm⁻³ in a calculation that needs kg m⁻³.
+- Forgetting to subtract the starting reading when finding volume by displacement.
+
 ### Practical
 
 **Density of solids** (Eduqas specified practical). Regular solid: measure dimensions with vernier calipers (or a micrometer for small dimensions) at several places, calculate volume; measure mass on a top-pan balance. Irregular solid: lower it into a displacement (eureka) can full to the spout, and collect and measure the displaced water in a measuring cylinder; or use the difference in readings of a measuring cylinder before and after. Combine percentage uncertainties (file 01).

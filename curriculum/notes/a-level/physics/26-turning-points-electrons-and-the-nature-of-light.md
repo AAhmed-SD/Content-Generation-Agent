@@ -169,6 +169,10 @@ Measuring v₁ (time to fall between two marks on the eyepiece scale) gives r an
 
 **Why Newton's was preferred** (for about 100 years): Newton's great reputation (from his work on gravity and mechanics); light seemed to travel in straight lines with sharp shadows (diffraction of light is very small and hard to observe because λ is tiny); the speed of light in water could not yet be measured, so the two predictions could not be tested; the wave theory needed a medium (the "aether") to carry the waves through space; and Huygens's theory did not explain polarisation well at the time.
 
+### Common mistakes
+
+- Saying Newton's theory predicted light slows down in glass (it predicted light speeds up).
+
 ## 3.12.2.2 Significance of Young's double slits experiment
 
 *Refs: AQA 3.12.2.2 · Eduqas C3.2(e). Level: A-level only (Eduqas AS & A).*
@@ -183,6 +187,10 @@ Measuring v₁ (time to fall between two marks on the eyepiece scale) gives r an
 Young (1801) passed light from a single source through two narrow slits. Where light from the two slits overlapped, there were bright and dark fringes. Bright fringes: waves arrive in phase (constructive interference). Dark fringes: waves arrive in antiphase and cancel (destructive). Particles from two slits would simply add, giving two bright patches, never darkness where light from both arrives. Interference is a property of waves, so the experiment strongly supported the wave theory.
 
 Acceptance was slow: Newton's authority, criticism of Young's work, and the lack of a measurement of the speed of light in water. It was only after Fresnel's mathematical wave theory explained diffraction (1810s) and Foucault and Fizeau showed (1850) that light is slower in water than in air, as the wave theory predicted, that the wave theory was fully accepted.
+
+### Common mistakes
+
+- Saying Young's experiment was immediately accepted as proof of the wave theory.
 
 ## 3.12.2.3 Electromagnetic waves
 
@@ -213,6 +221,11 @@ This matched the measured speed of light, so he concluded that light is an elect
 
    c = 4dNf = 4 × 8630 × 720 × 12.6 = 3.13 × 10⁸ m s⁻¹.
 
+### Common mistakes
+
+- Saying Hertz measured the speed of light directly (he measured radio waves).
+- Mixing up ε₀ (electric fields) and μ₀ (magnetic fields).
+
 ## 3.12.2.4 The discovery of photoelectricity
 
 *Refs: AQA 3.12.2.4 · Edexcel 90. Level: A-level only (Edexcel AS & A).*
@@ -234,6 +247,10 @@ This matched the measured speed of light, so he concluded that light is an elect
 
 **Einstein (1905).** Light itself consists of quanta (photons), each of energy hf, and each photon is absorbed by one electron: hf = φ + Ek(max). This explained all the observations. Significance: electromagnetic radiation has a particle nature as well as a wave nature. Millikan's careful experiments (1916) confirmed Einstein's equation, and Einstein received the Nobel Prize for it.
 
+### Common mistakes
+
+- Saying Planck proposed photons (Einstein did; Planck quantised the oscillators' energy).
+
 ## 3.12.2.5 Wave–particle duality
 
 *Refs: AQA 3.12.2.5. Level: A-level only.*
@@ -254,6 +271,10 @@ Davisson and Germer (1927) fired low-energy electrons (tens of eV) at a nickel c
 1. Find the de Broglie wavelength of electrons accelerated through 54 V (as in Davisson and Germer).
 
    λ = 6.63 × 10⁻³⁴/√(2 × 9.11 × 10⁻³¹ × 1.60 × 10⁻¹⁹ × 54) = 6.63 × 10⁻³⁴/3.97 × 10⁻²⁴ = 1.67 × 10⁻¹⁰ m, similar to atomic spacing.
+
+### Common mistakes
+
+- Saying faster electrons give larger diffraction angles.
 
 ## 3.12.2.6 Electron microscopes
 
