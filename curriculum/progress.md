@@ -63,10 +63,11 @@ Streams run two at a time in the shared checkout (disk space allows no worktrees
 | A-level Chemistry | AQA 7405, Edexcel, OCR A and B, Eduqas A410QS | `notes/a-level/chemistry/` | Done |
 | A-level Physics | AQA 7408, Edexcel, OCR A and B, Eduqas A420QS | `notes/a-level/physics/` | Done |
 | A-level Computer Science | AQA 7517, OCR H446, Eduqas A500QS | `notes/a-level/computer-science/` | Done |
-| AQA GCSE Combined Science: Synergy | 8465 | | In progress |
-| Other boards' GCSE sciences | Edexcel, OCR A and B, Eduqas | | In progress |
-| A-level Statistics | Edexcel 9ST0 | | Later |
-| Smaller STEM | see above | | Later |
+| AQA GCSE Combined Science: Synergy | 8465 | `notes/gcse/aqa-synergy/` (maps onto the AQA sciences) | Done |
+| Other boards' GCSE sciences | Edexcel 1BI0, 1CH0, 1PH0, 1SC0; OCR A J247–J250; OCR B J257–J260 (Eduqas offers no GCSE sciences) | `notes/gcse/edexcel-sciences/`, `ocr-a-sciences/`, `ocr-b-sciences/` | Done |
+| A-level Statistics | Edexcel 9ST0 | `notes/a-level/statistics/` | In progress |
+| Smaller STEM, GCSE | AQA Engineering 8852, Edexcel Astronomy, Eduqas Electronics C490QS and Geology C480QS | `notes/gcse/smaller-stem/` | In progress |
+| Smaller STEM, A-level | AQA Environmental Science 7447, OCR Geology H414, Eduqas Electronics A490QS and Geology A480QS | `notes/a-level/smaller-stem/` | Queued |
 
 ## Not started
 
