@@ -137,4 +137,4 @@ Design and build logic circuits considering sourcing, sinking, pull-up and pull-
 5. Q = C + D (1).
 6. A and B to the two select lines (1); four data inputs correspond to the four truth table rows (1); each connected to 0 or 1 to match the output (1).
 7. Without it the input floats when the switch is open / undefined level / picks up noise (1); resistor holds the input at logic 0 (1).
-8. A + B = NAND(Ā, B̄): 3 gates (2 NOTs and a NAND) (1); AND with C: NAND then NOT (1); so Q = NOT(NAND(A + B, C)) (1); total 5 gates (1). (Accept an equivalent with justification.)
+8. Expand: Q = A·C + B·C (1); sum of products converts to two levels of NAND: Q = NAND(NAND(A, C), NAND(B, C)) (1); check with De Morgan: NOT(NOT(AC)·NOT(BC)) = AC + BC (1); 3 gates (1). (A direct conversion of the OR-then-AND form using 5 gates, with double inversions not removed, scores 2.)
