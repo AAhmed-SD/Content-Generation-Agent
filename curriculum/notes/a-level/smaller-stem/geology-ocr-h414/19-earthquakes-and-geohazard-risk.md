@@ -49,7 +49,7 @@ Intensity is higher when:
 
 ### Worked example
 
-Using Mw = (2/3) log₁₀E − 6.1 (with E in joules for this given form... use as supplied): for Mw 7.0, log₁₀E = (7.0 + 6.1) × 1.5 = 19.65, so E = 4.5 × 10¹⁹ (in the equation's units). For Mw 6.0, log₁₀E = 18.15. Ratio = 10^(19.65 − 18.15) = 10^1.5 ≈ 32. So one magnitude step is about 32 times more energy.
+Using the given equation Mw = (2/3) log₁₀E − 6.1 (E in the units the question states): for Mw 7.0, log₁₀E = (7.0 + 6.1) × 1.5 = 19.65, so E = 4.5 × 10¹⁹. For Mw 6.0, log₁₀E = 18.15. Ratio = 10^(19.65 − 18.15) = 10^1.5 ≈ 32. So one magnitude step is about 32 times more energy.
 
 ## Ground conditions and liquefaction (OCR 6.1.1(b))
 
