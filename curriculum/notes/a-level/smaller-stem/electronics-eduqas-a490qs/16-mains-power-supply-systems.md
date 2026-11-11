@@ -99,7 +99,7 @@ Op-amp regulator: VZ = 3.3 V, required VL = 12 V: 1 + RF/R1 = 3.64, so RF/R1 = 2
 2. 12 × √2 = 16.97 V (1); − 1.4 V = 15.6 V (1).
 3. Capacitor charges to the peak when the diodes conduct (1); supplies the load between peaks, discharging slowly (1); output nearly steady with small ripple (1); larger load current discharges it faster, increasing ripple (1).
 4. Vr = 0.2 ÷ (50 × 2200 × 10⁻⁶) (1) = 1.8 V (1).
-5. RS = (12 − 6.8) ÷ 0.035 = 149 Ω (1); choose 150 Ω (1); no-load current = 5.2 ÷ 150 = 34.7 mA (1); P = 6.8 × 0.0347 = 0.24 W (1).
+5. RS = (12 − 6.8) ÷ 0.035 = 149 Ω (1); round down to the E24 value 130 Ω so the zener still gets at least 5 mA at full load (150 Ω would give only 4.7 mA) (1); no-load current = 5.2 ÷ 130 = 40 mA (1); P = 6.8 × 0.040 = 0.27 W (1).
 6. Load regulation: output stays constant as load current changes (1); line regulation: output stays constant as input voltage changes (1).
 7. Transistor supplies the load current (1); zener only supplies the base current, IL ÷ hFE (1); so zener current hardly changes and it regulates well / small zener can be used (1).
 8. VL = 2.5 × (1 + 10/4.7) = 7.8 V (1); load increases, VL starts to fall (1); fed-back voltage at inverting input falls below the reference (1); op-amp output rises, driving the pass transistor harder, restoring VL (1).
