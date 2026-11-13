@@ -67,7 +67,7 @@ Streams run two at a time in the shared checkout (disk space allows no worktrees
 | Other boards' GCSE sciences | Edexcel 1BI0, 1CH0, 1PH0, 1SC0; OCR A J247–J250; OCR B J257–J260 (Eduqas offers no GCSE sciences) | `notes/gcse/edexcel-sciences/`, `ocr-a-sciences/`, `ocr-b-sciences/` | Done |
 | A-level Statistics | Edexcel 9ST0 | `notes/a-level/statistics/` | Done |
 | Smaller STEM, GCSE | AQA Engineering 8852, Edexcel Astronomy, Eduqas Electronics C490QS and Geology C480QS | `notes/gcse/smaller-stem/` | Done |
-| Smaller STEM, A-level | AQA Environmental Science 7447, OCR Geology H414, Eduqas Electronics A490QS and Geology A480QS | `notes/a-level/smaller-stem/` | In progress (cloud) |
+| Smaller STEM, A-level | AQA Environmental Science 7447, OCR Geology H414, Eduqas Electronics A490QS and Geology A480QS | `notes/a-level/smaller-stem/` | Done |
 
 ## Not started
 
